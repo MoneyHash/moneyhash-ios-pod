@@ -22,7 +22,7 @@ pod 'MoneyHashPayment'
 
 ## Author
 
-ahmedsalemelzeiny, ahmedsalemelzeiny2013@gmail.com
+MoneyHash, info@moneyhash.io
 
 ## License
 

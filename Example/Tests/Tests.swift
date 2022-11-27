@@ -1,5 +1,5 @@
 import XCTest
-import MoneyHashPayment
+//import MoneyHashPayment
 
 class Tests: XCTestCase {
     

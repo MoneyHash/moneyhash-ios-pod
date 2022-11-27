@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint MoneyHashPayment.podspec' to ensure this is a
+# Be sure to run `pod lib lint MoneyHash.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -8,35 +8,38 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MoneyHashPayment'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of MoneyHashPayment.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.version          = '0.0.1'
+  s.summary          = 'Accept online payments using MoneyHash.'
+  
+  # This description is used to generate tags and improve search results.
+  #   * Think: What does it do? Why did you write it? What is the focus?
+  #   * Try to keep it short, snappy and to the point.
+  #   * Write the description between the DESC delimiters below.
+  #   * Finally, don't worry about the indent, CocoaPods strips it!
+  
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/ahmedsalemelzeiny/MoneyHashPayment'
+  MoneyHash is a Super-API infrastructure for payment orchestration and revenue operations in emerging markets. We provide a single integration to your network of pay-in and pay-out providers, and various other services that you can utilize and combine to build a unique custom payment stack. Our core features include:
+  
+  1. A single API/SDK integration for Pay-in & Pay-out
+  2. Unified checkout embed compatible with all integrated providers
+  3. Orchestration and routing capabilities to allow for optimal transaction routes and to increase authorization rates
+  4. Micro-services to extend your stack capabilities such as subscription management, invoicing, and payment links
+  5. PCI-compliant card vault to store and tokenize sensitive customer and card information
+  6. Central dashboard for unified stack controls and transaction reporting
+  
+  You can learn more about us by visiting www.moneyhash.io
+                        DESC
+  
+  s.homepage         = 'https://github.com/MoneyHash/moneyhash-ios-pod'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'ahmedsalemelzeiny' => 'ahmedsalemelzeiny2013@gmail.com' }
-  s.source           = { :git => 'https://github.com/ahmedsalemelzeiny/MoneyHashPayment.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '10.0'
-
-  s.source_files = 'MoneyHashPayment/Classes/**/*'
+  s.author           = { 'MoneyHash' => 'a.s.elzeiny@moneyhash.io' }
+  s.source           = { :git => 'https://github.com/MoneyHash/moneyhash-ios-pod.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://www.linkedin.com/company/moneyhash/'
   
-  # s.resource_bundles = {
-  #   'MoneyHashPayment' => ['MoneyHashPayment/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.ios.deployment_target = '11.0'
+  
+#  s.source_files = 'MoneyHash/Classes/**/*'
+s.vendored_frameworks = 'MoneyHash.xcframework', 'MoneyHashShared.xcframework'
+  
 end

@@ -8,8 +8,10 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MoneyHashPayment'
-  s.version          = '2.0.1'
+  s.version          = '2.0.2'
   s.summary          = 'Accept online payments using MoneyHash.'
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386 x86_64' }
+
   
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?

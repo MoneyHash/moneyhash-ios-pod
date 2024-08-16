@@ -1,5 +1,5 @@
 PODS:
-  - MoneyHashPayment (0.0.1)
+  - MoneyHashPayment (2.0.1)
 
 DEPENDENCIES:
   - MoneyHashPayment (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MoneyHashPayment: bd70d896fd0745e38e43ab11108147ca91cb90c7
+  MoneyHashPayment: c4477705c3ce740a0f2a0eca906333edc864e800
 
-PODFILE CHECKSUM: 85dea85b4fe0221d437aff0f314de8025753a4da
+PODFILE CHECKSUM: 6a5da284d4c277c9edeb5db7b74f01570f463540
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.15.0

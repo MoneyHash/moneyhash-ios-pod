@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MoneyHashPayment'
-  s.version          = '1.0.5'
+  s.version          = '2.0.1'
   s.summary          = 'Accept online payments using MoneyHash.'
   
   # This description is used to generate tags and improve search results.
@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/MoneyHash/moneyhash-ios-pod.git', :tag => s.version.to_s }
   s.social_media_url = 'https://www.linkedin.com/company/moneyhash/'
   
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '14.0'
   
 #  s.source_files = 'MoneyHash/Classes/**/*'
 s.vendored_frameworks = 'MoneyHash.xcframework', 'MoneyHashShared.xcframework'

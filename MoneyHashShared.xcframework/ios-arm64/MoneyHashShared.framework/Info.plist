@@ -5,7 +5,7 @@
     <key>CFBundleExecutable</key>
     <string>MoneyHashShared</string>
     <key>CFBundleIdentifier</key>
-    <string>com.moneyhash.shared.MoneyHashShared</string>
+    <string>MoneyHashShared</string>
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
     <key>CFBundleName</key>
@@ -21,7 +21,7 @@
     <key>CFBundleVersion</key>
     <string>1</string>
     <key>MinimumOSVersion</key>
-    <string>9.0</string>
+    <string>13.0</string>
     <key>UIDeviceFamily</key>
     <array>
         <integer>1</integer>

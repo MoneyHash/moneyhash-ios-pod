@@ -209,7 +209,10 @@ public protocol MoneyHashSDK {
   #if compiler(>=5.3) && $AsyncAwait
   func submitPaymentReceipt(intentId: Swift.String, data: Swift.String) async throws -> MoneyHash.IntentDetails
   #endif
-  func proceedWithApplePay(depositAmount: Swift.Float, merchantIdentifier: Swift.String, currencyCode: Swift.String, countryCode: Swift.String, completionHandler: @escaping (Swift.Result<Swift.String, MoneyHash.ApplePayStatus>) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  func proceedWithApplePay(intentID: Swift.String, depositAmount: Swift.Float, merchantIdentifier: Swift.String, currencyCode: Swift.String, countryCode: Swift.String) async throws -> MoneyHash.IntentDetails
+  #endif
+  func isDeviceCompatible() -> Swift.Bool
 }
 public struct EmbedLoaderStyle : Swift.Codable {
   public init(backgroundColor: Swift.String? = nil, color: Swift.String? = nil)
@@ -262,7 +265,7 @@ public struct EmbedInputViewStyle : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct VaultData {
+public struct VaultData : Swift.Codable {
   public let firstSixDigits: Swift.String?
   public let lastFourDigits: Swift.String?
   public let cardScheme: Swift.String?
@@ -275,6 +278,8 @@ public struct VaultData {
   public let cvv: Swift.String?
   public let saveCard: Swift.Bool?
   public let fingerprint: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum IntentMethodType : Swift.String, Swift.Codable {
   case paymentMethod

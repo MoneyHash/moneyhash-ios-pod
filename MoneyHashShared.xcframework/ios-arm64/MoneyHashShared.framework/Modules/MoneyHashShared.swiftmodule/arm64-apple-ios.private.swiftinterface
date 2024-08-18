@@ -672,6 +672,12 @@ extension MoneyHashShared.VaultService {
   public func postTokens(accessToken: Swift.String, cardDetails: MoneyHashShared.CardDetails_) async throws -> MoneyHashShared.VaultData
   #endif
 }
+extension MoneyHashShared.CardFieldsCollector {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func collect(fields: [MoneyHashShared.FieldType : Swift.String], token: Swift.String, intentID: Swift.String) async throws -> MoneyHashShared.VaultData?
+  #endif
+}
 extension MoneyHashShared.CardCollector {
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -1678,6 +1684,49 @@ extension MoneyHashShared.RenderStrategy {
 extension MoneyHashShared.__RenderStrategy {
   public func toSwiftEnum() -> MoneyHashShared.RenderStrategy
 }
+@frozen public enum FieldType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case cardNumber
+  case expireMonth
+  case expireYear
+  case cvv
+  case cardHolderName
+  public var label: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var type: Swift.String {
+    get
+  }
+  public static var companion: MoneyHashShared.__FieldType.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: MoneyHashShared.__FieldType, result: inout MoneyHashShared.FieldType?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.__FieldType, result: inout MoneyHashShared.FieldType?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.__FieldType?) -> MoneyHashShared.FieldType
+  public func _bridgeToObjectiveC() -> MoneyHashShared.__FieldType
+  public typealias _ObjectiveCType = MoneyHashShared.__FieldType
+  public typealias Companion = MoneyHashShared.__FieldType.Companion
+  public static func == (a: MoneyHashShared.FieldType, b: MoneyHashShared.FieldType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [MoneyHashShared.FieldType]
+  public static var allCases: [MoneyHashShared.FieldType] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension MoneyHashShared.FieldType {
+  public func toKotlinEnum() -> MoneyHashShared.__FieldType
+}
+extension MoneyHashShared.__FieldType {
+  public func toSwiftEnum() -> MoneyHashShared.FieldType
+}
 @frozen public enum CardBrand : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
   case elo
   case visaElectron
@@ -1724,49 +1773,6 @@ extension MoneyHashShared.CardBrand {
 }
 extension MoneyHashShared.__CardBrand {
   public func toSwiftEnum() -> MoneyHashShared.CardBrand
-}
-@frozen public enum FieldType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
-  case cardNumber
-  case expireMonth
-  case expireYear
-  case cvv
-  case cardHolderName
-  public var label: Swift.String {
-    get
-  }
-  public var name: Swift.String {
-    get
-  }
-  public var ordinal: Swift.Int32 {
-    get
-  }
-  public var type: Swift.String {
-    get
-  }
-  public static var companion: MoneyHashShared.__FieldType.Companion {
-    get
-  }
-  public static func _forceBridgeFromObjectiveC(_ source: MoneyHashShared.__FieldType, result: inout MoneyHashShared.FieldType?)
-  public static func _conditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.__FieldType, result: inout MoneyHashShared.FieldType?) -> Swift.Bool
-  public static func _unconditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.__FieldType?) -> MoneyHashShared.FieldType
-  public func _bridgeToObjectiveC() -> MoneyHashShared.__FieldType
-  public typealias _ObjectiveCType = MoneyHashShared.__FieldType
-  public typealias Companion = MoneyHashShared.__FieldType.Companion
-  public static func == (a: MoneyHashShared.FieldType, b: MoneyHashShared.FieldType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public typealias AllCases = [MoneyHashShared.FieldType]
-  public static var allCases: [MoneyHashShared.FieldType] {
-    get
-  }
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-extension MoneyHashShared.FieldType {
-  public func toKotlinEnum() -> MoneyHashShared.__FieldType
-}
-extension MoneyHashShared.__FieldType {
-  public func toSwiftEnum() -> MoneyHashShared.FieldType
 }
 @frozen public enum Ktor_utilsMonth : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
   case january
@@ -2157,8 +2163,8 @@ extension MoneyHashShared.LoggerSeverity : Swift.Sendable {}
 extension MoneyHashShared.Environment : Swift.Sendable {}
 extension MoneyHashShared.InputFieldType : Swift.Sendable {}
 extension MoneyHashShared.RenderStrategy : Swift.Sendable {}
-extension MoneyHashShared.CardBrand : Swift.Sendable {}
 extension MoneyHashShared.FieldType : Swift.Sendable {}
+extension MoneyHashShared.CardBrand : Swift.Sendable {}
 extension MoneyHashShared.Ktor_utilsMonth : Swift.Sendable {}
 extension MoneyHashShared.Ktor_utilsWeekDay : Swift.Sendable {}
 extension MoneyHashShared.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed : Swift.Sendable {}

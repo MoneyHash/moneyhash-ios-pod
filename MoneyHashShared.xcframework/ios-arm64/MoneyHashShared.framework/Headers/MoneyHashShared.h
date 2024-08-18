@@ -5247,6 +5247,7 @@ __attribute__((swift_name("LoggerSeverity")))
 @property (class, readonly) MHSLoggerSeverity *warn __attribute__((swift_name("warn")));
 @property (class, readonly) MHSLoggerSeverity *error __attribute__((swift_name("error")));
 @property (class, readonly) MHSLoggerSeverity *assert __attribute__((swift_name("assert")));
+@property (class, readonly) MHSLoggerSeverity *none __attribute__((swift_name("none")));
 @property (class, readonly) NSArray<MHSLoggerSeverity *> *entries __attribute__((swift_name("entries")));
 + (instancetype)alloc __attribute__((unavailable));
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));

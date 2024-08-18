@@ -29366,6 +29366,44 @@
           },
           {
             "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHashShared.LoggerSeverity.Type) -> MoneyHashShared.LoggerSeverity",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoggerSeverity",
+                    "printedName": "MoneyHashShared.LoggerSeverity",
+                    "usr": "s:15MoneyHashShared14LoggerSeverityO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHashShared.LoggerSeverity.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoggerSeverity",
+                        "printedName": "MoneyHashShared.LoggerSeverity",
+                        "usr": "s:15MoneyHashShared14LoggerSeverityO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MoneyHashShared14LoggerSeverityO4noneyA2CmF",
+            "mangledName": "$s15MoneyHashShared14LoggerSeverityO4noneyA2CmF",
+            "moduleName": "MoneyHashShared",
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Var",
             "name": "name",
             "printedName": "name",
             "children": [

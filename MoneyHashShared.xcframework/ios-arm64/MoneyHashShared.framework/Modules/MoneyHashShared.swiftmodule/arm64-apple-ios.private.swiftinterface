@@ -1535,6 +1535,7 @@ extension MoneyHashShared.__Type_ {
   case warn
   case error
   case assert
+  case none
   public var name: Swift.String {
     get
   }

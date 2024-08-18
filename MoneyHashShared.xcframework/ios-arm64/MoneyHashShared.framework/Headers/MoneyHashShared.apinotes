@@ -6114,6 +6114,10 @@ Classes:
     PropertyKind: "Class"
     SwiftName: "assert"
     Type: "MHSLoggerSeverity * _Nonnull"
+  - Name: "none"
+    PropertyKind: "Class"
+    SwiftName: "none"
+    Type: "MHSLoggerSeverity * _Nonnull"
   Methods:
   - Selector: "initWithName:ordinal:"
     MethodKind: "Instance"

@@ -1,6 +1,6 @@
 {
   "name": "MoneyHashPayment",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "summary": "Accept online payments using MoneyHash.",
   "pod_target_xcconfig": {
     "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "i386"
@@ -19,7 +19,7 @@
   },
   "source": {
     "git": "https://github.com/MoneyHash/moneyhash-ios-pod.git",
-    "tag": "2.0.7"
+    "tag": "2.0.8"
   },
   "social_media_url": "https://www.linkedin.com/company/moneyhash/",
   "platforms": {

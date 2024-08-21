@@ -20,7 +20,7 @@ variant_for_slice()
   "MoneyHash.xcframework/ios-arm64")
     echo ""
     ;;
-  "MoneyHash.xcframework/ios-arm64_x86_64-simulator")
+  "MoneyHash.xcframework/ios-arm64-simulator")
     echo "simulator"
     ;;
   "MoneyHashShared.xcframework/ios-arm64")
@@ -38,8 +38,8 @@ archs_for_slice()
   "MoneyHash.xcframework/ios-arm64")
     echo "arm64"
     ;;
-  "MoneyHash.xcframework/ios-arm64_x86_64-simulator")
-    echo "arm64 x86_64"
+  "MoneyHash.xcframework/ios-arm64-simulator")
+    echo "arm64"
     ;;
   "MoneyHashShared.xcframework/ios-arm64")
     echo "arm64"
@@ -129,6 +129,6 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/../../MoneyHash.xcframework" "MoneyHashPayment" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../MoneyHash.xcframework" "MoneyHashPayment" "framework" "ios-arm64" "ios-arm64-simulator"
 install_xcframework "${PODS_ROOT}/../../MoneyHashShared.xcframework" "MoneyHashPayment" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 

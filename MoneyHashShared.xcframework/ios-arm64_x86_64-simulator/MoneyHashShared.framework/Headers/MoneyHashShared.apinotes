@@ -5832,20 +5832,26 @@ Classes:
   - Name: "errors"
     PropertyKind: "Instance"
     SwiftName: "errors"
-    Type: "NSArray<MHSNetworkError *> * _Nonnull"
+    Type: "NSArray<MHSErrorInfo *> * _Nonnull"
   - Name: "message"
     PropertyKind: "Instance"
     SwiftName: "message"
     Type: "NSString * _Nullable"
+  - Name: "type"
+    PropertyKind: "Instance"
+    SwiftName: "type"
+    Type: "MHSErrorType * _Nonnull"
   Methods:
-  - Selector: "initWithMessage:errors:"
+  - Selector: "initWithMessage:errors:type:"
     MethodKind: "Instance"
-    SwiftName: "init(message:errors:)"
+    SwiftName: "init(message:errors:type:)"
     Parameters:
     - Position: 0
       Type: "NSString * _Nullable"
     - Position: 1
-      Type: "NSArray<MHSNetworkError *> * _Nonnull"
+      Type: "NSArray<MHSErrorInfo *> * _Nonnull"
+    - Position: 2
+      Type: "MHSErrorType * _Nonnull"
   - Selector: "initWithMessage:"
     MethodKind: "Instance"
     SwiftName: "init(message:)"
@@ -5862,8 +5868,55 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "init(message:cause:)"
     Availability: "nonswift"
-- Name: "MHSNetworkError"
-  SwiftName: "NetworkError"
+- Name: "MHSMHThrowableCompanion"
+  SwiftName: "MHThrowable.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "MHSErrorType"
+  SwiftBridge: "ErrorType"
+  SwiftName: "__ErrorType"
+  SwiftPrivate: true
+  Properties:
+  - Name: "network"
+    PropertyKind: "Class"
+    SwiftName: "network"
+    Type: "MHSErrorType * _Nonnull"
+  - Name: "unknown"
+    PropertyKind: "Class"
+    SwiftName: "unknown"
+    Type: "MHSErrorType * _Nonnull"
+  - Name: "cardValidation"
+    PropertyKind: "Class"
+    SwiftName: "cardValidation"
+    Type: "MHSErrorType * _Nonnull"
+  - Name: "cancelled"
+    PropertyKind: "Class"
+    SwiftName: "cancelled"
+    Type: "MHSErrorType * _Nonnull"
+  Methods:
+  - Selector: "initWithName:ordinal:"
+    MethodKind: "Instance"
+    SwiftName: "init(name:ordinal:)"
+    Availability: "nonswift"
+- Name: "MHSErrorTypeCompanion"
+  SwiftName: "__ErrorType.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
+  - Selector: "serializerTypeParamsSerializers:"
+    MethodKind: "Instance"
+    SwiftName: "serializer(typeParamsSerializers:)"
+    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "MHSKotlinArray<id<MHSKotlinx_serialization_coreKSerializer>> * _Nonnull"
+- Name: "MHSErrorInfo"
+  SwiftName: "ErrorInfo"
   Properties:
   - Name: "key"
     PropertyKind: "Instance"
@@ -5885,7 +5938,7 @@ Classes:
   - Selector: "doCopyKey:message:"
     MethodKind: "Instance"
     SwiftName: "doCopy(key:message:)"
-    ResultType: "MHSNetworkError * _Nonnull"
+    ResultType: "MHSErrorInfo * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
@@ -5906,6 +5959,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+- Name: "MHSErrorInfoCompanion"
+  SwiftName: "ErrorInfo.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "MHSErrorMapper"
   SwiftName: "ErrorMapper"
   Methods:
@@ -5917,7 +5977,7 @@ Classes:
     - Position: 0
       Type: "NSString * _Nullable"
     - Position: 1
-      Type: "NSArray<MHSNetworkError *> * _Nonnull"
+      Type: "NSArray<MHSErrorInfo *> * _Nonnull"
     - Position: 2
       Type: "MHSKotlinThrowable * _Nonnull"
   - Selector: "mapThrowableThrowable:"
@@ -5976,6 +6036,10 @@ Classes:
   - Name: "APPLE_PAY"
     PropertyKind: "Instance"
     SwiftName: "APPLE_PAY"
+    Type: "NSString * _Nonnull"
+  - Name: "BASE_VAULT_FORM"
+    PropertyKind: "Instance"
+    SwiftName: "BASE_VAULT_FORM"
     Type: "NSString * _Nonnull"
   - Name: "CITY_API_NAME_FILED"
     PropertyKind: "Instance"
@@ -7528,6 +7592,263 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "serializer()"
     ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "MHSCardBrand"
+  SwiftName: "CardBrand"
+  Properties:
+  - Name: "brand"
+    PropertyKind: "Instance"
+    SwiftName: "brand"
+    Type: "NSString * _Nonnull"
+  - Name: "brandIconUrl"
+    PropertyKind: "Instance"
+    SwiftName: "brandIconUrl"
+    Type: "NSString * _Nonnull"
+  - Name: "first6Digits"
+    PropertyKind: "Instance"
+    SwiftName: "first6Digits"
+    Type: "NSString * _Nonnull"
+- Name: "MHSCardBrandCompanion"
+  SwiftName: "CardBrand.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
+  - Selector: "serializerTypeParamsSerializers:"
+    MethodKind: "Instance"
+    SwiftName: "serializer(typeParamsSerializers:)"
+    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "MHSKotlinArray<id<MHSKotlinx_serialization_coreKSerializer>> * _Nonnull"
+- Name: "MHSCardBrandMada"
+  SwiftName: "CardBrand.Mada"
+  Properties:
+  - Name: "brand"
+    PropertyKind: "Instance"
+    SwiftName: "brand"
+    Type: "NSString * _Nonnull"
+  - Name: "brandIconUrl"
+    PropertyKind: "Instance"
+    SwiftName: "brandIconUrl"
+    Type: "NSString * _Nonnull"
+  - Name: "first6Digits"
+    PropertyKind: "Instance"
+    SwiftName: "first6Digits"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithBrand:first6Digits:brandIconUrl:"
+    MethodKind: "Instance"
+    SwiftName: "init(brand:first6Digits:brandIconUrl:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopyBrand:first6Digits:brandIconUrl:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(brand:first6Digits:brandIconUrl:)"
+    ResultType: "MHSCardBrandMada * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "MHSCardBrandMadaCompanion"
+  SwiftName: "CardBrand.MadaCompanion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "MHSCardBrandMasterCard"
+  SwiftName: "CardBrand.MasterCard"
+  Properties:
+  - Name: "brand"
+    PropertyKind: "Instance"
+    SwiftName: "brand"
+    Type: "NSString * _Nonnull"
+  - Name: "brandIconUrl"
+    PropertyKind: "Instance"
+    SwiftName: "brandIconUrl"
+    Type: "NSString * _Nonnull"
+  - Name: "first6Digits"
+    PropertyKind: "Instance"
+    SwiftName: "first6Digits"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithBrand:first6Digits:brandIconUrl:"
+    MethodKind: "Instance"
+    SwiftName: "init(brand:first6Digits:brandIconUrl:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopyBrand:first6Digits:brandIconUrl:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(brand:first6Digits:brandIconUrl:)"
+    ResultType: "MHSCardBrandMasterCard * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "MHSCardBrandMasterCardCompanion"
+  SwiftName: "CardBrand.MasterCardCompanion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "MHSCardBrandUnknown"
+  SwiftName: "CardBrand.Unknown"
+  Properties:
+  - Name: "brandIconUrl"
+    PropertyKind: "Instance"
+    SwiftName: "brandIconUrl"
+    Type: "NSString * _Nonnull"
+  - Name: "first6Digits"
+    PropertyKind: "Instance"
+    SwiftName: "first6Digits"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithFirst6Digits:brandIconUrl:"
+    MethodKind: "Instance"
+    SwiftName: "init(first6Digits:brandIconUrl:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopyFirst6Digits:brandIconUrl:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(first6Digits:brandIconUrl:)"
+    ResultType: "MHSCardBrandUnknown * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "MHSCardBrandUnknownCompanion"
+  SwiftName: "CardBrand.UnknownCompanion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "MHSCardBrandVisa"
+  SwiftName: "CardBrand.Visa"
+  Properties:
+  - Name: "brand"
+    PropertyKind: "Instance"
+    SwiftName: "brand"
+    Type: "NSString * _Nonnull"
+  - Name: "brandIconUrl"
+    PropertyKind: "Instance"
+    SwiftName: "brandIconUrl"
+    Type: "NSString * _Nonnull"
+  - Name: "first6Digits"
+    PropertyKind: "Instance"
+    SwiftName: "first6Digits"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithBrand:first6Digits:brandIconUrl:"
+    MethodKind: "Instance"
+    SwiftName: "init(brand:first6Digits:brandIconUrl:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopyBrand:first6Digits:brandIconUrl:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(brand:first6Digits:brandIconUrl:)"
+    ResultType: "MHSCardBrandVisa * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "MHSCardBrandVisaCompanion"
+  SwiftName: "CardBrand.VisaCompanion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "MHSAuthModule"
   SwiftName: "AuthModule"
   Properties:
@@ -7688,6 +8009,10 @@ Classes:
 - Name: "MHSCardFieldState"
   SwiftName: "CardFieldState"
   Properties:
+  - Name: "cardBrand"
+    PropertyKind: "Instance"
+    SwiftName: "cardBrand"
+    Type: "MHSCardBrand * _Nullable"
   - Name: "errorMessage"
     PropertyKind: "Instance"
     SwiftName: "errorMessage"
@@ -7705,9 +8030,9 @@ Classes:
     SwiftName: "isValid"
     Type: "BOOL"
   Methods:
-  - Selector: "initWithIsValid:errorMessage:formattedValue:fieldType:"
+  - Selector: "initWithIsValid:errorMessage:formattedValue:fieldType:cardBrand:"
     MethodKind: "Instance"
-    SwiftName: "init(isValid:errorMessage:formattedValue:fieldType:)"
+    SwiftName: "init(isValid:errorMessage:formattedValue:fieldType:cardBrand:)"
     Parameters:
     - Position: 0
       Type: "BOOL"
@@ -7717,9 +8042,11 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "MHSFieldType * _Nonnull"
-  - Selector: "doCopyIsValid:errorMessage:formattedValue:fieldType:"
+    - Position: 4
+      Type: "MHSCardBrand * _Nullable"
+  - Selector: "doCopyIsValid:errorMessage:formattedValue:fieldType:cardBrand:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(isValid:errorMessage:formattedValue:fieldType:)"
+    SwiftName: "doCopy(isValid:errorMessage:formattedValue:fieldType:cardBrand:)"
     ResultType: "MHSCardFieldState * _Nonnull"
     Parameters:
     - Position: 0
@@ -7730,6 +8057,8 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "MHSFieldType * _Nonnull"
+    - Position: 4
+      Type: "MHSCardBrand * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"
@@ -7860,96 +8189,12 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "get()"
     ResultType: "T _Nullable"
-- Name: "MHSCardBrand"
-  SwiftBridge: "CardBrand"
-  SwiftName: "__CardBrand"
-  SwiftPrivate: true
-  Properties:
-  - Name: "elo"
-    PropertyKind: "Class"
-    SwiftName: "elo"
-    Type: "MHSCardBrand * _Nonnull"
-  - Name: "visaElectron"
-    PropertyKind: "Class"
-    SwiftName: "visaElectron"
-    Type: "MHSCardBrand * _Nonnull"
-  - Name: "maestro"
-    PropertyKind: "Class"
-    SwiftName: "maestro"
-    Type: "MHSCardBrand * _Nonnull"
-  - Name: "forbrugsforeningen"
-    PropertyKind: "Class"
-    SwiftName: "forbrugsforeningen"
-    Type: "MHSCardBrand * _Nonnull"
-  - Name: "dankort"
-    PropertyKind: "Class"
-    SwiftName: "dankort"
-    Type: "MHSCardBrand * _Nonnull"
-  - Name: "visa"
-    PropertyKind: "Class"
-    SwiftName: "visa"
-    Type: "MHSCardBrand * _Nonnull"
-  - Name: "mastercard"
-    PropertyKind: "Class"
-    SwiftName: "mastercard"
-    Type: "MHSCardBrand * _Nonnull"
-  - Name: "amex"
-    PropertyKind: "Class"
-    SwiftName: "amex"
-    Type: "MHSCardBrand * _Nonnull"
-  - Name: "hipercard"
-    PropertyKind: "Class"
-    SwiftName: "hipercard"
-    Type: "MHSCardBrand * _Nonnull"
-  - Name: "dinersClub"
-    PropertyKind: "Class"
-    SwiftName: "dinersClub"
-    Type: "MHSCardBrand * _Nonnull"
-  - Name: "discover"
-    PropertyKind: "Class"
-    SwiftName: "discover"
-    Type: "MHSCardBrand * _Nonnull"
-  - Name: "unionpay"
-    PropertyKind: "Class"
-    SwiftName: "unionpay"
-    Type: "MHSCardBrand * _Nonnull"
-  - Name: "jcb"
-    PropertyKind: "Class"
-    SwiftName: "jcb"
-    Type: "MHSCardBrand * _Nonnull"
-  - Name: "unknown"
-    PropertyKind: "Class"
-    SwiftName: "unknown"
-    Type: "MHSCardBrand * _Nonnull"
-  Methods:
-  - Selector: "defaultName"
-    MethodKind: "Instance"
-    SwiftName: "defaultName()"
-    ResultType: "NSString * _Nonnull"
-  - Selector: "initWithName:ordinal:"
-    MethodKind: "Instance"
-    SwiftName: "init(name:ordinal:)"
-    Availability: "nonswift"
-- Name: "MHSCardBrandCompanion"
-  SwiftName: "__CardBrand.Companion"
-  Methods:
-  - Selector: "serializer"
-    MethodKind: "Instance"
-    SwiftName: "serializer()"
-    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
-  - Selector: "serializerTypeParamsSerializers:"
-    MethodKind: "Instance"
-    SwiftName: "serializer(typeParamsSerializers:)"
-    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "MHSKotlinArray<id<MHSKotlinx_serialization_coreKSerializer>> * _Nonnull"
 - Name: "MHSCardFormExceptions"
   SwiftName: "CardFormExceptions"
   Methods:
-  - Selector: "initWithMessage:errors:"
+  - Selector: "initWithMessage:errors:type:"
     MethodKind: "Instance"
-    SwiftName: "init(message:errors:)"
+    SwiftName: "init(message:errors:type:)"
     Availability: "nonswift"
   - Selector: "initWithMessage:"
     MethodKind: "Instance"
@@ -7976,9 +8221,9 @@ Classes:
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "initWithMessage:errors:"
+  - Selector: "initWithMessage:errors:type:"
     MethodKind: "Instance"
-    SwiftName: "init(message:errors:)"
+    SwiftName: "init(message:errors:type:)"
     Availability: "nonswift"
   - Selector: "initWithCause:"
     MethodKind: "Instance"
@@ -8001,9 +8246,9 @@ Classes:
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "initWithMessage:errors:"
+  - Selector: "initWithMessage:errors:type:"
     MethodKind: "Instance"
-    SwiftName: "init(message:errors:)"
+    SwiftName: "init(message:errors:type:)"
     Availability: "nonswift"
   - Selector: "initWithCause:"
     MethodKind: "Instance"
@@ -8026,9 +8271,9 @@ Classes:
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "initWithMessage:errors:"
+  - Selector: "initWithMessage:errors:type:"
     MethodKind: "Instance"
-    SwiftName: "init(message:errors:)"
+    SwiftName: "init(message:errors:type:)"
     Availability: "nonswift"
   - Selector: "initWithCause:"
     MethodKind: "Instance"
@@ -8051,9 +8296,9 @@ Classes:
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "initWithMessage:errors:"
+  - Selector: "initWithMessage:errors:type:"
     MethodKind: "Instance"
-    SwiftName: "init(message:errors:)"
+    SwiftName: "init(message:errors:type:)"
     Availability: "nonswift"
   - Selector: "initWithCause:"
     MethodKind: "Instance"
@@ -8070,9 +8315,9 @@ Classes:
 - Name: "MHSValidationException"
   SwiftName: "ValidationException"
   Methods:
-  - Selector: "initWithMessage:errors:"
+  - Selector: "initWithMessage:errors:type:"
     MethodKind: "Instance"
-    SwiftName: "init(message:errors:)"
+    SwiftName: "init(message:errors:type:)"
     Availability: "nonswift"
   - Selector: "initWithMessage:"
     MethodKind: "Instance"
@@ -8099,9 +8344,9 @@ Classes:
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "initWithMessage:errors:"
+  - Selector: "initWithMessage:errors:type:"
     MethodKind: "Instance"
-    SwiftName: "init(message:errors:)"
+    SwiftName: "init(message:errors:type:)"
     Availability: "nonswift"
   - Selector: "initWithCause:"
     MethodKind: "Instance"
@@ -8124,9 +8369,9 @@ Classes:
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "initWithMessage:errors:"
+  - Selector: "initWithMessage:errors:type:"
     MethodKind: "Instance"
-    SwiftName: "init(message:errors:)"
+    SwiftName: "init(message:errors:type:)"
     Availability: "nonswift"
   - Selector: "initWithCause:"
     MethodKind: "Instance"
@@ -8149,9 +8394,9 @@ Classes:
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "initWithMessage:errors:"
+  - Selector: "initWithMessage:errors:type:"
     MethodKind: "Instance"
-    SwiftName: "init(message:errors:)"
+    SwiftName: "init(message:errors:type:)"
     Availability: "nonswift"
   - Selector: "initWithCause:"
     MethodKind: "Instance"
@@ -8174,9 +8419,9 @@ Classes:
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "initWithMessage:errors:"
+  - Selector: "initWithMessage:errors:type:"
     MethodKind: "Instance"
-    SwiftName: "init(message:errors:)"
+    SwiftName: "init(message:errors:type:)"
     Availability: "nonswift"
   - Selector: "initWithCause:"
     MethodKind: "Instance"
@@ -8199,9 +8444,9 @@ Classes:
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "initWithMessage:errors:"
+  - Selector: "initWithMessage:errors:type:"
     MethodKind: "Instance"
-    SwiftName: "init(message:errors:)"
+    SwiftName: "init(message:errors:type:)"
     Availability: "nonswift"
   - Selector: "initWithCause:"
     MethodKind: "Instance"
@@ -8224,9 +8469,9 @@ Classes:
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "initWithMessage:errors:"
+  - Selector: "initWithMessage:errors:type:"
     MethodKind: "Instance"
-    SwiftName: "init(message:errors:)"
+    SwiftName: "init(message:errors:type:)"
     Availability: "nonswift"
   - Selector: "initWithCause:"
     MethodKind: "Instance"

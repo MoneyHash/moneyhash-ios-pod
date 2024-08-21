@@ -65,29 +65,12 @@ public class CardFormBuilder {
   public func build() throws -> MoneyHash.CardFormCollector
   @objc deinit
 }
-public enum CardBrand {
-  case elo
-  case visaElectron
-  case maestro
-  case forbrugsforeningen
-  case dankort
-  case visa
-  case mastercard
-  case amex
-  case hipercard
-  case dinersClub
-  case discover
-  case unionpay
-  case jcb
-  case unknown
-  public var brandName: Swift.String? {
-    get
-  }
-  public static func == (a: MoneyHash.CardBrand, b: MoneyHash.CardBrand) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
+public struct CardBrand : Swift.Codable {
+  public let first6Digits: Swift.String
+  public let brand: Swift.String
+  public let brandIconUrl: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct IntentMethodMetaData {
   public let cvv: Swift.String?
@@ -240,14 +223,29 @@ public struct EmbedLoaderStyle : Swift.Codable {
   }
   @objc deinit
 }
-public enum MHError : Swift.Error {
+public struct MHError : Swift.Error, Swift.Codable {
+  public let type: MoneyHash.ErrorType
+  public let message: Swift.String
+  public let errors: [MoneyHash.ErrorInfo]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum ErrorType : Swift.String, Swift.Codable {
   case cancelled
-  case unknownError(underlyingError: Swift.String)
-  case missingTokenizeCardInfo
-  case failure(error: MoneyHash.MoneyHashError)
-  public var errorDescription: Swift.String? {
+  case cardValidation
+  case network
+  case unknown
+  case notCompatibleWithApplePay
+  case applePayTransactionFailed
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
     get
   }
+}
+public struct ErrorInfo : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum Language : Swift.String, Swift.Codable {
   case arabic
@@ -335,8 +333,7 @@ public struct FeeItem : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 extension Swift.Encodable {
-  public func convertToJSONStringASCIIFiltered() throws -> Swift.String
-  public func convertToJSONStringRegexFiltered() throws -> Swift.String
+  public func convertToJSONString() throws -> Swift.String
   public func convertToDictionary() throws -> [Swift.String : Any]
 }
 public protocol MoneyHashMethod : Swift.Identifiable {
@@ -354,6 +351,9 @@ public struct IntentMethods : Swift.Codable {
   public let payoutMethods: [MoneyHash.PayoutMethod]?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+}
+extension Swift.Error {
+  public func toJsonString() throws -> Swift.String
 }
 public struct ExpressMethod : MoneyHash.MoneyHashMethod, Swift.Codable {
   public let id: Swift.String?
@@ -508,20 +508,6 @@ public struct SaveCardCheckbox : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@objc @_hasMissingDesignatedInitializers public class MoneyHashError : Foundation.NSError {
-  @objc deinit
-}
-public struct FieldError {
-}
-public enum ApplePayStatus : Swift.Error {
-  case notCompatible
-  case failed
-  public static func == (a: MoneyHash.ApplePayStatus, b: MoneyHash.ApplePayStatus) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
 public enum RenderStrategy : Swift.Codable {
   case redirect
   case popupIFrame
@@ -565,10 +551,11 @@ public struct AmountData : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-extension MoneyHash.CardBrand : Swift.Equatable {}
-extension MoneyHash.CardBrand : Swift.Hashable {}
 extension MoneyHash.InputFieldType : Swift.Equatable {}
 extension MoneyHash.InputFieldType : Swift.Hashable {}
+extension MoneyHash.ErrorType : Swift.Equatable {}
+extension MoneyHash.ErrorType : Swift.Hashable {}
+extension MoneyHash.ErrorType : Swift.RawRepresentable {}
 extension MoneyHash.Language : Swift.Equatable {}
 extension MoneyHash.Language : Swift.Hashable {}
 extension MoneyHash.Language : Swift.RawRepresentable {}
@@ -585,7 +572,5 @@ extension MoneyHash.LogLevel : Swift.Hashable {}
 extension MoneyHash.IntentStatus : Swift.Equatable {}
 extension MoneyHash.IntentStatus : Swift.Hashable {}
 extension MoneyHash.IntentStatus : Swift.RawRepresentable {}
-extension MoneyHash.ApplePayStatus : Swift.Equatable {}
-extension MoneyHash.ApplePayStatus : Swift.Hashable {}
 extension MoneyHash.RenderStrategy : Swift.Equatable {}
 extension MoneyHash.RenderStrategy : Swift.Hashable {}

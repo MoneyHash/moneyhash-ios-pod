@@ -277,7 +277,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import Foundation;
 #endif
 
 #endif
@@ -307,21 +306,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
-@class NSCoder;
-@class NSString;
-
-/// A class representing a custom error in the MoneyHash framework.
-/// <h3>Use Cases:</h3>
-/// <ul>
-///   <li>
-///     Handling errors specific to MoneyHash operations.
-///   </li>
-/// </ul>
-SWIFT_CLASS("_TtC9MoneyHash14MoneyHashError")
-@interface MoneyHashError : NSError
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (nonnull instancetype)initWithDomain:(NSString * _Nonnull)domain code:(NSInteger)code userInfo:(NSDictionary<NSString *, id> * _Nullable)dict SWIFT_UNAVAILABLE;
-@end
 
 
 

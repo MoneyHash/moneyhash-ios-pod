@@ -65,6 +65,29 @@ public class CardFormBuilder {
   public func build() throws -> MoneyHash.CardFormCollector
   @objc deinit
 }
+public enum DiscountType : Swift.String, Swift.Codable {
+  case amount
+  case percentage
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct DiscountItem : Swift.Codable {
+  public let title: [MoneyHash.Language : Swift.String]?
+  public let type: MoneyHash.DiscountType?
+  public let value: Swift.String?
+  public init(title: [MoneyHash.Language : Swift.String]?, type: MoneyHash.DiscountType?, value: Swift.String?)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct DiscountData : Swift.Codable {
+  public let amount: Swift.String?
+  public let discount: MoneyHash.DiscountItem?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct CardBrand : Swift.Codable {
   public let first6Digits: Swift.String
   public let brand: Swift.String
@@ -206,7 +229,14 @@ public protocol MoneyHashSDK {
   func validateField(fieldType: MoneyHash.CardFieldType, currentValue: Swift.String) -> MoneyHash.CardFieldState
   func isValidForm(fields: [MoneyHash.CardFieldType : Swift.String]) -> MoneyHash.CardFormState
   #if compiler(>=5.3) && $AsyncAwait
-  func collect(fields: [MoneyHash.CardFieldType : Swift.String], token: Swift.String, intentID: Swift.String) async throws -> MoneyHash.VaultData?
+  func collect(fields: [MoneyHash.CardFieldType : Swift.String], token: Swift.String, intentID: Swift.String, shouldSaveCard: Swift.Bool) async throws -> MoneyHash.VaultData?
+  #endif
+  func setLocale(_ locale: MoneyHashShared.Locale)
+  #if compiler(>=5.3) && $AsyncAwait
+  func updateFees(intentId: Swift.String, fees: [MoneyHash.FeeItem]) async throws -> MoneyHash.FeesData?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func updateDiscount(intentId: Swift.String, discount: MoneyHash.DiscountItem) async throws -> MoneyHash.DiscountData?
   #endif
 }
 public struct EmbedLoaderStyle : Swift.Codable {
@@ -244,6 +274,8 @@ public enum ErrorType : Swift.String, Swift.Codable {
   }
 }
 public struct ErrorInfo : Swift.Codable {
+  public let key: Swift.String
+  public let message: Swift.String
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -327,8 +359,15 @@ public struct PayoutMethod : MoneyHash.MoneyHashMethod, Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct FeeItem : Swift.Codable {
-  public let title: [MoneyHash.Language : Swift.String]
-  public let value: Swift.String
+  public let title: [MoneyHash.Language : Swift.String]?
+  public let value: Swift.String?
+  public init(title: [MoneyHash.Language : Swift.String]?, value: Swift.String?)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FeesData : Swift.Codable {
+  public let amount: Swift.String?
+  public let fees: [MoneyHash.FeeItem]?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -393,6 +432,7 @@ public struct SavedCard : Swift.Codable {
   public let requireCvv: Swift.Bool?
   public let cvvConfig: MoneyHash.CvvConfig?
   public let type: MoneyHash.IntentMethodType?
+  public let first6Digits: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -551,6 +591,9 @@ public struct AmountData : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+extension MoneyHash.DiscountType : Swift.Equatable {}
+extension MoneyHash.DiscountType : Swift.Hashable {}
+extension MoneyHash.DiscountType : Swift.RawRepresentable {}
 extension MoneyHash.InputFieldType : Swift.Equatable {}
 extension MoneyHash.InputFieldType : Swift.Hashable {}
 extension MoneyHash.ErrorType : Swift.Equatable {}

@@ -115,6 +115,8 @@ public enum Skie {
     }
     public enum IntentStateDetails {
     }
+    public enum RequestContent {
+    }
     public enum NativePayData {
     }
     public enum CardBrand {
@@ -443,6 +445,14 @@ extension MoneyHashShared.PaymentUseCase {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func submitPaymentReceipt(paymentIntentId: Swift.String, receipt: Swift.String) async throws -> MoneyHashShared.PaymentInformation
   #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func updateDiscount(intentId: Swift.String, discount: MoneyHashShared.DiscountItem) async throws -> MoneyHashShared.DiscountResponse
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func updateFees(intentId: Swift.String, fees: [MoneyHashShared.FeeItem]) async throws -> MoneyHashShared.FeesResponse
+  #endif
 }
 extension MoneyHashShared.PaymentService {
   #if compiler(>=5.3) && $AsyncAwait
@@ -480,6 +490,14 @@ extension MoneyHashShared.PaymentService {
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func submitReceipt(paymentIntentId: Swift.String, receipt: Swift.String) async throws -> MoneyHashShared.PaymentInformation
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func updateDiscount(intentId: Swift.String, discount: MoneyHashShared.DiscountItem) async throws -> MoneyHashShared.DiscountResponse
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func updateFees(intentId: Swift.String, fees: [MoneyHashShared.FeeItem]) async throws -> MoneyHashShared.FeesResponse
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -668,6 +686,28 @@ extension MoneyHashShared.Ktor_client_coreHttpClientEngine {
   public func execute(data: MoneyHashShared.Ktor_client_coreHttpRequestData) async throws -> MoneyHashShared.Ktor_client_coreHttpResponseData
   #endif
 }
+extension MoneyHashShared.BaseService {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func delete(requestBuilder: @escaping (MoneyHashShared.RequestBuilder) -> Swift.Void) async throws -> Any?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func get(requestBuilder: @escaping (MoneyHashShared.RequestBuilder) -> Swift.Void) async throws -> Any?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func patch(requestBuilder: @escaping (MoneyHashShared.RequestBuilder) -> Swift.Void) async throws -> Any?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func post(requestBuilder: @escaping (MoneyHashShared.RequestBuilder) -> Swift.Void) async throws -> Any?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func put(requestBuilder: @escaping (MoneyHashShared.RequestBuilder) -> Swift.Void) async throws -> Any?
+  #endif
+}
 extension MoneyHashShared.VaultService {
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -677,13 +717,13 @@ extension MoneyHashShared.VaultService {
 extension MoneyHashShared.CardFieldsCollector {
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func collect(fields: [MoneyHashShared.FieldType : Swift.String], token: Swift.String, intentID: Swift.String) async throws -> MoneyHashShared.VaultData?
+  public func collect(fields: [MoneyHashShared.FieldType : Swift.String], token: Swift.String, intentID: Swift.String, shouldSaveCard: Swift.Bool) async throws -> MoneyHashShared.VaultData?
   #endif
 }
 extension MoneyHashShared.CardCollector {
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func collect(token: Swift.String, intentID: Swift.String) async throws -> MoneyHashShared.VaultData?
+  public func collect(token: Swift.String, intentID: Swift.String, shouldSaveCard: Swift.Bool) async throws -> MoneyHashShared.VaultData?
   #endif
 }
 extension MoneyHashShared.Ktor_httpOutgoingContent.ProtocolUpgrade {
@@ -1325,6 +1365,81 @@ extension MoneyHashShared.KotlinKVariance {
 extension MoneyHashShared.__KotlinKVariance {
   public func toSwiftEnum() -> MoneyHashShared.KotlinKVariance
 }
+@frozen public enum Language : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case arabic
+  case english
+  case french
+  public var isoCode: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static var companion: MoneyHashShared.__Language.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: MoneyHashShared.__Language, result: inout MoneyHashShared.Language?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.__Language, result: inout MoneyHashShared.Language?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.__Language?) -> MoneyHashShared.Language
+  public func _bridgeToObjectiveC() -> MoneyHashShared.__Language
+  public typealias _ObjectiveCType = MoneyHashShared.__Language
+  public typealias Companion = MoneyHashShared.__Language.Companion
+  public static func == (a: MoneyHashShared.Language, b: MoneyHashShared.Language) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [MoneyHashShared.Language]
+  public static var allCases: [MoneyHashShared.Language] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension MoneyHashShared.Language {
+  public func toKotlinEnum() -> MoneyHashShared.__Language
+}
+extension MoneyHashShared.__Language {
+  public func toSwiftEnum() -> MoneyHashShared.Language
+}
+@frozen public enum DiscountType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case amount
+  case percentage
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var type: Swift.String {
+    get
+  }
+  public static var companion: MoneyHashShared.__DiscountType.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: MoneyHashShared.__DiscountType, result: inout MoneyHashShared.DiscountType?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.__DiscountType, result: inout MoneyHashShared.DiscountType?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.__DiscountType?) -> MoneyHashShared.DiscountType
+  public func _bridgeToObjectiveC() -> MoneyHashShared.__DiscountType
+  public typealias _ObjectiveCType = MoneyHashShared.__DiscountType
+  public typealias Companion = MoneyHashShared.__DiscountType.Companion
+  public static func == (a: MoneyHashShared.DiscountType, b: MoneyHashShared.DiscountType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [MoneyHashShared.DiscountType]
+  public static var allCases: [MoneyHashShared.DiscountType] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension MoneyHashShared.DiscountType {
+  public func toKotlinEnum() -> MoneyHashShared.__DiscountType
+}
+extension MoneyHashShared.__DiscountType {
+  public func toSwiftEnum() -> MoneyHashShared.DiscountType
+}
 @frozen public enum IntentStatus : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
   case processed
   case unprocessed
@@ -1363,44 +1478,6 @@ extension MoneyHashShared.IntentStatus {
 }
 extension MoneyHashShared.__IntentStatus {
   public func toSwiftEnum() -> MoneyHashShared.IntentStatus
-}
-@frozen public enum Language : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
-  case arabic
-  case english
-  case french
-  public var isoCode: Swift.String {
-    get
-  }
-  public var name: Swift.String {
-    get
-  }
-  public var ordinal: Swift.Int32 {
-    get
-  }
-  public static var companion: MoneyHashShared.__Language.Companion {
-    get
-  }
-  public static func _forceBridgeFromObjectiveC(_ source: MoneyHashShared.__Language, result: inout MoneyHashShared.Language?)
-  public static func _conditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.__Language, result: inout MoneyHashShared.Language?) -> Swift.Bool
-  public static func _unconditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.__Language?) -> MoneyHashShared.Language
-  public func _bridgeToObjectiveC() -> MoneyHashShared.__Language
-  public typealias _ObjectiveCType = MoneyHashShared.__Language
-  public typealias Companion = MoneyHashShared.__Language.Companion
-  public static func == (a: MoneyHashShared.Language, b: MoneyHashShared.Language) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public typealias AllCases = [MoneyHashShared.Language]
-  public static var allCases: [MoneyHashShared.Language] {
-    get
-  }
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-extension MoneyHashShared.Language {
-  public func toKotlinEnum() -> MoneyHashShared.__Language
-}
-extension MoneyHashShared.__Language {
-  public func toSwiftEnum() -> MoneyHashShared.Language
 }
 @frozen public enum IntentState : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
   case methodSelection
@@ -1766,6 +1843,41 @@ extension MoneyHashShared.FieldType {
 extension MoneyHashShared.__FieldType {
   public func toSwiftEnum() -> MoneyHashShared.FieldType
 }
+@frozen public enum Locale : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case en
+  case ar
+  case fr
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static var companion: MoneyHashShared.__Locale.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: MoneyHashShared.__Locale, result: inout MoneyHashShared.Locale?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.__Locale, result: inout MoneyHashShared.Locale?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.__Locale?) -> MoneyHashShared.Locale
+  public func _bridgeToObjectiveC() -> MoneyHashShared.__Locale
+  public typealias _ObjectiveCType = MoneyHashShared.__Locale
+  public typealias Companion = MoneyHashShared.__Locale.Companion
+  public static func == (a: MoneyHashShared.Locale, b: MoneyHashShared.Locale) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [MoneyHashShared.Locale]
+  public static var allCases: [MoneyHashShared.Locale] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension MoneyHashShared.Locale {
+  public func toKotlinEnum() -> MoneyHashShared.__Locale
+}
+extension MoneyHashShared.__Locale {
+  public func toSwiftEnum() -> MoneyHashShared.Locale
+}
 @frozen public enum Ktor_utilsMonth : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
   case january
   case february
@@ -1963,6 +2075,21 @@ extension MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed where __Sealed : MoneyHashShared.IntentStateDetails
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed? where __Sealed : MoneyHashShared.IntentStateDetails
+extension MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.RequestContent {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case body(MoneyHashShared.RequestContentBody<Swift.AnyObject>)
+    case header(MoneyHashShared.RequestContent.Header)
+    case path(MoneyHashShared.RequestContent.Path)
+    case query(MoneyHashShared.RequestContent.Query)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.RequestContent.__Sealed, b: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.RequestContent.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.RequestContent.__Sealed where __Sealed : MoneyHashShared.RequestContent
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.RequestContent.__Sealed? where __Sealed : MoneyHashShared.RequestContent
 extension MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.NativePayData {
   @frozen public enum __Sealed : Swift.Hashable {
     case applePayData(MoneyHashShared.NativePayData.ApplePayData)
@@ -2161,8 +2288,9 @@ public var JsonWithIgnoredUnknownKeys: MoneyHashShared.Kotlinx_serialization_jso
 }
 public func getCurrentYearYY() -> Swift.Int32
 extension MoneyHashShared.KotlinKVariance : Swift.Sendable {}
-extension MoneyHashShared.IntentStatus : Swift.Sendable {}
 extension MoneyHashShared.Language : Swift.Sendable {}
+extension MoneyHashShared.DiscountType : Swift.Sendable {}
+extension MoneyHashShared.IntentStatus : Swift.Sendable {}
 extension MoneyHashShared.IntentState : Swift.Sendable {}
 extension MoneyHashShared.MethodType : Swift.Sendable {}
 extension MoneyHashShared.Type_ : Swift.Sendable {}
@@ -2172,6 +2300,7 @@ extension MoneyHashShared.Environment : Swift.Sendable {}
 extension MoneyHashShared.InputFieldType : Swift.Sendable {}
 extension MoneyHashShared.RenderStrategy : Swift.Sendable {}
 extension MoneyHashShared.FieldType : Swift.Sendable {}
+extension MoneyHashShared.Locale : Swift.Sendable {}
 extension MoneyHashShared.Ktor_utilsMonth : Swift.Sendable {}
 extension MoneyHashShared.Ktor_utilsWeekDay : Swift.Sendable {}
 extension MoneyHashShared.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed : Swift.Sendable {}

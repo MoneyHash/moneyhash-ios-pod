@@ -2321,6 +2321,817 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "DiscountType",
+        "printedName": "DiscountType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "amount",
+            "printedName": "amount",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHash.DiscountType.Type) -> MoneyHash.DiscountType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DiscountType",
+                    "printedName": "MoneyHash.DiscountType",
+                    "usr": "s:9MoneyHash12DiscountTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHash.DiscountType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DiscountType",
+                        "printedName": "MoneyHash.DiscountType",
+                        "usr": "s:9MoneyHash12DiscountTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9MoneyHash12DiscountTypeO6amountyA2CmF",
+            "mangledName": "$s9MoneyHash12DiscountTypeO6amountyA2CmF",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "percentage",
+            "printedName": "percentage",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHash.DiscountType.Type) -> MoneyHash.DiscountType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DiscountType",
+                    "printedName": "MoneyHash.DiscountType",
+                    "usr": "s:9MoneyHash12DiscountTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHash.DiscountType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DiscountType",
+                        "printedName": "MoneyHash.DiscountType",
+                        "usr": "s:9MoneyHash12DiscountTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9MoneyHash12DiscountTypeO10percentageyA2CmF",
+            "mangledName": "$s9MoneyHash12DiscountTypeO10percentageyA2CmF",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.DiscountType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DiscountType",
+                    "printedName": "MoneyHash.DiscountType",
+                    "usr": "s:9MoneyHash12DiscountTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash12DiscountTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s9MoneyHash12DiscountTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash12DiscountTypeO8rawValueSSvp",
+            "mangledName": "$s9MoneyHash12DiscountTypeO8rawValueSSvp",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash12DiscountTypeO8rawValueSSvg",
+                "mangledName": "$s9MoneyHash12DiscountTypeO8rawValueSSvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9MoneyHash12DiscountTypeO",
+        "mangledName": "$s9MoneyHash12DiscountTypeO",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DiscountItem",
+        "printedName": "DiscountItem",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[MoneyHash.Language : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[MoneyHash.Language : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Language",
+                        "printedName": "MoneyHash.Language",
+                        "usr": "s:9MoneyHash8LanguageO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash12DiscountItemV5titleSDyAA8LanguageOSSGSgvp",
+            "mangledName": "$s9MoneyHash12DiscountItemV5titleSDyAA8LanguageOSSGSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[MoneyHash.Language : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[MoneyHash.Language : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Language",
+                            "printedName": "MoneyHash.Language",
+                            "usr": "s:9MoneyHash8LanguageO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash12DiscountItemV5titleSDyAA8LanguageOSSGSgvg",
+                "mangledName": "$s9MoneyHash12DiscountItemV5titleSDyAA8LanguageOSSGSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.DiscountType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DiscountType",
+                    "printedName": "MoneyHash.DiscountType",
+                    "usr": "s:9MoneyHash12DiscountTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash12DiscountItemV4typeAA0C4TypeOSgvp",
+            "mangledName": "$s9MoneyHash12DiscountItemV4typeAA0C4TypeOSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MoneyHash.DiscountType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DiscountType",
+                        "printedName": "MoneyHash.DiscountType",
+                        "usr": "s:9MoneyHash12DiscountTypeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash12DiscountItemV4typeAA0C4TypeOSgvg",
+                "mangledName": "$s9MoneyHash12DiscountItemV4typeAA0C4TypeOSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash12DiscountItemV5valueSSSgvp",
+            "mangledName": "$s9MoneyHash12DiscountItemV5valueSSSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash12DiscountItemV5valueSSSgvg",
+                "mangledName": "$s9MoneyHash12DiscountItemV5valueSSSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(title:type:value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DiscountItem",
+                "printedName": "MoneyHash.DiscountItem",
+                "usr": "s:9MoneyHash12DiscountItemV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[MoneyHash.Language : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[MoneyHash.Language : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Language",
+                        "printedName": "MoneyHash.Language",
+                        "usr": "s:9MoneyHash8LanguageO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.DiscountType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DiscountType",
+                    "printedName": "MoneyHash.DiscountType",
+                    "usr": "s:9MoneyHash12DiscountTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash12DiscountItemV5title4type5valueACSDyAA8LanguageOSSGSg_AA0C4TypeOSgSSSgtcfc",
+            "mangledName": "$s9MoneyHash12DiscountItemV5title4type5valueACSDyAA8LanguageOSSGSg_AA0C4TypeOSgSSSgtcfc",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DiscountItem",
+                "printedName": "MoneyHash.DiscountItem",
+                "usr": "s:9MoneyHash12DiscountItemV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash12DiscountItemV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9MoneyHash12DiscountItemV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash12DiscountItemV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9MoneyHash12DiscountItemV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9MoneyHash12DiscountItemV",
+        "mangledName": "$s9MoneyHash12DiscountItemV",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DiscountData",
+        "printedName": "DiscountData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "amount",
+            "printedName": "amount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash12DiscountDataV6amountSSSgvp",
+            "mangledName": "$s9MoneyHash12DiscountDataV6amountSSSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash12DiscountDataV6amountSSSgvg",
+                "mangledName": "$s9MoneyHash12DiscountDataV6amountSSSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "discount",
+            "printedName": "discount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.DiscountItem?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DiscountItem",
+                    "printedName": "MoneyHash.DiscountItem",
+                    "usr": "s:9MoneyHash12DiscountItemV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash12DiscountDataV8discountAA0C4ItemVSgvp",
+            "mangledName": "$s9MoneyHash12DiscountDataV8discountAA0C4ItemVSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MoneyHash.DiscountItem?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DiscountItem",
+                        "printedName": "MoneyHash.DiscountItem",
+                        "usr": "s:9MoneyHash12DiscountItemV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash12DiscountDataV8discountAA0C4ItemVSgvg",
+                "mangledName": "$s9MoneyHash12DiscountDataV8discountAA0C4ItemVSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DiscountData",
+                "printedName": "MoneyHash.DiscountData",
+                "usr": "s:9MoneyHash12DiscountDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash12DiscountDataV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9MoneyHash12DiscountDataV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash12DiscountDataV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9MoneyHash12DiscountDataV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9MoneyHash12DiscountDataV",
+        "mangledName": "$s9MoneyHash12DiscountDataV",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MoneyHashShared",
+        "printedName": "MoneyHashShared",
+        "declKind": "Import",
+        "moduleName": "MoneyHash"
+      },
+      {
+        "kind": "TypeDecl",
         "name": "CardBrand",
         "printedName": "CardBrand",
         "children": [
@@ -7965,7 +8776,7 @@
           {
             "kind": "Function",
             "name": "collect",
-            "printedName": "collect(fields:token:intentID:)",
+            "printedName": "collect(fields:token:intentID:shouldSaveCard:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8012,11 +8823,147 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:9MoneyHash0aB3SDKP7collect6fields5token8intentIDAA9VaultDataVSgSDyAA13CardFieldTypeOSSG_S2StYaKF",
-            "mangledName": "$s9MoneyHash0aB3SDKP7collect6fields5token8intentIDAA9VaultDataVSgSDyAA13CardFieldTypeOSSG_S2StYaKF",
+            "usr": "s:9MoneyHash0aB3SDKP7collect6fields5token8intentID14shouldSaveCardAA9VaultDataVSgSDyAA0K9FieldTypeOSSG_S2SSbtYaKF",
+            "mangledName": "$s9MoneyHash0aB3SDKP7collect6fields5token8intentID14shouldSaveCardAA9VaultDataVSgSDyAA0K9FieldTypeOSSG_S2SSbtYaKF",
+            "moduleName": "MoneyHash",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
+            "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setLocale",
+            "printedName": "setLocale(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Locale",
+                "printedName": "MoneyHashShared.Locale",
+                "usr": "s:15MoneyHashShared6LocaleO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash0aB3SDKP9setLocaleyy0aB6Shared0E0OF",
+            "mangledName": "$s9MoneyHash0aB3SDKP9setLocaleyy0aB6Shared0E0OF",
+            "moduleName": "MoneyHash",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
+            "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateFees",
+            "printedName": "updateFees(intentId:fees:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.FeesData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FeesData",
+                    "printedName": "MoneyHash.FeesData",
+                    "usr": "s:9MoneyHash8FeesDataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[MoneyHash.FeeItem]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FeeItem",
+                    "printedName": "MoneyHash.FeeItem",
+                    "usr": "s:9MoneyHash7FeeItemV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash0aB3SDKP10updateFees8intentId4feesAA0E4DataVSgSS_SayAA7FeeItemVGtYaKF",
+            "mangledName": "$s9MoneyHash0aB3SDKP10updateFees8intentId4feesAA0E4DataVSgSS_SayAA7FeeItemVGtYaKF",
+            "moduleName": "MoneyHash",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
+            "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateDiscount",
+            "printedName": "updateDiscount(intentId:discount:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.DiscountData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DiscountData",
+                    "printedName": "MoneyHash.DiscountData",
+                    "usr": "s:9MoneyHash12DiscountDataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DiscountItem",
+                "printedName": "MoneyHash.DiscountItem",
+                "usr": "s:9MoneyHash12DiscountItemV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash0aB3SDKP14updateDiscount8intentId8discountAA0E4DataVSgSS_AA0E4ItemVtYaKF",
+            "mangledName": "$s9MoneyHash0aB3SDKP14updateDiscount8intentId8discountAA0E4DataVSgSS_AA0E4ItemVtYaKF",
             "moduleName": "MoneyHash",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
             "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
@@ -8942,6 +9889,96 @@
         "name": "ErrorInfo",
         "printedName": "ErrorInfo",
         "children": [
+          {
+            "kind": "Var",
+            "name": "key",
+            "printedName": "key",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash9ErrorInfoV3keySSvp",
+            "mangledName": "$s9MoneyHash9ErrorInfoV3keySSvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash9ErrorInfoV3keySSvg",
+                "mangledName": "$s9MoneyHash9ErrorInfoV3keySSvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash9ErrorInfoV7messageSSvp",
+            "mangledName": "$s9MoneyHash9ErrorInfoV7messageSSvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash9ErrorInfoV7messageSSvg",
+                "mangledName": "$s9MoneyHash9ErrorInfoV7messageSSvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -12330,41 +13367,8 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[MoneyHash.Language : Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Language",
-                    "printedName": "MoneyHash.Language",
-                    "usr": "s:9MoneyHash8LanguageO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:9MoneyHash7FeeItemV5titleSDyAA8LanguageOSSGvp",
-            "mangledName": "$s9MoneyHash7FeeItemV5titleSDyAA8LanguageOSSGvp",
-            "moduleName": "MoneyHash",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
+                "name": "Optional",
+                "printedName": "[MoneyHash.Language : Swift.String]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -12387,30 +13391,12 @@
                     "usr": "s:SD"
                   }
                 ],
-                "declKind": "Accessor",
-                "usr": "s:9MoneyHash7FeeItemV5titleSDyAA8LanguageOSSGvg",
-                "mangledName": "$s9MoneyHash7FeeItemV5titleSDyAA8LanguageOSSGvg",
-                "moduleName": "MoneyHash",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "value",
-            "printedName": "value",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:9MoneyHash7FeeItemV5valueSSvp",
-            "mangledName": "$s9MoneyHash7FeeItemV5valueSSvp",
+            "usr": "s:9MoneyHash7FeeItemV5titleSDyAA8LanguageOSSGSgvp",
+            "mangledName": "$s9MoneyHash7FeeItemV5titleSDyAA8LanguageOSSGSgvp",
             "moduleName": "MoneyHash",
             "declAttributes": [
               "HasStorage",
@@ -12427,19 +13413,165 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "[MoneyHash.Language : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[MoneyHash.Language : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Language",
+                            "printedName": "MoneyHash.Language",
+                            "usr": "s:9MoneyHash8LanguageO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9MoneyHash7FeeItemV5valueSSvg",
-                "mangledName": "$s9MoneyHash7FeeItemV5valueSSvg",
+                "usr": "s:9MoneyHash7FeeItemV5titleSDyAA8LanguageOSSGSgvg",
+                "mangledName": "$s9MoneyHash7FeeItemV5titleSDyAA8LanguageOSSGSgvg",
                 "moduleName": "MoneyHash",
                 "implicit": true,
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash7FeeItemV5valueSSSgvp",
+            "mangledName": "$s9MoneyHash7FeeItemV5valueSSSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash7FeeItemV5valueSSSgvg",
+                "mangledName": "$s9MoneyHash7FeeItemV5valueSSSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(title:value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FeeItem",
+                "printedName": "MoneyHash.FeeItem",
+                "usr": "s:9MoneyHash7FeeItemV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[MoneyHash.Language : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[MoneyHash.Language : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Language",
+                        "printedName": "MoneyHash.Language",
+                        "usr": "s:9MoneyHash8LanguageO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash7FeeItemV5title5valueACSDyAA8LanguageOSSGSg_SSSgtcfc",
+            "mangledName": "$s9MoneyHash7FeeItemV5title5valueACSDyAA8LanguageOSSGSg_SSSgtcfc",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
           },
           {
             "kind": "Constructor",
@@ -12496,6 +13628,226 @@
         "declKind": "Struct",
         "usr": "s:9MoneyHash7FeeItemV",
         "mangledName": "$s9MoneyHash7FeeItemV",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FeesData",
+        "printedName": "FeesData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "amount",
+            "printedName": "amount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash8FeesDataV6amountSSSgvp",
+            "mangledName": "$s9MoneyHash8FeesDataV6amountSSSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash8FeesDataV6amountSSSgvg",
+                "mangledName": "$s9MoneyHash8FeesDataV6amountSSSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fees",
+            "printedName": "fees",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[MoneyHash.FeeItem]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[MoneyHash.FeeItem]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FeeItem",
+                        "printedName": "MoneyHash.FeeItem",
+                        "usr": "s:9MoneyHash7FeeItemV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash8FeesDataV4feesSayAA7FeeItemVGSgvp",
+            "mangledName": "$s9MoneyHash8FeesDataV4feesSayAA7FeeItemVGSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[MoneyHash.FeeItem]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[MoneyHash.FeeItem]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "FeeItem",
+                            "printedName": "MoneyHash.FeeItem",
+                            "usr": "s:9MoneyHash7FeeItemV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash8FeesDataV4feesSayAA7FeeItemVGSgvg",
+                "mangledName": "$s9MoneyHash8FeesDataV4feesSayAA7FeeItemVGSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FeesData",
+                "printedName": "MoneyHash.FeesData",
+                "usr": "s:9MoneyHash8FeesDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash8FeesDataV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9MoneyHash8FeesDataV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash8FeesDataV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9MoneyHash8FeesDataV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9MoneyHash8FeesDataV",
+        "mangledName": "$s9MoneyHash8FeesDataV",
         "moduleName": "MoneyHash",
         "declAttributes": [
           "AccessControl",
@@ -15272,6 +16624,67 @@
                 "declKind": "Accessor",
                 "usr": "s:9MoneyHash9SavedCardV4typeAA16IntentMethodTypeOSgvg",
                 "mangledName": "$s9MoneyHash9SavedCardV4typeAA16IntentMethodTypeOSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "first6Digits",
+            "printedName": "first6Digits",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash9SavedCardV12first6DigitsSSSgvp",
+            "mangledName": "$s9MoneyHash9SavedCardV12first6DigitsSSSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash9SavedCardV12first6DigitsSSSgvg",
+                "mangledName": "$s9MoneyHash9SavedCardV12first6DigitsSSSgvg",
                 "moduleName": "MoneyHash",
                 "implicit": true,
                 "accessorKind": "get"
@@ -19672,6 +21085,13 @@
       },
       {
         "kind": "Import",
+        "name": "MoneyHashShared",
+        "printedName": "MoneyHashShared",
+        "declKind": "Import",
+        "moduleName": "MoneyHash"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -21500,6 +22920,34 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Discount.swift",
+      "kind": "StringLiteral",
+      "offset": 334,
+      "length": 8,
+      "value": "\"amount\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Discount.swift",
+      "kind": "StringLiteral",
+      "offset": 432,
+      "length": 12,
+      "value": "\"percentage\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Discount.swift",
+      "kind": "StringLiteral",
+      "offset": 334,
+      "length": 8,
+      "value": "\"amount\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Discount.swift",
+      "kind": "StringLiteral",
+      "offset": 432,
+      "length": 12,
+      "value": "\"percentage\""
+    },
+    {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/CardBrands.swift",
       "kind": "StringLiteral",
       "offset": 393,
@@ -22797,84 +24245,98 @@
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2432,
+      "offset": 2590,
       "length": 8,
       "value": "\"last_4\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2468,
+      "offset": 2626,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2509,
+      "offset": 2667,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2588,
+      "offset": 2746,
       "length": 13,
       "value": "\"require_cvv\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2627,
+      "offset": 2785,
       "length": 12,
       "value": "\"cvv_config\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2432,
+      "offset": 2844,
+      "length": 5,
+      "value": "\"bin\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
+      "kind": "StringLiteral",
+      "offset": 2590,
       "length": 8,
       "value": "\"last_4\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2468,
+      "offset": 2626,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2509,
+      "offset": 2667,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2588,
+      "offset": 2746,
       "length": 13,
       "value": "\"require_cvv\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2627,
+      "offset": 2785,
       "length": 12,
       "value": "\"cvv_config\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 3173,
+      "offset": 2844,
+      "length": 5,
+      "value": "\"bin\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
+      "kind": "StringLiteral",
+      "offset": 3365,
       "length": 14,
       "value": "\"digits_count\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 3173,
+      "offset": 3365,
       "length": 14,
       "value": "\"digits_count\""
     },
@@ -22933,13 +24395,6 @@
       "offset": 1675,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 1702,
-      "length": 31,
-      "value": "\"Swapping time and environment\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
@@ -23210,7 +24665,7 @@
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Services \/ApplePayService.swift",
       "kind": "BooleanLiteral",
-      "offset": 1773,
+      "offset": 1796,
       "length": 5,
       "value": "false"
     },

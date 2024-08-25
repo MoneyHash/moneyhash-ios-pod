@@ -25878,6 +25878,662 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "DiscountType",
+        "printedName": "DiscountType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "amount",
+            "printedName": "amount",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHashShared.DiscountType.Type) -> MoneyHashShared.DiscountType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DiscountType",
+                    "printedName": "MoneyHashShared.DiscountType",
+                    "usr": "s:15MoneyHashShared12DiscountTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHashShared.DiscountType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DiscountType",
+                        "printedName": "MoneyHashShared.DiscountType",
+                        "usr": "s:15MoneyHashShared12DiscountTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MoneyHashShared12DiscountTypeO6amountyA2CmF",
+            "mangledName": "$s15MoneyHashShared12DiscountTypeO6amountyA2CmF",
+            "moduleName": "MoneyHashShared",
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "percentage",
+            "printedName": "percentage",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHashShared.DiscountType.Type) -> MoneyHashShared.DiscountType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DiscountType",
+                    "printedName": "MoneyHashShared.DiscountType",
+                    "usr": "s:15MoneyHashShared12DiscountTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHashShared.DiscountType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DiscountType",
+                        "printedName": "MoneyHashShared.DiscountType",
+                        "usr": "s:15MoneyHashShared12DiscountTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MoneyHashShared12DiscountTypeO10percentageyA2CmF",
+            "mangledName": "$s15MoneyHashShared12DiscountTypeO10percentageyA2CmF",
+            "moduleName": "MoneyHashShared",
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MoneyHashShared12DiscountTypeO4nameSSvp",
+            "mangledName": "$s15MoneyHashShared12DiscountTypeO4nameSSvp",
+            "moduleName": "MoneyHashShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MoneyHashShared12DiscountTypeO4nameSSvg",
+                "mangledName": "$s15MoneyHashShared12DiscountTypeO4nameSSvg",
+                "moduleName": "MoneyHashShared",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ordinal",
+            "printedName": "ordinal",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MoneyHashShared12DiscountTypeO7ordinals5Int32Vvp",
+            "mangledName": "$s15MoneyHashShared12DiscountTypeO7ordinals5Int32Vvp",
+            "moduleName": "MoneyHashShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MoneyHashShared12DiscountTypeO7ordinals5Int32Vvg",
+                "mangledName": "$s15MoneyHashShared12DiscountTypeO7ordinals5Int32Vvg",
+                "moduleName": "MoneyHashShared",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MoneyHashShared12DiscountTypeO4typeSSvp",
+            "mangledName": "$s15MoneyHashShared12DiscountTypeO4typeSSvp",
+            "moduleName": "MoneyHashShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MoneyHashShared12DiscountTypeO4typeSSvg",
+                "mangledName": "$s15MoneyHashShared12DiscountTypeO4typeSSvg",
+                "moduleName": "MoneyHashShared",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "companion",
+            "printedName": "companion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Companion",
+                "printedName": "MoneyHashShared.__DiscountType.Companion",
+                "usr": "c:objc(cs)MHSDiscountTypeCompanion"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MoneyHashShared12DiscountTypeO9companionSo011MHSDiscountE9CompanionCvpZ",
+            "mangledName": "$s15MoneyHashShared12DiscountTypeO9companionSo011MHSDiscountE9CompanionCvpZ",
+            "moduleName": "MoneyHashShared",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Companion",
+                    "printedName": "MoneyHashShared.__DiscountType.Companion",
+                    "usr": "c:objc(cs)MHSDiscountTypeCompanion"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MoneyHashShared12DiscountTypeO9companionSo011MHSDiscountE9CompanionCvgZ",
+                "mangledName": "$s15MoneyHashShared12DiscountTypeO9companionSo011MHSDiscountE9CompanionCvgZ",
+                "moduleName": "MoneyHashShared",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "_forceBridgeFromObjectiveC",
+            "printedName": "_forceBridgeFromObjectiveC(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "__DiscountType",
+                "printedName": "MoneyHashShared.__DiscountType",
+                "usr": "c:objc(cs)MHSDiscountType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.DiscountType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DiscountType",
+                    "printedName": "MoneyHashShared.DiscountType",
+                    "usr": "s:15MoneyHashShared12DiscountTypeO"
+                  }
+                ],
+                "paramValueOwnership": "InOut",
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MoneyHashShared12DiscountTypeO26_forceBridgeFromObjectiveC_6resultySo011MHSDiscountE0C_ACSgztFZ",
+            "mangledName": "$s15MoneyHashShared12DiscountTypeO26_forceBridgeFromObjectiveC_6resultySo011MHSDiscountE0C_ACSgztFZ",
+            "moduleName": "MoneyHashShared",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_conditionallyBridgeFromObjectiveC",
+            "printedName": "_conditionallyBridgeFromObjectiveC(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "__DiscountType",
+                "printedName": "MoneyHashShared.__DiscountType",
+                "usr": "c:objc(cs)MHSDiscountType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.DiscountType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DiscountType",
+                    "printedName": "MoneyHashShared.DiscountType",
+                    "usr": "s:15MoneyHashShared12DiscountTypeO"
+                  }
+                ],
+                "paramValueOwnership": "InOut",
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MoneyHashShared12DiscountTypeO34_conditionallyBridgeFromObjectiveC_6resultSbSo011MHSDiscountE0C_ACSgztFZ",
+            "mangledName": "$s15MoneyHashShared12DiscountTypeO34_conditionallyBridgeFromObjectiveC_6resultSbSo011MHSDiscountE0C_ACSgztFZ",
+            "moduleName": "MoneyHashShared",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_unconditionallyBridgeFromObjectiveC",
+            "printedName": "_unconditionallyBridgeFromObjectiveC(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DiscountType",
+                "printedName": "MoneyHashShared.DiscountType",
+                "usr": "s:15MoneyHashShared12DiscountTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.__DiscountType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__DiscountType",
+                    "printedName": "MoneyHashShared.__DiscountType",
+                    "usr": "c:objc(cs)MHSDiscountType"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MoneyHashShared12DiscountTypeO36_unconditionallyBridgeFromObjectiveCyACSo011MHSDiscountE0CSgFZ",
+            "mangledName": "$s15MoneyHashShared12DiscountTypeO36_unconditionallyBridgeFromObjectiveCyACSo011MHSDiscountE0CSgFZ",
+            "moduleName": "MoneyHashShared",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_bridgeToObjectiveC",
+            "printedName": "_bridgeToObjectiveC()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__DiscountType",
+                "printedName": "MoneyHashShared.__DiscountType",
+                "usr": "c:objc(cs)MHSDiscountType"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MoneyHashShared12DiscountTypeO19_bridgeToObjectiveCSo011MHSDiscountE0CyF",
+            "mangledName": "$s15MoneyHashShared12DiscountTypeO19_bridgeToObjectiveCSo011MHSDiscountE0CyF",
+            "moduleName": "MoneyHashShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DiscountType",
+                "printedName": "MoneyHashShared.DiscountType",
+                "usr": "s:15MoneyHashShared12DiscountTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DiscountType",
+                "printedName": "MoneyHashShared.DiscountType",
+                "usr": "s:15MoneyHashShared12DiscountTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MoneyHashShared12DiscountTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s15MoneyHashShared12DiscountTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "MoneyHashShared",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MoneyHashShared12DiscountTypeO9hashValueSivp",
+            "mangledName": "$s15MoneyHashShared12DiscountTypeO9hashValueSivp",
+            "moduleName": "MoneyHashShared",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MoneyHashShared12DiscountTypeO9hashValueSivg",
+                "mangledName": "$s15MoneyHashShared12DiscountTypeO9hashValueSivg",
+                "moduleName": "MoneyHashShared",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MoneyHashShared12DiscountTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s15MoneyHashShared12DiscountTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "MoneyHashShared",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[MoneyHashShared.DiscountType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DiscountType",
+                    "printedName": "MoneyHashShared.DiscountType",
+                    "usr": "s:15MoneyHashShared12DiscountTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MoneyHashShared12DiscountTypeO8allCasesSayACGvpZ",
+            "mangledName": "$s15MoneyHashShared12DiscountTypeO8allCasesSayACGvpZ",
+            "moduleName": "MoneyHashShared",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[MoneyHashShared.DiscountType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DiscountType",
+                        "printedName": "MoneyHashShared.DiscountType",
+                        "usr": "s:15MoneyHashShared12DiscountTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MoneyHashShared12DiscountTypeO8allCasesSayACGvgZ",
+                "mangledName": "$s15MoneyHashShared12DiscountTypeO8allCasesSayACGvgZ",
+                "moduleName": "MoneyHashShared",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "toKotlinEnum",
+            "printedName": "toKotlinEnum()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__DiscountType",
+                "printedName": "MoneyHashShared.__DiscountType",
+                "usr": "c:objc(cs)MHSDiscountType"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MoneyHashShared12DiscountTypeO12toKotlinEnumSo011MHSDiscountE0CyF",
+            "mangledName": "$s15MoneyHashShared12DiscountTypeO12toKotlinEnumSo011MHSDiscountE0CyF",
+            "moduleName": "MoneyHashShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15MoneyHashShared12DiscountTypeO",
+        "mangledName": "$s15MoneyHashShared12DiscountTypeO",
+        "moduleName": "MoneyHashShared",
+        "declAttributes": [
+          "AccessControl",
+          "Frozen"
+        ],
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[MoneyHashShared.DiscountType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DiscountType",
+                        "printedName": "MoneyHashShared.DiscountType",
+                        "usr": "s:15MoneyHashShared12DiscountTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__DiscountType",
+                    "printedName": "MoneyHashShared.__DiscountType",
+                    "usr": "c:objc(cs)MHSDiscountType"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoneyHashShared",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "Language",
         "printedName": "Language",
         "children": [
@@ -26544,662 +27200,6 @@
                     "name": "__Language",
                     "printedName": "MoneyHashShared.__Language",
                     "usr": "c:objc(cs)MHSLanguage"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s21_ObjectiveCBridgeableP",
-            "mangledName": "$ss21_ObjectiveCBridgeableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MoneyHashShared",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "DiscountType",
-        "printedName": "DiscountType",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "amount",
-            "printedName": "amount",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(MoneyHashShared.DiscountType.Type) -> MoneyHashShared.DiscountType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DiscountType",
-                    "printedName": "MoneyHashShared.DiscountType",
-                    "usr": "s:15MoneyHashShared12DiscountTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "MoneyHashShared.DiscountType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DiscountType",
-                        "printedName": "MoneyHashShared.DiscountType",
-                        "usr": "s:15MoneyHashShared12DiscountTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:15MoneyHashShared12DiscountTypeO6amountyA2CmF",
-            "mangledName": "$s15MoneyHashShared12DiscountTypeO6amountyA2CmF",
-            "moduleName": "MoneyHashShared",
-            "fixedbinaryorder": 0
-          },
-          {
-            "kind": "Var",
-            "name": "percentage",
-            "printedName": "percentage",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(MoneyHashShared.DiscountType.Type) -> MoneyHashShared.DiscountType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DiscountType",
-                    "printedName": "MoneyHashShared.DiscountType",
-                    "usr": "s:15MoneyHashShared12DiscountTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "MoneyHashShared.DiscountType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DiscountType",
-                        "printedName": "MoneyHashShared.DiscountType",
-                        "usr": "s:15MoneyHashShared12DiscountTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:15MoneyHashShared12DiscountTypeO10percentageyA2CmF",
-            "mangledName": "$s15MoneyHashShared12DiscountTypeO10percentageyA2CmF",
-            "moduleName": "MoneyHashShared",
-            "fixedbinaryorder": 1
-          },
-          {
-            "kind": "Var",
-            "name": "name",
-            "printedName": "name",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15MoneyHashShared12DiscountTypeO4nameSSvp",
-            "mangledName": "$s15MoneyHashShared12DiscountTypeO4nameSSvp",
-            "moduleName": "MoneyHashShared",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15MoneyHashShared12DiscountTypeO4nameSSvg",
-                "mangledName": "$s15MoneyHashShared12DiscountTypeO4nameSSvg",
-                "moduleName": "MoneyHashShared",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "ordinal",
-            "printedName": "ordinal",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int32",
-                "printedName": "Swift.Int32",
-                "usr": "s:s5Int32V"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15MoneyHashShared12DiscountTypeO7ordinals5Int32Vvp",
-            "mangledName": "$s15MoneyHashShared12DiscountTypeO7ordinals5Int32Vvp",
-            "moduleName": "MoneyHashShared",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int32",
-                    "printedName": "Swift.Int32",
-                    "usr": "s:s5Int32V"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15MoneyHashShared12DiscountTypeO7ordinals5Int32Vvg",
-                "mangledName": "$s15MoneyHashShared12DiscountTypeO7ordinals5Int32Vvg",
-                "moduleName": "MoneyHashShared",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "type",
-            "printedName": "type",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15MoneyHashShared12DiscountTypeO4typeSSvp",
-            "mangledName": "$s15MoneyHashShared12DiscountTypeO4typeSSvp",
-            "moduleName": "MoneyHashShared",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15MoneyHashShared12DiscountTypeO4typeSSvg",
-                "mangledName": "$s15MoneyHashShared12DiscountTypeO4typeSSvg",
-                "moduleName": "MoneyHashShared",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "companion",
-            "printedName": "companion",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Companion",
-                "printedName": "MoneyHashShared.__DiscountType.Companion",
-                "usr": "c:objc(cs)MHSDiscountTypeCompanion"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15MoneyHashShared12DiscountTypeO9companionSo011MHSDiscountE9CompanionCvpZ",
-            "mangledName": "$s15MoneyHashShared12DiscountTypeO9companionSo011MHSDiscountE9CompanionCvpZ",
-            "moduleName": "MoneyHashShared",
-            "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Companion",
-                    "printedName": "MoneyHashShared.__DiscountType.Companion",
-                    "usr": "c:objc(cs)MHSDiscountTypeCompanion"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15MoneyHashShared12DiscountTypeO9companionSo011MHSDiscountE9CompanionCvgZ",
-                "mangledName": "$s15MoneyHashShared12DiscountTypeO9companionSo011MHSDiscountE9CompanionCvgZ",
-                "moduleName": "MoneyHashShared",
-                "static": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "_forceBridgeFromObjectiveC",
-            "printedName": "_forceBridgeFromObjectiveC(_:result:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "__DiscountType",
-                "printedName": "MoneyHashShared.__DiscountType",
-                "usr": "c:objc(cs)MHSDiscountType"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "MoneyHashShared.DiscountType?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DiscountType",
-                    "printedName": "MoneyHashShared.DiscountType",
-                    "usr": "s:15MoneyHashShared12DiscountTypeO"
-                  }
-                ],
-                "paramValueOwnership": "InOut",
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15MoneyHashShared12DiscountTypeO26_forceBridgeFromObjectiveC_6resultySo011MHSDiscountE0C_ACSgztFZ",
-            "mangledName": "$s15MoneyHashShared12DiscountTypeO26_forceBridgeFromObjectiveC_6resultySo011MHSDiscountE0C_ACSgztFZ",
-            "moduleName": "MoneyHashShared",
-            "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "_conditionallyBridgeFromObjectiveC",
-            "printedName": "_conditionallyBridgeFromObjectiveC(_:result:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "__DiscountType",
-                "printedName": "MoneyHashShared.__DiscountType",
-                "usr": "c:objc(cs)MHSDiscountType"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "MoneyHashShared.DiscountType?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DiscountType",
-                    "printedName": "MoneyHashShared.DiscountType",
-                    "usr": "s:15MoneyHashShared12DiscountTypeO"
-                  }
-                ],
-                "paramValueOwnership": "InOut",
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15MoneyHashShared12DiscountTypeO34_conditionallyBridgeFromObjectiveC_6resultSbSo011MHSDiscountE0C_ACSgztFZ",
-            "mangledName": "$s15MoneyHashShared12DiscountTypeO34_conditionallyBridgeFromObjectiveC_6resultSbSo011MHSDiscountE0C_ACSgztFZ",
-            "moduleName": "MoneyHashShared",
-            "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "_unconditionallyBridgeFromObjectiveC",
-            "printedName": "_unconditionallyBridgeFromObjectiveC(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DiscountType",
-                "printedName": "MoneyHashShared.DiscountType",
-                "usr": "s:15MoneyHashShared12DiscountTypeO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "MoneyHashShared.__DiscountType?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "__DiscountType",
-                    "printedName": "MoneyHashShared.__DiscountType",
-                    "usr": "c:objc(cs)MHSDiscountType"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15MoneyHashShared12DiscountTypeO36_unconditionallyBridgeFromObjectiveCyACSo011MHSDiscountE0CSgFZ",
-            "mangledName": "$s15MoneyHashShared12DiscountTypeO36_unconditionallyBridgeFromObjectiveCyACSo011MHSDiscountE0CSgFZ",
-            "moduleName": "MoneyHashShared",
-            "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "_bridgeToObjectiveC",
-            "printedName": "_bridgeToObjectiveC()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "__DiscountType",
-                "printedName": "MoneyHashShared.__DiscountType",
-                "usr": "c:objc(cs)MHSDiscountType"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15MoneyHashShared12DiscountTypeO19_bridgeToObjectiveCSo011MHSDiscountE0CyF",
-            "mangledName": "$s15MoneyHashShared12DiscountTypeO19_bridgeToObjectiveCSo011MHSDiscountE0CyF",
-            "moduleName": "MoneyHashShared",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "DiscountType",
-                "printedName": "MoneyHashShared.DiscountType",
-                "usr": "s:15MoneyHashShared12DiscountTypeO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "DiscountType",
-                "printedName": "MoneyHashShared.DiscountType",
-                "usr": "s:15MoneyHashShared12DiscountTypeO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15MoneyHashShared12DiscountTypeO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s15MoneyHashShared12DiscountTypeO2eeoiySbAC_ACtFZ",
-            "moduleName": "MoneyHashShared",
-            "static": true,
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "hashValue",
-            "printedName": "hashValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15MoneyHashShared12DiscountTypeO9hashValueSivp",
-            "mangledName": "$s15MoneyHashShared12DiscountTypeO9hashValueSivp",
-            "moduleName": "MoneyHashShared",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15MoneyHashShared12DiscountTypeO9hashValueSivg",
-                "mangledName": "$s15MoneyHashShared12DiscountTypeO9hashValueSivg",
-                "moduleName": "MoneyHashShared",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "hash",
-            "printedName": "hash(into:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Hasher",
-                "printedName": "Swift.Hasher",
-                "paramValueOwnership": "InOut",
-                "usr": "s:s6HasherV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15MoneyHashShared12DiscountTypeO4hash4intoys6HasherVz_tF",
-            "mangledName": "$s15MoneyHashShared12DiscountTypeO4hash4intoys6HasherVz_tF",
-            "moduleName": "MoneyHashShared",
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "allCases",
-            "printedName": "allCases",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[MoneyHashShared.DiscountType]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DiscountType",
-                    "printedName": "MoneyHashShared.DiscountType",
-                    "usr": "s:15MoneyHashShared12DiscountTypeO"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15MoneyHashShared12DiscountTypeO8allCasesSayACGvpZ",
-            "mangledName": "$s15MoneyHashShared12DiscountTypeO8allCasesSayACGvpZ",
-            "moduleName": "MoneyHashShared",
-            "static": true,
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[MoneyHashShared.DiscountType]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DiscountType",
-                        "printedName": "MoneyHashShared.DiscountType",
-                        "usr": "s:15MoneyHashShared12DiscountTypeO"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15MoneyHashShared12DiscountTypeO8allCasesSayACGvgZ",
-                "mangledName": "$s15MoneyHashShared12DiscountTypeO8allCasesSayACGvgZ",
-                "moduleName": "MoneyHashShared",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "toKotlinEnum",
-            "printedName": "toKotlinEnum()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "__DiscountType",
-                "printedName": "MoneyHashShared.__DiscountType",
-                "usr": "c:objc(cs)MHSDiscountType"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15MoneyHashShared12DiscountTypeO12toKotlinEnumSo011MHSDiscountE0CyF",
-            "mangledName": "$s15MoneyHashShared12DiscountTypeO12toKotlinEnumSo011MHSDiscountE0CyF",
-            "moduleName": "MoneyHashShared",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:15MoneyHashShared12DiscountTypeO",
-        "mangledName": "$s15MoneyHashShared12DiscountTypeO",
-        "moduleName": "MoneyHashShared",
-        "declAttributes": [
-          "AccessControl",
-          "Frozen"
-        ],
-        "isEnumExhaustive": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CaseIterable",
-            "printedName": "CaseIterable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "AllCases",
-                "printedName": "AllCases",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[MoneyHashShared.DiscountType]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DiscountType",
-                        "printedName": "MoneyHashShared.DiscountType",
-                        "usr": "s:15MoneyHashShared12DiscountTypeO"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s12CaseIterableP",
-            "mangledName": "$ss12CaseIterableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_ObjectiveCBridgeable",
-            "printedName": "_ObjectiveCBridgeable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "_ObjectiveCType",
-                "printedName": "_ObjectiveCType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "__DiscountType",
-                    "printedName": "MoneyHashShared.__DiscountType",
-                    "usr": "c:objc(cs)MHSDiscountType"
                   }
                 ]
               }
@@ -45146,8 +45146,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "__Language",
-        "printedName": "__Language",
+        "name": "__DiscountType",
+        "printedName": "__DiscountType",
         "children": [
           {
             "kind": "Function",
@@ -45156,14 +45156,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Language",
-                "printedName": "MoneyHashShared.Language",
-                "usr": "s:15MoneyHashShared8LanguageO"
+                "name": "DiscountType",
+                "printedName": "MoneyHashShared.DiscountType",
+                "usr": "s:15MoneyHashShared12DiscountTypeO"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So11MHSLanguageC15MoneyHashSharedE11toSwiftEnumAC8LanguageOyF",
-            "mangledName": "$sSo11MHSLanguageC15MoneyHashSharedE11toSwiftEnumAC8LanguageOyF",
+            "usr": "s:So15MHSDiscountTypeC15MoneyHashSharedE11toSwiftEnumAC08DiscountB0OyF",
+            "mangledName": "$sSo15MHSDiscountTypeC15MoneyHashSharedE11toSwiftEnumAC08DiscountB0OyF",
             "moduleName": "MoneyHashShared",
             "declAttributes": [
               "AccessControl"
@@ -45173,9 +45173,9 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:objc(cs)MHSLanguage",
+        "usr": "c:objc(cs)MHSDiscountType",
         "moduleName": "MoneyHashShared",
-        "objc_name": "MHSLanguage",
+        "objc_name": "MHSDiscountType",
         "declAttributes": [
           "ObjC",
           "Dynamic"
@@ -45184,7 +45184,7 @@
         "isExternal": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
-          "MoneyHashShared.KotlinEnum<MoneyHashShared.__Language>",
+          "MoneyHashShared.KotlinEnum<MoneyHashShared.__DiscountType>",
           "MoneyHashShared.KotlinBase",
           "ObjectiveC.NSObject"
         ],
@@ -45242,8 +45242,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "__DiscountType",
-        "printedName": "__DiscountType",
+        "name": "__Language",
+        "printedName": "__Language",
         "children": [
           {
             "kind": "Function",
@@ -45252,14 +45252,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "DiscountType",
-                "printedName": "MoneyHashShared.DiscountType",
-                "usr": "s:15MoneyHashShared12DiscountTypeO"
+                "name": "Language",
+                "printedName": "MoneyHashShared.Language",
+                "usr": "s:15MoneyHashShared8LanguageO"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So15MHSDiscountTypeC15MoneyHashSharedE11toSwiftEnumAC08DiscountB0OyF",
-            "mangledName": "$sSo15MHSDiscountTypeC15MoneyHashSharedE11toSwiftEnumAC08DiscountB0OyF",
+            "usr": "s:So11MHSLanguageC15MoneyHashSharedE11toSwiftEnumAC8LanguageOyF",
+            "mangledName": "$sSo11MHSLanguageC15MoneyHashSharedE11toSwiftEnumAC8LanguageOyF",
             "moduleName": "MoneyHashShared",
             "declAttributes": [
               "AccessControl"
@@ -45269,9 +45269,9 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:objc(cs)MHSDiscountType",
+        "usr": "c:objc(cs)MHSLanguage",
         "moduleName": "MoneyHashShared",
-        "objc_name": "MHSDiscountType",
+        "objc_name": "MHSLanguage",
         "declAttributes": [
           "ObjC",
           "Dynamic"
@@ -45280,7 +45280,7 @@
         "isExternal": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
-          "MoneyHashShared.KotlinEnum<MoneyHashShared.__DiscountType>",
+          "MoneyHashShared.KotlinEnum<MoneyHashShared.__Language>",
           "MoneyHashShared.KotlinBase",
           "ObjectiveC.NSObject"
         ],

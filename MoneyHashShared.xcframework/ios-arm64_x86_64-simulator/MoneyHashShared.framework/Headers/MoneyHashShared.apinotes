@@ -229,8 +229,6 @@ Classes:
     Parameters:
     - Position: 0
       Type: "MHSKotlinThrowable * _Nullable"
-- Name: "MHSKotlinNothing"
-  SwiftName: "KotlinNothing"
 - Name: "MHSKotlinEnum"
   SwiftName: "KotlinEnum"
   Properties:
@@ -275,6 +273,8 @@ Classes:
     ResultType: "NSString * _Nonnull"
 - Name: "MHSKotlinEnumCompanion"
   SwiftName: "KotlinEnumCompanion"
+- Name: "MHSKotlinNothing"
+  SwiftName: "KotlinNothing"
 - Name: "MHSKotlinPair"
   SwiftName: "KotlinPair"
   Properties:
@@ -1423,28 +1423,20 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "data"
     Type: "MHSFeesData * _Nullable"
-  - Name: "status"
-    PropertyKind: "Instance"
-    SwiftName: "status"
-    Type: "MHSStatus * _Nullable"
   Methods:
-  - Selector: "initWithData:status:"
+  - Selector: "initWithData:"
     MethodKind: "Instance"
-    SwiftName: "init(data:status:)"
+    SwiftName: "init(data:)"
     Parameters:
     - Position: 0
       Type: "MHSFeesData * _Nullable"
-    - Position: 1
-      Type: "MHSStatus * _Nullable"
-  - Selector: "doCopyData:status:"
+  - Selector: "doCopyData:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(data:status:)"
+    SwiftName: "doCopy(data:)"
     ResultType: "MHSFeesResponse * _Nonnull"
     Parameters:
     - Position: 0
       Type: "MHSFeesData * _Nullable"
-    - Position: 1
-      Type: "MHSStatus * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"
@@ -1462,57 +1454,6 @@ Classes:
     ResultType: "NSString * _Nonnull"
 - Name: "MHSFeesResponseCompanion"
   SwiftName: "FeesResponse.Companion"
-  Methods:
-  - Selector: "serializer"
-    MethodKind: "Instance"
-    SwiftName: "serializer()"
-    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
-- Name: "MHSStatus"
-  SwiftName: "Status"
-  Properties:
-  - Name: "code"
-    PropertyKind: "Instance"
-    SwiftName: "code"
-    Type: "MHSInt * _Nullable"
-  - Name: "message"
-    PropertyKind: "Instance"
-    SwiftName: "message"
-    Type: "NSString * _Nullable"
-  Methods:
-  - Selector: "initWithCode:message:"
-    MethodKind: "Instance"
-    SwiftName: "init(code:message:)"
-    Parameters:
-    - Position: 0
-      Type: "MHSInt * _Nullable"
-    - Position: 1
-      Type: "NSString * _Nullable"
-  - Selector: "doCopyCode:message:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(code:message:)"
-    ResultType: "MHSStatus * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "MHSInt * _Nullable"
-    - Position: 1
-      Type: "NSString * _Nullable"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-- Name: "MHSStatusCompanion"
-  SwiftName: "Status.Companion"
   Methods:
   - Selector: "serializer"
     MethodKind: "Instance"
@@ -1572,6 +1513,10 @@ Classes:
 - Name: "MHSFeeItem"
   SwiftName: "FeeItem"
   Properties:
+  - Name: "discount"
+    PropertyKind: "Instance"
+    SwiftName: "discount"
+    Type: "MHSDiscountItem * _Nullable"
   - Name: "title"
     PropertyKind: "Instance"
     SwiftName: "title"
@@ -1581,23 +1526,27 @@ Classes:
     SwiftName: "value"
     Type: "NSString * _Nullable"
   Methods:
-  - Selector: "initWithTitle:value:"
+  - Selector: "initWithTitle:value:discount:"
     MethodKind: "Instance"
-    SwiftName: "init(title:value:)"
+    SwiftName: "init(title:value:discount:)"
     Parameters:
     - Position: 0
       Type: "NSDictionary<MHSLanguage *, NSString *> * _Nullable"
     - Position: 1
       Type: "NSString * _Nullable"
-  - Selector: "doCopyTitle:value:"
+    - Position: 2
+      Type: "MHSDiscountItem * _Nullable"
+  - Selector: "doCopyTitle:value:discount:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(title:value:)"
+    SwiftName: "doCopy(title:value:discount:)"
     ResultType: "MHSFeeItem * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSDictionary<MHSLanguage *, NSString *> * _Nullable"
     - Position: 1
       Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "MHSDiscountItem * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"
@@ -1615,155 +1564,6 @@ Classes:
     ResultType: "NSString * _Nonnull"
 - Name: "MHSFeeItemCompanion"
   SwiftName: "FeeItem.Companion"
-  Methods:
-  - Selector: "serializer"
-    MethodKind: "Instance"
-    SwiftName: "serializer()"
-    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
-- Name: "MHSLanguage"
-  SwiftBridge: "Language"
-  SwiftName: "__Language"
-  SwiftPrivate: true
-  Properties:
-  - Name: "isoCode"
-    PropertyKind: "Instance"
-    SwiftName: "isoCode"
-    Type: "NSString * _Nonnull"
-  - Name: "arabic"
-    PropertyKind: "Class"
-    SwiftName: "arabic"
-    Type: "MHSLanguage * _Nonnull"
-  - Name: "english"
-    PropertyKind: "Class"
-    SwiftName: "english"
-    Type: "MHSLanguage * _Nonnull"
-  - Name: "french"
-    PropertyKind: "Class"
-    SwiftName: "french"
-    Type: "MHSLanguage * _Nonnull"
-  Methods:
-  - Selector: "initWithName:ordinal:"
-    MethodKind: "Instance"
-    SwiftName: "init(name:ordinal:)"
-    Availability: "nonswift"
-- Name: "MHSLanguageCompanion"
-  SwiftName: "__Language.Companion"
-  Methods:
-  - Selector: "fromIsoCodeIsoCode:"
-    MethodKind: "Instance"
-    SwiftName: "fromIsoCode(isoCode:)"
-    ResultType: "MHSLanguage * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-  - Selector: "serializer"
-    MethodKind: "Instance"
-    SwiftName: "serializer()"
-    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
-  - Selector: "serializerTypeParamsSerializers:"
-    MethodKind: "Instance"
-    SwiftName: "serializer(typeParamsSerializers:)"
-    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "MHSKotlinArray<id<MHSKotlinx_serialization_coreKSerializer>> * _Nonnull"
-- Name: "MHSDiscountResponse"
-  SwiftName: "DiscountResponse"
-  Properties:
-  - Name: "data"
-    PropertyKind: "Instance"
-    SwiftName: "data"
-    Type: "MHSDiscountData * _Nullable"
-  - Name: "status"
-    PropertyKind: "Instance"
-    SwiftName: "status"
-    Type: "MHSStatus * _Nullable"
-  Methods:
-  - Selector: "initWithData:status:"
-    MethodKind: "Instance"
-    SwiftName: "init(data:status:)"
-    Parameters:
-    - Position: 0
-      Type: "MHSDiscountData * _Nullable"
-    - Position: 1
-      Type: "MHSStatus * _Nullable"
-  - Selector: "doCopyData:status:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(data:status:)"
-    ResultType: "MHSDiscountResponse * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "MHSDiscountData * _Nullable"
-    - Position: 1
-      Type: "MHSStatus * _Nullable"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-- Name: "MHSDiscountResponseCompanion"
-  SwiftName: "DiscountResponse.Companion"
-  Methods:
-  - Selector: "serializer"
-    MethodKind: "Instance"
-    SwiftName: "serializer()"
-    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
-- Name: "MHSDiscountData"
-  SwiftName: "DiscountData"
-  Properties:
-  - Name: "amount"
-    PropertyKind: "Instance"
-    SwiftName: "amount"
-    Type: "NSString * _Nullable"
-  - Name: "discount"
-    PropertyKind: "Instance"
-    SwiftName: "discount"
-    Type: "MHSDiscountItem * _Nullable"
-  Methods:
-  - Selector: "initWithDiscount:amount:"
-    MethodKind: "Instance"
-    SwiftName: "init(discount:amount:)"
-    Parameters:
-    - Position: 0
-      Type: "MHSDiscountItem * _Nullable"
-    - Position: 1
-      Type: "NSString * _Nullable"
-  - Selector: "doCopyDiscount:amount:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(discount:amount:)"
-    ResultType: "MHSDiscountData * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "MHSDiscountItem * _Nullable"
-    - Position: 1
-      Type: "NSString * _Nullable"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-- Name: "MHSDiscountDataCompanion"
-  SwiftName: "DiscountData.Companion"
   Methods:
   - Selector: "serializer"
     MethodKind: "Instance"
@@ -1864,6 +1664,147 @@ Classes:
     Parameters:
     - Position: 0
       Type: "MHSKotlinArray<id<MHSKotlinx_serialization_coreKSerializer>> * _Nonnull"
+- Name: "MHSLanguage"
+  SwiftBridge: "Language"
+  SwiftName: "__Language"
+  SwiftPrivate: true
+  Properties:
+  - Name: "isoCode"
+    PropertyKind: "Instance"
+    SwiftName: "isoCode"
+    Type: "NSString * _Nonnull"
+  - Name: "arabic"
+    PropertyKind: "Class"
+    SwiftName: "arabic"
+    Type: "MHSLanguage * _Nonnull"
+  - Name: "english"
+    PropertyKind: "Class"
+    SwiftName: "english"
+    Type: "MHSLanguage * _Nonnull"
+  - Name: "french"
+    PropertyKind: "Class"
+    SwiftName: "french"
+    Type: "MHSLanguage * _Nonnull"
+  Methods:
+  - Selector: "initWithName:ordinal:"
+    MethodKind: "Instance"
+    SwiftName: "init(name:ordinal:)"
+    Availability: "nonswift"
+- Name: "MHSLanguageCompanion"
+  SwiftName: "__Language.Companion"
+  Methods:
+  - Selector: "fromIsoCodeIsoCode:"
+    MethodKind: "Instance"
+    SwiftName: "fromIsoCode(isoCode:)"
+    ResultType: "MHSLanguage * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
+  - Selector: "serializerTypeParamsSerializers:"
+    MethodKind: "Instance"
+    SwiftName: "serializer(typeParamsSerializers:)"
+    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "MHSKotlinArray<id<MHSKotlinx_serialization_coreKSerializer>> * _Nonnull"
+- Name: "MHSDiscountResponse"
+  SwiftName: "DiscountResponse"
+  Properties:
+  - Name: "data"
+    PropertyKind: "Instance"
+    SwiftName: "data"
+    Type: "MHSDiscountData * _Nullable"
+  Methods:
+  - Selector: "initWithData:"
+    MethodKind: "Instance"
+    SwiftName: "init(data:)"
+    Parameters:
+    - Position: 0
+      Type: "MHSDiscountData * _Nullable"
+  - Selector: "doCopyData:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(data:)"
+    ResultType: "MHSDiscountResponse * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "MHSDiscountData * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "MHSDiscountResponseCompanion"
+  SwiftName: "DiscountResponse.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "MHSDiscountData"
+  SwiftName: "DiscountData"
+  Properties:
+  - Name: "amount"
+    PropertyKind: "Instance"
+    SwiftName: "amount"
+    Type: "NSString * _Nullable"
+  - Name: "discount"
+    PropertyKind: "Instance"
+    SwiftName: "discount"
+    Type: "MHSDiscountItem * _Nullable"
+  Methods:
+  - Selector: "initWithDiscount:amount:"
+    MethodKind: "Instance"
+    SwiftName: "init(discount:amount:)"
+    Parameters:
+    - Position: 0
+      Type: "MHSDiscountItem * _Nullable"
+    - Position: 1
+      Type: "NSString * _Nullable"
+  - Selector: "doCopyDiscount:amount:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(discount:amount:)"
+    ResultType: "MHSDiscountData * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "MHSDiscountItem * _Nullable"
+    - Position: 1
+      Type: "NSString * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "MHSDiscountDataCompanion"
+  SwiftName: "DiscountData.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "MHSPaymentInformation"
   SwiftName: "PaymentInformation"
   Properties:
@@ -2547,6 +2488,10 @@ Classes:
 - Name: "MHSFieldItem"
   SwiftName: "FieldItem"
   Properties:
+  - Name: "choices"
+    PropertyKind: "Instance"
+    SwiftName: "choices"
+    Type: "NSDictionary<NSString *, NSString *> * _Nullable"
   - Name: "errorMessages"
     PropertyKind: "Instance"
     SwiftName: "errorMessages"
@@ -2600,9 +2545,9 @@ Classes:
     SwiftName: "value"
     Type: "NSString * _Nullable"
   Methods:
-  - Selector: "initWithMinLength:readOnly:label:type:value:minValue:maxValue:maxStringLength:required:errorMessages:fieldName:maxLength:helpText:"
+  - Selector: "initWithMinLength:readOnly:label:type:value:minValue:maxValue:maxStringLength:required:errorMessages:fieldName:maxLength:helpText:choices:"
     MethodKind: "Instance"
-    SwiftName: "init(minLength:readOnly:label:type:value:minValue:maxValue:maxStringLength:required:errorMessages:fieldName:maxLength:helpText:)"
+    SwiftName: "init(minLength:readOnly:label:type:value:minValue:maxValue:maxStringLength:required:errorMessages:fieldName:maxLength:helpText:choices:)"
     Parameters:
     - Position: 0
       Type: "MHSInt * _Nullable"
@@ -2630,9 +2575,11 @@ Classes:
       Type: "MHSInt * _Nullable"
     - Position: 12
       Type: "NSString * _Nullable"
-  - Selector: "doCopyMinLength:readOnly:label:type:value:minValue:maxValue:maxStringLength:required:errorMessages:fieldName:maxLength:helpText:"
+    - Position: 13
+      Type: "NSDictionary<NSString *, NSString *> * _Nullable"
+  - Selector: "doCopyMinLength:readOnly:label:type:value:minValue:maxValue:maxStringLength:required:errorMessages:fieldName:maxLength:helpText:choices:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(minLength:readOnly:label:type:value:minValue:maxValue:maxStringLength:required:errorMessages:fieldName:maxLength:helpText:)"
+    SwiftName: "doCopy(minLength:readOnly:label:type:value:minValue:maxValue:maxStringLength:required:errorMessages:fieldName:maxLength:helpText:choices:)"
     ResultType: "MHSFieldItem * _Nonnull"
     Parameters:
     - Position: 0
@@ -2661,6 +2608,8 @@ Classes:
       Type: "MHSInt * _Nullable"
     - Position: 12
       Type: "NSString * _Nullable"
+    - Position: 13
+      Type: "NSDictionary<NSString *, NSString *> * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"
@@ -3879,6 +3828,57 @@ Classes:
     ResultType: "NSString * _Nonnull"
 - Name: "MHSPaymentIntentDataCompanion"
   SwiftName: "PaymentIntentData.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "MHSStatus"
+  SwiftName: "Status"
+  Properties:
+  - Name: "code"
+    PropertyKind: "Instance"
+    SwiftName: "code"
+    Type: "MHSInt * _Nullable"
+  - Name: "message"
+    PropertyKind: "Instance"
+    SwiftName: "message"
+    Type: "NSString * _Nullable"
+  Methods:
+  - Selector: "initWithCode:message:"
+    MethodKind: "Instance"
+    SwiftName: "init(code:message:)"
+    Parameters:
+    - Position: 0
+      Type: "MHSInt * _Nullable"
+    - Position: 1
+      Type: "NSString * _Nullable"
+  - Selector: "doCopyCode:message:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(code:message:)"
+    ResultType: "MHSStatus * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "MHSInt * _Nullable"
+    - Position: 1
+      Type: "NSString * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "MHSStatusCompanion"
+  SwiftName: "Status.Companion"
   Methods:
   - Selector: "serializer"
     MethodKind: "Instance"
@@ -7410,18 +7410,14 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "expiryYear"
     Type: "NSString * _Nullable"
-  - Name: "isLive"
-    PropertyKind: "Instance"
-    SwiftName: "isLive"
-    Type: "MHSBoolean * _Nullable"
   - Name: "saveCard"
     PropertyKind: "Instance"
     SwiftName: "saveCard"
     Type: "MHSBoolean * _Nullable"
   Methods:
-  - Selector: "initWithCardHolderName:cardNumber:expiryMonth:expiryYear:cvv:isLive:saveCard:"
+  - Selector: "initWithCardHolderName:cardNumber:expiryMonth:expiryYear:cvv:saveCard:"
     MethodKind: "Instance"
-    SwiftName: "init(cardHolderName:cardNumber:expiryMonth:expiryYear:cvv:isLive:saveCard:)"
+    SwiftName: "init(cardHolderName:cardNumber:expiryMonth:expiryYear:cvv:saveCard:)"
     Parameters:
     - Position: 0
       Type: "NSString * _Nullable"
@@ -7435,11 +7431,9 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 5
       Type: "MHSBoolean * _Nullable"
-    - Position: 6
-      Type: "MHSBoolean * _Nullable"
-  - Selector: "doCopyCardHolderName:cardNumber:expiryMonth:expiryYear:cvv:isLive:saveCard:"
+  - Selector: "doCopyCardHolderName:cardNumber:expiryMonth:expiryYear:cvv:saveCard:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(cardHolderName:cardNumber:expiryMonth:expiryYear:cvv:isLive:saveCard:)"
+    SwiftName: "doCopy(cardHolderName:cardNumber:expiryMonth:expiryYear:cvv:saveCard:)"
     ResultType: "MHSCardDetails_ * _Nonnull"
     Parameters:
     - Position: 0
@@ -7453,8 +7447,6 @@ Classes:
     - Position: 4
       Type: "NSString * _Nullable"
     - Position: 5
-      Type: "MHSBoolean * _Nullable"
-    - Position: 6
       Type: "MHSBoolean * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
@@ -9210,6 +9202,13 @@ Classes:
     SwiftName: "JsonWithIgnoredUnknownKeys"
     Type: "MHSKotlinx_serialization_jsonJson * _Nonnull"
   Methods:
+  - Selector: "mapToChoicesList:"
+    MethodKind: "Class"
+    SwiftName: "mapToChoicesList(_:)"
+    ResultType: "NSArray<MHSOptionItem *> * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
   - Selector: "toChoicesList:"
     MethodKind: "Class"
     SwiftName: "toChoicesList(_:)"
@@ -13912,6 +13911,16 @@ Protocols:
     MethodKind: "Instance"
     SwiftName: "next()"
     ResultType: "id _Nullable"
+- Name: "MHSKotlinComparable"
+  SwiftName: "KotlinComparable"
+  Methods:
+  - Selector: "compareToOther:"
+    MethodKind: "Instance"
+    SwiftName: "compareTo(other:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
 - Name: "MHSKotlinAnnotation"
   SwiftName: "KotlinAnnotation"
 - Name: "MHSKotlinKClass"
@@ -13950,16 +13959,6 @@ Protocols:
   SwiftName: "KotlinKAnnotatedElement"
 - Name: "MHSKotlinKDeclarationContainer"
   SwiftName: "KotlinKDeclarationContainer"
-- Name: "MHSKotlinComparable"
-  SwiftName: "KotlinComparable"
-  Methods:
-  - Selector: "compareToOther:"
-    MethodKind: "Instance"
-    SwiftName: "compareTo(other:)"
-    ResultType: "int32_t"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
 - Name: "MHSKotlinMapEntry"
   SwiftName: "KotlinMapEntry"
   Properties:

@@ -1637,9 +1637,8 @@ __attribute__((swift_name("DiscountResponse")))
 @interface MHSDiscountResponse : MHSBase <MHSCommonParcelable>
 @property (class, readonly, getter=companion) MHSDiscountResponseCompanion *companion __attribute__((swift_name("companion")));
 @property (readonly) MHSDiscountData * _Nullable data __attribute__((swift_name("data")));
-@property (readonly) MHSStatus * _Nullable status __attribute__((swift_name("status")));
-- (instancetype)initWithData:(MHSDiscountData * _Nullable)data status:(MHSStatus * _Nullable)status __attribute__((swift_name("init(data:status:)"))) __attribute__((objc_designated_initializer));
-- (MHSDiscountResponse *)doCopyData:(MHSDiscountData * _Nullable)data status:(MHSStatus * _Nullable)status __attribute__((swift_name("doCopy(data:status:)")));
+- (instancetype)initWithData:(MHSDiscountData * _Nullable)data __attribute__((swift_name("init(data:)"))) __attribute__((objc_designated_initializer));
+- (MHSDiscountResponse *)doCopyData:(MHSDiscountData * _Nullable)data __attribute__((swift_name("doCopy(data:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -1647,11 +1646,6 @@ __attribute__((swift_name("DiscountResponse")))
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="data")
-*/
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="status")
 */
 @end
 
@@ -1672,7 +1666,7 @@ __attribute__((swift_name("DiscountResponse.Companion")))
 */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("DiscountType")))
-@interface MHSDiscountType : MHSKotlinEnum<MHSDiscountType *>
+@interface MHSDiscountType : MHSKotlinEnum<MHSDiscountType *> <MHSCommonParcelable>
 @property (class, readonly, getter=companion) MHSDiscountTypeCompanion *companion __attribute__((swift_name("companion")));
 @property (class, readonly) MHSDiscountType *amount __attribute__((swift_name("amount")));
 @property (class, readonly) MHSDiscountType *percentage __attribute__((swift_name("percentage")));
@@ -1704,13 +1698,20 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("FeeItem")))
 @interface MHSFeeItem : MHSBase <MHSCommonParcelable>
 @property (class, readonly, getter=companion) MHSFeeItemCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) MHSDiscountItem * _Nullable discount __attribute__((swift_name("discount")));
 @property (readonly) NSDictionary<MHSLanguage *, NSString *> * _Nullable title __attribute__((swift_name("title")));
 @property (readonly) NSString * _Nullable value __attribute__((swift_name("value")));
-- (instancetype)initWithTitle:(NSDictionary<MHSLanguage *, NSString *> * _Nullable)title value:(NSString * _Nullable)value __attribute__((swift_name("init(title:value:)"))) __attribute__((objc_designated_initializer));
-- (MHSFeeItem *)doCopyTitle:(NSDictionary<MHSLanguage *, NSString *> * _Nullable)title value:(NSString * _Nullable)value __attribute__((swift_name("doCopy(title:value:)")));
+- (instancetype)initWithTitle:(NSDictionary<MHSLanguage *, NSString *> * _Nullable)title value:(NSString * _Nullable)value discount:(MHSDiscountItem * _Nullable)discount __attribute__((swift_name("init(title:value:discount:)"))) __attribute__((objc_designated_initializer));
+- (MHSFeeItem *)doCopyTitle:(NSDictionary<MHSLanguage *, NSString *> * _Nullable)title value:(NSString * _Nullable)value discount:(MHSDiscountItem * _Nullable)discount __attribute__((swift_name("doCopy(title:value:discount:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.EncodeDefault(mode=Mode.NEVER)
+ *   kotlinx.serialization.SerialName(value="discount")
+*/
 
 /**
  * @note annotations
@@ -1781,9 +1782,8 @@ __attribute__((swift_name("FeesResponse")))
 @interface MHSFeesResponse : MHSBase <MHSCommonParcelable>
 @property (class, readonly, getter=companion) MHSFeesResponseCompanion *companion __attribute__((swift_name("companion")));
 @property (readonly) MHSFeesData * _Nullable data __attribute__((swift_name("data")));
-@property (readonly) MHSStatus * _Nullable status __attribute__((swift_name("status")));
-- (instancetype)initWithData:(MHSFeesData * _Nullable)data status:(MHSStatus * _Nullable)status __attribute__((swift_name("init(data:status:)"))) __attribute__((objc_designated_initializer));
-- (MHSFeesResponse *)doCopyData:(MHSFeesData * _Nullable)data status:(MHSStatus * _Nullable)status __attribute__((swift_name("doCopy(data:status:)")));
+- (instancetype)initWithData:(MHSFeesData * _Nullable)data __attribute__((swift_name("init(data:)"))) __attribute__((objc_designated_initializer));
+- (MHSFeesResponse *)doCopyData:(MHSFeesData * _Nullable)data __attribute__((swift_name("doCopy(data:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -1791,11 +1791,6 @@ __attribute__((swift_name("FeesResponse")))
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="data")
-*/
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="status")
 */
 @end
 
@@ -1984,6 +1979,7 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("FieldItem")))
 @interface MHSFieldItem : MHSBase <MHSCommonParcelable>
 @property (class, readonly, getter=companion) MHSFieldItemCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) NSDictionary<NSString *, NSString *> * _Nullable choices __attribute__((swift_name("choices")));
 @property (readonly) MHSErrorMessagesData * _Nullable errorMessages __attribute__((swift_name("errorMessages")));
 @property (readonly) NSString * _Nullable fieldName __attribute__((swift_name("fieldName")));
 @property (readonly) NSString * _Nullable helpText __attribute__((swift_name("helpText")));
@@ -1997,11 +1993,16 @@ __attribute__((swift_name("FieldItem")))
 @property (readonly) MHSBoolean * _Nullable required __attribute__((swift_name("required")));
 @property (readonly) NSString * _Nullable type __attribute__((swift_name("type")));
 @property (readonly) NSString * _Nullable value __attribute__((swift_name("value")));
-- (instancetype)initWithMinLength:(MHSInt * _Nullable)minLength readOnly:(MHSBoolean * _Nullable)readOnly label:(NSString * _Nullable)label type:(NSString * _Nullable)type value:(NSString * _Nullable)value minValue:(MHSInt * _Nullable)minValue maxValue:(MHSInt * _Nullable)maxValue maxStringLength:(NSString * _Nullable)maxStringLength required:(MHSBoolean * _Nullable)required errorMessages:(MHSErrorMessagesData * _Nullable)errorMessages fieldName:(NSString * _Nullable)fieldName maxLength:(MHSInt * _Nullable)maxLength helpText:(NSString * _Nullable)helpText __attribute__((swift_name("init(minLength:readOnly:label:type:value:minValue:maxValue:maxStringLength:required:errorMessages:fieldName:maxLength:helpText:)"))) __attribute__((objc_designated_initializer));
-- (MHSFieldItem *)doCopyMinLength:(MHSInt * _Nullable)minLength readOnly:(MHSBoolean * _Nullable)readOnly label:(NSString * _Nullable)label type:(NSString * _Nullable)type value:(NSString * _Nullable)value minValue:(MHSInt * _Nullable)minValue maxValue:(MHSInt * _Nullable)maxValue maxStringLength:(NSString * _Nullable)maxStringLength required:(MHSBoolean * _Nullable)required errorMessages:(MHSErrorMessagesData * _Nullable)errorMessages fieldName:(NSString * _Nullable)fieldName maxLength:(MHSInt * _Nullable)maxLength helpText:(NSString * _Nullable)helpText __attribute__((swift_name("doCopy(minLength:readOnly:label:type:value:minValue:maxValue:maxStringLength:required:errorMessages:fieldName:maxLength:helpText:)")));
+- (instancetype)initWithMinLength:(MHSInt * _Nullable)minLength readOnly:(MHSBoolean * _Nullable)readOnly label:(NSString * _Nullable)label type:(NSString * _Nullable)type value:(NSString * _Nullable)value minValue:(MHSInt * _Nullable)minValue maxValue:(MHSInt * _Nullable)maxValue maxStringLength:(NSString * _Nullable)maxStringLength required:(MHSBoolean * _Nullable)required errorMessages:(MHSErrorMessagesData * _Nullable)errorMessages fieldName:(NSString * _Nullable)fieldName maxLength:(MHSInt * _Nullable)maxLength helpText:(NSString * _Nullable)helpText choices:(NSDictionary<NSString *, NSString *> * _Nullable)choices __attribute__((swift_name("init(minLength:readOnly:label:type:value:minValue:maxValue:maxStringLength:required:errorMessages:fieldName:maxLength:helpText:choices:)"))) __attribute__((objc_designated_initializer));
+- (MHSFieldItem *)doCopyMinLength:(MHSInt * _Nullable)minLength readOnly:(MHSBoolean * _Nullable)readOnly label:(NSString * _Nullable)label type:(NSString * _Nullable)type value:(NSString * _Nullable)value minValue:(MHSInt * _Nullable)minValue maxValue:(MHSInt * _Nullable)maxValue maxStringLength:(NSString * _Nullable)maxStringLength required:(MHSBoolean * _Nullable)required errorMessages:(MHSErrorMessagesData * _Nullable)errorMessages fieldName:(NSString * _Nullable)fieldName maxLength:(MHSInt * _Nullable)maxLength helpText:(NSString * _Nullable)helpText choices:(NSDictionary<NSString *, NSString *> * _Nullable)choices __attribute__((swift_name("doCopy(minLength:readOnly:label:type:value:minValue:maxValue:maxStringLength:required:errorMessages:fieldName:maxLength:helpText:choices:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="choices")
+*/
 
 /**
  * @note annotations
@@ -3477,7 +3478,7 @@ __attribute__((swift_name("InputField")))
 
 /**
  * @note annotations
- *   kotlinx.serialization.SerialName(value="validation_regex")
+ *   kotlinx.serialization.SerialName(value="optionsList")
 */
 
 /**
@@ -4825,10 +4826,9 @@ __attribute__((swift_name("CardDetails_")))
 @property (readonly) NSString * _Nullable cvv __attribute__((swift_name("cvv")));
 @property (readonly) NSString * _Nullable expiryMonth __attribute__((swift_name("expiryMonth")));
 @property (readonly) NSString * _Nullable expiryYear __attribute__((swift_name("expiryYear")));
-@property (readonly) MHSBoolean * _Nullable isLive __attribute__((swift_name("isLive")));
 @property (readonly) MHSBoolean * _Nullable saveCard __attribute__((swift_name("saveCard")));
-- (instancetype)initWithCardHolderName:(NSString * _Nullable)cardHolderName cardNumber:(NSString * _Nullable)cardNumber expiryMonth:(NSString * _Nullable)expiryMonth expiryYear:(NSString * _Nullable)expiryYear cvv:(NSString * _Nullable)cvv isLive:(MHSBoolean * _Nullable)isLive saveCard:(MHSBoolean * _Nullable)saveCard __attribute__((swift_name("init(cardHolderName:cardNumber:expiryMonth:expiryYear:cvv:isLive:saveCard:)"))) __attribute__((objc_designated_initializer));
-- (MHSCardDetails_ *)doCopyCardHolderName:(NSString * _Nullable)cardHolderName cardNumber:(NSString * _Nullable)cardNumber expiryMonth:(NSString * _Nullable)expiryMonth expiryYear:(NSString * _Nullable)expiryYear cvv:(NSString * _Nullable)cvv isLive:(MHSBoolean * _Nullable)isLive saveCard:(MHSBoolean * _Nullable)saveCard __attribute__((swift_name("doCopy(cardHolderName:cardNumber:expiryMonth:expiryYear:cvv:isLive:saveCard:)")));
+- (instancetype)initWithCardHolderName:(NSString * _Nullable)cardHolderName cardNumber:(NSString * _Nullable)cardNumber expiryMonth:(NSString * _Nullable)expiryMonth expiryYear:(NSString * _Nullable)expiryYear cvv:(NSString * _Nullable)cvv saveCard:(MHSBoolean * _Nullable)saveCard __attribute__((swift_name("init(cardHolderName:cardNumber:expiryMonth:expiryYear:cvv:saveCard:)"))) __attribute__((objc_designated_initializer));
+- (MHSCardDetails_ *)doCopyCardHolderName:(NSString * _Nullable)cardHolderName cardNumber:(NSString * _Nullable)cardNumber expiryMonth:(NSString * _Nullable)expiryMonth expiryYear:(NSString * _Nullable)expiryYear cvv:(NSString * _Nullable)cvv saveCard:(MHSBoolean * _Nullable)saveCard __attribute__((swift_name("doCopy(cardHolderName:cardNumber:expiryMonth:expiryYear:cvv:saveCard:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -4856,11 +4856,6 @@ __attribute__((swift_name("CardDetails_")))
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="expiry_year")
-*/
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="is_live")
 */
 
 /**
@@ -6097,6 +6092,7 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("CommonExtensionsKt")))
 @interface MHSCommonExtensionsKt : MHSBase
 @property (class, readonly) MHSKotlinx_serialization_jsonJson *JsonWithIgnoredUnknownKeys __attribute__((swift_name("JsonWithIgnoredUnknownKeys")));
++ (NSArray<MHSOptionItem *> *)mapToChoicesList:(NSDictionary<NSString *, NSString *> *)receiver __attribute__((swift_name("mapToChoicesList(_:)")));
 + (NSArray<MHSOptionItem *> *)toChoicesList:(NSDictionary<NSString *, NSArray<NSString *> *> *)receiver __attribute__((swift_name("toChoicesList(_:)")));
 + (NSDictionary<NSString *, NSArray<MHSOptionItem *> *> *)toChoicesMap:(NSDictionary<NSString *, NSArray<NSString *> *> *)receiver __attribute__((swift_name("toChoicesMap(_:)")));
 + (NSDictionary<NSString *, MHSKotlinx_serialization_jsonJsonElement *> *)toJsonObject:(NSDictionary<NSString *, NSString *> *)receiver __attribute__((swift_name("toJsonObject(_:)")));

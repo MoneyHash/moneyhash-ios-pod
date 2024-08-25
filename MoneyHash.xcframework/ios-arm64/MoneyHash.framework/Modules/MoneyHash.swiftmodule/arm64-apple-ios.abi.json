@@ -904,6 +904,273 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MoneyHashShared",
+        "printedName": "MoneyHashShared",
+        "declKind": "Import",
+        "moduleName": "MoneyHash"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MHLocale",
+        "printedName": "MHLocale",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "arabic",
+            "printedName": "arabic",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHash.MHLocale.Type) -> MoneyHash.MHLocale",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MHLocale",
+                    "printedName": "MoneyHash.MHLocale",
+                    "usr": "s:9MoneyHash8MHLocaleO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHash.MHLocale.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MHLocale",
+                        "printedName": "MoneyHash.MHLocale",
+                        "usr": "s:9MoneyHash8MHLocaleO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9MoneyHash8MHLocaleO6arabicyA2CmF",
+            "mangledName": "$s9MoneyHash8MHLocaleO6arabicyA2CmF",
+            "moduleName": "MoneyHash"
+          },
+          {
+            "kind": "Var",
+            "name": "english",
+            "printedName": "english",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHash.MHLocale.Type) -> MoneyHash.MHLocale",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MHLocale",
+                    "printedName": "MoneyHash.MHLocale",
+                    "usr": "s:9MoneyHash8MHLocaleO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHash.MHLocale.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MHLocale",
+                        "printedName": "MoneyHash.MHLocale",
+                        "usr": "s:9MoneyHash8MHLocaleO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9MoneyHash8MHLocaleO7englishyA2CmF",
+            "mangledName": "$s9MoneyHash8MHLocaleO7englishyA2CmF",
+            "moduleName": "MoneyHash"
+          },
+          {
+            "kind": "Var",
+            "name": "french",
+            "printedName": "french",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHash.MHLocale.Type) -> MoneyHash.MHLocale",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MHLocale",
+                    "printedName": "MoneyHash.MHLocale",
+                    "usr": "s:9MoneyHash8MHLocaleO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHash.MHLocale.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MHLocale",
+                        "printedName": "MoneyHash.MHLocale",
+                        "usr": "s:9MoneyHash8MHLocaleO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9MoneyHash8MHLocaleO6frenchyA2CmF",
+            "mangledName": "$s9MoneyHash8MHLocaleO6frenchyA2CmF",
+            "moduleName": "MoneyHash"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.MHLocale?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MHLocale",
+                    "printedName": "MoneyHash.MHLocale",
+                    "usr": "s:9MoneyHash8MHLocaleO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash8MHLocaleO8rawValueACSgSS_tcfc",
+            "mangledName": "$s9MoneyHash8MHLocaleO8rawValueACSgSS_tcfc",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash8MHLocaleO8rawValueSSvp",
+            "mangledName": "$s9MoneyHash8MHLocaleO8rawValueSSvp",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash8MHLocaleO8rawValueSSvg",
+                "mangledName": "$s9MoneyHash8MHLocaleO8rawValueSSvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9MoneyHash8MHLocaleO",
+        "mangledName": "$s9MoneyHash8MHLocaleO",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "MoneyHash"
       },
       {
@@ -2854,7 +3121,10 @@
             "usr": "s:9MoneyHash12DiscountItemV4fromACs7Decoder_p_tKcfc",
             "mangledName": "$s9MoneyHash12DiscountItemV4fromACs7Decoder_p_tKcfc",
             "moduleName": "MoneyHash",
-            "implicit": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
             "throwing": true,
             "init_kind": "Designated"
           },
@@ -2879,7 +3149,9 @@
             "usr": "s:9MoneyHash12DiscountItemV6encode2toys7Encoder_p_tKF",
             "mangledName": "$s9MoneyHash12DiscountItemV6encode2toys7Encoder_p_tKF",
             "moduleName": "MoneyHash",
-            "implicit": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
           }
@@ -8857,14 +9129,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Locale",
-                "printedName": "MoneyHashShared.Locale",
-                "usr": "s:15MoneyHashShared6LocaleO"
+                "name": "MHLocale",
+                "printedName": "MoneyHash.MHLocale",
+                "usr": "s:9MoneyHash8MHLocaleO"
               }
             ],
             "declKind": "Func",
-            "usr": "s:9MoneyHash0aB3SDKP9setLocaleyy0aB6Shared0E0OF",
-            "mangledName": "$s9MoneyHash0aB3SDKP9setLocaleyy0aB6Shared0E0OF",
+            "usr": "s:9MoneyHash0aB3SDKP9setLocaleyyAA8MHLocaleOF",
+            "mangledName": "$s9MoneyHash0aB3SDKP9setLocaleyyAA8MHLocaleOF",
             "moduleName": "MoneyHash",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
             "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
@@ -10199,75 +10471,6 @@
             ]
           },
           {
-            "kind": "Var",
-            "name": "isoCode",
-            "printedName": "isoCode",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:9MoneyHash8LanguageO7isoCodeSSvp",
-            "mangledName": "$s9MoneyHash8LanguageO7isoCodeSSvp",
-            "moduleName": "MoneyHash",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9MoneyHash8LanguageO7isoCodeSSvg",
-                "mangledName": "$s9MoneyHash8LanguageO7isoCodeSSvg",
-                "moduleName": "MoneyHash",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "fromIsoCode",
-            "printedName": "fromIsoCode(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Language",
-                "printedName": "MoneyHash.Language",
-                "usr": "s:9MoneyHash8LanguageO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9MoneyHash8LanguageO11fromIsoCodeyACSSFZ",
-            "mangledName": "$s9MoneyHash8LanguageO11fromIsoCodeyACSSFZ",
-            "moduleName": "MoneyHash",
-            "static": true,
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -10338,6 +10541,166 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "stringValue",
+            "printedName": "stringValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash8LanguageO11stringValueSSvp",
+            "mangledName": "$s9MoneyHash8LanguageO11stringValueSSvp",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash8LanguageO11stringValueSSvg",
+                "mangledName": "$s9MoneyHash8LanguageO11stringValueSSvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(stringValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.Language?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Language",
+                    "printedName": "MoneyHash.Language",
+                    "usr": "s:9MoneyHash8LanguageO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash8LanguageO11stringValueACSgSS_tcfc",
+            "mangledName": "$s9MoneyHash8LanguageO11stringValueACSgSS_tcfc",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "intValue",
+            "printedName": "intValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash8LanguageO8intValueSiSgvp",
+            "mangledName": "$s9MoneyHash8LanguageO8intValueSiSgvp",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash8LanguageO8intValueSiSgvg",
+                "mangledName": "$s9MoneyHash8LanguageO8intValueSiSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(intValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.Language?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Language",
+                    "printedName": "MoneyHash.Language",
+                    "usr": "s:9MoneyHash8LanguageO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash8LanguageO8intValueACSgSi_tcfc",
+            "mangledName": "$s9MoneyHash8LanguageO8intValueACSgSi_tcfc",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Enum",
@@ -10399,6 +10762,34 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CodingKey",
+            "printedName": "CodingKey",
+            "usr": "s:s9CodingKeyP",
+            "mangledName": "$ss9CodingKeyP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -13511,9 +13902,70 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "discount",
+            "printedName": "discount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.DiscountItem?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DiscountItem",
+                    "printedName": "MoneyHash.DiscountItem",
+                    "usr": "s:9MoneyHash12DiscountItemV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash7FeeItemV8discountAA08DiscountD0VSgvp",
+            "mangledName": "$s9MoneyHash7FeeItemV8discountAA08DiscountD0VSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MoneyHash.DiscountItem?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DiscountItem",
+                        "printedName": "MoneyHash.DiscountItem",
+                        "usr": "s:9MoneyHash12DiscountItemV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash7FeeItemV8discountAA08DiscountD0VSgvg",
+                "mangledName": "$s9MoneyHash7FeeItemV8discountAA08DiscountD0VSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(title:value:)",
+            "printedName": "init(title:value:discount:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -13562,11 +14014,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.DiscountItem?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DiscountItem",
+                    "printedName": "MoneyHash.DiscountItem",
+                    "usr": "s:9MoneyHash12DiscountItemV"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:9MoneyHash7FeeItemV5title5valueACSDyAA8LanguageOSSGSg_SSSgtcfc",
-            "mangledName": "$s9MoneyHash7FeeItemV5title5valueACSDyAA8LanguageOSSGSg_SSSgtcfc",
+            "usr": "s:9MoneyHash7FeeItemV5title5value8discountACSDyAA8LanguageOSSGSg_SSSgAA08DiscountD0VSgtcfc",
+            "mangledName": "$s9MoneyHash7FeeItemV5title5value8discountACSDyAA8LanguageOSSGSg_SSSgAA08DiscountD0VSgtcfc",
             "moduleName": "MoneyHash",
             "declAttributes": [
               "AccessControl"
@@ -13595,7 +14061,9 @@
             "usr": "s:9MoneyHash7FeeItemV4fromACs7Decoder_p_tKcfc",
             "mangledName": "$s9MoneyHash7FeeItemV4fromACs7Decoder_p_tKcfc",
             "moduleName": "MoneyHash",
-            "implicit": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
             "throwing": true,
             "init_kind": "Designated"
           },
@@ -13620,7 +14088,9 @@
             "usr": "s:9MoneyHash7FeeItemV6encode2toys7Encoder_p_tKF",
             "mangledName": "$s9MoneyHash7FeeItemV6encode2toys7Encoder_p_tKF",
             "moduleName": "MoneyHash",
-            "implicit": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
           }
@@ -22689,6 +23159,48 @@
       "value": "\"intentMethods\""
     },
     {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/MHLocale.swift",
+      "kind": "StringLiteral",
+      "offset": 187,
+      "length": 4,
+      "value": "\"ar\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/MHLocale.swift",
+      "kind": "StringLiteral",
+      "offset": 211,
+      "length": 4,
+      "value": "\"en\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/MHLocale.swift",
+      "kind": "StringLiteral",
+      "offset": 234,
+      "length": 4,
+      "value": "\"fr\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/MHLocale.swift",
+      "kind": "StringLiteral",
+      "offset": 187,
+      "length": 4,
+      "value": "\"ar\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/MHLocale.swift",
+      "kind": "StringLiteral",
+      "offset": 211,
+      "length": 4,
+      "value": "\"en\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/MHLocale.swift",
+      "kind": "StringLiteral",
+      "offset": 234,
+      "length": 4,
+      "value": "\"fr\""
+    },
+    {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedButtonViewStyle.swift",
       "kind": "StringLiteral",
       "offset": 3575,
@@ -23552,84 +24064,84 @@
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
       "kind": "StringLiteral",
-      "offset": 330,
+      "offset": 341,
       "length": 4,
       "value": "\"ar\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
       "kind": "StringLiteral",
-      "offset": 400,
+      "offset": 411,
       "length": 4,
       "value": "\"en\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
       "kind": "StringLiteral",
-      "offset": 468,
+      "offset": 479,
       "length": 4,
       "value": "\"fr\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
       "kind": "StringLiteral",
-      "offset": 673,
+      "offset": 620,
       "length": 4,
       "value": "\"ar\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
       "kind": "StringLiteral",
-      "offset": 701,
+      "offset": 648,
       "length": 4,
       "value": "\"en\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
       "kind": "StringLiteral",
-      "offset": 728,
+      "offset": 675,
       "length": 4,
       "value": "\"fr\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
       "kind": "StringLiteral",
-      "offset": 673,
+      "offset": 620,
       "length": 4,
       "value": "\"ar\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
       "kind": "StringLiteral",
-      "offset": 701,
+      "offset": 648,
       "length": 4,
       "value": "\"en\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
       "kind": "StringLiteral",
-      "offset": 728,
+      "offset": 675,
       "length": 4,
       "value": "\"fr\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
       "kind": "StringLiteral",
-      "offset": 330,
+      "offset": 341,
       "length": 4,
       "value": "\"ar\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
       "kind": "StringLiteral",
-      "offset": 400,
+      "offset": 411,
       "length": 4,
       "value": "\"en\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
       "kind": "StringLiteral",
-      "offset": 468,
+      "offset": 479,
       "length": 4,
       "value": "\"fr\""
     },
@@ -24605,6 +25117,13 @@
       "offset": 173,
       "length": 5,
       "value": "\"sdk\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Constant\/MHConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 212,
+      "length": 6,
+      "value": "\"lang\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/TokenizeCardInfo.swift",

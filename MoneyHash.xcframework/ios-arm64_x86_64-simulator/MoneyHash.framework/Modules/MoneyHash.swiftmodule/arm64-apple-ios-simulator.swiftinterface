@@ -32,6 +32,16 @@ public struct MethodsResult : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public enum MHLocale : Swift.String, Swift.Codable {
+  case arabic
+  case english
+  case french
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public struct EmbedButtonViewStyle : Swift.Codable {
   public init(color: Swift.String? = nil, fontFamily: Swift.String? = nil, fontWeight: Swift.String? = nil, fontSize: Swift.String? = nil, fontSmoothing: Swift.String? = nil, lineHeight: Swift.String? = nil, textTransform: Swift.String? = nil, letterSpacing: Swift.String? = nil, background: Swift.String? = nil, padding: Swift.String? = nil, borderRadius: Swift.String? = nil, boxShadow: Swift.String? = nil, borderStyle: Swift.String? = nil, borderColor: Swift.String? = nil, borderWidth: Swift.String? = nil)
   public func encode(to encoder: any Swift.Encoder) throws
@@ -79,8 +89,8 @@ public struct DiscountItem : Swift.Codable {
   public let type: MoneyHash.DiscountType?
   public let value: Swift.String?
   public init(title: [MoneyHash.Language : Swift.String]?, type: MoneyHash.DiscountType?, value: Swift.String?)
-  public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct DiscountData : Swift.Codable {
   public let amount: Swift.String?
@@ -231,7 +241,7 @@ public protocol MoneyHashSDK {
   #if compiler(>=5.3) && $AsyncAwait
   func collect(fields: [MoneyHash.CardFieldType : Swift.String], token: Swift.String, intentID: Swift.String, shouldSaveCard: Swift.Bool) async throws -> MoneyHash.VaultData?
   #endif
-  func setLocale(_ locale: MoneyHashShared.Locale)
+  func setLocale(_ locale: MoneyHash.MHLocale)
   #if compiler(>=5.3) && $AsyncAwait
   func updateFees(intentId: Swift.String, fees: [MoneyHash.FeeItem]) async throws -> MoneyHash.FeesData?
   #endif
@@ -279,17 +289,21 @@ public struct ErrorInfo : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public enum Language : Swift.String, Swift.Codable {
+public enum Language : Swift.String, Swift.Codable, Swift.CodingKey {
   case arabic
   case english
   case french
-  public var isoCode: Swift.String {
+  public init?(rawValue: Swift.String)
+  public init?(stringValue: Swift.String)
+  public init?(intValue: Swift.Int)
+  public typealias RawValue = Swift.String
+  public var intValue: Swift.Int? {
     get
   }
-  public static func fromIsoCode(_ isoCode: Swift.String) -> MoneyHash.Language
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
+    get
+  }
+  public var stringValue: Swift.String {
     get
   }
 }
@@ -361,9 +375,10 @@ public struct PayoutMethod : MoneyHash.MoneyHashMethod, Swift.Codable {
 public struct FeeItem : Swift.Codable {
   public let title: [MoneyHash.Language : Swift.String]?
   public let value: Swift.String?
-  public init(title: [MoneyHash.Language : Swift.String]?, value: Swift.String?)
-  public func encode(to encoder: any Swift.Encoder) throws
+  public let discount: MoneyHash.DiscountItem?
+  public init(title: [MoneyHash.Language : Swift.String]?, value: Swift.String?, discount: MoneyHash.DiscountItem?)
   public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct FeesData : Swift.Codable {
   public let amount: Swift.String?
@@ -591,6 +606,9 @@ public struct AmountData : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+extension MoneyHash.MHLocale : Swift.Equatable {}
+extension MoneyHash.MHLocale : Swift.Hashable {}
+extension MoneyHash.MHLocale : Swift.RawRepresentable {}
 extension MoneyHash.DiscountType : Swift.Equatable {}
 extension MoneyHash.DiscountType : Swift.Hashable {}
 extension MoneyHash.DiscountType : Swift.RawRepresentable {}

@@ -13730,23 +13730,6 @@
         "moduleName": "MoneyHash"
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MoneyHash",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "MoneyHashShared",
-        "printedName": "MoneyHashShared",
-        "declKind": "Import",
-        "moduleName": "MoneyHash"
-      },
-      {
         "kind": "TypeDecl",
         "name": "FeeItem",
         "printedName": "FeeItem",
@@ -24932,112 +24915,112 @@
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 4958,
+      "offset": 3191,
       "length": 14,
       "value": "\"created_date\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 5043,
+      "offset": 3276,
       "length": 17,
       "value": "\"amount_currency\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 5107,
+      "offset": 3340,
       "length": 13,
       "value": "\"method_name\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 5148,
+      "offset": 3381,
       "length": 14,
       "value": "\"billing_data\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 5191,
+      "offset": 3424,
       "length": 15,
       "value": "\"custom_fields\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 5240,
+      "offset": 3473,
       "length": 21,
       "value": "\"custom_form_answers\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 5299,
+      "offset": 3532,
       "length": 25,
       "value": "\"external_action_message\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 5366,
+      "offset": 3599,
       "length": 29,
       "value": "\"provider_transaction_fields\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 4958,
+      "offset": 3191,
       "length": 14,
       "value": "\"created_date\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 5043,
+      "offset": 3276,
       "length": 17,
       "value": "\"amount_currency\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 5107,
+      "offset": 3340,
       "length": 13,
       "value": "\"method_name\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 5148,
+      "offset": 3381,
       "length": 14,
       "value": "\"billing_data\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 5191,
+      "offset": 3424,
       "length": 15,
       "value": "\"custom_fields\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 5240,
+      "offset": 3473,
       "length": 21,
       "value": "\"custom_form_answers\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 5299,
+      "offset": 3532,
       "length": 25,
       "value": "\"external_action_message\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 5366,
+      "offset": 3599,
       "length": 29,
       "value": "\"provider_transaction_fields\""
     },

@@ -269,7 +269,7 @@ public struct EmbedLoaderStyle : Swift.Codable {
 }
 @_hasMissingDesignatedInitializers public class CardFormCollector {
   #if compiler(>=5.3) && $AsyncAwait
-  public func collect(intentID: Swift.String) async throws -> MoneyHash.VaultData?
+  public func collect(intentID: Swift.String, shouldSaveCard: Swift.Bool) async throws -> MoneyHash.VaultData?
   #endif
   public var isValid: Swift.Bool {
     get
@@ -592,7 +592,8 @@ public struct CardFieldState : Swift.Codable {
   public let errorMessage: Swift.String?
   public let formattedValue: Swift.String
   public let fieldType: MoneyHash.CardFieldType
-  public init(isValid: Swift.Bool, errorMessage: Swift.String?, formattedValue: Swift.String, fieldType: MoneyHash.CardFieldType)
+  public let cardBrand: MoneyHash.CardBrand?
+  public init(isValid: Swift.Bool, errorMessage: Swift.String?, formattedValue: Swift.String, fieldType: MoneyHash.CardFieldType, cardBrand: MoneyHash.CardBrand?)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }

@@ -9762,7 +9762,7 @@
           {
             "kind": "Function",
             "name": "collect",
-            "printedName": "collect(intentID:)",
+            "printedName": "collect(intentID:shouldSaveCard:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9783,11 +9783,17 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:9MoneyHash17CardFormCollectorC7collect8intentIDAA9VaultDataVSgSS_tYaKF",
-            "mangledName": "$s9MoneyHash17CardFormCollectorC7collect8intentIDAA9VaultDataVSgSS_tYaKF",
+            "usr": "s:9MoneyHash17CardFormCollectorC7collect8intentID010shouldSaveC0AA9VaultDataVSgSS_SbtYaKF",
+            "mangledName": "$s9MoneyHash17CardFormCollectorC7collect8intentID010shouldSaveC0AA9VaultDataVSgSS_SbtYaKF",
             "moduleName": "MoneyHash",
             "declAttributes": [
               "AccessControl",
@@ -22418,9 +22424,70 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "cardBrand",
+            "printedName": "cardBrand",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.CardBrand?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardBrand",
+                    "printedName": "MoneyHash.CardBrand",
+                    "usr": "s:9MoneyHash9CardBrandV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash14CardFieldStateV9cardBrandAA0cG0VSgvp",
+            "mangledName": "$s9MoneyHash14CardFieldStateV9cardBrandAA0cG0VSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MoneyHash.CardBrand?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardBrand",
+                        "printedName": "MoneyHash.CardBrand",
+                        "usr": "s:9MoneyHash9CardBrandV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash14CardFieldStateV9cardBrandAA0cG0VSgvg",
+                "mangledName": "$s9MoneyHash14CardFieldStateV9cardBrandAA0cG0VSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(isValid:errorMessage:formattedValue:fieldType:)",
+            "printedName": "init(isValid:errorMessage:formattedValue:fieldType:cardBrand:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -22459,11 +22526,25 @@
                 "name": "CardFieldType",
                 "printedName": "MoneyHash.CardFieldType",
                 "usr": "s:9MoneyHash13CardFieldTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.CardBrand?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardBrand",
+                    "printedName": "MoneyHash.CardBrand",
+                    "usr": "s:9MoneyHash9CardBrandV"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:9MoneyHash14CardFieldStateV7isValid12errorMessage14formattedValue9fieldTypeACSb_SSSgSSAA0cdM0Otcfc",
-            "mangledName": "$s9MoneyHash14CardFieldStateV7isValid12errorMessage14formattedValue9fieldTypeACSb_SSSgSSAA0cdM0Otcfc",
+            "usr": "s:9MoneyHash14CardFieldStateV7isValid12errorMessage14formattedValue9fieldType9cardBrandACSb_SSSgSSAA0cdM0OAA0cO0VSgtcfc",
+            "mangledName": "$s9MoneyHash14CardFieldStateV7isValid12errorMessage14formattedValue9fieldType9cardBrandACSb_SSSgSSAA0cdM0OAA0cO0VSgtcfc",
             "moduleName": "MoneyHash",
             "declAttributes": [
               "AccessControl",

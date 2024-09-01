@@ -105,18 +105,16 @@ public struct CardBrand : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public enum Brand : Swift.Codable {
+public enum Brand : Swift.String, Swift.Codable {
   case visa
   case mastercard
   case mada
   case unknown
-  public static func == (a: MoneyHash.Brand, b: MoneyHash.Brand) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public func encode(to encoder: any Swift.Encoder) throws
-  public var hashValue: Swift.Int {
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
     get
   }
-  public init(from decoder: any Swift.Decoder) throws
 }
 public struct IntentMethodMetaData {
   public let cvv: Swift.String?
@@ -626,6 +624,7 @@ extension MoneyHash.DiscountType : Swift.Hashable {}
 extension MoneyHash.DiscountType : Swift.RawRepresentable {}
 extension MoneyHash.Brand : Swift.Equatable {}
 extension MoneyHash.Brand : Swift.Hashable {}
+extension MoneyHash.Brand : Swift.RawRepresentable {}
 extension MoneyHash.InputFieldType : Swift.Equatable {}
 extension MoneyHash.InputFieldType : Swift.Hashable {}
 extension MoneyHash.ErrorType : Swift.Equatable {}

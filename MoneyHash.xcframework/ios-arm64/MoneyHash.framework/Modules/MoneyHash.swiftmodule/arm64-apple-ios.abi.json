@@ -3770,52 +3770,53 @@
             "moduleName": "MoneyHash"
           },
           {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "Optional",
+                "printedName": "MoneyHash.Brand?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Brand",
+                    "printedName": "MoneyHash.Brand",
+                    "usr": "s:9MoneyHash5BrandO"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "Brand",
-                "printedName": "MoneyHash.Brand",
-                "usr": "s:9MoneyHash5BrandO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Brand",
-                "printedName": "MoneyHash.Brand",
-                "usr": "s:9MoneyHash5BrandO"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
-            "declKind": "Func",
-            "usr": "s:9MoneyHash5BrandO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s9MoneyHash5BrandO2eeoiySbAC_ACtFZ",
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash5BrandO8rawValueACSgSS_tcfc",
+            "mangledName": "$s9MoneyHash5BrandO8rawValueACSgSS_tcfc",
             "moduleName": "MoneyHash",
-            "static": true,
             "implicit": true,
-            "funcSelfKind": "NonMutating"
+            "init_kind": "Designated"
           },
           {
             "kind": "Var",
-            "name": "hashValue",
-            "printedName": "hashValue",
+            "name": "rawValue",
+            "printedName": "rawValue",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Var",
-            "usr": "s:9MoneyHash5BrandO9hashValueSivp",
-            "mangledName": "$s9MoneyHash5BrandO9hashValueSivp",
+            "usr": "s:9MoneyHash5BrandO8rawValueSSvp",
+            "mangledName": "$s9MoneyHash5BrandO8rawValueSSvp",
             "moduleName": "MoneyHash",
             "implicit": true,
             "accessors": [
@@ -3826,95 +3827,19 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9MoneyHash5BrandO9hashValueSivg",
-                "mangledName": "$s9MoneyHash5BrandO9hashValueSivg",
+                "usr": "s:9MoneyHash5BrandO8rawValueSSvg",
+                "mangledName": "$s9MoneyHash5BrandO8rawValueSSvg",
                 "moduleName": "MoneyHash",
                 "implicit": true,
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Function",
-            "name": "hash",
-            "printedName": "hash(into:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Hasher",
-                "printedName": "Swift.Hasher",
-                "paramValueOwnership": "InOut",
-                "usr": "s:s6HasherV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9MoneyHash5BrandO4hash4intoys6HasherVz_tF",
-            "mangledName": "$s9MoneyHash5BrandO4hash4intoys6HasherVz_tF",
-            "moduleName": "MoneyHash",
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Brand",
-                "printedName": "MoneyHash.Brand",
-                "usr": "s:9MoneyHash5BrandO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:9MoneyHash5BrandO4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s9MoneyHash5BrandO4fromACs7Decoder_p_tKcfc",
-            "moduleName": "MoneyHash",
-            "implicit": true,
-            "throwing": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "any Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9MoneyHash5BrandO6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s9MoneyHash5BrandO6encode2toys7Encoder_p_tKF",
-            "moduleName": "MoneyHash",
-            "implicit": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Enum",
@@ -3924,6 +3849,7 @@
         "declAttributes": [
           "AccessControl"
         ],
+        "enumRawTypeName": "String",
         "conformances": [
           {
             "kind": "Conformance",
@@ -3938,6 +3864,28 @@
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
           },
           {
             "kind": "Conformance",

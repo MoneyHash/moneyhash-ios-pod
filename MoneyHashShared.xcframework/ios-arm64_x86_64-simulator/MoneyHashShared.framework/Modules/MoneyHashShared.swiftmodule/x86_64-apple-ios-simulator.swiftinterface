@@ -119,8 +119,6 @@ public enum Skie {
     }
     public enum NativePayData {
     }
-    public enum CardBrand {
-    }
     public enum CardFormExceptions {
     }
     public enum ValidationException {
@@ -1800,6 +1798,42 @@ extension MoneyHashShared.RenderStrategy {
 extension MoneyHashShared.__RenderStrategy {
   public func toSwiftEnum() -> MoneyHashShared.RenderStrategy
 }
+@frozen public enum Brand : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case visa
+  case mastercard
+  case mada
+  case unknown
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static var companion: MoneyHashShared.__Brand.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: MoneyHashShared.__Brand, result: inout MoneyHashShared.Brand?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.__Brand, result: inout MoneyHashShared.Brand?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.__Brand?) -> MoneyHashShared.Brand
+  public func _bridgeToObjectiveC() -> MoneyHashShared.__Brand
+  public typealias _ObjectiveCType = MoneyHashShared.__Brand
+  public typealias Companion = MoneyHashShared.__Brand.Companion
+  public static func == (a: MoneyHashShared.Brand, b: MoneyHashShared.Brand) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [MoneyHashShared.Brand]
+  public static var allCases: [MoneyHashShared.Brand] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension MoneyHashShared.Brand {
+  public func toKotlinEnum() -> MoneyHashShared.__Brand
+}
+extension MoneyHashShared.__Brand {
+  public func toSwiftEnum() -> MoneyHashShared.Brand
+}
 @frozen public enum FieldType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
   case cardNumber
   case expireMonth
@@ -2102,21 +2136,6 @@ extension MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.NativePayData {
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.NativePayData.__Sealed where __Sealed : MoneyHashShared.NativePayData
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.NativePayData.__Sealed? where __Sealed : MoneyHashShared.NativePayData
-extension MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.CardBrand {
-  @frozen public enum __Sealed : Swift.Hashable {
-    case mada(MoneyHashShared.CardBrand.Mada)
-    case masterCard(MoneyHashShared.CardBrand.MasterCard)
-    case unknown(MoneyHashShared.CardBrand.Unknown)
-    case visa(MoneyHashShared.CardBrand.Visa)
-    public func hash(into hasher: inout Swift.Hasher)
-    public static func == (a: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.CardBrand.__Sealed, b: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.CardBrand.__Sealed) -> Swift.Bool
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-}
-public func onEnum<__Sealed>(of sealed: __Sealed) -> MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.CardBrand.__Sealed where __Sealed : MoneyHashShared.CardBrand
-@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.CardBrand.__Sealed? where __Sealed : MoneyHashShared.CardBrand
 extension MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.CardFormExceptions {
   @frozen public enum __Sealed : Swift.Hashable {
     case expireDateIsInThePast(MoneyHashShared.CardFormExceptions.ExpireDateIsInThePast)
@@ -2299,6 +2318,7 @@ extension MoneyHashShared.LoggerSeverity : Swift.Sendable {}
 extension MoneyHashShared.Environment : Swift.Sendable {}
 extension MoneyHashShared.InputFieldType : Swift.Sendable {}
 extension MoneyHashShared.RenderStrategy : Swift.Sendable {}
+extension MoneyHashShared.Brand : Swift.Sendable {}
 extension MoneyHashShared.FieldType : Swift.Sendable {}
 extension MoneyHashShared.Locale : Swift.Sendable {}
 extension MoneyHashShared.Ktor_utilsMonth : Swift.Sendable {}

@@ -6,7 +6,7 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class NSString, NSSet<ObjectType>, NSObject, NSNumber, NSMutableSet<ObjectType>, NSMutableDictionary<KeyType, ObjectType>, NSMutableArray<ObjectType>, NSError, NSDictionary<KeyType, ObjectType>, NSArray<ObjectType>, MHS__SkieTypeExportsKt, MHS__SkieSuspendWrappersKt, MHSWeak<T>, MHSVaultServiceImpl, MHSVaultDataCompanion, MHSVaultData, MHSValidationExceptionRangeValueValidationException, MHSValidationExceptionNumericValidationException, MHSValidationExceptionLuhnException, MHSValidationExceptionLengthException, MHSValidationExceptionEmptyValueException, MHSValidationExceptionAlphabetValidationException, MHSValidationException, MHSUserCompanion, MHSUser, MHSUseSelfWalletRequestCompanion, MHSUseSelfWalletRequest, MHSUseCardTokenRequestCompanion, MHSUseCardTokenRequest, MHSUpdateMethodRequestCompanion, MHSUpdateMethodRequest, MHSUShort, MHSULong, MHSUInt, MHSUByte, MHSTypeCompanion, MHSType, MHSTransactionOperationCompanion, MHSTransactionOperation, MHSTransactionCompanion, MHSTransaction, MHSTokenizeCardInfoCompanion, MHSTokenizeCardInfo, MHSSubmitReceiptRequestCompanion, MHSSubmitReceiptRequest, MHSSubmitFormRequestCompanion, MHSSubmitFormRequest, MHSStatusResponseCompanion, MHSStatusResponse, MHSStatusCompanion, MHSStatus, MHSSkie_SuspendResultSuccess, MHSSkie_SuspendResultError, MHSSkie_SuspendResultCanceled, MHSSkie_SuspendResult, MHSSkie_SuspendHandler, MHSSkie_CancellationHandler, MHSSkieKotlinStateFlow<T>, MHSSkieKotlinSharedFlow<T>, MHSSkieKotlinOptionalStateFlow<T>, MHSSkieKotlinOptionalSharedFlow<T>, MHSSkieKotlinOptionalMutableStateFlow<T>, MHSSkieKotlinOptionalMutableSharedFlow<T>, MHSSkieKotlinOptionalFlow<T>, MHSSkieKotlinMutableStateFlow<T>, MHSSkieKotlinMutableSharedFlow<T>, MHSSkieKotlinFlow<T>, MHSSkieColdFlowIterator<E>, MHSShort, MHSSecureTextFieldVM, MHSSecureTextFieldConfiguration, MHSSavedCardDataCompanion, MHSSavedCardData, MHSSavedCardCompanion, MHSSavedCard, MHSSaveCardCheckboxCompanion, MHSSaveCardCheckbox, MHSSandboxUseCase, MHSSandboxServiceImpl, MHSSandboxModule, MHSRequestContentQuery, MHSRequestContentPath, MHSRequestContentHeader, MHSRequestContentBody<T>, MHSRequestContent, MHSRequestBuilder, MHSRenderStrategyCompanion, MHSRenderStrategy, MHSRedirectCompanion, MHSRedirect, MHSProviderExtraDataCompanion, MHSProviderExtraData, MHSProductItemCompanion, MHSProductItem, MHSPlatformKt, MHSPayoutTransactionDataCompanion, MHSPayoutTransactionData, MHSPayoutMethodCompanion, MHSPayoutMethod, MHSPayoutIntentDataCompanion, MHSPayoutIntentData, MHSPayoutDetailsCompanion, MHSPayoutDetails, MHSPayoutDataCompanion, MHSPayoutData, MHSPayoutActionDataCompanion, MHSPayoutActionData, MHSPaymentUseCase, MHSPaymentMethodCompanion, MHSPaymentMethod, MHSPaymentIntentDataCompanion, MHSPaymentIntentData, MHSPaymentIntentCompanion, MHSPaymentIntent, MHSPaymentInformationModule, MHSPaymentInformationCompanion, MHSPaymentInformation, MHSPaymentActionDataCompanion, MHSPaymentActionData, MHSOptionItemCompanion, MHSOptionItem, MHSOperationStatusCompanion, MHSOperationStatus, MHSOperationAmountCompanion, MHSOperationAmount, MHSNumber, MHSNetworkModule, MHSNetworkExceptions_iosKt, MHSNativePaymentDataCompanion, MHSNativePaymentData, MHSNativePayDataCompanion, MHSNativePayDataApplePayDataCompanion, MHSNativePayDataApplePayData, MHSNativePayData, MHSMutableSet<ObjectType>, MHSMutableDictionary<KeyType, ObjectType>, MHSMoneyHashUtils, MHSMethodsExtensionsKt, MHSMethodTypeCompanion, MHSMethodType, MHSMethodMetaData, MHSMHThrowableCompanion, MHSMHThrowable, MHSLong, MHSLoginRequestCompanion, MHSLoginRequest, MHSLoggerSeverity, MHSLocalizationManager, MHSLocaleCompanion, MHSLocale, MHSLanguageCompanion, MHSLanguage, MHSKtor_utilsWeekDayCompanion, MHSKtor_utilsWeekDay, MHSKtor_utilsTypeInfo, MHSKtor_utilsStringValuesBuilderImpl, MHSKtor_utilsPipelinePhase, MHSKtor_utilsPipeline<TSubject, TContext>, MHSKtor_utilsMonthCompanion, MHSKtor_utilsMonth, MHSKtor_utilsGMTDateCompanion, MHSKtor_utilsGMTDate, MHSKtor_utilsAttributeKey<T>, MHSKtor_ioMemoryCompanion, MHSKtor_ioMemory, MHSKtor_ioInputCompanion, MHSKtor_ioInput, MHSKtor_ioChunkBufferCompanion, MHSKtor_ioChunkBuffer, MHSKtor_ioByteReadPacketCompanion, MHSKtor_ioByteReadPacket, MHSKtor_ioBufferCompanion, MHSKtor_ioBuffer, MHSKtor_httpUrlCompanion, MHSKtor_httpUrl, MHSKtor_httpURLProtocolCompanion, MHSKtor_httpURLProtocol, MHSKtor_httpURLBuilderCompanion, MHSKtor_httpURLBuilder, MHSKtor_httpOutgoingContentWriteChannelContent, MHSKtor_httpOutgoingContentReadChannelContent, MHSKtor_httpOutgoingContentProtocolUpgrade, MHSKtor_httpOutgoingContentNoContent, MHSKtor_httpOutgoingContentByteArrayContent, MHSKtor_httpOutgoingContent, MHSKtor_httpHttpStatusCodeCompanion, MHSKtor_httpHttpStatusCode, MHSKtor_httpHttpProtocolVersionCompanion, MHSKtor_httpHttpProtocolVersion, MHSKtor_httpHttpMethodCompanion, MHSKtor_httpHttpMethod, MHSKtor_httpHeadersBuilder, MHSKtor_httpHeaderValueWithParametersCompanion, MHSKtor_httpHeaderValueWithParameters, MHSKtor_httpHeaderValueParam, MHSKtor_httpContentTypeCompanion, MHSKtor_httpContentType, MHSKtor_eventsEvents, MHSKtor_eventsEventDefinition<T>, MHSKtor_client_coreProxyConfig, MHSKtor_client_coreHttpSendPipelinePhases, MHSKtor_client_coreHttpSendPipeline, MHSKtor_client_coreHttpResponsePipelinePhases, MHSKtor_client_coreHttpResponsePipeline, MHSKtor_client_coreHttpResponseData, MHSKtor_client_coreHttpResponseContainer, MHSKtor_client_coreHttpResponse, MHSKtor_client_coreHttpRequestPipelinePhases, MHSKtor_client_coreHttpRequestPipeline, MHSKtor_client_coreHttpRequestData, MHSKtor_client_coreHttpRequestBuilderCompanion, MHSKtor_client_coreHttpRequestBuilder, MHSKtor_client_coreHttpReceivePipelinePhases, MHSKtor_client_coreHttpReceivePipeline, MHSKtor_client_coreHttpClientEngineConfig, MHSKtor_client_coreHttpClientConfig<T>, MHSKtor_client_coreHttpClientCallCompanion, MHSKtor_client_coreHttpClientCall, MHSKtor_client_coreHttpClient, MHSKtor_client_coreHttpCallValidatorConfig, MHSKtor_client_coreDefaultRequestDefaultRequestBuilder, MHSKtorClientFactory, MHSKotlinx_serialization_jsonJsonPrimitiveCompanion, MHSKotlinx_serialization_jsonJsonPrimitive, MHSKotlinx_serialization_jsonJsonNull, MHSKotlinx_serialization_jsonJsonElementCompanion, MHSKotlinx_serialization_jsonJsonElement, MHSKotlinx_serialization_jsonJsonDefault, MHSKotlinx_serialization_jsonJsonConfiguration, MHSKotlinx_serialization_jsonJson, MHSKotlinx_serialization_coreStructureKindOBJECT, MHSKotlinx_serialization_coreStructureKindMAP, MHSKotlinx_serialization_coreStructureKindLIST, MHSKotlinx_serialization_coreStructureKindCLASS, MHSKotlinx_serialization_coreStructureKind, MHSKotlinx_serialization_coreSerializersModule, MHSKotlinx_serialization_coreSerialKindENUM, MHSKotlinx_serialization_coreSerialKindCONTEXTUAL, MHSKotlinx_serialization_coreSerialKind, MHSKotlinx_serialization_corePrimitiveKindSTRING, MHSKotlinx_serialization_corePrimitiveKindSHORT, MHSKotlinx_serialization_corePrimitiveKindLONG, MHSKotlinx_serialization_corePrimitiveKindINT, MHSKotlinx_serialization_corePrimitiveKindFLOAT, MHSKotlinx_serialization_corePrimitiveKindDOUBLE, MHSKotlinx_serialization_corePrimitiveKindCHAR, MHSKotlinx_serialization_corePrimitiveKindBYTE, MHSKotlinx_serialization_corePrimitiveKindBOOLEAN, MHSKotlinx_serialization_corePrimitiveKind, MHSKotlinx_serialization_corePolymorphicKindSEALED, MHSKotlinx_serialization_corePolymorphicKindOPEN, MHSKotlinx_serialization_corePolymorphicKind, MHSKotlinx_coroutines_coreCoroutineDispatcherKey, MHSKotlinx_coroutines_coreCoroutineDispatcher, MHSKotlinUnit, MHSKotlinThrowable, MHSKotlinRuntimeException, MHSKotlinPair<A, B>, MHSKotlinNothing, MHSKotlinLongRangeCompanion, MHSKotlinLongRange, MHSKotlinLongProgressionCompanion, MHSKotlinLongProgression, MHSKotlinLongIterator, MHSKotlinKVariance, MHSKotlinKTypeProjectionCompanion, MHSKotlinKTypeProjection, MHSKotlinIllegalStateException, MHSKotlinException, MHSKotlinEnumCompanion, MHSKotlinEnum<E>, MHSKotlinCancellationException, MHSKotlinByteIterator, MHSKotlinByteArray, MHSKotlinArray<T>, MHSKotlinAbstractCoroutineContextKey<B, E>, MHSKotlinAbstractCoroutineContextElement, MHSKmmBaseService, MHSIntentStatusCompanion, MHSIntentStatus, MHSIntentStateDetailsUrlToRenderCompanion, MHSIntentStateDetailsUrlToRender, MHSIntentStateDetailsTransactionWaitingUserAction, MHSIntentStateDetailsTransactionFailedCompanion, MHSIntentStateDetailsTransactionFailed, MHSIntentStateDetailsSavedCardCVVCompanion, MHSIntentStateDetailsSavedCardCVV, MHSIntentStateDetailsNativePayCompanion, MHSIntentStateDetailsNativePay, MHSIntentStateDetailsMethodSelectionCompanion, MHSIntentStateDetailsMethodSelection, MHSIntentStateDetailsIntentProcessed, MHSIntentStateDetailsIntentForm, MHSIntentStateDetailsFormFieldsCompanion, MHSIntentStateDetailsFormFields, MHSIntentStateDetailsExpired, MHSIntentStateDetailsCompanion, MHSIntentStateDetailsClosed, MHSIntentStateDetails, MHSIntentStateCompanion, MHSIntentState, MHSIntentMethodsCompanion, MHSIntentMethods, MHSIntentMethodItemCompanion, MHSIntentMethodItem, MHSInt, MHSInputFieldTypeCompanion, MHSInputFieldType, MHSInputFieldCompanion, MHSInputField, MHSIOSPlatform, MHSFormFieldsCompanion, MHSFormFields, MHSFloat, MHSFieldTypeCompanion, MHSFieldType, MHSFieldItemCompanion, MHSFieldItem, MHSFeesResponseCompanion, MHSFeesResponse, MHSFeesDataCompanion, MHSFeesData, MHSFeeItemCompanion, MHSFeeItem, MHSExpressMethodCompanion, MHSExpressMethod, MHSExpireYearValidatorKt, MHSErrorTypeCompanion, MHSErrorType, MHSErrorMessagesDataCompanion, MHSErrorMessagesData, MHSErrorMapperKt, MHSErrorMapperConstants, MHSErrorMapper, MHSErrorInfoCompanion, MHSErrorInfo, MHSEnvironment, MHSDouble, MHSDiscountTypeCompanion, MHSDiscountType, MHSDiscountResponseCompanion, MHSDiscountResponse, MHSDiscountItemCompanion, MHSDiscountItem, MHSDiscountDataCompanion, MHSDiscountData, MHSDemoIntentResponseCompanion, MHSDemoIntentResponse, MHSDemoIntentItemCompanion, MHSDemoIntentItem, MHSDemoIntentDataCompanion, MHSDemoIntentData, MHSDeleteSavedCardRequestCompanion, MHSDeleteSavedCardRequest, MHSDefaultLogManager, MHSDataStateCompanion, MHSDataState<T>, MHSCvvConfigCompanion, MHSCvvConfig, MHSCustomerBalanceCompanion, MHSCustomerBalance, MHSConstants, MHSCommonExtensionsKt, MHSCardTokenDataCompanion, MHSCardTokenData, MHSCardStateUnknown, MHSCardStateSuccess, MHSCardStateFailed, MHSCardStateError, MHSCardState, MHSCardIntentResultCompanion, MHSCardIntentResult, MHSCardIntentCompanion, MHSCardIntent, MHSCardFormStateCompanion, MHSCardFormState, MHSCardFormExceptionsRedundantFieldTypeException, MHSCardFormExceptionsMissingFieldTypeException, MHSCardFormExceptionsInvalidFieldException, MHSCardFormExceptionsExpireDateIsInThePast, MHSCardFormExceptions, MHSCardFieldsCollector, MHSCardFieldStateCompanion, MHSCardFieldState, MHSCardDetails_Companion, MHSCardDetails_, MHSCardDetailsCompanion, MHSCardDetails, MHSCardDataCompanion, MHSCardData, MHSCardCollector, MHSCardBrandVisaCompanion, MHSCardBrandVisa, MHSCardBrandUnknownCompanion, MHSCardBrandUnknown, MHSCardBrandMasterCardCompanion, MHSCardBrandMasterCard, MHSCardBrandMadaCompanion, MHSCardBrandMada, MHSCardBrandCompanion, MHSCardBrand, MHSCardActionDataCompanion, MHSCardActionData, MHSByte, MHSBrandSettingsModelCompanion, MHSBrandSettingsModel, MHSBrandSettingsDataCompanion, MHSBrandSettingsData, MHSBoolean, MHSBaseService, MHSBase, MHSAuthUseCase, MHSAuthTokenCompanion, MHSAuthToken, MHSAuthServiceImpl, MHSAuthResponseCompanion, MHSAuthResponse, MHSAuthModule, MHSAuthDataCompanion, MHSAuthData;
+@class NSString, NSSet<ObjectType>, NSObject, NSNumber, NSMutableSet<ObjectType>, NSMutableDictionary<KeyType, ObjectType>, NSMutableArray<ObjectType>, NSError, NSDictionary<KeyType, ObjectType>, NSArray<ObjectType>, MHS__SkieTypeExportsKt, MHS__SkieSuspendWrappersKt, MHSWeak<T>, MHSVaultServiceImpl, MHSVaultDataCompanion, MHSVaultData, MHSValidationExceptionRangeValueValidationException, MHSValidationExceptionNumericValidationException, MHSValidationExceptionLuhnException, MHSValidationExceptionLengthException, MHSValidationExceptionEmptyValueException, MHSValidationExceptionAlphabetValidationException, MHSValidationException, MHSUserCompanion, MHSUser, MHSUseSelfWalletRequestCompanion, MHSUseSelfWalletRequest, MHSUseCardTokenRequestCompanion, MHSUseCardTokenRequest, MHSUpdateMethodRequestCompanion, MHSUpdateMethodRequest, MHSUShort, MHSULong, MHSUInt, MHSUByte, MHSTypeCompanion, MHSType, MHSTransactionOperationCompanion, MHSTransactionOperation, MHSTransactionCompanion, MHSTransaction, MHSTokenizeCardInfoCompanion, MHSTokenizeCardInfo, MHSSubmitReceiptRequestCompanion, MHSSubmitReceiptRequest, MHSSubmitFormRequestCompanion, MHSSubmitFormRequest, MHSStatusResponseCompanion, MHSStatusResponse, MHSStatusCompanion, MHSStatus, MHSSkie_SuspendResultSuccess, MHSSkie_SuspendResultError, MHSSkie_SuspendResultCanceled, MHSSkie_SuspendResult, MHSSkie_SuspendHandler, MHSSkie_CancellationHandler, MHSSkieKotlinStateFlow<T>, MHSSkieKotlinSharedFlow<T>, MHSSkieKotlinOptionalStateFlow<T>, MHSSkieKotlinOptionalSharedFlow<T>, MHSSkieKotlinOptionalMutableStateFlow<T>, MHSSkieKotlinOptionalMutableSharedFlow<T>, MHSSkieKotlinOptionalFlow<T>, MHSSkieKotlinMutableStateFlow<T>, MHSSkieKotlinMutableSharedFlow<T>, MHSSkieKotlinFlow<T>, MHSSkieColdFlowIterator<E>, MHSShort, MHSSecureTextFieldVM, MHSSecureTextFieldConfiguration, MHSSavedCardDataCompanion, MHSSavedCardData, MHSSavedCardCompanion, MHSSavedCard, MHSSaveCardCheckboxCompanion, MHSSaveCardCheckbox, MHSSandboxUseCase, MHSSandboxServiceImpl, MHSSandboxModule, MHSRequestContentQuery, MHSRequestContentPath, MHSRequestContentHeader, MHSRequestContentBody<T>, MHSRequestContent, MHSRequestBuilder, MHSRenderStrategyCompanion, MHSRenderStrategy, MHSRedirectCompanion, MHSRedirect, MHSProviderExtraDataCompanion, MHSProviderExtraData, MHSProductItemCompanion, MHSProductItem, MHSPlatformKt, MHSPayoutTransactionDataCompanion, MHSPayoutTransactionData, MHSPayoutMethodCompanion, MHSPayoutMethod, MHSPayoutIntentDataCompanion, MHSPayoutIntentData, MHSPayoutDetailsCompanion, MHSPayoutDetails, MHSPayoutDataCompanion, MHSPayoutData, MHSPayoutActionDataCompanion, MHSPayoutActionData, MHSPaymentUseCase, MHSPaymentMethodCompanion, MHSPaymentMethod, MHSPaymentIntentDataCompanion, MHSPaymentIntentData, MHSPaymentIntentCompanion, MHSPaymentIntent, MHSPaymentInformationModule, MHSPaymentInformationCompanion, MHSPaymentInformation, MHSPaymentActionDataCompanion, MHSPaymentActionData, MHSOptionItemCompanion, MHSOptionItem, MHSOperationStatusCompanion, MHSOperationStatus, MHSOperationAmountCompanion, MHSOperationAmount, MHSNumber, MHSNetworkModule, MHSNetworkExceptions_iosKt, MHSNativePaymentDataCompanion, MHSNativePaymentData, MHSNativePayDataCompanion, MHSNativePayDataApplePayDataCompanion, MHSNativePayDataApplePayData, MHSNativePayData, MHSMutableSet<ObjectType>, MHSMutableDictionary<KeyType, ObjectType>, MHSMoneyHashUtils, MHSMethodsExtensionsKt, MHSMethodTypeCompanion, MHSMethodType, MHSMethodMetaData, MHSMHThrowableCompanion, MHSMHThrowable, MHSLong, MHSLoginRequestCompanion, MHSLoginRequest, MHSLoggerSeverity, MHSLocalizationManager, MHSLocaleCompanion, MHSLocale, MHSLanguageCompanion, MHSLanguage, MHSKtor_utilsWeekDayCompanion, MHSKtor_utilsWeekDay, MHSKtor_utilsTypeInfo, MHSKtor_utilsStringValuesBuilderImpl, MHSKtor_utilsPipelinePhase, MHSKtor_utilsPipeline<TSubject, TContext>, MHSKtor_utilsMonthCompanion, MHSKtor_utilsMonth, MHSKtor_utilsGMTDateCompanion, MHSKtor_utilsGMTDate, MHSKtor_utilsAttributeKey<T>, MHSKtor_ioMemoryCompanion, MHSKtor_ioMemory, MHSKtor_ioInputCompanion, MHSKtor_ioInput, MHSKtor_ioChunkBufferCompanion, MHSKtor_ioChunkBuffer, MHSKtor_ioByteReadPacketCompanion, MHSKtor_ioByteReadPacket, MHSKtor_ioBufferCompanion, MHSKtor_ioBuffer, MHSKtor_httpUrlCompanion, MHSKtor_httpUrl, MHSKtor_httpURLProtocolCompanion, MHSKtor_httpURLProtocol, MHSKtor_httpURLBuilderCompanion, MHSKtor_httpURLBuilder, MHSKtor_httpOutgoingContentWriteChannelContent, MHSKtor_httpOutgoingContentReadChannelContent, MHSKtor_httpOutgoingContentProtocolUpgrade, MHSKtor_httpOutgoingContentNoContent, MHSKtor_httpOutgoingContentByteArrayContent, MHSKtor_httpOutgoingContent, MHSKtor_httpHttpStatusCodeCompanion, MHSKtor_httpHttpStatusCode, MHSKtor_httpHttpProtocolVersionCompanion, MHSKtor_httpHttpProtocolVersion, MHSKtor_httpHttpMethodCompanion, MHSKtor_httpHttpMethod, MHSKtor_httpHeadersBuilder, MHSKtor_httpHeaderValueWithParametersCompanion, MHSKtor_httpHeaderValueWithParameters, MHSKtor_httpHeaderValueParam, MHSKtor_httpContentTypeCompanion, MHSKtor_httpContentType, MHSKtor_eventsEvents, MHSKtor_eventsEventDefinition<T>, MHSKtor_client_coreProxyConfig, MHSKtor_client_coreHttpSendPipelinePhases, MHSKtor_client_coreHttpSendPipeline, MHSKtor_client_coreHttpResponsePipelinePhases, MHSKtor_client_coreHttpResponsePipeline, MHSKtor_client_coreHttpResponseData, MHSKtor_client_coreHttpResponseContainer, MHSKtor_client_coreHttpResponse, MHSKtor_client_coreHttpRequestPipelinePhases, MHSKtor_client_coreHttpRequestPipeline, MHSKtor_client_coreHttpRequestData, MHSKtor_client_coreHttpRequestBuilderCompanion, MHSKtor_client_coreHttpRequestBuilder, MHSKtor_client_coreHttpReceivePipelinePhases, MHSKtor_client_coreHttpReceivePipeline, MHSKtor_client_coreHttpClientEngineConfig, MHSKtor_client_coreHttpClientConfig<T>, MHSKtor_client_coreHttpClientCallCompanion, MHSKtor_client_coreHttpClientCall, MHSKtor_client_coreHttpClient, MHSKtor_client_coreHttpCallValidatorConfig, MHSKtor_client_coreDefaultRequestDefaultRequestBuilder, MHSKtorClientFactory, MHSKotlinx_serialization_jsonJsonPrimitiveCompanion, MHSKotlinx_serialization_jsonJsonPrimitive, MHSKotlinx_serialization_jsonJsonNull, MHSKotlinx_serialization_jsonJsonElementCompanion, MHSKotlinx_serialization_jsonJsonElement, MHSKotlinx_serialization_jsonJsonDefault, MHSKotlinx_serialization_jsonJsonConfiguration, MHSKotlinx_serialization_jsonJson, MHSKotlinx_serialization_coreStructureKindOBJECT, MHSKotlinx_serialization_coreStructureKindMAP, MHSKotlinx_serialization_coreStructureKindLIST, MHSKotlinx_serialization_coreStructureKindCLASS, MHSKotlinx_serialization_coreStructureKind, MHSKotlinx_serialization_coreSerializersModule, MHSKotlinx_serialization_coreSerialKindENUM, MHSKotlinx_serialization_coreSerialKindCONTEXTUAL, MHSKotlinx_serialization_coreSerialKind, MHSKotlinx_serialization_corePrimitiveKindSTRING, MHSKotlinx_serialization_corePrimitiveKindSHORT, MHSKotlinx_serialization_corePrimitiveKindLONG, MHSKotlinx_serialization_corePrimitiveKindINT, MHSKotlinx_serialization_corePrimitiveKindFLOAT, MHSKotlinx_serialization_corePrimitiveKindDOUBLE, MHSKotlinx_serialization_corePrimitiveKindCHAR, MHSKotlinx_serialization_corePrimitiveKindBYTE, MHSKotlinx_serialization_corePrimitiveKindBOOLEAN, MHSKotlinx_serialization_corePrimitiveKind, MHSKotlinx_serialization_corePolymorphicKindSEALED, MHSKotlinx_serialization_corePolymorphicKindOPEN, MHSKotlinx_serialization_corePolymorphicKind, MHSKotlinx_coroutines_coreCoroutineDispatcherKey, MHSKotlinx_coroutines_coreCoroutineDispatcher, MHSKotlinUnit, MHSKotlinThrowable, MHSKotlinRuntimeException, MHSKotlinPair<A, B>, MHSKotlinNothing, MHSKotlinLongRangeCompanion, MHSKotlinLongRange, MHSKotlinLongProgressionCompanion, MHSKotlinLongProgression, MHSKotlinLongIterator, MHSKotlinKVariance, MHSKotlinKTypeProjectionCompanion, MHSKotlinKTypeProjection, MHSKotlinIllegalStateException, MHSKotlinException, MHSKotlinEnumCompanion, MHSKotlinEnum<E>, MHSKotlinCancellationException, MHSKotlinByteIterator, MHSKotlinByteArray, MHSKotlinArray<T>, MHSKotlinAbstractCoroutineContextKey<B, E>, MHSKotlinAbstractCoroutineContextElement, MHSKmmBaseService, MHSIntentStatusCompanion, MHSIntentStatus, MHSIntentStateDetailsUrlToRenderCompanion, MHSIntentStateDetailsUrlToRender, MHSIntentStateDetailsTransactionWaitingUserAction, MHSIntentStateDetailsTransactionFailedCompanion, MHSIntentStateDetailsTransactionFailed, MHSIntentStateDetailsSavedCardCVVCompanion, MHSIntentStateDetailsSavedCardCVV, MHSIntentStateDetailsNativePayCompanion, MHSIntentStateDetailsNativePay, MHSIntentStateDetailsMethodSelectionCompanion, MHSIntentStateDetailsMethodSelection, MHSIntentStateDetailsIntentProcessed, MHSIntentStateDetailsIntentForm, MHSIntentStateDetailsFormFieldsCompanion, MHSIntentStateDetailsFormFields, MHSIntentStateDetailsExpired, MHSIntentStateDetailsCompanion, MHSIntentStateDetailsClosed, MHSIntentStateDetails, MHSIntentStateCompanion, MHSIntentState, MHSIntentMethodsCompanion, MHSIntentMethods, MHSIntentMethodItemCompanion, MHSIntentMethodItem, MHSInt, MHSInputFieldTypeCompanion, MHSInputFieldType, MHSInputFieldCompanion, MHSInputField, MHSIOSPlatform, MHSFormFieldsCompanion, MHSFormFields, MHSFloat, MHSFieldTypeCompanion, MHSFieldType, MHSFieldItemCompanion, MHSFieldItem, MHSFeesResponseCompanion, MHSFeesResponse, MHSFeesDataCompanion, MHSFeesData, MHSFeeItemCompanion, MHSFeeItem, MHSExpressMethodCompanion, MHSExpressMethod, MHSExpireYearValidatorKt, MHSErrorTypeCompanion, MHSErrorType, MHSErrorMessagesDataCompanion, MHSErrorMessagesData, MHSErrorMapperKt, MHSErrorMapperConstants, MHSErrorMapper, MHSErrorInfoCompanion, MHSErrorInfo, MHSEnvironment, MHSDouble, MHSDiscountTypeCompanion, MHSDiscountType, MHSDiscountResponseCompanion, MHSDiscountResponse, MHSDiscountItemCompanion, MHSDiscountItem, MHSDiscountDataCompanion, MHSDiscountData, MHSDemoIntentResponseCompanion, MHSDemoIntentResponse, MHSDemoIntentItemCompanion, MHSDemoIntentItem, MHSDemoIntentDataCompanion, MHSDemoIntentData, MHSDeleteSavedCardRequestCompanion, MHSDeleteSavedCardRequest, MHSDefaultLogManager, MHSDataStateCompanion, MHSDataState<T>, MHSCvvConfigCompanion, MHSCvvConfig, MHSCustomerBalanceCompanion, MHSCustomerBalance, MHSConstants, MHSCommonExtensionsKt, MHSCardTokenDataCompanion, MHSCardTokenData, MHSCardStateUnknown, MHSCardStateSuccess, MHSCardStateFailed, MHSCardStateError, MHSCardState, MHSCardIntentResultCompanion, MHSCardIntentResult, MHSCardIntentCompanion, MHSCardIntent, MHSCardFormStateCompanion, MHSCardFormState, MHSCardFormExceptionsRedundantFieldTypeException, MHSCardFormExceptionsMissingFieldTypeException, MHSCardFormExceptionsInvalidFieldException, MHSCardFormExceptionsExpireDateIsInThePast, MHSCardFormExceptions, MHSCardFieldsCollector, MHSCardFieldStateCompanion, MHSCardFieldState, MHSCardDetails_Companion, MHSCardDetails_, MHSCardDetailsCompanion, MHSCardDetails, MHSCardDataCompanion, MHSCardData, MHSCardCollector, MHSCardBrandCompanion, MHSCardBrand, MHSCardActionDataCompanion, MHSCardActionData, MHSByte, MHSBrandSettingsModelCompanion, MHSBrandSettingsModel, MHSBrandSettingsDataCompanion, MHSBrandSettingsData, MHSBrandCompanion, MHSBrand, MHSBoolean, MHSBaseService, MHSBase, MHSAuthUseCase, MHSAuthTokenCompanion, MHSAuthToken, MHSAuthServiceImpl, MHSAuthResponseCompanion, MHSAuthResponse, MHSAuthModule, MHSAuthDataCompanion, MHSAuthData;
 
 @protocol NSCopying, MHSVaultService, MHSTextFormatter, MHSStrings, MHSSkie_DispatcherDelegate, MHSSandboxService, MHSPlatform, MHSPaymentService, MHSLoggerManager, MHSKtor_utilsStringValuesBuilder, MHSKtor_utilsStringValues, MHSKtor_utilsAttributes, MHSKtor_ioReadSession, MHSKtor_ioObjectPool, MHSKtor_ioCloseable, MHSKtor_ioByteWriteChannel, MHSKtor_ioByteReadChannel, MHSKtor_httpParametersBuilder, MHSKtor_httpParameters, MHSKtor_httpHttpMessageBuilder, MHSKtor_httpHttpMessage, MHSKtor_httpHeaders, MHSKtor_client_coreHttpRequest, MHSKtor_client_coreHttpClientPlugin, MHSKtor_client_coreHttpClientEngineCapability, MHSKtor_client_coreHttpClientEngine, MHSKotlinx_serialization_jsonJsonNamingStrategy, MHSKotlinx_serialization_coreStringFormat, MHSKotlinx_serialization_coreSerializersModuleCollector, MHSKotlinx_serialization_coreSerializationStrategy, MHSKotlinx_serialization_coreSerialFormat, MHSKotlinx_serialization_coreSerialDescriptor, MHSKotlinx_serialization_coreKSerializer, MHSKotlinx_serialization_coreEncoder, MHSKotlinx_serialization_coreDeserializationStrategy, MHSKotlinx_serialization_coreDecoder, MHSKotlinx_serialization_coreCompositeEncoder, MHSKotlinx_serialization_coreCompositeDecoder, MHSKotlinx_coroutines_coreStateFlow, MHSKotlinx_coroutines_coreSharedFlow, MHSKotlinx_coroutines_coreSelectInstance, MHSKotlinx_coroutines_coreSelectClause2, MHSKotlinx_coroutines_coreSelectClause1, MHSKotlinx_coroutines_coreSelectClause0, MHSKotlinx_coroutines_coreSelectClause, MHSKotlinx_coroutines_coreRunnable, MHSKotlinx_coroutines_coreParentJob, MHSKotlinx_coroutines_coreMutableStateFlow, MHSKotlinx_coroutines_coreMutableSharedFlow, MHSKotlinx_coroutines_coreJob, MHSKotlinx_coroutines_coreFlowCollector, MHSKotlinx_coroutines_coreFlow, MHSKotlinx_coroutines_coreDisposableHandle, MHSKotlinx_coroutines_coreCoroutineScope, MHSKotlinx_coroutines_coreChildJob, MHSKotlinx_coroutines_coreChildHandle, MHSKotlinSuspendFunction2, MHSKotlinSuspendFunction1, MHSKotlinSequence, MHSKotlinOpenEndRange, MHSKotlinMapEntry, MHSKotlinKType, MHSKotlinKDeclarationContainer, MHSKotlinKClassifier, MHSKotlinKClass, MHSKotlinKAnnotatedElement, MHSKotlinIterator, MHSKotlinIterable, MHSKotlinFunction, MHSKotlinCoroutineContextKey, MHSKotlinCoroutineContextElement, MHSKotlinCoroutineContext, MHSKotlinContinuationInterceptor, MHSKotlinContinuation, MHSKotlinComparable, MHSKotlinClosedRange, MHSKotlinAppendable, MHSKotlinAnnotation, MHSCommonParceler, MHSCommonParcelable, MHSAuthService;
 
@@ -4614,12 +4614,49 @@ __attribute__((swift_name("DemoIntentResponse.Companion")))
  * @note annotations
  *   kotlinx.serialization.Serializable
 */
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Brand")))
+@interface MHSBrand : MHSKotlinEnum<MHSBrand *>
+@property (class, readonly, getter=companion) MHSBrandCompanion *companion __attribute__((swift_name("companion")));
+@property (class, readonly) MHSBrand *visa __attribute__((swift_name("visa")));
+@property (class, readonly) MHSBrand *mastercard __attribute__((swift_name("mastercard")));
+@property (class, readonly) MHSBrand *mada __attribute__((swift_name("mada")));
+@property (class, readonly) MHSBrand *unknown __attribute__((swift_name("unknown")));
+@property (class, readonly) NSArray<MHSBrand *> *entries __attribute__((swift_name("entries")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
++ (MHSKotlinArray<MHSBrand *> *)values __attribute__((swift_name("values()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Brand.Companion")))
+@interface MHSBrandCompanion : MHSBase
+@property (class, readonly, getter=shared) MHSBrandCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<MHSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+- (id<MHSKotlinx_serialization_coreKSerializer>)serializerTypeParamsSerializers:(MHSKotlinArray<id<MHSKotlinx_serialization_coreKSerializer>> *)typeParamsSerializers __attribute__((swift_name("serializer(typeParamsSerializers:)")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("CardBrand")))
 @interface MHSCardBrand : MHSBase <MHSCommonParcelable>
 @property (class, readonly, getter=companion) MHSCardBrandCompanion *companion __attribute__((swift_name("companion")));
-@property (readonly) NSString *brand __attribute__((swift_name("brand")));
+@property (readonly) MHSBrand *brand __attribute__((swift_name("brand")));
 @property (readonly) NSString *brandIconUrl __attribute__((swift_name("brandIconUrl")));
 @property (readonly) NSString *first6Digits __attribute__((swift_name("first6Digits")));
+- (instancetype)initWithBrand:(MHSBrand *)brand first6Digits:(NSString *)first6Digits brandIconUrl:(NSString *)brandIconUrl __attribute__((swift_name("init(brand:first6Digits:brandIconUrl:)"))) __attribute__((objc_designated_initializer));
+- (MHSCardBrand *)doCopyBrand:(MHSBrand *)brand first6Digits:(NSString *)first6Digits brandIconUrl:(NSString *)brandIconUrl __attribute__((swift_name("doCopy(brand:first6Digits:brandIconUrl:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
 
 /**
  * @note annotations
@@ -4641,181 +4678,6 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("CardBrand.Companion")))
 @interface MHSCardBrandCompanion : MHSBase
 @property (class, readonly, getter=shared) MHSCardBrandCompanion *shared __attribute__((swift_name("shared")));
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-- (id<MHSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
-- (id<MHSKotlinx_serialization_coreKSerializer>)serializerTypeParamsSerializers:(MHSKotlinArray<id<MHSKotlinx_serialization_coreKSerializer>> *)typeParamsSerializers __attribute__((swift_name("serializer(typeParamsSerializers:)")));
-@end
-
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="mada")
- *   kotlinx.serialization.Serializable
-*/
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("CardBrand.Mada")))
-@interface MHSCardBrandMada : MHSCardBrand <MHSCommonParcelable>
-@property (class, readonly, getter=companion) MHSCardBrandMadaCompanion *companion __attribute__((swift_name("companion")));
-@property (readonly) NSString *brand __attribute__((swift_name("brand")));
-@property (readonly) NSString *brandIconUrl __attribute__((swift_name("brandIconUrl")));
-@property (readonly) NSString *first6Digits __attribute__((swift_name("first6Digits")));
-- (instancetype)initWithBrand:(NSString *)brand first6Digits:(NSString *)first6Digits brandIconUrl:(NSString *)brandIconUrl __attribute__((swift_name("init(brand:first6Digits:brandIconUrl:)"))) __attribute__((objc_designated_initializer));
-- (MHSCardBrandMada *)doCopyBrand:(NSString *)brand first6Digits:(NSString *)first6Digits brandIconUrl:(NSString *)brandIconUrl __attribute__((swift_name("doCopy(brand:first6Digits:brandIconUrl:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="madaBrand")
-*/
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="madaBrandIconUrl")
-*/
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="madaFirst6Digits")
-*/
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("CardBrand.MadaCompanion")))
-@interface MHSCardBrandMadaCompanion : MHSBase
-@property (class, readonly, getter=shared) MHSCardBrandMadaCompanion *shared __attribute__((swift_name("shared")));
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-- (id<MHSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
-@end
-
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="mastercard")
- *   kotlinx.serialization.Serializable
-*/
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("CardBrand.MasterCard")))
-@interface MHSCardBrandMasterCard : MHSCardBrand <MHSCommonParcelable>
-@property (class, readonly, getter=companion) MHSCardBrandMasterCardCompanion *companion __attribute__((swift_name("companion")));
-@property (readonly) NSString *brand __attribute__((swift_name("brand")));
-@property (readonly) NSString *brandIconUrl __attribute__((swift_name("brandIconUrl")));
-@property (readonly) NSString *first6Digits __attribute__((swift_name("first6Digits")));
-- (instancetype)initWithBrand:(NSString *)brand first6Digits:(NSString *)first6Digits brandIconUrl:(NSString *)brandIconUrl __attribute__((swift_name("init(brand:first6Digits:brandIconUrl:)"))) __attribute__((objc_designated_initializer));
-- (MHSCardBrandMasterCard *)doCopyBrand:(NSString *)brand first6Digits:(NSString *)first6Digits brandIconUrl:(NSString *)brandIconUrl __attribute__((swift_name("doCopy(brand:first6Digits:brandIconUrl:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="mastercardBrand")
-*/
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="mastercardBrandIconUrl")
-*/
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="mastercardFirst6Digits")
-*/
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("CardBrand.MasterCardCompanion")))
-@interface MHSCardBrandMasterCardCompanion : MHSBase
-@property (class, readonly, getter=shared) MHSCardBrandMasterCardCompanion *shared __attribute__((swift_name("shared")));
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-- (id<MHSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
-@end
-
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="unknown")
- *   kotlinx.serialization.Serializable
-*/
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("CardBrand.Unknown")))
-@interface MHSCardBrandUnknown : MHSCardBrand <MHSCommonParcelable>
-@property (class, readonly, getter=companion) MHSCardBrandUnknownCompanion *companion __attribute__((swift_name("companion")));
-@property (readonly) NSString *brandIconUrl __attribute__((swift_name("brandIconUrl")));
-@property (readonly) NSString *first6Digits __attribute__((swift_name("first6Digits")));
-- (instancetype)initWithFirst6Digits:(NSString *)first6Digits brandIconUrl:(NSString *)brandIconUrl __attribute__((swift_name("init(first6Digits:brandIconUrl:)"))) __attribute__((objc_designated_initializer));
-- (MHSCardBrandUnknown *)doCopyFirst6Digits:(NSString *)first6Digits brandIconUrl:(NSString *)brandIconUrl __attribute__((swift_name("doCopy(first6Digits:brandIconUrl:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="unknownBrandIconUrl")
-*/
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="unknownFirst6Digits")
-*/
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("CardBrand.UnknownCompanion")))
-@interface MHSCardBrandUnknownCompanion : MHSBase
-@property (class, readonly, getter=shared) MHSCardBrandUnknownCompanion *shared __attribute__((swift_name("shared")));
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-- (id<MHSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
-@end
-
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="visa")
- *   kotlinx.serialization.Serializable
-*/
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("CardBrand.Visa")))
-@interface MHSCardBrandVisa : MHSCardBrand <MHSCommonParcelable>
-@property (class, readonly, getter=companion) MHSCardBrandVisaCompanion *companion __attribute__((swift_name("companion")));
-@property (readonly) NSString *brand __attribute__((swift_name("brand")));
-@property (readonly) NSString *brandIconUrl __attribute__((swift_name("brandIconUrl")));
-@property (readonly) NSString *first6Digits __attribute__((swift_name("first6Digits")));
-- (instancetype)initWithBrand:(NSString *)brand first6Digits:(NSString *)first6Digits brandIconUrl:(NSString *)brandIconUrl __attribute__((swift_name("init(brand:first6Digits:brandIconUrl:)"))) __attribute__((objc_designated_initializer));
-- (MHSCardBrandVisa *)doCopyBrand:(NSString *)brand first6Digits:(NSString *)first6Digits brandIconUrl:(NSString *)brandIconUrl __attribute__((swift_name("doCopy(brand:first6Digits:brandIconUrl:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="visaBrand")
-*/
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="visaBrandIconUrl")
-*/
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="visaFirst6Digits")
-*/
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("CardBrand.VisaCompanion")))
-@interface MHSCardBrandVisaCompanion : MHSBase
-@property (class, readonly, getter=shared) MHSCardBrandVisaCompanion *shared __attribute__((swift_name("shared")));
 + (instancetype)alloc __attribute__((unavailable));
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));

@@ -8175,23 +8175,34 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "serializer()"
     ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
-- Name: "MHSCardBrand"
-  SwiftName: "CardBrand"
+- Name: "MHSBrand"
+  SwiftBridge: "Brand"
+  SwiftName: "__Brand"
+  SwiftPrivate: true
   Properties:
-  - Name: "brand"
-    PropertyKind: "Instance"
-    SwiftName: "brand"
-    Type: "NSString * _Nonnull"
-  - Name: "brandIconUrl"
-    PropertyKind: "Instance"
-    SwiftName: "brandIconUrl"
-    Type: "NSString * _Nonnull"
-  - Name: "first6Digits"
-    PropertyKind: "Instance"
-    SwiftName: "first6Digits"
-    Type: "NSString * _Nonnull"
-- Name: "MHSCardBrandCompanion"
-  SwiftName: "CardBrand.Companion"
+  - Name: "visa"
+    PropertyKind: "Class"
+    SwiftName: "visa"
+    Type: "MHSBrand * _Nonnull"
+  - Name: "mastercard"
+    PropertyKind: "Class"
+    SwiftName: "mastercard"
+    Type: "MHSBrand * _Nonnull"
+  - Name: "mada"
+    PropertyKind: "Class"
+    SwiftName: "mada"
+    Type: "MHSBrand * _Nonnull"
+  - Name: "unknown"
+    PropertyKind: "Class"
+    SwiftName: "unknown"
+    Type: "MHSBrand * _Nonnull"
+  Methods:
+  - Selector: "initWithName:ordinal:"
+    MethodKind: "Instance"
+    SwiftName: "init(name:ordinal:)"
+    Availability: "nonswift"
+- Name: "MHSBrandCompanion"
+  SwiftName: "__Brand.Companion"
   Methods:
   - Selector: "serializer"
     MethodKind: "Instance"
@@ -8204,13 +8215,13 @@ Classes:
     Parameters:
     - Position: 0
       Type: "MHSKotlinArray<id<MHSKotlinx_serialization_coreKSerializer>> * _Nonnull"
-- Name: "MHSCardBrandMada"
-  SwiftName: "CardBrand.Mada"
+- Name: "MHSCardBrand"
+  SwiftName: "CardBrand"
   Properties:
   - Name: "brand"
     PropertyKind: "Instance"
     SwiftName: "brand"
-    Type: "NSString * _Nonnull"
+    Type: "MHSBrand * _Nonnull"
   - Name: "brandIconUrl"
     PropertyKind: "Instance"
     SwiftName: "brandIconUrl"
@@ -8225,7 +8236,7 @@ Classes:
     SwiftName: "init(brand:first6Digits:brandIconUrl:)"
     Parameters:
     - Position: 0
-      Type: "NSString * _Nonnull"
+      Type: "MHSBrand * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
     - Position: 2
@@ -8233,10 +8244,10 @@ Classes:
   - Selector: "doCopyBrand:first6Digits:brandIconUrl:"
     MethodKind: "Instance"
     SwiftName: "doCopy(brand:first6Digits:brandIconUrl:)"
-    ResultType: "MHSCardBrandMada * _Nonnull"
+    ResultType: "MHSCardBrand * _Nonnull"
     Parameters:
     - Position: 0
-      Type: "NSString * _Nonnull"
+      Type: "MHSBrand * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
     - Position: 2
@@ -8256,177 +8267,8 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-- Name: "MHSCardBrandMadaCompanion"
-  SwiftName: "CardBrand.MadaCompanion"
-  Methods:
-  - Selector: "serializer"
-    MethodKind: "Instance"
-    SwiftName: "serializer()"
-    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
-- Name: "MHSCardBrandMasterCard"
-  SwiftName: "CardBrand.MasterCard"
-  Properties:
-  - Name: "brand"
-    PropertyKind: "Instance"
-    SwiftName: "brand"
-    Type: "NSString * _Nonnull"
-  - Name: "brandIconUrl"
-    PropertyKind: "Instance"
-    SwiftName: "brandIconUrl"
-    Type: "NSString * _Nonnull"
-  - Name: "first6Digits"
-    PropertyKind: "Instance"
-    SwiftName: "first6Digits"
-    Type: "NSString * _Nonnull"
-  Methods:
-  - Selector: "initWithBrand:first6Digits:brandIconUrl:"
-    MethodKind: "Instance"
-    SwiftName: "init(brand:first6Digits:brandIconUrl:)"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "NSString * _Nonnull"
-    - Position: 2
-      Type: "NSString * _Nonnull"
-  - Selector: "doCopyBrand:first6Digits:brandIconUrl:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(brand:first6Digits:brandIconUrl:)"
-    ResultType: "MHSCardBrandMasterCard * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "NSString * _Nonnull"
-    - Position: 2
-      Type: "NSString * _Nonnull"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-- Name: "MHSCardBrandMasterCardCompanion"
-  SwiftName: "CardBrand.MasterCardCompanion"
-  Methods:
-  - Selector: "serializer"
-    MethodKind: "Instance"
-    SwiftName: "serializer()"
-    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
-- Name: "MHSCardBrandUnknown"
-  SwiftName: "CardBrand.Unknown"
-  Properties:
-  - Name: "brandIconUrl"
-    PropertyKind: "Instance"
-    SwiftName: "brandIconUrl"
-    Type: "NSString * _Nonnull"
-  - Name: "first6Digits"
-    PropertyKind: "Instance"
-    SwiftName: "first6Digits"
-    Type: "NSString * _Nonnull"
-  Methods:
-  - Selector: "initWithFirst6Digits:brandIconUrl:"
-    MethodKind: "Instance"
-    SwiftName: "init(first6Digits:brandIconUrl:)"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "NSString * _Nonnull"
-  - Selector: "doCopyFirst6Digits:brandIconUrl:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(first6Digits:brandIconUrl:)"
-    ResultType: "MHSCardBrandUnknown * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "NSString * _Nonnull"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-- Name: "MHSCardBrandUnknownCompanion"
-  SwiftName: "CardBrand.UnknownCompanion"
-  Methods:
-  - Selector: "serializer"
-    MethodKind: "Instance"
-    SwiftName: "serializer()"
-    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
-- Name: "MHSCardBrandVisa"
-  SwiftName: "CardBrand.Visa"
-  Properties:
-  - Name: "brand"
-    PropertyKind: "Instance"
-    SwiftName: "brand"
-    Type: "NSString * _Nonnull"
-  - Name: "brandIconUrl"
-    PropertyKind: "Instance"
-    SwiftName: "brandIconUrl"
-    Type: "NSString * _Nonnull"
-  - Name: "first6Digits"
-    PropertyKind: "Instance"
-    SwiftName: "first6Digits"
-    Type: "NSString * _Nonnull"
-  Methods:
-  - Selector: "initWithBrand:first6Digits:brandIconUrl:"
-    MethodKind: "Instance"
-    SwiftName: "init(brand:first6Digits:brandIconUrl:)"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "NSString * _Nonnull"
-    - Position: 2
-      Type: "NSString * _Nonnull"
-  - Selector: "doCopyBrand:first6Digits:brandIconUrl:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(brand:first6Digits:brandIconUrl:)"
-    ResultType: "MHSCardBrandVisa * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "NSString * _Nonnull"
-    - Position: 2
-      Type: "NSString * _Nonnull"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-- Name: "MHSCardBrandVisaCompanion"
-  SwiftName: "CardBrand.VisaCompanion"
+- Name: "MHSCardBrandCompanion"
+  SwiftName: "CardBrand.Companion"
   Methods:
   - Selector: "serializer"
     MethodKind: "Instance"

@@ -100,9 +100,22 @@ public struct DiscountData : Swift.Codable {
 }
 public struct CardBrand : Swift.Codable {
   public let first6Digits: Swift.String
-  public let brand: Swift.String
+  public let brand: MoneyHash.Brand
   public let brandIconUrl: Swift.String
   public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum Brand : Swift.Codable {
+  case visa
+  case mastercard
+  case mada
+  case unknown
+  public static func == (a: MoneyHash.Brand, b: MoneyHash.Brand) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct IntentMethodMetaData {
@@ -461,19 +474,17 @@ public struct EmbedStyle : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public enum CardFieldType : Swift.Codable {
+public enum CardFieldType : Swift.String, Swift.Codable {
   case cardNumber
   case cvv
   case cardHolderName
   case expireMonth
   case expireYear
-  public static func == (a: MoneyHash.CardFieldType, b: MoneyHash.CardFieldType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public func encode(to encoder: any Swift.Encoder) throws
-  public var hashValue: Swift.Int {
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
     get
   }
-  public init(from decoder: any Swift.Decoder) throws
 }
 public protocol MHStatus {
   static var cancelled: Self { get }
@@ -612,6 +623,8 @@ extension MoneyHash.MHLocale : Swift.RawRepresentable {}
 extension MoneyHash.DiscountType : Swift.Equatable {}
 extension MoneyHash.DiscountType : Swift.Hashable {}
 extension MoneyHash.DiscountType : Swift.RawRepresentable {}
+extension MoneyHash.Brand : Swift.Equatable {}
+extension MoneyHash.Brand : Swift.Hashable {}
 extension MoneyHash.InputFieldType : Swift.Equatable {}
 extension MoneyHash.InputFieldType : Swift.Hashable {}
 extension MoneyHash.ErrorType : Swift.Equatable {}
@@ -628,6 +641,7 @@ extension MoneyHash.IntentMethodType : Swift.Hashable {}
 extension MoneyHash.IntentMethodType : Swift.RawRepresentable {}
 extension MoneyHash.CardFieldType : Swift.Equatable {}
 extension MoneyHash.CardFieldType : Swift.Hashable {}
+extension MoneyHash.CardFieldType : Swift.RawRepresentable {}
 extension MoneyHash.LogLevel : Swift.Equatable {}
 extension MoneyHash.LogLevel : Swift.Hashable {}
 extension MoneyHash.IntentStatus : Swift.Equatable {}

@@ -490,6 +490,7 @@ public protocol MHStatus {
 @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class MHViewController<T> : UIKit.UIViewController, WebKit.WKNavigationDelegate, WebKit.WKUIDelegate {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func loadView()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
   @objc deinit
   @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
   @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: any Swift.Error)

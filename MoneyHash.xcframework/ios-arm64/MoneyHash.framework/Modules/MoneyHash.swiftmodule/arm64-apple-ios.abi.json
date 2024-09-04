@@ -18319,6 +18319,40 @@
           },
           {
             "kind": "Function",
+            "name": "viewDidDisappear",
+            "printedName": "viewDidDisappear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash16MHViewControllerC16viewDidDisappearyySbF",
+            "mangledName": "$s9MoneyHash16MHViewControllerC16viewDidDisappearyySbF",
+            "moduleName": "MoneyHash",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "overriding": true,
+            "objc_name": "viewDidDisappear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "webView",
             "printedName": "webView(_:didFinish:)",
             "children": [
@@ -25252,28 +25286,42 @@
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1206,
+      "offset": 1130,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1257,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1423,
+      "offset": 1474,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1500,
+      "offset": 1551,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1675,
+      "offset": 1726,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2343,
       "length": 5,
       "value": "false"
     },

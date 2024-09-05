@@ -4616,7 +4616,7 @@ __attribute__((swift_name("DemoIntentResponse.Companion")))
 */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Brand")))
-@interface MHSBrand : MHSKotlinEnum<MHSBrand *>
+@interface MHSBrand : MHSKotlinEnum<MHSBrand *> <MHSCommonParcelable>
 @property (class, readonly, getter=companion) MHSBrandCompanion *companion __attribute__((swift_name("companion")));
 @property (class, readonly) MHSBrand *visa __attribute__((swift_name("visa")));
 @property (class, readonly) MHSBrand *mastercard __attribute__((swift_name("mastercard")));

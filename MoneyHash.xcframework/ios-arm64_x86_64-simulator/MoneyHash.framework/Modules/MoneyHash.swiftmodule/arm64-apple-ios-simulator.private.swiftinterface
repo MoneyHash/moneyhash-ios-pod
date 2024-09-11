@@ -515,7 +515,8 @@ public struct CardInputFieldState {
   public let isValid: Swift.Bool?
   public let errorMessage: Swift.String?
   public let isOnFocused: Swift.Bool
-  public init(isValid: Swift.Bool? = nil, errorMessage: Swift.String? = nil, isOnFocused: Swift.Bool = false)
+  public let inputLength: Swift.Int
+  public init(isValid: Swift.Bool? = nil, errorMessage: Swift.String? = nil, isOnFocused: Swift.Bool = false, inputLength: Swift.Int)
   public static let defaultState: MoneyHash.CardInputFieldState
 }
 public struct CustomerBalance : Swift.Codable {

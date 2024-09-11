@@ -1438,6 +1438,46 @@ extension MoneyHashShared.Language {
 extension MoneyHashShared.__Language {
   public func toSwiftEnum() -> MoneyHashShared.Language
 }
+@frozen public enum MethodType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case expressMethod
+  case customerBalance
+  case saveCard
+  case paymentMethod
+  case payoutMethod
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var type: Swift.String {
+    get
+  }
+  public static var companion: MoneyHashShared.__MethodType.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: MoneyHashShared.__MethodType, result: inout MoneyHashShared.MethodType?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.__MethodType, result: inout MoneyHashShared.MethodType?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.__MethodType?) -> MoneyHashShared.MethodType
+  public func _bridgeToObjectiveC() -> MoneyHashShared.__MethodType
+  public typealias _ObjectiveCType = MoneyHashShared.__MethodType
+  public typealias Companion = MoneyHashShared.__MethodType.Companion
+  public static func == (a: MoneyHashShared.MethodType, b: MoneyHashShared.MethodType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [MoneyHashShared.MethodType]
+  public static var allCases: [MoneyHashShared.MethodType] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension MoneyHashShared.MethodType {
+  public func toKotlinEnum() -> MoneyHashShared.__MethodType
+}
+extension MoneyHashShared.__MethodType {
+  public func toSwiftEnum() -> MoneyHashShared.MethodType
+}
 @frozen public enum IntentStatus : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
   case processed
   case unprocessed
@@ -1522,46 +1562,6 @@ extension MoneyHashShared.IntentState {
 }
 extension MoneyHashShared.__IntentState {
   public func toSwiftEnum() -> MoneyHashShared.IntentState
-}
-@frozen public enum MethodType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
-  case expressMethod
-  case customerBalance
-  case saveCard
-  case paymentMethod
-  case payoutMethod
-  public var name: Swift.String {
-    get
-  }
-  public var ordinal: Swift.Int32 {
-    get
-  }
-  public var type: Swift.String {
-    get
-  }
-  public static var companion: MoneyHashShared.__MethodType.Companion {
-    get
-  }
-  public static func _forceBridgeFromObjectiveC(_ source: MoneyHashShared.__MethodType, result: inout MoneyHashShared.MethodType?)
-  public static func _conditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.__MethodType, result: inout MoneyHashShared.MethodType?) -> Swift.Bool
-  public static func _unconditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.__MethodType?) -> MoneyHashShared.MethodType
-  public func _bridgeToObjectiveC() -> MoneyHashShared.__MethodType
-  public typealias _ObjectiveCType = MoneyHashShared.__MethodType
-  public typealias Companion = MoneyHashShared.__MethodType.Companion
-  public static func == (a: MoneyHashShared.MethodType, b: MoneyHashShared.MethodType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public typealias AllCases = [MoneyHashShared.MethodType]
-  public static var allCases: [MoneyHashShared.MethodType] {
-    get
-  }
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-extension MoneyHashShared.MethodType {
-  public func toKotlinEnum() -> MoneyHashShared.__MethodType
-}
-extension MoneyHashShared.__MethodType {
-  public func toSwiftEnum() -> MoneyHashShared.MethodType
 }
 @frozen public enum Type_ : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
   case payment
@@ -2309,9 +2309,9 @@ public func getCurrentYearYY() -> Swift.Int32
 extension MoneyHashShared.KotlinKVariance : Swift.Sendable {}
 extension MoneyHashShared.DiscountType : Swift.Sendable {}
 extension MoneyHashShared.Language : Swift.Sendable {}
+extension MoneyHashShared.MethodType : Swift.Sendable {}
 extension MoneyHashShared.IntentStatus : Swift.Sendable {}
 extension MoneyHashShared.IntentState : Swift.Sendable {}
-extension MoneyHashShared.MethodType : Swift.Sendable {}
 extension MoneyHashShared.Type_ : Swift.Sendable {}
 extension MoneyHashShared.ErrorType : Swift.Sendable {}
 extension MoneyHashShared.LoggerSeverity : Swift.Sendable {}

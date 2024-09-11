@@ -19366,9 +19366,54 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "inputLength",
+            "printedName": "inputLength",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash19CardInputFieldStateV11inputLengthSivp",
+            "mangledName": "$s9MoneyHash19CardInputFieldStateV11inputLengthSivp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash19CardInputFieldStateV11inputLengthSivg",
+                "mangledName": "$s9MoneyHash19CardInputFieldStateV11inputLengthSivg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(isValid:errorMessage:isOnFocused:)",
+            "printedName": "init(isValid:errorMessage:isOnFocused:inputLength:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -19412,11 +19457,17 @@
                 "printedName": "Swift.Bool",
                 "hasDefaultArg": true,
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:9MoneyHash19CardInputFieldStateV7isValid12errorMessage0G9OnFocusedACSbSg_SSSgSbtcfc",
-            "mangledName": "$s9MoneyHash19CardInputFieldStateV7isValid12errorMessage0G9OnFocusedACSbSg_SSSgSbtcfc",
+            "usr": "s:9MoneyHash19CardInputFieldStateV7isValid12errorMessage0G9OnFocused11inputLengthACSbSg_SSSgSbSitcfc",
+            "mangledName": "$s9MoneyHash19CardInputFieldStateV7isValid12errorMessage0G9OnFocused11inputLengthACSbSg_SSSgSbSitcfc",
             "moduleName": "MoneyHash",
             "declAttributes": [
               "AccessControl",
@@ -23534,174 +23585,6 @@
       "value": "\"fr\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedButtonViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3575,
-      "length": 12,
-      "value": "\"fontFamily\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedButtonViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3614,
-      "length": 12,
-      "value": "\"fontWeight\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedButtonViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3651,
-      "length": 10,
-      "value": "\"fontSize\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedButtonViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3691,
-      "length": 15,
-      "value": "\"fontSmoothing\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedButtonViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3733,
-      "length": 12,
-      "value": "\"lineHeight\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedButtonViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3775,
-      "length": 15,
-      "value": "\"textTransform\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedButtonViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3820,
-      "length": 15,
-      "value": "\"letterSpacing\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedButtonViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3909,
-      "length": 14,
-      "value": "\"borderRadius\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedButtonViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3949,
-      "length": 11,
-      "value": "\"boxShadow\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedButtonViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3988,
-      "length": 13,
-      "value": "\"borderStyle\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedButtonViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 4029,
-      "length": 13,
-      "value": "\"borderColor\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedButtonViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 4070,
-      "length": 13,
-      "value": "\"borderWidth\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedButtonViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3575,
-      "length": 12,
-      "value": "\"fontFamily\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedButtonViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3614,
-      "length": 12,
-      "value": "\"fontWeight\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedButtonViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3651,
-      "length": 10,
-      "value": "\"fontSize\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedButtonViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3691,
-      "length": 15,
-      "value": "\"fontSmoothing\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedButtonViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3733,
-      "length": 12,
-      "value": "\"lineHeight\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedButtonViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3775,
-      "length": 15,
-      "value": "\"textTransform\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedButtonViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3820,
-      "length": 15,
-      "value": "\"letterSpacing\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedButtonViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3909,
-      "length": 14,
-      "value": "\"borderRadius\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedButtonViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3949,
-      "length": 11,
-      "value": "\"boxShadow\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedButtonViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3988,
-      "length": 13,
-      "value": "\"borderStyle\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedButtonViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 4029,
-      "length": 13,
-      "value": "\"borderColor\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedButtonViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 4070,
-      "length": 13,
-      "value": "\"borderWidth\""
-    },
-    {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/ApplePayData.swift",
       "kind": "StringLiteral",
       "offset": 1150,
@@ -24360,20 +24243,6 @@
       "value": "\"productItems\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedLoaderStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 825,
-      "length": 17,
-      "value": "\"backgroundColor\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedLoaderStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 825,
-      "length": 17,
-      "value": "\"backgroundColor\""
-    },
-    {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/MHError.swift",
       "kind": "Array",
       "offset": 1444,
@@ -24505,146 +24374,6 @@
       "offset": 432,
       "length": 8,
       "value": "\"payout\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedInputViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3439,
-      "length": 14,
-      "value": "\"borderRadius\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedInputViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3483,
-      "length": 11,
-      "value": "\"boxShadow\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedInputViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3526,
-      "length": 13,
-      "value": "\"borderStyle\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedInputViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3571,
-      "length": 13,
-      "value": "\"borderColor\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedInputViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3616,
-      "length": 13,
-      "value": "\"borderWidth\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedInputViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3683,
-      "length": 12,
-      "value": "\"fontFamily\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedInputViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3726,
-      "length": 12,
-      "value": "\"fontWeight\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedInputViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3767,
-      "length": 10,
-      "value": "\"fontSize\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedInputViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3811,
-      "length": 15,
-      "value": "\"fontSmoothing\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedInputViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3857,
-      "length": 12,
-      "value": "\"lineHeight\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedInputViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3439,
-      "length": 14,
-      "value": "\"borderRadius\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedInputViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3483,
-      "length": 11,
-      "value": "\"boxShadow\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedInputViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3526,
-      "length": 13,
-      "value": "\"borderStyle\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedInputViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3571,
-      "length": 13,
-      "value": "\"borderColor\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedInputViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3616,
-      "length": 13,
-      "value": "\"borderWidth\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedInputViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3683,
-      "length": 12,
-      "value": "\"fontFamily\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedInputViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3726,
-      "length": 12,
-      "value": "\"fontWeight\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedInputViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3767,
-      "length": 10,
-      "value": "\"fontSize\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedInputViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3811,
-      "length": 15,
-      "value": "\"fontSmoothing\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedInputViewStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 3857,
-      "length": 12,
-      "value": "\"lineHeight\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
@@ -25090,114 +24819,100 @@
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2590,
+      "offset": 1910,
       "length": 8,
       "value": "\"last_4\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2626,
+      "offset": 1946,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2667,
+      "offset": 1987,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2746,
+      "offset": 2066,
       "length": 13,
       "value": "\"require_cvv\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2785,
+      "offset": 2105,
       "length": 12,
       "value": "\"cvv_config\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2844,
+      "offset": 2164,
       "length": 5,
       "value": "\"bin\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2590,
+      "offset": 1910,
       "length": 8,
       "value": "\"last_4\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2626,
+      "offset": 1946,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2667,
+      "offset": 1987,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2746,
+      "offset": 2066,
       "length": 13,
       "value": "\"require_cvv\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2785,
+      "offset": 2105,
       "length": 12,
       "value": "\"cvv_config\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2844,
+      "offset": 2164,
       "length": 5,
       "value": "\"bin\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 3365,
+      "offset": 2685,
       "length": 14,
       "value": "\"digits_count\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 3365,
+      "offset": 2685,
       "length": 14,
       "value": "\"digits_count\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 1055,
-      "length": 14,
-      "value": "\"submitButton\""
-    },
-    {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Thems\/EmbedStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 1055,
-      "length": 14,
-      "value": "\"submitButton\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Wrapers\/CardFieldType.swift",
@@ -25335,16 +25050,23 @@
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/CardInputFieldState.swift",
       "kind": "BooleanLiteral",
-      "offset": 867,
+      "offset": 1020,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/CardInputFieldState.swift",
       "kind": "BooleanLiteral",
-      "offset": 1152,
+      "offset": 1362,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/CardInputFieldState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1382,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",

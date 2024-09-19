@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "MoneyHash",
-    "printedName": "MoneyHash",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
     "children": [
       {
         "kind": "Import",
@@ -654,20 +654,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -899,20 +885,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -1142,20 +1114,6 @@
         ],
         "enumRawTypeName": "String",
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1530,20 +1488,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -1789,20 +1733,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -2225,20 +2155,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -2651,22 +2567,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
         ]
       },
       {
@@ -2854,20 +2754,6 @@
         ],
         "enumRawTypeName": "String",
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -3281,20 +3167,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -3497,20 +3369,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -3742,20 +3600,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -4009,20 +3853,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -4199,22 +4029,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
         ]
       },
       {
@@ -4263,22 +4077,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
         ]
       },
       {
@@ -5036,20 +4834,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -5819,20 +5603,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -6925,20 +6695,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -7142,20 +6898,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -7574,20 +7316,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -8307,20 +8035,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -8884,20 +8598,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -9122,9 +8822,8 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "Void",
+                "printedName": "()"
               },
               {
                 "kind": "TypeNominal",
@@ -9140,8 +8839,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9MoneyHash0aB3SDKP15deleteSavedCard11cardTokenId12intentSecretSbSS_SStYaKF",
-            "mangledName": "$s9MoneyHash0aB3SDKP15deleteSavedCard11cardTokenId12intentSecretSbSS_SStYaKF",
+            "usr": "s:9MoneyHash0aB3SDKP15deleteSavedCard11cardTokenId12intentSecretySS_SStYaKF",
+            "mangledName": "$s9MoneyHash0aB3SDKP15deleteSavedCard11cardTokenId12intentSecretySS_SStYaKF",
             "moduleName": "MoneyHash",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
             "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
@@ -9842,22 +9541,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -9985,20 +9668,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -10130,23 +9799,7 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
+        "hasMissingDesignatedInitializers": true
       },
       {
         "kind": "Import",
@@ -10403,20 +10056,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Error",
@@ -10759,20 +10398,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -10979,20 +10604,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -11396,20 +11007,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -11690,20 +11287,6 @@
         ],
         "enumRawTypeName": "String",
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -12078,20 +11661,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -12925,20 +12494,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -13258,20 +12813,6 @@
         ],
         "enumRawTypeName": "String",
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -13921,20 +13462,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -14416,20 +13943,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "MoneyHashMethod",
             "printedName": "MoneyHashMethod",
             "usr": "s:9MoneyHash0aB6MethodP",
@@ -14868,20 +14381,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -15100,20 +14599,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -15512,20 +14997,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
           {
             "kind": "Conformance",
             "name": "Identifiable",
@@ -15986,20 +15457,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -16527,20 +15984,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "MoneyHashMethod",
             "printedName": "MoneyHashMethod",
             "usr": "s:9MoneyHash0aB6MethodP",
@@ -17059,20 +16502,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "MoneyHashMethod",
             "printedName": "MoneyHashMethod",
             "usr": "s:9MoneyHash0aB6MethodP",
@@ -17298,20 +16727,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -18084,20 +17499,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -18239,20 +17640,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -18409,20 +17796,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -18746,20 +18119,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -18892,22 +18251,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -18937,7 +18280,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl",
@@ -18967,7 +18309,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl",
@@ -19003,7 +18344,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -19050,7 +18390,6 @@
             "objc_name": "webView:didFinishNavigation:",
             "declAttributes": [
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -19103,7 +18442,6 @@
             "objc_name": "webView:didFailNavigation:withError:",
             "declAttributes": [
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -19156,7 +18494,6 @@
             "objc_name": "webView:didFailProvisionalNavigation:withError:",
             "declAttributes": [
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -19213,7 +18550,6 @@
             "objc_name": "webView:decidePolicyForNavigationAction:decisionHandler:",
             "declAttributes": [
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -19273,7 +18609,6 @@
             "objc_name": "webView:createWebViewWithConfiguration:forNavigationAction:windowFeatures:",
             "declAttributes": [
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -19339,7 +18674,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -19353,7 +18687,6 @@
         "genericSig": "<τ_0_0>",
         "sugared_genericSig": "<T>",
         "declAttributes": [
-          "Preconcurrency",
           "Custom",
           "AccessControl",
           "RawDocComment"
@@ -19366,20 +18699,6 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -19849,20 +19168,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -20225,22 +19530,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
         ]
       },
       {
@@ -20633,20 +19922,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -20801,20 +20076,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -21681,20 +20942,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -21967,20 +21214,6 @@
         ],
         "enumRawTypeName": "String",
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -22376,20 +21609,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -22592,20 +21811,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -23002,20 +22207,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -23456,20 +22647,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -23554,7 +22731,6 @@
             "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
             "sugared_genericSig": "<Content where Content : SwiftUI.View>",
             "declAttributes": [
-              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -23585,7 +22761,6 @@
             "mangledName": "$s9MoneyHash15SecureTextFieldV4bodyQrvp",
             "moduleName": "MoneyHash",
             "declAttributes": [
-              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -23628,26 +22803,11 @@
         "sugared_genericSig": "<Content where Content : SwiftUI.View>",
         "intro_iOS": "15.0",
         "declAttributes": [
-          "Preconcurrency",
           "Custom",
           "AccessControl",
           "Available"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "View",
@@ -23676,13 +22836,6 @@
             ],
             "usr": "s:7SwiftUI4ViewP",
             "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -23842,20 +22995,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -24201,20 +23340,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -24302,23 +23427,7 @@
         "usr": "s:SE",
         "mangledName": "$sSE",
         "moduleName": "Swift",
-        "isExternal": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
+        "isExternal": true
       },
       {
         "kind": "TypeDecl",
@@ -24358,20 +23467,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
@@ -24383,6 +23478,20 @@
     "json_format_version": 8
   },
   "ConstValues": [
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Intent.swift",
+      "kind": "StringLiteral",
+      "offset": 1183,
+      "length": 9,
+      "value": "\"is_live\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Intent.swift",
+      "kind": "StringLiteral",
+      "offset": 1243,
+      "length": 17,
+      "value": "\"expiration_date\""
+    },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Intent.swift",
       "kind": "StringLiteral",
@@ -24417,6 +23526,41 @@
       "offset": 1236,
       "length": 15,
       "value": "\"intentMethods\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/MethodsResult.swift",
+      "kind": "StringLiteral",
+      "offset": 1197,
+      "length": 15,
+      "value": "\"intentDetails\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/MethodsResult.swift",
+      "kind": "StringLiteral",
+      "offset": 1236,
+      "length": 15,
+      "value": "\"intentMethods\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/MHLocale.swift",
+      "kind": "StringLiteral",
+      "offset": 187,
+      "length": 4,
+      "value": "\"ar\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/MHLocale.swift",
+      "kind": "StringLiteral",
+      "offset": 211,
+      "length": 4,
+      "value": "\"en\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/MHLocale.swift",
+      "kind": "StringLiteral",
+      "offset": 234,
+      "length": 4,
+      "value": "\"fr\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/MHLocale.swift",
@@ -24468,11 +23612,53 @@
       "value": "\"supported_networks\""
     },
     {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/ApplePayData.swift",
+      "kind": "StringLiteral",
+      "offset": 1150,
+      "length": 14,
+      "value": "\"country_code\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/ApplePayData.swift",
+      "kind": "StringLiteral",
+      "offset": 1191,
+      "length": 13,
+      "value": "\"merchant_id\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/ApplePayData.swift",
+      "kind": "StringLiteral",
+      "offset": 1233,
+      "length": 15,
+      "value": "\"currency_code\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/ApplePayData.swift",
+      "kind": "StringLiteral",
+      "offset": 1302,
+      "length": 20,
+      "value": "\"supported_networks\""
+    },
+    {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Extensions\/ViewExtention.swift",
       "kind": "BooleanLiteral",
       "offset": 195,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Discount.swift",
+      "kind": "StringLiteral",
+      "offset": 334,
+      "length": 8,
+      "value": "\"amount\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Discount.swift",
+      "kind": "StringLiteral",
+      "offset": 432,
+      "length": 12,
+      "value": "\"percentage\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Discount.swift",
@@ -24508,6 +23694,90 @@
       "offset": 471,
       "length": 14,
       "value": "\"brandIconUrl\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/CardBrands.swift",
+      "kind": "StringLiteral",
+      "offset": 392,
+      "length": 7,
+      "value": "\"brand\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/CardBrands.swift",
+      "kind": "StringLiteral",
+      "offset": 428,
+      "length": 14,
+      "value": "\"first6Digits\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/CardBrands.swift",
+      "kind": "StringLiteral",
+      "offset": 471,
+      "length": 14,
+      "value": "\"brandIconUrl\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "kind": "StringLiteral",
+      "offset": 1769,
+      "length": 18,
+      "value": "\"method_selection\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "kind": "StringLiteral",
+      "offset": 1814,
+      "length": 13,
+      "value": "\"intent_form\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "kind": "StringLiteral",
+      "offset": 1859,
+      "length": 18,
+      "value": "\"intent_processed\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "kind": "StringLiteral",
+      "offset": 1922,
+      "length": 33,
+      "value": "\"transaction_waiting_user_action\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "kind": "StringLiteral",
+      "offset": 1989,
+      "length": 20,
+      "value": "\"transaction_failed\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "kind": "StringLiteral",
+      "offset": 2077,
+      "length": 13,
+      "value": "\"form_fields\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "kind": "StringLiteral",
+      "offset": 2120,
+      "length": 15,
+      "value": "\"url_to_render\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "kind": "StringLiteral",
+      "offset": 2164,
+      "length": 16,
+      "value": "\"saved_card_cvv\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "kind": "StringLiteral",
+      "offset": 2206,
+      "length": 12,
+      "value": "\"native_pay\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
@@ -24615,6 +23885,97 @@
       "value": "\"requires_cvv\""
     },
     {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "kind": "StringLiteral",
+      "offset": 3374,
+      "length": 18,
+      "value": "\"card_holder_name\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "kind": "StringLiteral",
+      "offset": 3441,
+      "length": 14,
+      "value": "\"expiry_month\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "kind": "StringLiteral",
+      "offset": 3482,
+      "length": 13,
+      "value": "\"expiry_year\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "kind": "StringLiteral",
+      "offset": 3537,
+      "length": 8,
+      "value": "\"last_4\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "kind": "StringLiteral",
+      "offset": 3594,
+      "length": 17,
+      "value": "\"payment_methods\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "kind": "StringLiteral",
+      "offset": 3639,
+      "length": 14,
+      "value": "\"requires_cvv\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "kind": "StringLiteral",
+      "offset": 3059,
+      "length": 13,
+      "value": "\"optionsList\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "kind": "StringLiteral",
+      "offset": 3099,
+      "length": 9,
+      "value": "\"options\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "kind": "StringLiteral",
+      "offset": 3153,
+      "length": 12,
+      "value": "\"max_length\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "kind": "StringLiteral",
+      "offset": 3210,
+      "length": 13,
+      "value": "\"is_required\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "kind": "StringLiteral",
+      "offset": 3249,
+      "length": 12,
+      "value": "\"min_length\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "kind": "StringLiteral",
+      "offset": 3286,
+      "length": 11,
+      "value": "\"read_only\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "kind": "StringLiteral",
+      "offset": 3323,
+      "length": 12,
+      "value": "\"depends_on\""
+    },
+    {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
       "kind": "StringLiteral",
       "offset": 3059,
@@ -24708,6 +24069,90 @@
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
       "kind": "StringLiteral",
+      "offset": 5436,
+      "length": 6,
+      "value": "\"text\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "kind": "StringLiteral",
+      "offset": 5464,
+      "length": 7,
+      "value": "\"email\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "kind": "StringLiteral",
+      "offset": 5499,
+      "length": 14,
+      "value": "\"phone_number\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "kind": "StringLiteral",
+      "offset": 5534,
+      "length": 12,
+      "value": "\"date_field\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "kind": "StringLiteral",
+      "offset": 5569,
+      "length": 14,
+      "value": "\"number_field\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "kind": "StringLiteral",
+      "offset": 5606,
+      "length": 14,
+      "value": "\"choice_field\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "kind": "StringLiteral",
+      "offset": 7539,
+      "length": 6,
+      "value": "\"null\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "kind": "StringLiteral",
+      "offset": 7571,
+      "length": 12,
+      "value": "\"min_length\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "kind": "StringLiteral",
+      "offset": 7636,
+      "length": 10,
+      "value": "\"required\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "kind": "StringLiteral",
+      "offset": 7672,
+      "length": 12,
+      "value": "\"max_length\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "kind": "StringLiteral",
+      "offset": 7709,
+      "length": 11,
+      "value": "\"min_value\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "kind": "StringLiteral",
+      "offset": 7745,
+      "length": 11,
+      "value": "\"max_value\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "kind": "StringLiteral",
       "offset": 7539,
       "length": 6,
       "value": "\"null\""
@@ -24776,11 +24221,39 @@
       "value": "\"productItems\""
     },
     {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/IntentDetails.swift",
+      "kind": "StringLiteral",
+      "offset": 4859,
+      "length": 17,
+      "value": "\"selected_method\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/IntentDetails.swift",
+      "kind": "StringLiteral",
+      "offset": 4899,
+      "length": 15,
+      "value": "\"walletBalance\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/IntentDetails.swift",
+      "kind": "StringLiteral",
+      "offset": 4963,
+      "length": 14,
+      "value": "\"productItems\""
+    },
+    {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/MHError.swift",
       "kind": "Array",
       "offset": 1444,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/MHError.swift",
+      "kind": "StringLiteral",
+      "offset": 1717,
+      "length": 17,
+      "value": "\"card_validation\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/MHError.swift",
@@ -24832,6 +24305,48 @@
       "value": "\"fr\""
     },
     {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
+      "kind": "StringLiteral",
+      "offset": 620,
+      "length": 4,
+      "value": "\"ar\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
+      "kind": "StringLiteral",
+      "offset": 648,
+      "length": 4,
+      "value": "\"en\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
+      "kind": "StringLiteral",
+      "offset": 675,
+      "length": 4,
+      "value": "\"fr\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
+      "kind": "StringLiteral",
+      "offset": 341,
+      "length": 4,
+      "value": "\"ar\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
+      "kind": "StringLiteral",
+      "offset": 411,
+      "length": 4,
+      "value": "\"en\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
+      "kind": "StringLiteral",
+      "offset": 479,
+      "length": 4,
+      "value": "\"fr\""
+    },
+    {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/IntentType.swift",
       "kind": "StringLiteral",
       "offset": 363,
@@ -24844,6 +24359,90 @@
       "offset": 432,
       "length": 8,
       "value": "\"payout\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/IntentType.swift",
+      "kind": "StringLiteral",
+      "offset": 363,
+      "length": 9,
+      "value": "\"payment\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/IntentType.swift",
+      "kind": "StringLiteral",
+      "offset": 432,
+      "length": 8,
+      "value": "\"payout\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "kind": "StringLiteral",
+      "offset": 1975,
+      "length": 18,
+      "value": "\"first_six_digits\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "kind": "StringLiteral",
+      "offset": 2024,
+      "length": 18,
+      "value": "\"last_four_digits\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "kind": "StringLiteral",
+      "offset": 2069,
+      "length": 13,
+      "value": "\"card_scheme\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "kind": "StringLiteral",
+      "offset": 2113,
+      "length": 18,
+      "value": "\"card_holder_name\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "kind": "StringLiteral",
+      "offset": 2158,
+      "length": 13,
+      "value": "\"expiry_year\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "kind": "StringLiteral",
+      "offset": 2199,
+      "length": 14,
+      "value": "\"expiry_month\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "kind": "StringLiteral",
+      "offset": 2236,
+      "length": 9,
+      "value": "\"is_live\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "kind": "StringLiteral",
+      "offset": 2273,
+      "length": 14,
+      "value": "\"access_token\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "kind": "StringLiteral",
+      "offset": 2313,
+      "length": 12,
+      "value": "\"card_token\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "kind": "StringLiteral",
+      "offset": 2367,
+      "length": 11,
+      "value": "\"save_card\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
@@ -24951,6 +24550,41 @@
       "value": "\"customerBalance\""
     },
     {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/MethodType.swift",
+      "kind": "StringLiteral",
+      "offset": 312,
+      "length": 15,
+      "value": "\"paymentMethod\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/MethodType.swift",
+      "kind": "StringLiteral",
+      "offset": 396,
+      "length": 15,
+      "value": "\"expressMethod\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/MethodType.swift",
+      "kind": "StringLiteral",
+      "offset": 477,
+      "length": 14,
+      "value": "\"payoutMethod\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/MethodType.swift",
+      "kind": "StringLiteral",
+      "offset": 551,
+      "length": 11,
+      "value": "\"savedCard\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/MethodType.swift",
+      "kind": "StringLiteral",
+      "offset": 634,
+      "length": 17,
+      "value": "\"customerBalance\""
+    },
+    {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/UIFields\/SecureTextFieldViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 457,
@@ -24963,6 +24597,34 @@
       "offset": 1196,
       "length": 14,
       "value": "\"reference_id\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/ProductItem.swift",
+      "kind": "StringLiteral",
+      "offset": 1196,
+      "length": 14,
+      "value": "\"reference_id\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/PayoutMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 2198,
+      "length": 12,
+      "value": "\"isSelected\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/PayoutMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 2240,
+      "length": 7,
+      "value": "\"icons\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/PayoutMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 2302,
+      "length": 23,
+      "value": "\"confirmation_required\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/PayoutMethod.swift",
@@ -25021,6 +24683,55 @@
       "value": "\"payout_methods\""
     },
     {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/IntentMethods.swift",
+      "kind": "StringLiteral",
+      "offset": 2031,
+      "length": 19,
+      "value": "\"customer_balances\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/IntentMethods.swift",
+      "kind": "StringLiteral",
+      "offset": 2081,
+      "length": 17,
+      "value": "\"payment_methods\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/IntentMethods.swift",
+      "kind": "StringLiteral",
+      "offset": 2129,
+      "length": 17,
+      "value": "\"express_methods\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/IntentMethods.swift",
+      "kind": "StringLiteral",
+      "offset": 2173,
+      "length": 13,
+      "value": "\"saved_cards\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/IntentMethods.swift",
+      "kind": "StringLiteral",
+      "offset": 2216,
+      "length": 16,
+      "value": "\"payout_methods\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressShapeLayer.swift",
+      "kind": "StringLiteral",
+      "offset": 374,
+      "length": 18,
+      "value": "\"MoneyHash.ProgressShapeLayer\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressShapeLayer.swift",
+      "kind": "StringLiteral",
+      "offset": 374,
+      "length": 18,
+      "value": "\"MoneyHash.ProgressShapeLayer\""
+    },
+    {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/ExpressMethod.swift",
       "kind": "StringLiteral",
       "offset": 1720,
@@ -25038,6 +24749,48 @@
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/ExpressMethod.swift",
       "kind": "StringLiteral",
       "offset": 1824,
+      "length": 23,
+      "value": "\"confirmation_required\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/ExpressMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 1720,
+      "length": 12,
+      "value": "\"isSelected\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/ExpressMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 1762,
+      "length": 7,
+      "value": "\"icons\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/ExpressMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 1824,
+      "length": 23,
+      "value": "\"confirmation_required\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/PaymentMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 1983,
+      "length": 12,
+      "value": "\"isSelected\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/PaymentMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 2025,
+      "length": 7,
+      "value": "\"icons\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/PaymentMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 2087,
       "length": 23,
       "value": "\"confirmation_required\""
     },
@@ -25107,9 +24860,93 @@
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
+      "offset": 1910,
+      "length": 8,
+      "value": "\"last_4\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
+      "kind": "StringLiteral",
+      "offset": 1946,
+      "length": 14,
+      "value": "\"expiry_month\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
+      "kind": "StringLiteral",
+      "offset": 1987,
+      "length": 13,
+      "value": "\"expiry_year\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
+      "kind": "StringLiteral",
+      "offset": 2066,
+      "length": 13,
+      "value": "\"require_cvv\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
+      "kind": "StringLiteral",
+      "offset": 2105,
+      "length": 12,
+      "value": "\"cvv_config\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
+      "kind": "StringLiteral",
+      "offset": 2164,
+      "length": 5,
+      "value": "\"bin\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
+      "kind": "StringLiteral",
       "offset": 2685,
       "length": 14,
       "value": "\"digits_count\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
+      "kind": "StringLiteral",
+      "offset": 2685,
+      "length": 14,
+      "value": "\"digits_count\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Wrapers\/CardFieldType.swift",
+      "kind": "StringLiteral",
+      "offset": 595,
+      "length": 13,
+      "value": "\"card_number\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Wrapers\/CardFieldType.swift",
+      "kind": "StringLiteral",
+      "offset": 658,
+      "length": 5,
+      "value": "\"cvv\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Wrapers\/CardFieldType.swift",
+      "kind": "StringLiteral",
+      "offset": 736,
+      "length": 18,
+      "value": "\"card_holder_name\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Wrapers\/CardFieldType.swift",
+      "kind": "StringLiteral",
+      "offset": 825,
+      "length": 14,
+      "value": "\"expiry_month\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Wrapers\/CardFieldType.swift",
+      "kind": "StringLiteral",
+      "offset": 908,
+      "length": 13,
+      "value": "\"expiry_year\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Wrapers\/CardFieldType.swift",
@@ -25203,6 +25040,13 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 649,
+      "length": 16,
+      "value": "\"MoneyHash.MHViewController\""
+    },
+    {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/CardInputFieldState.swift",
       "kind": "BooleanLiteral",
       "offset": 1020,
@@ -25222,6 +25066,62 @@
       "offset": 1382,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
+      "kind": "StringLiteral",
+      "offset": 3191,
+      "length": 14,
+      "value": "\"created_date\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
+      "kind": "StringLiteral",
+      "offset": 3276,
+      "length": 17,
+      "value": "\"amount_currency\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
+      "kind": "StringLiteral",
+      "offset": 3340,
+      "length": 13,
+      "value": "\"method_name\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
+      "kind": "StringLiteral",
+      "offset": 3381,
+      "length": 14,
+      "value": "\"billing_data\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
+      "kind": "StringLiteral",
+      "offset": 3424,
+      "length": 15,
+      "value": "\"custom_fields\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
+      "kind": "StringLiteral",
+      "offset": 3473,
+      "length": 21,
+      "value": "\"custom_form_answers\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
+      "kind": "StringLiteral",
+      "offset": 3532,
+      "length": 25,
+      "value": "\"external_action_message\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
+      "kind": "StringLiteral",
+      "offset": 3599,
+      "length": 29,
+      "value": "\"provider_transaction_fields\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
@@ -25308,6 +25208,34 @@
       "value": "\"CLOSED\""
     },
     {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/IntentStatus.swift",
+      "kind": "StringLiteral",
+      "offset": 374,
+      "length": 11,
+      "value": "\"PROCESSED\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/IntentStatus.swift",
+      "kind": "StringLiteral",
+      "offset": 461,
+      "length": 13,
+      "value": "\"UNPROCESSED\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/IntentStatus.swift",
+      "kind": "StringLiteral",
+      "offset": 535,
+      "length": 14,
+      "value": "\"TIME_EXPIRED\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/IntentStatus.swift",
+      "kind": "StringLiteral",
+      "offset": 609,
+      "length": 8,
+      "value": "\"CLOSED\""
+    },
+    {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
       "offset": 97,
@@ -25334,6 +25262,34 @@
       "offset": 212,
       "length": 6,
       "value": "\"lang\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/TokenizeCardInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1164,
+      "length": 14,
+      "value": "\"access_token\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/TokenizeCardInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1201,
+      "length": 9,
+      "value": "\"is_live\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/TokenizeCardInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1235,
+      "length": 11,
+      "value": "\"save_card\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/TokenizeCardInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1288,
+      "length": 20,
+      "value": "\"save_card_checkbox\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/TokenizeCardInfo.swift",
@@ -25399,6 +25355,34 @@
       "value": "\"none\""
     },
     {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/RenderStrategy.swift",
+      "kind": "StringLiteral",
+      "offset": 562,
+      "length": 10,
+      "value": "\"redirect\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/RenderStrategy.swift",
+      "kind": "StringLiteral",
+      "offset": 600,
+      "length": 14,
+      "value": "\"popup_iframe\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/RenderStrategy.swift",
+      "kind": "StringLiteral",
+      "offset": 637,
+      "length": 8,
+      "value": "\"iframe\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/RenderStrategy.swift",
+      "kind": "StringLiteral",
+      "offset": 666,
+      "length": 6,
+      "value": "\"none\""
+    },
+    {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/UIFields\/SecureTextField.swift",
       "kind": "StringLiteral",
       "offset": 466,
@@ -25413,11 +25397,32 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressView.swift",
+      "kind": "StringLiteral",
+      "offset": 163,
+      "length": 12,
+      "value": "\"MoneyHash.ProgressView\""
+    },
+    {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/NativePayData.swift",
       "kind": "StringLiteral",
       "offset": 825,
       "length": 11,
       "value": "\"apple_pay\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/NativePayData.swift",
+      "kind": "StringLiteral",
+      "offset": 825,
+      "length": 11,
+      "value": "\"apple_pay\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/AmountData.swift",
+      "kind": "StringLiteral",
+      "offset": 1280,
+      "length": 11,
+      "value": "\"maxPayout\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/AmountData.swift",

@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -module-name MoneyHashShared
 import Foundation
 @_exported import MoneyHashShared
@@ -7,12 +7,14 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-#if compiler(>=5.3) && $PrimaryAssociatedTypes2
+#if compiler(>=5.3) && $RethrowsProtocol
+#if $PrimaryAssociatedTypes2
 public protocol SkieSwiftFlowProtocol<Element> : _Concurrency.AsyncSequence where Self.AsyncIterator == MoneyHashShared.SkieSwiftFlowIterator<Self.Element> {
 }
 #else
 public protocol SkieSwiftFlowProtocol : _Concurrency.AsyncSequence where Self.AsyncIterator == MoneyHashShared.SkieSwiftFlowIterator<Self.Element> {
 }
+#endif
 #endif
 public enum Skie {
   public enum RuntimeKotlin {
@@ -151,19 +153,17 @@ public enum Skie {
   }
   public typealias io_ktor__ktor_http = MoneyHashShared.Skie.KtorHttp
 }
+#if compiler(>=5.3) && $RethrowsProtocol
 @_hasMissingDesignatedInitializers public class SkieSwiftFlowIterator<T> : _Concurrency.AsyncIteratorProtocol {
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func next() async -> T?
+  #endif
   @objc deinit
   public typealias Element = T
-  #if compiler(>=5.3) && $AssociatedTypeImplements
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  @_implements(_Concurrency.AsyncIteratorProtocol, Failure) public typealias __AsyncIteratorProtocol_Failure = Swift.Never
-  #else
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  public typealias __AsyncIteratorProtocol_Failure = Swift.Never
-  #endif
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 @_hasMissingDesignatedInitializers final public class SkieSwiftFlow<T> : MoneyHashShared.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
   public static func _forceBridgeFromObjectiveC(_ source: MoneyHashShared.SkieKotlinFlow<Swift.AnyObject>, result: inout MoneyHashShared.SkieSwiftFlow<T>?)
   public static func _conditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.SkieKotlinFlow<Swift.AnyObject>, result: inout MoneyHashShared.SkieSwiftFlow<T>?) -> Swift.Bool
@@ -173,15 +173,10 @@ public enum Skie {
   public typealias AsyncIterator = MoneyHashShared.SkieSwiftFlowIterator<T>
   public typealias Element = T
   public typealias _ObjectiveCType = MoneyHashShared.SkieKotlinFlow<Swift.AnyObject>
-  #if compiler(>=5.3) && $AssociatedTypeImplements
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
-  #else
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  public typealias __AsyncSequence_Failure = Swift.Never
-  #endif
   @objc deinit
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 @_hasMissingDesignatedInitializers final public class SkieSwiftOptionalFlow<T> : MoneyHashShared.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
   public static func _forceBridgeFromObjectiveC(_ source: MoneyHashShared.SkieKotlinOptionalFlow<Swift.AnyObject>, result: inout MoneyHashShared.SkieSwiftOptionalFlow<T>?)
   public static func _conditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.SkieKotlinOptionalFlow<Swift.AnyObject>, result: inout MoneyHashShared.SkieSwiftOptionalFlow<T>?) -> Swift.Bool
@@ -191,15 +186,10 @@ public enum Skie {
   public typealias AsyncIterator = MoneyHashShared.SkieSwiftFlowIterator<T?>
   public typealias Element = T?
   public typealias _ObjectiveCType = MoneyHashShared.SkieKotlinOptionalFlow<Swift.AnyObject>
-  #if compiler(>=5.3) && $AssociatedTypeImplements
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
-  #else
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  public typealias __AsyncSequence_Failure = Swift.Never
-  #endif
   @objc deinit
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 @_hasMissingDesignatedInitializers final public class SkieSwiftSharedFlow<T> : MoneyHashShared.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
   final public var replayCache: [T] {
     get
@@ -212,15 +202,10 @@ public enum Skie {
   public typealias AsyncIterator = MoneyHashShared.SkieSwiftFlowIterator<T>
   public typealias Element = T
   public typealias _ObjectiveCType = MoneyHashShared.SkieKotlinSharedFlow<Swift.AnyObject>
-  #if compiler(>=5.3) && $AssociatedTypeImplements
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
-  #else
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  public typealias __AsyncSequence_Failure = Swift.Never
-  #endif
   @objc deinit
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 @_hasMissingDesignatedInitializers final public class SkieSwiftOptionalSharedFlow<T> : MoneyHashShared.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
   final public var replayCache: [T?] {
     get
@@ -233,15 +218,10 @@ public enum Skie {
   public typealias AsyncIterator = MoneyHashShared.SkieSwiftFlowIterator<T?>
   public typealias Element = T?
   public typealias _ObjectiveCType = MoneyHashShared.SkieKotlinOptionalSharedFlow<Swift.AnyObject>
-  #if compiler(>=5.3) && $AssociatedTypeImplements
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
-  #else
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  public typealias __AsyncSequence_Failure = Swift.Never
-  #endif
   @objc deinit
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 @_hasMissingDesignatedInitializers final public class SkieSwiftMutableSharedFlow<T> : MoneyHashShared.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
   final public var subscriptionCount: MoneyHashShared.SkieSwiftStateFlow<MoneyHashShared.KotlinInt> {
     get
@@ -249,8 +229,10 @@ public enum Skie {
   final public var replayCache: [T] {
     get
   }
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   final public func emit(value: T) async throws
+  #endif
   final public func tryEmit(value: T) -> Swift.Bool
   final public func resetReplayCache()
   public static func _forceBridgeFromObjectiveC(_ source: MoneyHashShared.SkieKotlinMutableSharedFlow<Swift.AnyObject>, result: inout MoneyHashShared.SkieSwiftMutableSharedFlow<T>?)
@@ -261,15 +243,10 @@ public enum Skie {
   public typealias AsyncIterator = MoneyHashShared.SkieSwiftFlowIterator<T>
   public typealias Element = T
   public typealias _ObjectiveCType = MoneyHashShared.SkieKotlinMutableSharedFlow<Swift.AnyObject>
-  #if compiler(>=5.3) && $AssociatedTypeImplements
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
-  #else
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  public typealias __AsyncSequence_Failure = Swift.Never
-  #endif
   @objc deinit
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 @_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableSharedFlow<T> : MoneyHashShared.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
   final public var subscriptionCount: MoneyHashShared.SkieSwiftStateFlow<MoneyHashShared.KotlinInt> {
     get
@@ -277,8 +254,10 @@ public enum Skie {
   final public var replayCache: [T?] {
     get
   }
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   final public func emit(value: T?) async throws
+  #endif
   final public func tryEmit(value: T?) -> Swift.Bool
   final public func resetReplayCache()
   public static func _forceBridgeFromObjectiveC(_ source: MoneyHashShared.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>, result: inout MoneyHashShared.SkieSwiftOptionalMutableSharedFlow<T>?)
@@ -289,15 +268,10 @@ public enum Skie {
   public typealias AsyncIterator = MoneyHashShared.SkieSwiftFlowIterator<T?>
   public typealias Element = T?
   public typealias _ObjectiveCType = MoneyHashShared.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>
-  #if compiler(>=5.3) && $AssociatedTypeImplements
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
-  #else
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  public typealias __AsyncSequence_Failure = Swift.Never
-  #endif
   @objc deinit
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 @_hasMissingDesignatedInitializers final public class SkieSwiftStateFlow<T> : MoneyHashShared.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
   final public var value: T {
     get
@@ -313,15 +287,10 @@ public enum Skie {
   public typealias AsyncIterator = MoneyHashShared.SkieSwiftFlowIterator<T>
   public typealias Element = T
   public typealias _ObjectiveCType = MoneyHashShared.SkieKotlinStateFlow<Swift.AnyObject>
-  #if compiler(>=5.3) && $AssociatedTypeImplements
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
-  #else
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  public typealias __AsyncSequence_Failure = Swift.Never
-  #endif
   @objc deinit
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 @_hasMissingDesignatedInitializers final public class SkieSwiftOptionalStateFlow<T> : MoneyHashShared.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
   final public var value: T? {
     get
@@ -337,15 +306,10 @@ public enum Skie {
   public typealias AsyncIterator = MoneyHashShared.SkieSwiftFlowIterator<T?>
   public typealias Element = T?
   public typealias _ObjectiveCType = MoneyHashShared.SkieKotlinOptionalStateFlow<Swift.AnyObject>
-  #if compiler(>=5.3) && $AssociatedTypeImplements
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
-  #else
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  public typealias __AsyncSequence_Failure = Swift.Never
-  #endif
   @objc deinit
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 @_hasMissingDesignatedInitializers final public class SkieSwiftMutableStateFlow<T> : MoneyHashShared.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
   final public var value: T {
     get
@@ -358,8 +322,10 @@ public enum Skie {
     get
   }
   final public func compareAndSet(expect: T, update: T) -> Swift.Bool
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   final public func emit(value: T) async throws
+  #endif
   final public func tryEmit(value: T) -> Swift.Bool
   final public func resetReplayCache()
   public static func _forceBridgeFromObjectiveC(_ source: MoneyHashShared.SkieKotlinMutableStateFlow<Swift.AnyObject>, result: inout MoneyHashShared.SkieSwiftMutableStateFlow<T>?)
@@ -370,15 +336,10 @@ public enum Skie {
   public typealias AsyncIterator = MoneyHashShared.SkieSwiftFlowIterator<T>
   public typealias Element = T
   public typealias _ObjectiveCType = MoneyHashShared.SkieKotlinMutableStateFlow<Swift.AnyObject>
-  #if compiler(>=5.3) && $AssociatedTypeImplements
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
-  #else
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  public typealias __AsyncSequence_Failure = Swift.Never
-  #endif
   @objc deinit
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 @_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableStateFlow<T> : MoneyHashShared.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
   final public var value: T? {
     get
@@ -391,8 +352,10 @@ public enum Skie {
     get
   }
   final public func compareAndSet(expect: T?, update: T?) -> Swift.Bool
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   final public func emit(value: T?) async throws
+  #endif
   final public func tryEmit(value: T?) -> Swift.Bool
   final public func resetReplayCache()
   public static func _forceBridgeFromObjectiveC(_ source: MoneyHashShared.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>, result: inout MoneyHashShared.SkieSwiftOptionalMutableStateFlow<T>?)
@@ -403,15 +366,9 @@ public enum Skie {
   public typealias AsyncIterator = MoneyHashShared.SkieSwiftFlowIterator<T?>
   public typealias Element = T?
   public typealias _ObjectiveCType = MoneyHashShared.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>
-  #if compiler(>=5.3) && $AssociatedTypeImplements
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
-  #else
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  public typealias __AsyncSequence_Failure = Swift.Never
-  #endif
   @objc deinit
 }
+#endif
 extension MoneyHashShared.Skie.RuntimeKotlin.SkieColdFlowIterator {
   public struct __Suspend<E> where E : AnyObject {
     public let __kotlinObject: MoneyHashShared.SkieColdFlowIterator<E>
@@ -420,98 +377,172 @@ extension MoneyHashShared.Skie.RuntimeKotlin.SkieColdFlowIterator {
 }
 public func skie<E>(_ kotlinObject: MoneyHashShared.SkieColdFlowIterator<E>) -> MoneyHashShared.Skie.RuntimeKotlin.SkieColdFlowIterator.__Suspend<E> where E : AnyObject
 extension MoneyHashShared.Skie.RuntimeKotlin.SkieColdFlowIterator.__Suspend {
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func hasNext() async throws -> MoneyHashShared.KotlinBoolean
+  #endif
 }
 extension MoneyHashShared.Kotlinx_coroutines_coreFlow {
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func collect(collector: any MoneyHashShared.Kotlinx_coroutines_coreFlowCollector) async throws
+  #endif
 }
 extension MoneyHashShared.Kotlinx_coroutines_coreFlowCollector {
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func emit(value: Any?) async throws
+  #endif
 }
 extension MoneyHashShared.PaymentUseCase {
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func deleteSavedCard(cardTokenId: Swift.String, intentSecret: Swift.String) async throws -> MoneyHashShared.StatusResponse
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func getCardInformation(cardIntentId: Swift.String) async throws -> MoneyHashShared.CardState
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func getIntentMethods(paymentIntentId: Swift.String, type: MoneyHashShared.Type_) async throws -> MoneyHashShared.IntentMethods
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func getPaymentInformation(paymentId: Swift.String) async throws -> MoneyHashShared.PaymentIntentData
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func getPayoutInformation(payoutId: Swift.String) async throws -> MoneyHashShared.PayoutDetails
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func proceedWithPaymentMethod(intentId: Swift.String, selectedMethodId: Swift.String, methodType: MoneyHashShared.MethodType, metaData: MoneyHashShared.MethodMetaData?) async throws -> MoneyHashShared.KotlinPair<MoneyHashShared.IntentMethods, MoneyHashShared.PaymentInformation>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func proceedWithPayoutMethod(intentId: Swift.String, selectedMethodId: Swift.String, methodType: MoneyHashShared.MethodType, metaData: MoneyHashShared.MethodMetaData?) async throws -> MoneyHashShared.KotlinPair<MoneyHashShared.IntentMethods, MoneyHashShared.PayoutData>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func resetPaymentSelectedMethod(intentId: Swift.String) async throws -> MoneyHashShared.KotlinPair<MoneyHashShared.IntentMethods, MoneyHashShared.PaymentInformation>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func resetPayoutSelectedMethod(intentId: Swift.String) async throws -> MoneyHashShared.KotlinPair<MoneyHashShared.IntentMethods, MoneyHashShared.PayoutData>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func submitCardCVV(intentId: Swift.String, cvv: Swift.String) async throws -> MoneyHashShared.PaymentIntentData
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func submitForm(paymentIntentId: Swift.String, method: Swift.String, billingFields: [Swift.String : Swift.String]?, shippingFields: [Swift.String : Swift.String]?, vaultData: MoneyHashShared.VaultData?) async throws -> MoneyHashShared.PaymentIntentData
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func submitPaymentReceipt(paymentIntentId: Swift.String, receipt: Swift.String) async throws -> MoneyHashShared.PaymentInformation
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func updateDiscount(intentId: Swift.String, discount: MoneyHashShared.DiscountItem) async throws -> MoneyHashShared.DiscountResponse
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func updateFees(intentId: Swift.String, fees: [MoneyHashShared.FeeItem]) async throws -> MoneyHashShared.FeesResponse
+  #endif
 }
 extension MoneyHashShared.PaymentService {
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func deleteSavedCard(cardTokenId: Swift.String, secret: Swift.String) async throws -> MoneyHashShared.StatusResponse
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func getCardInformation(cardIntentId: Swift.String) async throws -> MoneyHashShared.CardDetails
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func getPaymentInformation(paymentIntentId: Swift.String) async throws -> MoneyHashShared.PaymentIntentData
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func getPayoutInformation(payoutIntentId: Swift.String) async throws -> MoneyHashShared.PayoutDetails
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func resetPaymentSelectedMethod(paymentIntentId: Swift.String) async throws -> MoneyHashShared.PaymentIntentData
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func resetPayoutSelectedMethod(payoutIntentId: Swift.String) async throws -> MoneyHashShared.PayoutDetails
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func submitCardCVV(intentId: Swift.String, cvv: Swift.String) async throws -> MoneyHashShared.PaymentIntentData
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func submitForm(intentId: Swift.String, currentSelectedMethod: Swift.String, cardFields: [Swift.String : MoneyHashShared.Kotlinx_serialization_jsonJsonElement]?, billingFields: [Swift.String : MoneyHashShared.Kotlinx_serialization_jsonJsonElement]?, shippingFields: [Swift.String : MoneyHashShared.Kotlinx_serialization_jsonJsonElement]?, vaultData: MoneyHashShared.VaultData?) async throws -> MoneyHashShared.PaymentIntentData
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func submitReceipt(paymentIntentId: Swift.String, receipt: Swift.String) async throws -> MoneyHashShared.PaymentInformation
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func updateDiscount(intentId: Swift.String, discount: MoneyHashShared.DiscountItem) async throws -> MoneyHashShared.DiscountResponse
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func updateFees(intentId: Swift.String, fees: [MoneyHashShared.FeeItem]) async throws -> MoneyHashShared.FeesResponse
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func usePaymentMethod(intentId: Swift.String, methodName: Swift.String) async throws -> MoneyHashShared.PaymentIntentData
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func usePayoutMethod(intentId: Swift.String, methodName: Swift.String) async throws -> MoneyHashShared.PayoutDetails
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func useSavedCard(paymentIntentId: Swift.String, cardTokenId: Swift.String, cvv: Swift.String?) async throws -> MoneyHashShared.PaymentIntentData
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func useSelfWallet(paymentIntentId: Swift.String) async throws -> MoneyHashShared.PaymentIntentData
+  #endif
 }
 extension MoneyHashShared.AuthUseCase {
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func login(email: Swift.String, password: Swift.String) async throws -> MoneyHashShared.AuthResponse
+  #endif
 }
 extension MoneyHashShared.AuthService {
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func login(email: Swift.String, password: Swift.String) async throws -> MoneyHashShared.AuthResponse
+  #endif
 }
 extension MoneyHashShared.SandboxUseCase {
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func getDemoIntents(accessToken: Swift.String) async throws -> MoneyHashShared.DemoIntentResponse
+  #endif
 }
 extension MoneyHashShared.SandboxService {
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func getDemoIntents(accessToken: Swift.String) async throws -> MoneyHashShared.DemoIntentResponse
+  #endif
 }
 extension MoneyHashShared.Kotlinx_coroutines_coreJob {
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func join() async throws
+  #endif
 }
 extension MoneyHashShared.Skie.KtorUtils.Pipeline {
   public struct __Suspend<TSubject, TContext> where TSubject : AnyObject, TContext : AnyObject {
@@ -521,167 +552,308 @@ extension MoneyHashShared.Skie.KtorUtils.Pipeline {
 }
 public func skie<TSubject, TContext>(_ kotlinObject: MoneyHashShared.Ktor_utilsPipeline<TSubject, TContext>) -> MoneyHashShared.Skie.KtorUtils.Pipeline.__Suspend<TSubject, TContext> where TSubject : AnyObject, TContext : AnyObject
 extension MoneyHashShared.Skie.KtorUtils.Pipeline.__Suspend {
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func execute(context: TContext, subject: TSubject) async throws -> TSubject
+  #endif
 }
 extension MoneyHashShared.KotlinSuspendFunction2 {
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func invoke(p1: Any?, p2: Any?) async throws -> Any?
+  #endif
 }
 extension MoneyHashShared.Ktor_client_coreHttpClientCall {
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func body(info: MoneyHashShared.Ktor_utilsTypeInfo) async throws -> Any
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func bodyNullable(info: MoneyHashShared.Ktor_utilsTypeInfo) async throws -> Any?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func getResponseContent() async throws -> any MoneyHashShared.Ktor_ioByteReadChannel
+  #endif
 }
 extension MoneyHashShared.Ktor_ioByteReadChannel {
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func awaitContent() async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func discard(max: Swift.Int64) async throws -> MoneyHashShared.KotlinLong
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func peekTo(destination: MoneyHashShared.Ktor_ioMemory, destinationOffset: Swift.Int64, offset: Swift.Int64, min: Swift.Int64, max: Swift.Int64) async throws -> MoneyHashShared.KotlinLong
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func readAvailable(dst: MoneyHashShared.Ktor_ioChunkBuffer) async throws -> MoneyHashShared.KotlinInt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func readAvailable(dst: MoneyHashShared.KotlinByteArray, offset: Swift.Int32, length: Swift.Int32) async throws -> MoneyHashShared.KotlinInt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func readAvailable(dst: Swift.UnsafeMutableRawPointer, offset: Swift.Int32, length: Swift.Int32) async throws -> MoneyHashShared.KotlinInt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func readAvailable(dst: Swift.UnsafeMutableRawPointer, offset: Swift.Int64, length: Swift.Int64) async throws -> MoneyHashShared.KotlinInt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func readBoolean() async throws -> MoneyHashShared.KotlinBoolean
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func readByte() async throws -> MoneyHashShared.KotlinByte
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func readDouble() async throws -> MoneyHashShared.KotlinDouble
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func readFloat() async throws -> MoneyHashShared.KotlinFloat
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func readFully(dst: MoneyHashShared.Ktor_ioChunkBuffer, n: Swift.Int32) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func readFully(dst: MoneyHashShared.KotlinByteArray, offset: Swift.Int32, length: Swift.Int32) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func readFully(dst: Swift.UnsafeMutableRawPointer, offset: Swift.Int32, length: Swift.Int32) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func readFully(dst: Swift.UnsafeMutableRawPointer, offset: Swift.Int64, length: Swift.Int64) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func readInt() async throws -> MoneyHashShared.KotlinInt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func readLong() async throws -> MoneyHashShared.KotlinLong
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func readPacket(size: Swift.Int32) async throws -> MoneyHashShared.Ktor_ioByteReadPacket
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func readRemaining(limit: Swift.Int64) async throws -> MoneyHashShared.Ktor_ioByteReadPacket
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func readShort() async throws -> MoneyHashShared.KotlinShort
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   @available(*, deprecated, message: "Use read { } instead.")
   public func readSuspendableSession(consumer: any MoneyHashShared.KotlinSuspendFunction1) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func readUTF8Line(limit: Swift.Int32) async throws -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func readUTF8LineTo(out: any MoneyHashShared.KotlinAppendable, limit: Swift.Int32) async throws -> MoneyHashShared.KotlinBoolean
+  #endif
 }
 extension MoneyHashShared.KotlinSuspendFunction1 {
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func invoke(p1: Any?) async throws -> Any?
+  #endif
 }
 extension MoneyHashShared.Ktor_client_coreHttpClientEngine {
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func execute(data: MoneyHashShared.Ktor_client_coreHttpRequestData) async throws -> MoneyHashShared.Ktor_client_coreHttpResponseData
+  #endif
 }
 extension MoneyHashShared.BaseService {
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func delete(requestBuilder: @escaping (MoneyHashShared.RequestBuilder) -> Swift.Void) async throws -> Any?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func get(requestBuilder: @escaping (MoneyHashShared.RequestBuilder) -> Swift.Void) async throws -> Any?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func patch(requestBuilder: @escaping (MoneyHashShared.RequestBuilder) -> Swift.Void) async throws -> Any?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func post(requestBuilder: @escaping (MoneyHashShared.RequestBuilder) -> Swift.Void) async throws -> Any?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func put(requestBuilder: @escaping (MoneyHashShared.RequestBuilder) -> Swift.Void) async throws -> Any?
+  #endif
 }
 extension MoneyHashShared.VaultService {
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func postTokens(accessToken: Swift.String, cardDetails: MoneyHashShared.CardDetails_) async throws -> MoneyHashShared.VaultData
+  #endif
 }
 extension MoneyHashShared.CardFieldsCollector {
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func collect(fields: [MoneyHashShared.FieldType : Swift.String], token: Swift.String, intentID: Swift.String, shouldSaveCard: Swift.Bool) async throws -> MoneyHashShared.VaultData?
+  #endif
 }
 extension MoneyHashShared.CardCollector {
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func collect(token: Swift.String, intentID: Swift.String, shouldSaveCard: Swift.Bool) async throws -> MoneyHashShared.VaultData?
+  #endif
 }
 extension MoneyHashShared.Ktor_httpOutgoingContent.ProtocolUpgrade {
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func upgrade(input: any MoneyHashShared.Ktor_ioByteReadChannel, output: any MoneyHashShared.Ktor_ioByteWriteChannel, engineContext: any MoneyHashShared.KotlinCoroutineContext, userContext: any MoneyHashShared.KotlinCoroutineContext) async throws -> any MoneyHashShared.Kotlinx_coroutines_coreJob
+  #endif
 }
 extension MoneyHashShared.Ktor_ioByteWriteChannel {
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func awaitFreeSpace() async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func writeAvailable(src: MoneyHashShared.Ktor_ioChunkBuffer) async throws -> MoneyHashShared.KotlinInt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func writeAvailable(src: MoneyHashShared.KotlinByteArray, offset: Swift.Int32, length: Swift.Int32) async throws -> MoneyHashShared.KotlinInt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func writeAvailable(src: Swift.UnsafeMutableRawPointer, offset: Swift.Int32, length: Swift.Int32) async throws -> MoneyHashShared.KotlinInt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func writeAvailable(src: Swift.UnsafeMutableRawPointer, offset: Swift.Int64, length: Swift.Int64) async throws -> MoneyHashShared.KotlinInt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func writeByte(b: Swift.Int8) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func writeDouble(d: Swift.Double) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func writeFloat(f: Swift.Float) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func writeFully(memory: MoneyHashShared.Ktor_ioMemory, startIndex: Swift.Int32, endIndex: Swift.Int32) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func writeFully(src: MoneyHashShared.Ktor_ioBuffer) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func writeFully(src: MoneyHashShared.KotlinByteArray, offset: Swift.Int32, length: Swift.Int32) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func writeFully(src: Swift.UnsafeMutableRawPointer, offset: Swift.Int32, length: Swift.Int32) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func writeFully(src: Swift.UnsafeMutableRawPointer, offset: Swift.Int64, length: Swift.Int64) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func writeInt(i: Swift.Int32) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func writeLong(l: Swift.Int64) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func writePacket(packet: MoneyHashShared.Ktor_ioByteReadPacket) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func writeShort(s: Swift.Int16) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   @available(*, deprecated, message: "Use write { } instead.")
   public func writeSuspendSession(visitor: any MoneyHashShared.KotlinSuspendFunction1) async throws
+  #endif
 }
 extension MoneyHashShared.Ktor_httpOutgoingContent.WriteChannelContent {
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func writeTo(channel: any MoneyHashShared.Ktor_ioByteWriteChannel) async throws
+  #endif
 }
 extension MoneyHashShared.KotlinThrowable {
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func handleNetworkException() async throws
+  #endif
 }
 extension MoneyHashShared.Ktor_client_coreHttpCallValidatorConfig {
+  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func handleResponseValidation(response: MoneyHashShared.Ktor_client_coreHttpResponse) async throws
+  #endif
 }
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinFlow<T>(_ flow: MoneyHashShared.SkieSwiftFlow<T>) -> MoneyHashShared.SkieKotlinFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinFlow<T>(_ flow: MoneyHashShared.SkieSwiftSharedFlow<T>) -> MoneyHashShared.SkieKotlinFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinFlow<T>(_ flow: MoneyHashShared.SkieSwiftMutableSharedFlow<T>) -> MoneyHashShared.SkieKotlinFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinFlow<T>(_ flow: MoneyHashShared.SkieSwiftStateFlow<T>) -> MoneyHashShared.SkieKotlinFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinFlow<T>(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>) -> MoneyHashShared.SkieKotlinFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinFlow<T>(_ flow: MoneyHashShared.SkieSwiftFlow<T>) -> MoneyHashShared.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinFlow<T>(_ flow: MoneyHashShared.SkieSwiftSharedFlow<T>) -> MoneyHashShared.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinFlow<T>(_ flow: MoneyHashShared.SkieSwiftMutableSharedFlow<T>) -> MoneyHashShared.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinFlow<T>(_ flow: MoneyHashShared.SkieSwiftStateFlow<T>) -> MoneyHashShared.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinFlow<T>(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>) -> MoneyHashShared.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 extension MoneyHashShared.SkieSwiftFlow where T : AnyObject {
   convenience public init(_ flow: MoneyHashShared.SkieKotlinFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieKotlinSharedFlow<T>)
@@ -694,6 +866,8 @@ extension MoneyHashShared.SkieSwiftFlow where T : AnyObject {
   convenience public init(_ flow: MoneyHashShared.SkieSwiftStateFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>)
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 extension MoneyHashShared.SkieSwiftFlow where T : Swift._ObjectiveCBridgeable {
   convenience public init(_ flow: MoneyHashShared.SkieKotlinFlow<T._ObjectiveCType>)
   convenience public init(_ flow: MoneyHashShared.SkieKotlinSharedFlow<T._ObjectiveCType>)
@@ -711,26 +885,68 @@ extension MoneyHashShared.SkieSwiftFlow where T : Swift._ObjectiveCBridgeable {
   convenience public init(_ flow: MoneyHashShared.SkieSwiftStateFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>)
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalFlow<T>(_ flow: MoneyHashShared.SkieSwiftFlow<T>) -> MoneyHashShared.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalFlow<T>(_ flow: MoneyHashShared.SkieSwiftOptionalFlow<T>) -> MoneyHashShared.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalFlow<T>(_ flow: MoneyHashShared.SkieSwiftSharedFlow<T>) -> MoneyHashShared.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalFlow<T>(_ flow: MoneyHashShared.SkieSwiftOptionalSharedFlow<T>) -> MoneyHashShared.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalFlow<T>(_ flow: MoneyHashShared.SkieSwiftMutableSharedFlow<T>) -> MoneyHashShared.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalFlow<T>(_ flow: MoneyHashShared.SkieSwiftOptionalMutableSharedFlow<T>) -> MoneyHashShared.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalFlow<T>(_ flow: MoneyHashShared.SkieSwiftStateFlow<T>) -> MoneyHashShared.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalFlow<T>(_ flow: MoneyHashShared.SkieSwiftOptionalStateFlow<T>) -> MoneyHashShared.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalFlow<T>(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>) -> MoneyHashShared.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalFlow<T>(_ flow: MoneyHashShared.SkieSwiftOptionalMutableStateFlow<T>) -> MoneyHashShared.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalFlow<T>(_ flow: MoneyHashShared.SkieSwiftFlow<T>) -> MoneyHashShared.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalFlow<T>(_ flow: MoneyHashShared.SkieSwiftOptionalFlow<T>) -> MoneyHashShared.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalFlow<T>(_ flow: MoneyHashShared.SkieSwiftSharedFlow<T>) -> MoneyHashShared.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalFlow<T>(_ flow: MoneyHashShared.SkieSwiftOptionalSharedFlow<T>) -> MoneyHashShared.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalFlow<T>(_ flow: MoneyHashShared.SkieSwiftMutableSharedFlow<T>) -> MoneyHashShared.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalFlow<T>(_ flow: MoneyHashShared.SkieSwiftOptionalMutableSharedFlow<T>) -> MoneyHashShared.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalFlow<T>(_ flow: MoneyHashShared.SkieSwiftStateFlow<T>) -> MoneyHashShared.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalFlow<T>(_ flow: MoneyHashShared.SkieSwiftOptionalStateFlow<T>) -> MoneyHashShared.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalFlow<T>(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>) -> MoneyHashShared.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalFlow<T>(_ flow: MoneyHashShared.SkieSwiftOptionalMutableStateFlow<T>) -> MoneyHashShared.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 extension MoneyHashShared.SkieSwiftOptionalFlow where T : AnyObject {
   convenience public init(_ flow: MoneyHashShared.SkieKotlinFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieKotlinOptionalFlow<T>)
@@ -753,6 +969,8 @@ extension MoneyHashShared.SkieSwiftOptionalFlow where T : AnyObject {
   convenience public init(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieSwiftOptionalMutableStateFlow<T>)
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 extension MoneyHashShared.SkieSwiftOptionalFlow where T : Swift._ObjectiveCBridgeable {
   convenience public init(_ flow: MoneyHashShared.SkieKotlinFlow<T._ObjectiveCType>)
   convenience public init(_ flow: MoneyHashShared.SkieKotlinOptionalFlow<T._ObjectiveCType>)
@@ -785,14 +1003,32 @@ extension MoneyHashShared.SkieSwiftOptionalFlow where T : Swift._ObjectiveCBridg
   convenience public init(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieSwiftOptionalMutableStateFlow<T>)
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftSharedFlow<T>) -> MoneyHashShared.SkieKotlinSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftMutableSharedFlow<T>) -> MoneyHashShared.SkieKotlinSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftStateFlow<T>) -> MoneyHashShared.SkieKotlinSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>) -> MoneyHashShared.SkieKotlinSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftSharedFlow<T>) -> MoneyHashShared.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftMutableSharedFlow<T>) -> MoneyHashShared.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftStateFlow<T>) -> MoneyHashShared.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>) -> MoneyHashShared.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 extension MoneyHashShared.SkieSwiftSharedFlow where T : AnyObject {
   convenience public init(_ flow: MoneyHashShared.SkieKotlinSharedFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieKotlinMutableSharedFlow<T>)
@@ -803,6 +1039,8 @@ extension MoneyHashShared.SkieSwiftSharedFlow where T : AnyObject {
   convenience public init(_ flow: MoneyHashShared.SkieSwiftStateFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>)
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 extension MoneyHashShared.SkieSwiftSharedFlow where T : Swift._ObjectiveCBridgeable {
   convenience public init(_ flow: MoneyHashShared.SkieKotlinSharedFlow<T._ObjectiveCType>)
   convenience public init(_ flow: MoneyHashShared.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
@@ -817,22 +1055,56 @@ extension MoneyHashShared.SkieSwiftSharedFlow where T : Swift._ObjectiveCBridgea
   convenience public init(_ flow: MoneyHashShared.SkieSwiftStateFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>)
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftSharedFlow<T>) -> MoneyHashShared.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftOptionalSharedFlow<T>) -> MoneyHashShared.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftMutableSharedFlow<T>) -> MoneyHashShared.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftOptionalMutableSharedFlow<T>) -> MoneyHashShared.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftStateFlow<T>) -> MoneyHashShared.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftOptionalStateFlow<T>) -> MoneyHashShared.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>) -> MoneyHashShared.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftOptionalMutableStateFlow<T>) -> MoneyHashShared.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftSharedFlow<T>) -> MoneyHashShared.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftOptionalSharedFlow<T>) -> MoneyHashShared.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftMutableSharedFlow<T>) -> MoneyHashShared.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftOptionalMutableSharedFlow<T>) -> MoneyHashShared.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftStateFlow<T>) -> MoneyHashShared.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftOptionalStateFlow<T>) -> MoneyHashShared.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>) -> MoneyHashShared.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftOptionalMutableStateFlow<T>) -> MoneyHashShared.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 extension MoneyHashShared.SkieSwiftOptionalSharedFlow where T : AnyObject {
   convenience public init(_ flow: MoneyHashShared.SkieKotlinSharedFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieKotlinOptionalSharedFlow<T>)
@@ -851,6 +1123,8 @@ extension MoneyHashShared.SkieSwiftOptionalSharedFlow where T : AnyObject {
   convenience public init(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieSwiftOptionalMutableStateFlow<T>)
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 extension MoneyHashShared.SkieSwiftOptionalSharedFlow where T : Swift._ObjectiveCBridgeable {
   convenience public init(_ flow: MoneyHashShared.SkieKotlinSharedFlow<T._ObjectiveCType>)
   convenience public init(_ flow: MoneyHashShared.SkieKotlinOptionalSharedFlow<T._ObjectiveCType>)
@@ -877,27 +1151,47 @@ extension MoneyHashShared.SkieSwiftOptionalSharedFlow where T : Swift._Objective
   convenience public init(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieSwiftOptionalMutableStateFlow<T>)
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinMutableSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftMutableSharedFlow<T>) -> MoneyHashShared.SkieKotlinMutableSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinMutableSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftMutableSharedFlow<T>) -> MoneyHashShared.SkieKotlinMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 extension MoneyHashShared.SkieSwiftMutableSharedFlow where T : AnyObject {
   convenience public init(_ flow: MoneyHashShared.SkieKotlinMutableSharedFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieSwiftMutableSharedFlow<T>)
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 extension MoneyHashShared.SkieSwiftMutableSharedFlow where T : Swift._ObjectiveCBridgeable {
   convenience public init(_ flow: MoneyHashShared.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
   convenience public init(_ flow: MoneyHashShared.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
   convenience public init(_ flow: MoneyHashShared.SkieSwiftMutableSharedFlow<T>)
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftMutableSharedFlow<T>) -> MoneyHashShared.SkieKotlinOptionalMutableSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftOptionalMutableSharedFlow<T>) -> MoneyHashShared.SkieKotlinOptionalMutableSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftMutableSharedFlow<T>) -> MoneyHashShared.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: MoneyHashShared.SkieSwiftOptionalMutableSharedFlow<T>) -> MoneyHashShared.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 extension MoneyHashShared.SkieSwiftOptionalMutableSharedFlow where T : AnyObject {
   convenience public init(_ flow: MoneyHashShared.SkieKotlinMutableSharedFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieKotlinOptionalMutableSharedFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieSwiftMutableSharedFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieSwiftOptionalMutableSharedFlow<T>)
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 extension MoneyHashShared.SkieSwiftOptionalMutableSharedFlow where T : Swift._ObjectiveCBridgeable {
   convenience public init(_ flow: MoneyHashShared.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
   convenience public init(_ flow: MoneyHashShared.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
@@ -906,16 +1200,28 @@ extension MoneyHashShared.SkieSwiftOptionalMutableSharedFlow where T : Swift._Ob
   convenience public init(_ flow: MoneyHashShared.SkieSwiftMutableSharedFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieSwiftOptionalMutableSharedFlow<T>)
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinStateFlow<T>(_ flow: MoneyHashShared.SkieSwiftStateFlow<T>) -> MoneyHashShared.SkieKotlinStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinStateFlow<T>(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>) -> MoneyHashShared.SkieKotlinStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinStateFlow<T>(_ flow: MoneyHashShared.SkieSwiftStateFlow<T>) -> MoneyHashShared.SkieKotlinStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinStateFlow<T>(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>) -> MoneyHashShared.SkieKotlinStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 extension MoneyHashShared.SkieSwiftStateFlow where T : AnyObject {
   convenience public init(_ flow: MoneyHashShared.SkieKotlinStateFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieKotlinMutableStateFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieSwiftStateFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>)
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 extension MoneyHashShared.SkieSwiftStateFlow where T : Swift._ObjectiveCBridgeable {
   convenience public init(_ flow: MoneyHashShared.SkieKotlinStateFlow<T._ObjectiveCType>)
   convenience public init(_ flow: MoneyHashShared.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
@@ -924,14 +1230,32 @@ extension MoneyHashShared.SkieSwiftStateFlow where T : Swift._ObjectiveCBridgeab
   convenience public init(_ flow: MoneyHashShared.SkieSwiftStateFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>)
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalStateFlow<T>(_ flow: MoneyHashShared.SkieSwiftStateFlow<T>) -> MoneyHashShared.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalStateFlow<T>(_ flow: MoneyHashShared.SkieSwiftOptionalStateFlow<T>) -> MoneyHashShared.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalStateFlow<T>(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>) -> MoneyHashShared.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalStateFlow<T>(_ flow: MoneyHashShared.SkieSwiftOptionalMutableStateFlow<T>) -> MoneyHashShared.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalStateFlow<T>(_ flow: MoneyHashShared.SkieSwiftStateFlow<T>) -> MoneyHashShared.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalStateFlow<T>(_ flow: MoneyHashShared.SkieSwiftOptionalStateFlow<T>) -> MoneyHashShared.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalStateFlow<T>(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>) -> MoneyHashShared.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalStateFlow<T>(_ flow: MoneyHashShared.SkieSwiftOptionalMutableStateFlow<T>) -> MoneyHashShared.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 extension MoneyHashShared.SkieSwiftOptionalStateFlow where T : AnyObject {
   convenience public init(_ flow: MoneyHashShared.SkieKotlinStateFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieKotlinOptionalStateFlow<T>)
@@ -942,6 +1266,8 @@ extension MoneyHashShared.SkieSwiftOptionalStateFlow where T : AnyObject {
   convenience public init(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieSwiftOptionalMutableStateFlow<T>)
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 extension MoneyHashShared.SkieSwiftOptionalStateFlow where T : Swift._ObjectiveCBridgeable {
   convenience public init(_ flow: MoneyHashShared.SkieKotlinStateFlow<T._ObjectiveCType>)
   convenience public init(_ flow: MoneyHashShared.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
@@ -956,27 +1282,47 @@ extension MoneyHashShared.SkieSwiftOptionalStateFlow where T : Swift._ObjectiveC
   convenience public init(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieSwiftOptionalMutableStateFlow<T>)
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinMutableStateFlow<T>(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>) -> MoneyHashShared.SkieKotlinMutableStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinMutableStateFlow<T>(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>) -> MoneyHashShared.SkieKotlinMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 extension MoneyHashShared.SkieSwiftMutableStateFlow where T : AnyObject {
   convenience public init(_ flow: MoneyHashShared.SkieKotlinMutableStateFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>)
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 extension MoneyHashShared.SkieSwiftMutableStateFlow where T : Swift._ObjectiveCBridgeable {
   convenience public init(_ flow: MoneyHashShared.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
   convenience public init(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
   convenience public init(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>)
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>) -> MoneyHashShared.SkieKotlinOptionalMutableStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: MoneyHashShared.SkieSwiftOptionalMutableStateFlow<T>) -> MoneyHashShared.SkieKotlinOptionalMutableStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>) -> MoneyHashShared.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: MoneyHashShared.SkieSwiftOptionalMutableStateFlow<T>) -> MoneyHashShared.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 extension MoneyHashShared.SkieSwiftOptionalMutableStateFlow where T : AnyObject {
   convenience public init(_ flow: MoneyHashShared.SkieKotlinMutableStateFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieKotlinOptionalMutableStateFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieSwiftOptionalMutableStateFlow<T>)
 }
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
 extension MoneyHashShared.SkieSwiftOptionalMutableStateFlow where T : Swift._ObjectiveCBridgeable {
   convenience public init(_ flow: MoneyHashShared.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
   convenience public init(_ flow: MoneyHashShared.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
@@ -985,6 +1331,7 @@ extension MoneyHashShared.SkieSwiftOptionalMutableStateFlow where T : Swift._Obj
   convenience public init(_ flow: MoneyHashShared.SkieSwiftMutableStateFlow<T>)
   convenience public init(_ flow: MoneyHashShared.SkieSwiftOptionalMutableStateFlow<T>)
 }
+#endif
 @frozen public enum KotlinKVariance : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
   case invariant
   case `in`
@@ -1003,7 +1350,7 @@ extension MoneyHashShared.SkieSwiftOptionalMutableStateFlow where T : Swift._Obj
   public static func == (a: MoneyHashShared.KotlinKVariance, b: MoneyHashShared.KotlinKVariance) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.KotlinKVariance]
-  nonisolated public static var allCases: [MoneyHashShared.KotlinKVariance] {
+  public static var allCases: [MoneyHashShared.KotlinKVariance] {
     get
   }
   public var hashValue: Swift.Int {
@@ -1040,7 +1387,7 @@ extension MoneyHashShared.__KotlinKVariance {
   public static func == (a: MoneyHashShared.DiscountType, b: MoneyHashShared.DiscountType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.DiscountType]
-  nonisolated public static var allCases: [MoneyHashShared.DiscountType] {
+  public static var allCases: [MoneyHashShared.DiscountType] {
     get
   }
   public var hashValue: Swift.Int {
@@ -1078,7 +1425,7 @@ extension MoneyHashShared.__DiscountType {
   public static func == (a: MoneyHashShared.Language, b: MoneyHashShared.Language) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.Language]
-  nonisolated public static var allCases: [MoneyHashShared.Language] {
+  public static var allCases: [MoneyHashShared.Language] {
     get
   }
   public var hashValue: Swift.Int {
@@ -1118,7 +1465,7 @@ extension MoneyHashShared.__Language {
   public static func == (a: MoneyHashShared.MethodType, b: MoneyHashShared.MethodType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.MethodType]
-  nonisolated public static var allCases: [MoneyHashShared.MethodType] {
+  public static var allCases: [MoneyHashShared.MethodType] {
     get
   }
   public var hashValue: Swift.Int {
@@ -1157,7 +1504,7 @@ extension MoneyHashShared.__MethodType {
   public static func == (a: MoneyHashShared.IntentStatus, b: MoneyHashShared.IntentStatus) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.IntentStatus]
-  nonisolated public static var allCases: [MoneyHashShared.IntentStatus] {
+  public static var allCases: [MoneyHashShared.IntentStatus] {
     get
   }
   public var hashValue: Swift.Int {
@@ -1203,7 +1550,7 @@ extension MoneyHashShared.__IntentStatus {
   public static func == (a: MoneyHashShared.IntentState, b: MoneyHashShared.IntentState) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.IntentState]
-  nonisolated public static var allCases: [MoneyHashShared.IntentState] {
+  public static var allCases: [MoneyHashShared.IntentState] {
     get
   }
   public var hashValue: Swift.Int {
@@ -1245,7 +1592,7 @@ extension MoneyHashShared.__IntentState {
   public static func == (a: MoneyHashShared.Type_, b: MoneyHashShared.Type_) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.Type_]
-  nonisolated public static var allCases: [MoneyHashShared.Type_] {
+  public static var allCases: [MoneyHashShared.Type_] {
     get
   }
   public var hashValue: Swift.Int {
@@ -1281,7 +1628,7 @@ extension MoneyHashShared.__Type_ {
   public static func == (a: MoneyHashShared.ErrorType, b: MoneyHashShared.ErrorType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.ErrorType]
-  nonisolated public static var allCases: [MoneyHashShared.ErrorType] {
+  public static var allCases: [MoneyHashShared.ErrorType] {
     get
   }
   public var hashValue: Swift.Int {
@@ -1316,7 +1663,7 @@ extension MoneyHashShared.__ErrorType {
   public static func == (a: MoneyHashShared.LoggerSeverity, b: MoneyHashShared.LoggerSeverity) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.LoggerSeverity]
-  nonisolated public static var allCases: [MoneyHashShared.LoggerSeverity] {
+  public static var allCases: [MoneyHashShared.LoggerSeverity] {
     get
   }
   public var hashValue: Swift.Int {
@@ -1358,7 +1705,7 @@ extension MoneyHashShared.__LoggerSeverity {
   public static func == (a: MoneyHashShared.Environment, b: MoneyHashShared.Environment) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.Environment]
-  nonisolated public static var allCases: [MoneyHashShared.Environment] {
+  public static var allCases: [MoneyHashShared.Environment] {
     get
   }
   public var hashValue: Swift.Int {
@@ -1399,7 +1746,7 @@ extension MoneyHashShared.__Environment {
   public static func == (a: MoneyHashShared.InputFieldType, b: MoneyHashShared.InputFieldType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.InputFieldType]
-  nonisolated public static var allCases: [MoneyHashShared.InputFieldType] {
+  public static var allCases: [MoneyHashShared.InputFieldType] {
     get
   }
   public var hashValue: Swift.Int {
@@ -1438,7 +1785,7 @@ extension MoneyHashShared.__InputFieldType {
   public static func == (a: MoneyHashShared.RenderStrategy, b: MoneyHashShared.RenderStrategy) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.RenderStrategy]
-  nonisolated public static var allCases: [MoneyHashShared.RenderStrategy] {
+  public static var allCases: [MoneyHashShared.RenderStrategy] {
     get
   }
   public var hashValue: Swift.Int {
@@ -1474,7 +1821,7 @@ extension MoneyHashShared.__RenderStrategy {
   public static func == (a: MoneyHashShared.Brand, b: MoneyHashShared.Brand) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.Brand]
-  nonisolated public static var allCases: [MoneyHashShared.Brand] {
+  public static var allCases: [MoneyHashShared.Brand] {
     get
   }
   public var hashValue: Swift.Int {
@@ -1517,7 +1864,7 @@ extension MoneyHashShared.__Brand {
   public static func == (a: MoneyHashShared.FieldType, b: MoneyHashShared.FieldType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.FieldType]
-  nonisolated public static var allCases: [MoneyHashShared.FieldType] {
+  public static var allCases: [MoneyHashShared.FieldType] {
     get
   }
   public var hashValue: Swift.Int {
@@ -1552,7 +1899,7 @@ extension MoneyHashShared.__FieldType {
   public static func == (a: MoneyHashShared.Locale, b: MoneyHashShared.Locale) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.Locale]
-  nonisolated public static var allCases: [MoneyHashShared.Locale] {
+  public static var allCases: [MoneyHashShared.Locale] {
     get
   }
   public var hashValue: Swift.Int {
@@ -1599,7 +1946,7 @@ extension MoneyHashShared.__Locale {
   public static func == (a: MoneyHashShared.Ktor_utilsMonth, b: MoneyHashShared.Ktor_utilsMonth) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.Ktor_utilsMonth]
-  nonisolated public static var allCases: [MoneyHashShared.Ktor_utilsMonth] {
+  public static var allCases: [MoneyHashShared.Ktor_utilsMonth] {
     get
   }
   public var hashValue: Swift.Int {
@@ -1641,7 +1988,7 @@ extension MoneyHashShared.__Ktor_utilsMonth {
   public static func == (a: MoneyHashShared.Ktor_utilsWeekDay, b: MoneyHashShared.Ktor_utilsWeekDay) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.Ktor_utilsWeekDay]
-  nonisolated public static var allCases: [MoneyHashShared.Ktor_utilsWeekDay] {
+  public static var allCases: [MoneyHashShared.Ktor_utilsWeekDay] {
     get
   }
   public var hashValue: Swift.Int {
@@ -1960,46 +2307,24 @@ public var JsonWithIgnoredUnknownKeys: MoneyHashShared.Kotlinx_serialization_jso
 }
 public func getCurrentYearYY() -> Swift.Int32
 extension MoneyHashShared.KotlinKVariance : Swift.Sendable {}
-extension MoneyHashShared.KotlinKVariance : Swift.BitwiseCopyable {}
 extension MoneyHashShared.DiscountType : Swift.Sendable {}
-extension MoneyHashShared.DiscountType : Swift.BitwiseCopyable {}
 extension MoneyHashShared.Language : Swift.Sendable {}
-extension MoneyHashShared.Language : Swift.BitwiseCopyable {}
 extension MoneyHashShared.MethodType : Swift.Sendable {}
-extension MoneyHashShared.MethodType : Swift.BitwiseCopyable {}
 extension MoneyHashShared.IntentStatus : Swift.Sendable {}
-extension MoneyHashShared.IntentStatus : Swift.BitwiseCopyable {}
 extension MoneyHashShared.IntentState : Swift.Sendable {}
-extension MoneyHashShared.IntentState : Swift.BitwiseCopyable {}
 extension MoneyHashShared.Type_ : Swift.Sendable {}
-extension MoneyHashShared.Type_ : Swift.BitwiseCopyable {}
 extension MoneyHashShared.ErrorType : Swift.Sendable {}
-extension MoneyHashShared.ErrorType : Swift.BitwiseCopyable {}
 extension MoneyHashShared.LoggerSeverity : Swift.Sendable {}
-extension MoneyHashShared.LoggerSeverity : Swift.BitwiseCopyable {}
 extension MoneyHashShared.Environment : Swift.Sendable {}
-extension MoneyHashShared.Environment : Swift.BitwiseCopyable {}
 extension MoneyHashShared.InputFieldType : Swift.Sendable {}
-extension MoneyHashShared.InputFieldType : Swift.BitwiseCopyable {}
 extension MoneyHashShared.RenderStrategy : Swift.Sendable {}
-extension MoneyHashShared.RenderStrategy : Swift.BitwiseCopyable {}
 extension MoneyHashShared.Brand : Swift.Sendable {}
-extension MoneyHashShared.Brand : Swift.BitwiseCopyable {}
 extension MoneyHashShared.FieldType : Swift.Sendable {}
-extension MoneyHashShared.FieldType : Swift.BitwiseCopyable {}
 extension MoneyHashShared.Locale : Swift.Sendable {}
-extension MoneyHashShared.Locale : Swift.BitwiseCopyable {}
 extension MoneyHashShared.Ktor_utilsMonth : Swift.Sendable {}
-extension MoneyHashShared.Ktor_utilsMonth : Swift.BitwiseCopyable {}
 extension MoneyHashShared.Ktor_utilsWeekDay : Swift.Sendable {}
-extension MoneyHashShared.Ktor_utilsWeekDay : Swift.BitwiseCopyable {}
 extension MoneyHashShared.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed : Swift.Sendable {}
-extension MoneyHashShared.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed : Swift.BitwiseCopyable {}
 extension MoneyHashShared.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed : Swift.Sendable {}
-extension MoneyHashShared.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed : Swift.BitwiseCopyable {}
 extension MoneyHashShared.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed : Swift.Sendable {}
-extension MoneyHashShared.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed : Swift.BitwiseCopyable {}
 extension MoneyHashShared.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed : Swift.Sendable {}
-extension MoneyHashShared.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed : Swift.BitwiseCopyable {}
 extension MoneyHashShared.Skie.KotlinxSerializationCore.SerializersModule.__Sealed : Swift.Sendable {}
-extension MoneyHashShared.Skie.KotlinxSerializationCore.SerializersModule.__Sealed : Swift.BitwiseCopyable {}

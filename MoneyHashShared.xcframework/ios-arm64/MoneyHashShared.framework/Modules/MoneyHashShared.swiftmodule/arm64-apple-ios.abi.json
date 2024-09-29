@@ -2327,6 +2327,108 @@
                     "children": [
                       {
                         "kind": "Var",
+                        "name": "cardIntentFailed",
+                        "printedName": "cardIntentFailed",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed.Type) -> (MoneyHashShared.IntentStateDetails.CardIntentFailed) -> MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(MoneyHashShared.IntentStateDetails.CardIntentFailed) -> MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed",
+                                    "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "CardIntentFailed",
+                                    "printedName": "MoneyHashShared.IntentStateDetails.CardIntentFailed",
+                                    "usr": "c:objc(cs)MHSIntentStateDetailsCardIntentFailed"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed",
+                                    "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO04cardG6FailedyAISo09MHSIntenthi4CardgL0CcAImF",
+                        "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO04cardG6FailedyAISo09MHSIntenthi4CardgL0CcAImF",
+                        "moduleName": "MoneyHashShared",
+                        "fixedbinaryorder": 0
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "cardIntentSuccessful",
+                        "printedName": "cardIntentSuccessful",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed.Type) -> (MoneyHashShared.IntentStateDetails.CardIntentSuccessful) -> MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(MoneyHashShared.IntentStateDetails.CardIntentSuccessful) -> MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed",
+                                    "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "CardIntentSuccessful",
+                                    "printedName": "MoneyHashShared.IntentStateDetails.CardIntentSuccessful",
+                                    "usr": "c:objc(cs)MHSIntentStateDetailsCardIntentSuccessful"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed",
+                                    "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO04cardG10SuccessfulyAISo09MHSIntenthi4CardgL0CcAImF",
+                        "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO04cardG10SuccessfulyAISo09MHSIntenthi4CardgL0CcAImF",
+                        "moduleName": "MoneyHashShared",
+                        "fixedbinaryorder": 1
+                      },
+                      {
+                        "kind": "Var",
                         "name": "closed",
                         "printedName": "closed",
                         "children": [
@@ -2374,7 +2476,7 @@
                         "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO6closedyAISo09MHSIntenthI6ClosedCcAImF",
                         "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO6closedyAISo09MHSIntenthI6ClosedCcAImF",
                         "moduleName": "MoneyHashShared",
-                        "fixedbinaryorder": 0
+                        "fixedbinaryorder": 2
                       },
                       {
                         "kind": "Var",
@@ -2425,7 +2527,7 @@
                         "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO7expiredyAISo09MHSIntenthI7ExpiredCcAImF",
                         "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO7expiredyAISo09MHSIntenthI7ExpiredCcAImF",
                         "moduleName": "MoneyHashShared",
-                        "fixedbinaryorder": 1
+                        "fixedbinaryorder": 3
                       },
                       {
                         "kind": "Var",
@@ -2476,7 +2578,7 @@
                         "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO10formFieldsyAISo09MHSIntenthi4FormL0CcAImF",
                         "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO10formFieldsyAISo09MHSIntenthi4FormL0CcAImF",
                         "moduleName": "MoneyHashShared",
-                        "fixedbinaryorder": 2
+                        "fixedbinaryorder": 4
                       },
                       {
                         "kind": "Var",
@@ -2527,7 +2629,7 @@
                         "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO10intentFormyAISo09MHSIntenthigL0CcAImF",
                         "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO10intentFormyAISo09MHSIntenthigL0CcAImF",
                         "moduleName": "MoneyHashShared",
-                        "fixedbinaryorder": 3
+                        "fixedbinaryorder": 5
                       },
                       {
                         "kind": "Var",
@@ -2578,7 +2680,7 @@
                         "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO15intentProcessedyAISo09MHSIntenthigL0CcAImF",
                         "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO15intentProcessedyAISo09MHSIntenthigL0CcAImF",
                         "moduleName": "MoneyHashShared",
-                        "fixedbinaryorder": 4
+                        "fixedbinaryorder": 6
                       },
                       {
                         "kind": "Var",
@@ -2629,7 +2731,7 @@
                         "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO15methodSelectionyAISo09MHSIntenthi6MethodL0CcAImF",
                         "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO15methodSelectionyAISo09MHSIntenthi6MethodL0CcAImF",
                         "moduleName": "MoneyHashShared",
-                        "fixedbinaryorder": 5
+                        "fixedbinaryorder": 7
                       },
                       {
                         "kind": "Var",
@@ -2680,7 +2782,7 @@
                         "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO9nativePayyAISo09MHSIntenthi6NativeL0CcAImF",
                         "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO9nativePayyAISo09MHSIntenthi6NativeL0CcAImF",
                         "moduleName": "MoneyHashShared",
-                        "fixedbinaryorder": 6
+                        "fixedbinaryorder": 8
                       },
                       {
                         "kind": "Var",
@@ -2731,7 +2833,7 @@
                         "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO12savedCardCVVyAISo09MHSIntenthi5SavedlM0CcAImF",
                         "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO12savedCardCVVyAISo09MHSIntenthi5SavedlM0CcAImF",
                         "moduleName": "MoneyHashShared",
-                        "fixedbinaryorder": 7
+                        "fixedbinaryorder": 9
                       },
                       {
                         "kind": "Var",
@@ -2782,7 +2884,7 @@
                         "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO17transactionFailedyAISo09MHSIntenthi11TransactionL0CcAImF",
                         "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO17transactionFailedyAISo09MHSIntenthi11TransactionL0CcAImF",
                         "moduleName": "MoneyHashShared",
-                        "fixedbinaryorder": 8
+                        "fixedbinaryorder": 10
                       },
                       {
                         "kind": "Var",
@@ -2833,7 +2935,7 @@
                         "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO28transactionWaitingUserActionyAISo09MHSIntenthi11TransactionlmN0CcAImF",
                         "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO28transactionWaitingUserActionyAISo09MHSIntenthi11TransactionlmN0CcAImF",
                         "moduleName": "MoneyHashShared",
-                        "fixedbinaryorder": 9
+                        "fixedbinaryorder": 11
                       },
                       {
                         "kind": "Var",
@@ -2884,7 +2986,7 @@
                         "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO11urlToRenderyAISo09MHSIntenthi3UrllM0CcAImF",
                         "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO11urlToRenderyAISo09MHSIntenthi3UrllM0CcAImF",
                         "moduleName": "MoneyHashShared",
-                        "fixedbinaryorder": 10
+                        "fixedbinaryorder": 12
                       },
                       {
                         "kind": "Var",
@@ -4358,6 +4460,251 @@
                 "declKind": "Enum",
                 "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O19ValidationExceptionO",
                 "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O19ValidationExceptionO",
+                "moduleName": "MoneyHashShared",
+                "declAttributes": [
+                  "AccessControl"
+                ]
+              },
+              {
+                "kind": "TypeDecl",
+                "name": "VaultCollectNetworkError",
+                "printedName": "VaultCollectNetworkError",
+                "children": [
+                  {
+                    "kind": "TypeDecl",
+                    "name": "__Sealed",
+                    "printedName": "__Sealed",
+                    "children": [
+                      {
+                        "kind": "Var",
+                        "name": "missingPublicKey",
+                        "printedName": "missingPublicKey",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.VaultCollectNetworkError.__Sealed.Type) -> (MoneyHashShared.VaultCollectNetworkError.MissingPublicKey) -> MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.VaultCollectNetworkError.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(MoneyHashShared.VaultCollectNetworkError.MissingPublicKey) -> MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.VaultCollectNetworkError.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.VaultCollectNetworkError.__Sealed",
+                                    "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O24VaultCollectNetworkErrorO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "MissingPublicKey",
+                                    "printedName": "MoneyHashShared.VaultCollectNetworkError.MissingPublicKey",
+                                    "usr": "c:objc(cs)MHSVaultCollectNetworkErrorMissingPublicKey"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.VaultCollectNetworkError.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.VaultCollectNetworkError.__Sealed",
+                                    "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O24VaultCollectNetworkErrorO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O24VaultCollectNetworkErrorO8__SealedO16missingPublicKeyyAISo08MHSVaulthij7MissingmN0CcAImF",
+                        "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O24VaultCollectNetworkErrorO8__SealedO16missingPublicKeyyAISo08MHSVaulthij7MissingmN0CcAImF",
+                        "moduleName": "MoneyHashShared",
+                        "fixedbinaryorder": 0
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "tokenizationError",
+                        "printedName": "tokenizationError",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.VaultCollectNetworkError.__Sealed.Type) -> (MoneyHashShared.VaultCollectNetworkError.TokenizationError) -> MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.VaultCollectNetworkError.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(MoneyHashShared.VaultCollectNetworkError.TokenizationError) -> MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.VaultCollectNetworkError.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.VaultCollectNetworkError.__Sealed",
+                                    "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O24VaultCollectNetworkErrorO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "TokenizationError",
+                                    "printedName": "MoneyHashShared.VaultCollectNetworkError.TokenizationError",
+                                    "usr": "c:objc(cs)MHSVaultCollectNetworkErrorTokenizationError"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.VaultCollectNetworkError.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.VaultCollectNetworkError.__Sealed",
+                                    "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O24VaultCollectNetworkErrorO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O24VaultCollectNetworkErrorO8__SealedO012tokenizationJ0yAISo08MHSVaulthij12TokenizationJ0CcAImF",
+                        "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O24VaultCollectNetworkErrorO8__SealedO012tokenizationJ0yAISo08MHSVaulthij12TokenizationJ0CcAImF",
+                        "moduleName": "MoneyHashShared",
+                        "fixedbinaryorder": 1
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "hashValue",
+                        "printedName": "hashValue",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Var",
+                        "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O24VaultCollectNetworkErrorO8__SealedO9hashValueSivp",
+                        "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O24VaultCollectNetworkErrorO8__SealedO9hashValueSivp",
+                        "moduleName": "MoneyHashShared",
+                        "implicit": true,
+                        "accessors": [
+                          {
+                            "kind": "Accessor",
+                            "name": "Get",
+                            "printedName": "Get()",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ],
+                            "declKind": "Accessor",
+                            "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O24VaultCollectNetworkErrorO8__SealedO9hashValueSivg",
+                            "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O24VaultCollectNetworkErrorO8__SealedO9hashValueSivg",
+                            "moduleName": "MoneyHashShared",
+                            "implicit": true,
+                            "accessorKind": "get"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "hash",
+                        "printedName": "hash(into:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Hasher",
+                            "printedName": "Swift.Hasher",
+                            "paramValueOwnership": "InOut",
+                            "usr": "s:s6HasherV"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O24VaultCollectNetworkErrorO8__SealedO4hash4intoys6HasherVz_tF",
+                        "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O24VaultCollectNetworkErrorO8__SealedO4hash4intoys6HasherVz_tF",
+                        "moduleName": "MoneyHashShared",
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      },
+                      {
+                        "kind": "Function",
+                        "name": "==",
+                        "printedName": "==(_:_:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.VaultCollectNetworkError.__Sealed",
+                            "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O24VaultCollectNetworkErrorO8__SealedO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "__Sealed",
+                            "printedName": "MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.VaultCollectNetworkError.__Sealed",
+                            "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O24VaultCollectNetworkErrorO8__SealedO"
+                          }
+                        ],
+                        "declKind": "Func",
+                        "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O24VaultCollectNetworkErrorO8__SealedO2eeoiySbAI_AItFZ",
+                        "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O24VaultCollectNetworkErrorO8__SealedO2eeoiySbAI_AItFZ",
+                        "moduleName": "MoneyHashShared",
+                        "static": true,
+                        "implicit": true,
+                        "funcSelfKind": "NonMutating"
+                      }
+                    ],
+                    "declKind": "Enum",
+                    "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O24VaultCollectNetworkErrorO8__SealedO",
+                    "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O24VaultCollectNetworkErrorO8__SealedO",
+                    "moduleName": "MoneyHashShared",
+                    "declAttributes": [
+                      "AccessControl",
+                      "Frozen"
+                    ],
+                    "isFromExtension": true,
+                    "isEnumExhaustive": true,
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Hashable",
+                        "printedName": "Hashable",
+                        "usr": "s:SH",
+                        "mangledName": "$sSH"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Equatable",
+                        "printedName": "Equatable",
+                        "usr": "s:SQ",
+                        "mangledName": "$sSQ"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Enum",
+                "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O24VaultCollectNetworkErrorO",
+                "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O24VaultCollectNetworkErrorO",
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
@@ -21544,16 +21891,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MoneyHashShared",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "Function",
         "name": "SkieKotlinFlow",
         "printedName": "SkieKotlinFlow(_:)",
@@ -28768,6 +29105,82 @@
           },
           {
             "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHashShared.IntentState.Type) -> MoneyHashShared.IntentState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IntentState",
+                    "printedName": "MoneyHashShared.IntentState",
+                    "usr": "s:15MoneyHashShared11IntentStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHashShared.IntentState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IntentState",
+                        "printedName": "MoneyHashShared.IntentState",
+                        "usr": "s:15MoneyHashShared11IntentStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MoneyHashShared11IntentStateO7successyA2CmF",
+            "mangledName": "$s15MoneyHashShared11IntentStateO7successyA2CmF",
+            "moduleName": "MoneyHashShared",
+            "fixedbinaryorder": 10
+          },
+          {
+            "kind": "Var",
+            "name": "failed",
+            "printedName": "failed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHashShared.IntentState.Type) -> MoneyHashShared.IntentState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IntentState",
+                    "printedName": "MoneyHashShared.IntentState",
+                    "usr": "s:15MoneyHashShared11IntentStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHashShared.IntentState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IntentState",
+                        "printedName": "MoneyHashShared.IntentState",
+                        "usr": "s:15MoneyHashShared11IntentStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MoneyHashShared11IntentStateO6failedyA2CmF",
+            "mangledName": "$s15MoneyHashShared11IntentStateO6failedyA2CmF",
+            "moduleName": "MoneyHashShared",
+            "fixedbinaryorder": 11
+          },
+          {
+            "kind": "Var",
             "name": "nativePay",
             "printedName": "nativePay",
             "children": [
@@ -28802,7 +29215,7 @@
             "usr": "s:15MoneyHashShared11IntentStateO9nativePayyA2CmF",
             "mangledName": "$s15MoneyHashShared11IntentStateO9nativePayyA2CmF",
             "moduleName": "MoneyHashShared",
-            "fixedbinaryorder": 10
+            "fixedbinaryorder": 12
           },
           {
             "kind": "Var",
@@ -29353,6 +29766,814 @@
                     "name": "__IntentState",
                     "printedName": "MoneyHashShared.__IntentState",
                     "usr": "c:objc(cs)MHSIntentState"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoneyHashShared",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InputFieldType",
+        "printedName": "InputFieldType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "text",
+            "printedName": "text",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHashShared.InputFieldType.Type) -> MoneyHashShared.InputFieldType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InputFieldType",
+                    "printedName": "MoneyHashShared.InputFieldType",
+                    "usr": "s:15MoneyHashShared14InputFieldTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHashShared.InputFieldType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InputFieldType",
+                        "printedName": "MoneyHashShared.InputFieldType",
+                        "usr": "s:15MoneyHashShared14InputFieldTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MoneyHashShared14InputFieldTypeO4textyA2CmF",
+            "mangledName": "$s15MoneyHashShared14InputFieldTypeO4textyA2CmF",
+            "moduleName": "MoneyHashShared",
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "email",
+            "printedName": "email",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHashShared.InputFieldType.Type) -> MoneyHashShared.InputFieldType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InputFieldType",
+                    "printedName": "MoneyHashShared.InputFieldType",
+                    "usr": "s:15MoneyHashShared14InputFieldTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHashShared.InputFieldType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InputFieldType",
+                        "printedName": "MoneyHashShared.InputFieldType",
+                        "usr": "s:15MoneyHashShared14InputFieldTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MoneyHashShared14InputFieldTypeO5emailyA2CmF",
+            "mangledName": "$s15MoneyHashShared14InputFieldTypeO5emailyA2CmF",
+            "moduleName": "MoneyHashShared",
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "phoneNumber",
+            "printedName": "phoneNumber",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHashShared.InputFieldType.Type) -> MoneyHashShared.InputFieldType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InputFieldType",
+                    "printedName": "MoneyHashShared.InputFieldType",
+                    "usr": "s:15MoneyHashShared14InputFieldTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHashShared.InputFieldType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InputFieldType",
+                        "printedName": "MoneyHashShared.InputFieldType",
+                        "usr": "s:15MoneyHashShared14InputFieldTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MoneyHashShared14InputFieldTypeO11phoneNumberyA2CmF",
+            "mangledName": "$s15MoneyHashShared14InputFieldTypeO11phoneNumberyA2CmF",
+            "moduleName": "MoneyHashShared",
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "date",
+            "printedName": "date",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHashShared.InputFieldType.Type) -> MoneyHashShared.InputFieldType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InputFieldType",
+                    "printedName": "MoneyHashShared.InputFieldType",
+                    "usr": "s:15MoneyHashShared14InputFieldTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHashShared.InputFieldType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InputFieldType",
+                        "printedName": "MoneyHashShared.InputFieldType",
+                        "usr": "s:15MoneyHashShared14InputFieldTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MoneyHashShared14InputFieldTypeO4dateyA2CmF",
+            "mangledName": "$s15MoneyHashShared14InputFieldTypeO4dateyA2CmF",
+            "moduleName": "MoneyHashShared",
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "number",
+            "printedName": "number",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHashShared.InputFieldType.Type) -> MoneyHashShared.InputFieldType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InputFieldType",
+                    "printedName": "MoneyHashShared.InputFieldType",
+                    "usr": "s:15MoneyHashShared14InputFieldTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHashShared.InputFieldType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InputFieldType",
+                        "printedName": "MoneyHashShared.InputFieldType",
+                        "usr": "s:15MoneyHashShared14InputFieldTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MoneyHashShared14InputFieldTypeO6numberyA2CmF",
+            "mangledName": "$s15MoneyHashShared14InputFieldTypeO6numberyA2CmF",
+            "moduleName": "MoneyHashShared",
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "select",
+            "printedName": "select",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHashShared.InputFieldType.Type) -> MoneyHashShared.InputFieldType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InputFieldType",
+                    "printedName": "MoneyHashShared.InputFieldType",
+                    "usr": "s:15MoneyHashShared14InputFieldTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHashShared.InputFieldType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InputFieldType",
+                        "printedName": "MoneyHashShared.InputFieldType",
+                        "usr": "s:15MoneyHashShared14InputFieldTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MoneyHashShared14InputFieldTypeO6selectyA2CmF",
+            "mangledName": "$s15MoneyHashShared14InputFieldTypeO6selectyA2CmF",
+            "moduleName": "MoneyHashShared",
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MoneyHashShared14InputFieldTypeO4nameSSvp",
+            "mangledName": "$s15MoneyHashShared14InputFieldTypeO4nameSSvp",
+            "moduleName": "MoneyHashShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MoneyHashShared14InputFieldTypeO4nameSSvg",
+                "mangledName": "$s15MoneyHashShared14InputFieldTypeO4nameSSvg",
+                "moduleName": "MoneyHashShared",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ordinal",
+            "printedName": "ordinal",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MoneyHashShared14InputFieldTypeO7ordinals5Int32Vvp",
+            "mangledName": "$s15MoneyHashShared14InputFieldTypeO7ordinals5Int32Vvp",
+            "moduleName": "MoneyHashShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MoneyHashShared14InputFieldTypeO7ordinals5Int32Vvg",
+                "mangledName": "$s15MoneyHashShared14InputFieldTypeO7ordinals5Int32Vvg",
+                "moduleName": "MoneyHashShared",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MoneyHashShared14InputFieldTypeO4typeSSvp",
+            "mangledName": "$s15MoneyHashShared14InputFieldTypeO4typeSSvp",
+            "moduleName": "MoneyHashShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MoneyHashShared14InputFieldTypeO4typeSSvg",
+                "mangledName": "$s15MoneyHashShared14InputFieldTypeO4typeSSvg",
+                "moduleName": "MoneyHashShared",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "companion",
+            "printedName": "companion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Companion",
+                "printedName": "MoneyHashShared.__InputFieldType.Companion",
+                "usr": "c:objc(cs)MHSInputFieldTypeCompanion"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MoneyHashShared14InputFieldTypeO9companionSo08MHSInputeF9CompanionCvpZ",
+            "mangledName": "$s15MoneyHashShared14InputFieldTypeO9companionSo08MHSInputeF9CompanionCvpZ",
+            "moduleName": "MoneyHashShared",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Companion",
+                    "printedName": "MoneyHashShared.__InputFieldType.Companion",
+                    "usr": "c:objc(cs)MHSInputFieldTypeCompanion"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MoneyHashShared14InputFieldTypeO9companionSo08MHSInputeF9CompanionCvgZ",
+                "mangledName": "$s15MoneyHashShared14InputFieldTypeO9companionSo08MHSInputeF9CompanionCvgZ",
+                "moduleName": "MoneyHashShared",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "_forceBridgeFromObjectiveC",
+            "printedName": "_forceBridgeFromObjectiveC(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "__InputFieldType",
+                "printedName": "MoneyHashShared.__InputFieldType",
+                "usr": "c:objc(cs)MHSInputFieldType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.InputFieldType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InputFieldType",
+                    "printedName": "MoneyHashShared.InputFieldType",
+                    "usr": "s:15MoneyHashShared14InputFieldTypeO"
+                  }
+                ],
+                "paramValueOwnership": "InOut",
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MoneyHashShared14InputFieldTypeO26_forceBridgeFromObjectiveC_6resultySo08MHSInputeF0C_ACSgztFZ",
+            "mangledName": "$s15MoneyHashShared14InputFieldTypeO26_forceBridgeFromObjectiveC_6resultySo08MHSInputeF0C_ACSgztFZ",
+            "moduleName": "MoneyHashShared",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_conditionallyBridgeFromObjectiveC",
+            "printedName": "_conditionallyBridgeFromObjectiveC(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "__InputFieldType",
+                "printedName": "MoneyHashShared.__InputFieldType",
+                "usr": "c:objc(cs)MHSInputFieldType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.InputFieldType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InputFieldType",
+                    "printedName": "MoneyHashShared.InputFieldType",
+                    "usr": "s:15MoneyHashShared14InputFieldTypeO"
+                  }
+                ],
+                "paramValueOwnership": "InOut",
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MoneyHashShared14InputFieldTypeO34_conditionallyBridgeFromObjectiveC_6resultSbSo08MHSInputeF0C_ACSgztFZ",
+            "mangledName": "$s15MoneyHashShared14InputFieldTypeO34_conditionallyBridgeFromObjectiveC_6resultSbSo08MHSInputeF0C_ACSgztFZ",
+            "moduleName": "MoneyHashShared",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_unconditionallyBridgeFromObjectiveC",
+            "printedName": "_unconditionallyBridgeFromObjectiveC(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InputFieldType",
+                "printedName": "MoneyHashShared.InputFieldType",
+                "usr": "s:15MoneyHashShared14InputFieldTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.__InputFieldType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__InputFieldType",
+                    "printedName": "MoneyHashShared.__InputFieldType",
+                    "usr": "c:objc(cs)MHSInputFieldType"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MoneyHashShared14InputFieldTypeO36_unconditionallyBridgeFromObjectiveCyACSo08MHSInputeF0CSgFZ",
+            "mangledName": "$s15MoneyHashShared14InputFieldTypeO36_unconditionallyBridgeFromObjectiveCyACSo08MHSInputeF0CSgFZ",
+            "moduleName": "MoneyHashShared",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_bridgeToObjectiveC",
+            "printedName": "_bridgeToObjectiveC()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__InputFieldType",
+                "printedName": "MoneyHashShared.__InputFieldType",
+                "usr": "c:objc(cs)MHSInputFieldType"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MoneyHashShared14InputFieldTypeO19_bridgeToObjectiveCSo08MHSInputeF0CyF",
+            "mangledName": "$s15MoneyHashShared14InputFieldTypeO19_bridgeToObjectiveCSo08MHSInputeF0CyF",
+            "moduleName": "MoneyHashShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "InputFieldType",
+                "printedName": "MoneyHashShared.InputFieldType",
+                "usr": "s:15MoneyHashShared14InputFieldTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "InputFieldType",
+                "printedName": "MoneyHashShared.InputFieldType",
+                "usr": "s:15MoneyHashShared14InputFieldTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MoneyHashShared14InputFieldTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s15MoneyHashShared14InputFieldTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "MoneyHashShared",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MoneyHashShared14InputFieldTypeO9hashValueSivp",
+            "mangledName": "$s15MoneyHashShared14InputFieldTypeO9hashValueSivp",
+            "moduleName": "MoneyHashShared",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MoneyHashShared14InputFieldTypeO9hashValueSivg",
+                "mangledName": "$s15MoneyHashShared14InputFieldTypeO9hashValueSivg",
+                "moduleName": "MoneyHashShared",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MoneyHashShared14InputFieldTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s15MoneyHashShared14InputFieldTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "MoneyHashShared",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[MoneyHashShared.InputFieldType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InputFieldType",
+                    "printedName": "MoneyHashShared.InputFieldType",
+                    "usr": "s:15MoneyHashShared14InputFieldTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MoneyHashShared14InputFieldTypeO8allCasesSayACGvpZ",
+            "mangledName": "$s15MoneyHashShared14InputFieldTypeO8allCasesSayACGvpZ",
+            "moduleName": "MoneyHashShared",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[MoneyHashShared.InputFieldType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InputFieldType",
+                        "printedName": "MoneyHashShared.InputFieldType",
+                        "usr": "s:15MoneyHashShared14InputFieldTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MoneyHashShared14InputFieldTypeO8allCasesSayACGvgZ",
+                "mangledName": "$s15MoneyHashShared14InputFieldTypeO8allCasesSayACGvgZ",
+                "moduleName": "MoneyHashShared",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "toKotlinEnum",
+            "printedName": "toKotlinEnum()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__InputFieldType",
+                "printedName": "MoneyHashShared.__InputFieldType",
+                "usr": "c:objc(cs)MHSInputFieldType"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MoneyHashShared14InputFieldTypeO12toKotlinEnumSo08MHSInputeF0CyF",
+            "mangledName": "$s15MoneyHashShared14InputFieldTypeO12toKotlinEnumSo08MHSInputeF0CyF",
+            "moduleName": "MoneyHashShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15MoneyHashShared14InputFieldTypeO",
+        "mangledName": "$s15MoneyHashShared14InputFieldTypeO",
+        "moduleName": "MoneyHashShared",
+        "declAttributes": [
+          "AccessControl",
+          "Frozen"
+        ],
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[MoneyHashShared.InputFieldType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InputFieldType",
+                        "printedName": "MoneyHashShared.InputFieldType",
+                        "usr": "s:15MoneyHashShared14InputFieldTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__InputFieldType",
+                    "printedName": "MoneyHashShared.__InputFieldType",
+                    "usr": "c:objc(cs)MHSInputFieldType"
                   }
                 ]
               }
@@ -32315,814 +33536,6 @@
                     "name": "__Environment",
                     "printedName": "MoneyHashShared.__Environment",
                     "usr": "c:objc(cs)MHSEnvironment"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s21_ObjectiveCBridgeableP",
-            "mangledName": "$ss21_ObjectiveCBridgeableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MoneyHashShared",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "InputFieldType",
-        "printedName": "InputFieldType",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "text",
-            "printedName": "text",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(MoneyHashShared.InputFieldType.Type) -> MoneyHashShared.InputFieldType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InputFieldType",
-                    "printedName": "MoneyHashShared.InputFieldType",
-                    "usr": "s:15MoneyHashShared14InputFieldTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "MoneyHashShared.InputFieldType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "InputFieldType",
-                        "printedName": "MoneyHashShared.InputFieldType",
-                        "usr": "s:15MoneyHashShared14InputFieldTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:15MoneyHashShared14InputFieldTypeO4textyA2CmF",
-            "mangledName": "$s15MoneyHashShared14InputFieldTypeO4textyA2CmF",
-            "moduleName": "MoneyHashShared",
-            "fixedbinaryorder": 0
-          },
-          {
-            "kind": "Var",
-            "name": "email",
-            "printedName": "email",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(MoneyHashShared.InputFieldType.Type) -> MoneyHashShared.InputFieldType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InputFieldType",
-                    "printedName": "MoneyHashShared.InputFieldType",
-                    "usr": "s:15MoneyHashShared14InputFieldTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "MoneyHashShared.InputFieldType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "InputFieldType",
-                        "printedName": "MoneyHashShared.InputFieldType",
-                        "usr": "s:15MoneyHashShared14InputFieldTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:15MoneyHashShared14InputFieldTypeO5emailyA2CmF",
-            "mangledName": "$s15MoneyHashShared14InputFieldTypeO5emailyA2CmF",
-            "moduleName": "MoneyHashShared",
-            "fixedbinaryorder": 1
-          },
-          {
-            "kind": "Var",
-            "name": "phoneNumber",
-            "printedName": "phoneNumber",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(MoneyHashShared.InputFieldType.Type) -> MoneyHashShared.InputFieldType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InputFieldType",
-                    "printedName": "MoneyHashShared.InputFieldType",
-                    "usr": "s:15MoneyHashShared14InputFieldTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "MoneyHashShared.InputFieldType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "InputFieldType",
-                        "printedName": "MoneyHashShared.InputFieldType",
-                        "usr": "s:15MoneyHashShared14InputFieldTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:15MoneyHashShared14InputFieldTypeO11phoneNumberyA2CmF",
-            "mangledName": "$s15MoneyHashShared14InputFieldTypeO11phoneNumberyA2CmF",
-            "moduleName": "MoneyHashShared",
-            "fixedbinaryorder": 2
-          },
-          {
-            "kind": "Var",
-            "name": "date",
-            "printedName": "date",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(MoneyHashShared.InputFieldType.Type) -> MoneyHashShared.InputFieldType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InputFieldType",
-                    "printedName": "MoneyHashShared.InputFieldType",
-                    "usr": "s:15MoneyHashShared14InputFieldTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "MoneyHashShared.InputFieldType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "InputFieldType",
-                        "printedName": "MoneyHashShared.InputFieldType",
-                        "usr": "s:15MoneyHashShared14InputFieldTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:15MoneyHashShared14InputFieldTypeO4dateyA2CmF",
-            "mangledName": "$s15MoneyHashShared14InputFieldTypeO4dateyA2CmF",
-            "moduleName": "MoneyHashShared",
-            "fixedbinaryorder": 3
-          },
-          {
-            "kind": "Var",
-            "name": "number",
-            "printedName": "number",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(MoneyHashShared.InputFieldType.Type) -> MoneyHashShared.InputFieldType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InputFieldType",
-                    "printedName": "MoneyHashShared.InputFieldType",
-                    "usr": "s:15MoneyHashShared14InputFieldTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "MoneyHashShared.InputFieldType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "InputFieldType",
-                        "printedName": "MoneyHashShared.InputFieldType",
-                        "usr": "s:15MoneyHashShared14InputFieldTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:15MoneyHashShared14InputFieldTypeO6numberyA2CmF",
-            "mangledName": "$s15MoneyHashShared14InputFieldTypeO6numberyA2CmF",
-            "moduleName": "MoneyHashShared",
-            "fixedbinaryorder": 4
-          },
-          {
-            "kind": "Var",
-            "name": "select",
-            "printedName": "select",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(MoneyHashShared.InputFieldType.Type) -> MoneyHashShared.InputFieldType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InputFieldType",
-                    "printedName": "MoneyHashShared.InputFieldType",
-                    "usr": "s:15MoneyHashShared14InputFieldTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "MoneyHashShared.InputFieldType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "InputFieldType",
-                        "printedName": "MoneyHashShared.InputFieldType",
-                        "usr": "s:15MoneyHashShared14InputFieldTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:15MoneyHashShared14InputFieldTypeO6selectyA2CmF",
-            "mangledName": "$s15MoneyHashShared14InputFieldTypeO6selectyA2CmF",
-            "moduleName": "MoneyHashShared",
-            "fixedbinaryorder": 5
-          },
-          {
-            "kind": "Var",
-            "name": "name",
-            "printedName": "name",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15MoneyHashShared14InputFieldTypeO4nameSSvp",
-            "mangledName": "$s15MoneyHashShared14InputFieldTypeO4nameSSvp",
-            "moduleName": "MoneyHashShared",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15MoneyHashShared14InputFieldTypeO4nameSSvg",
-                "mangledName": "$s15MoneyHashShared14InputFieldTypeO4nameSSvg",
-                "moduleName": "MoneyHashShared",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "ordinal",
-            "printedName": "ordinal",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int32",
-                "printedName": "Swift.Int32",
-                "usr": "s:s5Int32V"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15MoneyHashShared14InputFieldTypeO7ordinals5Int32Vvp",
-            "mangledName": "$s15MoneyHashShared14InputFieldTypeO7ordinals5Int32Vvp",
-            "moduleName": "MoneyHashShared",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int32",
-                    "printedName": "Swift.Int32",
-                    "usr": "s:s5Int32V"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15MoneyHashShared14InputFieldTypeO7ordinals5Int32Vvg",
-                "mangledName": "$s15MoneyHashShared14InputFieldTypeO7ordinals5Int32Vvg",
-                "moduleName": "MoneyHashShared",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "type",
-            "printedName": "type",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15MoneyHashShared14InputFieldTypeO4typeSSvp",
-            "mangledName": "$s15MoneyHashShared14InputFieldTypeO4typeSSvp",
-            "moduleName": "MoneyHashShared",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15MoneyHashShared14InputFieldTypeO4typeSSvg",
-                "mangledName": "$s15MoneyHashShared14InputFieldTypeO4typeSSvg",
-                "moduleName": "MoneyHashShared",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "companion",
-            "printedName": "companion",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Companion",
-                "printedName": "MoneyHashShared.__InputFieldType.Companion",
-                "usr": "c:objc(cs)MHSInputFieldTypeCompanion"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15MoneyHashShared14InputFieldTypeO9companionSo08MHSInputeF9CompanionCvpZ",
-            "mangledName": "$s15MoneyHashShared14InputFieldTypeO9companionSo08MHSInputeF9CompanionCvpZ",
-            "moduleName": "MoneyHashShared",
-            "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Companion",
-                    "printedName": "MoneyHashShared.__InputFieldType.Companion",
-                    "usr": "c:objc(cs)MHSInputFieldTypeCompanion"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15MoneyHashShared14InputFieldTypeO9companionSo08MHSInputeF9CompanionCvgZ",
-                "mangledName": "$s15MoneyHashShared14InputFieldTypeO9companionSo08MHSInputeF9CompanionCvgZ",
-                "moduleName": "MoneyHashShared",
-                "static": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "_forceBridgeFromObjectiveC",
-            "printedName": "_forceBridgeFromObjectiveC(_:result:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "__InputFieldType",
-                "printedName": "MoneyHashShared.__InputFieldType",
-                "usr": "c:objc(cs)MHSInputFieldType"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "MoneyHashShared.InputFieldType?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InputFieldType",
-                    "printedName": "MoneyHashShared.InputFieldType",
-                    "usr": "s:15MoneyHashShared14InputFieldTypeO"
-                  }
-                ],
-                "paramValueOwnership": "InOut",
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15MoneyHashShared14InputFieldTypeO26_forceBridgeFromObjectiveC_6resultySo08MHSInputeF0C_ACSgztFZ",
-            "mangledName": "$s15MoneyHashShared14InputFieldTypeO26_forceBridgeFromObjectiveC_6resultySo08MHSInputeF0C_ACSgztFZ",
-            "moduleName": "MoneyHashShared",
-            "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "_conditionallyBridgeFromObjectiveC",
-            "printedName": "_conditionallyBridgeFromObjectiveC(_:result:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "__InputFieldType",
-                "printedName": "MoneyHashShared.__InputFieldType",
-                "usr": "c:objc(cs)MHSInputFieldType"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "MoneyHashShared.InputFieldType?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InputFieldType",
-                    "printedName": "MoneyHashShared.InputFieldType",
-                    "usr": "s:15MoneyHashShared14InputFieldTypeO"
-                  }
-                ],
-                "paramValueOwnership": "InOut",
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15MoneyHashShared14InputFieldTypeO34_conditionallyBridgeFromObjectiveC_6resultSbSo08MHSInputeF0C_ACSgztFZ",
-            "mangledName": "$s15MoneyHashShared14InputFieldTypeO34_conditionallyBridgeFromObjectiveC_6resultSbSo08MHSInputeF0C_ACSgztFZ",
-            "moduleName": "MoneyHashShared",
-            "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "_unconditionallyBridgeFromObjectiveC",
-            "printedName": "_unconditionallyBridgeFromObjectiveC(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "InputFieldType",
-                "printedName": "MoneyHashShared.InputFieldType",
-                "usr": "s:15MoneyHashShared14InputFieldTypeO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "MoneyHashShared.__InputFieldType?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "__InputFieldType",
-                    "printedName": "MoneyHashShared.__InputFieldType",
-                    "usr": "c:objc(cs)MHSInputFieldType"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15MoneyHashShared14InputFieldTypeO36_unconditionallyBridgeFromObjectiveCyACSo08MHSInputeF0CSgFZ",
-            "mangledName": "$s15MoneyHashShared14InputFieldTypeO36_unconditionallyBridgeFromObjectiveCyACSo08MHSInputeF0CSgFZ",
-            "moduleName": "MoneyHashShared",
-            "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "_bridgeToObjectiveC",
-            "printedName": "_bridgeToObjectiveC()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "__InputFieldType",
-                "printedName": "MoneyHashShared.__InputFieldType",
-                "usr": "c:objc(cs)MHSInputFieldType"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15MoneyHashShared14InputFieldTypeO19_bridgeToObjectiveCSo08MHSInputeF0CyF",
-            "mangledName": "$s15MoneyHashShared14InputFieldTypeO19_bridgeToObjectiveCSo08MHSInputeF0CyF",
-            "moduleName": "MoneyHashShared",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "InputFieldType",
-                "printedName": "MoneyHashShared.InputFieldType",
-                "usr": "s:15MoneyHashShared14InputFieldTypeO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "InputFieldType",
-                "printedName": "MoneyHashShared.InputFieldType",
-                "usr": "s:15MoneyHashShared14InputFieldTypeO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15MoneyHashShared14InputFieldTypeO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s15MoneyHashShared14InputFieldTypeO2eeoiySbAC_ACtFZ",
-            "moduleName": "MoneyHashShared",
-            "static": true,
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "hashValue",
-            "printedName": "hashValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15MoneyHashShared14InputFieldTypeO9hashValueSivp",
-            "mangledName": "$s15MoneyHashShared14InputFieldTypeO9hashValueSivp",
-            "moduleName": "MoneyHashShared",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15MoneyHashShared14InputFieldTypeO9hashValueSivg",
-                "mangledName": "$s15MoneyHashShared14InputFieldTypeO9hashValueSivg",
-                "moduleName": "MoneyHashShared",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "hash",
-            "printedName": "hash(into:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Hasher",
-                "printedName": "Swift.Hasher",
-                "paramValueOwnership": "InOut",
-                "usr": "s:s6HasherV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15MoneyHashShared14InputFieldTypeO4hash4intoys6HasherVz_tF",
-            "mangledName": "$s15MoneyHashShared14InputFieldTypeO4hash4intoys6HasherVz_tF",
-            "moduleName": "MoneyHashShared",
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "allCases",
-            "printedName": "allCases",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[MoneyHashShared.InputFieldType]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InputFieldType",
-                    "printedName": "MoneyHashShared.InputFieldType",
-                    "usr": "s:15MoneyHashShared14InputFieldTypeO"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15MoneyHashShared14InputFieldTypeO8allCasesSayACGvpZ",
-            "mangledName": "$s15MoneyHashShared14InputFieldTypeO8allCasesSayACGvpZ",
-            "moduleName": "MoneyHashShared",
-            "static": true,
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[MoneyHashShared.InputFieldType]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "InputFieldType",
-                        "printedName": "MoneyHashShared.InputFieldType",
-                        "usr": "s:15MoneyHashShared14InputFieldTypeO"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15MoneyHashShared14InputFieldTypeO8allCasesSayACGvgZ",
-                "mangledName": "$s15MoneyHashShared14InputFieldTypeO8allCasesSayACGvgZ",
-                "moduleName": "MoneyHashShared",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "toKotlinEnum",
-            "printedName": "toKotlinEnum()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "__InputFieldType",
-                "printedName": "MoneyHashShared.__InputFieldType",
-                "usr": "c:objc(cs)MHSInputFieldType"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15MoneyHashShared14InputFieldTypeO12toKotlinEnumSo08MHSInputeF0CyF",
-            "mangledName": "$s15MoneyHashShared14InputFieldTypeO12toKotlinEnumSo08MHSInputeF0CyF",
-            "moduleName": "MoneyHashShared",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:15MoneyHashShared14InputFieldTypeO",
-        "mangledName": "$s15MoneyHashShared14InputFieldTypeO",
-        "moduleName": "MoneyHashShared",
-        "declAttributes": [
-          "AccessControl",
-          "Frozen"
-        ],
-        "isEnumExhaustive": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CaseIterable",
-            "printedName": "CaseIterable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "AllCases",
-                "printedName": "AllCases",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[MoneyHashShared.InputFieldType]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "InputFieldType",
-                        "printedName": "MoneyHashShared.InputFieldType",
-                        "usr": "s:15MoneyHashShared14InputFieldTypeO"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s12CaseIterableP",
-            "mangledName": "$ss12CaseIterableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_ObjectiveCBridgeable",
-            "printedName": "_ObjectiveCBridgeable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "_ObjectiveCType",
-                "printedName": "_ObjectiveCType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "__InputFieldType",
-                    "printedName": "MoneyHashShared.__InputFieldType",
-                    "usr": "c:objc(cs)MHSInputFieldType"
                   }
                 ]
               }
@@ -38923,6 +39336,89 @@
           {
             "kind": "TypeNominal",
             "name": "__Sealed",
+            "printedName": "MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.VaultCollectNetworkError.__Sealed",
+            "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O24VaultCollectNetworkErrorO8__SealedO"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_0"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:15MoneyHashShared6onEnum2ofAA4SkieO015moneyhash_kmm__abC0O24VaultCollectNetworkErrorO8__SealedOx_tSo08MHSVaultklM0CRbzlF",
+        "mangledName": "$s15MoneyHashShared6onEnum2ofAA4SkieO015moneyhash_kmm__abC0O24VaultCollectNetworkErrorO8__SealedOx_tSo08MHSVaultklM0CRbzlF",
+        "moduleName": "MoneyHashShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : MoneyHashShared.VaultCollectNetworkError>",
+        "sugared_genericSig": "<__Sealed where __Sealed : MoneyHashShared.VaultCollectNetworkError>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.VaultCollectNetworkError.__Sealed?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__Sealed",
+                "printedName": "MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.VaultCollectNetworkError.__Sealed",
+                "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O24VaultCollectNetworkErrorO8__SealedO"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "τ_0_0?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:15MoneyHashShared6onEnum2ofAA4SkieO015moneyhash_kmm__abC0O24VaultCollectNetworkErrorO8__SealedOSgxSg_tSo08MHSVaultklM0CRbzlF",
+        "mangledName": "$s15MoneyHashShared6onEnum2ofAA4SkieO015moneyhash_kmm__abC0O24VaultCollectNetworkErrorO8__SealedOSgxSg_tSo08MHSVaultklM0CRbzlF",
+        "moduleName": "MoneyHashShared",
+        "genericSig": "<τ_0_0 where τ_0_0 : MoneyHashShared.VaultCollectNetworkError>",
+        "sugared_genericSig": "<__Sealed where __Sealed : MoneyHashShared.VaultCollectNetworkError>",
+        "declAttributes": [
+          "AccessControl",
+          "DisfavoredOverload"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoneyHashShared",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "onEnum",
+        "printedName": "onEnum(of:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "__Sealed",
             "printedName": "MoneyHashShared.Skie.KotlinxSerializationCore.SerialKind.__Sealed",
             "usr": "s:15MoneyHashShared4SkieO24KotlinxSerializationCoreO10SerialKindO8__SealedO"
           },
@@ -40090,8 +40586,8 @@
           },
           {
             "kind": "Function",
-            "name": "getIntentMethods",
-            "printedName": "getIntentMethods(paymentIntentId:type:)",
+            "name": "getMethods",
+            "printedName": "getMethods(paymentIntentId:type:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -40113,8 +40609,87 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:So17MHSPaymentUseCaseC15MoneyHashSharedE16getIntentMethods07paymentH2Id4typeSo09MHSIntentI0CSS_AC5Type_OtYaKF",
-            "mangledName": "$sSo17MHSPaymentUseCaseC15MoneyHashSharedE16getIntentMethods07paymentH2Id4typeSo09MHSIntentI0CSS_AC5Type_OtYaKF",
+            "usr": "s:So17MHSPaymentUseCaseC15MoneyHashSharedE10getMethods15paymentIntentId4typeSo09MHSIntentH0CSS_AC5Type_OtYaKF",
+            "mangledName": "$sSo17MHSPaymentUseCaseC15MoneyHashSharedE10getMethods15paymentIntentId4typeSo09MHSIntentH0CSS_AC5Type_OtYaKF",
+            "moduleName": "MoneyHashShared",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getMethods",
+            "printedName": "getMethods(currency:amount:customer:flowId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "IntentMethods",
+                "printedName": "MoneyHashShared.IntentMethods",
+                "usr": "c:objc(cs)MHSIntentMethods"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.KotlinDouble?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KotlinDouble",
+                    "printedName": "MoneyHashShared.KotlinDouble",
+                    "usr": "c:objc(cs)MHSDouble"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So17MHSPaymentUseCaseC15MoneyHashSharedE10getMethods8currency6amount8customer6flowIdSo09MHSIntentH0CSS_So9MHSDoubleCSgSSSgANtYaKF",
+            "mangledName": "$sSo17MHSPaymentUseCaseC15MoneyHashSharedE10getMethods8currency6amount8customer6flowIdSo09MHSIntentH0CSS_So9MHSDoubleCSgSSSgANtYaKF",
             "moduleName": "MoneyHashShared",
             "intro_Macosx": "10.15",
             "intro_iOS": "13",
@@ -40829,6 +41404,51 @@
         "children": [
           {
             "kind": "Function",
+            "name": "createCardToken",
+            "printedName": "createCardToken(cardIntentId:cardData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CardDetails",
+                "printedName": "MoneyHashShared.CardDetails",
+                "usr": "c:objc(cs)MHSCardDetails"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VaultData",
+                "printedName": "MoneyHashShared.VaultData",
+                "usr": "c:objc(cs)MHSVaultData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So17MHSPaymentServiceP15MoneyHashSharedE15createCardToken12cardIntentId0I4DataSo14MHSCardDetailsCSS_So08MHSVaultL0CtYaKF",
+            "mangledName": "$sSo17MHSPaymentServiceP15MoneyHashSharedE15createCardToken12cardIntentId0I4DataSo14MHSCardDetailsCSS_So08MHSVaultL0CtYaKF",
+            "moduleName": "MoneyHashShared",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoneyHashShared.PaymentService>",
+            "sugared_genericSig": "<Self where Self : MoneyHashShared.PaymentService>",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "deleteSavedCard",
             "printedName": "deleteSavedCard(cardTokenId:secret:)",
             "children": [
@@ -40874,6 +41494,45 @@
           },
           {
             "kind": "Function",
+            "name": "generateAccessToken",
+            "printedName": "generateAccessToken(publicKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AccessTokenResponse",
+                "printedName": "MoneyHashShared.AccessTokenResponse",
+                "usr": "c:objc(cs)MHSAccessTokenResponse"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So17MHSPaymentServiceP15MoneyHashSharedE19generateAccessToken9publicKeySo09MHSAccessH8ResponseCSS_tYaKF",
+            "mangledName": "$sSo17MHSPaymentServiceP15MoneyHashSharedE19generateAccessToken9publicKeySo09MHSAccessH8ResponseCSS_tYaKF",
+            "moduleName": "MoneyHashShared",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoneyHashShared.PaymentService>",
+            "sugared_genericSig": "<Self where Self : MoneyHashShared.PaymentService>",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getCardInformation",
             "printedName": "getCardInformation(cardIntentId:)",
             "children": [
@@ -40893,6 +41552,93 @@
             "declKind": "Func",
             "usr": "s:So17MHSPaymentServiceP15MoneyHashSharedE18getCardInformation12cardIntentIdSo14MHSCardDetailsCSS_tYaKF",
             "mangledName": "$sSo17MHSPaymentServiceP15MoneyHashSharedE18getCardInformation12cardIntentIdSo14MHSCardDetailsCSS_tYaKF",
+            "moduleName": "MoneyHashShared",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoneyHashShared.PaymentService>",
+            "sugared_genericSig": "<Self where Self : MoneyHashShared.PaymentService>",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getMethods",
+            "printedName": "getMethods(publicKey:currency:amount:customer:flowId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaymentMethodResponse",
+                "printedName": "MoneyHashShared.PaymentMethodResponse",
+                "usr": "c:objc(cs)MHSPaymentMethodResponse"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.KotlinDouble?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KotlinDouble",
+                    "printedName": "MoneyHashShared.KotlinDouble",
+                    "usr": "c:objc(cs)MHSDouble"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So17MHSPaymentServiceP15MoneyHashSharedE10getMethods9publicKey8currency6amount8customer6flowIdSo0A14MethodResponseCSS_SSSo9MHSDoubleCSgSSSgAOtYaKF",
+            "mangledName": "$sSo17MHSPaymentServiceP15MoneyHashSharedE10getMethods9publicKey8currency6amount8customer6flowIdSo0A14MethodResponseCSS_SSSo9MHSDoubleCSgSSSgAOtYaKF",
             "moduleName": "MoneyHashShared",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHashShared.PaymentService>",
             "sugared_genericSig": "<Self where Self : MoneyHashShared.PaymentService>",
@@ -41138,12 +41884,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : MoneyHashShared.Kotlinx_serialization_jsonJsonElement]?",
+                "printedName": "[Swift.String : Swift.String]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : MoneyHashShared.Kotlinx_serialization_jsonJsonElement]",
+                    "printedName": "[Swift.String : Swift.String]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -41153,9 +41899,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "Kotlinx_serialization_jsonJsonElement",
-                        "printedName": "MoneyHashShared.Kotlinx_serialization_jsonJsonElement",
-                        "usr": "c:objc(cs)MHSKotlinx_serialization_jsonJsonElement"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
                     ],
                     "usr": "s:SD"
@@ -41166,12 +41912,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : MoneyHashShared.Kotlinx_serialization_jsonJsonElement]?",
+                "printedName": "[Swift.String : Swift.String]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : MoneyHashShared.Kotlinx_serialization_jsonJsonElement]",
+                    "printedName": "[Swift.String : Swift.String]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -41181,9 +41927,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "Kotlinx_serialization_jsonJsonElement",
-                        "printedName": "MoneyHashShared.Kotlinx_serialization_jsonJsonElement",
-                        "usr": "c:objc(cs)MHSKotlinx_serialization_jsonJsonElement"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
                     ],
                     "usr": "s:SD"
@@ -41194,12 +41940,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : MoneyHashShared.Kotlinx_serialization_jsonJsonElement]?",
+                "printedName": "[Swift.String : Swift.String]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : MoneyHashShared.Kotlinx_serialization_jsonJsonElement]",
+                    "printedName": "[Swift.String : Swift.String]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -41209,9 +41955,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "Kotlinx_serialization_jsonJsonElement",
-                        "printedName": "MoneyHashShared.Kotlinx_serialization_jsonJsonElement",
-                        "usr": "c:objc(cs)MHSKotlinx_serialization_jsonJsonElement"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
                     ],
                     "usr": "s:SD"
@@ -41235,8 +41981,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:So17MHSPaymentServiceP15MoneyHashSharedE10submitForm8intentId21currentSelectedMethod10cardFields07billingN008shippingN09vaultDataSo0a6IntentR0CSS_SSSDySSSo40MHSKotlinx_serialization_jsonJsonElementCGSgA2PSo08MHSVaultR0CSgtYaKF",
-            "mangledName": "$sSo17MHSPaymentServiceP15MoneyHashSharedE10submitForm8intentId21currentSelectedMethod10cardFields07billingN008shippingN09vaultDataSo0a6IntentR0CSS_SSSDySSSo40MHSKotlinx_serialization_jsonJsonElementCGSgA2PSo08MHSVaultR0CSgtYaKF",
+            "usr": "s:So17MHSPaymentServiceP15MoneyHashSharedE10submitForm8intentId21currentSelectedMethod10cardFields07billingN008shippingN09vaultDataSo0a6IntentR0CSS_SSSDyS2SGSgA2NSo08MHSVaultR0CSgtYaKF",
+            "mangledName": "$sSo17MHSPaymentServiceP15MoneyHashSharedE10submitForm8intentId21currentSelectedMethod10cardFields07billingN008shippingN09vaultDataSo0a6IntentR0CSS_SSSDyS2SGSgA2NSo08MHSVaultR0CSgtYaKF",
             "moduleName": "MoneyHashShared",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHashShared.PaymentService>",
             "sugared_genericSig": "<Self where Self : MoneyHashShared.PaymentService>",
@@ -43749,14 +44495,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "CardDetails_",
-                "printedName": "MoneyHashShared.CardDetails_",
-                "usr": "c:objc(cs)MHSCardDetails_"
+                "name": "CardFields",
+                "printedName": "MoneyHashShared.CardFields",
+                "usr": "c:objc(cs)MHSCardFields"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So15MHSVaultServiceP15MoneyHashSharedE10postTokens11accessToken11cardDetailsSo0A4DataCSS_So07MHSCardK1_CtYaKF",
-            "mangledName": "$sSo15MHSVaultServiceP15MoneyHashSharedE10postTokens11accessToken11cardDetailsSo0A4DataCSS_So07MHSCardK1_CtYaKF",
+            "usr": "s:So15MHSVaultServiceP15MoneyHashSharedE10postTokens11accessToken11cardDetailsSo0A4DataCSS_So13MHSCardFieldsCtYaKF",
+            "mangledName": "$sSo15MHSVaultServiceP15MoneyHashSharedE10postTokens11accessToken11cardDetailsSo0A4DataCSS_So13MHSCardFieldsCtYaKF",
             "moduleName": "MoneyHashShared",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHashShared.VaultService>",
             "sugared_genericSig": "<Self where Self : MoneyHashShared.VaultService>",
@@ -43790,13 +44536,13 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "CardFieldsCollector",
-        "printedName": "CardFieldsCollector",
+        "name": "CardCollector",
+        "printedName": "CardCollector",
         "children": [
           {
             "kind": "Function",
             "name": "collect",
-            "printedName": "collect(fields:token:intentID:shouldSaveCard:)",
+            "printedName": "collect(token:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -43814,15 +44560,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[MoneyHashShared.FieldType : Swift.String]",
+                "name": "Optional",
+                "printedName": "Swift.String?",
                 "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FieldType",
-                    "printedName": "MoneyHashShared.FieldType",
-                    "usr": "s:15MoneyHashShared9FieldTypeO"
-                  },
                   {
                     "kind": "TypeNominal",
                     "name": "String",
@@ -43830,30 +44570,12 @@
                     "usr": "s:SS"
                   }
                 ],
-                "usr": "s:SD"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So22MHSCardFieldsCollectorC15MoneyHashSharedE7collect6fields5token8intentID14shouldSaveCardSo12MHSVaultDataCSgSDyAC9FieldTypeOSSG_S2SSbtYaKF",
-            "mangledName": "$sSo22MHSCardFieldsCollectorC15MoneyHashSharedE7collect6fields5token8intentID14shouldSaveCardSo12MHSVaultDataCSgSDyAC9FieldTypeOSSG_S2SSbtYaKF",
+            "usr": "s:So16MHSCardCollectorC15MoneyHashSharedE7collect5tokenSo12MHSVaultDataCSgSSSg_tYaKF",
+            "mangledName": "$sSo16MHSCardCollectorC15MoneyHashSharedE7collect5tokenSo12MHSVaultDataCSgSSSg_tYaKF",
             "moduleName": "MoneyHashShared",
             "intro_Macosx": "10.15",
             "intro_iOS": "13",
@@ -43869,95 +44591,22 @@
             "isFromExtension": true,
             "throwing": true,
             "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:objc(cs)MHSCardFieldsCollector",
-        "moduleName": "MoneyHashShared",
-        "objc_name": "MHSCardFieldsCollector",
-        "declAttributes": [
-          "ObjC",
-          "Dynamic"
-        ],
-        "superclassUsr": "c:objc(cs)MHSBase",
-        "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "MoneyHashShared.KotlinBase",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
           },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "CardCollector",
-        "printedName": "CardCollector",
-        "children": [
           {
             "kind": "Function",
-            "name": "collect",
-            "printedName": "collect(token:intentID:shouldSaveCard:)",
+            "name": "createCardToken",
+            "printedName": "createCardToken(cardIntentId:cardData:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "MoneyHashShared.VaultData?",
+                "printedName": "MoneyHashShared.IntentStateDetails?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "VaultData",
-                    "printedName": "MoneyHashShared.VaultData",
-                    "usr": "c:objc(cs)MHSVaultData"
+                    "name": "IntentStateDetails",
+                    "printedName": "MoneyHashShared.IntentStateDetails",
+                    "usr": "c:objc(cs)MHSIntentStateDetails"
                   }
                 ],
                 "usr": "s:Sq"
@@ -43970,20 +44619,119 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "VaultData",
+                "printedName": "MoneyHashShared.VaultData",
+                "usr": "c:objc(cs)MHSVaultData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So16MHSCardCollectorC15MoneyHashSharedE15createCardToken12cardIntentId0I4DataSo21MHSIntentStateDetailsCSgSS_So08MHSVaultL0CtYaKF",
+            "mangledName": "$sSo16MHSCardCollectorC15MoneyHashSharedE15createCardToken12cardIntentId0I4DataSo21MHSIntentStateDetailsCSgSS_So08MHSVaultL0CtYaKF",
+            "moduleName": "MoneyHashShared",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pay",
+            "printedName": "pay(intentId:cardData:saveCard:billingFields:shippingFields:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaymentIntentData",
+                "printedName": "MoneyHashShared.PaymentIntentData",
+                "usr": "c:objc(cs)MHSPaymentIntentData"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
+                "name": "VaultData",
+                "printedName": "MoneyHashShared.VaultData",
+                "usr": "c:objc(cs)MHSVaultData"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So16MHSCardCollectorC15MoneyHashSharedE7collect5token8intentID14shouldSaveCardSo12MHSVaultDataCSgSS_SSSbtYaKF",
-            "mangledName": "$sSo16MHSCardCollectorC15MoneyHashSharedE7collect5token8intentID14shouldSaveCardSo12MHSVaultDataCSgSS_SSSbtYaKF",
+            "usr": "s:So16MHSCardCollectorC15MoneyHashSharedE3pay8intentId8cardData8saveCard13billingFields08shippingN0So016MHSPaymentIntentJ0CSS_So08MHSVaultJ0CSbSDyS2SGSgAOtYaKF",
+            "mangledName": "$sSo16MHSCardCollectorC15MoneyHashSharedE3pay8intentId8cardData8saveCard13billingFields08shippingN0So016MHSPaymentIntentJ0CSS_So08MHSVaultJ0CSbSDyS2SGSgAOtYaKF",
             "moduleName": "MoneyHashShared",
             "intro_Macosx": "10.15",
             "intro_iOS": "13",
@@ -45888,6 +46636,102 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "__InputFieldType",
+        "printedName": "__InputFieldType",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "toSwiftEnum",
+            "printedName": "toSwiftEnum()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InputFieldType",
+                "printedName": "MoneyHashShared.InputFieldType",
+                "usr": "s:15MoneyHashShared14InputFieldTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So17MHSInputFieldTypeC15MoneyHashSharedE11toSwiftEnumAC05InputbC0OyF",
+            "mangledName": "$sSo17MHSInputFieldTypeC15MoneyHashSharedE11toSwiftEnumAC05InputbC0OyF",
+            "moduleName": "MoneyHashShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)MHSInputFieldType",
+        "moduleName": "MoneyHashShared",
+        "objc_name": "MHSInputFieldType",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)MHSKotlinEnum",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "MoneyHashShared.KotlinEnum<MoneyHashShared.__InputFieldType>",
+          "MoneyHashShared.KotlinBase",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "__Type_",
         "printedName": "__Type_",
         "children": [
@@ -46215,102 +47059,6 @@
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "MoneyHashShared.KotlinEnum<MoneyHashShared.__Environment>",
-          "MoneyHashShared.KotlinBase",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "__InputFieldType",
-        "printedName": "__InputFieldType",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "toSwiftEnum",
-            "printedName": "toSwiftEnum()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "InputFieldType",
-                "printedName": "MoneyHashShared.InputFieldType",
-                "usr": "s:15MoneyHashShared14InputFieldTypeO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So17MHSInputFieldTypeC15MoneyHashSharedE11toSwiftEnumAC05InputbC0OyF",
-            "mangledName": "$sSo17MHSInputFieldTypeC15MoneyHashSharedE11toSwiftEnumAC05InputbC0OyF",
-            "moduleName": "MoneyHashShared",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:objc(cs)MHSInputFieldType",
-        "moduleName": "MoneyHashShared",
-        "objc_name": "MHSInputFieldType",
-        "declAttributes": [
-          "ObjC",
-          "Dynamic"
-        ],
-        "superclassUsr": "c:objc(cs)MHSKotlinEnum",
-        "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "MoneyHashShared.KotlinEnum<MoneyHashShared.__InputFieldType>",
           "MoneyHashShared.KotlinBase",
           "ObjectiveC.NSObject"
         ],

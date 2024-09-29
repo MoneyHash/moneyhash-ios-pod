@@ -49,8 +49,8 @@ public struct EmbedButtonViewStyle : Swift.Codable {
 }
 public struct CardFormState : Swift.Codable {
   public let isValid: Swift.Bool
-  public let fieldsState: [MoneyHash.CardFieldState]
-  public init(isValid: Swift.Bool, fieldsState: [MoneyHash.CardFieldState])
+  public let fieldsState: [MoneyHash.CardFieldType : MoneyHash.CardFieldState]
+  public init(isValid: Swift.Bool, fieldsState: [MoneyHash.CardFieldType : MoneyHash.CardFieldState])
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -71,8 +71,7 @@ public class CardFormBuilder {
   public func setExpireMonthField(handler: ((MoneyHash.CardInputFieldState) -> Swift.Void)? = nil) -> MoneyHash.CardFormBuilder
   public func setExpireYearField(handler: ((MoneyHash.CardInputFieldState) -> Swift.Void)? = nil) -> MoneyHash.CardFormBuilder
   public func setCardBrandChangeHandler(_ handler: @escaping (MoneyHash.CardBrand) -> Swift.Void) -> MoneyHash.CardFormBuilder
-  public func set(tokenizeCardInfo: MoneyHash.TokenizeCardInfo) -> MoneyHash.CardFormBuilder
-  public func build() throws -> MoneyHash.CardFormCollector
+  public func build() throws -> MoneyHash.CardForm
   @objc deinit
 }
 public enum DiscountType : Swift.String, Swift.Codable {
@@ -120,8 +119,12 @@ public struct IntentMethodMetaData {
   public let cvv: Swift.String?
   public init(cvv: Swift.String?)
 }
-public enum MoneyHashSDKBuilder {
-  public static func build() -> any MoneyHash.MoneyHashSDK
+public class MoneyHashSDKBuilder {
+  public init()
+  @discardableResult
+  public func setPublicKey(_ key: Swift.String) -> MoneyHash.MoneyHashSDKBuilder
+  public func build() -> any MoneyHash.MoneyHashSDK
+  @objc deinit
 }
 public enum IntentStateDetails : Swift.Codable {
   case methodSelection(methods: MoneyHash.IntentMethods?)
@@ -134,6 +137,8 @@ public enum IntentStateDetails : Swift.Codable {
   case formFields(tokenizeCardInfo: MoneyHash.TokenizeCardInfo?, billingFields: [MoneyHash.InputField]?, shippingFields: [MoneyHash.InputField]?)
   case redirectToURL(url: Swift.String?, renderStrategy: MoneyHash.RenderStrategy?)
   case savedCardCVV(cvvField: MoneyHash.InputField, cardTokenData: MoneyHash.CardTokenData?)
+  case cardIntentSuccess
+  case cardIntentFailed
   case nativePay(nativePayData: MoneyHash.NativePayData?)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -219,7 +224,10 @@ public struct IntentDetails : Swift.Codable {
 public protocol MoneyHashSDK {
   func renderForm(on viewController: UIKit.UIViewController, intentId: Swift.String, embedStyle: MoneyHash.EmbedStyle?, intentType: MoneyHash.IntentType, completionHandler: @escaping (Swift.Result<MoneyHash.IntentDetails, any Swift.Error>) -> Swift.Void)
   #if compiler(>=5.3) && $AsyncAwait
-  func getIntentMethods(intentId: Swift.String, intentType: MoneyHash.IntentType) async throws -> MoneyHash.IntentMethods
+  func getMethods(currency: Swift.String, amount: Swift.Double?, customer: Swift.String?, flowId: Swift.String?) async throws -> MoneyHash.IntentMethods
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func getMethods(intentId: Swift.String, intentType: MoneyHash.IntentType) async throws -> MoneyHash.IntentMethods
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   func getIntentDetails(intentId: Swift.String, intentType: MoneyHash.IntentType) async throws -> MoneyHash.IntentDetails
@@ -247,10 +255,10 @@ public protocol MoneyHashSDK {
   func proceedWithApplePay(intentID: Swift.String, depositAmount: Swift.Float, merchantIdentifier: Swift.String, currencyCode: Swift.String, countryCode: Swift.String) async throws -> MoneyHash.IntentDetails
   #endif
   func isDeviceCompatible() -> Swift.Bool
-  func validateField(fieldType: MoneyHash.CardFieldType, currentValue: Swift.String) -> MoneyHash.CardFieldState
-  func isValidForm(fields: [MoneyHash.CardFieldType : Swift.String]) -> MoneyHash.CardFormState
+  func updateField(fieldType: MoneyHash.CardFieldType, currentValue: Swift.String) -> MoneyHash.CardFieldState
+  func isValidForm() -> MoneyHash.CardFormState
   #if compiler(>=5.3) && $AsyncAwait
-  func collect(fields: [MoneyHash.CardFieldType : Swift.String], token: Swift.String, intentID: Swift.String, shouldSaveCard: Swift.Bool) async throws -> MoneyHash.VaultData?
+  func collect(token: Swift.String?) async throws -> MoneyHash.VaultData?
   #endif
   func setLocale(_ locale: MoneyHash.MHLocale)
   #if compiler(>=5.3) && $AsyncAwait
@@ -259,15 +267,22 @@ public protocol MoneyHashSDK {
   #if compiler(>=5.3) && $AsyncAwait
   func updateDiscount(intentId: Swift.String, discount: MoneyHash.DiscountItem) async throws -> MoneyHash.DiscountData?
   #endif
+  func setPublicKey(_ key: Swift.String)
 }
 public struct EmbedLoaderStyle : Swift.Codable {
   public init(backgroundColor: Swift.String? = nil, color: Swift.String? = nil)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@_hasMissingDesignatedInitializers public class CardFormCollector {
+@_hasMissingDesignatedInitializers public class CardForm {
   #if compiler(>=5.3) && $AsyncAwait
-  public func collect(intentID: Swift.String, shouldSaveCard: Swift.Bool) async throws -> MoneyHash.VaultData?
+  public func collect() async throws -> MoneyHash.VaultData?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func pay(intentId: Swift.String, cardData: MoneyHash.VaultData, saveCard: Swift.Bool, billingData: [Swift.String : Swift.String]?, shippingData: [Swift.String : Swift.String]?) async throws -> MoneyHash.IntentDetails
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func createCardToken(cardIntentId: Swift.String, cardData: MoneyHash.VaultData) async throws -> MoneyHash.IntentStateDetails?
   #endif
   public var isValid: Swift.Bool {
     get
@@ -427,6 +442,7 @@ public struct ExpressMethod : MoneyHash.MoneyHashMethod, Swift.Codable {
   public let checkoutIcons: [Swift.String]?
   public let type: MoneyHash.IntentMethodType?
   public let confirmationRequired: Swift.Bool?
+  public let requiredBillingFields: [MoneyHash.InputField]?
   public typealias ID = Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -438,6 +454,7 @@ public struct PaymentMethod : MoneyHash.MoneyHashMethod, Swift.Codable {
   public let checkoutIcons: [Swift.String]?
   public let type: MoneyHash.IntentMethodType?
   public let confirmationRequired: Swift.Bool?
+  public let requiredBillingFields: [MoneyHash.InputField]?
   public typealias ID = Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -459,11 +476,13 @@ public struct SavedCard : Swift.Codable {
   public let cvvConfig: MoneyHash.CvvConfig?
   public let type: MoneyHash.IntentMethodType?
   public let first6Digits: Swift.String?
+  public init(id: Swift.String?, brand: Swift.String?, last4: Swift.String?, expiryMonth: Swift.String?, expiryYear: Swift.String?, country: Swift.String?, logo: Swift.String?, requireCvv: Swift.Bool?, cvvConfig: MoneyHash.CvvConfig?, type: MoneyHash.IntentMethodType?, first6Digits: Swift.String?)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct CvvConfig : Swift.Codable {
   public let digitsCount: Swift.Int?
+  public init(digitsCount: Swift.Int?)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -599,7 +618,7 @@ public struct CardFieldState : Swift.Codable {
 }
 @available(iOS 15.0, *)
 @_Concurrency.MainActor(unsafe) public struct SecureTextField<Content> : SwiftUI.View where Content : SwiftUI.View {
-  @_Concurrency.MainActor(unsafe) public init(cardFormCollector: MoneyHash.CardFormCollector, type: MoneyHash.CardFieldType, @SwiftUI.ViewBuilder placeholder: @escaping () -> Content)
+  @_Concurrency.MainActor(unsafe) public init(cardFormCollector: MoneyHash.CardForm, type: MoneyHash.CardFieldType, @SwiftUI.ViewBuilder placeholder: @escaping () -> Content)
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
   }

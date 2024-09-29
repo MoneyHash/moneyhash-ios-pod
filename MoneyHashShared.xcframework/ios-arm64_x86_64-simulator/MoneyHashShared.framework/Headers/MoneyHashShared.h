@@ -700,6 +700,7 @@ __attribute__((swift_name("PaymentMethodRequest")))
 
 /**
  * @note annotations
+ *   kotlinx.serialization.EncodeDefault(mode=Mode.NEVER)
  *   kotlinx.serialization.SerialName(value="amount")
 */
 
@@ -710,11 +711,13 @@ __attribute__((swift_name("PaymentMethodRequest")))
 
 /**
  * @note annotations
+ *   kotlinx.serialization.EncodeDefault(mode=Mode.NEVER)
  *   kotlinx.serialization.SerialName(value="customer")
 */
 
 /**
  * @note annotations
+ *   kotlinx.serialization.EncodeDefault(mode=Mode.NEVER)
  *   kotlinx.serialization.SerialName(value="flow_id")
 */
 @end

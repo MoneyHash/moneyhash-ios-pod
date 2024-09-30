@@ -3253,7 +3253,7 @@ __attribute__((swift_name("SubmitCardCVV.Companion")))
 */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("SubmitFormRequest")))
-@interface MHSSubmitFormRequest : MHSBase
+@interface MHSSubmitFormRequest : MHSBase <MHSCommonParcelable>
 @property (class, readonly, getter=companion) MHSSubmitFormRequestCompanion *companion __attribute__((swift_name("companion")));
 @property (readonly) MHSNativeFormRequest *nativeForm __attribute__((swift_name("nativeForm")));
 - (instancetype)initWithNativeForm:(MHSNativeFormRequest *)nativeForm __attribute__((swift_name("init(nativeForm:)"))) __attribute__((objc_designated_initializer));

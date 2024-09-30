@@ -260,6 +260,12 @@ public protocol MoneyHashSDK {
   #if compiler(>=5.3) && $AsyncAwait
   func collect(token: Swift.String?) async throws -> MoneyHash.VaultData?
   #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func pay(intentId: Swift.String, cardData: MoneyHash.VaultData, saveCard: Swift.Bool, billingData: [Swift.String : Swift.String]?, shippingData: [Swift.String : Swift.String]?) async throws -> MoneyHash.IntentDetails
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func createCardToken(cardIntentId: Swift.String, cardData: MoneyHash.VaultData) async throws -> MoneyHash.IntentStateDetails?
+  #endif
   func setLocale(_ locale: MoneyHash.MHLocale)
   #if compiler(>=5.3) && $AsyncAwait
   func updateFees(intentId: Swift.String, fees: [MoneyHash.FeeItem]) async throws -> MoneyHash.FeesData?

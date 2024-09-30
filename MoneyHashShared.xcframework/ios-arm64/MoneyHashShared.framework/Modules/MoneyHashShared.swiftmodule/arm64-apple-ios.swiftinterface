@@ -443,7 +443,7 @@ extension MoneyHashShared.PaymentUseCase {
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func submitForm(paymentIntentId: Swift.String, method: Swift.String, billingFields: [Swift.String : Swift.String]?, shippingFields: [Swift.String : Swift.String]?, vaultData: MoneyHashShared.VaultData?) async throws -> MoneyHashShared.PaymentIntentData
+  public func submitForm(paymentIntentId: Swift.String, method: Swift.String, billingFields: [Swift.String : Swift.String]?, shippingFields: [Swift.String : Swift.String]?, vaultData: MoneyHashShared.VaultData?, saveCard: MoneyHashShared.KotlinBoolean?) async throws -> MoneyHashShared.PaymentIntentData
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -501,7 +501,7 @@ extension MoneyHashShared.PaymentService {
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func submitForm(intentId: Swift.String, currentSelectedMethod: Swift.String, cardFields: [Swift.String : Swift.String]?, billingFields: [Swift.String : Swift.String]?, shippingFields: [Swift.String : Swift.String]?, vaultData: MoneyHashShared.VaultData?) async throws -> MoneyHashShared.PaymentIntentData
+  public func submitForm(intentId: Swift.String, currentSelectedMethod: Swift.String, cardFields: [Swift.String : Swift.String]?, billingFields: [Swift.String : Swift.String]?, shippingFields: [Swift.String : Swift.String]?, vaultData: MoneyHashShared.VaultData?, saveCard: MoneyHashShared.KotlinBoolean?) async throws -> MoneyHashShared.PaymentIntentData
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)

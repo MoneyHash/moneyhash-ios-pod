@@ -9151,7 +9151,7 @@
           {
             "kind": "Function",
             "name": "submitForm",
-            "printedName": "submitForm(intentID:selectedMethod:billingData:shippingData:vaultData:)",
+            "printedName": "submitForm(intentID:selectedMethod:billingData:shippingData:vaultData:saveCard:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9240,11 +9240,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:9MoneyHash0aB3SDKP10submitForm8intentID14selectedMethod11billingData08shippingK005vaultK0AA13IntentDetailsVSS_SSSDyS2SGSgAmA05VaultK0VSgtYaKF",
-            "mangledName": "$s9MoneyHash0aB3SDKP10submitForm8intentID14selectedMethod11billingData08shippingK005vaultK0AA13IntentDetailsVSS_SSSDyS2SGSgAmA05VaultK0VSgtYaKF",
+            "usr": "s:9MoneyHash0aB3SDKP10submitForm8intentID14selectedMethod11billingData08shippingK005vaultK08saveCardAA13IntentDetailsVSS_SSSDyS2SGSgAnA05VaultK0VSgSbSgtYaKF",
+            "mangledName": "$s9MoneyHash0aB3SDKP10submitForm8intentID14selectedMethod11billingData08shippingK005vaultK08saveCardAA13IntentDetailsVSS_SSSDyS2SGSgAnA05VaultK0VSgSbSgtYaKF",
             "moduleName": "MoneyHash",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
             "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
@@ -24592,15 +24606,15 @@
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 2425,
-      "length": 24,
-      "value": "\"CARD_INTENT_SUCCESSFUL\""
+      "length": 21,
+      "value": "\"card_intent_success\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2482,
+      "offset": 2479,
       "length": 20,
-      "value": "\"CARD_INTENT_FAILED\""
+      "value": "\"card_intent_failed\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
@@ -24669,97 +24683,97 @@
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 2425,
-      "length": 24,
-      "value": "\"CARD_INTENT_SUCCESSFUL\""
+      "length": 21,
+      "value": "\"card_intent_success\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2482,
+      "offset": 2479,
       "length": 20,
-      "value": "\"CARD_INTENT_FAILED\""
+      "value": "\"card_intent_failed\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 3658,
+      "offset": 3655,
       "length": 18,
       "value": "\"card_holder_name\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 3725,
+      "offset": 3722,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 3766,
+      "offset": 3763,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 3821,
+      "offset": 3818,
       "length": 8,
       "value": "\"last_4\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 3878,
+      "offset": 3875,
       "length": 17,
       "value": "\"payment_methods\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 3923,
+      "offset": 3920,
       "length": 14,
       "value": "\"requires_cvv\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 3658,
+      "offset": 3655,
       "length": 18,
       "value": "\"card_holder_name\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 3725,
+      "offset": 3722,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 3766,
+      "offset": 3763,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 3821,
+      "offset": 3818,
       "length": 8,
       "value": "\"last_4\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 3878,
+      "offset": 3875,
       "length": 17,
       "value": "\"payment_methods\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 3923,
+      "offset": 3920,
       "length": 14,
       "value": "\"requires_cvv\""
     },

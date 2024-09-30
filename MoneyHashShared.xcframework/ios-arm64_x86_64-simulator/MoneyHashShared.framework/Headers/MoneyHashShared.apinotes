@@ -1378,9 +1378,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "void (^ _Nonnull)(MHSPaymentIntentData * _Nullable, NSError * _Nullable)"
-  - Selector: "submitFormPaymentIntentId:method:billingFields:shippingFields:vaultData:completionHandler:"
+  - Selector: "submitFormPaymentIntentId:method:billingFields:shippingFields:vaultData:saveCard:completionHandler:"
     MethodKind: "Instance"
-    SwiftName: "__submitForm(paymentIntentId:method:billingFields:shippingFields:vaultData:completionHandler:)"
+    SwiftName: "__submitForm(paymentIntentId:method:billingFields:shippingFields:vaultData:saveCard:completionHandler:)"
     SwiftPrivate: true
     ResultType: "void"
     Parameters:
@@ -1395,6 +1395,8 @@ Classes:
     - Position: 4
       Type: "MHSVaultData * _Nullable"
     - Position: 5
+      Type: "MHSBoolean * _Nullable"
+    - Position: 6
       Type: "void (^ _Nonnull)(MHSPaymentIntentData * _Nullable, NSError * _Nullable)"
   - Selector: "submitPaymentReceiptPaymentIntentId:receipt:completionHandler:"
     MethodKind: "Instance"
@@ -13219,9 +13221,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__14__submitFormDispatchReceiver:paymentIntentId:method:billingFields:shippingFields:vaultData:suspendHandler:"
+  - Selector: "Skie_Suspend__14__submitFormDispatchReceiver:paymentIntentId:method:billingFields:shippingFields:vaultData:saveCard:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__14__submitForm(dispatchReceiver:paymentIntentId:method:billingFields:shippingFields:vaultData:suspendHandler:)"
+    SwiftName: "Skie_Suspend__14__submitForm(dispatchReceiver:paymentIntentId:method:billingFields:shippingFields:vaultData:saveCard:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -13238,6 +13240,8 @@ Classes:
     - Position: 5
       Type: "MHSVaultData * _Nullable"
     - Position: 6
+      Type: "MHSBoolean * _Nullable"
+    - Position: 7
       Type: "MHSSkie_SuspendHandler * _Nonnull"
   - Selector: "Skie_Suspend__15__submitPaymentReceiptDispatchReceiver:paymentIntentId:receipt:suspendHandler:"
     MethodKind: "Class"
@@ -13415,9 +13419,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__28__submitFormDispatchReceiver:intentId:currentSelectedMethod:cardFields:billingFields:shippingFields:vaultData:suspendHandler:"
+  - Selector: "Skie_Suspend__28__submitFormDispatchReceiver:intentId:currentSelectedMethod:cardFields:billingFields:shippingFields:vaultData:saveCard:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__28__submitForm(dispatchReceiver:intentId:currentSelectedMethod:cardFields:billingFields:shippingFields:vaultData:suspendHandler:)"
+    SwiftName: "Skie_Suspend__28__submitForm(dispatchReceiver:intentId:currentSelectedMethod:cardFields:billingFields:shippingFields:vaultData:saveCard:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -13436,6 +13440,8 @@ Classes:
     - Position: 6
       Type: "MHSVaultData * _Nullable"
     - Position: 7
+      Type: "MHSBoolean * _Nullable"
+    - Position: 8
       Type: "MHSSkie_SuspendHandler * _Nonnull"
   - Selector: "Skie_Suspend__29__submitReceiptDispatchReceiver:paymentIntentId:receipt:suspendHandler:"
     MethodKind: "Class"
@@ -15141,9 +15147,9 @@ Protocols:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "void (^ _Nonnull)(MHSPaymentIntentData * _Nullable, NSError * _Nullable)"
-  - Selector: "submitFormIntentId:currentSelectedMethod:cardFields:billingFields:shippingFields:vaultData:completionHandler:"
+  - Selector: "submitFormIntentId:currentSelectedMethod:cardFields:billingFields:shippingFields:vaultData:saveCard:completionHandler:"
     MethodKind: "Instance"
-    SwiftName: "__submitForm(intentId:currentSelectedMethod:cardFields:billingFields:shippingFields:vaultData:completionHandler:)"
+    SwiftName: "__submitForm(intentId:currentSelectedMethod:cardFields:billingFields:shippingFields:vaultData:saveCard:completionHandler:)"
     SwiftPrivate: true
     ResultType: "void"
     Parameters:
@@ -15160,6 +15166,8 @@ Protocols:
     - Position: 5
       Type: "MHSVaultData * _Nullable"
     - Position: 6
+      Type: "MHSBoolean * _Nullable"
+    - Position: 7
       Type: "void (^ _Nonnull)(MHSPaymentIntentData * _Nullable, NSError * _Nullable)"
   - Selector: "submitReceiptPaymentIntentId:receipt:completionHandler:"
     MethodKind: "Instance"

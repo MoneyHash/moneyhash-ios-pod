@@ -242,7 +242,7 @@ public protocol MoneyHashSDK {
   func proceedWithMethod(intentId: Swift.String, intentType: MoneyHash.IntentType, selectedMethodId: Swift.String, methodType: MoneyHash.IntentMethodType, metaData: MoneyHash.IntentMethodMetaData?) async throws -> MoneyHash.MethodsResult
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  func submitForm(intentID: Swift.String, selectedMethod: Swift.String, billingData: [Swift.String : Swift.String]?, shippingData: [Swift.String : Swift.String]?, vaultData: MoneyHash.VaultData?) async throws -> MoneyHash.IntentDetails
+  func submitForm(intentID: Swift.String, selectedMethod: Swift.String, billingData: [Swift.String : Swift.String]?, shippingData: [Swift.String : Swift.String]?, vaultData: MoneyHash.VaultData?, saveCard: Swift.Bool?) async throws -> MoneyHash.IntentDetails
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   func submitCardCVV(intentID: Swift.String, cvv: Swift.String) async throws -> MoneyHash.IntentDetails

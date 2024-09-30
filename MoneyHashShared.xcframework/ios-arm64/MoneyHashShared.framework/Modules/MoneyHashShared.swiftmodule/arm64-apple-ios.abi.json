@@ -41082,7 +41082,7 @@
           {
             "kind": "Function",
             "name": "submitForm",
-            "printedName": "submitForm(paymentIntentId:method:billingFields:shippingFields:vaultData:)",
+            "printedName": "submitForm(paymentIntentId:method:billingFields:shippingFields:vaultData:saveCard:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -41171,11 +41171,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.KotlinBoolean?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KotlinBoolean",
+                    "printedName": "MoneyHashShared.KotlinBoolean",
+                    "usr": "c:objc(cs)MHSBoolean"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So17MHSPaymentUseCaseC15MoneyHashSharedE10submitForm15paymentIntentId6method13billingFields08shippingN09vaultDataSo0ajQ0CSS_SSSDyS2SGSgAMSo08MHSVaultQ0CSgtYaKF",
-            "mangledName": "$sSo17MHSPaymentUseCaseC15MoneyHashSharedE10submitForm15paymentIntentId6method13billingFields08shippingN09vaultDataSo0ajQ0CSS_SSSDyS2SGSgAMSo08MHSVaultQ0CSgtYaKF",
+            "usr": "s:So17MHSPaymentUseCaseC15MoneyHashSharedE10submitForm15paymentIntentId6method13billingFields08shippingN09vaultData8saveCardSo0ajQ0CSS_SSSDyS2SGSgANSo08MHSVaultQ0CSgSo10MHSBooleanCSgtYaKF",
+            "mangledName": "$sSo17MHSPaymentUseCaseC15MoneyHashSharedE10submitForm15paymentIntentId6method13billingFields08shippingN09vaultData8saveCardSo0ajQ0CSS_SSSDyS2SGSgANSo08MHSVaultQ0CSgSo10MHSBooleanCSgtYaKF",
             "moduleName": "MoneyHashShared",
             "intro_Macosx": "10.15",
             "intro_iOS": "13",
@@ -41861,7 +41875,7 @@
           {
             "kind": "Function",
             "name": "submitForm",
-            "printedName": "submitForm(intentId:currentSelectedMethod:cardFields:billingFields:shippingFields:vaultData:)",
+            "printedName": "submitForm(intentId:currentSelectedMethod:cardFields:billingFields:shippingFields:vaultData:saveCard:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -41978,11 +41992,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.KotlinBoolean?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KotlinBoolean",
+                    "printedName": "MoneyHashShared.KotlinBoolean",
+                    "usr": "c:objc(cs)MHSBoolean"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So17MHSPaymentServiceP15MoneyHashSharedE10submitForm8intentId21currentSelectedMethod10cardFields07billingN008shippingN09vaultDataSo0a6IntentR0CSS_SSSDyS2SGSgA2NSo08MHSVaultR0CSgtYaKF",
-            "mangledName": "$sSo17MHSPaymentServiceP15MoneyHashSharedE10submitForm8intentId21currentSelectedMethod10cardFields07billingN008shippingN09vaultDataSo0a6IntentR0CSS_SSSDyS2SGSgA2NSo08MHSVaultR0CSgtYaKF",
+            "usr": "s:So17MHSPaymentServiceP15MoneyHashSharedE10submitForm8intentId21currentSelectedMethod10cardFields07billingN008shippingN09vaultData8saveCardSo0a6IntentR0CSS_SSSDyS2SGSgA2OSo08MHSVaultR0CSgSo10MHSBooleanCSgtYaKF",
+            "mangledName": "$sSo17MHSPaymentServiceP15MoneyHashSharedE10submitForm8intentId21currentSelectedMethod10cardFields07billingN008shippingN09vaultData8saveCardSo0a6IntentR0CSS_SSSDyS2SGSgA2OSo08MHSVaultR0CSgSo10MHSBooleanCSgtYaKF",
             "moduleName": "MoneyHashShared",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHashShared.PaymentService>",
             "sugared_genericSig": "<Self where Self : MoneyHashShared.PaymentService>",

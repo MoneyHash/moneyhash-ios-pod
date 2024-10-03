@@ -6135,6 +6135,7 @@ __attribute__((swift_name("Constants")))
 @property (class, readonly, getter=shared) MHSConstants *shared __attribute__((swift_name("shared")));
 @property (readonly) NSString *APPLE_PAY __attribute__((swift_name("APPLE_PAY")));
 @property (readonly) NSString *BASE_VAULT_FORM __attribute__((swift_name("BASE_VAULT_FORM")));
+@property (readonly) NSString *CARD_NUMBER_FORMAT __attribute__((swift_name("CARD_NUMBER_FORMAT")));
 @property (readonly) NSString *CITY_API_NAME_FILED __attribute__((swift_name("CITY_API_NAME_FILED")));
 @property (readonly) NSString *CVV_END_POINT __attribute__((swift_name("CVV_END_POINT")));
 @property (readonly) NSString *NATIVE_PAY_KEY __attribute__((swift_name("NATIVE_PAY_KEY")));

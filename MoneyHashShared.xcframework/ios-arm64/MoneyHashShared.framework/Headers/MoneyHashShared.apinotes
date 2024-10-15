@@ -2799,18 +2799,30 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "currencyCode"
     Type: "NSString * _Nullable"
+  - Name: "gateway"
+    PropertyKind: "Instance"
+    SwiftName: "gateway"
+    Type: "NSString * _Nullable"
+  - Name: "gatewayMerchantID"
+    PropertyKind: "Instance"
+    SwiftName: "gatewayMerchantID"
+    Type: "NSString * _Nullable"
   - Name: "merchantId"
     PropertyKind: "Instance"
     SwiftName: "merchantId"
+    Type: "NSString * _Nullable"
+  - Name: "merchantName"
+    PropertyKind: "Instance"
+    SwiftName: "merchantName"
     Type: "NSString * _Nullable"
   - Name: "supportedNetworks"
     PropertyKind: "Instance"
     SwiftName: "supportedNetworks"
     Type: "NSArray<NSString *> * _Nullable"
   Methods:
-  - Selector: "initWithCountryCode:merchantId:currencyCode:amount:supportedNetworks:"
+  - Selector: "initWithCountryCode:merchantId:currencyCode:amount:supportedNetworks:gateway:gatewayMerchantID:merchantName:"
     MethodKind: "Instance"
-    SwiftName: "init(countryCode:merchantId:currencyCode:amount:supportedNetworks:)"
+    SwiftName: "init(countryCode:merchantId:currencyCode:amount:supportedNetworks:gateway:gatewayMerchantID:merchantName:)"
     Parameters:
     - Position: 0
       Type: "NSString * _Nullable"
@@ -2822,9 +2834,15 @@ Classes:
       Type: "MHSDouble * _Nullable"
     - Position: 4
       Type: "NSArray<NSString *> * _Nullable"
-  - Selector: "doCopyCountryCode:merchantId:currencyCode:amount:supportedNetworks:"
+    - Position: 5
+      Type: "NSString * _Nullable"
+    - Position: 6
+      Type: "NSString * _Nullable"
+    - Position: 7
+      Type: "NSString * _Nullable"
+  - Selector: "doCopyCountryCode:merchantId:currencyCode:amount:supportedNetworks:gateway:gatewayMerchantID:merchantName:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(countryCode:merchantId:currencyCode:amount:supportedNetworks:)"
+    SwiftName: "doCopy(countryCode:merchantId:currencyCode:amount:supportedNetworks:gateway:gatewayMerchantID:merchantName:)"
     ResultType: "MHSNativePaymentData * _Nonnull"
     Parameters:
     - Position: 0
@@ -2837,6 +2855,12 @@ Classes:
       Type: "MHSDouble * _Nullable"
     - Position: 4
       Type: "NSArray<NSString *> * _Nullable"
+    - Position: 5
+      Type: "NSString * _Nullable"
+    - Position: 6
+      Type: "NSString * _Nullable"
+    - Position: 7
+      Type: "NSString * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"
@@ -6864,6 +6888,10 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "CVV_END_POINT"
     Type: "NSString * _Nonnull"
+  - Name: "GOOGLE_PAY"
+    PropertyKind: "Instance"
+    SwiftName: "GOOGLE_PAY"
+    Type: "NSString * _Nonnull"
   - Name: "NATIVE_PAY_KEY"
     PropertyKind: "Instance"
     SwiftName: "NATIVE_PAY_KEY"
@@ -8149,6 +8177,97 @@ Classes:
     ResultType: "NSString * _Nonnull"
 - Name: "MHSNativePayDataApplePayDataCompanion"
   SwiftName: "NativePayData.ApplePayDataCompanion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "MHSNativePayDataGooglePay"
+  SwiftName: "NativePayData.GooglePay"
+  Properties:
+  - Name: "amount"
+    PropertyKind: "Instance"
+    SwiftName: "amount"
+    Type: "MHSDouble * _Nullable"
+  - Name: "countryCode"
+    PropertyKind: "Instance"
+    SwiftName: "countryCode"
+    Type: "NSString * _Nullable"
+  - Name: "currencyCode"
+    PropertyKind: "Instance"
+    SwiftName: "currencyCode"
+    Type: "NSString * _Nullable"
+  - Name: "gateway"
+    PropertyKind: "Instance"
+    SwiftName: "gateway"
+    Type: "NSString * _Nullable"
+  - Name: "gatewayMerchantID"
+    PropertyKind: "Instance"
+    SwiftName: "gatewayMerchantID"
+    Type: "NSString * _Nullable"
+  - Name: "merchantId"
+    PropertyKind: "Instance"
+    SwiftName: "merchantId"
+    Type: "NSString * _Nullable"
+  - Name: "merchantName"
+    PropertyKind: "Instance"
+    SwiftName: "merchantName"
+    Type: "NSString * _Nullable"
+  Methods:
+  - Selector: "initWithCountryCode:gateway:currencyCode:amount:gatewayMerchantID:merchantId:merchantName:"
+    MethodKind: "Instance"
+    SwiftName: "init(countryCode:gateway:currencyCode:amount:gatewayMerchantID:merchantId:merchantName:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "NSString * _Nullable"
+    - Position: 3
+      Type: "MHSDouble * _Nullable"
+    - Position: 4
+      Type: "NSString * _Nullable"
+    - Position: 5
+      Type: "NSString * _Nullable"
+    - Position: 6
+      Type: "NSString * _Nullable"
+  - Selector: "doCopyCountryCode:gateway:currencyCode:amount:gatewayMerchantID:merchantId:merchantName:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(countryCode:gateway:currencyCode:amount:gatewayMerchantID:merchantId:merchantName:)"
+    ResultType: "MHSNativePayDataGooglePay * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "NSString * _Nullable"
+    - Position: 3
+      Type: "MHSDouble * _Nullable"
+    - Position: 4
+      Type: "NSString * _Nullable"
+    - Position: 5
+      Type: "NSString * _Nullable"
+    - Position: 6
+      Type: "NSString * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "MHSNativePayDataGooglePayCompanion"
+  SwiftName: "NativePayData.GooglePayCompanion"
   Methods:
   - Selector: "serializer"
     MethodKind: "Instance"

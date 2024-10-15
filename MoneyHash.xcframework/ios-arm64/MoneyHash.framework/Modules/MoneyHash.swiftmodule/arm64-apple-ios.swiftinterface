@@ -71,7 +71,7 @@ public class CardFormBuilder {
   public func setExpireMonthField(handler: ((MoneyHash.CardInputFieldState) -> Swift.Void)? = nil) -> MoneyHash.CardFormBuilder
   public func setExpireYearField(handler: ((MoneyHash.CardInputFieldState) -> Swift.Void)? = nil) -> MoneyHash.CardFormBuilder
   public func setCardBrandChangeHandler(_ handler: @escaping (MoneyHash.CardBrand) -> Swift.Void) -> MoneyHash.CardFormBuilder
-  public func build() throws -> MoneyHash.CardForm
+  public func build() -> MoneyHash.CardForm
   @objc deinit
 }
 public enum DiscountType : Swift.String, Swift.Codable {
@@ -195,19 +195,6 @@ public enum InputFieldType : Swift.Codable {
   public var hashValue: Swift.Int {
     get
   }
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct ErrorMessagesData : Swift.Codable {
-  public let blank: Swift.String?
-  public let nullState: Swift.String?
-  public let minLength: Swift.String?
-  public let invalid: Swift.String?
-  public let requiredMessage: Swift.String?
-  public let maxLength: Swift.String?
-  public let minValue: Swift.String?
-  public let maxValue: Swift.String?
-  public init(blank: Swift.String?, nullState: Swift.String?, minLength: Swift.String?, invalid: Swift.String?, requiredMessage: Swift.String?, maxLength: Swift.String?, minValue: Swift.String?, maxValue: Swift.String?)
-  public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct IntentDetails : Swift.Codable {

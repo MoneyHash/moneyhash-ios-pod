@@ -8639,7 +8639,7 @@
           {
             "kind": "Function",
             "name": "submitPaymentReceipt",
-            "printedName": "submitPaymentReceipt(intentId:data:)",
+            "printedName": "submitPaymentReceipt(intentId:data:billingData:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8658,11 +8658,39 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:9MoneyHash0aB3SDKP20submitPaymentReceipt8intentId4dataAA13IntentDetailsVSS_SStYaKF",
-            "mangledName": "$s9MoneyHash0aB3SDKP20submitPaymentReceipt8intentId4dataAA13IntentDetailsVSS_SStYaKF",
+            "usr": "s:9MoneyHash0aB3SDKP20submitPaymentReceipt8intentId4data11billingDataAA13IntentDetailsVSS_SSSDyS2SGSgtYaKF",
+            "mangledName": "$s9MoneyHash0aB3SDKP20submitPaymentReceipt8intentId4data11billingDataAA13IntentDetailsVSS_SSSDyS2SGSgtYaKF",
             "moduleName": "MoneyHash",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
             "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
@@ -21977,6 +22005,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "PassKit",
         "printedName": "PassKit",
         "declKind": "Import",
@@ -25429,7 +25467,7 @@
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Services \/ApplePayService.swift",
       "kind": "BooleanLiteral",
-      "offset": 1796,
+      "offset": 1820,
       "length": 5,
       "value": "false"
     },

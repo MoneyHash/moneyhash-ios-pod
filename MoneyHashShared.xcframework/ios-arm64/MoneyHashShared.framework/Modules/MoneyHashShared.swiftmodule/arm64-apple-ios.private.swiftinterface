@@ -447,7 +447,7 @@ extension MoneyHashShared.PaymentUseCase {
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func submitPaymentReceipt(paymentIntentId: Swift.String, receipt: Swift.String) async throws -> MoneyHashShared.PaymentInformation
+  public func submitPaymentReceipt(paymentIntentId: Swift.String, receipt: Swift.String, receiptBillingData: [Swift.String : Swift.String]?) async throws -> MoneyHashShared.PaymentInformation
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -505,7 +505,7 @@ extension MoneyHashShared.PaymentService {
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func submitReceipt(paymentIntentId: Swift.String, receipt: Swift.String) async throws -> MoneyHashShared.PaymentInformation
+  public func submitReceipt(paymentIntentId: Swift.String, receipt: Swift.String, receiptBillingData: [Swift.String : Swift.String]?) async throws -> MoneyHashShared.PaymentInformation
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)

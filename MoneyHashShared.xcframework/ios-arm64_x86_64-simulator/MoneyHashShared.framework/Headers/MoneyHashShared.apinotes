@@ -1398,9 +1398,9 @@ Classes:
       Type: "MHSBoolean * _Nullable"
     - Position: 6
       Type: "void (^ _Nonnull)(MHSPaymentIntentData * _Nullable, NSError * _Nullable)"
-  - Selector: "submitPaymentReceiptPaymentIntentId:receipt:completionHandler:"
+  - Selector: "submitPaymentReceiptPaymentIntentId:receipt:receiptBillingData:completionHandler:"
     MethodKind: "Instance"
-    SwiftName: "__submitPaymentReceipt(paymentIntentId:receipt:completionHandler:)"
+    SwiftName: "__submitPaymentReceipt(paymentIntentId:receipt:receiptBillingData:completionHandler:)"
     SwiftPrivate: true
     ResultType: "void"
     Parameters:
@@ -1409,6 +1409,8 @@ Classes:
     - Position: 1
       Type: "NSString * _Nonnull"
     - Position: 2
+      Type: "NSDictionary<NSString *, NSString *> * _Nullable"
+    - Position: 3
       Type: "void (^ _Nonnull)(MHSPaymentInformation * _Nullable, NSError * _Nullable)"
   - Selector: "updateDiscountIntentId:discount:completionHandler:"
     MethodKind: "Instance"
@@ -8484,20 +8486,28 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "receipt"
     Type: "NSString * _Nonnull"
+  - Name: "receiptBillingData"
+    PropertyKind: "Instance"
+    SwiftName: "receiptBillingData"
+    Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
   Methods:
-  - Selector: "initWithReceipt:"
+  - Selector: "initWithReceipt:receiptBillingData:"
     MethodKind: "Instance"
-    SwiftName: "init(receipt:)"
+    SwiftName: "init(receipt:receiptBillingData:)"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
-  - Selector: "doCopyReceipt:"
+    - Position: 1
+      Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
+  - Selector: "doCopyReceipt:receiptBillingData:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(receipt:)"
+    SwiftName: "doCopy(receipt:receiptBillingData:)"
     ResultType: "MHSSubmitReceiptRequest * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"
@@ -13366,9 +13376,9 @@ Classes:
       Type: "MHSBoolean * _Nullable"
     - Position: 7
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__15__submitPaymentReceiptDispatchReceiver:paymentIntentId:receipt:suspendHandler:"
+  - Selector: "Skie_Suspend__15__submitPaymentReceiptDispatchReceiver:paymentIntentId:receipt:receiptBillingData:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__15__submitPaymentReceipt(dispatchReceiver:paymentIntentId:receipt:suspendHandler:)"
+    SwiftName: "Skie_Suspend__15__submitPaymentReceipt(dispatchReceiver:paymentIntentId:receipt:receiptBillingData:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -13379,6 +13389,8 @@ Classes:
     - Position: 2
       Type: "NSString * _Nonnull"
     - Position: 3
+      Type: "NSDictionary<NSString *, NSString *> * _Nullable"
+    - Position: 4
       Type: "MHSSkie_SuspendHandler * _Nonnull"
   - Selector: "Skie_Suspend__16__updateDiscountDispatchReceiver:intentId:discount:suspendHandler:"
     MethodKind: "Class"
@@ -13566,9 +13578,9 @@ Classes:
       Type: "MHSBoolean * _Nullable"
     - Position: 8
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__29__submitReceiptDispatchReceiver:paymentIntentId:receipt:suspendHandler:"
+  - Selector: "Skie_Suspend__29__submitReceiptDispatchReceiver:paymentIntentId:receipt:receiptBillingData:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__29__submitReceipt(dispatchReceiver:paymentIntentId:receipt:suspendHandler:)"
+    SwiftName: "Skie_Suspend__29__submitReceipt(dispatchReceiver:paymentIntentId:receipt:receiptBillingData:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -13579,6 +13591,8 @@ Classes:
     - Position: 2
       Type: "NSString * _Nonnull"
     - Position: 3
+      Type: "NSDictionary<NSString *, NSString *> * _Nullable"
+    - Position: 4
       Type: "MHSSkie_SuspendHandler * _Nonnull"
   - Selector: "Skie_Suspend__30__updateDiscountDispatchReceiver:intentId:discount:suspendHandler:"
     MethodKind: "Class"
@@ -15292,9 +15306,9 @@ Protocols:
       Type: "MHSBoolean * _Nullable"
     - Position: 7
       Type: "void (^ _Nonnull)(MHSPaymentIntentData * _Nullable, NSError * _Nullable)"
-  - Selector: "submitReceiptPaymentIntentId:receipt:completionHandler:"
+  - Selector: "submitReceiptPaymentIntentId:receipt:receiptBillingData:completionHandler:"
     MethodKind: "Instance"
-    SwiftName: "__submitReceipt(paymentIntentId:receipt:completionHandler:)"
+    SwiftName: "__submitReceipt(paymentIntentId:receipt:receiptBillingData:completionHandler:)"
     SwiftPrivate: true
     ResultType: "void"
     Parameters:
@@ -15303,6 +15317,8 @@ Protocols:
     - Position: 1
       Type: "NSString * _Nonnull"
     - Position: 2
+      Type: "NSDictionary<NSString *, NSString *> * _Nullable"
+    - Position: 3
       Type: "void (^ _Nonnull)(MHSPaymentInformation * _Nullable, NSError * _Nullable)"
   - Selector: "updateDiscountIntentId:discount:completionHandler:"
     MethodKind: "Instance"

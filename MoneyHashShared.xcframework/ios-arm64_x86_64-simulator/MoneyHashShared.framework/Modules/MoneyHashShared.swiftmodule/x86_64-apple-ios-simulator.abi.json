@@ -41260,7 +41260,7 @@
           {
             "kind": "Function",
             "name": "submitPaymentReceipt",
-            "printedName": "submitPaymentReceipt(paymentIntentId:receipt:)",
+            "printedName": "submitPaymentReceipt(paymentIntentId:receipt:receiptBillingData:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -41279,11 +41279,39 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So17MHSPaymentUseCaseC15MoneyHashSharedE20submitPaymentReceipt15paymentIntentId7receiptSo0A11InformationCSS_SStYaKF",
-            "mangledName": "$sSo17MHSPaymentUseCaseC15MoneyHashSharedE20submitPaymentReceipt15paymentIntentId7receiptSo0A11InformationCSS_SStYaKF",
+            "usr": "s:So17MHSPaymentUseCaseC15MoneyHashSharedE20submitPaymentReceipt15paymentIntentId7receipt0M11BillingDataSo0A11InformationCSS_SSSDyS2SGSgtYaKF",
+            "mangledName": "$sSo17MHSPaymentUseCaseC15MoneyHashSharedE20submitPaymentReceipt15paymentIntentId7receipt0M11BillingDataSo0A11InformationCSS_SSSDyS2SGSgtYaKF",
             "moduleName": "MoneyHashShared",
             "intro_Macosx": "10.15",
             "intro_iOS": "13",
@@ -42083,7 +42111,7 @@
           {
             "kind": "Function",
             "name": "submitReceipt",
-            "printedName": "submitReceipt(paymentIntentId:receipt:)",
+            "printedName": "submitReceipt(paymentIntentId:receipt:receiptBillingData:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -42102,11 +42130,39 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So17MHSPaymentServiceP15MoneyHashSharedE13submitReceipt15paymentIntentId7receiptSo0A11InformationCSS_SStYaKF",
-            "mangledName": "$sSo17MHSPaymentServiceP15MoneyHashSharedE13submitReceipt15paymentIntentId7receiptSo0A11InformationCSS_SStYaKF",
+            "usr": "s:So17MHSPaymentServiceP15MoneyHashSharedE13submitReceipt15paymentIntentId7receipt0K11BillingDataSo0A11InformationCSS_SSSDyS2SGSgtYaKF",
+            "mangledName": "$sSo17MHSPaymentServiceP15MoneyHashSharedE13submitReceipt15paymentIntentId7receipt0K11BillingDataSo0A11InformationCSS_SSSDyS2SGSgtYaKF",
             "moduleName": "MoneyHashShared",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHashShared.PaymentService>",
             "sugared_genericSig": "<Self where Self : MoneyHashShared.PaymentService>",

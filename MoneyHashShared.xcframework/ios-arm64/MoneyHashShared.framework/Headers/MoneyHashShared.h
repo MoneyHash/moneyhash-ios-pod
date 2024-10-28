@@ -3372,11 +3372,12 @@ __attribute__((swift_name("SubmitFormRequest.Companion")))
 */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("SubmitReceiptRequest")))
-@interface MHSSubmitReceiptRequest : MHSBase
+@interface MHSSubmitReceiptRequest : MHSBase <MHSCommonParcelable>
 @property (class, readonly, getter=companion) MHSSubmitReceiptRequestCompanion *companion __attribute__((swift_name("companion")));
 @property (readonly) NSString *receipt __attribute__((swift_name("receipt")));
-- (instancetype)initWithReceipt:(NSString *)receipt __attribute__((swift_name("init(receipt:)"))) __attribute__((objc_designated_initializer));
-- (MHSSubmitReceiptRequest *)doCopyReceipt:(NSString *)receipt __attribute__((swift_name("doCopy(receipt:)")));
+@property (readonly) NSDictionary<NSString *, NSString *> *receiptBillingData __attribute__((swift_name("receiptBillingData")));
+- (instancetype)initWithReceipt:(NSString *)receipt receiptBillingData:(NSDictionary<NSString *, NSString *> *)receiptBillingData __attribute__((swift_name("init(receipt:receiptBillingData:)"))) __attribute__((objc_designated_initializer));
+- (MHSSubmitReceiptRequest *)doCopyReceipt:(NSString *)receipt receiptBillingData:(NSDictionary<NSString *, NSString *> *)receiptBillingData __attribute__((swift_name("doCopy(receipt:receiptBillingData:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -3384,6 +3385,11 @@ __attribute__((swift_name("SubmitReceiptRequest")))
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="receipt")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="receipt_billing_data")
 */
 @end
 
@@ -5537,7 +5543,7 @@ __attribute__((swift_name("PaymentService")))
 /**
  * @note This method converts all Kotlin exceptions to errors.
 */
-- (void)submitReceiptPaymentIntentId:(NSString *)paymentIntentId receipt:(NSString *)receipt completionHandler:(void (^)(MHSPaymentInformation * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("submitReceipt(paymentIntentId:receipt:completionHandler:)")));
+- (void)submitReceiptPaymentIntentId:(NSString *)paymentIntentId receipt:(NSString *)receipt receiptBillingData:(NSDictionary<NSString *, NSString *> * _Nullable)receiptBillingData completionHandler:(void (^)(MHSPaymentInformation * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("submitReceipt(paymentIntentId:receipt:receiptBillingData:completionHandler:)")));
 
 /**
  * @note This method converts all Kotlin exceptions to errors.
@@ -5912,7 +5918,7 @@ __attribute__((swift_name("PaymentUseCase")))
 /**
  * @note This method converts all Kotlin exceptions to errors.
 */
-- (void)submitPaymentReceiptPaymentIntentId:(NSString *)paymentIntentId receipt:(NSString *)receipt completionHandler:(void (^)(MHSPaymentInformation * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("submitPaymentReceipt(paymentIntentId:receipt:completionHandler:)")));
+- (void)submitPaymentReceiptPaymentIntentId:(NSString *)paymentIntentId receipt:(NSString *)receipt receiptBillingData:(NSDictionary<NSString *, NSString *> * _Nullable)receiptBillingData completionHandler:(void (^)(MHSPaymentInformation * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("submitPaymentReceipt(paymentIntentId:receipt:receiptBillingData:completionHandler:)")));
 
 /**
  * @note This method converts all Kotlin exceptions to errors.
@@ -6502,7 +6508,7 @@ __attribute__((swift_name("__SkieSuspendWrappersKt")))
 + (void)Skie_Suspend__12__resetPayoutSelectedMethodDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver intentId:(NSString *)intentId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__12__resetPayoutSelectedMethod(dispatchReceiver:intentId:suspendHandler:)")));
 + (void)Skie_Suspend__13__submitCardCVVDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver intentId:(NSString *)intentId cvv:(NSString *)cvv suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__13__submitCardCVV(dispatchReceiver:intentId:cvv:suspendHandler:)")));
 + (void)Skie_Suspend__14__submitFormDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver paymentIntentId:(NSString *)paymentIntentId method:(NSString *)method billingFields:(NSDictionary<NSString *, NSString *> * _Nullable)billingFields shippingFields:(NSDictionary<NSString *, NSString *> * _Nullable)shippingFields vaultData:(MHSVaultData * _Nullable)vaultData saveCard:(MHSBoolean * _Nullable)saveCard suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__14__submitForm(dispatchReceiver:paymentIntentId:method:billingFields:shippingFields:vaultData:saveCard:suspendHandler:)")));
-+ (void)Skie_Suspend__15__submitPaymentReceiptDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver paymentIntentId:(NSString *)paymentIntentId receipt:(NSString *)receipt suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__15__submitPaymentReceipt(dispatchReceiver:paymentIntentId:receipt:suspendHandler:)")));
++ (void)Skie_Suspend__15__submitPaymentReceiptDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver paymentIntentId:(NSString *)paymentIntentId receipt:(NSString *)receipt receiptBillingData:(NSDictionary<NSString *, NSString *> * _Nullable)receiptBillingData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__15__submitPaymentReceipt(dispatchReceiver:paymentIntentId:receipt:receiptBillingData:suspendHandler:)")));
 + (void)Skie_Suspend__16__updateDiscountDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver intentId:(NSString *)intentId discount:(MHSDiscountItem *)discount suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__16__updateDiscount(dispatchReceiver:intentId:discount:suspendHandler:)")));
 + (void)Skie_Suspend__17__updateFeesDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver intentId:(NSString *)intentId fees:(NSArray<MHSFeeItem *> *)fees suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__17__updateFees(dispatchReceiver:intentId:fees:suspendHandler:)")));
 + (void)Skie_Suspend__18__createCardTokenDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver cardIntentId:(NSString *)cardIntentId cardData:(MHSVaultData *)cardData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__18__createCardToken(dispatchReceiver:cardIntentId:cardData:suspendHandler:)")));
@@ -6517,7 +6523,7 @@ __attribute__((swift_name("__SkieSuspendWrappersKt")))
 + (void)Skie_Suspend__26__resetPayoutSelectedMethodDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver payoutIntentId:(NSString *)payoutIntentId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__26__resetPayoutSelectedMethod(dispatchReceiver:payoutIntentId:suspendHandler:)")));
 + (void)Skie_Suspend__27__submitCardCVVDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver intentId:(NSString *)intentId cvv:(NSString *)cvv suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__27__submitCardCVV(dispatchReceiver:intentId:cvv:suspendHandler:)")));
 + (void)Skie_Suspend__28__submitFormDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver intentId:(NSString *)intentId currentSelectedMethod:(NSString *)currentSelectedMethod cardFields:(NSDictionary<NSString *, NSString *> * _Nullable)cardFields billingFields:(NSDictionary<NSString *, NSString *> * _Nullable)billingFields shippingFields:(NSDictionary<NSString *, NSString *> * _Nullable)shippingFields vaultData:(MHSVaultData * _Nullable)vaultData saveCard:(MHSBoolean * _Nullable)saveCard suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__28__submitForm(dispatchReceiver:intentId:currentSelectedMethod:cardFields:billingFields:shippingFields:vaultData:saveCard:suspendHandler:)")));
-+ (void)Skie_Suspend__29__submitReceiptDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver paymentIntentId:(NSString *)paymentIntentId receipt:(NSString *)receipt suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__29__submitReceipt(dispatchReceiver:paymentIntentId:receipt:suspendHandler:)")));
++ (void)Skie_Suspend__29__submitReceiptDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver paymentIntentId:(NSString *)paymentIntentId receipt:(NSString *)receipt receiptBillingData:(NSDictionary<NSString *, NSString *> * _Nullable)receiptBillingData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__29__submitReceipt(dispatchReceiver:paymentIntentId:receipt:receiptBillingData:suspendHandler:)")));
 + (void)Skie_Suspend__2__emitDispatchReceiver:(id<MHSKotlinx_coroutines_coreFlowCollector>)dispatchReceiver value:(id _Nullable)value suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__2__emit(dispatchReceiver:value:suspendHandler:)")));
 + (void)Skie_Suspend__30__updateDiscountDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver intentId:(NSString *)intentId discount:(MHSDiscountItem *)discount suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__30__updateDiscount(dispatchReceiver:intentId:discount:suspendHandler:)")));
 + (void)Skie_Suspend__31__updateFeesDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver intentId:(NSString *)intentId fees:(NSArray<MHSFeeItem *> *)fees suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__31__updateFees(dispatchReceiver:intentId:fees:suspendHandler:)")));

@@ -236,7 +236,7 @@ public protocol MoneyHashSDK {
   #endif
   func setLogLevel(logLevel: MoneyHash.LogLevel)
   #if compiler(>=5.3) && $AsyncAwait
-  func submitPaymentReceipt(intentId: Swift.String, data: Swift.String) async throws -> MoneyHash.IntentDetails
+  func submitPaymentReceipt(intentId: Swift.String, data: Swift.String, billingData: [Swift.String : Swift.String]?) async throws -> MoneyHash.IntentDetails
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   func proceedWithApplePay(intentID: Swift.String, depositAmount: Swift.Float, merchantIdentifier: Swift.String, currencyCode: Swift.String, countryCode: Swift.String) async throws -> MoneyHash.IntentDetails

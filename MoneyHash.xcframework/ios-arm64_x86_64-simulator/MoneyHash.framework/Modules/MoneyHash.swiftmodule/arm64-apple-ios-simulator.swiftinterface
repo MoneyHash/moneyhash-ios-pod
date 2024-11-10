@@ -47,6 +47,13 @@ public struct EmbedButtonViewStyle : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct CardFormState : Swift.Codable {
+  public let isValid: Swift.Bool
+  public let fieldsState: [MoneyHash.CardFieldType : MoneyHash.CardFieldState]
+  public init(isValid: Swift.Bool, fieldsState: [MoneyHash.CardFieldType : MoneyHash.CardFieldState])
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct ApplePayData : Swift.Codable {
   public let countryCode: Swift.String?
   public let merchantId: Swift.String?
@@ -235,6 +242,17 @@ public protocol MoneyHashSDK {
   func proceedWithApplePay(intentID: Swift.String, depositAmount: Swift.Float, merchantIdentifier: Swift.String, currencyCode: Swift.String, countryCode: Swift.String) async throws -> MoneyHash.IntentDetails
   #endif
   func isDeviceCompatible() -> Swift.Bool
+  func updateField(fieldType: MoneyHash.CardFieldType, currentValue: Swift.String) -> MoneyHash.CardFieldState
+  func isValidForm() -> MoneyHash.CardFormState
+  #if compiler(>=5.3) && $AsyncAwait
+  func collect(token: Swift.String?) async throws -> MoneyHash.VaultData?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func pay(intentId: Swift.String, cardData: MoneyHash.VaultData, saveCard: Swift.Bool, billingData: [Swift.String : Swift.String]?, shippingData: [Swift.String : Swift.String]?) async throws -> MoneyHash.IntentDetails
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func createCardToken(cardIntentId: Swift.String, cardData: MoneyHash.VaultData) async throws -> MoneyHash.IntentStateDetails?
+  #endif
   func setLocale(_ locale: MoneyHash.MHLocale)
   #if compiler(>=5.3) && $AsyncAwait
   func updateFees(intentId: Swift.String, fees: [MoneyHash.FeeItem]) async throws -> MoneyHash.FeesData?
@@ -579,6 +597,16 @@ public enum RenderStrategy : Swift.Codable {
   public var hashValue: Swift.Int {
     get
   }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CardFieldState : Swift.Codable {
+  public let isValid: Swift.Bool
+  public let errorMessage: Swift.String?
+  public let formattedValue: Swift.String
+  public let fieldType: MoneyHash.CardFieldType
+  public let cardBrand: MoneyHash.CardBrand?
+  public init(isValid: Swift.Bool, errorMessage: Swift.String?, formattedValue: Swift.String, fieldType: MoneyHash.CardFieldType, cardBrand: MoneyHash.CardBrand?)
+  public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 @available(iOS 15.0, *)

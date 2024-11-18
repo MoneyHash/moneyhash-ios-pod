@@ -3434,18 +3434,18 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "logo"
     Type: "NSString * _Nullable"
-  - Name: "requiresCvv"
+  - Name: "requireCvv"
     PropertyKind: "Instance"
-    SwiftName: "requiresCvv"
+    SwiftName: "requireCvv"
     Type: "MHSBoolean * _Nullable"
   - Name: "type"
     PropertyKind: "Instance"
     SwiftName: "type"
     Type: "MHSMethodType * _Nullable"
   Methods:
-  - Selector: "initWithId:brand:last4:expiryMonth:expiryYear:country:logo:requiresCvv:cvvConfig:bin:type:"
+  - Selector: "initWithId:brand:last4:expiryMonth:expiryYear:country:logo:requireCvv:cvvConfig:bin:type:"
     MethodKind: "Instance"
-    SwiftName: "init(id:brand:last4:expiryMonth:expiryYear:country:logo:requiresCvv:cvvConfig:bin:type:)"
+    SwiftName: "init(id:brand:last4:expiryMonth:expiryYear:country:logo:requireCvv:cvvConfig:bin:type:)"
     Parameters:
     - Position: 0
       Type: "NSString * _Nullable"
@@ -3469,9 +3469,9 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 10
       Type: "MHSMethodType * _Nullable"
-  - Selector: "doCopyId:brand:last4:expiryMonth:expiryYear:country:logo:requiresCvv:cvvConfig:bin:type:"
+  - Selector: "doCopyId:brand:last4:expiryMonth:expiryYear:country:logo:requireCvv:cvvConfig:bin:type:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(id:brand:last4:expiryMonth:expiryYear:country:logo:requiresCvv:cvvConfig:bin:type:)"
+    SwiftName: "doCopy(id:brand:last4:expiryMonth:expiryYear:country:logo:requireCvv:cvvConfig:bin:type:)"
     ResultType: "MHSSavedCard * _Nonnull"
     Parameters:
     - Position: 0

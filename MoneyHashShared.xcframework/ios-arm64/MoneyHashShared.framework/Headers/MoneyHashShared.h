@@ -4382,11 +4382,6 @@ __attribute__((swift_name("SavedCard")))
 
 /**
  * @note annotations
- *   kotlinx.serialization.SerialName(value="require_cvv")
-*/
-
-/**
- * @note annotations
  *   kotlinx.serialization.SerialName(value="type")
 */
 @end

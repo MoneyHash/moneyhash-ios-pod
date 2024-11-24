@@ -2486,14 +2486,10 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "paymentMethods"
     Type: "NSArray<NSString *> * _Nullable"
-  - Name: "requiresCvv"
-    PropertyKind: "Instance"
-    SwiftName: "requiresCvv"
-    Type: "MHSBoolean * _Nullable"
   Methods:
-  - Selector: "initWithBin:brand:cardHolderName:country:expiryMonth:expiryYear:issuer:last4:logo:paymentMethods:requiresCvv:"
+  - Selector: "initWithBin:brand:cardHolderName:country:expiryMonth:expiryYear:issuer:last4:logo:paymentMethods:"
     MethodKind: "Instance"
-    SwiftName: "init(bin:brand:cardHolderName:country:expiryMonth:expiryYear:issuer:last4:logo:paymentMethods:requiresCvv:)"
+    SwiftName: "init(bin:brand:cardHolderName:country:expiryMonth:expiryYear:issuer:last4:logo:paymentMethods:)"
     Parameters:
     - Position: 0
       Type: "NSString * _Nullable"
@@ -2515,11 +2511,9 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 9
       Type: "NSArray<NSString *> * _Nullable"
-    - Position: 10
-      Type: "MHSBoolean * _Nullable"
-  - Selector: "doCopyBin:brand:cardHolderName:country:expiryMonth:expiryYear:issuer:last4:logo:paymentMethods:requiresCvv:"
+  - Selector: "doCopyBin:brand:cardHolderName:country:expiryMonth:expiryYear:issuer:last4:logo:paymentMethods:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(bin:brand:cardHolderName:country:expiryMonth:expiryYear:issuer:last4:logo:paymentMethods:requiresCvv:)"
+    SwiftName: "doCopy(bin:brand:cardHolderName:country:expiryMonth:expiryYear:issuer:last4:logo:paymentMethods:)"
     ResultType: "MHSCardTokenData * _Nonnull"
     Parameters:
     - Position: 0
@@ -2542,8 +2536,6 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 9
       Type: "NSArray<NSString *> * _Nullable"
-    - Position: 10
-      Type: "MHSBoolean * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"
@@ -3410,10 +3402,6 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "country"
     Type: "NSString * _Nullable"
-  - Name: "cvvConfig"
-    PropertyKind: "Instance"
-    SwiftName: "cvvConfig"
-    Type: "MHSCvvConfig * _Nullable"
   - Name: "expiryMonth"
     PropertyKind: "Instance"
     SwiftName: "expiryMonth"
@@ -3434,18 +3422,14 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "logo"
     Type: "NSString * _Nullable"
-  - Name: "requireCvv"
-    PropertyKind: "Instance"
-    SwiftName: "requireCvv"
-    Type: "MHSBoolean * _Nullable"
   - Name: "type"
     PropertyKind: "Instance"
     SwiftName: "type"
     Type: "MHSMethodType * _Nullable"
   Methods:
-  - Selector: "initWithId:brand:last4:expiryMonth:expiryYear:country:logo:requireCvv:cvvConfig:bin:type:"
+  - Selector: "initWithId:brand:last4:expiryMonth:expiryYear:country:logo:bin:type:"
     MethodKind: "Instance"
-    SwiftName: "init(id:brand:last4:expiryMonth:expiryYear:country:logo:requireCvv:cvvConfig:bin:type:)"
+    SwiftName: "init(id:brand:last4:expiryMonth:expiryYear:country:logo:bin:type:)"
     Parameters:
     - Position: 0
       Type: "NSString * _Nullable"
@@ -3462,16 +3446,12 @@ Classes:
     - Position: 6
       Type: "NSString * _Nullable"
     - Position: 7
-      Type: "MHSBoolean * _Nullable"
-    - Position: 8
-      Type: "MHSCvvConfig * _Nullable"
-    - Position: 9
       Type: "NSString * _Nullable"
-    - Position: 10
+    - Position: 8
       Type: "MHSMethodType * _Nullable"
-  - Selector: "doCopyId:brand:last4:expiryMonth:expiryYear:country:logo:requireCvv:cvvConfig:bin:type:"
+  - Selector: "doCopyId:brand:last4:expiryMonth:expiryYear:country:logo:bin:type:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(id:brand:last4:expiryMonth:expiryYear:country:logo:requireCvv:cvvConfig:bin:type:)"
+    SwiftName: "doCopy(id:brand:last4:expiryMonth:expiryYear:country:logo:bin:type:)"
     ResultType: "MHSSavedCard * _Nonnull"
     Parameters:
     - Position: 0
@@ -3489,12 +3469,8 @@ Classes:
     - Position: 6
       Type: "NSString * _Nullable"
     - Position: 7
-      Type: "MHSBoolean * _Nullable"
-    - Position: 8
-      Type: "MHSCvvConfig * _Nullable"
-    - Position: 9
       Type: "NSString * _Nullable"
-    - Position: 10
+    - Position: 8
       Type: "MHSMethodType * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
@@ -3573,49 +3549,6 @@ Classes:
     Parameters:
     - Position: 0
       Type: "MHSKotlinArray<id<MHSKotlinx_serialization_coreKSerializer>> * _Nonnull"
-- Name: "MHSCvvConfig"
-  SwiftName: "CvvConfig"
-  Properties:
-  - Name: "digitsCount"
-    PropertyKind: "Instance"
-    SwiftName: "digitsCount"
-    Type: "MHSInt * _Nullable"
-  Methods:
-  - Selector: "initWithDigitsCount:"
-    MethodKind: "Instance"
-    SwiftName: "init(digitsCount:)"
-    Parameters:
-    - Position: 0
-      Type: "MHSInt * _Nullable"
-  - Selector: "doCopyDigitsCount:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(digitsCount:)"
-    ResultType: "MHSCvvConfig * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "MHSInt * _Nullable"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-- Name: "MHSCvvConfigCompanion"
-  SwiftName: "CvvConfig.Companion"
-  Methods:
-  - Selector: "serializer"
-    MethodKind: "Instance"
-    SwiftName: "serializer()"
-    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "MHSPaymentIntent"
   SwiftName: "PaymentIntent"
   Properties:
@@ -6886,6 +6819,10 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "CITY_API_NAME_FILED"
     Type: "NSString * _Nonnull"
+  - Name: "CP_VERSION_HEADER"
+    PropertyKind: "Instance"
+    SwiftName: "CP_VERSION_HEADER"
+    Type: "NSString * _Nonnull"
   - Name: "CVV_END_POINT"
     PropertyKind: "Instance"
     SwiftName: "CVV_END_POINT"
@@ -9058,6 +8995,13 @@ Classes:
 - Name: "MHSMoneyHashStore"
   SwiftName: "MoneyHashStore"
   Methods:
+  - Selector: "setCrossPlatformVersionValue:"
+    MethodKind: "Instance"
+    SwiftName: "setCrossPlatformVersion(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
   - Selector: "setPublicKeyValue:"
     MethodKind: "Instance"
     SwiftName: "setPublicKey(value:)"

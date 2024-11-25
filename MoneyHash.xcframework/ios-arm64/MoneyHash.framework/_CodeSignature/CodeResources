@@ -18,27 +18,27 @@
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		8v9h2b2vTrpaMKdUSuQc2mlOkwM=
+		0i0RHZHMZ4Jls9ryeAzBFBxCh9w=
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		CzSB9qxA0hPD7v8hR/Awn+725xY=
+		35GMSntfTx8B+lqDb6TTcmz1NLI=
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		yNjXX9xFfkx/IWYrDTrxPf9yvQI=
+		+EJ47KOo+3xtIcDVgqDU9PGvei0=
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		uCTqeJcCTRmIi+S9V2TgJhQj03s=
+		fvbHkoyRUIrYyTolzOp8SIrwbi8=
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		yNjXX9xFfkx/IWYrDTrxPf9yvQI=
+		+EJ47KOo+3xtIcDVgqDU9PGvei0=
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		7H9KA3/plsTDGVrbyrQsX1WR5Cs=
+		In6ZYdXtVR7BPxOSkWE3lsxyOLg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -65,42 +65,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6aIoebF8kIvne3uVV/izR28pR7j47G+K/cTX+ZaJIrM=
+			RrrzvBNa+/Az/T3FVg9wAiVNOTw+PO+gTU5I7cmjt5U=
 			</data>
 		</dict>
 		<key>Modules/MoneyHash.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iZ7zsly3vcX/o/vu0AQ0eRfOMML9zeeOO1Rvz1TXVRw=
+			s2EDvdpDZwrgo0CUUFxYd7z5f/kpT1fBNcYT1xX5qJs=
 			</data>
 		</dict>
 		<key>Modules/MoneyHash.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uZLz3RCwYD4vFTt/gGdNrgDNq648XXW1kw+q9U7XNHo=
+			VldSQLq71OnH3ZG0pULaqLdTQlDWV3uiWx5xtjAtFA8=
 			</data>
 		</dict>
 		<key>Modules/MoneyHash.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ic1bnEdaT/Yg/mgc2haW1rCmUDgYOZaU5wXS4DZ2EXM=
+			y+U7bpdWeQTfHkHMHazrex55lehd446/D+j9e1lgd8Q=
 			</data>
 		</dict>
 		<key>Modules/MoneyHash.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uZLz3RCwYD4vFTt/gGdNrgDNq648XXW1kw+q9U7XNHo=
+			VldSQLq71OnH3ZG0pULaqLdTQlDWV3uiWx5xtjAtFA8=
 			</data>
 		</dict>
 		<key>Modules/MoneyHash.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ExDvcmWHdyfXNPmOCMchUiBjmcCz3pOgitlbhO6V4tQ=
+			u8jPlXi3CQK/xmGRWzDIdfIKW6uznAjnj3ud0aRUKfI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

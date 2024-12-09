@@ -242,7 +242,7 @@ public protocol MoneyHashSDK {
   func proceedWithApplePay(intentID: Swift.String, depositAmount: Swift.Float, merchantIdentifier: Swift.String, currencyCode: Swift.String, countryCode: Swift.String) async throws -> MoneyHash.IntentDetails
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  func proceedWithApplePay(depositAmount: Swift.Float, merchantIdentifier: Swift.String, currencyCode: Swift.String, countryCode: Swift.String) async throws -> MoneyHash.NativePayReceipt
+  func generateApplePayReceipt(depositAmount: Swift.Float, merchantIdentifier: Swift.String, currencyCode: Swift.String, countryCode: Swift.String) async throws -> MoneyHash.NativePayReceipt
   #endif
   func isDeviceCompatible() -> Swift.Bool
   func updateField(fieldType: MoneyHash.CardFieldType, currentValue: Swift.String) -> MoneyHash.CardFieldState

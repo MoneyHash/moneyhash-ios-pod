@@ -8746,8 +8746,8 @@
           },
           {
             "kind": "Function",
-            "name": "proceedWithApplePay",
-            "printedName": "proceedWithApplePay(depositAmount:merchantIdentifier:currencyCode:countryCode:)",
+            "name": "generateApplePayReceipt",
+            "printedName": "generateApplePayReceipt(depositAmount:merchantIdentifier:currencyCode:countryCode:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8781,8 +8781,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9MoneyHash0aB3SDKP19proceedWithApplePay13depositAmount18merchantIdentifier12currencyCode07countryM0AA06NativeG7ReceiptVSf_S3StYaKF",
-            "mangledName": "$s9MoneyHash0aB3SDKP19proceedWithApplePay13depositAmount18merchantIdentifier12currencyCode07countryM0AA06NativeG7ReceiptVSf_S3StYaKF",
+            "usr": "s:9MoneyHash0aB3SDKP23generateApplePayReceipt13depositAmount18merchantIdentifier12currencyCode07countryM0AA06NativefG0VSf_S3StYaKF",
+            "mangledName": "$s9MoneyHash0aB3SDKP23generateApplePayReceipt13depositAmount18merchantIdentifier12currencyCode07countryM0AA06NativefG0VSf_S3StYaKF",
             "moduleName": "MoneyHash",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
             "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
@@ -26234,27 +26234,27 @@
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
       "offset": 97,
-      "length": 11,
-      "value": "\"2.1.6-dev\""
+      "length": 12,
+      "value": "\"2.1.6-dev2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 140,
+      "offset": 141,
       "length": 7,
       "value": "\"style\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 177,
+      "offset": 178,
       "length": 5,
       "value": "\"sdk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 216,
+      "offset": 217,
       "length": 6,
       "value": "\"lang\""
     },

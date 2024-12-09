@@ -8160,7 +8160,7 @@
           {
             "kind": "Function",
             "name": "getMethods",
-            "printedName": "getMethods(currency:amount:customer:flowId:)",
+            "printedName": "getMethods(currency:amount:customer:flowId:operation:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8215,11 +8215,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.IntentOperation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IntentOperation",
+                    "printedName": "MoneyHash.IntentOperation",
+                    "usr": "s:9MoneyHash15IntentOperationO"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:9MoneyHash0aB3SDKP10getMethods8currency6amount8customer6flowIdAA06IntentE0VSS_SdSgSSSgALtYaKF",
-            "mangledName": "$s9MoneyHash0aB3SDKP10getMethods8currency6amount8customer6flowIdAA06IntentE0VSS_SdSgSSSgALtYaKF",
+            "usr": "s:9MoneyHash0aB3SDKP10getMethods8currency6amount8customer6flowId9operationAA06IntentE0VSS_SdSgSSSgAmA0L9OperationOSgtYaKF",
+            "mangledName": "$s9MoneyHash0aB3SDKP10getMethods8currency6amount8customer6flowId9operationAA06IntentE0VSS_SdSgSSSgAmA0L9OperationOSgtYaKF",
             "moduleName": "MoneyHash",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
             "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
@@ -8639,7 +8653,7 @@
           {
             "kind": "Function",
             "name": "submitPaymentReceipt",
-            "printedName": "submitPaymentReceipt(intentId:data:billingData:)",
+            "printedName": "submitPaymentReceipt(intentId:nativePayReceipt:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8655,42 +8669,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.String : Swift.String]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Swift.String]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "NativePayReceipt",
+                "printedName": "MoneyHash.NativePayReceipt",
+                "usr": "s:9MoneyHash16NativePayReceiptV"
               }
             ],
             "declKind": "Func",
-            "usr": "s:9MoneyHash0aB3SDKP20submitPaymentReceipt8intentId4data11billingDataAA13IntentDetailsVSS_SSSDyS2SGSgtYaKF",
-            "mangledName": "$s9MoneyHash0aB3SDKP20submitPaymentReceipt8intentId4data11billingDataAA13IntentDetailsVSS_SSSDyS2SGSgtYaKF",
+            "usr": "s:9MoneyHash0aB3SDKP20submitPaymentReceipt8intentId09nativePayF0AA13IntentDetailsVSS_AA06NativejF0VtYaKF",
+            "mangledName": "$s9MoneyHash0aB3SDKP20submitPaymentReceipt8intentId09nativePayF0AA13IntentDetailsVSS_AA06NativejF0VtYaKF",
             "moduleName": "MoneyHash",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
             "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
@@ -8747,6 +8733,56 @@
             "declKind": "Func",
             "usr": "s:9MoneyHash0aB3SDKP19proceedWithApplePay8intentID13depositAmount18merchantIdentifier12currencyCode07countryO0AA13IntentDetailsVSS_SfS3StYaKF",
             "mangledName": "$s9MoneyHash0aB3SDKP19proceedWithApplePay8intentID13depositAmount18merchantIdentifier12currencyCode07countryO0AA13IntentDetailsVSS_SfS3StYaKF",
+            "moduleName": "MoneyHash",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
+            "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "proceedWithApplePay",
+            "printedName": "proceedWithApplePay(depositAmount:merchantIdentifier:currencyCode:countryCode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NativePayReceipt",
+                "printedName": "MoneyHash.NativePayReceipt",
+                "usr": "s:9MoneyHash16NativePayReceiptV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash0aB3SDKP19proceedWithApplePay13depositAmount18merchantIdentifier12currencyCode07countryM0AA06NativeG7ReceiptVSf_S3StYaKF",
+            "mangledName": "$s9MoneyHash0aB3SDKP19proceedWithApplePay13depositAmount18merchantIdentifier12currencyCode07countryM0AA06NativeG7ReceiptVSf_S3StYaKF",
             "moduleName": "MoneyHash",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
             "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
@@ -15813,30 +15849,142 @@
             ]
           },
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
+            "kind": "Var",
+            "name": "requiredShippingFields",
+            "printedName": "requiredShippingFields",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ExpressMethod",
-                "printedName": "MoneyHash.ExpressMethod",
-                "usr": "s:9MoneyHash13ExpressMethodV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
+                "name": "Optional",
+                "printedName": "[MoneyHash.InputField]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[MoneyHash.InputField]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InputField",
+                        "printedName": "MoneyHash.InputField",
+                        "usr": "s:9MoneyHash10InputFieldV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
-            "declKind": "Constructor",
-            "usr": "s:9MoneyHash13ExpressMethodV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s9MoneyHash13ExpressMethodV4fromACs7Decoder_p_tKcfc",
+            "declKind": "Var",
+            "usr": "s:9MoneyHash13ExpressMethodV22requiredShippingFieldsSayAA10InputFieldVGSgvp",
+            "mangledName": "$s9MoneyHash13ExpressMethodV22requiredShippingFieldsSayAA10InputFieldVGSgvp",
             "moduleName": "MoneyHash",
-            "implicit": true,
-            "throwing": true,
-            "init_kind": "Designated"
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[MoneyHash.InputField]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[MoneyHash.InputField]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "InputField",
+                            "printedName": "MoneyHash.InputField",
+                            "usr": "s:9MoneyHash10InputFieldV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash13ExpressMethodV22requiredShippingFieldsSayAA10InputFieldVGSgvg",
+                "mangledName": "$s9MoneyHash13ExpressMethodV22requiredShippingFieldsSayAA10InputFieldVGSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "nativePayData",
+            "printedName": "nativePayData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.NativePayData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NativePayData",
+                    "printedName": "MoneyHash.NativePayData",
+                    "usr": "s:9MoneyHash13NativePayDataO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash13ExpressMethodV13nativePayDataAA06NativefG0OSgvp",
+            "mangledName": "$s9MoneyHash13ExpressMethodV13nativePayDataAA06NativefG0OSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MoneyHash.NativePayData?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NativePayData",
+                        "printedName": "MoneyHash.NativePayData",
+                        "usr": "s:9MoneyHash13NativePayDataO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash13ExpressMethodV13nativePayDataAA06NativefG0OSgvg",
+                "mangledName": "$s9MoneyHash13ExpressMethodV13nativePayDataAA06NativefG0OSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
           },
           {
             "kind": "Function",
@@ -15859,9 +16007,39 @@
             "usr": "s:9MoneyHash13ExpressMethodV6encode2toys7Encoder_p_tKF",
             "mangledName": "$s9MoneyHash13ExpressMethodV6encode2toys7Encoder_p_tKF",
             "moduleName": "MoneyHash",
-            "implicit": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ExpressMethod",
+                "printedName": "MoneyHash.ExpressMethod",
+                "usr": "s:9MoneyHash13ExpressMethodV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash13ExpressMethodV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9MoneyHash13ExpressMethodV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Struct",
@@ -15923,6 +16101,288 @@
             ],
             "usr": "s:s12IdentifiableP",
             "mangledName": "$ss12IdentifiableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MoneyHashShared",
+        "printedName": "MoneyHashShared",
+        "declKind": "Import",
+        "moduleName": "MoneyHash"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "IntentOperation",
+        "printedName": "IntentOperation",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "purchase",
+            "printedName": "purchase",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHash.IntentOperation.Type) -> MoneyHash.IntentOperation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IntentOperation",
+                    "printedName": "MoneyHash.IntentOperation",
+                    "usr": "s:9MoneyHash15IntentOperationO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHash.IntentOperation.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IntentOperation",
+                        "printedName": "MoneyHash.IntentOperation",
+                        "usr": "s:9MoneyHash15IntentOperationO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9MoneyHash15IntentOperationO8purchaseyA2CmF",
+            "mangledName": "$s9MoneyHash15IntentOperationO8purchaseyA2CmF",
+            "moduleName": "MoneyHash"
+          },
+          {
+            "kind": "Var",
+            "name": "authorize",
+            "printedName": "authorize",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHash.IntentOperation.Type) -> MoneyHash.IntentOperation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IntentOperation",
+                    "printedName": "MoneyHash.IntentOperation",
+                    "usr": "s:9MoneyHash15IntentOperationO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHash.IntentOperation.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IntentOperation",
+                        "printedName": "MoneyHash.IntentOperation",
+                        "usr": "s:9MoneyHash15IntentOperationO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9MoneyHash15IntentOperationO9authorizeyA2CmF",
+            "mangledName": "$s9MoneyHash15IntentOperationO9authorizeyA2CmF",
+            "moduleName": "MoneyHash"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IntentOperation",
+                "printedName": "MoneyHash.IntentOperation",
+                "usr": "s:9MoneyHash15IntentOperationO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IntentOperation",
+                "printedName": "MoneyHash.IntentOperation",
+                "usr": "s:9MoneyHash15IntentOperationO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash15IntentOperationO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s9MoneyHash15IntentOperationO2eeoiySbAC_ACtFZ",
+            "moduleName": "MoneyHash",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash15IntentOperationO9hashValueSivp",
+            "mangledName": "$s9MoneyHash15IntentOperationO9hashValueSivp",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash15IntentOperationO9hashValueSivg",
+                "mangledName": "$s9MoneyHash15IntentOperationO9hashValueSivg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash15IntentOperationO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s9MoneyHash15IntentOperationO4hash4intoys6HasherVz_tF",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "IntentOperation",
+                "printedName": "MoneyHash.IntentOperation",
+                "usr": "s:9MoneyHash15IntentOperationO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash15IntentOperationO4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9MoneyHash15IntentOperationO4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash15IntentOperationO6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9MoneyHash15IntentOperationO6encode2toys7Encoder_p_tKF",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9MoneyHash15IntentOperationO",
+        "mangledName": "$s9MoneyHash15IntentOperationO",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
           }
         ]
       },
@@ -16401,6 +16861,83 @@
                 "declKind": "Accessor",
                 "usr": "s:9MoneyHash13PaymentMethodV21requiredBillingFieldsSayAA10InputFieldVGSgvg",
                 "mangledName": "$s9MoneyHash13PaymentMethodV21requiredBillingFieldsSayAA10InputFieldVGSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "requiredShippingFields",
+            "printedName": "requiredShippingFields",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[MoneyHash.InputField]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[MoneyHash.InputField]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InputField",
+                        "printedName": "MoneyHash.InputField",
+                        "usr": "s:9MoneyHash10InputFieldV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash13PaymentMethodV22requiredShippingFieldsSayAA10InputFieldVGSgvp",
+            "mangledName": "$s9MoneyHash13PaymentMethodV22requiredShippingFieldsSayAA10InputFieldVGSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[MoneyHash.InputField]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[MoneyHash.InputField]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "InputField",
+                            "printedName": "MoneyHash.InputField",
+                            "usr": "s:9MoneyHash10InputFieldV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash13PaymentMethodV22requiredShippingFieldsSayAA10InputFieldVGSgvg",
+                "mangledName": "$s9MoneyHash13PaymentMethodV22requiredShippingFieldsSayAA10InputFieldVGSgvg",
                 "moduleName": "MoneyHash",
                 "implicit": true,
                 "accessorKind": "get"
@@ -22034,6 +22571,219 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "NativePayReceipt",
+        "printedName": "NativePayReceipt",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "receipt",
+            "printedName": "receipt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash16NativePayReceiptV7receiptSSvp",
+            "mangledName": "$s9MoneyHash16NativePayReceiptV7receiptSSvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash16NativePayReceiptV7receiptSSvg",
+                "mangledName": "$s9MoneyHash16NativePayReceiptV7receiptSSvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "receiptBillingData",
+            "printedName": "receiptBillingData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash16NativePayReceiptV18receiptBillingDataSDyS2SGSgvp",
+            "mangledName": "$s9MoneyHash16NativePayReceiptV18receiptBillingDataSDyS2SGSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash16NativePayReceiptV18receiptBillingDataSDyS2SGSgvg",
+                "mangledName": "$s9MoneyHash16NativePayReceiptV18receiptBillingDataSDyS2SGSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NativePayReceipt",
+                "printedName": "MoneyHash.NativePayReceipt",
+                "usr": "s:9MoneyHash16NativePayReceiptV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash16NativePayReceiptV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9MoneyHash16NativePayReceiptV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash16NativePayReceiptV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9MoneyHash16NativePayReceiptV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9MoneyHash16NativePayReceiptV",
+        "mangledName": "$s9MoneyHash16NativePayReceiptV",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -23668,1939 +24418,2037 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Intent.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Intent\/Intent.swift",
       "kind": "StringLiteral",
       "offset": 1183,
       "length": 9,
       "value": "\"is_live\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Intent.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Intent\/Intent.swift",
       "kind": "StringLiteral",
       "offset": 1243,
       "length": 17,
       "value": "\"expiration_date\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Intent.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Intent\/Intent.swift",
       "kind": "StringLiteral",
       "offset": 1183,
       "length": 9,
       "value": "\"is_live\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Intent.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Intent\/Intent.swift",
       "kind": "StringLiteral",
       "offset": 1243,
       "length": 17,
       "value": "\"expiration_date\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/StrokeAnimation.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/ProgressView\/StrokeAnimation.swift",
       "kind": "FloatLiteral",
       "offset": 317,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/MethodsResult.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/MethodsResult.swift",
       "kind": "StringLiteral",
       "offset": 1197,
       "length": 15,
       "value": "\"intentDetails\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/MethodsResult.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/MethodsResult.swift",
       "kind": "StringLiteral",
       "offset": 1236,
       "length": 15,
       "value": "\"intentMethods\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/MethodsResult.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/MethodsResult.swift",
       "kind": "StringLiteral",
       "offset": 1197,
       "length": 15,
       "value": "\"intentDetails\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/MethodsResult.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/MethodsResult.swift",
       "kind": "StringLiteral",
       "offset": 1236,
       "length": 15,
       "value": "\"intentMethods\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/MHLocale.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/MHLocale.swift",
       "kind": "StringLiteral",
       "offset": 187,
       "length": 4,
       "value": "\"ar\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/MHLocale.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/MHLocale.swift",
       "kind": "StringLiteral",
       "offset": 211,
       "length": 4,
       "value": "\"en\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/MHLocale.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/MHLocale.swift",
       "kind": "StringLiteral",
       "offset": 234,
       "length": 4,
       "value": "\"fr\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/MHLocale.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/MHLocale.swift",
       "kind": "StringLiteral",
       "offset": 187,
       "length": 4,
       "value": "\"ar\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/MHLocale.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/MHLocale.swift",
       "kind": "StringLiteral",
       "offset": 211,
       "length": 4,
       "value": "\"en\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/MHLocale.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/MHLocale.swift",
       "kind": "StringLiteral",
       "offset": 234,
       "length": 4,
       "value": "\"fr\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/ApplePayData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ApplePayData.swift",
       "kind": "StringLiteral",
       "offset": 1150,
       "length": 14,
       "value": "\"country_code\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/ApplePayData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ApplePayData.swift",
       "kind": "StringLiteral",
       "offset": 1191,
       "length": 13,
       "value": "\"merchant_id\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/ApplePayData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ApplePayData.swift",
       "kind": "StringLiteral",
       "offset": 1233,
       "length": 15,
       "value": "\"currency_code\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/ApplePayData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ApplePayData.swift",
       "kind": "StringLiteral",
       "offset": 1302,
       "length": 20,
       "value": "\"supported_networks\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/ApplePayData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ApplePayData.swift",
       "kind": "StringLiteral",
       "offset": 1150,
       "length": 14,
       "value": "\"country_code\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/ApplePayData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ApplePayData.swift",
       "kind": "StringLiteral",
       "offset": 1191,
       "length": 13,
       "value": "\"merchant_id\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/ApplePayData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ApplePayData.swift",
       "kind": "StringLiteral",
       "offset": 1233,
       "length": 15,
       "value": "\"currency_code\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/ApplePayData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ApplePayData.swift",
       "kind": "StringLiteral",
       "offset": 1302,
       "length": 20,
       "value": "\"supported_networks\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Extensions\/ViewExtention.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Extensions\/ViewExtention.swift",
       "kind": "BooleanLiteral",
       "offset": 195,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Discount.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Intent\/Discount.swift",
       "kind": "StringLiteral",
       "offset": 334,
       "length": 8,
       "value": "\"amount\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Discount.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Intent\/Discount.swift",
       "kind": "StringLiteral",
       "offset": 432,
       "length": 12,
       "value": "\"percentage\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Discount.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Intent\/Discount.swift",
       "kind": "StringLiteral",
       "offset": 334,
       "length": 8,
       "value": "\"amount\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Discount.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Intent\/Discount.swift",
       "kind": "StringLiteral",
       "offset": 432,
       "length": 12,
       "value": "\"percentage\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/CardBrands.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/CardBrands.swift",
       "kind": "StringLiteral",
       "offset": 392,
       "length": 7,
       "value": "\"brand\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/CardBrands.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/CardBrands.swift",
       "kind": "StringLiteral",
       "offset": 428,
       "length": 14,
       "value": "\"first6Digits\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/CardBrands.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/CardBrands.swift",
       "kind": "StringLiteral",
       "offset": 471,
       "length": 14,
       "value": "\"brandIconUrl\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/CardBrands.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/CardBrands.swift",
       "kind": "StringLiteral",
       "offset": 392,
       "length": 7,
       "value": "\"brand\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/CardBrands.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/CardBrands.swift",
       "kind": "StringLiteral",
       "offset": 428,
       "length": 14,
       "value": "\"first6Digits\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/CardBrands.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/CardBrands.swift",
       "kind": "StringLiteral",
       "offset": 471,
       "length": 14,
       "value": "\"brandIconUrl\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 1942,
       "length": 18,
       "value": "\"method_selection\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 1987,
       "length": 13,
       "value": "\"intent_form\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 2032,
       "length": 18,
       "value": "\"intent_processed\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 2095,
       "length": 33,
       "value": "\"transaction_waiting_user_action\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 2162,
       "length": 20,
       "value": "\"transaction_failed\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 2250,
       "length": 13,
       "value": "\"form_fields\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 2293,
       "length": 15,
       "value": "\"url_to_render\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 2337,
       "length": 16,
       "value": "\"saved_card_cvv\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 2379,
       "length": 12,
       "value": "\"native_pay\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 2425,
       "length": 21,
       "value": "\"card_intent_success\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 2479,
       "length": 20,
       "value": "\"card_intent_failed\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 1942,
       "length": 18,
       "value": "\"method_selection\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 1987,
       "length": 13,
       "value": "\"intent_form\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 2032,
       "length": 18,
       "value": "\"intent_processed\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 2095,
       "length": 33,
       "value": "\"transaction_waiting_user_action\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 2162,
       "length": 20,
       "value": "\"transaction_failed\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 2250,
       "length": 13,
       "value": "\"form_fields\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 2293,
       "length": 15,
       "value": "\"url_to_render\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 2337,
       "length": 16,
       "value": "\"saved_card_cvv\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 2379,
       "length": 12,
       "value": "\"native_pay\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 2425,
       "length": 21,
       "value": "\"card_intent_success\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 2479,
       "length": 20,
       "value": "\"card_intent_failed\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 5002,
       "length": 18,
       "value": "\"card_holder_name\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 5069,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 5110,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 5165,
       "length": 8,
       "value": "\"last_4\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 5222,
       "length": 17,
       "value": "\"payment_methods\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 5267,
       "length": 14,
       "value": "\"requires_cvv\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 5002,
       "length": 18,
       "value": "\"card_holder_name\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 5069,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 5110,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 5165,
       "length": 8,
       "value": "\"last_4\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 5222,
       "length": 17,
       "value": "\"payment_methods\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/State.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
       "offset": 5267,
       "length": 14,
       "value": "\"requires_cvv\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/BillingDetailFields.swift",
       "kind": "StringLiteral",
       "offset": 3059,
       "length": 13,
       "value": "\"optionsList\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/BillingDetailFields.swift",
       "kind": "StringLiteral",
       "offset": 3099,
       "length": 9,
       "value": "\"options\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/BillingDetailFields.swift",
       "kind": "StringLiteral",
       "offset": 3153,
       "length": 12,
       "value": "\"max_length\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/BillingDetailFields.swift",
       "kind": "StringLiteral",
       "offset": 3210,
       "length": 13,
       "value": "\"is_required\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/BillingDetailFields.swift",
       "kind": "StringLiteral",
       "offset": 3249,
       "length": 12,
       "value": "\"min_length\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/BillingDetailFields.swift",
       "kind": "StringLiteral",
       "offset": 3286,
       "length": 11,
       "value": "\"read_only\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/BillingDetailFields.swift",
       "kind": "StringLiteral",
       "offset": 3323,
       "length": 12,
       "value": "\"depends_on\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/BillingDetailFields.swift",
       "kind": "StringLiteral",
       "offset": 3059,
       "length": 13,
       "value": "\"optionsList\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/BillingDetailFields.swift",
       "kind": "StringLiteral",
       "offset": 3099,
       "length": 9,
       "value": "\"options\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/BillingDetailFields.swift",
       "kind": "StringLiteral",
       "offset": 3153,
       "length": 12,
       "value": "\"max_length\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/BillingDetailFields.swift",
       "kind": "StringLiteral",
       "offset": 3210,
       "length": 13,
       "value": "\"is_required\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/BillingDetailFields.swift",
       "kind": "StringLiteral",
       "offset": 3249,
       "length": 12,
       "value": "\"min_length\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/BillingDetailFields.swift",
       "kind": "StringLiteral",
       "offset": 3286,
       "length": 11,
       "value": "\"read_only\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/BillingDetailFields.swift",
       "kind": "StringLiteral",
       "offset": 3323,
       "length": 12,
       "value": "\"depends_on\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/BillingDetailFields.swift",
       "kind": "StringLiteral",
       "offset": 5436,
       "length": 6,
       "value": "\"text\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/BillingDetailFields.swift",
       "kind": "StringLiteral",
       "offset": 5464,
       "length": 7,
       "value": "\"email\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/BillingDetailFields.swift",
       "kind": "StringLiteral",
       "offset": 5499,
       "length": 14,
       "value": "\"phone_number\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/BillingDetailFields.swift",
       "kind": "StringLiteral",
       "offset": 5534,
       "length": 12,
       "value": "\"date_field\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/BillingDetailFields.swift",
       "kind": "StringLiteral",
       "offset": 5569,
       "length": 14,
       "value": "\"number_field\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/BillingDetailFields.swift",
       "kind": "StringLiteral",
       "offset": 5606,
       "length": 14,
       "value": "\"choice_field\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/BillingDetailFields.swift",
       "kind": "StringLiteral",
       "offset": 5436,
       "length": 6,
       "value": "\"text\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/BillingDetailFields.swift",
       "kind": "StringLiteral",
       "offset": 5464,
       "length": 7,
       "value": "\"email\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/BillingDetailFields.swift",
       "kind": "StringLiteral",
       "offset": 5499,
       "length": 14,
       "value": "\"phone_number\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/BillingDetailFields.swift",
       "kind": "StringLiteral",
       "offset": 5534,
       "length": 12,
       "value": "\"date_field\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/BillingDetailFields.swift",
       "kind": "StringLiteral",
       "offset": 5569,
       "length": 14,
       "value": "\"number_field\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/BillingDetailFields.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/BillingDetailFields.swift",
       "kind": "StringLiteral",
       "offset": 5606,
       "length": 14,
       "value": "\"choice_field\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/DI \/DependencyContainer.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/DI \/DependencyContainer.swift",
       "kind": "BooleanLiteral",
       "offset": 288,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/IntentDetails.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentDetails.swift",
       "kind": "StringLiteral",
       "offset": 4859,
       "length": 17,
       "value": "\"selected_method\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/IntentDetails.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentDetails.swift",
       "kind": "StringLiteral",
       "offset": 4899,
       "length": 15,
       "value": "\"walletBalance\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/IntentDetails.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentDetails.swift",
       "kind": "StringLiteral",
       "offset": 4963,
       "length": 14,
       "value": "\"productItems\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/IntentDetails.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentDetails.swift",
       "kind": "StringLiteral",
       "offset": 4859,
       "length": 17,
       "value": "\"selected_method\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/IntentDetails.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentDetails.swift",
       "kind": "StringLiteral",
       "offset": 4899,
       "length": 15,
       "value": "\"walletBalance\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/IntentDetails.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentDetails.swift",
       "kind": "StringLiteral",
       "offset": 4963,
       "length": 14,
       "value": "\"productItems\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/MHError.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/MHError.swift",
       "kind": "Array",
       "offset": 1444,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/MHError.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/MHError.swift",
       "kind": "StringLiteral",
       "offset": 1717,
       "length": 17,
       "value": "\"card_validation\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/MHError.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/MHError.swift",
       "kind": "StringLiteral",
       "offset": 1717,
       "length": 17,
       "value": "\"card_validation\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Intent\/Language.swift",
       "kind": "StringLiteral",
       "offset": 341,
       "length": 4,
       "value": "\"ar\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Intent\/Language.swift",
       "kind": "StringLiteral",
       "offset": 411,
       "length": 4,
       "value": "\"en\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Intent\/Language.swift",
       "kind": "StringLiteral",
       "offset": 479,
       "length": 4,
       "value": "\"fr\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Intent\/Language.swift",
       "kind": "StringLiteral",
       "offset": 620,
       "length": 4,
       "value": "\"ar\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Intent\/Language.swift",
       "kind": "StringLiteral",
       "offset": 648,
       "length": 4,
       "value": "\"en\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Intent\/Language.swift",
       "kind": "StringLiteral",
       "offset": 675,
       "length": 4,
       "value": "\"fr\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Intent\/Language.swift",
       "kind": "StringLiteral",
       "offset": 620,
       "length": 4,
       "value": "\"ar\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Intent\/Language.swift",
       "kind": "StringLiteral",
       "offset": 648,
       "length": 4,
       "value": "\"en\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Intent\/Language.swift",
       "kind": "StringLiteral",
       "offset": 675,
       "length": 4,
       "value": "\"fr\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Intent\/Language.swift",
       "kind": "StringLiteral",
       "offset": 341,
       "length": 4,
       "value": "\"ar\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Intent\/Language.swift",
       "kind": "StringLiteral",
       "offset": 411,
       "length": 4,
       "value": "\"en\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Intent\/Language.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Intent\/Language.swift",
       "kind": "StringLiteral",
       "offset": 479,
       "length": 4,
       "value": "\"fr\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/IntentType.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentType.swift",
       "kind": "StringLiteral",
       "offset": 386,
       "length": 9,
       "value": "\"payment\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/IntentType.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentType.swift",
       "kind": "StringLiteral",
       "offset": 455,
       "length": 8,
       "value": "\"payout\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/IntentType.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentType.swift",
       "kind": "StringLiteral",
       "offset": 386,
       "length": 9,
       "value": "\"payment\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/IntentType.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentType.swift",
       "kind": "StringLiteral",
       "offset": 455,
       "length": 8,
       "value": "\"payout\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
       "offset": 1975,
       "length": 18,
       "value": "\"first_six_digits\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
       "offset": 2024,
       "length": 18,
       "value": "\"last_four_digits\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
       "offset": 2069,
       "length": 13,
       "value": "\"card_scheme\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
       "offset": 2113,
       "length": 18,
       "value": "\"card_holder_name\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
       "offset": 2158,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
       "offset": 2199,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
       "offset": 2236,
       "length": 9,
       "value": "\"is_live\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
       "offset": 2273,
       "length": 14,
       "value": "\"access_token\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
       "offset": 2313,
       "length": 12,
       "value": "\"card_token\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
       "offset": 2367,
       "length": 11,
       "value": "\"save_card\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
       "offset": 1975,
       "length": 18,
       "value": "\"first_six_digits\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
       "offset": 2024,
       "length": 18,
       "value": "\"last_four_digits\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
       "offset": 2069,
       "length": 13,
       "value": "\"card_scheme\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
       "offset": 2113,
       "length": 18,
       "value": "\"card_holder_name\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
       "offset": 2158,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
       "offset": 2199,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
       "offset": 2236,
       "length": 9,
       "value": "\"is_live\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
       "offset": 2273,
       "length": 14,
       "value": "\"access_token\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
       "offset": 2313,
       "length": 12,
       "value": "\"card_token\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
       "offset": 2367,
       "length": 11,
       "value": "\"save_card\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/MethodType.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/MethodType.swift",
       "kind": "StringLiteral",
       "offset": 312,
       "length": 15,
       "value": "\"paymentMethod\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/MethodType.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/MethodType.swift",
       "kind": "StringLiteral",
       "offset": 396,
       "length": 15,
       "value": "\"expressMethod\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/MethodType.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/MethodType.swift",
       "kind": "StringLiteral",
       "offset": 477,
       "length": 14,
       "value": "\"payoutMethod\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/MethodType.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/MethodType.swift",
       "kind": "StringLiteral",
       "offset": 551,
       "length": 11,
       "value": "\"savedCard\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/MethodType.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/MethodType.swift",
       "kind": "StringLiteral",
       "offset": 634,
       "length": 17,
       "value": "\"customerBalance\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/MethodType.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/MethodType.swift",
       "kind": "StringLiteral",
       "offset": 312,
       "length": 15,
       "value": "\"paymentMethod\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/MethodType.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/MethodType.swift",
       "kind": "StringLiteral",
       "offset": 396,
       "length": 15,
       "value": "\"expressMethod\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/MethodType.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/MethodType.swift",
       "kind": "StringLiteral",
       "offset": 477,
       "length": 14,
       "value": "\"payoutMethod\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/MethodType.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/MethodType.swift",
       "kind": "StringLiteral",
       "offset": 551,
       "length": 11,
       "value": "\"savedCard\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/MethodType.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/MethodType.swift",
       "kind": "StringLiteral",
       "offset": 634,
       "length": 17,
       "value": "\"customerBalance\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/UIFields\/SecureTextFieldViewModel.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/UIFields\/SecureTextFieldViewModel.swift",
       "kind": "IntegerLiteral",
       "offset": 676,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/UIFields\/SecureTextFieldViewModel.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/UIFields\/SecureTextFieldViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 457,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/UIFields\/SecureTextFieldViewModel.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/UIFields\/SecureTextFieldViewModel.swift",
       "kind": "IntegerLiteral",
       "offset": 969,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/ProductItem.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ProductItem.swift",
       "kind": "StringLiteral",
       "offset": 1196,
       "length": 14,
       "value": "\"reference_id\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/ProductItem.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ProductItem.swift",
       "kind": "StringLiteral",
       "offset": 1196,
       "length": 14,
       "value": "\"reference_id\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/PayoutMethod.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/PayoutMethod.swift",
       "kind": "StringLiteral",
       "offset": 2198,
       "length": 12,
       "value": "\"isSelected\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/PayoutMethod.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/PayoutMethod.swift",
       "kind": "StringLiteral",
       "offset": 2240,
       "length": 7,
       "value": "\"icons\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/PayoutMethod.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/PayoutMethod.swift",
       "kind": "StringLiteral",
       "offset": 2302,
       "length": 23,
       "value": "\"confirmation_required\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/PayoutMethod.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/PayoutMethod.swift",
       "kind": "StringLiteral",
       "offset": 2198,
       "length": 12,
       "value": "\"isSelected\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/PayoutMethod.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/PayoutMethod.swift",
       "kind": "StringLiteral",
       "offset": 2240,
       "length": 7,
       "value": "\"icons\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/PayoutMethod.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/PayoutMethod.swift",
       "kind": "StringLiteral",
       "offset": 2302,
       "length": 23,
       "value": "\"confirmation_required\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/IntentMethods.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/IntentMethods.swift",
       "kind": "StringLiteral",
       "offset": 2031,
       "length": 19,
       "value": "\"customer_balances\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/IntentMethods.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/IntentMethods.swift",
       "kind": "StringLiteral",
       "offset": 2081,
       "length": 17,
       "value": "\"payment_methods\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/IntentMethods.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/IntentMethods.swift",
       "kind": "StringLiteral",
       "offset": 2129,
       "length": 17,
       "value": "\"express_methods\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/IntentMethods.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/IntentMethods.swift",
       "kind": "StringLiteral",
       "offset": 2173,
       "length": 13,
       "value": "\"saved_cards\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/IntentMethods.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/IntentMethods.swift",
       "kind": "StringLiteral",
       "offset": 2216,
       "length": 16,
       "value": "\"payout_methods\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/IntentMethods.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/IntentMethods.swift",
       "kind": "StringLiteral",
       "offset": 2031,
       "length": 19,
       "value": "\"customer_balances\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/IntentMethods.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/IntentMethods.swift",
       "kind": "StringLiteral",
       "offset": 2081,
       "length": 17,
       "value": "\"payment_methods\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/IntentMethods.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/IntentMethods.swift",
       "kind": "StringLiteral",
       "offset": 2129,
       "length": 17,
       "value": "\"express_methods\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/IntentMethods.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/IntentMethods.swift",
       "kind": "StringLiteral",
       "offset": 2173,
       "length": 13,
       "value": "\"saved_cards\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/IntentMethods.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/IntentMethods.swift",
       "kind": "StringLiteral",
       "offset": 2216,
       "length": 16,
       "value": "\"payout_methods\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressShapeLayer.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/ProgressView\/ProgressShapeLayer.swift",
       "kind": "StringLiteral",
       "offset": 374,
       "length": 18,
       "value": "\"MoneyHash.ProgressShapeLayer\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressShapeLayer.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/ProgressView\/ProgressShapeLayer.swift",
       "kind": "StringLiteral",
       "offset": 374,
       "length": 18,
       "value": "\"MoneyHash.ProgressShapeLayer\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/ExpressMethod.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/ExpressMethod.swift",
       "kind": "StringLiteral",
-      "offset": 1581,
+      "offset": 4715,
       "length": 12,
       "value": "\"isSelected\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/ExpressMethod.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/ExpressMethod.swift",
       "kind": "StringLiteral",
-      "offset": 1623,
+      "offset": 4757,
       "length": 7,
       "value": "\"icons\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/ExpressMethod.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/ExpressMethod.swift",
       "kind": "StringLiteral",
-      "offset": 1685,
+      "offset": 4819,
       "length": 23,
       "value": "\"confirmation_required\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/ExpressMethod.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/ExpressMethod.swift",
       "kind": "StringLiteral",
-      "offset": 1746,
+      "offset": 4880,
       "length": 25,
       "value": "\"required_billing_fields\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/ExpressMethod.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/ExpressMethod.swift",
       "kind": "StringLiteral",
-      "offset": 1581,
+      "offset": 4944,
+      "length": 26,
+      "value": "\"required_shipping_fields\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/ExpressMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 5000,
+      "length": 17,
+      "value": "\"native_pay_data\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/ExpressMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 4715,
       "length": 12,
       "value": "\"isSelected\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/ExpressMethod.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/ExpressMethod.swift",
       "kind": "StringLiteral",
-      "offset": 1623,
+      "offset": 4757,
       "length": 7,
       "value": "\"icons\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/ExpressMethod.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/ExpressMethod.swift",
       "kind": "StringLiteral",
-      "offset": 1685,
+      "offset": 4819,
       "length": 23,
       "value": "\"confirmation_required\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/ExpressMethod.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/ExpressMethod.swift",
       "kind": "StringLiteral",
-      "offset": 1746,
+      "offset": 4880,
       "length": 25,
       "value": "\"required_billing_fields\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/PaymentMethod.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/ExpressMethod.swift",
       "kind": "StringLiteral",
-      "offset": 1823,
+      "offset": 4944,
+      "length": 26,
+      "value": "\"required_shipping_fields\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/ExpressMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 5000,
+      "length": 17,
+      "value": "\"native_pay_data\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentOperation.swift",
+      "kind": "StringLiteral",
+      "offset": 286,
+      "length": 10,
+      "value": "\"purchase\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentOperation.swift",
+      "kind": "StringLiteral",
+      "offset": 322,
+      "length": 11,
+      "value": "\"authorize\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentOperation.swift",
+      "kind": "StringLiteral",
+      "offset": 286,
+      "length": 10,
+      "value": "\"purchase\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentOperation.swift",
+      "kind": "StringLiteral",
+      "offset": 322,
+      "length": 11,
+      "value": "\"authorize\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/PaymentMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 2027,
       "length": 12,
       "value": "\"isSelected\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/PaymentMethod.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/PaymentMethod.swift",
       "kind": "StringLiteral",
-      "offset": 1865,
+      "offset": 2069,
       "length": 7,
       "value": "\"icons\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/PaymentMethod.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/PaymentMethod.swift",
       "kind": "StringLiteral",
-      "offset": 1927,
+      "offset": 2131,
       "length": 23,
       "value": "\"confirmation_required\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/PaymentMethod.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/PaymentMethod.swift",
       "kind": "StringLiteral",
-      "offset": 1988,
+      "offset": 2192,
       "length": 25,
       "value": "\"required_billing_fields\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/PaymentMethod.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/PaymentMethod.swift",
       "kind": "StringLiteral",
-      "offset": 1823,
+      "offset": 2256,
+      "length": 26,
+      "value": "\"required_shipping_fields\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/PaymentMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 2027,
       "length": 12,
       "value": "\"isSelected\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/PaymentMethod.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/PaymentMethod.swift",
       "kind": "StringLiteral",
-      "offset": 1865,
+      "offset": 2069,
       "length": 7,
       "value": "\"icons\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/PaymentMethod.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/PaymentMethod.swift",
       "kind": "StringLiteral",
-      "offset": 1927,
+      "offset": 2131,
       "length": 23,
       "value": "\"confirmation_required\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/PaymentMethod.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/PaymentMethod.swift",
       "kind": "StringLiteral",
-      "offset": 1988,
+      "offset": 2192,
       "length": 25,
       "value": "\"required_billing_fields\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/PaymentMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 2256,
+      "length": 26,
+      "value": "\"required_shipping_fields\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
       "offset": 2611,
       "length": 8,
       "value": "\"last_4\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
       "offset": 2647,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
       "offset": 2688,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
       "offset": 2767,
       "length": 13,
       "value": "\"require_cvv\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
       "offset": 2806,
       "length": 12,
       "value": "\"cvv_config\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
       "offset": 2865,
       "length": 5,
       "value": "\"bin\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
       "offset": 2611,
       "length": 8,
       "value": "\"last_4\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
       "offset": 2647,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
       "offset": 2688,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
       "offset": 2767,
       "length": 13,
       "value": "\"require_cvv\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
       "offset": 2806,
       "length": 12,
       "value": "\"cvv_config\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
       "offset": 2865,
       "length": 5,
       "value": "\"bin\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 3386,
+      "offset": 3374,
       "length": 14,
       "value": "\"digits_count\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 3386,
+      "offset": 3374,
       "length": 14,
       "value": "\"digits_count\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Wrapers\/CardFieldType.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Wrapers\/CardFieldType.swift",
       "kind": "StringLiteral",
       "offset": 595,
       "length": 13,
       "value": "\"card_number\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Wrapers\/CardFieldType.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Wrapers\/CardFieldType.swift",
       "kind": "StringLiteral",
       "offset": 658,
       "length": 5,
       "value": "\"cvv\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Wrapers\/CardFieldType.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Wrapers\/CardFieldType.swift",
       "kind": "StringLiteral",
       "offset": 736,
       "length": 18,
       "value": "\"card_holder_name\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Wrapers\/CardFieldType.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Wrapers\/CardFieldType.swift",
       "kind": "StringLiteral",
       "offset": 825,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Wrapers\/CardFieldType.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Wrapers\/CardFieldType.swift",
       "kind": "StringLiteral",
       "offset": 908,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Wrapers\/CardFieldType.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Wrapers\/CardFieldType.swift",
       "kind": "StringLiteral",
       "offset": 595,
       "length": 13,
       "value": "\"card_number\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Wrapers\/CardFieldType.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Wrapers\/CardFieldType.swift",
       "kind": "StringLiteral",
       "offset": 658,
       "length": 5,
       "value": "\"cvv\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Wrapers\/CardFieldType.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Wrapers\/CardFieldType.swift",
       "kind": "StringLiteral",
       "offset": 736,
       "length": 18,
       "value": "\"card_holder_name\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Wrapers\/CardFieldType.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Wrapers\/CardFieldType.swift",
       "kind": "StringLiteral",
       "offset": 825,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Wrapers\/CardFieldType.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Wrapers\/CardFieldType.swift",
       "kind": "StringLiteral",
       "offset": 908,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 845,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1047,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1130,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1257,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1474,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1551,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1726,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 2343,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "StringLiteral",
       "offset": 649,
       "length": 16,
       "value": "\"MoneyHash.MHViewController\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/CardInputFieldState.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/CardInputFieldState.swift",
       "kind": "BooleanLiteral",
       "offset": 1020,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/CardInputFieldState.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/CardInputFieldState.swift",
       "kind": "BooleanLiteral",
       "offset": 1362,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/CardInputFieldState.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/CardInputFieldState.swift",
       "kind": "IntegerLiteral",
       "offset": 1382,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
       "offset": 3191,
       "length": 14,
       "value": "\"created_date\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
       "offset": 3276,
       "length": 17,
       "value": "\"amount_currency\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
       "offset": 3340,
       "length": 13,
       "value": "\"method_name\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
       "offset": 3381,
       "length": 14,
       "value": "\"billing_data\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
       "offset": 3424,
       "length": 15,
       "value": "\"custom_fields\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
       "offset": 3473,
       "length": 21,
       "value": "\"custom_form_answers\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
       "offset": 3532,
       "length": 25,
       "value": "\"external_action_message\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
       "offset": 3599,
       "length": 29,
       "value": "\"provider_transaction_fields\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
       "offset": 3191,
       "length": 14,
       "value": "\"created_date\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
       "offset": 3276,
       "length": 17,
       "value": "\"amount_currency\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
       "offset": 3340,
       "length": 13,
       "value": "\"method_name\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
       "offset": 3381,
       "length": 14,
       "value": "\"billing_data\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
       "offset": 3424,
       "length": 15,
       "value": "\"custom_fields\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
       "offset": 3473,
       "length": 21,
       "value": "\"custom_form_answers\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
       "offset": 3532,
       "length": 25,
       "value": "\"external_action_message\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/Transaction.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
       "offset": 3599,
       "length": 29,
       "value": "\"provider_transaction_fields\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/IntentStatus.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentStatus.swift",
       "kind": "StringLiteral",
       "offset": 374,
       "length": 11,
       "value": "\"PROCESSED\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/IntentStatus.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentStatus.swift",
       "kind": "StringLiteral",
       "offset": 461,
       "length": 13,
       "value": "\"UNPROCESSED\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/IntentStatus.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentStatus.swift",
       "kind": "StringLiteral",
       "offset": 535,
       "length": 14,
       "value": "\"TIME_EXPIRED\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/IntentStatus.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentStatus.swift",
       "kind": "StringLiteral",
       "offset": 609,
       "length": 8,
       "value": "\"CLOSED\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/IntentStatus.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentStatus.swift",
       "kind": "StringLiteral",
       "offset": 374,
       "length": 11,
       "value": "\"PROCESSED\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/IntentStatus.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentStatus.swift",
       "kind": "StringLiteral",
       "offset": 461,
       "length": 13,
       "value": "\"UNPROCESSED\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/IntentStatus.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentStatus.swift",
       "kind": "StringLiteral",
       "offset": 535,
       "length": 14,
       "value": "\"TIME_EXPIRED\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/IntentStatus.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentStatus.swift",
       "kind": "StringLiteral",
       "offset": 609,
       "length": 8,
       "value": "\"CLOSED\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Constant\/MHConstants.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
       "offset": 97,
-      "length": 7,
-      "value": "\"2.2.3\""
+      "length": 11,
+      "value": "\"2.1.6-dev\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Constant\/MHConstants.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 136,
+      "offset": 140,
       "length": 7,
       "value": "\"style\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Constant\/MHConstants.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 173,
+      "offset": 177,
       "length": 5,
       "value": "\"sdk\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Constant\/MHConstants.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 212,
+      "offset": 216,
       "length": 6,
       "value": "\"lang\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/TokenizeCardInfo.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/TokenizeCardInfo.swift",
       "kind": "StringLiteral",
       "offset": 1164,
       "length": 14,
       "value": "\"access_token\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/TokenizeCardInfo.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/TokenizeCardInfo.swift",
       "kind": "StringLiteral",
       "offset": 1201,
       "length": 9,
       "value": "\"is_live\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/TokenizeCardInfo.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/TokenizeCardInfo.swift",
       "kind": "StringLiteral",
       "offset": 1235,
       "length": 11,
       "value": "\"save_card\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/TokenizeCardInfo.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/TokenizeCardInfo.swift",
       "kind": "StringLiteral",
       "offset": 1288,
       "length": 20,
       "value": "\"save_card_checkbox\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/TokenizeCardInfo.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/TokenizeCardInfo.swift",
       "kind": "StringLiteral",
       "offset": 1164,
       "length": 14,
       "value": "\"access_token\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/TokenizeCardInfo.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/TokenizeCardInfo.swift",
       "kind": "StringLiteral",
       "offset": 1201,
       "length": 9,
       "value": "\"is_live\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/TokenizeCardInfo.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/TokenizeCardInfo.swift",
       "kind": "StringLiteral",
       "offset": 1235,
       "length": 11,
       "value": "\"save_card\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/TokenizeCardInfo.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/TokenizeCardInfo.swift",
       "kind": "StringLiteral",
       "offset": 1288,
       "length": 20,
       "value": "\"save_card_checkbox\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Services \/ApplePayService.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/NativePayReceipt.swift",
+      "kind": "StringLiteral",
+      "offset": 313,
+      "length": 9,
+      "value": "\"receipt\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/NativePayReceipt.swift",
+      "kind": "StringLiteral",
+      "offset": 357,
+      "length": 22,
+      "value": "\"receipt_billing_data\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/NativePayReceipt.swift",
+      "kind": "StringLiteral",
+      "offset": 313,
+      "length": 9,
+      "value": "\"receipt\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/NativePayReceipt.swift",
+      "kind": "StringLiteral",
+      "offset": 357,
+      "length": 22,
+      "value": "\"receipt_billing_data\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Services \/ApplePayService.swift",
       "kind": "BooleanLiteral",
-      "offset": 1820,
+      "offset": 1816,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/RenderStrategy.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/RenderStrategy.swift",
       "kind": "StringLiteral",
       "offset": 562,
       "length": 10,
       "value": "\"redirect\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/RenderStrategy.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/RenderStrategy.swift",
       "kind": "StringLiteral",
       "offset": 600,
       "length": 14,
       "value": "\"popup_iframe\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/RenderStrategy.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/RenderStrategy.swift",
       "kind": "StringLiteral",
       "offset": 637,
       "length": 8,
       "value": "\"iframe\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/RenderStrategy.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/RenderStrategy.swift",
       "kind": "StringLiteral",
       "offset": 666,
       "length": 6,
       "value": "\"none\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/RenderStrategy.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/RenderStrategy.swift",
       "kind": "StringLiteral",
       "offset": 562,
       "length": 10,
       "value": "\"redirect\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/RenderStrategy.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/RenderStrategy.swift",
       "kind": "StringLiteral",
       "offset": 600,
       "length": 14,
       "value": "\"popup_iframe\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/RenderStrategy.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/RenderStrategy.swift",
       "kind": "StringLiteral",
       "offset": 637,
       "length": 8,
       "value": "\"iframe\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/Models\/RenderStrategy.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/RenderStrategy.swift",
       "kind": "StringLiteral",
       "offset": 666,
       "length": 6,
       "value": "\"none\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/SecureTextField\/UIFields\/SecureTextField.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/UIFields\/SecureTextField.swift",
       "kind": "StringLiteral",
       "offset": 466,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressView.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/ProgressView\/ProgressView.swift",
       "kind": "BooleanLiteral",
       "offset": 2753,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressView.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/ProgressView\/ProgressView.swift",
       "kind": "StringLiteral",
       "offset": 163,
       "length": 12,
       "value": "\"MoneyHash.ProgressView\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/NativePayData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/NativePayData.swift",
       "kind": "StringLiteral",
       "offset": 825,
       "length": 11,
       "value": "\"apple_pay\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/NativePayData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/NativePayData.swift",
       "kind": "StringLiteral",
       "offset": 825,
       "length": 11,
       "value": "\"apple_pay\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/AmountData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/AmountData.swift",
       "kind": "StringLiteral",
       "offset": 1280,
       "length": 11,
       "value": "\"maxPayout\""
     },
     {
-      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Models\/AmountData.swift",
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/AmountData.swift",
       "kind": "StringLiteral",
       "offset": 1280,
       "length": 11,

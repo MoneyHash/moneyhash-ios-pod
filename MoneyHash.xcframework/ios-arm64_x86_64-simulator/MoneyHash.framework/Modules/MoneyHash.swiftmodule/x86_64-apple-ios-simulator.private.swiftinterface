@@ -182,20 +182,18 @@ public struct OptionItem : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public enum InputFieldType : Swift.Codable {
+public enum InputFieldType : Swift.String, Swift.Codable {
   case text
   case email
   case phoneNumber
   case select
   case number
   case date
-  public static func == (a: MoneyHash.InputFieldType, b: MoneyHash.InputFieldType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public func encode(to encoder: any Swift.Encoder) throws
-  public var hashValue: Swift.Int {
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
     get
   }
-  public init(from decoder: any Swift.Decoder) throws
 }
 public struct IntentDetails : Swift.Codable {
   public let selectedMethod: Swift.String?
@@ -446,16 +444,14 @@ public struct ExpressMethod : MoneyHash.MoneyHashMethod, Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
   public typealias ID = Swift.String?
 }
-public enum IntentOperation : Swift.Codable {
+public enum IntentOperation : Swift.String, Swift.Codable {
   case purchase
   case authorize
-  public static func == (a: MoneyHash.IntentOperation, b: MoneyHash.IntentOperation) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public func encode(to encoder: any Swift.Encoder) throws
-  public var hashValue: Swift.Int {
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
     get
   }
-  public init(from decoder: any Swift.Decoder) throws
 }
 public struct PaymentMethod : MoneyHash.MoneyHashMethod, Swift.Codable {
   public let id: Swift.String?
@@ -610,18 +606,16 @@ public struct NativePayReceipt : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public enum RenderStrategy : Swift.Codable {
+public enum RenderStrategy : Swift.String, Swift.Codable {
   case redirect
   case popupIFrame
   case iframe
   case none
-  public static func == (a: MoneyHash.RenderStrategy, b: MoneyHash.RenderStrategy) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public func encode(to encoder: any Swift.Encoder) throws
-  public var hashValue: Swift.Int {
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
     get
   }
-  public init(from decoder: any Swift.Decoder) throws
 }
 public struct CardFieldState : Swift.Codable {
   public let isValid: Swift.Bool
@@ -665,6 +659,7 @@ extension MoneyHash.Brand : Swift.Hashable {}
 extension MoneyHash.Brand : Swift.RawRepresentable {}
 extension MoneyHash.InputFieldType : Swift.Equatable {}
 extension MoneyHash.InputFieldType : Swift.Hashable {}
+extension MoneyHash.InputFieldType : Swift.RawRepresentable {}
 extension MoneyHash.ErrorType : Swift.Equatable {}
 extension MoneyHash.ErrorType : Swift.Hashable {}
 extension MoneyHash.ErrorType : Swift.RawRepresentable {}
@@ -679,6 +674,7 @@ extension MoneyHash.IntentMethodType : Swift.Hashable {}
 extension MoneyHash.IntentMethodType : Swift.RawRepresentable {}
 extension MoneyHash.IntentOperation : Swift.Equatable {}
 extension MoneyHash.IntentOperation : Swift.Hashable {}
+extension MoneyHash.IntentOperation : Swift.RawRepresentable {}
 extension MoneyHash.CardFieldType : Swift.Equatable {}
 extension MoneyHash.CardFieldType : Swift.Hashable {}
 extension MoneyHash.CardFieldType : Swift.RawRepresentable {}
@@ -689,3 +685,4 @@ extension MoneyHash.IntentStatus : Swift.Hashable {}
 extension MoneyHash.IntentStatus : Swift.RawRepresentable {}
 extension MoneyHash.RenderStrategy : Swift.Equatable {}
 extension MoneyHash.RenderStrategy : Swift.Hashable {}
+extension MoneyHash.RenderStrategy : Swift.RawRepresentable {}

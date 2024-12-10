@@ -1977,6 +1977,10 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "providerId"
     Type: "NSString * _Nullable"
+  - Name: "providerName"
+    PropertyKind: "Instance"
+    SwiftName: "providerName"
+    Type: "NSString * _Nullable"
   - Name: "redirect"
     PropertyKind: "Instance"
     SwiftName: "redirect"
@@ -1994,9 +1998,9 @@ Classes:
     SwiftName: "uuid"
     Type: "NSString * _Nullable"
   Methods:
-  - Selector: "initWithTransaction:redirect:nativePaymentData:formFields:formTitle:retry:iframeUrl:uuid:providerId:providerExtraData:providerApiName:cardTokenID:cardTokenData:paymentMethods:"
+  - Selector: "initWithTransaction:redirect:nativePaymentData:formFields:formTitle:retry:iframeUrl:uuid:providerId:providerExtraData:providerApiName:providerName:cardTokenID:cardTokenData:paymentMethods:"
     MethodKind: "Instance"
-    SwiftName: "init(transaction:redirect:nativePaymentData:formFields:formTitle:retry:iframeUrl:uuid:providerId:providerExtraData:providerApiName:cardTokenID:cardTokenData:paymentMethods:)"
+    SwiftName: "init(transaction:redirect:nativePaymentData:formFields:formTitle:retry:iframeUrl:uuid:providerId:providerExtraData:providerApiName:providerName:cardTokenID:cardTokenData:paymentMethods:)"
     Parameters:
     - Position: 0
       Type: "MHSTransaction * _Nullable"
@@ -2023,12 +2027,14 @@ Classes:
     - Position: 11
       Type: "NSString * _Nullable"
     - Position: 12
-      Type: "MHSCardTokenData * _Nullable"
+      Type: "NSString * _Nullable"
     - Position: 13
+      Type: "MHSCardTokenData * _Nullable"
+    - Position: 14
       Type: "NSArray<MHSIntentMethodItem *> * _Nullable"
-  - Selector: "doCopyTransaction:redirect:nativePaymentData:formFields:formTitle:retry:iframeUrl:uuid:providerId:providerExtraData:providerApiName:cardTokenID:cardTokenData:paymentMethods:"
+  - Selector: "doCopyTransaction:redirect:nativePaymentData:formFields:formTitle:retry:iframeUrl:uuid:providerId:providerExtraData:providerApiName:providerName:cardTokenID:cardTokenData:paymentMethods:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(transaction:redirect:nativePaymentData:formFields:formTitle:retry:iframeUrl:uuid:providerId:providerExtraData:providerApiName:cardTokenID:cardTokenData:paymentMethods:)"
+    SwiftName: "doCopy(transaction:redirect:nativePaymentData:formFields:formTitle:retry:iframeUrl:uuid:providerId:providerExtraData:providerApiName:providerName:cardTokenID:cardTokenData:paymentMethods:)"
     ResultType: "MHSIntentActionData * _Nonnull"
     Parameters:
     - Position: 0
@@ -2056,8 +2062,10 @@ Classes:
     - Position: 11
       Type: "NSString * _Nullable"
     - Position: 12
-      Type: "MHSCardTokenData * _Nullable"
+      Type: "NSString * _Nullable"
     - Position: 13
+      Type: "MHSCardTokenData * _Nullable"
+    - Position: 14
       Type: "NSArray<MHSIntentMethodItem *> * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
@@ -2120,6 +2128,18 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "nativePaymentData"
     Type: "MHSNativePaymentData * _Nullable"
+  - Name: "providerApiName"
+    PropertyKind: "Instance"
+    SwiftName: "providerApiName"
+    Type: "NSString * _Nullable"
+  - Name: "providerExtraData"
+    PropertyKind: "Instance"
+    SwiftName: "providerExtraData"
+    Type: "MHSProviderExtraData * _Nullable"
+  - Name: "providerName"
+    PropertyKind: "Instance"
+    SwiftName: "providerName"
+    Type: "NSString * _Nullable"
   - Name: "requiredBillingFields"
     PropertyKind: "Instance"
     SwiftName: "requiredBillingFields"
@@ -2133,9 +2153,9 @@ Classes:
     SwiftName: "useForExpressCheckout"
     Type: "MHSBoolean * _Nullable"
   Methods:
-  - Selector: "initWithConfirmationRequired:checkoutIcons:methodName:method:useForExpressCheckout:hasCustomizedLabel:methodHint:requiredBillingFields:requiredShippingFields:nativePaymentData:"
+  - Selector: "initWithConfirmationRequired:checkoutIcons:methodName:method:useForExpressCheckout:hasCustomizedLabel:methodHint:requiredBillingFields:requiredShippingFields:nativePaymentData:providerApiName:providerName:providerExtraData:"
     MethodKind: "Instance"
-    SwiftName: "init(confirmationRequired:checkoutIcons:methodName:method:useForExpressCheckout:hasCustomizedLabel:methodHint:requiredBillingFields:requiredShippingFields:nativePaymentData:)"
+    SwiftName: "init(confirmationRequired:checkoutIcons:methodName:method:useForExpressCheckout:hasCustomizedLabel:methodHint:requiredBillingFields:requiredShippingFields:nativePaymentData:providerApiName:providerName:providerExtraData:)"
     Parameters:
     - Position: 0
       Type: "MHSBoolean * _Nullable"
@@ -2157,9 +2177,15 @@ Classes:
       Type: "NSArray<MHSFieldItem *> * _Nullable"
     - Position: 9
       Type: "MHSNativePaymentData * _Nullable"
-  - Selector: "doCopyConfirmationRequired:checkoutIcons:methodName:method:useForExpressCheckout:hasCustomizedLabel:methodHint:requiredBillingFields:requiredShippingFields:nativePaymentData:"
+    - Position: 10
+      Type: "NSString * _Nullable"
+    - Position: 11
+      Type: "NSString * _Nullable"
+    - Position: 12
+      Type: "MHSProviderExtraData * _Nullable"
+  - Selector: "doCopyConfirmationRequired:checkoutIcons:methodName:method:useForExpressCheckout:hasCustomizedLabel:methodHint:requiredBillingFields:requiredShippingFields:nativePaymentData:providerApiName:providerName:providerExtraData:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(confirmationRequired:checkoutIcons:methodName:method:useForExpressCheckout:hasCustomizedLabel:methodHint:requiredBillingFields:requiredShippingFields:nativePaymentData:)"
+    SwiftName: "doCopy(confirmationRequired:checkoutIcons:methodName:method:useForExpressCheckout:hasCustomizedLabel:methodHint:requiredBillingFields:requiredShippingFields:nativePaymentData:providerApiName:providerName:providerExtraData:)"
     ResultType: "MHSIntentMethodItem * _Nonnull"
     Parameters:
     - Position: 0
@@ -2182,6 +2208,12 @@ Classes:
       Type: "NSArray<MHSFieldItem *> * _Nullable"
     - Position: 9
       Type: "MHSNativePaymentData * _Nullable"
+    - Position: 10
+      Type: "NSString * _Nullable"
+    - Position: 11
+      Type: "NSString * _Nullable"
+    - Position: 12
+      Type: "MHSProviderExtraData * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"
@@ -2199,6 +2231,222 @@ Classes:
     ResultType: "NSString * _Nonnull"
 - Name: "MHSIntentMethodItemCompanion"
   SwiftName: "IntentMethodItem.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "MHSProviderExtraData"
+  SwiftName: "ProviderExtraData"
+  Properties:
+  - Name: "stateCity"
+    PropertyKind: "Instance"
+    SwiftName: "stateCity"
+    Type: "NSDictionary<NSString *, NSArray<NSString *> *> * _Nullable"
+  - Name: "stateCityArea"
+    PropertyKind: "Instance"
+    SwiftName: "stateCityArea"
+    Type: "NSDictionary<NSString *, MHSState *> * _Nullable"
+  Methods:
+  - Selector: "initWithStateCity:stateCityArea:"
+    MethodKind: "Instance"
+    SwiftName: "init(stateCity:stateCityArea:)"
+    Parameters:
+    - Position: 0
+      Type: "NSDictionary<NSString *, NSArray<NSString *> *> * _Nullable"
+    - Position: 1
+      Type: "NSDictionary<NSString *, MHSState *> * _Nullable"
+  - Selector: "doCopyStateCity:stateCityArea:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(stateCity:stateCityArea:)"
+    ResultType: "MHSProviderExtraData * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSDictionary<NSString *, NSArray<NSString *> *> * _Nullable"
+    - Position: 1
+      Type: "NSDictionary<NSString *, MHSState *> * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "getCityAreasOptions"
+    MethodKind: "Instance"
+    SwiftName: "getCityAreasOptions()"
+    ResultType: "NSDictionary<NSString *, NSArray<MHSOptionItem *> *> * _Nonnull"
+  - Selector: "getStateCitiesOptions"
+    MethodKind: "Instance"
+    SwiftName: "getStateCitiesOptions()"
+    ResultType: "NSDictionary<NSString *, NSArray<MHSOptionItem *> *> * _Nonnull"
+  - Selector: "getStateCityOptionMapFromStateCity"
+    MethodKind: "Instance"
+    SwiftName: "getStateCityOptionMapFromStateCity()"
+    ResultType: "NSDictionary<NSString *, NSArray<MHSOptionItem *> *> * _Nonnull"
+  - Selector: "getStateOptions"
+    MethodKind: "Instance"
+    SwiftName: "getStateOptions()"
+    ResultType: "NSArray<MHSOptionItem *> * _Nonnull"
+  - Selector: "getStateOptionsFromStateCity"
+    MethodKind: "Instance"
+    SwiftName: "getStateOptionsFromStateCity()"
+    ResultType: "NSArray<MHSOptionItem *> * _Nonnull"
+- Name: "MHSProviderExtraDataCompanion"
+  SwiftName: "ProviderExtraData.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "MHSState"
+  SwiftName: "State"
+  Properties:
+  - Name: "cities"
+    PropertyKind: "Instance"
+    SwiftName: "cities"
+    Type: "NSDictionary<NSString *, MHSCity *> * _Nullable"
+  - Name: "code"
+    PropertyKind: "Instance"
+    SwiftName: "code"
+    Type: "NSString * _Nullable"
+  Methods:
+  - Selector: "initWithCode:cities:"
+    MethodKind: "Instance"
+    SwiftName: "init(code:cities:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "NSDictionary<NSString *, MHSCity *> * _Nullable"
+  - Selector: "doCopyCode:cities:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(code:cities:)"
+    ResultType: "MHSState * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "NSDictionary<NSString *, MHSCity *> * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "MHSStateCompanion"
+  SwiftName: "State.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "MHSCity"
+  SwiftName: "City"
+  Properties:
+  - Name: "areas"
+    PropertyKind: "Instance"
+    SwiftName: "areas"
+    Type: "NSDictionary<NSString *, MHSArea *> * _Nullable"
+  - Name: "code"
+    PropertyKind: "Instance"
+    SwiftName: "code"
+    Type: "NSString * _Nullable"
+  Methods:
+  - Selector: "initWithCode:areas:"
+    MethodKind: "Instance"
+    SwiftName: "init(code:areas:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "NSDictionary<NSString *, MHSArea *> * _Nullable"
+  - Selector: "doCopyCode:areas:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(code:areas:)"
+    ResultType: "MHSCity * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "NSDictionary<NSString *, MHSArea *> * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "MHSCityCompanion"
+  SwiftName: "City.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "MHSArea"
+  SwiftName: "Area"
+  Properties:
+  - Name: "code"
+    PropertyKind: "Instance"
+    SwiftName: "code"
+    Type: "NSString * _Nullable"
+  Methods:
+  - Selector: "initWithCode:"
+    MethodKind: "Instance"
+    SwiftName: "init(code:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+  - Selector: "doCopyCode:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(code:)"
+    ResultType: "MHSArea * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "MHSAreaCompanion"
+  SwiftName: "Area.Companion"
   Methods:
   - Selector: "serializer"
     MethodKind: "Instance"
@@ -2450,6 +2698,17 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
+  - Selector: "toInputFieldProviderName:providerApiName:providerExtraData:"
+    MethodKind: "Instance"
+    SwiftName: "toInputField(providerName:providerApiName:providerExtraData:)"
+    ResultType: "MHSInputField * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "MHSProviderExtraData * _Nullable"
   - Selector: "toInputFieldOptionsList:optionsMap:dependsOn:"
     MethodKind: "Instance"
     SwiftName: "toInputField(optionsList:optionsMap:dependsOn:)"
@@ -2685,49 +2944,6 @@ Classes:
     ResultType: "NSString * _Nonnull"
 - Name: "MHSCardTokenDataCompanion"
   SwiftName: "CardTokenData.Companion"
-  Methods:
-  - Selector: "serializer"
-    MethodKind: "Instance"
-    SwiftName: "serializer()"
-    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
-- Name: "MHSProviderExtraData"
-  SwiftName: "ProviderExtraData"
-  Properties:
-  - Name: "stateCity"
-    PropertyKind: "Instance"
-    SwiftName: "stateCity"
-    Type: "NSDictionary<NSString *, NSArray<NSString *> *> * _Nullable"
-  Methods:
-  - Selector: "initWithStateCity:"
-    MethodKind: "Instance"
-    SwiftName: "init(stateCity:)"
-    Parameters:
-    - Position: 0
-      Type: "NSDictionary<NSString *, NSArray<NSString *> *> * _Nullable"
-  - Selector: "doCopyStateCity:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(stateCity:)"
-    ResultType: "MHSProviderExtraData * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "NSDictionary<NSString *, NSArray<NSString *> *> * _Nullable"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-- Name: "MHSProviderExtraDataCompanion"
-  SwiftName: "ProviderExtraData.Companion"
   Methods:
   - Selector: "serializer"
     MethodKind: "Instance"
@@ -4349,10 +4565,18 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "formFields"
     Type: "MHSFormFields * _Nullable"
+  - Name: "providerApiName"
+    PropertyKind: "Instance"
+    SwiftName: "providerApiName"
+    Type: "NSString * _Nullable"
   - Name: "providerExtraData"
     PropertyKind: "Instance"
     SwiftName: "providerExtraData"
     Type: "MHSProviderExtraData * _Nullable"
+  - Name: "providerName"
+    PropertyKind: "Instance"
+    SwiftName: "providerName"
+    Type: "NSString * _Nullable"
   - Name: "redirect"
     PropertyKind: "Instance"
     SwiftName: "redirect"
@@ -4362,9 +4586,9 @@ Classes:
     SwiftName: "transaction"
     Type: "MHSPayoutTransactionData * _Nullable"
   Methods:
-  - Selector: "initWithTransaction:redirect:formFields:providerExtraData:cardTokenData:"
+  - Selector: "initWithTransaction:redirect:formFields:providerExtraData:providerApiName:providerName:cardTokenData:"
     MethodKind: "Instance"
-    SwiftName: "init(transaction:redirect:formFields:providerExtraData:cardTokenData:)"
+    SwiftName: "init(transaction:redirect:formFields:providerExtraData:providerApiName:providerName:cardTokenData:)"
     Parameters:
     - Position: 0
       Type: "MHSPayoutTransactionData * _Nullable"
@@ -4375,10 +4599,14 @@ Classes:
     - Position: 3
       Type: "MHSProviderExtraData * _Nullable"
     - Position: 4
+      Type: "NSString * _Nullable"
+    - Position: 5
+      Type: "NSString * _Nullable"
+    - Position: 6
       Type: "MHSCardTokenData * _Nullable"
-  - Selector: "doCopyTransaction:redirect:formFields:providerExtraData:cardTokenData:"
+  - Selector: "doCopyTransaction:redirect:formFields:providerExtraData:providerApiName:providerName:cardTokenData:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(transaction:redirect:formFields:providerExtraData:cardTokenData:)"
+    SwiftName: "doCopy(transaction:redirect:formFields:providerExtraData:providerApiName:providerName:cardTokenData:)"
     ResultType: "MHSPayoutActionData * _Nonnull"
     Parameters:
     - Position: 0
@@ -4390,6 +4618,10 @@ Classes:
     - Position: 3
       Type: "MHSProviderExtraData * _Nullable"
     - Position: 4
+      Type: "NSString * _Nullable"
+    - Position: 5
+      Type: "NSString * _Nullable"
+    - Position: 6
       Type: "MHSCardTokenData * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
@@ -7141,6 +7373,10 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "APPLE_PAY"
     Type: "NSString * _Nonnull"
+  - Name: "AREA_API_NAME_FILED"
+    PropertyKind: "Instance"
+    SwiftName: "AREA_API_NAME_FILED"
+    Type: "NSString * _Nonnull"
   - Name: "BASE_VAULT_FORM"
     PropertyKind: "Instance"
     SwiftName: "BASE_VAULT_FORM"
@@ -7152,6 +7388,10 @@ Classes:
   - Name: "CITY_API_NAME_FILED"
     PropertyKind: "Instance"
     SwiftName: "CITY_API_NAME_FILED"
+    Type: "NSString * _Nonnull"
+  - Name: "COUNTRY_API_NAME_FIELD"
+    PropertyKind: "Instance"
+    SwiftName: "COUNTRY_API_NAME_FIELD"
     Type: "NSString * _Nonnull"
   - Name: "CP_VERSION_HEADER"
     PropertyKind: "Instance"
@@ -9870,27 +10110,6 @@ Classes:
     MethodKind: "Class"
     SwiftName: "mapToChoicesList(_:)"
     ResultType: "NSArray<MHSOptionItem *> * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
-  - Selector: "toChoicesList:"
-    MethodKind: "Class"
-    SwiftName: "toChoicesList(_:)"
-    ResultType: "NSArray<MHSOptionItem *> * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "NSDictionary<NSString *, NSArray<NSString *> *> * _Nonnull"
-  - Selector: "toChoicesMap:"
-    MethodKind: "Class"
-    SwiftName: "toChoicesMap(_:)"
-    ResultType: "NSDictionary<NSString *, NSArray<MHSOptionItem *> *> * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "NSDictionary<NSString *, NSArray<NSString *> *> * _Nonnull"
-  - Selector: "toJsonObject:"
-    MethodKind: "Class"
-    SwiftName: "toJsonObject(_:)"
-    ResultType: "NSDictionary<NSString *, MHSKotlinx_serialization_jsonJsonElement *> * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSDictionary<NSString *, NSString *> * _Nonnull"

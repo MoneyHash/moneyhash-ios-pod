@@ -58,6 +58,7 @@ public struct ApplePayData : Swift.Codable {
   public let countryCode: Swift.String?
   public let merchantId: Swift.String?
   public let currencyCode: Swift.String?
+  public let supportedRegions: [Swift.String]?
   public let amount: Swift.Float?
   public let supportedNetworks: [Swift.String]?
   public func encode(to encoder: any Swift.Encoder) throws

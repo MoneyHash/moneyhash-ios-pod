@@ -2487,10 +2487,14 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "supportedNetworks"
     Type: "NSArray<NSString *> * _Nullable"
+  - Name: "supportedRegions"
+    PropertyKind: "Instance"
+    SwiftName: "supportedRegions"
+    Type: "NSArray<NSString *> * _Nullable"
   Methods:
-  - Selector: "initWithCountryCode:merchantId:currencyCode:amount:supportedNetworks:gateway:gatewayMerchantID:merchantName:"
+  - Selector: "initWithCountryCode:merchantId:currencyCode:supportedRegions:amount:supportedNetworks:gateway:gatewayMerchantID:merchantName:"
     MethodKind: "Instance"
-    SwiftName: "init(countryCode:merchantId:currencyCode:amount:supportedNetworks:gateway:gatewayMerchantID:merchantName:)"
+    SwiftName: "init(countryCode:merchantId:currencyCode:supportedRegions:amount:supportedNetworks:gateway:gatewayMerchantID:merchantName:)"
     Parameters:
     - Position: 0
       Type: "NSString * _Nullable"
@@ -2499,18 +2503,20 @@ Classes:
     - Position: 2
       Type: "NSString * _Nullable"
     - Position: 3
-      Type: "MHSDouble * _Nullable"
-    - Position: 4
       Type: "NSArray<NSString *> * _Nullable"
+    - Position: 4
+      Type: "MHSDouble * _Nullable"
     - Position: 5
-      Type: "NSString * _Nullable"
+      Type: "NSArray<NSString *> * _Nullable"
     - Position: 6
       Type: "NSString * _Nullable"
     - Position: 7
       Type: "NSString * _Nullable"
-  - Selector: "doCopyCountryCode:merchantId:currencyCode:amount:supportedNetworks:gateway:gatewayMerchantID:merchantName:"
+    - Position: 8
+      Type: "NSString * _Nullable"
+  - Selector: "doCopyCountryCode:merchantId:currencyCode:supportedRegions:amount:supportedNetworks:gateway:gatewayMerchantID:merchantName:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(countryCode:merchantId:currencyCode:amount:supportedNetworks:gateway:gatewayMerchantID:merchantName:)"
+    SwiftName: "doCopy(countryCode:merchantId:currencyCode:supportedRegions:amount:supportedNetworks:gateway:gatewayMerchantID:merchantName:)"
     ResultType: "MHSNativePaymentData * _Nonnull"
     Parameters:
     - Position: 0
@@ -2520,14 +2526,16 @@ Classes:
     - Position: 2
       Type: "NSString * _Nullable"
     - Position: 3
-      Type: "MHSDouble * _Nullable"
-    - Position: 4
       Type: "NSArray<NSString *> * _Nullable"
+    - Position: 4
+      Type: "MHSDouble * _Nullable"
     - Position: 5
-      Type: "NSString * _Nullable"
+      Type: "NSArray<NSString *> * _Nullable"
     - Position: 6
       Type: "NSString * _Nullable"
     - Position: 7
+      Type: "NSString * _Nullable"
+    - Position: 8
       Type: "NSString * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
@@ -5255,10 +5263,14 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "supportedNetworks"
     Type: "NSArray<NSString *> * _Nullable"
+  - Name: "supportedRegions"
+    PropertyKind: "Instance"
+    SwiftName: "supportedRegions"
+    Type: "NSArray<NSString *> * _Nullable"
   Methods:
-  - Selector: "initWithCountryCode:merchantId:currencyCode:amount:supportedNetworks:"
+  - Selector: "initWithCountryCode:merchantId:currencyCode:supportedRegions:amount:supportedNetworks:"
     MethodKind: "Instance"
-    SwiftName: "init(countryCode:merchantId:currencyCode:amount:supportedNetworks:)"
+    SwiftName: "init(countryCode:merchantId:currencyCode:supportedRegions:amount:supportedNetworks:)"
     Parameters:
     - Position: 0
       Type: "NSString * _Nullable"
@@ -5267,12 +5279,14 @@ Classes:
     - Position: 2
       Type: "NSString * _Nullable"
     - Position: 3
-      Type: "MHSDouble * _Nullable"
-    - Position: 4
       Type: "NSArray<NSString *> * _Nullable"
-  - Selector: "doCopyCountryCode:merchantId:currencyCode:amount:supportedNetworks:"
+    - Position: 4
+      Type: "MHSDouble * _Nullable"
+    - Position: 5
+      Type: "NSArray<NSString *> * _Nullable"
+  - Selector: "doCopyCountryCode:merchantId:currencyCode:supportedRegions:amount:supportedNetworks:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(countryCode:merchantId:currencyCode:amount:supportedNetworks:)"
+    SwiftName: "doCopy(countryCode:merchantId:currencyCode:supportedRegions:amount:supportedNetworks:)"
     ResultType: "MHSNativePayDataApplePayData * _Nonnull"
     Parameters:
     - Position: 0
@@ -5282,8 +5296,10 @@ Classes:
     - Position: 2
       Type: "NSString * _Nullable"
     - Position: 3
-      Type: "MHSDouble * _Nullable"
+      Type: "NSArray<NSString *> * _Nullable"
     - Position: 4
+      Type: "MHSDouble * _Nullable"
+    - Position: 5
       Type: "NSArray<NSString *> * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"

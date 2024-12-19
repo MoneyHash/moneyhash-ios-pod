@@ -1974,6 +1974,83 @@
           },
           {
             "kind": "Var",
+            "name": "supportedRegions",
+            "printedName": "supportedRegions",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash12ApplePayDataV16supportedRegionsSaySSGSgvp",
+            "mangledName": "$s9MoneyHash12ApplePayDataV16supportedRegionsSaySSGSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash12ApplePayDataV16supportedRegionsSaySSGSgvg",
+                "mangledName": "$s9MoneyHash12ApplePayDataV16supportedRegionsSaySSGSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "amount",
             "printedName": "amount",
             "children": [
@@ -24369,56 +24446,70 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ApplePayData.swift",
       "kind": "StringLiteral",
-      "offset": 1150,
+      "offset": 1306,
       "length": 14,
       "value": "\"country_code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ApplePayData.swift",
       "kind": "StringLiteral",
-      "offset": 1191,
+      "offset": 1347,
       "length": 13,
       "value": "\"merchant_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ApplePayData.swift",
       "kind": "StringLiteral",
-      "offset": 1233,
+      "offset": 1389,
       "length": 15,
       "value": "\"currency_code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ApplePayData.swift",
       "kind": "StringLiteral",
-      "offset": 1302,
+      "offset": 1437,
+      "length": 19,
+      "value": "\"supported_regions\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ApplePayData.swift",
+      "kind": "StringLiteral",
+      "offset": 1510,
       "length": 20,
       "value": "\"supported_networks\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ApplePayData.swift",
       "kind": "StringLiteral",
-      "offset": 1150,
+      "offset": 1306,
       "length": 14,
       "value": "\"country_code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ApplePayData.swift",
       "kind": "StringLiteral",
-      "offset": 1191,
+      "offset": 1347,
       "length": 13,
       "value": "\"merchant_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ApplePayData.swift",
       "kind": "StringLiteral",
-      "offset": 1233,
+      "offset": 1389,
       "length": 15,
       "value": "\"currency_code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ApplePayData.swift",
       "kind": "StringLiteral",
-      "offset": 1302,
+      "offset": 1437,
+      "length": 19,
+      "value": "\"supported_regions\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ApplePayData.swift",
+      "kind": "StringLiteral",
+      "offset": 1510,
       "length": 20,
       "value": "\"supported_networks\""
     },
@@ -26036,27 +26127,27 @@
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
       "offset": 97,
-      "length": 8,
-      "value": "\"2.2.10\""
+      "length": 12,
+      "value": "\"2.2.12-dev\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 137,
+      "offset": 141,
       "length": 7,
       "value": "\"style\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 174,
+      "offset": 178,
       "length": 5,
       "value": "\"sdk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 213,
+      "offset": 217,
       "length": 6,
       "value": "\"lang\""
     },

@@ -1316,9 +1316,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "void (^ _Nonnull)(MHSPayoutDetails * _Nullable, NSError * _Nullable)"
-  - Selector: "proceedWithPaymentMethodIntentId:selectedMethodId:methodType:metaData:completionHandler:"
+  - Selector: "proceedWithPaymentMethodIntentId:selectedMethodId:methodType:metaData:useWalletBalance:completionHandler:"
     MethodKind: "Instance"
-    SwiftName: "__proceedWithPaymentMethod(intentId:selectedMethodId:methodType:metaData:completionHandler:)"
+    SwiftName: "__proceedWithPaymentMethod(intentId:selectedMethodId:methodType:metaData:useWalletBalance:completionHandler:)"
     SwiftPrivate: true
     ResultType: "void"
     Parameters:
@@ -1331,6 +1331,8 @@ Classes:
     - Position: 3
       Type: "MHSMethodMetaData * _Nullable"
     - Position: 4
+      Type: "MHSBoolean * _Nullable"
+    - Position: 5
       Type: "void (^ _Nonnull)(MHSKotlinPair<MHSIntentMethods *, MHSPaymentInformation *> * _Nullable, NSError * _Nullable)"
   - Selector: "proceedWithPayoutMethodIntentId:selectedMethodId:methodType:metaData:completionHandler:"
     MethodKind: "Instance"
@@ -8905,10 +8907,14 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "resetIntent"
     Type: "MHSBoolean * _Nullable"
+  - Name: "useWalletBalance"
+    PropertyKind: "Instance"
+    SwiftName: "useWalletBalance"
+    Type: "MHSBoolean * _Nullable"
   Methods:
-  - Selector: "initWithPaymentMethod:payoutMethod:resetIntent:"
+  - Selector: "initWithPaymentMethod:payoutMethod:resetIntent:useWalletBalance:"
     MethodKind: "Instance"
-    SwiftName: "init(paymentMethod:payoutMethod:resetIntent:)"
+    SwiftName: "init(paymentMethod:payoutMethod:resetIntent:useWalletBalance:)"
     Parameters:
     - Position: 0
       Type: "NSString * _Nullable"
@@ -8916,9 +8922,11 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 2
       Type: "MHSBoolean * _Nullable"
-  - Selector: "doCopyPaymentMethod:payoutMethod:resetIntent:"
+    - Position: 3
+      Type: "MHSBoolean * _Nullable"
+  - Selector: "doCopyPaymentMethod:payoutMethod:resetIntent:useWalletBalance:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(paymentMethod:payoutMethod:resetIntent:)"
+    SwiftName: "doCopy(paymentMethod:payoutMethod:resetIntent:useWalletBalance:)"
     ResultType: "MHSUpdateMethodRequest * _Nonnull"
     Parameters:
     - Position: 0
@@ -8926,6 +8934,8 @@ Classes:
     - Position: 1
       Type: "NSString * _Nullable"
     - Position: 2
+      Type: "MHSBoolean * _Nullable"
+    - Position: 3
       Type: "MHSBoolean * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
@@ -8960,24 +8970,32 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "cvv"
     Type: "NSString * _Nullable"
+  - Name: "useWalletBalance"
+    PropertyKind: "Instance"
+    SwiftName: "useWalletBalance"
+    Type: "MHSBoolean * _Nullable"
   Methods:
-  - Selector: "initWithCardTokenId:cvv:"
+  - Selector: "initWithCardTokenId:cvv:useWalletBalance:"
     MethodKind: "Instance"
-    SwiftName: "init(cardTokenId:cvv:)"
+    SwiftName: "init(cardTokenId:cvv:useWalletBalance:)"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nullable"
-  - Selector: "doCopyCardTokenId:cvv:"
+    - Position: 2
+      Type: "MHSBoolean * _Nullable"
+  - Selector: "doCopyCardTokenId:cvv:useWalletBalance:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(cardTokenId:cvv:)"
+    SwiftName: "doCopy(cardTokenId:cvv:useWalletBalance:)"
     ResultType: "MHSUseCardTokenRequest * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "MHSBoolean * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"
@@ -13628,9 +13646,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__9__proceedWithPaymentMethodDispatchReceiver:intentId:selectedMethodId:methodType:metaData:suspendHandler:"
+  - Selector: "Skie_Suspend__9__proceedWithPaymentMethodDispatchReceiver:intentId:selectedMethodId:methodType:metaData:useWalletBalance:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__9__proceedWithPaymentMethod(dispatchReceiver:intentId:selectedMethodId:methodType:metaData:suspendHandler:)"
+    SwiftName: "Skie_Suspend__9__proceedWithPaymentMethod(dispatchReceiver:intentId:selectedMethodId:methodType:metaData:useWalletBalance:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -13645,6 +13663,8 @@ Classes:
     - Position: 4
       Type: "MHSMethodMetaData * _Nullable"
     - Position: 5
+      Type: "MHSBoolean * _Nullable"
+    - Position: 6
       Type: "MHSSkie_SuspendHandler * _Nonnull"
   - Selector: "Skie_Suspend__10__proceedWithPayoutMethodDispatchReceiver:intentId:selectedMethodId:methodType:metaData:suspendHandler:"
     MethodKind: "Class"
@@ -13972,9 +13992,9 @@ Classes:
       Type: "NSArray<MHSFeeItem *> * _Nonnull"
     - Position: 3
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__32__usePaymentMethodDispatchReceiver:intentId:methodName:suspendHandler:"
+  - Selector: "Skie_Suspend__32__usePaymentMethodDispatchReceiver:intentId:methodName:useWalletBalance:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__32__usePaymentMethod(dispatchReceiver:intentId:methodName:suspendHandler:)"
+    SwiftName: "Skie_Suspend__32__usePaymentMethod(dispatchReceiver:intentId:methodName:useWalletBalance:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -13985,6 +14005,8 @@ Classes:
     - Position: 2
       Type: "NSString * _Nonnull"
     - Position: 3
+      Type: "MHSBoolean * _Nullable"
+    - Position: 4
       Type: "MHSSkie_SuspendHandler * _Nonnull"
   - Selector: "Skie_Suspend__33__usePayoutMethodDispatchReceiver:intentId:methodName:suspendHandler:"
     MethodKind: "Class"
@@ -14000,9 +14022,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__34__useSavedCardDispatchReceiver:paymentIntentId:cardTokenId:cvv:suspendHandler:"
+  - Selector: "Skie_Suspend__34__useSavedCardDispatchReceiver:paymentIntentId:cardTokenId:cvv:useWalletBalance:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__34__useSavedCard(dispatchReceiver:paymentIntentId:cardTokenId:cvv:suspendHandler:)"
+    SwiftName: "Skie_Suspend__34__useSavedCard(dispatchReceiver:paymentIntentId:cardTokenId:cvv:useWalletBalance:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -14015,6 +14037,8 @@ Classes:
     - Position: 3
       Type: "NSString * _Nullable"
     - Position: 4
+      Type: "MHSBoolean * _Nullable"
+    - Position: 5
       Type: "MHSSkie_SuspendHandler * _Nonnull"
   - Selector: "Skie_Suspend__35__useSelfWalletDispatchReceiver:paymentIntentId:suspendHandler:"
     MethodKind: "Class"
@@ -15696,9 +15720,9 @@ Protocols:
       Type: "NSArray<MHSFeeItem *> * _Nonnull"
     - Position: 2
       Type: "void (^ _Nonnull)(MHSFeesResponse * _Nullable, NSError * _Nullable)"
-  - Selector: "usePaymentMethodIntentId:methodName:completionHandler:"
+  - Selector: "usePaymentMethodIntentId:methodName:useWalletBalance:completionHandler:"
     MethodKind: "Instance"
-    SwiftName: "__usePaymentMethod(intentId:methodName:completionHandler:)"
+    SwiftName: "__usePaymentMethod(intentId:methodName:useWalletBalance:completionHandler:)"
     SwiftPrivate: true
     ResultType: "void"
     Parameters:
@@ -15707,6 +15731,8 @@ Protocols:
     - Position: 1
       Type: "NSString * _Nonnull"
     - Position: 2
+      Type: "MHSBoolean * _Nullable"
+    - Position: 3
       Type: "void (^ _Nonnull)(MHSPaymentIntentData * _Nullable, NSError * _Nullable)"
   - Selector: "usePayoutMethodIntentId:methodName:completionHandler:"
     MethodKind: "Instance"
@@ -15720,9 +15746,9 @@ Protocols:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "void (^ _Nonnull)(MHSPayoutDetails * _Nullable, NSError * _Nullable)"
-  - Selector: "useSavedCardPaymentIntentId:cardTokenId:cvv:completionHandler:"
+  - Selector: "useSavedCardPaymentIntentId:cardTokenId:cvv:useWalletBalance:completionHandler:"
     MethodKind: "Instance"
-    SwiftName: "__useSavedCard(paymentIntentId:cardTokenId:cvv:completionHandler:)"
+    SwiftName: "__useSavedCard(paymentIntentId:cardTokenId:cvv:useWalletBalance:completionHandler:)"
     SwiftPrivate: true
     ResultType: "void"
     Parameters:
@@ -15733,6 +15759,8 @@ Protocols:
     - Position: 2
       Type: "NSString * _Nullable"
     - Position: 3
+      Type: "MHSBoolean * _Nullable"
+    - Position: 4
       Type: "void (^ _Nonnull)(MHSPaymentIntentData * _Nullable, NSError * _Nullable)"
   - Selector: "useSelfWalletPaymentIntentId:completionHandler:"
     MethodKind: "Instance"

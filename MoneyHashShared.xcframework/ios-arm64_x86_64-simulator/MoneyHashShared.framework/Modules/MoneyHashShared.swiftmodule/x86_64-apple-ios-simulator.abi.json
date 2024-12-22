@@ -41504,7 +41504,7 @@
           {
             "kind": "Function",
             "name": "proceedWithPaymentMethod",
-            "printedName": "proceedWithPaymentMethod(intentId:selectedMethodId:methodType:metaData:)",
+            "printedName": "proceedWithPaymentMethod(intentId:selectedMethodId:methodType:metaData:useWalletBalance:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -41557,11 +41557,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.KotlinBoolean?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KotlinBoolean",
+                    "printedName": "MoneyHashShared.KotlinBoolean",
+                    "usr": "c:objc(cs)MHSBoolean"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So17MHSPaymentUseCaseC15MoneyHashSharedE24proceedWithPaymentMethod8intentId08selectedjL010methodType8metaDataSo13MHSKotlinPairCySo16MHSIntentMethodsCSo0A11InformationCGSS_SSAC0jO0OSo013MHSMethodMetaQ0CSgtYaKF",
-            "mangledName": "$sSo17MHSPaymentUseCaseC15MoneyHashSharedE24proceedWithPaymentMethod8intentId08selectedjL010methodType8metaDataSo13MHSKotlinPairCySo16MHSIntentMethodsCSo0A11InformationCGSS_SSAC0jO0OSo013MHSMethodMetaQ0CSgtYaKF",
+            "usr": "s:So17MHSPaymentUseCaseC15MoneyHashSharedE24proceedWithPaymentMethod8intentId08selectedjL010methodType8metaData16useWalletBalanceSo13MHSKotlinPairCySo16MHSIntentMethodsCSo0A11InformationCGSS_SSAC0jO0OSo013MHSMethodMetaQ0CSgSo10MHSBooleanCSgtYaKF",
+            "mangledName": "$sSo17MHSPaymentUseCaseC15MoneyHashSharedE24proceedWithPaymentMethod8intentId08selectedjL010methodType8metaData16useWalletBalanceSo13MHSKotlinPairCySo16MHSIntentMethodsCSo0A11InformationCGSS_SSAC0jO0OSo013MHSMethodMetaQ0CSgSo10MHSBooleanCSgtYaKF",
             "moduleName": "MoneyHashShared",
             "intro_Macosx": "10.15",
             "intro_iOS": "13",
@@ -42966,7 +42980,7 @@
           {
             "kind": "Function",
             "name": "usePaymentMethod",
-            "printedName": "usePaymentMethod(intentId:methodName:)",
+            "printedName": "usePaymentMethod(intentId:methodName:useWalletBalance:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -42985,11 +42999,25 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.KotlinBoolean?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KotlinBoolean",
+                    "printedName": "MoneyHashShared.KotlinBoolean",
+                    "usr": "c:objc(cs)MHSBoolean"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So17MHSPaymentServiceP15MoneyHashSharedE16usePaymentMethod8intentId10methodNameSo0A10IntentDataCSS_SStYaKF",
-            "mangledName": "$sSo17MHSPaymentServiceP15MoneyHashSharedE16usePaymentMethod8intentId10methodNameSo0A10IntentDataCSS_SStYaKF",
+            "usr": "s:So17MHSPaymentServiceP15MoneyHashSharedE16usePaymentMethod8intentId10methodName0F13WalletBalanceSo0A10IntentDataCSS_SSSo10MHSBooleanCSgtYaKF",
+            "mangledName": "$sSo17MHSPaymentServiceP15MoneyHashSharedE16usePaymentMethod8intentId10methodName0F13WalletBalanceSo0A10IntentDataCSS_SSSo10MHSBooleanCSgtYaKF",
             "moduleName": "MoneyHashShared",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHashShared.PaymentService>",
             "sugared_genericSig": "<Self where Self : MoneyHashShared.PaymentService>",
@@ -43056,7 +43084,7 @@
           {
             "kind": "Function",
             "name": "useSavedCard",
-            "printedName": "useSavedCard(paymentIntentId:cardTokenId:cvv:)",
+            "printedName": "useSavedCard(paymentIntentId:cardTokenId:cvv:useWalletBalance:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -43089,11 +43117,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.KotlinBoolean?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KotlinBoolean",
+                    "printedName": "MoneyHashShared.KotlinBoolean",
+                    "usr": "c:objc(cs)MHSBoolean"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So17MHSPaymentServiceP15MoneyHashSharedE12useSavedCard15paymentIntentId09cardTokenK03cvvSo0aJ4DataCSS_S2SSgtYaKF",
-            "mangledName": "$sSo17MHSPaymentServiceP15MoneyHashSharedE12useSavedCard15paymentIntentId09cardTokenK03cvvSo0aJ4DataCSS_S2SSgtYaKF",
+            "usr": "s:So17MHSPaymentServiceP15MoneyHashSharedE12useSavedCard15paymentIntentId09cardTokenK03cvv0F13WalletBalanceSo0aJ4DataCSS_S2SSgSo10MHSBooleanCSgtYaKF",
+            "mangledName": "$sSo17MHSPaymentServiceP15MoneyHashSharedE12useSavedCard15paymentIntentId09cardTokenK03cvv0F13WalletBalanceSo0aJ4DataCSS_S2SSgSo10MHSBooleanCSgtYaKF",
             "moduleName": "MoneyHashShared",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHashShared.PaymentService>",
             "sugared_genericSig": "<Self where Self : MoneyHashShared.PaymentService>",

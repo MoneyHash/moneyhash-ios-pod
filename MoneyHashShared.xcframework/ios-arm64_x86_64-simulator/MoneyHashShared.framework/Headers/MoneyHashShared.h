@@ -3769,8 +3769,9 @@ __attribute__((swift_name("UpdateMethodRequest")))
 @property (readonly) NSString * _Nullable paymentMethod __attribute__((swift_name("paymentMethod")));
 @property (readonly) NSString * _Nullable payoutMethod __attribute__((swift_name("payoutMethod")));
 @property (readonly) MHSBoolean * _Nullable resetIntent __attribute__((swift_name("resetIntent")));
-- (instancetype)initWithPaymentMethod:(NSString * _Nullable)paymentMethod payoutMethod:(NSString * _Nullable)payoutMethod resetIntent:(MHSBoolean * _Nullable)resetIntent __attribute__((swift_name("init(paymentMethod:payoutMethod:resetIntent:)"))) __attribute__((objc_designated_initializer));
-- (MHSUpdateMethodRequest *)doCopyPaymentMethod:(NSString * _Nullable)paymentMethod payoutMethod:(NSString * _Nullable)payoutMethod resetIntent:(MHSBoolean * _Nullable)resetIntent __attribute__((swift_name("doCopy(paymentMethod:payoutMethod:resetIntent:)")));
+@property (readonly) MHSBoolean * _Nullable useWalletBalance __attribute__((swift_name("useWalletBalance")));
+- (instancetype)initWithPaymentMethod:(NSString * _Nullable)paymentMethod payoutMethod:(NSString * _Nullable)payoutMethod resetIntent:(MHSBoolean * _Nullable)resetIntent useWalletBalance:(MHSBoolean * _Nullable)useWalletBalance __attribute__((swift_name("init(paymentMethod:payoutMethod:resetIntent:useWalletBalance:)"))) __attribute__((objc_designated_initializer));
+- (MHSUpdateMethodRequest *)doCopyPaymentMethod:(NSString * _Nullable)paymentMethod payoutMethod:(NSString * _Nullable)payoutMethod resetIntent:(MHSBoolean * _Nullable)resetIntent useWalletBalance:(MHSBoolean * _Nullable)useWalletBalance __attribute__((swift_name("doCopy(paymentMethod:payoutMethod:resetIntent:useWalletBalance:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -3791,6 +3792,12 @@ __attribute__((swift_name("UpdateMethodRequest")))
  * @note annotations
  *   kotlinx.serialization.EncodeDefault(mode=Mode.NEVER)
  *   kotlinx.serialization.SerialName(value="reset_intent")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.EncodeDefault(mode=Mode.NEVER)
+ *   kotlinx.serialization.SerialName(value="partial_wallet")
 */
 @end
 
@@ -3815,8 +3822,9 @@ __attribute__((swift_name("UseCardTokenRequest")))
 @property (class, readonly, getter=companion) MHSUseCardTokenRequestCompanion *companion __attribute__((swift_name("companion")));
 @property (readonly) NSString *cardTokenId __attribute__((swift_name("cardTokenId")));
 @property (readonly) NSString * _Nullable cvv __attribute__((swift_name("cvv")));
-- (instancetype)initWithCardTokenId:(NSString *)cardTokenId cvv:(NSString * _Nullable)cvv __attribute__((swift_name("init(cardTokenId:cvv:)"))) __attribute__((objc_designated_initializer));
-- (MHSUseCardTokenRequest *)doCopyCardTokenId:(NSString *)cardTokenId cvv:(NSString * _Nullable)cvv __attribute__((swift_name("doCopy(cardTokenId:cvv:)")));
+@property (readonly) MHSBoolean * _Nullable useWalletBalance __attribute__((swift_name("useWalletBalance")));
+- (instancetype)initWithCardTokenId:(NSString *)cardTokenId cvv:(NSString * _Nullable)cvv useWalletBalance:(MHSBoolean * _Nullable)useWalletBalance __attribute__((swift_name("init(cardTokenId:cvv:useWalletBalance:)"))) __attribute__((objc_designated_initializer));
+- (MHSUseCardTokenRequest *)doCopyCardTokenId:(NSString *)cardTokenId cvv:(NSString * _Nullable)cvv useWalletBalance:(MHSBoolean * _Nullable)useWalletBalance __attribute__((swift_name("doCopy(cardTokenId:cvv:useWalletBalance:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -3830,6 +3838,12 @@ __attribute__((swift_name("UseCardTokenRequest")))
  * @note annotations
  *   kotlinx.serialization.EncodeDefault(mode=Mode.NEVER)
  *   kotlinx.serialization.SerialName(value="cvv")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.EncodeDefault(mode=Mode.NEVER)
+ *   kotlinx.serialization.SerialName(value="partial_wallet")
 */
 @end
 
@@ -5783,7 +5797,7 @@ __attribute__((swift_name("PaymentService")))
 /**
  * @note This method converts all Kotlin exceptions to errors.
 */
-- (void)usePaymentMethodIntentId:(NSString *)intentId methodName:(NSString *)methodName completionHandler:(void (^)(MHSPaymentIntentData * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("usePaymentMethod(intentId:methodName:completionHandler:)")));
+- (void)usePaymentMethodIntentId:(NSString *)intentId methodName:(NSString *)methodName useWalletBalance:(MHSBoolean * _Nullable)useWalletBalance completionHandler:(void (^)(MHSPaymentIntentData * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("usePaymentMethod(intentId:methodName:useWalletBalance:completionHandler:)")));
 
 /**
  * @note This method converts all Kotlin exceptions to errors.
@@ -5793,7 +5807,7 @@ __attribute__((swift_name("PaymentService")))
 /**
  * @note This method converts all Kotlin exceptions to errors.
 */
-- (void)useSavedCardPaymentIntentId:(NSString *)paymentIntentId cardTokenId:(NSString *)cardTokenId cvv:(NSString * _Nullable)cvv completionHandler:(void (^)(MHSPaymentIntentData * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("useSavedCard(paymentIntentId:cardTokenId:cvv:completionHandler:)")));
+- (void)useSavedCardPaymentIntentId:(NSString *)paymentIntentId cardTokenId:(NSString *)cardTokenId cvv:(NSString * _Nullable)cvv useWalletBalance:(MHSBoolean * _Nullable)useWalletBalance completionHandler:(void (^)(MHSPaymentIntentData * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("useSavedCard(paymentIntentId:cardTokenId:cvv:useWalletBalance:completionHandler:)")));
 
 /**
  * @note This method converts all Kotlin exceptions to errors.
@@ -6114,7 +6128,7 @@ __attribute__((swift_name("PaymentUseCase")))
 /**
  * @note This method converts all Kotlin exceptions to errors.
 */
-- (void)proceedWithPaymentMethodIntentId:(NSString *)intentId selectedMethodId:(NSString *)selectedMethodId methodType:(MHSMethodType *)methodType metaData:(MHSMethodMetaData * _Nullable)metaData completionHandler:(void (^)(MHSKotlinPair<MHSIntentMethods *, MHSPaymentInformation *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("proceedWithPaymentMethod(intentId:selectedMethodId:methodType:metaData:completionHandler:)")));
+- (void)proceedWithPaymentMethodIntentId:(NSString *)intentId selectedMethodId:(NSString *)selectedMethodId methodType:(MHSMethodType *)methodType metaData:(MHSMethodMetaData * _Nullable)metaData useWalletBalance:(MHSBoolean * _Nullable)useWalletBalance completionHandler:(void (^)(MHSKotlinPair<MHSIntentMethods *, MHSPaymentInformation *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("proceedWithPaymentMethod(intentId:selectedMethodId:methodType:metaData:useWalletBalance:completionHandler:)")));
 
 /**
  * @note This method converts all Kotlin exceptions to errors.
@@ -6763,9 +6777,9 @@ __attribute__((swift_name("__SkieSuspendWrappersKt")))
 + (void)Skie_Suspend__2__emitDispatchReceiver:(id<MHSKotlinx_coroutines_coreFlowCollector>)dispatchReceiver value:(id _Nullable)value suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__2__emit(dispatchReceiver:value:suspendHandler:)")));
 + (void)Skie_Suspend__30__updateDiscountDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver intentId:(NSString *)intentId discount:(MHSDiscountItem *)discount suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__30__updateDiscount(dispatchReceiver:intentId:discount:suspendHandler:)")));
 + (void)Skie_Suspend__31__updateFeesDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver intentId:(NSString *)intentId fees:(NSArray<MHSFeeItem *> *)fees suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__31__updateFees(dispatchReceiver:intentId:fees:suspendHandler:)")));
-+ (void)Skie_Suspend__32__usePaymentMethodDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver intentId:(NSString *)intentId methodName:(NSString *)methodName suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__32__usePaymentMethod(dispatchReceiver:intentId:methodName:suspendHandler:)")));
++ (void)Skie_Suspend__32__usePaymentMethodDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver intentId:(NSString *)intentId methodName:(NSString *)methodName useWalletBalance:(MHSBoolean * _Nullable)useWalletBalance suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__32__usePaymentMethod(dispatchReceiver:intentId:methodName:useWalletBalance:suspendHandler:)")));
 + (void)Skie_Suspend__33__usePayoutMethodDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver intentId:(NSString *)intentId methodName:(NSString *)methodName suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__33__usePayoutMethod(dispatchReceiver:intentId:methodName:suspendHandler:)")));
-+ (void)Skie_Suspend__34__useSavedCardDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver paymentIntentId:(NSString *)paymentIntentId cardTokenId:(NSString *)cardTokenId cvv:(NSString * _Nullable)cvv suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__34__useSavedCard(dispatchReceiver:paymentIntentId:cardTokenId:cvv:suspendHandler:)")));
++ (void)Skie_Suspend__34__useSavedCardDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver paymentIntentId:(NSString *)paymentIntentId cardTokenId:(NSString *)cardTokenId cvv:(NSString * _Nullable)cvv useWalletBalance:(MHSBoolean * _Nullable)useWalletBalance suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__34__useSavedCard(dispatchReceiver:paymentIntentId:cardTokenId:cvv:useWalletBalance:suspendHandler:)")));
 + (void)Skie_Suspend__35__useSelfWalletDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver paymentIntentId:(NSString *)paymentIntentId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__35__useSelfWallet(dispatchReceiver:paymentIntentId:suspendHandler:)")));
 + (void)Skie_Suspend__36__loginDispatchReceiver:(MHSAuthUseCase *)dispatchReceiver email:(NSString *)email password:(NSString *)password suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__36__login(dispatchReceiver:email:password:suspendHandler:)")));
 + (void)Skie_Suspend__37__loginDispatchReceiver:(id<MHSAuthService>)dispatchReceiver email:(NSString *)email password:(NSString *)password suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__37__login(dispatchReceiver:email:password:suspendHandler:)")));
@@ -6841,7 +6855,7 @@ __attribute__((swift_name("__SkieSuspendWrappersKt")))
 + (void)Skie_Suspend__97__writeShortDispatchReceiver:(id<MHSKtor_ioByteWriteChannel>)dispatchReceiver s:(int16_t)s suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__97__writeShort(dispatchReceiver:s:suspendHandler:)")));
 + (void)Skie_Suspend__98__writeSuspendSessionDispatchReceiver:(id<MHSKtor_ioByteWriteChannel>)dispatchReceiver visitor:(id<MHSKotlinSuspendFunction1>)visitor suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__98__writeSuspendSession(dispatchReceiver:visitor:suspendHandler:)")));
 + (void)Skie_Suspend__99__writeToDispatchReceiver:(MHSKtor_httpOutgoingContentWriteChannelContent *)dispatchReceiver channel:(id<MHSKtor_ioByteWriteChannel>)channel suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__99__writeTo(dispatchReceiver:channel:suspendHandler:)")));
-+ (void)Skie_Suspend__9__proceedWithPaymentMethodDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver intentId:(NSString *)intentId selectedMethodId:(NSString *)selectedMethodId methodType:(MHSMethodType *)methodType metaData:(MHSMethodMetaData * _Nullable)metaData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__9__proceedWithPaymentMethod(dispatchReceiver:intentId:selectedMethodId:methodType:metaData:suspendHandler:)")));
++ (void)Skie_Suspend__9__proceedWithPaymentMethodDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver intentId:(NSString *)intentId selectedMethodId:(NSString *)selectedMethodId methodType:(MHSMethodType *)methodType metaData:(MHSMethodMetaData * _Nullable)metaData useWalletBalance:(MHSBoolean * _Nullable)useWalletBalance suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__9__proceedWithPaymentMethod(dispatchReceiver:intentId:selectedMethodId:methodType:metaData:useWalletBalance:suspendHandler:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))

@@ -620,7 +620,8 @@ public struct NativePayReceipt : Swift.Codable {
 }
 public struct ApplePayConfiguration : Swift.Codable {
   public let collectibleBillingData: [MoneyHash.CollectibleBillingData]?
-  public init(collectibleBillingData: [MoneyHash.CollectibleBillingData]?)
+  public let merchantDisplayName: Swift.String
+  public init(collectibleBillingData: [MoneyHash.CollectibleBillingData]?, merchantDisplayName: Swift.String)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }

@@ -23112,9 +23112,54 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "merchantDisplayName",
+            "printedName": "merchantDisplayName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash21ApplePayConfigurationV19merchantDisplayNameSSvp",
+            "mangledName": "$s9MoneyHash21ApplePayConfigurationV19merchantDisplayNameSSvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash21ApplePayConfigurationV19merchantDisplayNameSSvg",
+                "mangledName": "$s9MoneyHash21ApplePayConfigurationV19merchantDisplayNameSSvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(collectibleBillingData:)",
+            "printedName": "init(collectibleBillingData:merchantDisplayName:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -23143,14 +23188,21 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:9MoneyHash21ApplePayConfigurationV22collectibleBillingDataACSayAA011CollectiblegH0OGSg_tcfc",
-            "mangledName": "$s9MoneyHash21ApplePayConfigurationV22collectibleBillingDataACSayAA011CollectiblegH0OGSg_tcfc",
+            "usr": "s:9MoneyHash21ApplePayConfigurationV22collectibleBillingData19merchantDisplayNameACSayAA011CollectiblegH0OGSg_SStcfc",
+            "mangledName": "$s9MoneyHash21ApplePayConfigurationV22collectibleBillingData19merchantDisplayNameACSayAA011CollectiblegH0OGSg_SStcfc",
             "moduleName": "MoneyHash",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "init_kind": "Designated"
           },
@@ -26613,7 +26665,7 @@
       "kind": "StringLiteral",
       "offset": 97,
       "length": 8,
-      "value": "\"2.2.14\""
+      "value": "\"2.2.15\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
@@ -26719,6 +26771,13 @@
       "offset": 357,
       "length": 22,
       "value": "\"receipt_billing_data\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ApplePayConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 2182,
+      "length": 9,
+      "value": "\"Payment\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Services \/ApplePayService.swift",

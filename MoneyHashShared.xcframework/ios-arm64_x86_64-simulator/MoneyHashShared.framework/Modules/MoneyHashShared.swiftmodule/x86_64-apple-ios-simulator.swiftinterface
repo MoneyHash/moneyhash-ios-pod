@@ -113,6 +113,8 @@ public enum Skie {
   public enum moneyhash_kmm__MoneyHashShared {
     public enum NativePayData {
     }
+    public enum CustomFieldValue {
+    }
     public enum CardState {
     }
     public enum IntentStateDetails {
@@ -411,7 +413,7 @@ extension MoneyHashShared.PaymentUseCase {
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func getMethods(currency: Swift.String, amount: MoneyHashShared.KotlinDouble?, customer: Swift.String?, flowId: Swift.String?, operation: MoneyHashShared.IntentOperation?) async throws -> MoneyHashShared.IntentMethods
+  public func getMethods(currency: Swift.String, amount: MoneyHashShared.KotlinDouble?, customer: Swift.String?, flowId: Swift.String?, operation: MoneyHashShared.IntentOperation?, customFields: [Swift.String : MoneyHashShared.CustomFieldValue]?) async throws -> MoneyHashShared.IntentMethods
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -477,7 +479,7 @@ extension MoneyHashShared.PaymentService {
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func getMethods(publicKey: Swift.String, currency: Swift.String, amount: MoneyHashShared.KotlinDouble?, customer: Swift.String?, flowId: Swift.String?, operation: MoneyHashShared.IntentOperation?) async throws -> MoneyHashShared.PaymentMethodResponse
+  public func getMethods(publicKey: Swift.String, currency: Swift.String, amount: MoneyHashShared.KotlinDouble?, customer: Swift.String?, flowId: Swift.String?, operation: MoneyHashShared.IntentOperation?, customFields: [Swift.String : MoneyHashShared.CustomFieldValue]?) async throws -> MoneyHashShared.PaymentMethodResponse
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -1458,6 +1460,44 @@ extension MoneyHashShared.Language {
 extension MoneyHashShared.__Language {
   public func toSwiftEnum() -> MoneyHashShared.Language
 }
+@frozen public enum LastUsedMethodType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case customerBalance
+  case saveCard
+  case paymentMethod
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var type: Swift.String {
+    get
+  }
+  public static var companion: MoneyHashShared.__LastUsedMethodType.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: MoneyHashShared.__LastUsedMethodType, result: inout MoneyHashShared.LastUsedMethodType?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.__LastUsedMethodType, result: inout MoneyHashShared.LastUsedMethodType?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.__LastUsedMethodType?) -> MoneyHashShared.LastUsedMethodType
+  public func _bridgeToObjectiveC() -> MoneyHashShared.__LastUsedMethodType
+  public typealias _ObjectiveCType = MoneyHashShared.__LastUsedMethodType
+  public typealias Companion = MoneyHashShared.__LastUsedMethodType.Companion
+  public static func == (a: MoneyHashShared.LastUsedMethodType, b: MoneyHashShared.LastUsedMethodType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [MoneyHashShared.LastUsedMethodType]
+  public static var allCases: [MoneyHashShared.LastUsedMethodType] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension MoneyHashShared.LastUsedMethodType {
+  public func toKotlinEnum() -> MoneyHashShared.__LastUsedMethodType
+}
+extension MoneyHashShared.__LastUsedMethodType {
+  public func toSwiftEnum() -> MoneyHashShared.LastUsedMethodType
+}
 @frozen public enum MethodType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
   case expressMethod
   case customerBalance
@@ -2144,6 +2184,22 @@ extension MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.NativePayData {
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.NativePayData.__Sealed where __Sealed : MoneyHashShared.NativePayData
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.NativePayData.__Sealed? where __Sealed : MoneyHashShared.NativePayData
+extension MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.CustomFieldValue {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case booleanValue(MoneyHashShared.CustomFieldValue.BooleanValue)
+    case doubleValue(MoneyHashShared.CustomFieldValue.DoubleValue)
+    case floatValue(MoneyHashShared.CustomFieldValue.FloatValue)
+    case intValue(MoneyHashShared.CustomFieldValue.IntValue)
+    case stringValue(MoneyHashShared.CustomFieldValue.StringValue)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.CustomFieldValue.__Sealed, b: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.CustomFieldValue.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.CustomFieldValue.__Sealed where __Sealed : MoneyHashShared.CustomFieldValue
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.CustomFieldValue.__Sealed? where __Sealed : MoneyHashShared.CustomFieldValue
 extension MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.CardState {
   @frozen public enum __Sealed : Swift.Hashable {
     case error(MoneyHashShared.CardState.Error)
@@ -2384,6 +2440,7 @@ public func getCurrentYearYY() -> Swift.Int32
 extension MoneyHashShared.KotlinKVariance : Swift.Sendable {}
 extension MoneyHashShared.DiscountType : Swift.Sendable {}
 extension MoneyHashShared.Language : Swift.Sendable {}
+extension MoneyHashShared.LastUsedMethodType : Swift.Sendable {}
 extension MoneyHashShared.MethodType : Swift.Sendable {}
 extension MoneyHashShared.IntentStatus : Swift.Sendable {}
 extension MoneyHashShared.IntentState : Swift.Sendable {}

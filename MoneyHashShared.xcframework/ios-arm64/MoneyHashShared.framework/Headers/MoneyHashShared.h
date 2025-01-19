@@ -6,7 +6,7 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class NSString, NSSet<ObjectType>, NSObject, NSNumber, NSMutableSet<ObjectType>, NSMutableDictionary<KeyType, ObjectType>, NSMutableArray<ObjectType>, NSError, NSDictionary<KeyType, ObjectType>, NSArray<ObjectType>, MHS__SkieTypeExportsKt, MHS__SkieSuspendWrappersKt, MHSWeak<T>, MHSVaultServiceImpl, MHSVaultDataCompanion, MHSVaultData, MHSVaultCollectNetworkErrorTokenizationError, MHSVaultCollectNetworkErrorMissingPublicKey, MHSVaultCollectNetworkError, MHSValidationExceptionRangeValueValidationException, MHSValidationExceptionNumericValidationException, MHSValidationExceptionLuhnException, MHSValidationExceptionLengthException, MHSValidationExceptionEmptyValueException, MHSValidationExceptionAlphabetValidationException, MHSValidationException, MHSUserCompanion, MHSUser, MHSUseSelfWalletRequestCompanion, MHSUseSelfWalletRequest, MHSUseCardTokenRequestCompanion, MHSUseCardTokenRequest, MHSUpdateMethodRequestCompanion, MHSUpdateMethodRequest, MHSUShort, MHSULong, MHSUInt, MHSUByte, MHSTypeCompanion, MHSType, MHSTransactionOperationCompanion, MHSTransactionOperation, MHSTransactionCompanion, MHSTransaction, MHSTokenizeCardInfoCompanion, MHSTokenizeCardInfo, MHSSubmitReceiptRequestCompanion, MHSSubmitReceiptRequest, MHSSubmitFormRequestCompanion, MHSSubmitFormRequest, MHSSubmitCardCVVCompanion, MHSSubmitCardCVV, MHSStatusResponseCompanion, MHSStatusResponse, MHSStatusCompanion, MHSStatus, MHSStateCompanion, MHSState, MHSSkie_SuspendResultSuccess, MHSSkie_SuspendResultError, MHSSkie_SuspendResultCanceled, MHSSkie_SuspendResult, MHSSkie_SuspendHandler, MHSSkie_CancellationHandler, MHSSkieKotlinStateFlow<T>, MHSSkieKotlinSharedFlow<T>, MHSSkieKotlinOptionalStateFlow<T>, MHSSkieKotlinOptionalSharedFlow<T>, MHSSkieKotlinOptionalMutableStateFlow<T>, MHSSkieKotlinOptionalMutableSharedFlow<T>, MHSSkieKotlinOptionalFlow<T>, MHSSkieKotlinMutableStateFlow<T>, MHSSkieKotlinMutableSharedFlow<T>, MHSSkieKotlinFlow<T>, MHSSkieColdFlowIterator<E>, MHSShort, MHSSecureTextFieldVM, MHSSecureTextFieldConfiguration, MHSSavedCardCompanion, MHSSavedCard, MHSSaveCardCheckboxCompanion, MHSSaveCardCheckbox, MHSSandboxUseCase, MHSSandboxServiceImpl, MHSSandboxModule, MHSRequestContentQuery, MHSRequestContentPath, MHSRequestContentHeader, MHSRequestContentBody<T>, MHSRequestContent, MHSRequestBuilder, MHSRenderStrategyCompanion, MHSRenderStrategy, MHSRedirectCompanion, MHSRedirect, MHSProviderExtraDataCompanion, MHSProviderExtraData, MHSProductItemCompanion, MHSProductItem, MHSPlatformKt, MHSPayoutTransactionDataCompanion, MHSPayoutTransactionData, MHSPayoutMethodCompanion, MHSPayoutMethod, MHSPayoutIntentDataCompanion, MHSPayoutIntentData, MHSPayoutDetailsCompanion, MHSPayoutDetails, MHSPayoutDataCompanion, MHSPayoutData, MHSPayoutActionDataCompanion, MHSPayoutActionData, MHSPaymentUseCase, MHSPaymentMethodsDataCompanion, MHSPaymentMethodsData, MHSPaymentMethodResponseCompanion, MHSPaymentMethodResponse, MHSPaymentMethodRequestCompanion, MHSPaymentMethodRequest, MHSPaymentMethodCompanion, MHSPaymentMethod, MHSPaymentIntentDataCompanion, MHSPaymentIntentData, MHSPaymentIntentCompanion, MHSPaymentIntent, MHSPaymentInformationModule, MHSPaymentInformationCompanion, MHSPaymentInformation, MHSOptionItemCompanion, MHSOptionItem, MHSOperationStatusCompanion, MHSOperationStatus, MHSOperationAmountCompanion, MHSOperationAmount, MHSNumber, MHSNetworkModule, MHSNetworkExceptions_iosKt, MHSNativePaymentDataCompanion, MHSNativePaymentData, MHSNativePayDataGooglePayCompanion, MHSNativePayDataGooglePay, MHSNativePayDataCompanion, MHSNativePayDataApplePayDataCompanion, MHSNativePayDataApplePayData, MHSNativePayData, MHSNativeFormRequestCompanion, MHSNativeFormRequest, MHSMutableSet<ObjectType>, MHSMutableDictionary<KeyType, ObjectType>, MHSMoneyHashUtils, MHSMoneyHashStore, MHSMethodsExtensionsKt, MHSMethodTypeCompanion, MHSMethodType, MHSMethodMetaData, MHSMHThrowableCompanion, MHSMHThrowable, MHSLong, MHSLoginRequestCompanion, MHSLoginRequest, MHSLoggerSeverity, MHSLocalizationManager, MHSLocaleCompanion, MHSLocale, MHSLanguageCompanion, MHSLanguage, MHSKtor_utilsWeekDayCompanion, MHSKtor_utilsWeekDay, MHSKtor_utilsTypeInfo, MHSKtor_utilsStringValuesBuilderImpl, MHSKtor_utilsPipelinePhase, MHSKtor_utilsPipeline<TSubject, TContext>, MHSKtor_utilsMonthCompanion, MHSKtor_utilsMonth, MHSKtor_utilsGMTDateCompanion, MHSKtor_utilsGMTDate, MHSKtor_utilsAttributeKey<T>, MHSKtor_ioMemoryCompanion, MHSKtor_ioMemory, MHSKtor_ioInputCompanion, MHSKtor_ioInput, MHSKtor_ioChunkBufferCompanion, MHSKtor_ioChunkBuffer, MHSKtor_ioByteReadPacketCompanion, MHSKtor_ioByteReadPacket, MHSKtor_ioBufferCompanion, MHSKtor_ioBuffer, MHSKtor_httpUrlCompanion, MHSKtor_httpUrl, MHSKtor_httpURLProtocolCompanion, MHSKtor_httpURLProtocol, MHSKtor_httpURLBuilderCompanion, MHSKtor_httpURLBuilder, MHSKtor_httpOutgoingContentWriteChannelContent, MHSKtor_httpOutgoingContentReadChannelContent, MHSKtor_httpOutgoingContentProtocolUpgrade, MHSKtor_httpOutgoingContentNoContent, MHSKtor_httpOutgoingContentByteArrayContent, MHSKtor_httpOutgoingContent, MHSKtor_httpHttpStatusCodeCompanion, MHSKtor_httpHttpStatusCode, MHSKtor_httpHttpProtocolVersionCompanion, MHSKtor_httpHttpProtocolVersion, MHSKtor_httpHttpMethodCompanion, MHSKtor_httpHttpMethod, MHSKtor_httpHeadersBuilder, MHSKtor_httpHeaderValueWithParametersCompanion, MHSKtor_httpHeaderValueWithParameters, MHSKtor_httpHeaderValueParam, MHSKtor_httpContentTypeCompanion, MHSKtor_httpContentType, MHSKtor_eventsEvents, MHSKtor_eventsEventDefinition<T>, MHSKtor_client_coreProxyConfig, MHSKtor_client_coreHttpSendPipelinePhases, MHSKtor_client_coreHttpSendPipeline, MHSKtor_client_coreHttpResponsePipelinePhases, MHSKtor_client_coreHttpResponsePipeline, MHSKtor_client_coreHttpResponseData, MHSKtor_client_coreHttpResponseContainer, MHSKtor_client_coreHttpResponse, MHSKtor_client_coreHttpRequestPipelinePhases, MHSKtor_client_coreHttpRequestPipeline, MHSKtor_client_coreHttpRequestData, MHSKtor_client_coreHttpRequestBuilderCompanion, MHSKtor_client_coreHttpRequestBuilder, MHSKtor_client_coreHttpReceivePipelinePhases, MHSKtor_client_coreHttpReceivePipeline, MHSKtor_client_coreHttpClientEngineConfig, MHSKtor_client_coreHttpClientConfig<T>, MHSKtor_client_coreHttpClientCallCompanion, MHSKtor_client_coreHttpClientCall, MHSKtor_client_coreHttpClient, MHSKtor_client_coreHttpCallValidatorConfig, MHSKtor_client_coreDefaultRequestDefaultRequestBuilder, MHSKtorClientFactory, MHSKotlinx_serialization_jsonJsonPrimitiveCompanion, MHSKotlinx_serialization_jsonJsonPrimitive, MHSKotlinx_serialization_jsonJsonNull, MHSKotlinx_serialization_jsonJsonElementCompanion, MHSKotlinx_serialization_jsonJsonElement, MHSKotlinx_serialization_jsonJsonDefault, MHSKotlinx_serialization_jsonJsonConfiguration, MHSKotlinx_serialization_jsonJson, MHSKotlinx_serialization_coreStructureKindOBJECT, MHSKotlinx_serialization_coreStructureKindMAP, MHSKotlinx_serialization_coreStructureKindLIST, MHSKotlinx_serialization_coreStructureKindCLASS, MHSKotlinx_serialization_coreStructureKind, MHSKotlinx_serialization_coreSerializersModule, MHSKotlinx_serialization_coreSerialKindENUM, MHSKotlinx_serialization_coreSerialKindCONTEXTUAL, MHSKotlinx_serialization_coreSerialKind, MHSKotlinx_serialization_corePrimitiveKindSTRING, MHSKotlinx_serialization_corePrimitiveKindSHORT, MHSKotlinx_serialization_corePrimitiveKindLONG, MHSKotlinx_serialization_corePrimitiveKindINT, MHSKotlinx_serialization_corePrimitiveKindFLOAT, MHSKotlinx_serialization_corePrimitiveKindDOUBLE, MHSKotlinx_serialization_corePrimitiveKindCHAR, MHSKotlinx_serialization_corePrimitiveKindBYTE, MHSKotlinx_serialization_corePrimitiveKindBOOLEAN, MHSKotlinx_serialization_corePrimitiveKind, MHSKotlinx_serialization_corePolymorphicKindSEALED, MHSKotlinx_serialization_corePolymorphicKindOPEN, MHSKotlinx_serialization_corePolymorphicKind, MHSKotlinx_coroutines_coreCoroutineDispatcherKey, MHSKotlinx_coroutines_coreCoroutineDispatcher, MHSKotlinUnit, MHSKotlinThrowable, MHSKotlinRuntimeException, MHSKotlinPair<A, B>, MHSKotlinNothing, MHSKotlinLongRangeCompanion, MHSKotlinLongRange, MHSKotlinLongProgressionCompanion, MHSKotlinLongProgression, MHSKotlinLongIterator, MHSKotlinKVariance, MHSKotlinKTypeProjectionCompanion, MHSKotlinKTypeProjection, MHSKotlinIllegalStateException, MHSKotlinException, MHSKotlinEnumCompanion, MHSKotlinEnum<E>, MHSKotlinCancellationException, MHSKotlinByteIterator, MHSKotlinByteArray, MHSKotlinArray<T>, MHSKotlinAbstractCoroutineContextKey<B, E>, MHSKotlinAbstractCoroutineContextElement, MHSKmmBaseService, MHSIntentStatusCompanion, MHSIntentStatus, MHSIntentStateDetailsUrlToRenderCompanion, MHSIntentStateDetailsUrlToRender, MHSIntentStateDetailsTransactionWaitingUserAction, MHSIntentStateDetailsTransactionFailedCompanion, MHSIntentStateDetailsTransactionFailed, MHSIntentStateDetailsSavedCardCVVCompanion, MHSIntentStateDetailsSavedCardCVV, MHSIntentStateDetailsNativePayCompanion, MHSIntentStateDetailsNativePay, MHSIntentStateDetailsMethodSelectionCompanion, MHSIntentStateDetailsMethodSelection, MHSIntentStateDetailsIntentProcessed, MHSIntentStateDetailsIntentForm, MHSIntentStateDetailsFormFieldsCompanion, MHSIntentStateDetailsFormFields, MHSIntentStateDetailsExpired, MHSIntentStateDetailsCompanion, MHSIntentStateDetailsClosed, MHSIntentStateDetailsCardIntentSuccessful, MHSIntentStateDetailsCardIntentFailed, MHSIntentStateDetails, MHSIntentStateCompanion, MHSIntentState, MHSIntentOperationCompanion, MHSIntentOperation, MHSIntentMethodsCompanion, MHSIntentMethods, MHSIntentMethodItemCompanion, MHSIntentMethodItem, MHSIntentActionDataCompanion, MHSIntentActionData, MHSInt, MHSInputFieldTypeCompanion, MHSInputFieldType, MHSInputFieldCompanion, MHSInputField, MHSIOSPlatform, MHSFormFieldsCompanion, MHSFormFields, MHSFloat, MHSFieldValue, MHSFieldTypeCompanion, MHSFieldType, MHSFieldItemCompanion, MHSFieldItem, MHSFeesResponseCompanion, MHSFeesResponse, MHSFeesDataCompanion, MHSFeesData, MHSFeeItemCompanion, MHSFeeItem, MHSExpressMethodCompanion, MHSExpressMethod, MHSExpireYearValidatorKt, MHSErrorTypeCompanion, MHSErrorType, MHSErrorMessagesDataCompanion, MHSErrorMessagesData, MHSErrorMapperKt, MHSErrorMapperConstants, MHSErrorMapper, MHSErrorInfoCompanion, MHSErrorInfo, MHSEnvironment, MHSDouble, MHSDiscountTypeCompanion, MHSDiscountType, MHSDiscountResponseCompanion, MHSDiscountResponse, MHSDiscountItemCompanion, MHSDiscountItem, MHSDiscountDataCompanion, MHSDiscountData, MHSDemoIntentResponseCompanion, MHSDemoIntentResponse, MHSDemoIntentItemCompanion, MHSDemoIntentItem, MHSDemoIntentDataCompanion, MHSDemoIntentData, MHSDeleteSavedCardRequestCompanion, MHSDeleteSavedCardRequest, MHSDefaultLogManager, MHSDataStateCompanion, MHSDataState<T>, MHSCvvConfigCompanion, MHSCvvConfig, MHSCustomerBalanceCompanion, MHSCustomerBalance, MHSConstants, MHSCommonExtensionsKt, MHSCityCompanion, MHSCity, MHSCardTokenDataCompanion, MHSCardTokenData, MHSCardStateUnknown, MHSCardStateSuccess, MHSCardStateFailed, MHSCardStateError, MHSCardState, MHSCardIntentResultCompanion, MHSCardIntentResult, MHSCardIntentCompanion, MHSCardIntent, MHSCardFormStateCompanion, MHSCardFormState, MHSCardFormExceptionsRedundantFieldTypeException, MHSCardFormExceptionsMissingFieldTypeException, MHSCardFormExceptionsInvalidFieldException, MHSCardFormExceptionsExpireDateIsInThePast, MHSCardFormExceptions, MHSCardFieldsCompanion, MHSCardFields, MHSCardFieldStateCompanion, MHSCardFieldState, MHSCardDetailsCompanion, MHSCardDetails, MHSCardDataCompanion, MHSCardData, MHSCardCollector, MHSCardBrandCompanion, MHSCardBrand, MHSCardActionDataCompanion, MHSCardActionData, MHSByte, MHSBrandSettingsModelCompanion, MHSBrandSettingsModel, MHSBrandSettingsDataCompanion, MHSBrandSettingsData, MHSBrandCompanion, MHSBrand, MHSBoolean, MHSBaseService, MHSBase, MHSAuthUseCase, MHSAuthTokenCompanion, MHSAuthToken, MHSAuthServiceImpl, MHSAuthResponseCompanion, MHSAuthResponse, MHSAuthModule, MHSAuthDataCompanion, MHSAuthData, MHSAreaCompanion, MHSArea, MHSAccessTokenResponseCompanion, MHSAccessTokenResponse, MHSAccessTokenDataCompanion, MHSAccessTokenData;
+@class NSString, NSSet<ObjectType>, NSObject, NSNumber, NSMutableSet<ObjectType>, NSMutableDictionary<KeyType, ObjectType>, NSMutableArray<ObjectType>, NSError, NSDictionary<KeyType, ObjectType>, NSArray<ObjectType>, MHS__SkieTypeExportsKt, MHS__SkieSuspendWrappersKt, MHSWeak<T>, MHSVaultServiceImpl, MHSVaultDataCompanion, MHSVaultData, MHSVaultCollectNetworkErrorTokenizationError, MHSVaultCollectNetworkErrorMissingPublicKey, MHSVaultCollectNetworkError, MHSValidationExceptionRangeValueValidationException, MHSValidationExceptionNumericValidationException, MHSValidationExceptionLuhnException, MHSValidationExceptionLengthException, MHSValidationExceptionEmptyValueException, MHSValidationExceptionAlphabetValidationException, MHSValidationException, MHSUserCompanion, MHSUser, MHSUseSelfWalletRequestCompanion, MHSUseSelfWalletRequest, MHSUseCardTokenRequestCompanion, MHSUseCardTokenRequest, MHSUpdateMethodRequestCompanion, MHSUpdateMethodRequest, MHSUShort, MHSULong, MHSUInt, MHSUByte, MHSTypeCompanion, MHSType, MHSTransactionOperationCompanion, MHSTransactionOperation, MHSTransactionCompanion, MHSTransaction, MHSTokenizeCardInfoCompanion, MHSTokenizeCardInfo, MHSSubmitReceiptRequestCompanion, MHSSubmitReceiptRequest, MHSSubmitFormRequestCompanion, MHSSubmitFormRequest, MHSSubmitCardCVVCompanion, MHSSubmitCardCVV, MHSStatusResponseCompanion, MHSStatusResponse, MHSStatusCompanion, MHSStatus, MHSStateCompanion, MHSState, MHSSkie_SuspendResultSuccess, MHSSkie_SuspendResultError, MHSSkie_SuspendResultCanceled, MHSSkie_SuspendResult, MHSSkie_SuspendHandler, MHSSkie_CancellationHandler, MHSSkieKotlinStateFlow<T>, MHSSkieKotlinSharedFlow<T>, MHSSkieKotlinOptionalStateFlow<T>, MHSSkieKotlinOptionalSharedFlow<T>, MHSSkieKotlinOptionalMutableStateFlow<T>, MHSSkieKotlinOptionalMutableSharedFlow<T>, MHSSkieKotlinOptionalFlow<T>, MHSSkieKotlinMutableStateFlow<T>, MHSSkieKotlinMutableSharedFlow<T>, MHSSkieKotlinFlow<T>, MHSSkieColdFlowIterator<E>, MHSShort, MHSSecureTextFieldVM, MHSSecureTextFieldConfiguration, MHSSavedCardCompanion, MHSSavedCard, MHSSaveCardCheckboxCompanion, MHSSaveCardCheckbox, MHSSandboxUseCase, MHSSandboxServiceImpl, MHSSandboxModule, MHSRequestContentQuery, MHSRequestContentPath, MHSRequestContentHeader, MHSRequestContentBody<T>, MHSRequestContent, MHSRequestBuilder, MHSRenderStrategyCompanion, MHSRenderStrategy, MHSRedirectCompanion, MHSRedirect, MHSProviderExtraDataCompanion, MHSProviderExtraData, MHSProductItemCompanion, MHSProductItem, MHSPlatformKt, MHSPayoutTransactionDataCompanion, MHSPayoutTransactionData, MHSPayoutMethodCompanion, MHSPayoutMethod, MHSPayoutIntentDataCompanion, MHSPayoutIntentData, MHSPayoutDetailsCompanion, MHSPayoutDetails, MHSPayoutDataCompanion, MHSPayoutData, MHSPayoutActionDataCompanion, MHSPayoutActionData, MHSPaymentUseCase, MHSPaymentMethodsDataCompanion, MHSPaymentMethodsData, MHSPaymentMethodResponseCompanion, MHSPaymentMethodResponse, MHSPaymentMethodRequestCompanion, MHSPaymentMethodRequest, MHSPaymentMethodCompanion, MHSPaymentMethod, MHSPaymentIntentDataCompanion, MHSPaymentIntentData, MHSPaymentIntentCompanion, MHSPaymentIntent, MHSPaymentInformationModule, MHSPaymentInformationCompanion, MHSPaymentInformation, MHSOptionItemCompanion, MHSOptionItem, MHSOperationStatusCompanion, MHSOperationStatus, MHSOperationAmountCompanion, MHSOperationAmount, MHSNumber, MHSNetworkModule, MHSNetworkExceptions_iosKt, MHSNativePaymentDataCompanion, MHSNativePaymentData, MHSNativePayDataGooglePayCompanion, MHSNativePayDataGooglePay, MHSNativePayDataCompanion, MHSNativePayDataApplePayDataCompanion, MHSNativePayDataApplePayData, MHSNativePayData, MHSNativeFormRequestCompanion, MHSNativeFormRequest, MHSMutableSet<ObjectType>, MHSMutableDictionary<KeyType, ObjectType>, MHSMoneyHashUtils, MHSMoneyHashStore, MHSMethodsExtensionsKt, MHSMethodTypeCompanion, MHSMethodType, MHSMethodMetaData, MHSMHThrowableCompanion, MHSMHThrowable, MHSLong, MHSLoginRequestCompanion, MHSLoginRequest, MHSLoggerSeverity, MHSLocalizationManager, MHSLocaleCompanion, MHSLocale, MHSLastUsedMethodTypeCompanion, MHSLastUsedMethodType, MHSLastUsedMethodCompanion, MHSLastUsedMethod, MHSLanguageCompanion, MHSLanguage, MHSKtor_utilsWeekDayCompanion, MHSKtor_utilsWeekDay, MHSKtor_utilsTypeInfo, MHSKtor_utilsStringValuesBuilderImpl, MHSKtor_utilsPipelinePhase, MHSKtor_utilsPipeline<TSubject, TContext>, MHSKtor_utilsMonthCompanion, MHSKtor_utilsMonth, MHSKtor_utilsGMTDateCompanion, MHSKtor_utilsGMTDate, MHSKtor_utilsAttributeKey<T>, MHSKtor_ioMemoryCompanion, MHSKtor_ioMemory, MHSKtor_ioInputCompanion, MHSKtor_ioInput, MHSKtor_ioChunkBufferCompanion, MHSKtor_ioChunkBuffer, MHSKtor_ioByteReadPacketCompanion, MHSKtor_ioByteReadPacket, MHSKtor_ioBufferCompanion, MHSKtor_ioBuffer, MHSKtor_httpUrlCompanion, MHSKtor_httpUrl, MHSKtor_httpURLProtocolCompanion, MHSKtor_httpURLProtocol, MHSKtor_httpURLBuilderCompanion, MHSKtor_httpURLBuilder, MHSKtor_httpOutgoingContentWriteChannelContent, MHSKtor_httpOutgoingContentReadChannelContent, MHSKtor_httpOutgoingContentProtocolUpgrade, MHSKtor_httpOutgoingContentNoContent, MHSKtor_httpOutgoingContentByteArrayContent, MHSKtor_httpOutgoingContent, MHSKtor_httpHttpStatusCodeCompanion, MHSKtor_httpHttpStatusCode, MHSKtor_httpHttpProtocolVersionCompanion, MHSKtor_httpHttpProtocolVersion, MHSKtor_httpHttpMethodCompanion, MHSKtor_httpHttpMethod, MHSKtor_httpHeadersBuilder, MHSKtor_httpHeaderValueWithParametersCompanion, MHSKtor_httpHeaderValueWithParameters, MHSKtor_httpHeaderValueParam, MHSKtor_httpContentTypeCompanion, MHSKtor_httpContentType, MHSKtor_eventsEvents, MHSKtor_eventsEventDefinition<T>, MHSKtor_client_coreProxyConfig, MHSKtor_client_coreHttpSendPipelinePhases, MHSKtor_client_coreHttpSendPipeline, MHSKtor_client_coreHttpResponsePipelinePhases, MHSKtor_client_coreHttpResponsePipeline, MHSKtor_client_coreHttpResponseData, MHSKtor_client_coreHttpResponseContainer, MHSKtor_client_coreHttpResponse, MHSKtor_client_coreHttpRequestPipelinePhases, MHSKtor_client_coreHttpRequestPipeline, MHSKtor_client_coreHttpRequestData, MHSKtor_client_coreHttpRequestBuilderCompanion, MHSKtor_client_coreHttpRequestBuilder, MHSKtor_client_coreHttpReceivePipelinePhases, MHSKtor_client_coreHttpReceivePipeline, MHSKtor_client_coreHttpClientEngineConfig, MHSKtor_client_coreHttpClientConfig<T>, MHSKtor_client_coreHttpClientCallCompanion, MHSKtor_client_coreHttpClientCall, MHSKtor_client_coreHttpClient, MHSKtor_client_coreHttpCallValidatorConfig, MHSKtor_client_coreDefaultRequestDefaultRequestBuilder, MHSKtorClientFactory, MHSKotlinx_serialization_jsonJsonPrimitiveCompanion, MHSKotlinx_serialization_jsonJsonPrimitive, MHSKotlinx_serialization_jsonJsonNull, MHSKotlinx_serialization_jsonJsonElementCompanion, MHSKotlinx_serialization_jsonJsonElement, MHSKotlinx_serialization_jsonJsonDefault, MHSKotlinx_serialization_jsonJsonConfiguration, MHSKotlinx_serialization_jsonJson, MHSKotlinx_serialization_coreStructureKindOBJECT, MHSKotlinx_serialization_coreStructureKindMAP, MHSKotlinx_serialization_coreStructureKindLIST, MHSKotlinx_serialization_coreStructureKindCLASS, MHSKotlinx_serialization_coreStructureKind, MHSKotlinx_serialization_coreSerializersModule, MHSKotlinx_serialization_coreSerialKindENUM, MHSKotlinx_serialization_coreSerialKindCONTEXTUAL, MHSKotlinx_serialization_coreSerialKind, MHSKotlinx_serialization_corePrimitiveKindSTRING, MHSKotlinx_serialization_corePrimitiveKindSHORT, MHSKotlinx_serialization_corePrimitiveKindLONG, MHSKotlinx_serialization_corePrimitiveKindINT, MHSKotlinx_serialization_corePrimitiveKindFLOAT, MHSKotlinx_serialization_corePrimitiveKindDOUBLE, MHSKotlinx_serialization_corePrimitiveKindCHAR, MHSKotlinx_serialization_corePrimitiveKindBYTE, MHSKotlinx_serialization_corePrimitiveKindBOOLEAN, MHSKotlinx_serialization_corePrimitiveKind, MHSKotlinx_serialization_corePolymorphicKindSEALED, MHSKotlinx_serialization_corePolymorphicKindOPEN, MHSKotlinx_serialization_corePolymorphicKind, MHSKotlinx_coroutines_coreCoroutineDispatcherKey, MHSKotlinx_coroutines_coreCoroutineDispatcher, MHSKotlinUnit, MHSKotlinThrowable, MHSKotlinRuntimeException, MHSKotlinPair<A, B>, MHSKotlinNothing, MHSKotlinLongRangeCompanion, MHSKotlinLongRange, MHSKotlinLongProgressionCompanion, MHSKotlinLongProgression, MHSKotlinLongIterator, MHSKotlinKVariance, MHSKotlinKTypeProjectionCompanion, MHSKotlinKTypeProjection, MHSKotlinIllegalStateException, MHSKotlinException, MHSKotlinEnumCompanion, MHSKotlinEnum<E>, MHSKotlinCancellationException, MHSKotlinByteIterator, MHSKotlinByteArray, MHSKotlinArray<T>, MHSKotlinAbstractCoroutineContextKey<B, E>, MHSKotlinAbstractCoroutineContextElement, MHSKmmBaseService, MHSIntentStatusCompanion, MHSIntentStatus, MHSIntentStateDetailsUrlToRenderCompanion, MHSIntentStateDetailsUrlToRender, MHSIntentStateDetailsTransactionWaitingUserAction, MHSIntentStateDetailsTransactionFailedCompanion, MHSIntentStateDetailsTransactionFailed, MHSIntentStateDetailsSavedCardCVVCompanion, MHSIntentStateDetailsSavedCardCVV, MHSIntentStateDetailsNativePayCompanion, MHSIntentStateDetailsNativePay, MHSIntentStateDetailsMethodSelectionCompanion, MHSIntentStateDetailsMethodSelection, MHSIntentStateDetailsIntentProcessed, MHSIntentStateDetailsIntentForm, MHSIntentStateDetailsFormFieldsCompanion, MHSIntentStateDetailsFormFields, MHSIntentStateDetailsExpired, MHSIntentStateDetailsCompanion, MHSIntentStateDetailsClosed, MHSIntentStateDetailsCardIntentSuccessful, MHSIntentStateDetailsCardIntentFailed, MHSIntentStateDetails, MHSIntentStateCompanion, MHSIntentState, MHSIntentOperationCompanion, MHSIntentOperation, MHSIntentMethodsCompanion, MHSIntentMethods, MHSIntentMethodItemCompanion, MHSIntentMethodItem, MHSIntentActionDataCompanion, MHSIntentActionData, MHSInt, MHSInputFieldTypeCompanion, MHSInputFieldType, MHSInputFieldCompanion, MHSInputField, MHSIOSPlatform, MHSFormFieldsCompanion, MHSFormFields, MHSFloat, MHSFieldValue, MHSFieldTypeCompanion, MHSFieldType, MHSFieldItemCompanion, MHSFieldItem, MHSFeesResponseCompanion, MHSFeesResponse, MHSFeesDataCompanion, MHSFeesData, MHSFeeItemCompanion, MHSFeeItem, MHSExpressMethodCompanion, MHSExpressMethod, MHSExpireYearValidatorKt, MHSErrorTypeCompanion, MHSErrorType, MHSErrorMessagesDataCompanion, MHSErrorMessagesData, MHSErrorMapperKt, MHSErrorMapperConstants, MHSErrorMapper, MHSErrorInfoCompanion, MHSErrorInfo, MHSEnvironment, MHSDouble, MHSDiscountTypeCompanion, MHSDiscountType, MHSDiscountResponseCompanion, MHSDiscountResponse, MHSDiscountItemCompanion, MHSDiscountItem, MHSDiscountDataCompanion, MHSDiscountData, MHSDemoIntentResponseCompanion, MHSDemoIntentResponse, MHSDemoIntentItemCompanion, MHSDemoIntentItem, MHSDemoIntentDataCompanion, MHSDemoIntentData, MHSDeleteSavedCardRequestCompanion, MHSDeleteSavedCardRequest, MHSDefaultLogManager, MHSDataStateCompanion, MHSDataState<T>, MHSCvvConfigCompanion, MHSCvvConfig, MHSCustomerBalanceCompanion, MHSCustomerBalance, MHSCustomFieldValueStringValueCompanion, MHSCustomFieldValueStringValue, MHSCustomFieldValueSerializer, MHSCustomFieldValueIntValueCompanion, MHSCustomFieldValueIntValue, MHSCustomFieldValueFloatValueCompanion, MHSCustomFieldValueFloatValue, MHSCustomFieldValueDoubleValueCompanion, MHSCustomFieldValueDoubleValue, MHSCustomFieldValueCompanion, MHSCustomFieldValueBooleanValueCompanion, MHSCustomFieldValueBooleanValue, MHSCustomFieldValue, MHSConstants, MHSCommonExtensionsKt, MHSCityCompanion, MHSCity, MHSCardTokenDataCompanion, MHSCardTokenData, MHSCardStateUnknown, MHSCardStateSuccess, MHSCardStateFailed, MHSCardStateError, MHSCardState, MHSCardIntentResultCompanion, MHSCardIntentResult, MHSCardIntentCompanion, MHSCardIntent, MHSCardFormStateCompanion, MHSCardFormState, MHSCardFormExceptionsRedundantFieldTypeException, MHSCardFormExceptionsMissingFieldTypeException, MHSCardFormExceptionsInvalidFieldException, MHSCardFormExceptionsExpireDateIsInThePast, MHSCardFormExceptions, MHSCardFieldsCompanion, MHSCardFields, MHSCardFieldStateCompanion, MHSCardFieldState, MHSCardDetailsCompanion, MHSCardDetails, MHSCardDataCompanion, MHSCardData, MHSCardCollector, MHSCardBrandCompanion, MHSCardBrand, MHSCardActionDataCompanion, MHSCardActionData, MHSByte, MHSBrandSettingsModelCompanion, MHSBrandSettingsModel, MHSBrandSettingsDataCompanion, MHSBrandSettingsData, MHSBrandCompanion, MHSBrand, MHSBoolean, MHSBaseService, MHSBase, MHSAuthUseCase, MHSAuthTokenCompanion, MHSAuthToken, MHSAuthServiceImpl, MHSAuthResponseCompanion, MHSAuthResponse, MHSAuthModule, MHSAuthDataCompanion, MHSAuthData, MHSAreaCompanion, MHSArea, MHSAccessTokenResponseCompanion, MHSAccessTokenResponse, MHSAccessTokenDataCompanion, MHSAccessTokenData;
 
 @protocol NSCopying, MHSVaultService, MHSTextFormatter, MHSStrings, MHSSkie_DispatcherDelegate, MHSSandboxService, MHSPlatform, MHSPaymentService, MHSLoggerManager, MHSKtor_utilsStringValuesBuilder, MHSKtor_utilsStringValues, MHSKtor_utilsAttributes, MHSKtor_ioReadSession, MHSKtor_ioObjectPool, MHSKtor_ioCloseable, MHSKtor_ioByteWriteChannel, MHSKtor_ioByteReadChannel, MHSKtor_httpParametersBuilder, MHSKtor_httpParameters, MHSKtor_httpHttpMessageBuilder, MHSKtor_httpHttpMessage, MHSKtor_httpHeaders, MHSKtor_client_coreHttpRequest, MHSKtor_client_coreHttpClientPlugin, MHSKtor_client_coreHttpClientEngineCapability, MHSKtor_client_coreHttpClientEngine, MHSKotlinx_serialization_jsonJsonNamingStrategy, MHSKotlinx_serialization_coreStringFormat, MHSKotlinx_serialization_coreSerializersModuleCollector, MHSKotlinx_serialization_coreSerializationStrategy, MHSKotlinx_serialization_coreSerialFormat, MHSKotlinx_serialization_coreSerialDescriptor, MHSKotlinx_serialization_coreKSerializer, MHSKotlinx_serialization_coreEncoder, MHSKotlinx_serialization_coreDeserializationStrategy, MHSKotlinx_serialization_coreDecoder, MHSKotlinx_serialization_coreCompositeEncoder, MHSKotlinx_serialization_coreCompositeDecoder, MHSKotlinx_coroutines_coreStateFlow, MHSKotlinx_coroutines_coreSharedFlow, MHSKotlinx_coroutines_coreSelectInstance, MHSKotlinx_coroutines_coreSelectClause2, MHSKotlinx_coroutines_coreSelectClause1, MHSKotlinx_coroutines_coreSelectClause0, MHSKotlinx_coroutines_coreSelectClause, MHSKotlinx_coroutines_coreRunnable, MHSKotlinx_coroutines_coreParentJob, MHSKotlinx_coroutines_coreMutableStateFlow, MHSKotlinx_coroutines_coreMutableSharedFlow, MHSKotlinx_coroutines_coreJob, MHSKotlinx_coroutines_coreFlowCollector, MHSKotlinx_coroutines_coreFlow, MHSKotlinx_coroutines_coreDisposableHandle, MHSKotlinx_coroutines_coreCoroutineScope, MHSKotlinx_coroutines_coreChildJob, MHSKotlinx_coroutines_coreChildHandle, MHSKotlinSuspendFunction2, MHSKotlinSuspendFunction1, MHSKotlinSequence, MHSKotlinOpenEndRange, MHSKotlinMapEntry, MHSKotlinKType, MHSKotlinKDeclarationContainer, MHSKotlinKClassifier, MHSKotlinKClass, MHSKotlinKAnnotatedElement, MHSKotlinIterator, MHSKotlinIterable, MHSKotlinFunction, MHSKotlinCoroutineContextKey, MHSKotlinCoroutineContextElement, MHSKotlinCoroutineContext, MHSKotlinContinuationInterceptor, MHSKotlinContinuation, MHSKotlinComparable, MHSKotlinClosedRange, MHSKotlinAppendable, MHSKotlinAnnotation, MHSCommonParceler, MHSCommonParcelable, MHSAuthService;
 
@@ -514,16 +514,16 @@ __attribute__((swift_name("KtorClientFactory")))
 
 __attribute__((swift_name("KmmBaseService")))
 @interface MHSKmmBaseService : MHSBase
-- (instancetype)initWithBaseUrl:(NSString *)baseUrl __attribute__((swift_name("init(baseUrl:)"))) __attribute__((objc_designated_initializer));
-- (MHSKtor_client_coreHttpRequestBuilder *)buildRequestRequestBuilder:(MHSRequestBuilder *)requestBuilder __attribute__((swift_name("buildRequest(requestBuilder:)")));
+- (instancetype)initWithBaseUrl:(NSString *)baseUrl enableLogs:(BOOL)enableLogs __attribute__((swift_name("init(baseUrl:enableLogs:)"))) __attribute__((objc_designated_initializer));
+- (MHSKtor_client_coreHttpRequestBuilder *)buildRequestRequestBuilder:(MHSRequestBuilder *)requestBuilder method:(MHSKtor_httpHttpMethod *)method __attribute__((swift_name("buildRequest(requestBuilder:method:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("BaseService")))
 @interface MHSBaseService : MHSKmmBaseService
 @property (readonly) MHSKtor_client_coreHttpClient *httpClient __attribute__((swift_name("httpClient")));
-- (instancetype)initWithHttpClient:(MHSKtor_client_coreHttpClient *)httpClient baseUrl:(NSString *)baseUrl __attribute__((swift_name("init(httpClient:baseUrl:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithBaseUrl:(NSString *)baseUrl __attribute__((swift_name("init(baseUrl:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+- (instancetype)initWithHttpClient:(MHSKtor_client_coreHttpClient *)httpClient baseUrl:(NSString *)baseUrl enableLogs:(BOOL)enableLogs __attribute__((swift_name("init(httpClient:baseUrl:enableLogs:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithBaseUrl:(NSString *)baseUrl enableLogs:(BOOL)enableLogs __attribute__((swift_name("init(baseUrl:enableLogs:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 
 /**
  * @note This method converts instances of CancellationException to errors.
@@ -739,11 +739,12 @@ __attribute__((swift_name("PaymentMethodRequest")))
 @property (class, readonly, getter=companion) MHSPaymentMethodRequestCompanion *companion __attribute__((swift_name("companion")));
 @property (readonly) MHSDouble * _Nullable amount __attribute__((swift_name("amount")));
 @property (readonly) NSString *currency __attribute__((swift_name("currency")));
+@property (readonly) NSDictionary<NSString *, MHSCustomFieldValue *> * _Nullable customFields __attribute__((swift_name("customFields")));
 @property (readonly) NSString * _Nullable customer __attribute__((swift_name("customer")));
 @property (readonly) NSString * _Nullable flowId __attribute__((swift_name("flowId")));
 @property (readonly) MHSIntentOperation * _Nullable operation __attribute__((swift_name("operation")));
-- (instancetype)initWithCurrency:(NSString *)currency amount:(MHSDouble * _Nullable)amount customer:(NSString * _Nullable)customer flowId:(NSString * _Nullable)flowId operation:(MHSIntentOperation * _Nullable)operation __attribute__((swift_name("init(currency:amount:customer:flowId:operation:)"))) __attribute__((objc_designated_initializer));
-- (MHSPaymentMethodRequest *)doCopyCurrency:(NSString *)currency amount:(MHSDouble * _Nullable)amount customer:(NSString * _Nullable)customer flowId:(NSString * _Nullable)flowId operation:(MHSIntentOperation * _Nullable)operation __attribute__((swift_name("doCopy(currency:amount:customer:flowId:operation:)")));
+- (instancetype)initWithCurrency:(NSString *)currency amount:(MHSDouble * _Nullable)amount customer:(NSString * _Nullable)customer flowId:(NSString * _Nullable)flowId operation:(MHSIntentOperation * _Nullable)operation customFields:(NSDictionary<NSString *, MHSCustomFieldValue *> * _Nullable)customFields __attribute__((swift_name("init(currency:amount:customer:flowId:operation:customFields:)"))) __attribute__((objc_designated_initializer));
+- (MHSPaymentMethodRequest *)doCopyCurrency:(NSString *)currency amount:(MHSDouble * _Nullable)amount customer:(NSString * _Nullable)customer flowId:(NSString * _Nullable)flowId operation:(MHSIntentOperation * _Nullable)operation customFields:(NSDictionary<NSString *, MHSCustomFieldValue *> * _Nullable)customFields __attribute__((swift_name("doCopy(currency:amount:customer:flowId:operation:customFields:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -757,6 +758,12 @@ __attribute__((swift_name("PaymentMethodRequest")))
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="currency")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.EncodeDefault(mode=Mode.NEVER)
+ *   kotlinx.serialization.SerialName(value="custom_fields")
 */
 
 /**
@@ -1714,6 +1721,162 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("TransactionOperation.Companion")))
 @interface MHSTransactionOperationCompanion : MHSBase
 @property (class, readonly, getter=shared) MHSTransactionOperationCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<MHSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((swift_name("CustomFieldValue")))
+@interface MHSCustomFieldValue : MHSBase
+@property (class, readonly, getter=companion) MHSCustomFieldValueCompanion *companion __attribute__((swift_name("companion")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("CustomFieldValue.BooleanValue")))
+@interface MHSCustomFieldValueBooleanValue : MHSCustomFieldValue
+@property (class, readonly, getter=companion) MHSCustomFieldValueBooleanValueCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) BOOL value __attribute__((swift_name("value")));
+- (instancetype)initWithValue:(BOOL)value __attribute__((swift_name("init(value:)"))) __attribute__((objc_designated_initializer));
+- (MHSCustomFieldValueBooleanValue *)doCopyValue:(BOOL)value __attribute__((swift_name("doCopy(value:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("CustomFieldValue.BooleanValueCompanion")))
+@interface MHSCustomFieldValueBooleanValueCompanion : MHSBase
+@property (class, readonly, getter=shared) MHSCustomFieldValueBooleanValueCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<MHSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("CustomFieldValue.Companion")))
+@interface MHSCustomFieldValueCompanion : MHSBase
+@property (class, readonly, getter=shared) MHSCustomFieldValueCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<MHSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+- (id<MHSKotlinx_serialization_coreKSerializer>)serializerTypeParamsSerializers:(MHSKotlinArray<id<MHSKotlinx_serialization_coreKSerializer>> *)typeParamsSerializers __attribute__((swift_name("serializer(typeParamsSerializers:)")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("CustomFieldValue.DoubleValue")))
+@interface MHSCustomFieldValueDoubleValue : MHSCustomFieldValue
+@property (class, readonly, getter=companion) MHSCustomFieldValueDoubleValueCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) double value __attribute__((swift_name("value")));
+- (instancetype)initWithValue:(double)value __attribute__((swift_name("init(value:)"))) __attribute__((objc_designated_initializer));
+- (MHSCustomFieldValueDoubleValue *)doCopyValue:(double)value __attribute__((swift_name("doCopy(value:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("CustomFieldValue.DoubleValueCompanion")))
+@interface MHSCustomFieldValueDoubleValueCompanion : MHSBase
+@property (class, readonly, getter=shared) MHSCustomFieldValueDoubleValueCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<MHSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("CustomFieldValue.FloatValue")))
+@interface MHSCustomFieldValueFloatValue : MHSCustomFieldValue
+@property (class, readonly, getter=companion) MHSCustomFieldValueFloatValueCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) float value __attribute__((swift_name("value")));
+- (instancetype)initWithValue:(float)value __attribute__((swift_name("init(value:)"))) __attribute__((objc_designated_initializer));
+- (MHSCustomFieldValueFloatValue *)doCopyValue:(float)value __attribute__((swift_name("doCopy(value:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("CustomFieldValue.FloatValueCompanion")))
+@interface MHSCustomFieldValueFloatValueCompanion : MHSBase
+@property (class, readonly, getter=shared) MHSCustomFieldValueFloatValueCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<MHSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("CustomFieldValue.IntValue")))
+@interface MHSCustomFieldValueIntValue : MHSCustomFieldValue
+@property (class, readonly, getter=companion) MHSCustomFieldValueIntValueCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) int32_t value __attribute__((swift_name("value")));
+- (instancetype)initWithValue:(int32_t)value __attribute__((swift_name("init(value:)"))) __attribute__((objc_designated_initializer));
+- (MHSCustomFieldValueIntValue *)doCopyValue:(int32_t)value __attribute__((swift_name("doCopy(value:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("CustomFieldValue.IntValueCompanion")))
+@interface MHSCustomFieldValueIntValueCompanion : MHSBase
+@property (class, readonly, getter=shared) MHSCustomFieldValueIntValueCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<MHSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("CustomFieldValue.StringValue")))
+@interface MHSCustomFieldValueStringValue : MHSCustomFieldValue
+@property (class, readonly, getter=companion) MHSCustomFieldValueStringValueCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) NSString *value __attribute__((swift_name("value")));
+- (instancetype)initWithValue:(NSString *)value __attribute__((swift_name("init(value:)"))) __attribute__((objc_designated_initializer));
+- (MHSCustomFieldValueStringValue *)doCopyValue:(NSString *)value __attribute__((swift_name("doCopy(value:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("CustomFieldValue.StringValueCompanion")))
+@interface MHSCustomFieldValueStringValueCompanion : MHSBase
+@property (class, readonly, getter=shared) MHSCustomFieldValueStringValueCompanion *shared __attribute__((swift_name("shared")));
 + (instancetype)alloc __attribute__((unavailable));
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
@@ -2894,6 +3057,75 @@ __attribute__((swift_name("IntentStateDetails.UrlToRenderCompanion")))
  *   kotlinx.serialization.Serializable
 */
 __attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("LastUsedMethod")))
+@interface MHSLastUsedMethod : MHSBase <MHSCommonParcelable>
+@property (class, readonly, getter=companion) MHSLastUsedMethodCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) NSString * _Nullable id __attribute__((swift_name("id")));
+@property (readonly) MHSLastUsedMethodType * _Nullable type __attribute__((swift_name("type")));
+- (instancetype)initWithType:(MHSLastUsedMethodType * _Nullable)type id:(NSString * _Nullable)id __attribute__((swift_name("init(type:id:)"))) __attribute__((objc_designated_initializer));
+- (MHSLastUsedMethod *)doCopyType:(MHSLastUsedMethodType * _Nullable)type id:(NSString * _Nullable)id __attribute__((swift_name("doCopy(type:id:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="id")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="type")
+*/
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("LastUsedMethod.Companion")))
+@interface MHSLastUsedMethodCompanion : MHSBase
+@property (class, readonly, getter=shared) MHSLastUsedMethodCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<MHSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("LastUsedMethodType")))
+@interface MHSLastUsedMethodType : MHSKotlinEnum<MHSLastUsedMethodType *> <MHSCommonParcelable>
+@property (class, readonly, getter=companion) MHSLastUsedMethodTypeCompanion *companion __attribute__((swift_name("companion")));
+@property (class, readonly) MHSLastUsedMethodType *customerBalance __attribute__((swift_name("customerBalance")));
+@property (class, readonly) MHSLastUsedMethodType *saveCard __attribute__((swift_name("saveCard")));
+@property (class, readonly) MHSLastUsedMethodType *paymentMethod __attribute__((swift_name("paymentMethod")));
+@property (class, readonly) NSArray<MHSLastUsedMethodType *> *entries __attribute__((swift_name("entries")));
+@property (readonly) NSString *type __attribute__((swift_name("type")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
++ (MHSKotlinArray<MHSLastUsedMethodType *> *)values __attribute__((swift_name("values()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("LastUsedMethodType.Companion")))
+@interface MHSLastUsedMethodTypeCompanion : MHSBase
+@property (class, readonly, getter=shared) MHSLastUsedMethodTypeCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<MHSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+- (id<MHSKotlinx_serialization_coreKSerializer>)serializerTypeParamsSerializers:(MHSKotlinArray<id<MHSKotlinx_serialization_coreKSerializer>> *)typeParamsSerializers __attribute__((swift_name("serializer(typeParamsSerializers:)")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("NativeFormRequest")))
 @interface MHSNativeFormRequest : MHSBase <MHSCommonParcelable>
 @property (class, readonly, getter=companion) MHSNativeFormRequestCompanion *companion __attribute__((swift_name("companion")));
@@ -3184,12 +3416,13 @@ __attribute__((swift_name("PaymentInformation")))
 @property (readonly) MHSBrandSettingsData * _Nullable brandSettings __attribute__((swift_name("brandSettings")));
 @property (readonly) MHSPaymentIntent * _Nullable intent __attribute__((swift_name("intent")));
 @property (readonly) MHSIntentState * _Nullable intentSdkState __attribute__((swift_name("intentSdkState")));
+@property (readonly) MHSLastUsedMethod * _Nullable lastUsedMethod __attribute__((swift_name("lastUsedMethod")));
 @property (readonly) NSString * _Nullable nextAction __attribute__((swift_name("nextAction")));
 @property (readonly) NSArray<MHSSavedCard *> * _Nullable savedCards __attribute__((swift_name("savedCards")));
 @property (readonly) NSString * _Nullable selectedMethod __attribute__((swift_name("selectedMethod")));
 @property (readonly) MHSDouble * _Nullable wallet __attribute__((swift_name("wallet")));
-- (instancetype)initWithIntentSdkState:(MHSIntentState * _Nullable)intentSdkState selectedMethod:(NSString * _Nullable)selectedMethod nextAction:(NSString * _Nullable)nextAction intent:(MHSPaymentIntent * _Nullable)intent savedCards:(NSArray<MHSSavedCard *> * _Nullable)savedCards wallet:(MHSDouble * _Nullable)wallet brandSettings:(MHSBrandSettingsData * _Nullable)brandSettings actionData:(MHSIntentActionData * _Nullable)actionData __attribute__((swift_name("init(intentSdkState:selectedMethod:nextAction:intent:savedCards:wallet:brandSettings:actionData:)"))) __attribute__((objc_designated_initializer));
-- (MHSPaymentInformation *)doCopyIntentSdkState:(MHSIntentState * _Nullable)intentSdkState selectedMethod:(NSString * _Nullable)selectedMethod nextAction:(NSString * _Nullable)nextAction intent:(MHSPaymentIntent * _Nullable)intent savedCards:(NSArray<MHSSavedCard *> * _Nullable)savedCards wallet:(MHSDouble * _Nullable)wallet brandSettings:(MHSBrandSettingsData * _Nullable)brandSettings actionData:(MHSIntentActionData * _Nullable)actionData __attribute__((swift_name("doCopy(intentSdkState:selectedMethod:nextAction:intent:savedCards:wallet:brandSettings:actionData:)")));
+- (instancetype)initWithIntentSdkState:(MHSIntentState * _Nullable)intentSdkState selectedMethod:(NSString * _Nullable)selectedMethod nextAction:(NSString * _Nullable)nextAction intent:(MHSPaymentIntent * _Nullable)intent savedCards:(NSArray<MHSSavedCard *> * _Nullable)savedCards wallet:(MHSDouble * _Nullable)wallet brandSettings:(MHSBrandSettingsData * _Nullable)brandSettings actionData:(MHSIntentActionData * _Nullable)actionData lastUsedMethod:(MHSLastUsedMethod * _Nullable)lastUsedMethod __attribute__((swift_name("init(intentSdkState:selectedMethod:nextAction:intent:savedCards:wallet:brandSettings:actionData:lastUsedMethod:)"))) __attribute__((objc_designated_initializer));
+- (MHSPaymentInformation *)doCopyIntentSdkState:(MHSIntentState * _Nullable)intentSdkState selectedMethod:(NSString * _Nullable)selectedMethod nextAction:(NSString * _Nullable)nextAction intent:(MHSPaymentIntent * _Nullable)intent savedCards:(NSArray<MHSSavedCard *> * _Nullable)savedCards wallet:(MHSDouble * _Nullable)wallet brandSettings:(MHSBrandSettingsData * _Nullable)brandSettings actionData:(MHSIntentActionData * _Nullable)actionData lastUsedMethod:(MHSLastUsedMethod * _Nullable)lastUsedMethod __attribute__((swift_name("doCopy(intentSdkState:selectedMethod:nextAction:intent:savedCards:wallet:brandSettings:actionData:lastUsedMethod:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -3212,6 +3445,11 @@ __attribute__((swift_name("PaymentInformation")))
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="intent_sdk_state")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="last_used_method")
 */
 
 /**
@@ -5629,8 +5867,9 @@ __attribute__((swift_name("RequestContent")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("RequestContentBody")))
 @interface MHSRequestContentBody<T> : MHSRequestContent
+@property (readonly) NSString *bodyString __attribute__((swift_name("bodyString")));
 @property (readonly) T _Nullable value __attribute__((swift_name("value")));
-- (instancetype)initWithValue:(T _Nullable)value __attribute__((swift_name("init(value:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithValue:(T _Nullable)value bodyString:(NSString *)bodyString __attribute__((swift_name("init(value:bodyString:)"))) __attribute__((objc_designated_initializer));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -5655,6 +5894,37 @@ __attribute__((swift_name("RequestContent.Query")))
 @property (readonly) NSString *key __attribute__((swift_name("key")));
 @property (readonly) NSString *value __attribute__((swift_name("value")));
 - (instancetype)initWithKey:(NSString *)key value:(NSString *)value __attribute__((swift_name("init(key:value:)"))) __attribute__((objc_designated_initializer));
+@end
+
+__attribute__((swift_name("Kotlinx_serialization_coreSerializationStrategy")))
+@protocol MHSKotlinx_serialization_coreSerializationStrategy
+@required
+- (void)serializeEncoder:(id<MHSKotlinx_serialization_coreEncoder>)encoder value:(id _Nullable)value __attribute__((swift_name("serialize(encoder:value:)")));
+@property (readonly) id<MHSKotlinx_serialization_coreSerialDescriptor> descriptor __attribute__((swift_name("descriptor")));
+@end
+
+__attribute__((swift_name("Kotlinx_serialization_coreDeserializationStrategy")))
+@protocol MHSKotlinx_serialization_coreDeserializationStrategy
+@required
+- (id _Nullable)deserializeDecoder:(id<MHSKotlinx_serialization_coreDecoder>)decoder __attribute__((swift_name("deserialize(decoder:)")));
+@property (readonly) id<MHSKotlinx_serialization_coreSerialDescriptor> descriptor __attribute__((swift_name("descriptor")));
+@end
+
+__attribute__((swift_name("Kotlinx_serialization_coreKSerializer")))
+@protocol MHSKotlinx_serialization_coreKSerializer <MHSKotlinx_serialization_coreSerializationStrategy, MHSKotlinx_serialization_coreDeserializationStrategy>
+@required
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("CustomFieldValueSerializer")))
+@interface MHSCustomFieldValueSerializer : MHSBase <MHSKotlinx_serialization_coreKSerializer>
+@property (class, readonly, getter=shared) MHSCustomFieldValueSerializer *shared __attribute__((swift_name("shared")));
+@property (readonly) id<MHSKotlinx_serialization_coreSerialDescriptor> descriptor __attribute__((swift_name("descriptor")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)customFieldValueSerializer __attribute__((swift_name("init()")));
+- (MHSCustomFieldValue *)deserializeDecoder:(id<MHSKotlinx_serialization_coreDecoder>)decoder __attribute__((swift_name("deserialize(decoder:)")));
+- (void)serializeEncoder:(id<MHSKotlinx_serialization_coreEncoder>)encoder value:(MHSCustomFieldValue *)value __attribute__((swift_name("serialize(encoder:value:)")));
 @end
 
 __attribute__((swift_name("AuthService")))
@@ -5747,7 +6017,7 @@ __attribute__((swift_name("PaymentService")))
 /**
  * @note This method converts all Kotlin exceptions to errors.
 */
-- (void)getMethodsPublicKey:(NSString *)publicKey currency:(NSString *)currency amount:(MHSDouble * _Nullable)amount customer:(NSString * _Nullable)customer flowId:(NSString * _Nullable)flowId operation:(MHSIntentOperation * _Nullable)operation completionHandler:(void (^)(MHSPaymentMethodResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getMethods(publicKey:currency:amount:customer:flowId:operation:completionHandler:)")));
+- (void)getMethodsPublicKey:(NSString *)publicKey currency:(NSString *)currency amount:(MHSDouble * _Nullable)amount customer:(NSString * _Nullable)customer flowId:(NSString * _Nullable)flowId operation:(MHSIntentOperation * _Nullable)operation customFields:(NSDictionary<NSString *, MHSCustomFieldValue *> * _Nullable)customFields completionHandler:(void (^)(MHSPaymentMethodResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getMethods(publicKey:currency:amount:customer:flowId:operation:customFields:completionHandler:)")));
 
 /**
  * @note This method converts all Kotlin exceptions to errors.
@@ -6113,7 +6383,7 @@ __attribute__((swift_name("PaymentUseCase")))
 /**
  * @note This method converts all Kotlin exceptions to errors.
 */
-- (void)getMethodsCurrency:(NSString *)currency amount:(MHSDouble * _Nullable)amount customer:(NSString * _Nullable)customer flowId:(NSString * _Nullable)flowId operation:(MHSIntentOperation * _Nullable)operation completionHandler:(void (^)(MHSIntentMethods * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getMethods(currency:amount:customer:flowId:operation:completionHandler:)")));
+- (void)getMethodsCurrency:(NSString *)currency amount:(MHSDouble * _Nullable)amount customer:(NSString * _Nullable)customer flowId:(NSString * _Nullable)flowId operation:(MHSIntentOperation * _Nullable)operation customFields:(NSDictionary<NSString *, MHSCustomFieldValue *> * _Nullable)customFields completionHandler:(void (^)(MHSIntentMethods * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getMethods(currency:amount:customer:flowId:operation:customFields:completionHandler:)")));
 
 /**
  * @note This method converts all Kotlin exceptions to errors.
@@ -6766,7 +7036,7 @@ __attribute__((swift_name("__SkieSuspendWrappersKt")))
 + (void)Skie_Suspend__1__collectDispatchReceiver:(id<MHSKotlinx_coroutines_coreFlow>)dispatchReceiver collector:(id<MHSKotlinx_coroutines_coreFlowCollector>)collector suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__1__collect(dispatchReceiver:collector:suspendHandler:)")));
 + (void)Skie_Suspend__20__generateAccessTokenDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver publicKey:(NSString *)publicKey suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__20__generateAccessToken(dispatchReceiver:publicKey:suspendHandler:)")));
 + (void)Skie_Suspend__21__getCardInformationDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver cardIntentId:(NSString *)cardIntentId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__21__getCardInformation(dispatchReceiver:cardIntentId:suspendHandler:)")));
-+ (void)Skie_Suspend__22__getMethodsDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver publicKey:(NSString *)publicKey currency:(NSString *)currency amount:(MHSDouble * _Nullable)amount customer:(NSString * _Nullable)customer flowId:(NSString * _Nullable)flowId operation:(MHSIntentOperation * _Nullable)operation suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__22__getMethods(dispatchReceiver:publicKey:currency:amount:customer:flowId:operation:suspendHandler:)")));
++ (void)Skie_Suspend__22__getMethodsDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver publicKey:(NSString *)publicKey currency:(NSString *)currency amount:(MHSDouble * _Nullable)amount customer:(NSString * _Nullable)customer flowId:(NSString * _Nullable)flowId operation:(MHSIntentOperation * _Nullable)operation customFields:(NSDictionary<NSString *, MHSCustomFieldValue *> * _Nullable)customFields suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__22__getMethods(dispatchReceiver:publicKey:currency:amount:customer:flowId:operation:customFields:suspendHandler:)")));
 + (void)Skie_Suspend__23__getPaymentInformationDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver paymentIntentId:(NSString *)paymentIntentId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__23__getPaymentInformation(dispatchReceiver:paymentIntentId:suspendHandler:)")));
 + (void)Skie_Suspend__24__getPayoutInformationDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver payoutIntentId:(NSString *)payoutIntentId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__24__getPayoutInformation(dispatchReceiver:payoutIntentId:suspendHandler:)")));
 + (void)Skie_Suspend__25__resetPaymentSelectedMethodDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver paymentIntentId:(NSString *)paymentIntentId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__25__resetPaymentSelectedMethod(dispatchReceiver:paymentIntentId:suspendHandler:)")));
@@ -6822,7 +7092,7 @@ __attribute__((swift_name("__SkieSuspendWrappersKt")))
 + (void)Skie_Suspend__67__readUTF8LineDispatchReceiver:(id<MHSKtor_ioByteReadChannel>)dispatchReceiver limit:(int32_t)limit suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__67__readUTF8Line(dispatchReceiver:limit:suspendHandler:)")));
 + (void)Skie_Suspend__68__readUTF8LineToDispatchReceiver:(id<MHSKtor_ioByteReadChannel>)dispatchReceiver out:(id<MHSKotlinAppendable>)out limit:(int32_t)limit suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__68__readUTF8LineTo(dispatchReceiver:out:limit:suspendHandler:)")));
 + (void)Skie_Suspend__69__invokeDispatchReceiver:(id<MHSKotlinSuspendFunction1>)dispatchReceiver p1:(id _Nullable)p1 suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__69__invoke(dispatchReceiver:p1:suspendHandler:)")));
-+ (void)Skie_Suspend__6__getMethodsDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver currency:(NSString *)currency amount:(MHSDouble * _Nullable)amount customer:(NSString * _Nullable)customer flowId:(NSString * _Nullable)flowId operation:(MHSIntentOperation * _Nullable)operation suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__6__getMethods(dispatchReceiver:currency:amount:customer:flowId:operation:suspendHandler:)")));
++ (void)Skie_Suspend__6__getMethodsDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver currency:(NSString *)currency amount:(MHSDouble * _Nullable)amount customer:(NSString * _Nullable)customer flowId:(NSString * _Nullable)flowId operation:(MHSIntentOperation * _Nullable)operation customFields:(NSDictionary<NSString *, MHSCustomFieldValue *> * _Nullable)customFields suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__6__getMethods(dispatchReceiver:currency:amount:customer:flowId:operation:customFields:suspendHandler:)")));
 + (void)Skie_Suspend__70__executeDispatchReceiver:(id<MHSKtor_client_coreHttpClientEngine>)dispatchReceiver data:(MHSKtor_client_coreHttpRequestData *)data suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__70__execute(dispatchReceiver:data:suspendHandler:)")));
 + (void)Skie_Suspend__71__deleteDispatchReceiver:(MHSBaseService *)dispatchReceiver requestBuilder:(void (^)(MHSRequestBuilder *))requestBuilder suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__71__delete(dispatchReceiver:requestBuilder:suspendHandler:)")));
 + (void)Skie_Suspend__72__getDispatchReceiver:(MHSBaseService *)dispatchReceiver requestBuilder:(void (^)(MHSRequestBuilder *))requestBuilder suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__72__get(dispatchReceiver:requestBuilder:suspendHandler:)")));
@@ -6964,23 +7234,16 @@ __attribute__((swift_name("Ktor_client_coreHttpRequestBuilder")))
 - (void)urlBlock:(void (^)(MHSKtor_httpURLBuilder *, MHSKtor_httpURLBuilder *))block __attribute__((swift_name("url(block:)")));
 @end
 
-__attribute__((swift_name("Kotlinx_serialization_coreSerializationStrategy")))
-@protocol MHSKotlinx_serialization_coreSerializationStrategy
-@required
-- (void)serializeEncoder:(id<MHSKotlinx_serialization_coreEncoder>)encoder value:(id _Nullable)value __attribute__((swift_name("serialize(encoder:value:)")));
-@property (readonly) id<MHSKotlinx_serialization_coreSerialDescriptor> descriptor __attribute__((swift_name("descriptor")));
-@end
-
-__attribute__((swift_name("Kotlinx_serialization_coreDeserializationStrategy")))
-@protocol MHSKotlinx_serialization_coreDeserializationStrategy
-@required
-- (id _Nullable)deserializeDecoder:(id<MHSKotlinx_serialization_coreDecoder>)decoder __attribute__((swift_name("deserialize(decoder:)")));
-@property (readonly) id<MHSKotlinx_serialization_coreSerialDescriptor> descriptor __attribute__((swift_name("descriptor")));
-@end
-
-__attribute__((swift_name("Kotlinx_serialization_coreKSerializer")))
-@protocol MHSKotlinx_serialization_coreKSerializer <MHSKotlinx_serialization_coreSerializationStrategy, MHSKotlinx_serialization_coreDeserializationStrategy>
-@required
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_httpHttpMethod")))
+@interface MHSKtor_httpHttpMethod : MHSBase
+@property (class, readonly, getter=companion) MHSKtor_httpHttpMethodCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) NSString *value __attribute__((swift_name("value")));
+- (instancetype)initWithValue:(NSString *)value __attribute__((swift_name("init(value:)"))) __attribute__((objc_designated_initializer));
+- (MHSKtor_httpHttpMethod *)doCopyValue:(NSString *)value __attribute__((swift_name("doCopy(value:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -7014,6 +7277,147 @@ __attribute__((swift_name("KotlinPair")))
 - (BOOL)equalsOther:(id _Nullable)other __attribute__((swift_name("equals(other:)")));
 - (int32_t)hashCode __attribute__((swift_name("hashCode()")));
 - (NSString *)toString __attribute__((swift_name("toString()")));
+@end
+
+__attribute__((swift_name("Kotlinx_serialization_coreEncoder")))
+@protocol MHSKotlinx_serialization_coreEncoder
+@required
+- (id<MHSKotlinx_serialization_coreCompositeEncoder>)beginCollectionDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor collectionSize:(int32_t)collectionSize __attribute__((swift_name("beginCollection(descriptor:collectionSize:)")));
+- (id<MHSKotlinx_serialization_coreCompositeEncoder>)beginStructureDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("beginStructure(descriptor:)")));
+- (void)encodeBooleanValue:(BOOL)value __attribute__((swift_name("encodeBoolean(value:)")));
+- (void)encodeByteValue:(int8_t)value __attribute__((swift_name("encodeByte(value:)")));
+- (void)encodeCharValue:(unichar)value __attribute__((swift_name("encodeChar(value:)")));
+- (void)encodeDoubleValue:(double)value __attribute__((swift_name("encodeDouble(value:)")));
+- (void)encodeEnumEnumDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)enumDescriptor index:(int32_t)index __attribute__((swift_name("encodeEnum(enumDescriptor:index:)")));
+- (void)encodeFloatValue:(float)value __attribute__((swift_name("encodeFloat(value:)")));
+- (id<MHSKotlinx_serialization_coreEncoder>)encodeInlineDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("encodeInline(descriptor:)")));
+- (void)encodeIntValue:(int32_t)value __attribute__((swift_name("encodeInt(value:)")));
+- (void)encodeLongValue:(int64_t)value __attribute__((swift_name("encodeLong(value:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (void)encodeNotNullMark __attribute__((swift_name("encodeNotNullMark()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (void)encodeNull __attribute__((swift_name("encodeNull()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (void)encodeNullableSerializableValueSerializer:(id<MHSKotlinx_serialization_coreSerializationStrategy>)serializer value:(id _Nullable)value __attribute__((swift_name("encodeNullableSerializableValue(serializer:value:)")));
+- (void)encodeSerializableValueSerializer:(id<MHSKotlinx_serialization_coreSerializationStrategy>)serializer value:(id _Nullable)value __attribute__((swift_name("encodeSerializableValue(serializer:value:)")));
+- (void)encodeShortValue:(int16_t)value __attribute__((swift_name("encodeShort(value:)")));
+- (void)encodeStringValue:(NSString *)value __attribute__((swift_name("encodeString(value:)")));
+@property (readonly) MHSKotlinx_serialization_coreSerializersModule *serializersModule __attribute__((swift_name("serializersModule")));
+@end
+
+__attribute__((swift_name("Kotlinx_serialization_coreSerialDescriptor")))
+@protocol MHSKotlinx_serialization_coreSerialDescriptor
+@required
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (NSArray<id<MHSKotlinAnnotation>> *)getElementAnnotationsIndex:(int32_t)index __attribute__((swift_name("getElementAnnotations(index:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (id<MHSKotlinx_serialization_coreSerialDescriptor>)getElementDescriptorIndex:(int32_t)index __attribute__((swift_name("getElementDescriptor(index:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (int32_t)getElementIndexName:(NSString *)name __attribute__((swift_name("getElementIndex(name:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (NSString *)getElementNameIndex:(int32_t)index __attribute__((swift_name("getElementName(index:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (BOOL)isElementOptionalIndex:(int32_t)index __attribute__((swift_name("isElementOptional(index:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+@property (readonly) NSArray<id<MHSKotlinAnnotation>> *annotations __attribute__((swift_name("annotations")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+@property (readonly) int32_t elementsCount __attribute__((swift_name("elementsCount")));
+@property (readonly) BOOL isInline __attribute__((swift_name("isInline")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+@property (readonly) BOOL isNullable __attribute__((swift_name("isNullable")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+@property (readonly) MHSKotlinx_serialization_coreSerialKind *kind __attribute__((swift_name("kind")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+@property (readonly) NSString *serialName __attribute__((swift_name("serialName")));
+@end
+
+__attribute__((swift_name("Kotlinx_serialization_coreDecoder")))
+@protocol MHSKotlinx_serialization_coreDecoder
+@required
+- (id<MHSKotlinx_serialization_coreCompositeDecoder>)beginStructureDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("beginStructure(descriptor:)")));
+- (BOOL)decodeBoolean __attribute__((swift_name("decodeBoolean()")));
+- (int8_t)decodeByte __attribute__((swift_name("decodeByte()")));
+- (unichar)decodeChar __attribute__((swift_name("decodeChar()")));
+- (double)decodeDouble __attribute__((swift_name("decodeDouble()")));
+- (int32_t)decodeEnumEnumDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)enumDescriptor __attribute__((swift_name("decodeEnum(enumDescriptor:)")));
+- (float)decodeFloat __attribute__((swift_name("decodeFloat()")));
+- (id<MHSKotlinx_serialization_coreDecoder>)decodeInlineDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("decodeInline(descriptor:)")));
+- (int32_t)decodeInt __attribute__((swift_name("decodeInt()")));
+- (int64_t)decodeLong __attribute__((swift_name("decodeLong()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (BOOL)decodeNotNullMark __attribute__((swift_name("decodeNotNullMark()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (MHSKotlinNothing * _Nullable)decodeNull __attribute__((swift_name("decodeNull()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (id _Nullable)decodeNullableSerializableValueDeserializer:(id<MHSKotlinx_serialization_coreDeserializationStrategy>)deserializer __attribute__((swift_name("decodeNullableSerializableValue(deserializer:)")));
+- (id _Nullable)decodeSerializableValueDeserializer:(id<MHSKotlinx_serialization_coreDeserializationStrategy>)deserializer __attribute__((swift_name("decodeSerializableValue(deserializer:)")));
+- (int16_t)decodeShort __attribute__((swift_name("decodeShort()")));
+- (NSString *)decodeString __attribute__((swift_name("decodeString()")));
+@property (readonly) MHSKotlinx_serialization_coreSerializersModule *serializersModule __attribute__((swift_name("serializersModule")));
 @end
 
 __attribute__((swift_name("Ktor_utilsStringValuesBuilder")))
@@ -8193,156 +8597,21 @@ __attribute__((swift_name("Ktor_client_coreHttpRequestBuilder.Companion")))
 @end
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Ktor_httpHttpMethod")))
-@interface MHSKtor_httpHttpMethod : MHSBase
-@property (class, readonly, getter=companion) MHSKtor_httpHttpMethodCompanion *companion __attribute__((swift_name("companion")));
-@property (readonly) NSString *value __attribute__((swift_name("value")));
-- (instancetype)initWithValue:(NSString *)value __attribute__((swift_name("init(value:)"))) __attribute__((objc_designated_initializer));
-- (MHSKtor_httpHttpMethod *)doCopyValue:(NSString *)value __attribute__((swift_name("doCopy(value:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@end
-
-__attribute__((swift_name("Kotlinx_serialization_coreEncoder")))
-@protocol MHSKotlinx_serialization_coreEncoder
-@required
-- (id<MHSKotlinx_serialization_coreCompositeEncoder>)beginCollectionDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor collectionSize:(int32_t)collectionSize __attribute__((swift_name("beginCollection(descriptor:collectionSize:)")));
-- (id<MHSKotlinx_serialization_coreCompositeEncoder>)beginStructureDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("beginStructure(descriptor:)")));
-- (void)encodeBooleanValue:(BOOL)value __attribute__((swift_name("encodeBoolean(value:)")));
-- (void)encodeByteValue:(int8_t)value __attribute__((swift_name("encodeByte(value:)")));
-- (void)encodeCharValue:(unichar)value __attribute__((swift_name("encodeChar(value:)")));
-- (void)encodeDoubleValue:(double)value __attribute__((swift_name("encodeDouble(value:)")));
-- (void)encodeEnumEnumDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)enumDescriptor index:(int32_t)index __attribute__((swift_name("encodeEnum(enumDescriptor:index:)")));
-- (void)encodeFloatValue:(float)value __attribute__((swift_name("encodeFloat(value:)")));
-- (id<MHSKotlinx_serialization_coreEncoder>)encodeInlineDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("encodeInline(descriptor:)")));
-- (void)encodeIntValue:(int32_t)value __attribute__((swift_name("encodeInt(value:)")));
-- (void)encodeLongValue:(int64_t)value __attribute__((swift_name("encodeLong(value:)")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (void)encodeNotNullMark __attribute__((swift_name("encodeNotNullMark()")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (void)encodeNull __attribute__((swift_name("encodeNull()")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (void)encodeNullableSerializableValueSerializer:(id<MHSKotlinx_serialization_coreSerializationStrategy>)serializer value:(id _Nullable)value __attribute__((swift_name("encodeNullableSerializableValue(serializer:value:)")));
-- (void)encodeSerializableValueSerializer:(id<MHSKotlinx_serialization_coreSerializationStrategy>)serializer value:(id _Nullable)value __attribute__((swift_name("encodeSerializableValue(serializer:value:)")));
-- (void)encodeShortValue:(int16_t)value __attribute__((swift_name("encodeShort(value:)")));
-- (void)encodeStringValue:(NSString *)value __attribute__((swift_name("encodeString(value:)")));
-@property (readonly) MHSKotlinx_serialization_coreSerializersModule *serializersModule __attribute__((swift_name("serializersModule")));
-@end
-
-__attribute__((swift_name("Kotlinx_serialization_coreSerialDescriptor")))
-@protocol MHSKotlinx_serialization_coreSerialDescriptor
-@required
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (NSArray<id<MHSKotlinAnnotation>> *)getElementAnnotationsIndex:(int32_t)index __attribute__((swift_name("getElementAnnotations(index:)")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (id<MHSKotlinx_serialization_coreSerialDescriptor>)getElementDescriptorIndex:(int32_t)index __attribute__((swift_name("getElementDescriptor(index:)")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (int32_t)getElementIndexName:(NSString *)name __attribute__((swift_name("getElementIndex(name:)")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (NSString *)getElementNameIndex:(int32_t)index __attribute__((swift_name("getElementName(index:)")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (BOOL)isElementOptionalIndex:(int32_t)index __attribute__((swift_name("isElementOptional(index:)")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-@property (readonly) NSArray<id<MHSKotlinAnnotation>> *annotations __attribute__((swift_name("annotations")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-@property (readonly) int32_t elementsCount __attribute__((swift_name("elementsCount")));
-@property (readonly) BOOL isInline __attribute__((swift_name("isInline")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-@property (readonly) BOOL isNullable __attribute__((swift_name("isNullable")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-@property (readonly) MHSKotlinx_serialization_coreSerialKind *kind __attribute__((swift_name("kind")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-@property (readonly) NSString *serialName __attribute__((swift_name("serialName")));
-@end
-
-__attribute__((swift_name("Kotlinx_serialization_coreDecoder")))
-@protocol MHSKotlinx_serialization_coreDecoder
-@required
-- (id<MHSKotlinx_serialization_coreCompositeDecoder>)beginStructureDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("beginStructure(descriptor:)")));
-- (BOOL)decodeBoolean __attribute__((swift_name("decodeBoolean()")));
-- (int8_t)decodeByte __attribute__((swift_name("decodeByte()")));
-- (unichar)decodeChar __attribute__((swift_name("decodeChar()")));
-- (double)decodeDouble __attribute__((swift_name("decodeDouble()")));
-- (int32_t)decodeEnumEnumDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)enumDescriptor __attribute__((swift_name("decodeEnum(enumDescriptor:)")));
-- (float)decodeFloat __attribute__((swift_name("decodeFloat()")));
-- (id<MHSKotlinx_serialization_coreDecoder>)decodeInlineDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("decodeInline(descriptor:)")));
-- (int32_t)decodeInt __attribute__((swift_name("decodeInt()")));
-- (int64_t)decodeLong __attribute__((swift_name("decodeLong()")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (BOOL)decodeNotNullMark __attribute__((swift_name("decodeNotNullMark()")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (MHSKotlinNothing * _Nullable)decodeNull __attribute__((swift_name("decodeNull()")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (id _Nullable)decodeNullableSerializableValueDeserializer:(id<MHSKotlinx_serialization_coreDeserializationStrategy>)deserializer __attribute__((swift_name("decodeNullableSerializableValue(deserializer:)")));
-- (id _Nullable)decodeSerializableValueDeserializer:(id<MHSKotlinx_serialization_coreDeserializationStrategy>)deserializer __attribute__((swift_name("decodeSerializableValue(deserializer:)")));
-- (int16_t)decodeShort __attribute__((swift_name("decodeShort()")));
-- (NSString *)decodeString __attribute__((swift_name("decodeString()")));
-@property (readonly) MHSKotlinx_serialization_coreSerializersModule *serializersModule __attribute__((swift_name("serializersModule")));
+__attribute__((swift_name("Ktor_httpHttpMethod.Companion")))
+@interface MHSKtor_httpHttpMethodCompanion : MHSBase
+@property (class, readonly, getter=shared) MHSKtor_httpHttpMethodCompanion *shared __attribute__((swift_name("shared")));
+@property (readonly) NSArray<MHSKtor_httpHttpMethod *> *DefaultMethods __attribute__((swift_name("DefaultMethods")));
+@property (readonly) MHSKtor_httpHttpMethod *Delete __attribute__((swift_name("Delete")));
+@property (readonly) MHSKtor_httpHttpMethod *Get __attribute__((swift_name("Get")));
+@property (readonly) MHSKtor_httpHttpMethod *Head __attribute__((swift_name("Head")));
+@property (readonly) MHSKtor_httpHttpMethod *Options __attribute__((swift_name("Options")));
+@property (readonly) MHSKtor_httpHttpMethod *Patch __attribute__((swift_name("Patch")));
+@property (readonly) MHSKtor_httpHttpMethod *Post __attribute__((swift_name("Post")));
+@property (readonly) MHSKtor_httpHttpMethod *Put __attribute__((swift_name("Put")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (MHSKtor_httpHttpMethod *)parseMethod:(NSString *)method __attribute__((swift_name("parse(method:)")));
 @end
 
 __attribute__((swift_name("KotlinIterator")))
@@ -8350,6 +8619,106 @@ __attribute__((swift_name("KotlinIterator")))
 @required
 - (BOOL)hasNext __attribute__((swift_name("hasNext()")));
 - (id _Nullable)next_ __attribute__((swift_name("next()")));
+@end
+
+__attribute__((swift_name("Kotlinx_serialization_coreCompositeEncoder")))
+@protocol MHSKotlinx_serialization_coreCompositeEncoder
+@required
+- (void)encodeBooleanElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(BOOL)value __attribute__((swift_name("encodeBooleanElement(descriptor:index:value:)")));
+- (void)encodeByteElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(int8_t)value __attribute__((swift_name("encodeByteElement(descriptor:index:value:)")));
+- (void)encodeCharElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(unichar)value __attribute__((swift_name("encodeCharElement(descriptor:index:value:)")));
+- (void)encodeDoubleElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(double)value __attribute__((swift_name("encodeDoubleElement(descriptor:index:value:)")));
+- (void)encodeFloatElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(float)value __attribute__((swift_name("encodeFloatElement(descriptor:index:value:)")));
+- (id<MHSKotlinx_serialization_coreEncoder>)encodeInlineElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("encodeInlineElement(descriptor:index:)")));
+- (void)encodeIntElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(int32_t)value __attribute__((swift_name("encodeIntElement(descriptor:index:value:)")));
+- (void)encodeLongElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(int64_t)value __attribute__((swift_name("encodeLongElement(descriptor:index:value:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (void)encodeNullableSerializableElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index serializer:(id<MHSKotlinx_serialization_coreSerializationStrategy>)serializer value:(id _Nullable)value __attribute__((swift_name("encodeNullableSerializableElement(descriptor:index:serializer:value:)")));
+- (void)encodeSerializableElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index serializer:(id<MHSKotlinx_serialization_coreSerializationStrategy>)serializer value:(id _Nullable)value __attribute__((swift_name("encodeSerializableElement(descriptor:index:serializer:value:)")));
+- (void)encodeShortElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(int16_t)value __attribute__((swift_name("encodeShortElement(descriptor:index:value:)")));
+- (void)encodeStringElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(NSString *)value __attribute__((swift_name("encodeStringElement(descriptor:index:value:)")));
+- (void)endStructureDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("endStructure(descriptor:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (BOOL)shouldEncodeElementDefaultDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("shouldEncodeElementDefault(descriptor:index:)")));
+@property (readonly) MHSKotlinx_serialization_coreSerializersModule *serializersModule __attribute__((swift_name("serializersModule")));
+@end
+
+__attribute__((swift_name("Kotlinx_serialization_coreSerializersModule")))
+@interface MHSKotlinx_serialization_coreSerializersModule : MHSBase
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (void)dumpToCollector:(id<MHSKotlinx_serialization_coreSerializersModuleCollector>)collector __attribute__((swift_name("dumpTo(collector:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (id<MHSKotlinx_serialization_coreKSerializer> _Nullable)getContextualKClass:(id<MHSKotlinKClass>)kClass typeArgumentsSerializers:(NSArray<id<MHSKotlinx_serialization_coreKSerializer>> *)typeArgumentsSerializers __attribute__((swift_name("getContextual(kClass:typeArgumentsSerializers:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (id<MHSKotlinx_serialization_coreSerializationStrategy> _Nullable)getPolymorphicBaseClass:(id<MHSKotlinKClass>)baseClass value:(id)value __attribute__((swift_name("getPolymorphic(baseClass:value:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (id<MHSKotlinx_serialization_coreDeserializationStrategy> _Nullable)getPolymorphicBaseClass:(id<MHSKotlinKClass>)baseClass serializedClassName:(NSString * _Nullable)serializedClassName __attribute__((swift_name("getPolymorphic(baseClass:serializedClassName:)")));
+@end
+
+__attribute__((swift_name("KotlinAnnotation")))
+@protocol MHSKotlinAnnotation
+@required
+@end
+
+__attribute__((swift_name("Kotlinx_serialization_coreCompositeDecoder")))
+@protocol MHSKotlinx_serialization_coreCompositeDecoder
+@required
+- (BOOL)decodeBooleanElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeBooleanElement(descriptor:index:)")));
+- (int8_t)decodeByteElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeByteElement(descriptor:index:)")));
+- (unichar)decodeCharElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeCharElement(descriptor:index:)")));
+- (int32_t)decodeCollectionSizeDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("decodeCollectionSize(descriptor:)")));
+- (double)decodeDoubleElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeDoubleElement(descriptor:index:)")));
+- (int32_t)decodeElementIndexDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("decodeElementIndex(descriptor:)")));
+- (float)decodeFloatElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeFloatElement(descriptor:index:)")));
+- (id<MHSKotlinx_serialization_coreDecoder>)decodeInlineElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeInlineElement(descriptor:index:)")));
+- (int32_t)decodeIntElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeIntElement(descriptor:index:)")));
+- (int64_t)decodeLongElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeLongElement(descriptor:index:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (id _Nullable)decodeNullableSerializableElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index deserializer:(id<MHSKotlinx_serialization_coreDeserializationStrategy>)deserializer previousValue:(id _Nullable)previousValue __attribute__((swift_name("decodeNullableSerializableElement(descriptor:index:deserializer:previousValue:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (BOOL)decodeSequentially __attribute__((swift_name("decodeSequentially()")));
+- (id _Nullable)decodeSerializableElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index deserializer:(id<MHSKotlinx_serialization_coreDeserializationStrategy>)deserializer previousValue:(id _Nullable)previousValue __attribute__((swift_name("decodeSerializableElement(descriptor:index:deserializer:previousValue:)")));
+- (int16_t)decodeShortElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeShortElement(descriptor:index:)")));
+- (NSString *)decodeStringElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeStringElement(descriptor:index:)")));
+- (void)endStructureDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("endStructure(descriptor:)")));
+@property (readonly) MHSKotlinx_serialization_coreSerializersModule *serializersModule __attribute__((swift_name("serializersModule")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinNothing")))
+@interface MHSKotlinNothing : MHSBase
 @end
 
 __attribute__((swift_name("Ktor_utilsStringValues")))
@@ -8492,34 +8861,6 @@ __attribute__((swift_name("Ktor_httpHttpProtocolVersion")))
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
-@end
-
-__attribute__((swift_name("Kotlinx_serialization_coreSerializersModule")))
-@interface MHSKotlinx_serialization_coreSerializersModule : MHSBase
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (void)dumpToCollector:(id<MHSKotlinx_serialization_coreSerializersModuleCollector>)collector __attribute__((swift_name("dumpTo(collector:)")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (id<MHSKotlinx_serialization_coreKSerializer> _Nullable)getContextualKClass:(id<MHSKotlinKClass>)kClass typeArgumentsSerializers:(NSArray<id<MHSKotlinx_serialization_coreKSerializer>> *)typeArgumentsSerializers __attribute__((swift_name("getContextual(kClass:typeArgumentsSerializers:)")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (id<MHSKotlinx_serialization_coreSerializationStrategy> _Nullable)getPolymorphicBaseClass:(id<MHSKotlinKClass>)baseClass value:(id)value __attribute__((swift_name("getPolymorphic(baseClass:value:)")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (id<MHSKotlinx_serialization_coreDeserializationStrategy> _Nullable)getPolymorphicBaseClass:(id<MHSKotlinKClass>)baseClass serializedClassName:(NSString * _Nullable)serializedClassName __attribute__((swift_name("getPolymorphic(baseClass:serializedClassName:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -9024,94 +9365,20 @@ __attribute__((swift_name("Ktor_client_coreHttpSendPipeline.Phases")))
 + (instancetype)phases __attribute__((swift_name("init()")));
 @end
 
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Ktor_httpHttpMethod.Companion")))
-@interface MHSKtor_httpHttpMethodCompanion : MHSBase
-@property (class, readonly, getter=shared) MHSKtor_httpHttpMethodCompanion *shared __attribute__((swift_name("shared")));
-@property (readonly) NSArray<MHSKtor_httpHttpMethod *> *DefaultMethods __attribute__((swift_name("DefaultMethods")));
-@property (readonly) MHSKtor_httpHttpMethod *Delete __attribute__((swift_name("Delete")));
-@property (readonly) MHSKtor_httpHttpMethod *Get __attribute__((swift_name("Get")));
-@property (readonly) MHSKtor_httpHttpMethod *Head __attribute__((swift_name("Head")));
-@property (readonly) MHSKtor_httpHttpMethod *Options __attribute__((swift_name("Options")));
-@property (readonly) MHSKtor_httpHttpMethod *Patch __attribute__((swift_name("Patch")));
-@property (readonly) MHSKtor_httpHttpMethod *Post __attribute__((swift_name("Post")));
-@property (readonly) MHSKtor_httpHttpMethod *Put __attribute__((swift_name("Put")));
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-- (MHSKtor_httpHttpMethod *)parseMethod:(NSString *)method __attribute__((swift_name("parse(method:)")));
-@end
 
-__attribute__((swift_name("Kotlinx_serialization_coreCompositeEncoder")))
-@protocol MHSKotlinx_serialization_coreCompositeEncoder
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+__attribute__((swift_name("Kotlinx_serialization_coreSerializersModuleCollector")))
+@protocol MHSKotlinx_serialization_coreSerializersModuleCollector
 @required
-- (void)encodeBooleanElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(BOOL)value __attribute__((swift_name("encodeBooleanElement(descriptor:index:value:)")));
-- (void)encodeByteElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(int8_t)value __attribute__((swift_name("encodeByteElement(descriptor:index:value:)")));
-- (void)encodeCharElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(unichar)value __attribute__((swift_name("encodeCharElement(descriptor:index:value:)")));
-- (void)encodeDoubleElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(double)value __attribute__((swift_name("encodeDoubleElement(descriptor:index:value:)")));
-- (void)encodeFloatElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(float)value __attribute__((swift_name("encodeFloatElement(descriptor:index:value:)")));
-- (id<MHSKotlinx_serialization_coreEncoder>)encodeInlineElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("encodeInlineElement(descriptor:index:)")));
-- (void)encodeIntElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(int32_t)value __attribute__((swift_name("encodeIntElement(descriptor:index:value:)")));
-- (void)encodeLongElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(int64_t)value __attribute__((swift_name("encodeLongElement(descriptor:index:value:)")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (void)encodeNullableSerializableElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index serializer:(id<MHSKotlinx_serialization_coreSerializationStrategy>)serializer value:(id _Nullable)value __attribute__((swift_name("encodeNullableSerializableElement(descriptor:index:serializer:value:)")));
-- (void)encodeSerializableElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index serializer:(id<MHSKotlinx_serialization_coreSerializationStrategy>)serializer value:(id _Nullable)value __attribute__((swift_name("encodeSerializableElement(descriptor:index:serializer:value:)")));
-- (void)encodeShortElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(int16_t)value __attribute__((swift_name("encodeShortElement(descriptor:index:value:)")));
-- (void)encodeStringElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(NSString *)value __attribute__((swift_name("encodeStringElement(descriptor:index:value:)")));
-- (void)endStructureDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("endStructure(descriptor:)")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (BOOL)shouldEncodeElementDefaultDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("shouldEncodeElementDefault(descriptor:index:)")));
-@property (readonly) MHSKotlinx_serialization_coreSerializersModule *serializersModule __attribute__((swift_name("serializersModule")));
-@end
-
-__attribute__((swift_name("KotlinAnnotation")))
-@protocol MHSKotlinAnnotation
-@required
-@end
-
-__attribute__((swift_name("Kotlinx_serialization_coreCompositeDecoder")))
-@protocol MHSKotlinx_serialization_coreCompositeDecoder
-@required
-- (BOOL)decodeBooleanElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeBooleanElement(descriptor:index:)")));
-- (int8_t)decodeByteElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeByteElement(descriptor:index:)")));
-- (unichar)decodeCharElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeCharElement(descriptor:index:)")));
-- (int32_t)decodeCollectionSizeDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("decodeCollectionSize(descriptor:)")));
-- (double)decodeDoubleElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeDoubleElement(descriptor:index:)")));
-- (int32_t)decodeElementIndexDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("decodeElementIndex(descriptor:)")));
-- (float)decodeFloatElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeFloatElement(descriptor:index:)")));
-- (id<MHSKotlinx_serialization_coreDecoder>)decodeInlineElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeInlineElement(descriptor:index:)")));
-- (int32_t)decodeIntElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeIntElement(descriptor:index:)")));
-- (int64_t)decodeLongElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeLongElement(descriptor:index:)")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (id _Nullable)decodeNullableSerializableElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index deserializer:(id<MHSKotlinx_serialization_coreDeserializationStrategy>)deserializer previousValue:(id _Nullable)previousValue __attribute__((swift_name("decodeNullableSerializableElement(descriptor:index:deserializer:previousValue:)")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (BOOL)decodeSequentially __attribute__((swift_name("decodeSequentially()")));
-- (id _Nullable)decodeSerializableElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index deserializer:(id<MHSKotlinx_serialization_coreDeserializationStrategy>)deserializer previousValue:(id _Nullable)previousValue __attribute__((swift_name("decodeSerializableElement(descriptor:index:deserializer:previousValue:)")));
-- (int16_t)decodeShortElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeShortElement(descriptor:index:)")));
-- (NSString *)decodeStringElementDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeStringElement(descriptor:index:)")));
-- (void)endStructureDescriptor:(id<MHSKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("endStructure(descriptor:)")));
-@property (readonly) MHSKotlinx_serialization_coreSerializersModule *serializersModule __attribute__((swift_name("serializersModule")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("KotlinNothing")))
-@interface MHSKotlinNothing : MHSBase
+- (void)contextualKClass:(id<MHSKotlinKClass>)kClass provider:(id<MHSKotlinx_serialization_coreKSerializer> (^)(NSArray<id<MHSKotlinx_serialization_coreKSerializer>> *))provider __attribute__((swift_name("contextual(kClass:provider:)")));
+- (void)contextualKClass:(id<MHSKotlinKClass>)kClass serializer:(id<MHSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("contextual(kClass:serializer:)")));
+- (void)polymorphicBaseClass:(id<MHSKotlinKClass>)baseClass actualClass:(id<MHSKotlinKClass>)actualClass actualSerializer:(id<MHSKotlinx_serialization_coreKSerializer>)actualSerializer __attribute__((swift_name("polymorphic(baseClass:actualClass:actualSerializer:)")));
+- (void)polymorphicDefaultBaseClass:(id<MHSKotlinKClass>)baseClass defaultDeserializerProvider:(id<MHSKotlinx_serialization_coreDeserializationStrategy> _Nullable (^)(NSString * _Nullable))defaultDeserializerProvider __attribute__((swift_name("polymorphicDefault(baseClass:defaultDeserializerProvider:)"))) __attribute__((deprecated("Deprecated in favor of function with more precise name: polymorphicDefaultDeserializer")));
+- (void)polymorphicDefaultDeserializerBaseClass:(id<MHSKotlinKClass>)baseClass defaultDeserializerProvider:(id<MHSKotlinx_serialization_coreDeserializationStrategy> _Nullable (^)(NSString * _Nullable))defaultDeserializerProvider __attribute__((swift_name("polymorphicDefaultDeserializer(baseClass:defaultDeserializerProvider:)")));
+- (void)polymorphicDefaultSerializerBaseClass:(id<MHSKotlinKClass>)baseClass defaultSerializerProvider:(id<MHSKotlinx_serialization_coreSerializationStrategy> _Nullable (^)(id))defaultSerializerProvider __attribute__((swift_name("polymorphicDefaultSerializer(baseClass:defaultSerializerProvider:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -9268,22 +9535,6 @@ __attribute__((swift_name("Ktor_httpHttpProtocolVersion.Companion")))
 + (instancetype)companion __attribute__((swift_name("init()")));
 - (MHSKtor_httpHttpProtocolVersion *)fromValueName:(NSString *)name major:(int32_t)major minor:(int32_t)minor __attribute__((swift_name("fromValue(name:major:minor:)")));
 - (MHSKtor_httpHttpProtocolVersion *)parseValue:(id)value __attribute__((swift_name("parse(value:)")));
-@end
-
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-__attribute__((swift_name("Kotlinx_serialization_coreSerializersModuleCollector")))
-@protocol MHSKotlinx_serialization_coreSerializersModuleCollector
-@required
-- (void)contextualKClass:(id<MHSKotlinKClass>)kClass provider:(id<MHSKotlinx_serialization_coreKSerializer> (^)(NSArray<id<MHSKotlinx_serialization_coreKSerializer>> *))provider __attribute__((swift_name("contextual(kClass:provider:)")));
-- (void)contextualKClass:(id<MHSKotlinKClass>)kClass serializer:(id<MHSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("contextual(kClass:serializer:)")));
-- (void)polymorphicBaseClass:(id<MHSKotlinKClass>)baseClass actualClass:(id<MHSKotlinKClass>)actualClass actualSerializer:(id<MHSKotlinx_serialization_coreKSerializer>)actualSerializer __attribute__((swift_name("polymorphic(baseClass:actualClass:actualSerializer:)")));
-- (void)polymorphicDefaultBaseClass:(id<MHSKotlinKClass>)baseClass defaultDeserializerProvider:(id<MHSKotlinx_serialization_coreDeserializationStrategy> _Nullable (^)(NSString * _Nullable))defaultDeserializerProvider __attribute__((swift_name("polymorphicDefault(baseClass:defaultDeserializerProvider:)"))) __attribute__((deprecated("Deprecated in favor of function with more precise name: polymorphicDefaultDeserializer")));
-- (void)polymorphicDefaultDeserializerBaseClass:(id<MHSKotlinKClass>)baseClass defaultDeserializerProvider:(id<MHSKotlinx_serialization_coreDeserializationStrategy> _Nullable (^)(NSString * _Nullable))defaultDeserializerProvider __attribute__((swift_name("polymorphicDefaultDeserializer(baseClass:defaultDeserializerProvider:)")));
-- (void)polymorphicDefaultSerializerBaseClass:(id<MHSKotlinKClass>)baseClass defaultSerializerProvider:(id<MHSKotlinx_serialization_coreSerializationStrategy> _Nullable (^)(id))defaultSerializerProvider __attribute__((swift_name("polymorphicDefaultSerializer(baseClass:defaultSerializerProvider:)")));
 @end
 
 

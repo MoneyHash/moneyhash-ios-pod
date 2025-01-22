@@ -10542,6 +10542,16 @@ Classes:
       Type: "NSArray<MHSIntentMethodItem *> * _Nonnull"
     - Position: 1
       Type: "NSString * _Nullable"
+- Name: "MHSCardDataCollectorKt"
+  SwiftName: "CardDataCollectorKt"
+  Methods:
+  - Selector: "convertArabicNumbersToEnglish:"
+    MethodKind: "Class"
+    SwiftName: "convertArabicNumbersToEnglish(_:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
 - Name: "MHSExpireYearValidatorKt"
   SwiftName: "ExpireYearValidatorKt"
   Methods:

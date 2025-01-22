@@ -2436,6 +2436,9 @@ public func isInternetConnectionError(errorMessage: Swift.String) -> Swift.Bool
 public var JsonWithIgnoredUnknownKeys: MoneyHashShared.Kotlinx_serialization_jsonJson {
   get
 }
+extension Swift.String {
+  public func convertArabicNumbersToEnglish() -> Swift.String
+}
 public func getCurrentYearYY() -> Swift.Int32
 extension MoneyHashShared.KotlinKVariance : Swift.Sendable {}
 extension MoneyHashShared.DiscountType : Swift.Sendable {}

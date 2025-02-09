@@ -409,6 +409,10 @@ extension MoneyHashShared.PaymentUseCase {
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getInstallmentPlans(amount: MoneyHashShared.KotlinDouble?, currency: Swift.String, first6Digits: Swift.String?) async throws -> [MoneyHashShared.InstallmentPlan]
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func getMethods(paymentIntentId: Swift.String, type: MoneyHashShared.Type_) async throws -> MoneyHashShared.IntentMethods
   #endif
   #if compiler(>=5.3) && $AsyncAwait
@@ -425,7 +429,7 @@ extension MoneyHashShared.PaymentUseCase {
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func proceedWithPaymentMethod(intentId: Swift.String, selectedMethodId: Swift.String, methodType: MoneyHashShared.MethodType, metaData: MoneyHashShared.MethodMetaData?, useWalletBalance: MoneyHashShared.KotlinBoolean?) async throws -> MoneyHashShared.KotlinPair<MoneyHashShared.IntentMethods, MoneyHashShared.PaymentInformation>
+  public func proceedWithPaymentMethod(intentId: Swift.String, selectedMethodId: Swift.String, methodType: MoneyHashShared.MethodType, metaData: MoneyHashShared.MethodMetaData?, useWalletBalance: MoneyHashShared.KotlinBoolean?, installmentPlanData: MoneyHashShared.InstallmentPlanData?) async throws -> MoneyHashShared.KotlinPair<MoneyHashShared.IntentMethods, MoneyHashShared.PaymentInformation>
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -441,11 +445,15 @@ extension MoneyHashShared.PaymentUseCase {
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func submitCardCVV(intentId: Swift.String, cvv: Swift.String) async throws -> MoneyHashShared.PaymentIntentData
+  public func selectInstallmentPlan(intentId: Swift.String, installmentPlanData: MoneyHashShared.InstallmentPlanData) async throws -> MoneyHashShared.PaymentIntentData
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func submitForm(paymentIntentId: Swift.String, method: Swift.String, billingFields: [Swift.String : Swift.String]?, shippingFields: [Swift.String : Swift.String]?, vaultData: MoneyHashShared.VaultData?, saveCard: MoneyHashShared.KotlinBoolean?) async throws -> MoneyHashShared.PaymentIntentData
+  public func submitCardCVV(intentId: Swift.String, cvv: Swift.String, installmentPlanData: MoneyHashShared.InstallmentPlanData?) async throws -> MoneyHashShared.PaymentIntentData
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func submitForm(paymentIntentId: Swift.String, method: Swift.String, billingFields: [Swift.String : Swift.String]?, shippingFields: [Swift.String : Swift.String]?, vaultData: MoneyHashShared.VaultData?, saveCard: MoneyHashShared.KotlinBoolean?, installmentPlanData: MoneyHashShared.InstallmentPlanData?) async throws -> MoneyHashShared.PaymentIntentData
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -479,6 +487,10 @@ extension MoneyHashShared.PaymentService {
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getInstallmentPlans(amount: MoneyHashShared.KotlinDouble?, currency: Swift.String, first6Digits: Swift.String?) async throws -> MoneyHashShared.InstallmentPlansResponse
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func getMethods(publicKey: Swift.String, currency: Swift.String, amount: MoneyHashShared.KotlinDouble?, customer: Swift.String?, flowId: Swift.String?, operation: MoneyHashShared.IntentOperation?, customFields: [Swift.String : MoneyHashShared.CustomFieldValue]?) async throws -> MoneyHashShared.PaymentMethodResponse
   #endif
   #if compiler(>=5.3) && $AsyncAwait
@@ -499,11 +511,15 @@ extension MoneyHashShared.PaymentService {
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func submitCardCVV(intentId: Swift.String, cvv: Swift.String) async throws -> MoneyHashShared.PaymentIntentData
+  public func selectInstallmentPlan(intentId: Swift.String, installmentPlanData: MoneyHashShared.InstallmentPlanData) async throws -> MoneyHashShared.PaymentIntentData
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func submitForm(intentId: Swift.String, currentSelectedMethod: Swift.String, cardFields: [Swift.String : Swift.String]?, billingFields: [Swift.String : Swift.String]?, shippingFields: [Swift.String : Swift.String]?, vaultData: MoneyHashShared.VaultData?, saveCard: MoneyHashShared.KotlinBoolean?) async throws -> MoneyHashShared.PaymentIntentData
+  public func submitCardCVV(intentId: Swift.String, cvv: Swift.String, installmentPlanData: MoneyHashShared.InstallmentPlanData?) async throws -> MoneyHashShared.PaymentIntentData
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func submitForm(intentId: Swift.String, currentSelectedMethod: Swift.String, cardFields: [Swift.String : Swift.String]?, billingFields: [Swift.String : Swift.String]?, shippingFields: [Swift.String : Swift.String]?, vaultData: MoneyHashShared.VaultData?, saveCard: MoneyHashShared.KotlinBoolean?, installmentPlanData: MoneyHashShared.InstallmentPlanData?) async throws -> MoneyHashShared.PaymentIntentData
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -519,7 +535,7 @@ extension MoneyHashShared.PaymentService {
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func usePaymentMethod(intentId: Swift.String, methodName: Swift.String, useWalletBalance: MoneyHashShared.KotlinBoolean?) async throws -> MoneyHashShared.PaymentIntentData
+  public func usePaymentMethod(intentId: Swift.String, methodName: Swift.String, useWalletBalance: MoneyHashShared.KotlinBoolean?, installmentPlanData: MoneyHashShared.InstallmentPlanData?) async throws -> MoneyHashShared.PaymentIntentData
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -527,7 +543,7 @@ extension MoneyHashShared.PaymentService {
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func useSavedCard(paymentIntentId: Swift.String, cardTokenId: Swift.String, cvv: Swift.String?, useWalletBalance: MoneyHashShared.KotlinBoolean?) async throws -> MoneyHashShared.PaymentIntentData
+  public func useSavedCard(paymentIntentId: Swift.String, cardTokenId: Swift.String, cvv: Swift.String?, useWalletBalance: MoneyHashShared.KotlinBoolean?, installmentPlanData: MoneyHashShared.InstallmentPlanData?) async throws -> MoneyHashShared.PaymentIntentData
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -743,7 +759,7 @@ extension MoneyHashShared.CardCollector {
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func pay(intentId: Swift.String, cardData: MoneyHashShared.VaultData, saveCard: Swift.Bool, billingFields: [Swift.String : Swift.String]?, shippingFields: [Swift.String : Swift.String]?) async throws -> MoneyHashShared.PaymentIntentData
+  public func pay(intentId: Swift.String, cardData: MoneyHashShared.VaultData, saveCard: Swift.Bool, billingFields: [Swift.String : Swift.String]?, shippingFields: [Swift.String : Swift.String]?, installmentPlanData: MoneyHashShared.InstallmentPlanData?) async throws -> MoneyHashShared.PaymentIntentData
   #endif
 }
 extension MoneyHashShared.Ktor_httpOutgoingContent.ProtocolUpgrade {
@@ -1590,6 +1606,7 @@ extension MoneyHashShared.__IntentStatus {
   case savedCardCvv
   case success
   case failed
+  case instalmentPlans
   case nativePay
   public var name: Swift.String {
     get
@@ -2222,6 +2239,7 @@ extension MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails
     case closed(MoneyHashShared.IntentStateDetails.Closed)
     case expired(MoneyHashShared.IntentStateDetails.Expired)
     case formFields(MoneyHashShared.IntentStateDetails.FormFields)
+    case installmentPlans(MoneyHashShared.IntentStateDetails.InstallmentPlans)
     case intentForm(MoneyHashShared.IntentStateDetails.IntentForm)
     case intentProcessed(MoneyHashShared.IntentStateDetails.IntentProcessed)
     case methodSelection(MoneyHashShared.IntentStateDetails.MethodSelection)

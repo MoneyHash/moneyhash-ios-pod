@@ -3225,6 +3225,57 @@
                       },
                       {
                         "kind": "Var",
+                        "name": "installmentPlans",
+                        "printedName": "installmentPlans",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed.Type) -> (MoneyHashShared.IntentStateDetails.InstallmentPlans) -> MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(MoneyHashShared.IntentStateDetails.InstallmentPlans) -> MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed",
+                                    "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "InstallmentPlans",
+                                    "printedName": "MoneyHashShared.IntentStateDetails.InstallmentPlans",
+                                    "usr": "c:objc(cs)MHSIntentStateDetailsInstallmentPlans"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed",
+                                    "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO16installmentPlansyAISo09MHSIntenthi11InstallmentL0CcAImF",
+                        "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO16installmentPlansyAISo09MHSIntenthi11InstallmentL0CcAImF",
+                        "moduleName": "MoneyHashShared",
+                        "fixedbinaryorder": 5
+                      },
+                      {
+                        "kind": "Var",
                         "name": "intentForm",
                         "printedName": "intentForm",
                         "children": [
@@ -3272,7 +3323,7 @@
                         "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO10intentFormyAISo09MHSIntenthigL0CcAImF",
                         "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO10intentFormyAISo09MHSIntenthigL0CcAImF",
                         "moduleName": "MoneyHashShared",
-                        "fixedbinaryorder": 5
+                        "fixedbinaryorder": 6
                       },
                       {
                         "kind": "Var",
@@ -3323,7 +3374,7 @@
                         "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO15intentProcessedyAISo09MHSIntenthigL0CcAImF",
                         "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO15intentProcessedyAISo09MHSIntenthigL0CcAImF",
                         "moduleName": "MoneyHashShared",
-                        "fixedbinaryorder": 6
+                        "fixedbinaryorder": 7
                       },
                       {
                         "kind": "Var",
@@ -3374,7 +3425,7 @@
                         "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO15methodSelectionyAISo09MHSIntenthi6MethodL0CcAImF",
                         "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO15methodSelectionyAISo09MHSIntenthi6MethodL0CcAImF",
                         "moduleName": "MoneyHashShared",
-                        "fixedbinaryorder": 7
+                        "fixedbinaryorder": 8
                       },
                       {
                         "kind": "Var",
@@ -3425,7 +3476,7 @@
                         "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO9nativePayyAISo09MHSIntenthi6NativeL0CcAImF",
                         "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO9nativePayyAISo09MHSIntenthi6NativeL0CcAImF",
                         "moduleName": "MoneyHashShared",
-                        "fixedbinaryorder": 8
+                        "fixedbinaryorder": 9
                       },
                       {
                         "kind": "Var",
@@ -3476,7 +3527,7 @@
                         "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO12savedCardCVVyAISo09MHSIntenthi5SavedlM0CcAImF",
                         "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO12savedCardCVVyAISo09MHSIntenthi5SavedlM0CcAImF",
                         "moduleName": "MoneyHashShared",
-                        "fixedbinaryorder": 9
+                        "fixedbinaryorder": 10
                       },
                       {
                         "kind": "Var",
@@ -3527,7 +3578,7 @@
                         "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO17transactionFailedyAISo09MHSIntenthi11TransactionL0CcAImF",
                         "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO17transactionFailedyAISo09MHSIntenthi11TransactionL0CcAImF",
                         "moduleName": "MoneyHashShared",
-                        "fixedbinaryorder": 10
+                        "fixedbinaryorder": 11
                       },
                       {
                         "kind": "Var",
@@ -3578,7 +3629,7 @@
                         "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO28transactionWaitingUserActionyAISo09MHSIntenthi11TransactionlmN0CcAImF",
                         "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO28transactionWaitingUserActionyAISo09MHSIntenthi11TransactionlmN0CcAImF",
                         "moduleName": "MoneyHashShared",
-                        "fixedbinaryorder": 11
+                        "fixedbinaryorder": 12
                       },
                       {
                         "kind": "Var",
@@ -3629,7 +3680,7 @@
                         "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO11urlToRenderyAISo09MHSIntenthi3UrllM0CcAImF",
                         "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO11urlToRenderyAISo09MHSIntenthi3UrllM0CcAImF",
                         "moduleName": "MoneyHashShared",
-                        "fixedbinaryorder": 12
+                        "fixedbinaryorder": 13
                       },
                       {
                         "kind": "Var",
@@ -30324,6 +30375,44 @@
           },
           {
             "kind": "Var",
+            "name": "instalmentPlans",
+            "printedName": "instalmentPlans",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHashShared.IntentState.Type) -> MoneyHashShared.IntentState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IntentState",
+                    "printedName": "MoneyHashShared.IntentState",
+                    "usr": "s:15MoneyHashShared11IntentStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHashShared.IntentState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IntentState",
+                        "printedName": "MoneyHashShared.IntentState",
+                        "usr": "s:15MoneyHashShared11IntentStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MoneyHashShared11IntentStateO15instalmentPlansyA2CmF",
+            "mangledName": "$s15MoneyHashShared11IntentStateO15instalmentPlansyA2CmF",
+            "moduleName": "MoneyHashShared",
+            "fixedbinaryorder": 12
+          },
+          {
+            "kind": "Var",
             "name": "nativePay",
             "printedName": "nativePay",
             "children": [
@@ -30358,7 +30447,7 @@
             "usr": "s:15MoneyHashShared11IntentStateO9nativePayyA2CmF",
             "mangledName": "$s15MoneyHashShared11IntentStateO9nativePayyA2CmF",
             "moduleName": "MoneyHashShared",
-            "fixedbinaryorder": 12
+            "fixedbinaryorder": 13
           },
           {
             "kind": "Var",
@@ -42478,6 +42567,79 @@
           },
           {
             "kind": "Function",
+            "name": "getInstallmentPlans",
+            "printedName": "getInstallmentPlans(amount:currency:first6Digits:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[MoneyHashShared.InstallmentPlan]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstallmentPlan",
+                    "printedName": "MoneyHashShared.InstallmentPlan",
+                    "usr": "c:objc(cs)MHSInstallmentPlan"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.KotlinDouble?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KotlinDouble",
+                    "printedName": "MoneyHashShared.KotlinDouble",
+                    "usr": "c:objc(cs)MHSDouble"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So17MHSPaymentUseCaseC15MoneyHashSharedE19getInstallmentPlans6amount8currency12first6DigitsSaySo18MHSInstallmentPlanCGSo9MHSDoubleCSg_S2SSgtYaKF",
+            "mangledName": "$sSo17MHSPaymentUseCaseC15MoneyHashSharedE19getInstallmentPlans6amount8currency12first6DigitsSaySo18MHSInstallmentPlanCGSo9MHSDoubleCSg_S2SSgtYaKF",
+            "moduleName": "MoneyHashShared",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getMethods",
             "printedName": "getMethods(paymentIntentId:type:)",
             "children": [
@@ -42717,7 +42879,7 @@
           {
             "kind": "Function",
             "name": "proceedWithPaymentMethod",
-            "printedName": "proceedWithPaymentMethod(intentId:selectedMethodId:methodType:metaData:useWalletBalance:)",
+            "printedName": "proceedWithPaymentMethod(intentId:selectedMethodId:methodType:metaData:useWalletBalance:installmentPlanData:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -42784,11 +42946,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.InstallmentPlanData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstallmentPlanData",
+                    "printedName": "MoneyHashShared.InstallmentPlanData",
+                    "usr": "c:objc(cs)MHSInstallmentPlanData"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So17MHSPaymentUseCaseC15MoneyHashSharedE24proceedWithPaymentMethod8intentId08selectedjL010methodType8metaData16useWalletBalanceSo13MHSKotlinPairCySo16MHSIntentMethodsCSo0A11InformationCGSS_SSAC0jO0OSo013MHSMethodMetaQ0CSgSo10MHSBooleanCSgtYaKF",
-            "mangledName": "$sSo17MHSPaymentUseCaseC15MoneyHashSharedE24proceedWithPaymentMethod8intentId08selectedjL010methodType8metaData16useWalletBalanceSo13MHSKotlinPairCySo16MHSIntentMethodsCSo0A11InformationCGSS_SSAC0jO0OSo013MHSMethodMetaQ0CSgSo10MHSBooleanCSgtYaKF",
+            "usr": "s:So17MHSPaymentUseCaseC15MoneyHashSharedE24proceedWithPaymentMethod8intentId08selectedjL010methodType8metaData16useWalletBalance015installmentPlanQ0So13MHSKotlinPairCySo16MHSIntentMethodsCSo0A11InformationCGSS_SSAC0jO0OSo013MHSMethodMetaQ0CSgSo10MHSBooleanCSgSo014MHSInstallmentvQ0CSgtYaKF",
+            "mangledName": "$sSo17MHSPaymentUseCaseC15MoneyHashSharedE24proceedWithPaymentMethod8intentId08selectedjL010methodType8metaData16useWalletBalance015installmentPlanQ0So13MHSKotlinPairCySo16MHSIntentMethodsCSo0A11InformationCGSS_SSAC0jO0OSo013MHSMethodMetaQ0CSgSo10MHSBooleanCSgSo014MHSInstallmentvQ0CSgtYaKF",
             "moduleName": "MoneyHashShared",
             "intro_Macosx": "10.15",
             "intro_iOS": "13",
@@ -42986,8 +43162,51 @@
           },
           {
             "kind": "Function",
+            "name": "selectInstallmentPlan",
+            "printedName": "selectInstallmentPlan(intentId:installmentPlanData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaymentIntentData",
+                "printedName": "MoneyHashShared.PaymentIntentData",
+                "usr": "c:objc(cs)MHSPaymentIntentData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "InstallmentPlanData",
+                "printedName": "MoneyHashShared.InstallmentPlanData",
+                "usr": "c:objc(cs)MHSInstallmentPlanData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So17MHSPaymentUseCaseC15MoneyHashSharedE21selectInstallmentPlan8intentId011installmentI4DataSo0a6IntentM0CSS_So014MHSInstallmentiM0CtYaKF",
+            "mangledName": "$sSo17MHSPaymentUseCaseC15MoneyHashSharedE21selectInstallmentPlan8intentId011installmentI4DataSo0a6IntentM0CSS_So014MHSInstallmentiM0CtYaKF",
+            "moduleName": "MoneyHashShared",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "submitCardCVV",
-            "printedName": "submitCardCVV(intentId:cvv:)",
+            "printedName": "submitCardCVV(intentId:cvv:installmentPlanData:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -43006,11 +43225,25 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.InstallmentPlanData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstallmentPlanData",
+                    "printedName": "MoneyHashShared.InstallmentPlanData",
+                    "usr": "c:objc(cs)MHSInstallmentPlanData"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So17MHSPaymentUseCaseC15MoneyHashSharedE13submitCardCVV8intentId3cvvSo0A10IntentDataCSS_SStYaKF",
-            "mangledName": "$sSo17MHSPaymentUseCaseC15MoneyHashSharedE13submitCardCVV8intentId3cvvSo0A10IntentDataCSS_SStYaKF",
+            "usr": "s:So17MHSPaymentUseCaseC15MoneyHashSharedE13submitCardCVV8intentId3cvv19installmentPlanDataSo0a6IntentO0CSS_SSSo014MHSInstallmentnO0CSgtYaKF",
+            "mangledName": "$sSo17MHSPaymentUseCaseC15MoneyHashSharedE13submitCardCVV8intentId3cvv19installmentPlanDataSo0a6IntentO0CSS_SSSo014MHSInstallmentnO0CSgtYaKF",
             "moduleName": "MoneyHashShared",
             "intro_Macosx": "10.15",
             "intro_iOS": "13",
@@ -43030,7 +43263,7 @@
           {
             "kind": "Function",
             "name": "submitForm",
-            "printedName": "submitForm(paymentIntentId:method:billingFields:shippingFields:vaultData:saveCard:)",
+            "printedName": "submitForm(paymentIntentId:method:billingFields:shippingFields:vaultData:saveCard:installmentPlanData:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -43133,11 +43366,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.InstallmentPlanData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstallmentPlanData",
+                    "printedName": "MoneyHashShared.InstallmentPlanData",
+                    "usr": "c:objc(cs)MHSInstallmentPlanData"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So17MHSPaymentUseCaseC15MoneyHashSharedE10submitForm15paymentIntentId6method13billingFields08shippingN09vaultData8saveCardSo0ajQ0CSS_SSSDyS2SGSgANSo08MHSVaultQ0CSgSo10MHSBooleanCSgtYaKF",
-            "mangledName": "$sSo17MHSPaymentUseCaseC15MoneyHashSharedE10submitForm15paymentIntentId6method13billingFields08shippingN09vaultData8saveCardSo0ajQ0CSS_SSSDyS2SGSgANSo08MHSVaultQ0CSgSo10MHSBooleanCSgtYaKF",
+            "usr": "s:So17MHSPaymentUseCaseC15MoneyHashSharedE10submitForm15paymentIntentId6method13billingFields08shippingN09vaultData8saveCard015installmentPlanQ0So0ajQ0CSS_SSSDyS2SGSgAOSo08MHSVaultQ0CSgSo10MHSBooleanCSgSo014MHSInstallmentuQ0CSgtYaKF",
+            "mangledName": "$sSo17MHSPaymentUseCaseC15MoneyHashSharedE10submitForm15paymentIntentId6method13billingFields08shippingN09vaultData8saveCard015installmentPlanQ0So0ajQ0CSS_SSSDyS2SGSgAOSo08MHSVaultQ0CSgSo10MHSBooleanCSgSo014MHSInstallmentuQ0CSgtYaKF",
             "moduleName": "MoneyHashShared",
             "intro_Macosx": "10.15",
             "intro_iOS": "13",
@@ -43562,6 +43809,73 @@
           },
           {
             "kind": "Function",
+            "name": "getInstallmentPlans",
+            "printedName": "getInstallmentPlans(amount:currency:first6Digits:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InstallmentPlansResponse",
+                "printedName": "MoneyHashShared.InstallmentPlansResponse",
+                "usr": "c:objc(cs)MHSInstallmentPlansResponse"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.KotlinDouble?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KotlinDouble",
+                    "printedName": "MoneyHashShared.KotlinDouble",
+                    "usr": "c:objc(cs)MHSDouble"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So17MHSPaymentServiceP15MoneyHashSharedE19getInstallmentPlans6amount8currency12first6DigitsSo014MHSInstallmentH8ResponseCSo9MHSDoubleCSg_S2SSgtYaKF",
+            "mangledName": "$sSo17MHSPaymentServiceP15MoneyHashSharedE19getInstallmentPlans6amount8currency12first6DigitsSo014MHSInstallmentH8ResponseCSo9MHSDoubleCSg_S2SSgtYaKF",
+            "moduleName": "MoneyHashShared",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoneyHashShared.PaymentService>",
+            "sugared_genericSig": "<Self where Self : MoneyHashShared.PaymentService>",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getMethods",
             "printedName": "getMethods(publicKey:currency:amount:customer:flowId:operation:customFields:)",
             "children": [
@@ -43847,8 +44161,53 @@
           },
           {
             "kind": "Function",
+            "name": "selectInstallmentPlan",
+            "printedName": "selectInstallmentPlan(intentId:installmentPlanData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaymentIntentData",
+                "printedName": "MoneyHashShared.PaymentIntentData",
+                "usr": "c:objc(cs)MHSPaymentIntentData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "InstallmentPlanData",
+                "printedName": "MoneyHashShared.InstallmentPlanData",
+                "usr": "c:objc(cs)MHSInstallmentPlanData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So17MHSPaymentServiceP15MoneyHashSharedE21selectInstallmentPlan8intentId011installmentH4DataSo0a6IntentL0CSS_So014MHSInstallmenthL0CtYaKF",
+            "mangledName": "$sSo17MHSPaymentServiceP15MoneyHashSharedE21selectInstallmentPlan8intentId011installmentH4DataSo0a6IntentL0CSS_So014MHSInstallmenthL0CtYaKF",
+            "moduleName": "MoneyHashShared",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoneyHashShared.PaymentService>",
+            "sugared_genericSig": "<Self where Self : MoneyHashShared.PaymentService>",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "submitCardCVV",
-            "printedName": "submitCardCVV(intentId:cvv:)",
+            "printedName": "submitCardCVV(intentId:cvv:installmentPlanData:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -43867,11 +44226,25 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.InstallmentPlanData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstallmentPlanData",
+                    "printedName": "MoneyHashShared.InstallmentPlanData",
+                    "usr": "c:objc(cs)MHSInstallmentPlanData"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So17MHSPaymentServiceP15MoneyHashSharedE13submitCardCVV8intentId3cvvSo0A10IntentDataCSS_SStYaKF",
-            "mangledName": "$sSo17MHSPaymentServiceP15MoneyHashSharedE13submitCardCVV8intentId3cvvSo0A10IntentDataCSS_SStYaKF",
+            "usr": "s:So17MHSPaymentServiceP15MoneyHashSharedE13submitCardCVV8intentId3cvv19installmentPlanDataSo0a6IntentN0CSS_SSSo014MHSInstallmentmN0CSgtYaKF",
+            "mangledName": "$sSo17MHSPaymentServiceP15MoneyHashSharedE13submitCardCVV8intentId3cvv19installmentPlanDataSo0a6IntentN0CSS_SSSo014MHSInstallmentmN0CSgtYaKF",
             "moduleName": "MoneyHashShared",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHashShared.PaymentService>",
             "sugared_genericSig": "<Self where Self : MoneyHashShared.PaymentService>",
@@ -43893,7 +44266,7 @@
           {
             "kind": "Function",
             "name": "submitForm",
-            "printedName": "submitForm(intentId:currentSelectedMethod:cardFields:billingFields:shippingFields:vaultData:saveCard:)",
+            "printedName": "submitForm(intentId:currentSelectedMethod:cardFields:billingFields:shippingFields:vaultData:saveCard:installmentPlanData:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -44024,11 +44397,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.InstallmentPlanData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstallmentPlanData",
+                    "printedName": "MoneyHashShared.InstallmentPlanData",
+                    "usr": "c:objc(cs)MHSInstallmentPlanData"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So17MHSPaymentServiceP15MoneyHashSharedE10submitForm8intentId21currentSelectedMethod10cardFields07billingN008shippingN09vaultData8saveCardSo0a6IntentR0CSS_SSSDyS2SGSgA2OSo08MHSVaultR0CSgSo10MHSBooleanCSgtYaKF",
-            "mangledName": "$sSo17MHSPaymentServiceP15MoneyHashSharedE10submitForm8intentId21currentSelectedMethod10cardFields07billingN008shippingN09vaultData8saveCardSo0a6IntentR0CSS_SSSDyS2SGSgA2OSo08MHSVaultR0CSgSo10MHSBooleanCSgtYaKF",
+            "usr": "s:So17MHSPaymentServiceP15MoneyHashSharedE10submitForm8intentId21currentSelectedMethod10cardFields07billingN008shippingN09vaultData8saveCard015installmentPlanR0So0a6IntentR0CSS_SSSDyS2SGSgA2PSo08MHSVaultR0CSgSo10MHSBooleanCSgSo014MHSInstallmentvR0CSgtYaKF",
+            "mangledName": "$sSo17MHSPaymentServiceP15MoneyHashSharedE10submitForm8intentId21currentSelectedMethod10cardFields07billingN008shippingN09vaultData8saveCard015installmentPlanR0So0a6IntentR0CSS_SSSDyS2SGSgA2PSo08MHSVaultR0CSgSo10MHSBooleanCSgSo014MHSInstallmentvR0CSgtYaKF",
             "moduleName": "MoneyHashShared",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHashShared.PaymentService>",
             "sugared_genericSig": "<Self where Self : MoneyHashShared.PaymentService>",
@@ -44221,7 +44608,7 @@
           {
             "kind": "Function",
             "name": "usePaymentMethod",
-            "printedName": "usePaymentMethod(intentId:methodName:useWalletBalance:)",
+            "printedName": "usePaymentMethod(intentId:methodName:useWalletBalance:installmentPlanData:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -44254,11 +44641,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.InstallmentPlanData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstallmentPlanData",
+                    "printedName": "MoneyHashShared.InstallmentPlanData",
+                    "usr": "c:objc(cs)MHSInstallmentPlanData"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So17MHSPaymentServiceP15MoneyHashSharedE16usePaymentMethod8intentId10methodName0F13WalletBalanceSo0A10IntentDataCSS_SSSo10MHSBooleanCSgtYaKF",
-            "mangledName": "$sSo17MHSPaymentServiceP15MoneyHashSharedE16usePaymentMethod8intentId10methodName0F13WalletBalanceSo0A10IntentDataCSS_SSSo10MHSBooleanCSgtYaKF",
+            "usr": "s:So17MHSPaymentServiceP15MoneyHashSharedE16usePaymentMethod8intentId10methodName0F13WalletBalance19installmentPlanDataSo0a6IntentQ0CSS_SSSo10MHSBooleanCSgSo014MHSInstallmentpQ0CSgtYaKF",
+            "mangledName": "$sSo17MHSPaymentServiceP15MoneyHashSharedE16usePaymentMethod8intentId10methodName0F13WalletBalance19installmentPlanDataSo0a6IntentQ0CSS_SSSo10MHSBooleanCSgSo014MHSInstallmentpQ0CSgtYaKF",
             "moduleName": "MoneyHashShared",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHashShared.PaymentService>",
             "sugared_genericSig": "<Self where Self : MoneyHashShared.PaymentService>",
@@ -44325,7 +44726,7 @@
           {
             "kind": "Function",
             "name": "useSavedCard",
-            "printedName": "useSavedCard(paymentIntentId:cardTokenId:cvv:useWalletBalance:)",
+            "printedName": "useSavedCard(paymentIntentId:cardTokenId:cvv:useWalletBalance:installmentPlanData:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -44372,11 +44773,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.InstallmentPlanData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstallmentPlanData",
+                    "printedName": "MoneyHashShared.InstallmentPlanData",
+                    "usr": "c:objc(cs)MHSInstallmentPlanData"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So17MHSPaymentServiceP15MoneyHashSharedE12useSavedCard15paymentIntentId09cardTokenK03cvv0F13WalletBalanceSo0aJ4DataCSS_S2SSgSo10MHSBooleanCSgtYaKF",
-            "mangledName": "$sSo17MHSPaymentServiceP15MoneyHashSharedE12useSavedCard15paymentIntentId09cardTokenK03cvv0F13WalletBalanceSo0aJ4DataCSS_S2SSgSo10MHSBooleanCSgtYaKF",
+            "usr": "s:So17MHSPaymentServiceP15MoneyHashSharedE12useSavedCard15paymentIntentId09cardTokenK03cvv0F13WalletBalance19installmentPlanDataSo0ajS0CSS_S2SSgSo10MHSBooleanCSgSo014MHSInstallmentrS0CSgtYaKF",
+            "mangledName": "$sSo17MHSPaymentServiceP15MoneyHashSharedE12useSavedCard15paymentIntentId09cardTokenK03cvv0F13WalletBalance19installmentPlanDataSo0ajS0CSS_S2SSgSo10MHSBooleanCSgSo014MHSInstallmentrS0CSgtYaKF",
             "moduleName": "MoneyHashShared",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHashShared.PaymentService>",
             "sugared_genericSig": "<Self where Self : MoneyHashShared.PaymentService>",
@@ -46748,7 +47163,7 @@
           {
             "kind": "Function",
             "name": "pay",
-            "printedName": "pay(intentId:cardData:saveCard:billingFields:shippingFields:)",
+            "printedName": "pay(intentId:cardData:saveCard:billingFields:shippingFields:installmentPlanData:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -46829,11 +47244,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.InstallmentPlanData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstallmentPlanData",
+                    "printedName": "MoneyHashShared.InstallmentPlanData",
+                    "usr": "c:objc(cs)MHSInstallmentPlanData"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So16MHSCardCollectorC15MoneyHashSharedE3pay8intentId8cardData8saveCard13billingFields08shippingN0So016MHSPaymentIntentJ0CSS_So08MHSVaultJ0CSbSDyS2SGSgAOtYaKF",
-            "mangledName": "$sSo16MHSCardCollectorC15MoneyHashSharedE3pay8intentId8cardData8saveCard13billingFields08shippingN0So016MHSPaymentIntentJ0CSS_So08MHSVaultJ0CSbSDyS2SGSgAOtYaKF",
+            "usr": "s:So16MHSCardCollectorC15MoneyHashSharedE3pay8intentId8cardData8saveCard13billingFields08shippingN0015installmentPlanJ0So016MHSPaymentIntentJ0CSS_So08MHSVaultJ0CSbSDyS2SGSgAPSo014MHSInstallmentqJ0CSgtYaKF",
+            "mangledName": "$sSo16MHSCardCollectorC15MoneyHashSharedE3pay8intentId8cardData8saveCard13billingFields08shippingN0015installmentPlanJ0So016MHSPaymentIntentJ0CSS_So08MHSVaultJ0CSbSDyS2SGSgAPSo014MHSInstallmentqJ0CSgtYaKF",
             "moduleName": "MoneyHashShared",
             "intro_Macosx": "10.15",
             "intro_iOS": "13",

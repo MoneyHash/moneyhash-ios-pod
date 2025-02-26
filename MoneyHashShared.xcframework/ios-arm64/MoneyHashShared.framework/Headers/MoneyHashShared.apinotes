@@ -10545,6 +10545,13 @@ Classes:
 - Name: "MHSMoneyHashStore"
   SwiftName: "MoneyHashStore"
   Methods:
+  - Selector: "setCardFormConfigurationValue:"
+    MethodKind: "Instance"
+    SwiftName: "setCardFormConfiguration(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "MHSCardFormConfiguration * _Nonnull"
   - Selector: "setCrossPlatformVersionValue:"
     MethodKind: "Instance"
     SwiftName: "setCrossPlatformVersion(value:)"
@@ -10559,6 +10566,49 @@ Classes:
     Parameters:
     - Position: 0
       Type: "NSString * _Nullable"
+- Name: "MHSCardFormConfiguration"
+  SwiftName: "CardFormConfiguration"
+  Properties:
+  - Name: "isCardHolderNameRequired"
+    PropertyKind: "Instance"
+    SwiftName: "isCardHolderNameRequired"
+    Type: "BOOL"
+  Methods:
+  - Selector: "initWithIsCardHolderNameRequired:"
+    MethodKind: "Instance"
+    SwiftName: "init(isCardHolderNameRequired:)"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "doCopyIsCardHolderNameRequired:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(isCardHolderNameRequired:)"
+    ResultType: "MHSCardFormConfiguration * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "MHSCardFormConfigurationCompanion"
+  SwiftName: "CardFormConfiguration.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
 - Name: "MHSPaymentInformationModule"
   SwiftName: "PaymentInformationModule"
   Properties:

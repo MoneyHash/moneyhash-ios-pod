@@ -83,6 +83,7 @@ public struct ApplePayData : Swift.Codable {
 }
 public class CardFormBuilder {
   public init()
+  public func setConfiguration(_ configuration: MoneyHash.CardFormConfiguration) -> MoneyHash.CardFormBuilder
   public func setCardNumberField(handler: ((MoneyHash.CardInputFieldState) -> Swift.Void)? = nil) -> MoneyHash.CardFormBuilder
   public func setCVVField(handler: ((MoneyHash.CardInputFieldState) -> Swift.Void)? = nil) -> MoneyHash.CardFormBuilder
   public func setCardHolderNameField(handler: ((MoneyHash.CardInputFieldState) -> Swift.Void)? = nil) -> MoneyHash.CardFormBuilder
@@ -277,6 +278,7 @@ public protocol MoneyHashSDK {
   func createCardToken(cardIntentId: Swift.String, cardData: MoneyHash.VaultData) async throws -> MoneyHash.IntentStateDetails?
   #endif
   func setCrossplatformVersion(_ version: Swift.String)
+  func setCardFormConfiguration(_ configuration: MoneyHash.CardFormConfiguration)
   func setApplePayConfiguration(_ applePayConfiguration: MoneyHash.ApplePayConfiguration)
   func setLocale(_ locale: MoneyHash.MHLocale)
   #if compiler(>=5.3) && $AsyncAwait
@@ -292,6 +294,13 @@ public protocol MoneyHashSDK {
   #if compiler(>=5.3) && $AsyncAwait
   func getInstallmentPlans(amount: Swift.Double, currency: Swift.String, first6Digits: Swift.String?) async throws -> [MoneyHash.InstallmentPlan]
   #endif
+}
+public class CardFormConfiguration : Swift.Codable {
+  final public let isCardHolderNameRequired: Swift.Bool
+  public init(isCardHolderNameRequired: Swift.Bool)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 public struct EmbedLoaderStyle : Swift.Codable {
   public init(backgroundColor: Swift.String? = nil, color: Swift.String? = nil)

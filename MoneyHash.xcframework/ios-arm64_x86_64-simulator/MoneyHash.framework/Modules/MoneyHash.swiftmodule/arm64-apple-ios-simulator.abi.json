@@ -9488,6 +9488,101 @@
           },
           {
             "kind": "Function",
+            "name": "renderURL",
+            "printedName": "renderURL(on:urlToRender:intentId:embedStyle:intentType:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.EmbedStyle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EmbedStyle",
+                    "printedName": "MoneyHash.EmbedStyle",
+                    "usr": "s:9MoneyHash10EmbedStyleV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IntentType",
+                "printedName": "MoneyHash.IntentType",
+                "usr": "s:9MoneyHash10IntentTypeO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<MoneyHash.IntentDetails, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<MoneyHash.IntentDetails, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IntentDetails",
+                        "printedName": "MoneyHash.IntentDetails",
+                        "usr": "s:9MoneyHash13IntentDetailsV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash0aB3SDKP9renderURL2on11urlToRender8intentId10embedStyle0J4Type17completionHandlerySo16UIViewControllerC_10Foundation0E0VSSAA05EmbedM0VSgAA06IntentN0Oys6ResultOyAA0U7DetailsVs5Error_pGctF",
+            "mangledName": "$s9MoneyHash0aB3SDKP9renderURL2on11urlToRender8intentId10embedStyle0J4Type17completionHandlerySo16UIViewControllerC_10Foundation0E0VSSAA05EmbedM0VSgAA06IntentN0Oys6ResultOyAA0U7DetailsVs5Error_pGctF",
+            "moduleName": "MoneyHash",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
+            "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Custom",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getMethods",
             "printedName": "getMethods(currency:amount:customer:flowId:operation:customFields:)",
             "children": [
@@ -29113,56 +29208,63 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 845,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1047,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1130,
+      "offset": 887,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1317,
+      "offset": 998,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1200,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1283,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1470,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1534,
+      "offset": 1687,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1611,
+      "offset": 1764,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1786,
+      "offset": 1939,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2403,
+      "offset": 2582,
       "length": 5,
       "value": "false"
     },
@@ -29367,7 +29469,7 @@
       "kind": "StringLiteral",
       "offset": 97,
       "length": 8,
-      "value": "\"2.2.22\""
+      "value": "\"2.2.23\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",

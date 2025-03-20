@@ -231,6 +231,7 @@ public struct IntentDetails : Swift.Codable {
 }
 public protocol MoneyHashSDK {
   func renderForm(on viewController: UIKit.UIViewController, intentId: Swift.String, embedStyle: MoneyHash.EmbedStyle?, intentType: MoneyHash.IntentType, completionHandler: @escaping (Swift.Result<MoneyHash.IntentDetails, any Swift.Error>) -> Swift.Void)
+  @_Concurrency.MainActor func renderURL(on viewController: UIKit.UIViewController, urlToRender: Foundation.URL, intentId: Swift.String, embedStyle: MoneyHash.EmbedStyle?, intentType: MoneyHash.IntentType, completionHandler: @escaping (Swift.Result<MoneyHash.IntentDetails, any Swift.Error>) -> Swift.Void)
   #if compiler(>=5.3) && $AsyncAwait
   func getMethods(currency: Swift.String, amount: Swift.Double?, customer: Swift.String?, flowId: Swift.String?, operation: MoneyHash.IntentOperation?, customFields: [Swift.String : MoneyHash.CustomFieldValue]?) async throws -> MoneyHash.IntentMethods
   #endif

@@ -405,6 +405,10 @@ extension MoneyHashShared.PaymentUseCase {
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getApplePayBinLookup(receipt: Swift.String, receiptBillingData: [Swift.String : Swift.String]?, methodID: Swift.String, flowId: Swift.String?) async throws -> MoneyHashShared.LookupResponse
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func getCardInformation(cardIntentId: Swift.String) async throws -> MoneyHashShared.CardState
   #endif
   #if compiler(>=5.3) && $AsyncAwait
@@ -480,6 +484,10 @@ extension MoneyHashShared.PaymentService {
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func generateAccessToken(publicKey: Swift.String) async throws -> MoneyHashShared.AccessTokenResponse
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getApplePayBinLookup(receipt: Swift.String, receiptBillingData: [Swift.String : Swift.String]?, methodID: Swift.String, flowId: Swift.String?) async throws -> MoneyHashShared.LookupResponse
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)

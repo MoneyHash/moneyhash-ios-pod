@@ -78,6 +78,7 @@ public struct ApplePayData : Swift.Codable {
   public let supportedRegions: [Swift.String]?
   public let amount: Swift.Float?
   public let supportedNetworks: [Swift.String]?
+  public let methodID: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -217,6 +218,17 @@ public enum InputFieldType : Swift.String, Swift.Codable {
     get
   }
 }
+public struct Balances : Swift.Codable, Swift.Sendable {
+  public let availableToCapture: Swift.String?
+  public let availableToRefund: Swift.String?
+  public let availableToVoid: Swift.String?
+  public let totalAuthorized: Swift.String?
+  public let totalCaptured: Swift.String?
+  public let totalRefunded: Swift.String?
+  public let totalVoided: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct IntentDetails : Swift.Codable {
   public let selectedMethod: Swift.String?
   public let wallet: Swift.Double?
@@ -226,6 +238,7 @@ public struct IntentDetails : Swift.Codable {
   public let transaction: MoneyHash.Transaction?
   public let id: Swift.String?
   public let lastUsedMethod: MoneyHash.LastUsedMethod?
+  public let paymentStatus: MoneyHash.PaymentStatus?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -294,6 +307,9 @@ public protocol MoneyHashSDK {
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   func getInstallmentPlans(amount: Swift.Double, currency: Swift.String, first6Digits: Swift.String?) async throws -> [MoneyHash.InstallmentPlan]
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func getApplePayBinLookup(receipt: MoneyHash.NativePayReceipt, methodID: Swift.String, flowId: Swift.String?) async throws -> MoneyHash.LookupData
   #endif
 }
 public class CardFormConfiguration : Swift.Codable {
@@ -505,6 +521,12 @@ public struct PaymentMethod : MoneyHash.MoneyHashMethod, Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct PaymentStatus : Swift.Codable, Swift.Sendable {
+  public let balances: MoneyHash.Balances?
+  public let status: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct EmbedButtonStyle : Swift.Codable {
   public init(base: MoneyHash.EmbedButtonViewStyle? = nil, hover: MoneyHash.EmbedButtonViewStyle? = nil, focus: MoneyHash.EmbedButtonViewStyle? = nil)
   public func encode(to encoder: any Swift.Encoder) throws
@@ -659,6 +681,17 @@ public struct SaveCardCheckbox : Swift.Codable {
 public struct NativePayReceipt : Swift.Codable {
   public let receipt: Swift.String
   public let receiptBillingData: [Swift.String : Swift.String]?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct LookupData : Swift.Codable, Swift.Sendable {
+  public let brand: Swift.String?
+  public let cardType: Swift.String?
+  public let firstSixDigits: Swift.String?
+  public let issuer: Swift.String?
+  public let issuerCountry: Swift.String?
+  public let issuerCountryCode: Swift.String?
+  public let product: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }

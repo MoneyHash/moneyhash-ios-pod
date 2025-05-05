@@ -27531,9 +27531,70 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "length",
+            "printedName": "length",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash14CardFieldStateV6lengthSiSgvp",
+            "mangledName": "$s9MoneyHash14CardFieldStateV6lengthSiSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash14CardFieldStateV6lengthSiSgvg",
+                "mangledName": "$s9MoneyHash14CardFieldStateV6lengthSiSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(isValid:errorMessage:formattedValue:fieldType:cardBrand:)",
+            "printedName": "init(isValid:errorMessage:formattedValue:fieldType:cardBrand:length:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -27586,11 +27647,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:9MoneyHash14CardFieldStateV7isValid12errorMessage14formattedValue9fieldType9cardBrandACSb_SSSgSSAA0cdM0OAA0cO0VSgtcfc",
-            "mangledName": "$s9MoneyHash14CardFieldStateV7isValid12errorMessage14formattedValue9fieldType9cardBrandACSb_SSSgSSAA0cdM0OAA0cO0VSgtcfc",
+            "usr": "s:9MoneyHash14CardFieldStateV7isValid12errorMessage14formattedValue9fieldType9cardBrand6lengthACSb_SSSgSSAA0cdM0OAA0cO0VSgSiSgtcfc",
+            "mangledName": "$s9MoneyHash14CardFieldStateV7isValid12errorMessage14formattedValue9fieldType9cardBrand6lengthACSb_SSSgSSAA0cdM0OAA0cO0VSgSiSgtcfc",
             "moduleName": "MoneyHash",
             "declAttributes": [
               "AccessControl",
@@ -30965,7 +31040,7 @@
       "kind": "StringLiteral",
       "offset": 97,
       "length": 8,
-      "value": "\"2.2.27\""
+      "value": "\"2.2.28\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",

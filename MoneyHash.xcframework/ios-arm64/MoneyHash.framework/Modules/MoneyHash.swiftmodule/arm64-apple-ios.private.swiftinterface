@@ -719,7 +719,8 @@ public struct CardFieldState : Swift.Codable {
   public let formattedValue: Swift.String
   public let fieldType: MoneyHash.CardFieldType
   public let cardBrand: MoneyHash.CardBrand?
-  public init(isValid: Swift.Bool, errorMessage: Swift.String?, formattedValue: Swift.String, fieldType: MoneyHash.CardFieldType, cardBrand: MoneyHash.CardBrand?)
+  public let length: Swift.Int?
+  public init(isValid: Swift.Bool, errorMessage: Swift.String?, formattedValue: Swift.String, fieldType: MoneyHash.CardFieldType, cardBrand: MoneyHash.CardBrand?, length: Swift.Int?)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }

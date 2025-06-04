@@ -68,8 +68,8 @@ public struct CardFormState : Swift.Codable {
   public let isValid: Swift.Bool
   public let fieldsState: [MoneyHash.CardFieldType : MoneyHash.CardFieldState]
   public init(isValid: Swift.Bool, fieldsState: [MoneyHash.CardFieldType : MoneyHash.CardFieldState])
-  public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct ApplePayData : Swift.Codable {
   public let countryCode: Swift.String?
@@ -79,6 +79,7 @@ public struct ApplePayData : Swift.Codable {
   public let amount: Swift.Float?
   public let supportedNetworks: [Swift.String]?
   public let methodID: Swift.String?
+  public let merchantCapabilities: [Swift.String]?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -274,10 +275,22 @@ public protocol MoneyHashSDK {
   func submitPaymentReceipt(intentId: Swift.String, nativePayReceipt: MoneyHash.NativePayReceipt) async throws -> MoneyHash.IntentDetails
   #endif
   #if compiler(>=5.3) && $AsyncAwait
+  func proceedWithApplePay(intentID: Swift.String, depositAmount: Swift.Float, applePayData: MoneyHash.ApplePayData) async throws -> MoneyHash.IntentDetails
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   func proceedWithApplePay(intentID: Swift.String, depositAmount: Swift.Float, merchantIdentifier: Swift.String, currencyCode: Swift.String, countryCode: Swift.String) async throws -> MoneyHash.IntentDetails
   #endif
   #if compiler(>=5.3) && $AsyncAwait
+  func proceedWithApplePay(intentID: Swift.String, depositAmount: Swift.Float, merchantIdentifier: Swift.String, currencyCode: Swift.String, countryCode: Swift.String, supportedNetworks: [Swift.String]?, merchantCapabilities: [Swift.String]?) async throws -> MoneyHash.IntentDetails
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func generateApplePayReceipt(depositAmount: Swift.Float, applePayData: MoneyHash.ApplePayData) async throws -> MoneyHash.NativePayReceipt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   func generateApplePayReceipt(depositAmount: Swift.Float, merchantIdentifier: Swift.String, currencyCode: Swift.String, countryCode: Swift.String) async throws -> MoneyHash.NativePayReceipt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func generateApplePayReceipt(depositAmount: Swift.Float, merchantIdentifier: Swift.String, currencyCode: Swift.String, countryCode: Swift.String, supportedNetworks: [Swift.String]?, merchantCapabilities: [Swift.String]?) async throws -> MoneyHash.NativePayReceipt
   #endif
   func isDeviceCompatible() -> Swift.Bool
   func updateField(fieldType: MoneyHash.CardFieldType, currentValue: Swift.String) -> MoneyHash.CardFieldState
@@ -314,7 +327,8 @@ public protocol MoneyHashSDK {
 }
 public class CardFormConfiguration : Swift.Codable {
   final public let isCardHolderNameRequired: Swift.Bool
-  public init(isCardHolderNameRequired: Swift.Bool)
+  final public let enableCardNumberValidation: Swift.Bool
+  public init(isCardHolderNameRequired: Swift.Bool = false, enableCardNumberValidation: Swift.Bool = false)
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -559,15 +573,23 @@ public struct EmbedStyle : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public enum CardFieldType : Swift.String, Swift.Codable {
+public enum CardFieldType : Swift.String, Swift.CodingKey, Swift.Codable {
   case cardNumber
   case cvv
   case cardHolderName
   case expireMonth
   case expireYear
   public init?(rawValue: Swift.String)
+  public init?(stringValue: Swift.String)
+  public init?(intValue: Swift.Int)
   public typealias RawValue = Swift.String
+  public var intValue: Swift.Int? {
+    get
+  }
   public var rawValue: Swift.String {
+    get
+  }
+  public var stringValue: Swift.String {
     get
   }
 }

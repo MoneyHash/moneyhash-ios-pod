@@ -10605,6 +10605,10 @@ Classes:
   SwiftName: "__Brand"
   SwiftPrivate: true
   Properties:
+  - Name: "brandName"
+    PropertyKind: "Instance"
+    SwiftName: "brandName"
+    Type: "NSString * _Nonnull"
   - Name: "visa"
     PropertyKind: "Class"
     SwiftName: "visa"

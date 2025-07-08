@@ -6330,6 +6330,7 @@ __attribute__((swift_name("Brand")))
 @property (class, readonly) MHSBrand *mada __attribute__((swift_name("mada")));
 @property (class, readonly) MHSBrand *unknown __attribute__((swift_name("unknown")));
 @property (class, readonly) NSArray<MHSBrand *> *entries __attribute__((swift_name("entries")));
+@property (readonly) NSString *brandName __attribute__((swift_name("brandName")));
 + (instancetype)alloc __attribute__((unavailable));
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 - (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));

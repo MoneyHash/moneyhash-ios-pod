@@ -1927,6 +1927,9 @@ extension MoneyHashShared.__RenderStrategy {
   case mastercard
   case mada
   case unknown
+  public var brandName: Swift.String {
+    get
+  }
   public var name: Swift.String {
     get
   }

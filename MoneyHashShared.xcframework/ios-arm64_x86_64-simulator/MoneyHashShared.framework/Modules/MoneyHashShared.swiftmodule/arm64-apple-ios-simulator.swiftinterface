@@ -1616,6 +1616,7 @@ extension MoneyHashShared.__IntentStatus {
   case failed
   case instalmentPlans
   case nativePay
+  case processing
   public var name: Swift.String {
     get
   }
@@ -2255,6 +2256,7 @@ extension MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails
     case intentProcessed(MoneyHashShared.IntentStateDetails.IntentProcessed)
     case methodSelection(MoneyHashShared.IntentStateDetails.MethodSelection)
     case nativePay(MoneyHashShared.IntentStateDetails.NativePay)
+    case processing(MoneyHashShared.IntentStateDetails.Processing)
     case savedCardCVV(MoneyHashShared.IntentStateDetails.SavedCardCVV)
     case transactionFailed(MoneyHashShared.IntentStateDetails.TransactionFailed)
     case transactionWaitingUserAction(MoneyHashShared.IntentStateDetails.TransactionWaitingUserAction)

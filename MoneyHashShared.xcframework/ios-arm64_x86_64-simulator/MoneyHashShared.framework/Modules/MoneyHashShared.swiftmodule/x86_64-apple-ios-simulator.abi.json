@@ -3480,6 +3480,57 @@
                       },
                       {
                         "kind": "Var",
+                        "name": "processing",
+                        "printedName": "processing",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed.Type) -> (MoneyHashShared.IntentStateDetails.Processing) -> MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(MoneyHashShared.IntentStateDetails.Processing) -> MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed",
+                                    "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Processing",
+                                    "printedName": "MoneyHashShared.IntentStateDetails.Processing",
+                                    "usr": "c:objc(cs)MHSIntentStateDetailsProcessing"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed",
+                                    "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO10processingyAISo09MHSIntenthI10ProcessingCcAImF",
+                        "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO10processingyAISo09MHSIntenthI10ProcessingCcAImF",
+                        "moduleName": "MoneyHashShared",
+                        "fixedbinaryorder": 10
+                      },
+                      {
+                        "kind": "Var",
                         "name": "savedCardCVV",
                         "printedName": "savedCardCVV",
                         "children": [
@@ -3527,7 +3578,7 @@
                         "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO12savedCardCVVyAISo09MHSIntenthi5SavedlM0CcAImF",
                         "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO12savedCardCVVyAISo09MHSIntenthi5SavedlM0CcAImF",
                         "moduleName": "MoneyHashShared",
-                        "fixedbinaryorder": 10
+                        "fixedbinaryorder": 11
                       },
                       {
                         "kind": "Var",
@@ -3578,7 +3629,7 @@
                         "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO17transactionFailedyAISo09MHSIntenthi11TransactionL0CcAImF",
                         "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO17transactionFailedyAISo09MHSIntenthi11TransactionL0CcAImF",
                         "moduleName": "MoneyHashShared",
-                        "fixedbinaryorder": 11
+                        "fixedbinaryorder": 12
                       },
                       {
                         "kind": "Var",
@@ -3629,7 +3680,7 @@
                         "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO28transactionWaitingUserActionyAISo09MHSIntenthi11TransactionlmN0CcAImF",
                         "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO28transactionWaitingUserActionyAISo09MHSIntenthi11TransactionlmN0CcAImF",
                         "moduleName": "MoneyHashShared",
-                        "fixedbinaryorder": 12
+                        "fixedbinaryorder": 13
                       },
                       {
                         "kind": "Var",
@@ -3680,7 +3731,7 @@
                         "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO11urlToRenderyAISo09MHSIntenthi3UrllM0CcAImF",
                         "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O18IntentStateDetailsO8__SealedO11urlToRenderyAISo09MHSIntenthi3UrllM0CcAImF",
                         "moduleName": "MoneyHashShared",
-                        "fixedbinaryorder": 13
+                        "fixedbinaryorder": 14
                       },
                       {
                         "kind": "Var",
@@ -30448,6 +30499,44 @@
             "mangledName": "$s15MoneyHashShared11IntentStateO9nativePayyA2CmF",
             "moduleName": "MoneyHashShared",
             "fixedbinaryorder": 13
+          },
+          {
+            "kind": "Var",
+            "name": "processing",
+            "printedName": "processing",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHashShared.IntentState.Type) -> MoneyHashShared.IntentState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IntentState",
+                    "printedName": "MoneyHashShared.IntentState",
+                    "usr": "s:15MoneyHashShared11IntentStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHashShared.IntentState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IntentState",
+                        "printedName": "MoneyHashShared.IntentState",
+                        "usr": "s:15MoneyHashShared11IntentStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MoneyHashShared11IntentStateO10processingyA2CmF",
+            "mangledName": "$s15MoneyHashShared11IntentStateO10processingyA2CmF",
+            "moduleName": "MoneyHashShared",
+            "fixedbinaryorder": 14
           },
           {
             "kind": "Var",

@@ -4284,8 +4284,9 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Transaction")))
 @interface MHSTransaction : MHSBase <MHSCommonParcelable>
 @property (class, readonly, getter=companion) MHSTransactionCompanion *companion __attribute__((swift_name("companion")));
-@property (readonly) MHSDouble * _Nullable amount __attribute__((swift_name("amount")));
+@property (readonly) MHSKotlinx_serialization_jsonJsonElement * _Nullable amount __attribute__((swift_name("amount")));
 @property (readonly) NSString * _Nullable amountCurrency __attribute__((swift_name("amountCurrency")));
+@property (readonly) MHSDouble * _Nullable amountValue __attribute__((swift_name("amountValue")));
 @property (readonly) NSDictionary<NSString *, MHSKotlinx_serialization_jsonJsonElement *> * _Nullable billingData __attribute__((swift_name("billingData")));
 @property (readonly) NSString * _Nullable billingDataString __attribute__((swift_name("billingDataString")));
 @property (readonly) NSString * _Nullable createdDate __attribute__((swift_name("createdDate")));
@@ -4302,8 +4303,8 @@ __attribute__((swift_name("Transaction")))
 @property (readonly) NSDictionary<NSString *, MHSKotlinx_serialization_jsonJsonElement *> * _Nullable providerTransactionFields __attribute__((swift_name("providerTransactionFields")));
 @property (readonly) NSString * _Nullable providerTransactionFieldsString __attribute__((swift_name("providerTransactionFieldsString")));
 @property (readonly) NSString * _Nullable status __attribute__((swift_name("status")));
-- (instancetype)initWithBillingData:(NSDictionary<NSString *, MHSKotlinx_serialization_jsonJsonElement *> * _Nullable)billingData amount:(MHSDouble * _Nullable)amount externalActionMessage:(NSArray<MHSKotlinx_serialization_jsonJsonElement *> * _Nullable)externalActionMessage amountCurrency:(NSString * _Nullable)amountCurrency id:(NSString * _Nullable)id paymentMethodName:(NSString * _Nullable)paymentMethodName paymentMethod:(NSString * _Nullable)paymentMethod createdDate:(NSString * _Nullable)createdDate status:(NSString * _Nullable)status operations:(NSArray<MHSTransactionOperation *> * _Nullable)operations customFields:(NSDictionary<NSString *, MHSKotlinx_serialization_jsonJsonElement *> * _Nullable)customFields providerTransactionFields:(NSDictionary<NSString *, MHSKotlinx_serialization_jsonJsonElement *> * _Nullable)providerTransactionFields customFormAnswers:(NSDictionary<NSString *, MHSKotlinx_serialization_jsonJsonElement *> * _Nullable)customFormAnswers __attribute__((swift_name("init(billingData:amount:externalActionMessage:amountCurrency:id:paymentMethodName:paymentMethod:createdDate:status:operations:customFields:providerTransactionFields:customFormAnswers:)"))) __attribute__((objc_designated_initializer));
-- (MHSTransaction *)doCopyBillingData:(NSDictionary<NSString *, MHSKotlinx_serialization_jsonJsonElement *> * _Nullable)billingData amount:(MHSDouble * _Nullable)amount externalActionMessage:(NSArray<MHSKotlinx_serialization_jsonJsonElement *> * _Nullable)externalActionMessage amountCurrency:(NSString * _Nullable)amountCurrency id:(NSString * _Nullable)id paymentMethodName:(NSString * _Nullable)paymentMethodName paymentMethod:(NSString * _Nullable)paymentMethod createdDate:(NSString * _Nullable)createdDate status:(NSString * _Nullable)status operations:(NSArray<MHSTransactionOperation *> * _Nullable)operations customFields:(NSDictionary<NSString *, MHSKotlinx_serialization_jsonJsonElement *> * _Nullable)customFields providerTransactionFields:(NSDictionary<NSString *, MHSKotlinx_serialization_jsonJsonElement *> * _Nullable)providerTransactionFields customFormAnswers:(NSDictionary<NSString *, MHSKotlinx_serialization_jsonJsonElement *> * _Nullable)customFormAnswers __attribute__((swift_name("doCopy(billingData:amount:externalActionMessage:amountCurrency:id:paymentMethodName:paymentMethod:createdDate:status:operations:customFields:providerTransactionFields:customFormAnswers:)")));
+- (instancetype)initWithBillingData:(NSDictionary<NSString *, MHSKotlinx_serialization_jsonJsonElement *> * _Nullable)billingData amount:(MHSKotlinx_serialization_jsonJsonElement * _Nullable)amount externalActionMessage:(NSArray<MHSKotlinx_serialization_jsonJsonElement *> * _Nullable)externalActionMessage amountCurrency:(NSString * _Nullable)amountCurrency id:(NSString * _Nullable)id paymentMethodName:(NSString * _Nullable)paymentMethodName paymentMethod:(NSString * _Nullable)paymentMethod createdDate:(NSString * _Nullable)createdDate status:(NSString * _Nullable)status operations:(NSArray<MHSTransactionOperation *> * _Nullable)operations customFields:(NSDictionary<NSString *, MHSKotlinx_serialization_jsonJsonElement *> * _Nullable)customFields providerTransactionFields:(NSDictionary<NSString *, MHSKotlinx_serialization_jsonJsonElement *> * _Nullable)providerTransactionFields customFormAnswers:(NSDictionary<NSString *, MHSKotlinx_serialization_jsonJsonElement *> * _Nullable)customFormAnswers __attribute__((swift_name("init(billingData:amount:externalActionMessage:amountCurrency:id:paymentMethodName:paymentMethod:createdDate:status:operations:customFields:providerTransactionFields:customFormAnswers:)"))) __attribute__((objc_designated_initializer));
+- (MHSTransaction *)doCopyBillingData:(NSDictionary<NSString *, MHSKotlinx_serialization_jsonJsonElement *> * _Nullable)billingData amount:(MHSKotlinx_serialization_jsonJsonElement * _Nullable)amount externalActionMessage:(NSArray<MHSKotlinx_serialization_jsonJsonElement *> * _Nullable)externalActionMessage amountCurrency:(NSString * _Nullable)amountCurrency id:(NSString * _Nullable)id paymentMethodName:(NSString * _Nullable)paymentMethodName paymentMethod:(NSString * _Nullable)paymentMethod createdDate:(NSString * _Nullable)createdDate status:(NSString * _Nullable)status operations:(NSArray<MHSTransactionOperation *> * _Nullable)operations customFields:(NSDictionary<NSString *, MHSKotlinx_serialization_jsonJsonElement *> * _Nullable)customFields providerTransactionFields:(NSDictionary<NSString *, MHSKotlinx_serialization_jsonJsonElement *> * _Nullable)providerTransactionFields customFormAnswers:(NSDictionary<NSString *, MHSKotlinx_serialization_jsonJsonElement *> * _Nullable)customFormAnswers __attribute__((swift_name("doCopy(billingData:amount:externalActionMessage:amountCurrency:id:paymentMethodName:paymentMethod:createdDate:status:operations:customFields:providerTransactionFields:customFormAnswers:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -4725,11 +4726,12 @@ __attribute__((swift_name("AmountData")))
 @interface MHSAmountData : MHSBase <MHSCommonParcelable>
 @property (class, readonly, getter=companion) MHSAmountDataCompanion *companion __attribute__((swift_name("companion")));
 @property (readonly) NSString * _Nullable currency __attribute__((swift_name("currency")));
+@property (readonly) NSString * _Nullable displayValue __attribute__((swift_name("displayValue")));
 @property (readonly) MHSDouble * _Nullable formatted __attribute__((swift_name("formatted")));
 @property (readonly) MHSDouble * _Nullable maxPayoutAmount __attribute__((swift_name("maxPayoutAmount")));
 @property (readonly) NSString * _Nullable value __attribute__((swift_name("value")));
-- (instancetype)initWithValue:(NSString * _Nullable)value formatted:(MHSDouble * _Nullable)formatted currency:(NSString * _Nullable)currency maxPayoutAmount:(MHSDouble * _Nullable)maxPayoutAmount __attribute__((swift_name("init(value:formatted:currency:maxPayoutAmount:)"))) __attribute__((objc_designated_initializer));
-- (MHSAmountData *)doCopyValue:(NSString * _Nullable)value formatted:(MHSDouble * _Nullable)formatted currency:(NSString * _Nullable)currency maxPayoutAmount:(MHSDouble * _Nullable)maxPayoutAmount __attribute__((swift_name("doCopy(value:formatted:currency:maxPayoutAmount:)")));
+- (instancetype)initWithValue:(NSString * _Nullable)value formatted:(MHSDouble * _Nullable)formatted currency:(NSString * _Nullable)currency displayValue:(NSString * _Nullable)displayValue maxPayoutAmount:(MHSDouble * _Nullable)maxPayoutAmount __attribute__((swift_name("init(value:formatted:currency:displayValue:maxPayoutAmount:)"))) __attribute__((objc_designated_initializer));
+- (MHSAmountData *)doCopyValue:(NSString * _Nullable)value formatted:(MHSDouble * _Nullable)formatted currency:(NSString * _Nullable)currency displayValue:(NSString * _Nullable)displayValue maxPayoutAmount:(MHSDouble * _Nullable)maxPayoutAmount __attribute__((swift_name("doCopy(value:formatted:currency:displayValue:maxPayoutAmount:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -4737,6 +4739,11 @@ __attribute__((swift_name("AmountData")))
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="currency")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="display_value")
 */
 
 /**

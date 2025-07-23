@@ -31324,112 +31324,112 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3191,
+      "offset": 3196,
       "length": 14,
       "value": "\"created_date\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3276,
+      "offset": 3281,
       "length": 17,
       "value": "\"amount_currency\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3340,
+      "offset": 3345,
       "length": 13,
       "value": "\"method_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3381,
+      "offset": 3386,
       "length": 14,
       "value": "\"billing_data\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3424,
+      "offset": 3429,
       "length": 15,
       "value": "\"custom_fields\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3473,
+      "offset": 3478,
       "length": 21,
       "value": "\"custom_form_answers\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3532,
+      "offset": 3537,
       "length": 25,
       "value": "\"external_action_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3599,
+      "offset": 3604,
       "length": 29,
       "value": "\"provider_transaction_fields\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3191,
+      "offset": 3196,
       "length": 14,
       "value": "\"created_date\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3276,
+      "offset": 3281,
       "length": 17,
       "value": "\"amount_currency\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3340,
+      "offset": 3345,
       "length": 13,
       "value": "\"method_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3381,
+      "offset": 3386,
       "length": 14,
       "value": "\"billing_data\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3424,
+      "offset": 3429,
       "length": 15,
       "value": "\"custom_fields\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3473,
+      "offset": 3478,
       "length": 21,
       "value": "\"custom_form_answers\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3532,
+      "offset": 3537,
       "length": 25,
       "value": "\"external_action_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3599,
+      "offset": 3604,
       "length": 29,
       "value": "\"provider_transaction_fields\""
     },
@@ -31494,7 +31494,7 @@
       "kind": "StringLiteral",
       "offset": 97,
       "length": 7,
-      "value": "\"3.0.0\""
+      "value": "\"3.0.1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",

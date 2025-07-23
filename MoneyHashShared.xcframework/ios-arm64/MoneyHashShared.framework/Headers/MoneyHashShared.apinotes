@@ -3579,11 +3579,15 @@ Classes:
   - Name: "amount"
     PropertyKind: "Instance"
     SwiftName: "amount"
-    Type: "MHSDouble * _Nullable"
+    Type: "MHSKotlinx_serialization_jsonJsonElement * _Nullable"
   - Name: "amountCurrency"
     PropertyKind: "Instance"
     SwiftName: "amountCurrency"
     Type: "NSString * _Nullable"
+  - Name: "amountValue"
+    PropertyKind: "Instance"
+    SwiftName: "amountValue"
+    Type: "MHSDouble * _Nullable"
   - Name: "billingData"
     PropertyKind: "Instance"
     SwiftName: "billingData"
@@ -3656,7 +3660,7 @@ Classes:
     - Position: 0
       Type: "NSDictionary<NSString *, MHSKotlinx_serialization_jsonJsonElement *> * _Nullable"
     - Position: 1
-      Type: "MHSDouble * _Nullable"
+      Type: "MHSKotlinx_serialization_jsonJsonElement * _Nullable"
     - Position: 2
       Type: "NSArray<MHSKotlinx_serialization_jsonJsonElement *> * _Nullable"
     - Position: 3
@@ -3687,7 +3691,7 @@ Classes:
     - Position: 0
       Type: "NSDictionary<NSString *, MHSKotlinx_serialization_jsonJsonElement *> * _Nullable"
     - Position: 1
-      Type: "MHSDouble * _Nullable"
+      Type: "MHSKotlinx_serialization_jsonJsonElement * _Nullable"
     - Position: 2
       Type: "NSArray<MHSKotlinx_serialization_jsonJsonElement *> * _Nullable"
     - Position: 3
@@ -6937,6 +6941,10 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "currency"
     Type: "NSString * _Nullable"
+  - Name: "displayValue"
+    PropertyKind: "Instance"
+    SwiftName: "displayValue"
+    Type: "NSString * _Nullable"
   - Name: "formatted"
     PropertyKind: "Instance"
     SwiftName: "formatted"
@@ -6950,9 +6958,9 @@ Classes:
     SwiftName: "value"
     Type: "NSString * _Nullable"
   Methods:
-  - Selector: "initWithValue:formatted:currency:maxPayoutAmount:"
+  - Selector: "initWithValue:formatted:currency:displayValue:maxPayoutAmount:"
     MethodKind: "Instance"
-    SwiftName: "init(value:formatted:currency:maxPayoutAmount:)"
+    SwiftName: "init(value:formatted:currency:displayValue:maxPayoutAmount:)"
     Parameters:
     - Position: 0
       Type: "NSString * _Nullable"
@@ -6961,10 +6969,12 @@ Classes:
     - Position: 2
       Type: "NSString * _Nullable"
     - Position: 3
+      Type: "NSString * _Nullable"
+    - Position: 4
       Type: "MHSDouble * _Nullable"
-  - Selector: "doCopyValue:formatted:currency:maxPayoutAmount:"
+  - Selector: "doCopyValue:formatted:currency:displayValue:maxPayoutAmount:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(value:formatted:currency:maxPayoutAmount:)"
+    SwiftName: "doCopy(value:formatted:currency:displayValue:maxPayoutAmount:)"
     ResultType: "MHSAmountData * _Nonnull"
     Parameters:
     - Position: 0
@@ -6974,6 +6984,8 @@ Classes:
     - Position: 2
       Type: "NSString * _Nullable"
     - Position: 3
+      Type: "NSString * _Nullable"
+    - Position: 4
       Type: "MHSDouble * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"

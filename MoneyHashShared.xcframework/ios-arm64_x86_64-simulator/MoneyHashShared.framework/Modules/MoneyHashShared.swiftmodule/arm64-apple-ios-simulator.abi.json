@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "MoneyHashShared",
+    "printedName": "MoneyHashShared",
     "children": [
       {
         "kind": "Import",
@@ -38,6 +38,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
           {
             "kind": "Conformance",
             "name": "AsyncSequence",
@@ -223,7 +237,23 @@
                     "declAttributes": [
                       "AccessControl"
                     ],
-                    "isFromExtension": true
+                    "isFromExtension": true,
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      }
+                    ]
                   }
                 ],
                 "declKind": "Enum",
@@ -232,6 +262,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -244,6 +290,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -256,6 +318,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -268,6 +346,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -280,6 +374,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -292,6 +402,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -304,6 +430,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -316,6 +458,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -328,6 +486,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -340,6 +514,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -352,6 +542,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -364,6 +570,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -376,6 +598,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -388,6 +626,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -405,6 +659,22 @@
                     "moduleName": "MoneyHashShared",
                     "declAttributes": [
                       "AccessControl"
+                    ],
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      }
                     ]
                   },
                   {
@@ -417,6 +687,22 @@
                     "moduleName": "MoneyHashShared",
                     "declAttributes": [
                       "AccessControl"
+                    ],
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      }
                     ]
                   },
                   {
@@ -429,6 +715,22 @@
                     "moduleName": "MoneyHashShared",
                     "declAttributes": [
                       "AccessControl"
+                    ],
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      }
                     ]
                   },
                   {
@@ -699,6 +1001,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Hashable",
                         "printedName": "Hashable",
                         "usr": "s:SH",
@@ -720,6 +1036,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               }
             ],
@@ -729,6 +1061,22 @@
             "moduleName": "MoneyHashShared",
             "declAttributes": [
               "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -746,6 +1094,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -758,6 +1122,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -770,6 +1150,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -782,6 +1178,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -794,6 +1206,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -806,6 +1234,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -966,6 +1410,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Equatable",
                         "printedName": "Equatable",
                         "usr": "s:SQ",
@@ -984,6 +1442,13 @@
                         "printedName": "Sendable",
                         "usr": "s:s8SendableP",
                         "mangledName": "$ss8SendableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "BitwiseCopyable",
+                        "printedName": "BitwiseCopyable",
+                        "usr": "s:s15BitwiseCopyableP",
+                        "mangledName": "$ss15BitwiseCopyableP"
                       }
                     ]
                   }
@@ -994,6 +1459,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -1169,7 +1650,23 @@
                       "Frozen"
                     ],
                     "isFromExtension": true,
-                    "isEnumExhaustive": true
+                    "isEnumExhaustive": true,
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      }
+                    ]
                   }
                 ],
                 "declKind": "Enum",
@@ -1178,6 +1675,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -1338,6 +1851,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Equatable",
                         "printedName": "Equatable",
                         "usr": "s:SQ",
@@ -1356,6 +1883,13 @@
                         "printedName": "Sendable",
                         "usr": "s:s8SendableP",
                         "mangledName": "$ss8SendableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "BitwiseCopyable",
+                        "printedName": "BitwiseCopyable",
+                        "usr": "s:s15BitwiseCopyableP",
+                        "mangledName": "$ss15BitwiseCopyableP"
                       }
                     ]
                   }
@@ -1366,6 +1900,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -1526,6 +2076,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Equatable",
                         "printedName": "Equatable",
                         "usr": "s:SQ",
@@ -1544,6 +2108,13 @@
                         "printedName": "Sendable",
                         "usr": "s:s8SendableP",
                         "mangledName": "$ss8SendableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "BitwiseCopyable",
+                        "printedName": "BitwiseCopyable",
+                        "usr": "s:s15BitwiseCopyableP",
+                        "mangledName": "$ss15BitwiseCopyableP"
                       }
                     ]
                   }
@@ -1554,6 +2125,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -1714,6 +2301,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Equatable",
                         "printedName": "Equatable",
                         "usr": "s:SQ",
@@ -1732,6 +2333,13 @@
                         "printedName": "Sendable",
                         "usr": "s:s8SendableP",
                         "mangledName": "$ss8SendableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "BitwiseCopyable",
+                        "printedName": "BitwiseCopyable",
+                        "usr": "s:s15BitwiseCopyableP",
+                        "mangledName": "$ss15BitwiseCopyableP"
                       }
                     ]
                   }
@@ -1742,6 +2350,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               }
             ],
@@ -1751,6 +2375,22 @@
             "moduleName": "MoneyHashShared",
             "declAttributes": [
               "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -1943,7 +2583,23 @@
                     "declAttributes": [
                       "AccessControl"
                     ],
-                    "isFromExtension": true
+                    "isFromExtension": true,
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      }
+                    ]
                   }
                 ],
                 "declKind": "Enum",
@@ -1952,6 +2608,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               }
             ],
@@ -1961,6 +2633,22 @@
             "moduleName": "MoneyHashShared",
             "declAttributes": [
               "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -2190,6 +2878,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Hashable",
                         "printedName": "Hashable",
                         "usr": "s:SH",
@@ -2211,6 +2913,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -2588,6 +3306,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Hashable",
                         "printedName": "Hashable",
                         "usr": "s:SH",
@@ -2609,6 +3341,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -2935,6 +3683,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Hashable",
                         "printedName": "Hashable",
                         "usr": "s:SH",
@@ -2956,6 +3718,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -3843,6 +4621,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Hashable",
                         "printedName": "Hashable",
                         "usr": "s:SH",
@@ -3864,6 +4656,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -4197,6 +5005,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Hashable",
                         "printedName": "Hashable",
                         "usr": "s:SH",
@@ -4218,6 +5040,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -4544,6 +5382,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Hashable",
                         "printedName": "Hashable",
                         "usr": "s:SH",
@@ -4565,6 +5417,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -4993,6 +5861,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Hashable",
                         "printedName": "Hashable",
                         "usr": "s:SH",
@@ -5014,6 +5896,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -5238,6 +6136,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Hashable",
                         "printedName": "Hashable",
                         "usr": "s:SH",
@@ -5259,6 +6171,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               }
             ],
@@ -5268,6 +6196,22 @@
             "moduleName": "MoneyHashShared",
             "declAttributes": [
               "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -5650,6 +6594,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Hashable",
                         "printedName": "Hashable",
                         "usr": "s:SH",
@@ -5671,6 +6629,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -5831,6 +6805,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Equatable",
                         "printedName": "Equatable",
                         "usr": "s:SQ",
@@ -5849,6 +6837,13 @@
                         "printedName": "Sendable",
                         "usr": "s:s8SendableP",
                         "mangledName": "$ss8SendableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "BitwiseCopyable",
+                        "printedName": "BitwiseCopyable",
+                        "usr": "s:s15BitwiseCopyableP",
+                        "mangledName": "$ss15BitwiseCopyableP"
                       }
                     ]
                   }
@@ -5859,6 +6854,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -6083,6 +7094,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Hashable",
                         "printedName": "Hashable",
                         "usr": "s:SH",
@@ -6104,6 +7129,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -6685,6 +7726,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Hashable",
                         "printedName": "Hashable",
                         "usr": "s:SH",
@@ -6706,6 +7761,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -7032,6 +8103,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Hashable",
                         "printedName": "Hashable",
                         "usr": "s:SH",
@@ -7053,6 +8138,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               }
             ],
@@ -7062,6 +8163,22 @@
             "moduleName": "MoneyHashShared",
             "declAttributes": [
               "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -7278,6 +8395,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Hashable",
                         "printedName": "Hashable",
                         "usr": "s:SH",
@@ -7299,6 +8430,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -7510,6 +8657,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Hashable",
                         "printedName": "Hashable",
                         "usr": "s:SH",
@@ -7531,6 +8692,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -7742,6 +8919,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Hashable",
                         "printedName": "Hashable",
                         "usr": "s:SH",
@@ -7763,6 +8954,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               }
             ],
@@ -7772,6 +8979,22 @@
             "moduleName": "MoneyHashShared",
             "declAttributes": [
               "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -8154,6 +9377,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Hashable",
                         "printedName": "Hashable",
                         "usr": "s:SH",
@@ -8175,6 +9412,22 @@
                 "moduleName": "MoneyHashShared",
                 "declAttributes": [
                   "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               }
             ],
@@ -8184,6 +9437,22 @@
             "moduleName": "MoneyHashShared",
             "declAttributes": [
               "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           }
         ],
@@ -8193,6 +9462,22 @@
         "moduleName": "MoneyHashShared",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -8269,6 +9554,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "AsyncIteratorProtocol",
             "printedName": "AsyncIteratorProtocol",
             "children": [
@@ -8281,6 +9580,19 @@
                     "kind": "TypeNominal",
                     "name": "GenericTypeParam",
                     "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Failure",
+                "printedName": "Failure",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
                   }
                 ]
               }
@@ -9671,6 +10983,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "SkieSwiftFlowProtocol",
             "printedName": "SkieSwiftFlowProtocol",
             "usr": "s:15MoneyHashShared21SkieSwiftFlowProtocolP",
@@ -9739,6 +11065,19 @@
                     "kind": "TypeNominal",
                     "name": "GenericTypeParam",
                     "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Failure",
+                "printedName": "Failure",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
                   }
                 ]
               }
@@ -12262,6 +13601,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "SkieSwiftFlowProtocol",
             "printedName": "SkieSwiftFlowProtocol",
             "usr": "s:15MoneyHashShared21SkieSwiftFlowProtocolP",
@@ -12346,6 +13699,19 @@
                       }
                     ],
                     "usr": "s:Sq"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Failure",
+                "printedName": "Failure",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
                   }
                 ]
               }
@@ -13571,6 +14937,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "SkieSwiftFlowProtocol",
             "printedName": "SkieSwiftFlowProtocol",
             "usr": "s:15MoneyHashShared21SkieSwiftFlowProtocolP",
@@ -13639,6 +15019,19 @@
                     "kind": "TypeNominal",
                     "name": "GenericTypeParam",
                     "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Failure",
+                "printedName": "Failure",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
                   }
                 ]
               }
@@ -15788,6 +17181,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "SkieSwiftFlowProtocol",
             "printedName": "SkieSwiftFlowProtocol",
             "usr": "s:15MoneyHashShared21SkieSwiftFlowProtocolP",
@@ -15872,6 +17279,19 @@
                       }
                     ],
                     "usr": "s:Sq"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Failure",
+                "printedName": "Failure",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
                   }
                 ]
               }
@@ -16573,6 +17993,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "SkieSwiftFlowProtocol",
             "printedName": "SkieSwiftFlowProtocol",
             "usr": "s:15MoneyHashShared21SkieSwiftFlowProtocolP",
@@ -16641,6 +18075,19 @@
                     "kind": "TypeNominal",
                     "name": "GenericTypeParam",
                     "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Failure",
+                "printedName": "Failure",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
                   }
                 ]
               }
@@ -17607,6 +19054,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "SkieSwiftFlowProtocol",
             "printedName": "SkieSwiftFlowProtocol",
             "usr": "s:15MoneyHashShared21SkieSwiftFlowProtocolP",
@@ -17691,6 +19152,19 @@
                       }
                     ],
                     "usr": "s:Sq"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Failure",
+                "printedName": "Failure",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
                   }
                 ]
               }
@@ -18510,6 +19984,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "SkieSwiftFlowProtocol",
             "printedName": "SkieSwiftFlowProtocol",
             "usr": "s:15MoneyHashShared21SkieSwiftFlowProtocolP",
@@ -18578,6 +20066,19 @@
                     "kind": "TypeNominal",
                     "name": "GenericTypeParam",
                     "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Failure",
+                "printedName": "Failure",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
                   }
                 ]
               }
@@ -19887,6 +21388,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "SkieSwiftFlowProtocol",
             "printedName": "SkieSwiftFlowProtocol",
             "usr": "s:15MoneyHashShared21SkieSwiftFlowProtocolP",
@@ -19971,6 +21486,19 @@
                       }
                     ],
                     "usr": "s:Sq"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Failure",
+                "printedName": "Failure",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
                   }
                 ]
               }
@@ -20800,6 +22328,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "SkieSwiftFlowProtocol",
             "printedName": "SkieSwiftFlowProtocol",
             "usr": "s:15MoneyHashShared21SkieSwiftFlowProtocolP",
@@ -20868,6 +22410,19 @@
                     "kind": "TypeNominal",
                     "name": "GenericTypeParam",
                     "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Failure",
+                "printedName": "Failure",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
                   }
                 ]
               }
@@ -22002,6 +23557,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "SkieSwiftFlowProtocol",
             "printedName": "SkieSwiftFlowProtocol",
             "usr": "s:15MoneyHashShared21SkieSwiftFlowProtocolP",
@@ -22086,6 +23655,19 @@
                       }
                     ],
                     "usr": "s:Sq"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Failure",
+                "printedName": "Failure",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
                   }
                 ]
               }
@@ -26268,6 +27850,9 @@
             "moduleName": "MoneyHashShared",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -26332,6 +27917,20 @@
         ],
         "isEnumExhaustive": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -26404,6 +28003,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           }
         ]
       },
@@ -26924,6 +28530,9 @@
             "moduleName": "MoneyHashShared",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -26988,6 +28597,20 @@
         ],
         "isEnumExhaustive": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -27060,6 +28683,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           }
         ]
       },
@@ -27618,6 +29248,9 @@
             "moduleName": "MoneyHashShared",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -27682,6 +29315,20 @@
         ],
         "isEnumExhaustive": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -27754,6 +29401,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           }
         ]
       },
@@ -28312,6 +29966,9 @@
             "moduleName": "MoneyHashShared",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -28376,6 +30033,20 @@
         ],
         "isEnumExhaustive": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -28448,6 +30119,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           }
         ]
       },
@@ -29082,6 +30760,9 @@
             "moduleName": "MoneyHashShared",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -29146,6 +30827,20 @@
         ],
         "isEnumExhaustive": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -29218,6 +30913,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           }
         ]
       },
@@ -29814,6 +31516,9 @@
             "moduleName": "MoneyHashShared",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -29878,6 +31583,20 @@
         ],
         "isEnumExhaustive": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -29950,6 +31669,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           }
         ]
       },
@@ -30964,6 +32690,9 @@
             "moduleName": "MoneyHashShared",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -31028,6 +32757,20 @@
         ],
         "isEnumExhaustive": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -31100,6 +32843,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           }
         ]
       },
@@ -31772,6 +33522,9 @@
             "moduleName": "MoneyHashShared",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -31836,6 +33589,20 @@
         ],
         "isEnumExhaustive": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -31908,6 +33675,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           }
         ]
       },
@@ -32428,6 +34202,9 @@
             "moduleName": "MoneyHashShared",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -32492,6 +34269,20 @@
         ],
         "isEnumExhaustive": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -32564,6 +34355,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           }
         ]
       },
@@ -33200,6 +34998,9 @@
             "moduleName": "MoneyHashShared",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -33264,6 +35065,20 @@
         ],
         "isEnumExhaustive": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -33336,6 +35151,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           }
         ]
       },
@@ -33892,6 +35714,9 @@
             "moduleName": "MoneyHashShared",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -33956,6 +35781,20 @@
         ],
         "isEnumExhaustive": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -34028,6 +35867,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           }
         ]
       },
@@ -34656,6 +36502,9 @@
             "moduleName": "MoneyHashShared",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -34720,6 +36569,20 @@
         ],
         "isEnumExhaustive": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -34792,6 +36655,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           }
         ]
       },
@@ -35390,6 +37260,9 @@
             "moduleName": "MoneyHashShared",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -35454,6 +37327,20 @@
         ],
         "isEnumExhaustive": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -35526,6 +37413,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           }
         ]
       },
@@ -36122,6 +38016,9 @@
             "moduleName": "MoneyHashShared",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -36186,6 +38083,20 @@
         ],
         "isEnumExhaustive": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -36258,6 +38169,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           }
         ]
       },
@@ -36854,6 +38772,9 @@
             "moduleName": "MoneyHashShared",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -36918,6 +38839,20 @@
         ],
         "isEnumExhaustive": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -36990,6 +38925,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           }
         ]
       },
@@ -37664,6 +39606,9 @@
             "moduleName": "MoneyHashShared",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -37728,6 +39673,20 @@
         ],
         "isEnumExhaustive": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -37800,6 +39759,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           }
         ]
       },
@@ -38318,6 +40284,9 @@
             "moduleName": "MoneyHashShared",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -38382,6 +40351,20 @@
         ],
         "isEnumExhaustive": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -38454,6 +40437,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           }
         ]
       },
@@ -39354,6 +41344,9 @@
             "moduleName": "MoneyHashShared",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -39418,6 +41411,20 @@
         ],
         "isEnumExhaustive": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -39490,6 +41497,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           }
         ]
       },
@@ -40200,6 +42214,9 @@
             "moduleName": "MoneyHashShared",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -40264,6 +42281,20 @@
         ],
         "isEnumExhaustive": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -40336,6 +42367,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           }
         ]
       },
@@ -42544,7 +44582,23 @@
           "ObjC",
           "Dynamic"
         ],
-        "isExternal": true
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -42607,7 +44661,23 @@
           "ObjC",
           "Dynamic"
         ],
-        "isExternal": true
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -43799,6 +45869,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -44051,6 +46135,45 @@
             "declKind": "Func",
             "usr": "s:So17MHSPaymentServiceP15MoneyHashSharedE20getApplePayBinLookup7receipt0K11BillingData8methodID6flowIdSo17MHSLookupResponseCSS_SDyS2SGSgS2SSgtYaKF",
             "mangledName": "$sSo17MHSPaymentServiceP15MoneyHashSharedE20getApplePayBinLookup7receipt0K11BillingData8methodID6flowIdSo17MHSLookupResponseCSS_SDyS2SGSgS2SSgtYaKF",
+            "moduleName": "MoneyHashShared",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoneyHashShared.PaymentService>",
+            "sugared_genericSig": "<Self where Self : MoneyHashShared.PaymentService>",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCardBinLookup",
+            "printedName": "getCardBinLookup(cardData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LookupResponse",
+                "printedName": "MoneyHashShared.LookupResponse",
+                "usr": "c:objc(cs)MHSLookupResponse"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VaultData",
+                "printedName": "MoneyHashShared.VaultData",
+                "usr": "c:objc(cs)MHSVaultData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So17MHSPaymentServiceP15MoneyHashSharedE16getCardBinLookup8cardDataSo17MHSLookupResponseCSo08MHSVaultK0C_tYaKF",
+            "mangledName": "$sSo17MHSPaymentServiceP15MoneyHashSharedE16getCardBinLookup8cardDataSo17MHSLookupResponseCSo08MHSVaultK0C_tYaKF",
             "moduleName": "MoneyHashShared",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHashShared.PaymentService>",
             "sugared_genericSig": "<Self where Self : MoneyHashShared.PaymentService>",
@@ -45161,7 +47284,23 @@
           "ObjC",
           "Dynamic"
         ],
-        "isExternal": true
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -45228,6 +47367,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -45340,7 +47493,23 @@
           "ObjC",
           "Dynamic"
         ],
-        "isExternal": true
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -45401,6 +47570,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -45507,7 +47690,23 @@
           "ObjC",
           "Dynamic"
         ],
-        "isExternal": true
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -45557,7 +47756,23 @@
           "ObjC",
           "Dynamic"
         ],
-        "isExternal": true
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -45641,7 +47856,23 @@
           "ObjC",
           "Dynamic"
         ],
-        "isExternal": true
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -45777,6 +48008,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -46805,7 +49050,23 @@
           "ObjC",
           "Dynamic"
         ],
-        "isExternal": true
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -46876,7 +49137,23 @@
           "ObjC",
           "Dynamic"
         ],
-        "isExternal": true
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -46933,7 +49210,23 @@
           "ObjC",
           "Dynamic"
         ],
-        "isExternal": true
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -47240,6 +49533,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -47297,7 +49604,7 @@
           {
             "kind": "Function",
             "name": "postTokens",
-            "printedName": "postTokens(accessToken:cardDetails:)",
+            "printedName": "postTokens(accessToken:cardDetails:isTempToken:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -47316,11 +49623,25 @@
                 "name": "CardFields",
                 "printedName": "MoneyHashShared.CardFields",
                 "usr": "c:objc(cs)MHSCardFields"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.KotlinBoolean?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KotlinBoolean",
+                    "printedName": "MoneyHashShared.KotlinBoolean",
+                    "usr": "c:objc(cs)MHSBoolean"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So15MHSVaultServiceP15MoneyHashSharedE10postTokens11accessToken11cardDetailsSo0A4DataCSS_So13MHSCardFieldsCtYaKF",
-            "mangledName": "$sSo15MHSVaultServiceP15MoneyHashSharedE10postTokens11accessToken11cardDetailsSo0A4DataCSS_So13MHSCardFieldsCtYaKF",
+            "usr": "s:So15MHSVaultServiceP15MoneyHashSharedE10postTokens11accessToken11cardDetails06isTempI0So0A4DataCSS_So13MHSCardFieldsCSo10MHSBooleanCSgtYaKF",
+            "mangledName": "$sSo15MHSVaultServiceP15MoneyHashSharedE10postTokens11accessToken11cardDetails06isTempI0So0A4DataCSS_So13MHSCardFieldsCSo10MHSBooleanCSgtYaKF",
             "moduleName": "MoneyHashShared",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHashShared.VaultService>",
             "sugared_genericSig": "<Self where Self : MoneyHashShared.VaultService>",
@@ -47350,7 +49671,23 @@
           "ObjC",
           "Dynamic"
         ],
-        "isExternal": true
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -47359,22 +49696,82 @@
         "children": [
           {
             "kind": "Function",
+            "name": "binLookup",
+            "printedName": "binLookup()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LookupResponse",
+                "printedName": "MoneyHashShared.LookupResponse",
+                "usr": "c:objc(cs)MHSLookupResponse"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So16MHSCardCollectorC15MoneyHashSharedE9binLookupSo17MHSLookupResponseCyYaKF",
+            "mangledName": "$sSo16MHSCardCollectorC15MoneyHashSharedE9binLookupSo17MHSLookupResponseCyYaKF",
+            "moduleName": "MoneyHashShared",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "binLookup",
+            "printedName": "binLookup(cardData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LookupResponse",
+                "printedName": "MoneyHashShared.LookupResponse",
+                "usr": "c:objc(cs)MHSLookupResponse"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VaultData",
+                "printedName": "MoneyHashShared.VaultData",
+                "usr": "c:objc(cs)MHSVaultData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So16MHSCardCollectorC15MoneyHashSharedE9binLookup8cardDataSo17MHSLookupResponseCSo08MHSVaultI0C_tYaKF",
+            "mangledName": "$sSo16MHSCardCollectorC15MoneyHashSharedE9binLookup8cardDataSo17MHSLookupResponseCSo08MHSVaultI0C_tYaKF",
+            "moduleName": "MoneyHashShared",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "collect",
             "printedName": "collect(token:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "MoneyHashShared.VaultData?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "VaultData",
-                    "printedName": "MoneyHashShared.VaultData",
-                    "usr": "c:objc(cs)MHSVaultData"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "VaultData",
+                "printedName": "MoneyHashShared.VaultData",
+                "usr": "c:objc(cs)MHSVaultData"
               },
               {
                 "kind": "TypeNominal",
@@ -47392,8 +49789,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:So16MHSCardCollectorC15MoneyHashSharedE7collect5tokenSo12MHSVaultDataCSgSSSg_tYaKF",
-            "mangledName": "$sSo16MHSCardCollectorC15MoneyHashSharedE7collect5tokenSo12MHSVaultDataCSgSSSg_tYaKF",
+            "usr": "s:So16MHSCardCollectorC15MoneyHashSharedE7collect5tokenSo12MHSVaultDataCSSSg_tYaKF",
+            "mangledName": "$sSo16MHSCardCollectorC15MoneyHashSharedE7collect5tokenSo12MHSVaultDataCSSSg_tYaKF",
             "moduleName": "MoneyHashShared",
             "intro_Macosx": "10.15",
             "intro_iOS": "13",
@@ -47599,6 +49996,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -47728,6 +50139,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -48563,7 +50988,23 @@
           "ObjC",
           "Dynamic"
         ],
-        "isExternal": true
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -48626,6 +51067,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -48730,6 +51185,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -48841,6 +51310,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -48935,6 +51418,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -49033,6 +51530,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -49127,6 +51638,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -49225,6 +51750,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -49319,6 +51858,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -49417,6 +51970,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -49511,6 +52078,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -49609,6 +52190,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -49703,6 +52298,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -49801,6 +52410,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -49895,6 +52518,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -49993,6 +52630,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -50087,6 +52738,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -50185,6 +52850,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -50279,6 +52958,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -50377,6 +53070,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -50471,6 +53178,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -50569,6 +53290,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -50665,6 +53400,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -50752,6 +53501,20 @@
         ],
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",

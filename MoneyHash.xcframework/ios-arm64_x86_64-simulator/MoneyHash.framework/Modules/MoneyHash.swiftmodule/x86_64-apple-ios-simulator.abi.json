@@ -6643,6 +6643,33 @@
             ]
           },
           {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash18IntentStateDetailsO6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9MoneyHash18IntentStateDetailsO6encode2toys7Encoder_p_tKF",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(from:)",
@@ -6667,34 +6694,6 @@
             "implicit": true,
             "throwing": true,
             "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "any Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9MoneyHash18IntentStateDetailsO6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s9MoneyHash18IntentStateDetailsO6encode2toys7Encoder_p_tKF",
-            "moduleName": "MoneyHash",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Enum",
@@ -30983,49 +30982,42 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2801,
-      "length": 12,
-      "value": "\"processing\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
-      "kind": "StringLiteral",
-      "offset": 5500,
+      "offset": 5698,
       "length": 18,
       "value": "\"card_holder_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5567,
+      "offset": 5765,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5608,
+      "offset": 5806,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5663,
+      "offset": 5861,
       "length": 8,
       "value": "\"last_4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5720,
+      "offset": 5918,
       "length": 17,
       "value": "\"payment_methods\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5765,
+      "offset": 5963,
       "length": 14,
       "value": "\"requires_cvv\""
     },
@@ -31762,7 +31754,7 @@
       "kind": "StringLiteral",
       "offset": 97,
       "length": 7,
-      "value": "\"3.0.2\""
+      "value": "\"3.0.3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",

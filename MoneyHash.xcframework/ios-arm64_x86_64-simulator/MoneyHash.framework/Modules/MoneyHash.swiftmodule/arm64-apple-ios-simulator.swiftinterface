@@ -166,10 +166,8 @@ public enum IntentStateDetails : Swift.Codable {
   case nativePay(nativePayData: MoneyHash.NativePayData?)
   case installmentPlans(plans: [MoneyHash.InstallmentPlan]?)
   case processing
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension MoneyHash.IntentStateDetails {
   public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct CardTokenData : Swift.Codable {
   public let bin: Swift.String?

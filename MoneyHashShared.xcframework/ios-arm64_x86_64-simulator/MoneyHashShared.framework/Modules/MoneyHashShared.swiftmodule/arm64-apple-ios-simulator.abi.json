@@ -10254,9 +10254,6 @@
                 "genericSig": "<τ_0_0 where τ_0_0 : MoneyHashShared.SkieSwiftFlowProtocol>",
                 "sugared_genericSig": "<Self where Self : MoneyHashShared.SkieSwiftFlowProtocol>",
                 "protocolReq": true,
-                "spi_group_names": [
-                  "SKIE"
-                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
               }
@@ -10360,9 +10357,6 @@
                 "implicit": true,
                 "declAttributes": [
                   "Final"
-                ],
-                "spi_group_names": [
-                  "SKIE"
                 ],
                 "accessorKind": "get"
               }
@@ -11929,9 +11923,6 @@
                 "implicit": true,
                 "declAttributes": [
                   "Final"
-                ],
-                "spi_group_names": [
-                  "SKIE"
                 ],
                 "accessorKind": "get"
               }
@@ -14656,9 +14647,6 @@
                 "declAttributes": [
                   "Final"
                 ],
-                "spi_group_names": [
-                  "SKIE"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -16059,9 +16047,6 @@
                 "implicit": true,
                 "declAttributes": [
                   "Final"
-                ],
-                "spi_group_names": [
-                  "SKIE"
                 ],
                 "accessorKind": "get"
               }
@@ -18412,9 +18397,6 @@
                 "declAttributes": [
                   "Final"
                 ],
-                "spi_group_names": [
-                  "SKIE"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -19291,9 +19273,6 @@
                 "implicit": true,
                 "declAttributes": [
                   "Final"
-                ],
-                "spi_group_names": [
-                  "SKIE"
                 ],
                 "accessorKind": "get"
               }
@@ -20461,9 +20440,6 @@
                 "declAttributes": [
                   "Final"
                 ],
-                "spi_group_names": [
-                  "SKIE"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -21458,9 +21434,6 @@
                 "implicit": true,
                 "declAttributes": [
                   "Final"
-                ],
-                "spi_group_names": [
-                  "SKIE"
                 ],
                 "accessorKind": "get"
               }
@@ -22971,9 +22944,6 @@
                 "declAttributes": [
                   "Final"
                 ],
-                "spi_group_names": [
-                  "SKIE"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -23978,9 +23948,6 @@
                 "implicit": true,
                 "declAttributes": [
                   "Final"
-                ],
-                "spi_group_names": [
-                  "SKIE"
                 ],
                 "accessorKind": "get"
               }

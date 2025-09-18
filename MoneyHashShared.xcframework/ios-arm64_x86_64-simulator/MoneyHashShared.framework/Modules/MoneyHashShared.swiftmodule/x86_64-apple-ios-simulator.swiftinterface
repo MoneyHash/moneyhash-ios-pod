@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -module-name MoneyHashShared
-// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
 import Foundation
 @_exported import MoneyHashShared
 import Swift
@@ -161,13 +160,25 @@ public enum Skie {
   public func next() async -> T?
   @objc deinit
   public typealias Element = T
+  #if compiler(>=5.3) && $AssociatedTypeImplements
   @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
   @_implements(_Concurrency.AsyncIteratorProtocol, Failure) public typealias __AsyncIteratorProtocol_Failure = Swift.Never
+  #else
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  public typealias __AsyncIteratorProtocol_Failure = Swift.Never
+  #endif
 }
+#if compiler(>=5.3) && $PrimaryAssociatedTypes2
 public protocol SkieSwiftFlowProtocol<Element> : _Concurrency.AsyncSequence {
   associatedtype Element
   associatedtype Delegate : MoneyHashShared.Kotlinx_coroutines_coreFlow
 }
+#else
+public protocol SkieSwiftFlowProtocol : _Concurrency.AsyncSequence {
+  associatedtype Element
+  associatedtype Delegate : MoneyHashShared.Kotlinx_coroutines_coreFlow
+}
+#endif
 @_hasMissingDesignatedInitializers final public class SkieSwiftFlow<T> : MoneyHashShared.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
   public static func _forceBridgeFromObjectiveC(_ source: MoneyHashShared.SkieKotlinFlow<Swift.AnyObject>, result: inout MoneyHashShared.SkieSwiftFlow<T>?)
   public static func _conditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.SkieKotlinFlow<Swift.AnyObject>, result: inout MoneyHashShared.SkieSwiftFlow<T>?) -> Swift.Bool
@@ -178,8 +189,13 @@ public protocol SkieSwiftFlowProtocol<Element> : _Concurrency.AsyncSequence {
   public typealias Element = T
   public typealias _ObjectiveCType = MoneyHashShared.SkieKotlinFlow<Swift.AnyObject>
   public typealias Delegate = any MoneyHashShared.Kotlinx_coroutines_coreFlow
+  #if compiler(>=5.3) && $AssociatedTypeImplements
   @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
   @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  #else
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  public typealias __AsyncSequence_Failure = Swift.Never
+  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class SkieSwiftOptionalFlow<T> : MoneyHashShared.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
@@ -192,8 +208,13 @@ public protocol SkieSwiftFlowProtocol<Element> : _Concurrency.AsyncSequence {
   public typealias Element = T?
   public typealias _ObjectiveCType = MoneyHashShared.SkieKotlinOptionalFlow<Swift.AnyObject>
   public typealias Delegate = any MoneyHashShared.Kotlinx_coroutines_coreFlow
+  #if compiler(>=5.3) && $AssociatedTypeImplements
   @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
   @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  #else
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  public typealias __AsyncSequence_Failure = Swift.Never
+  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class SkieSwiftSharedFlow<T> : MoneyHashShared.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
@@ -209,8 +230,13 @@ public protocol SkieSwiftFlowProtocol<Element> : _Concurrency.AsyncSequence {
   public typealias Element = T
   public typealias _ObjectiveCType = MoneyHashShared.SkieKotlinSharedFlow<Swift.AnyObject>
   public typealias Delegate = any MoneyHashShared.Kotlinx_coroutines_coreSharedFlow
+  #if compiler(>=5.3) && $AssociatedTypeImplements
   @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
   @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  #else
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  public typealias __AsyncSequence_Failure = Swift.Never
+  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class SkieSwiftOptionalSharedFlow<T> : MoneyHashShared.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
@@ -226,8 +252,13 @@ public protocol SkieSwiftFlowProtocol<Element> : _Concurrency.AsyncSequence {
   public typealias Element = T?
   public typealias _ObjectiveCType = MoneyHashShared.SkieKotlinOptionalSharedFlow<Swift.AnyObject>
   public typealias Delegate = any MoneyHashShared.Kotlinx_coroutines_coreSharedFlow
+  #if compiler(>=5.3) && $AssociatedTypeImplements
   @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
   @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  #else
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  public typealias __AsyncSequence_Failure = Swift.Never
+  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class SkieSwiftMutableSharedFlow<T> : MoneyHashShared.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
@@ -250,8 +281,13 @@ public protocol SkieSwiftFlowProtocol<Element> : _Concurrency.AsyncSequence {
   public typealias Element = T
   public typealias _ObjectiveCType = MoneyHashShared.SkieKotlinMutableSharedFlow<Swift.AnyObject>
   public typealias Delegate = any MoneyHashShared.Kotlinx_coroutines_coreMutableSharedFlow
+  #if compiler(>=5.3) && $AssociatedTypeImplements
   @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
   @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  #else
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  public typealias __AsyncSequence_Failure = Swift.Never
+  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableSharedFlow<T> : MoneyHashShared.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
@@ -274,8 +310,13 @@ public protocol SkieSwiftFlowProtocol<Element> : _Concurrency.AsyncSequence {
   public typealias Element = T?
   public typealias _ObjectiveCType = MoneyHashShared.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>
   public typealias Delegate = any MoneyHashShared.Kotlinx_coroutines_coreMutableSharedFlow
+  #if compiler(>=5.3) && $AssociatedTypeImplements
   @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
   @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  #else
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  public typealias __AsyncSequence_Failure = Swift.Never
+  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class SkieSwiftStateFlow<T> : MoneyHashShared.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
@@ -294,8 +335,13 @@ public protocol SkieSwiftFlowProtocol<Element> : _Concurrency.AsyncSequence {
   public typealias Element = T
   public typealias _ObjectiveCType = MoneyHashShared.SkieKotlinStateFlow<Swift.AnyObject>
   public typealias Delegate = any MoneyHashShared.Kotlinx_coroutines_coreStateFlow
+  #if compiler(>=5.3) && $AssociatedTypeImplements
   @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
   @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  #else
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  public typealias __AsyncSequence_Failure = Swift.Never
+  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class SkieSwiftOptionalStateFlow<T> : MoneyHashShared.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
@@ -314,8 +360,13 @@ public protocol SkieSwiftFlowProtocol<Element> : _Concurrency.AsyncSequence {
   public typealias Element = T?
   public typealias _ObjectiveCType = MoneyHashShared.SkieKotlinOptionalStateFlow<Swift.AnyObject>
   public typealias Delegate = any MoneyHashShared.Kotlinx_coroutines_coreStateFlow
+  #if compiler(>=5.3) && $AssociatedTypeImplements
   @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
   @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  #else
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  public typealias __AsyncSequence_Failure = Swift.Never
+  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class SkieSwiftMutableStateFlow<T> : MoneyHashShared.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
@@ -343,8 +394,13 @@ public protocol SkieSwiftFlowProtocol<Element> : _Concurrency.AsyncSequence {
   public typealias Element = T
   public typealias _ObjectiveCType = MoneyHashShared.SkieKotlinMutableStateFlow<Swift.AnyObject>
   public typealias Delegate = any MoneyHashShared.Kotlinx_coroutines_coreMutableStateFlow
+  #if compiler(>=5.3) && $AssociatedTypeImplements
   @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
   @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  #else
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  public typealias __AsyncSequence_Failure = Swift.Never
+  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableStateFlow<T> : MoneyHashShared.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
@@ -372,8 +428,13 @@ public protocol SkieSwiftFlowProtocol<Element> : _Concurrency.AsyncSequence {
   public typealias Element = T?
   public typealias _ObjectiveCType = MoneyHashShared.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>
   public typealias Delegate = any MoneyHashShared.Kotlinx_coroutines_coreMutableStateFlow
+  #if compiler(>=5.3) && $AssociatedTypeImplements
   @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
   @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  #else
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  public typealias __AsyncSequence_Failure = Swift.Never
+  #endif
   @objc deinit
 }
 extension MoneyHashShared.Skie.RuntimeKotlin.SkieColdFlowIterator {
@@ -913,11 +974,11 @@ extension MoneyHashShared.SkieSwiftOptionalMutableStateFlow where T : Swift._Obj
   public func _bridgeToObjectiveC() -> MoneyHashShared.__KotlinKVariance
   public typealias _ObjectiveCType = MoneyHashShared.__KotlinKVariance
   public static func == (a: MoneyHashShared.KotlinKVariance, b: MoneyHashShared.KotlinKVariance) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.KotlinKVariance]
   nonisolated public static var allCases: [MoneyHashShared.KotlinKVariance] {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -951,11 +1012,11 @@ extension MoneyHashShared.__KotlinKVariance {
   public typealias _ObjectiveCType = MoneyHashShared.__LastUsedMethodType
   public typealias Companion = MoneyHashShared.__LastUsedMethodType.Companion
   public static func == (a: MoneyHashShared.LastUsedMethodType, b: MoneyHashShared.LastUsedMethodType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.LastUsedMethodType]
   nonisolated public static var allCases: [MoneyHashShared.LastUsedMethodType] {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -991,11 +1052,11 @@ extension MoneyHashShared.__LastUsedMethodType {
   public typealias _ObjectiveCType = MoneyHashShared.__MethodType
   public typealias Companion = MoneyHashShared.__MethodType.Companion
   public static func == (a: MoneyHashShared.MethodType, b: MoneyHashShared.MethodType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.MethodType]
   nonisolated public static var allCases: [MoneyHashShared.MethodType] {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1030,11 +1091,11 @@ extension MoneyHashShared.__MethodType {
   public typealias _ObjectiveCType = MoneyHashShared.__IntentStatus
   public typealias Companion = MoneyHashShared.__IntentStatus.Companion
   public static func == (a: MoneyHashShared.IntentStatus, b: MoneyHashShared.IntentStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.IntentStatus]
   nonisolated public static var allCases: [MoneyHashShared.IntentStatus] {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1067,11 +1128,11 @@ extension MoneyHashShared.__IntentStatus {
   public typealias _ObjectiveCType = MoneyHashShared.__DiscountType
   public typealias Companion = MoneyHashShared.__DiscountType.Companion
   public static func == (a: MoneyHashShared.DiscountType, b: MoneyHashShared.DiscountType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.DiscountType]
   nonisolated public static var allCases: [MoneyHashShared.DiscountType] {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1105,11 +1166,11 @@ extension MoneyHashShared.__DiscountType {
   public typealias _ObjectiveCType = MoneyHashShared.__Language
   public typealias Companion = MoneyHashShared.__Language.Companion
   public static func == (a: MoneyHashShared.Language, b: MoneyHashShared.Language) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.Language]
   nonisolated public static var allCases: [MoneyHashShared.Language] {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1155,11 +1216,11 @@ extension MoneyHashShared.__Language {
   public typealias _ObjectiveCType = MoneyHashShared.__IntentState
   public typealias Companion = MoneyHashShared.__IntentState.Companion
   public static func == (a: MoneyHashShared.IntentState, b: MoneyHashShared.IntentState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.IntentState]
   nonisolated public static var allCases: [MoneyHashShared.IntentState] {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1192,11 +1253,11 @@ extension MoneyHashShared.__IntentState {
   public typealias _ObjectiveCType = MoneyHashShared.__IntentOperation
   public typealias Companion = MoneyHashShared.__IntentOperation.Companion
   public static func == (a: MoneyHashShared.IntentOperation, b: MoneyHashShared.IntentOperation) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.IntentOperation]
   nonisolated public static var allCases: [MoneyHashShared.IntentOperation] {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1234,11 +1295,11 @@ extension MoneyHashShared.__IntentOperation {
   public func _bridgeToObjectiveC() -> MoneyHashShared.__Environment
   public typealias _ObjectiveCType = MoneyHashShared.__Environment
   public static func == (a: MoneyHashShared.Environment, b: MoneyHashShared.Environment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.Environment]
   nonisolated public static var allCases: [MoneyHashShared.Environment] {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1275,11 +1336,11 @@ extension MoneyHashShared.__Environment {
   public typealias _ObjectiveCType = MoneyHashShared.__InputFieldType
   public typealias Companion = MoneyHashShared.__InputFieldType.Companion
   public static func == (a: MoneyHashShared.InputFieldType, b: MoneyHashShared.InputFieldType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.InputFieldType]
   nonisolated public static var allCases: [MoneyHashShared.InputFieldType] {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1317,11 +1378,11 @@ extension MoneyHashShared.__InputFieldType {
   public typealias _ObjectiveCType = MoneyHashShared.__Type_
   public typealias Companion = MoneyHashShared.__Type_.Companion
   public static func == (a: MoneyHashShared.Type_, b: MoneyHashShared.Type_) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.Type_]
   nonisolated public static var allCases: [MoneyHashShared.Type_] {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1356,11 +1417,11 @@ extension MoneyHashShared.__Type_ {
   public typealias _ObjectiveCType = MoneyHashShared.__Brand
   public typealias Companion = MoneyHashShared.__Brand.Companion
   public static func == (a: MoneyHashShared.Brand, b: MoneyHashShared.Brand) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.Brand]
   nonisolated public static var allCases: [MoneyHashShared.Brand] {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1399,11 +1460,11 @@ extension MoneyHashShared.__Brand {
   public typealias _ObjectiveCType = MoneyHashShared.__FieldType
   public typealias Companion = MoneyHashShared.__FieldType.Companion
   public static func == (a: MoneyHashShared.FieldType, b: MoneyHashShared.FieldType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.FieldType]
   nonisolated public static var allCases: [MoneyHashShared.FieldType] {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1435,11 +1496,11 @@ extension MoneyHashShared.__FieldType {
   public typealias _ObjectiveCType = MoneyHashShared.__ErrorType
   public typealias Companion = MoneyHashShared.__ErrorType.Companion
   public static func == (a: MoneyHashShared.ErrorType, b: MoneyHashShared.ErrorType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.ErrorType]
   nonisolated public static var allCases: [MoneyHashShared.ErrorType] {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1470,11 +1531,11 @@ extension MoneyHashShared.__ErrorType {
   public typealias _ObjectiveCType = MoneyHashShared.__Locale
   public typealias Companion = MoneyHashShared.__Locale.Companion
   public static func == (a: MoneyHashShared.Locale, b: MoneyHashShared.Locale) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.Locale]
   nonisolated public static var allCases: [MoneyHashShared.Locale] {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1505,11 +1566,11 @@ extension MoneyHashShared.__Locale {
   public func _bridgeToObjectiveC() -> MoneyHashShared.__LoggerSeverity
   public typealias _ObjectiveCType = MoneyHashShared.__LoggerSeverity
   public static func == (a: MoneyHashShared.LoggerSeverity, b: MoneyHashShared.LoggerSeverity) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.LoggerSeverity]
   nonisolated public static var allCases: [MoneyHashShared.LoggerSeverity] {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1544,11 +1605,11 @@ extension MoneyHashShared.__LoggerSeverity {
   public typealias _ObjectiveCType = MoneyHashShared.__RenderStrategy
   public typealias Companion = MoneyHashShared.__RenderStrategy.Companion
   public static func == (a: MoneyHashShared.RenderStrategy, b: MoneyHashShared.RenderStrategy) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.RenderStrategy]
   nonisolated public static var allCases: [MoneyHashShared.RenderStrategy] {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1591,11 +1652,11 @@ extension MoneyHashShared.__RenderStrategy {
   public typealias _ObjectiveCType = MoneyHashShared.__Ktor_utilsMonth
   public typealias Companion = MoneyHashShared.__Ktor_utilsMonth.Companion
   public static func == (a: MoneyHashShared.Ktor_utilsMonth, b: MoneyHashShared.Ktor_utilsMonth) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.Ktor_utilsMonth]
   nonisolated public static var allCases: [MoneyHashShared.Ktor_utilsMonth] {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1633,11 +1694,11 @@ extension MoneyHashShared.__Ktor_utilsMonth {
   public typealias _ObjectiveCType = MoneyHashShared.__Ktor_utilsWeekDay
   public typealias Companion = MoneyHashShared.__Ktor_utilsWeekDay.Companion
   public static func == (a: MoneyHashShared.Ktor_utilsWeekDay, b: MoneyHashShared.Ktor_utilsWeekDay) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.Ktor_utilsWeekDay]
   nonisolated public static var allCases: [MoneyHashShared.Ktor_utilsWeekDay] {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1664,11 +1725,11 @@ extension MoneyHashShared.__Ktor_utilsWeekDay {
   public func _bridgeToObjectiveC() -> MoneyHashShared.__Kotlinx_serialization_jsonClassDiscriminatorMode
   public typealias _ObjectiveCType = MoneyHashShared.__Kotlinx_serialization_jsonClassDiscriminatorMode
   public static func == (a: MoneyHashShared.Kotlinx_serialization_jsonClassDiscriminatorMode, b: MoneyHashShared.Kotlinx_serialization_jsonClassDiscriminatorMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [MoneyHashShared.Kotlinx_serialization_jsonClassDiscriminatorMode]
   nonisolated public static var allCases: [MoneyHashShared.Kotlinx_serialization_jsonClassDiscriminatorMode] {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1684,8 +1745,8 @@ extension MoneyHashShared.Skie.RuntimeKotlin.Skie_SuspendResult {
     case canceled(MoneyHashShared.Skie_SuspendResult.Canceled)
     case error(MoneyHashShared.Skie_SuspendResult.Error)
     case success(MoneyHashShared.Skie_SuspendResult.Success)
-    public static func == (a: MoneyHashShared.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed, b: MoneyHashShared.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: MoneyHashShared.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed, b: MoneyHashShared.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed) -> Swift.Bool
     public var hashValue: Swift.Int {
       get
     }
@@ -1756,8 +1817,8 @@ extension MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.RequestContent {
     case header(MoneyHashShared.RequestContent.Header)
     case path(MoneyHashShared.RequestContent.Path)
     case query(MoneyHashShared.RequestContent.Query)
-    public static func == (a: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.RequestContent.__Sealed, b: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.RequestContent.__Sealed) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.RequestContent.__Sealed, b: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.RequestContent.__Sealed) -> Swift.Bool
     public var hashValue: Swift.Int {
       get
     }
@@ -1772,8 +1833,8 @@ extension MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.CustomFieldValue {
     case floatValue(MoneyHashShared.CustomFieldValue.FloatValue)
     case intValue(MoneyHashShared.CustomFieldValue.IntValue)
     case stringValue(MoneyHashShared.CustomFieldValue.StringValue)
-    public static func == (a: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.CustomFieldValue.__Sealed, b: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.CustomFieldValue.__Sealed) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.CustomFieldValue.__Sealed, b: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.CustomFieldValue.__Sealed) -> Swift.Bool
     public var hashValue: Swift.Int {
       get
     }
@@ -1785,8 +1846,8 @@ extension MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.NativePayData {
   @frozen public enum __Sealed : Swift.Hashable {
     case applePayData(MoneyHashShared.NativePayData.ApplePayData)
     case googlePay(MoneyHashShared.NativePayData.GooglePay)
-    public static func == (a: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.NativePayData.__Sealed, b: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.NativePayData.__Sealed) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.NativePayData.__Sealed, b: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.NativePayData.__Sealed) -> Swift.Bool
     public var hashValue: Swift.Int {
       get
     }
@@ -1800,8 +1861,8 @@ extension MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.CardState {
     case failed(MoneyHashShared.CardState.Failed)
     case success(MoneyHashShared.CardState.Success)
     case unknown(MoneyHashShared.CardState.Unknown)
-    public static func == (a: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.CardState.__Sealed, b: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.CardState.__Sealed) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.CardState.__Sealed, b: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.CardState.__Sealed) -> Swift.Bool
     public var hashValue: Swift.Int {
       get
     }
@@ -1826,8 +1887,8 @@ extension MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails
     case transactionFailed(MoneyHashShared.IntentStateDetails.TransactionFailed)
     case transactionWaitingUserAction(MoneyHashShared.IntentStateDetails.TransactionWaitingUserAction)
     case urlToRender(MoneyHashShared.IntentStateDetails.UrlToRender)
-    public static func == (a: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed, b: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed, b: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.IntentStateDetails.__Sealed) -> Swift.Bool
     public var hashValue: Swift.Int {
       get
     }
@@ -1841,8 +1902,8 @@ extension MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.CardFormExceptions
     case invalidFieldException(MoneyHashShared.CardFormExceptions.InvalidFieldException)
     case missingFieldTypeException(MoneyHashShared.CardFormExceptions.MissingFieldTypeException)
     case redundantFieldTypeException(MoneyHashShared.CardFormExceptions.RedundantFieldTypeException)
-    public static func == (a: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.CardFormExceptions.__Sealed, b: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.CardFormExceptions.__Sealed) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.CardFormExceptions.__Sealed, b: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.CardFormExceptions.__Sealed) -> Swift.Bool
     public var hashValue: Swift.Int {
       get
     }
@@ -1858,8 +1919,8 @@ extension MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.ValidationExceptio
     case luhnException(MoneyHashShared.ValidationException.LuhnException)
     case numericValidationException(MoneyHashShared.ValidationException.NumericValidationException)
     case rangeValueValidationException(MoneyHashShared.ValidationException.RangeValueValidationException)
-    public static func == (a: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.ValidationException.__Sealed, b: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.ValidationException.__Sealed) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.ValidationException.__Sealed, b: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.ValidationException.__Sealed) -> Swift.Bool
     public var hashValue: Swift.Int {
       get
     }
@@ -1871,8 +1932,8 @@ extension MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.VaultCollectNetwor
   @frozen public enum __Sealed : Swift.Hashable {
     case missingPublicKey(MoneyHashShared.VaultCollectNetworkError.MissingPublicKey)
     case tokenizationError(MoneyHashShared.VaultCollectNetworkError.TokenizationError)
-    public static func == (a: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.VaultCollectNetworkError.__Sealed, b: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.VaultCollectNetworkError.__Sealed) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.VaultCollectNetworkError.__Sealed, b: MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.VaultCollectNetworkError.__Sealed) -> Swift.Bool
     public var hashValue: Swift.Int {
       get
     }
@@ -1887,8 +1948,8 @@ extension MoneyHashShared.Skie.KotlinxSerializationCore.SerialKind {
     case cONTEXTUAL(MoneyHashShared.Kotlinx_serialization_coreSerialKind.CONTEXTUAL)
     case eNUM(MoneyHashShared.Kotlinx_serialization_coreSerialKind.ENUM)
     case structureKind(MoneyHashShared.Kotlinx_serialization_coreStructureKind)
-    public static func == (a: MoneyHashShared.Skie.KotlinxSerializationCore.SerialKind.__Sealed, b: MoneyHashShared.Skie.KotlinxSerializationCore.SerialKind.__Sealed) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: MoneyHashShared.Skie.KotlinxSerializationCore.SerialKind.__Sealed, b: MoneyHashShared.Skie.KotlinxSerializationCore.SerialKind.__Sealed) -> Swift.Bool
     public var hashValue: Swift.Int {
       get
     }
@@ -1912,8 +1973,8 @@ extension MoneyHashShared.Skie.KotlinxSerializationCore.PolymorphicKind {
   @frozen public enum __Sealed : Swift.Hashable {
     case oPEN(MoneyHashShared.Kotlinx_serialization_corePolymorphicKind.OPEN)
     case sEALED(MoneyHashShared.Kotlinx_serialization_corePolymorphicKind.SEALED)
-    public static func == (a: MoneyHashShared.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed, b: MoneyHashShared.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: MoneyHashShared.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed, b: MoneyHashShared.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed) -> Swift.Bool
     public var hashValue: Swift.Int {
       get
     }
@@ -1932,8 +1993,8 @@ extension MoneyHashShared.Skie.KotlinxSerializationCore.PrimitiveKind {
     case lONG(MoneyHashShared.Kotlinx_serialization_corePrimitiveKind.LONG)
     case sHORT(MoneyHashShared.Kotlinx_serialization_corePrimitiveKind.SHORT)
     case sTRING(MoneyHashShared.Kotlinx_serialization_corePrimitiveKind.STRING)
-    public static func == (a: MoneyHashShared.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed, b: MoneyHashShared.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: MoneyHashShared.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed, b: MoneyHashShared.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed) -> Swift.Bool
     public var hashValue: Swift.Int {
       get
     }
@@ -1947,8 +2008,8 @@ extension MoneyHashShared.Skie.KotlinxSerializationCore.StructureKind {
     case lIST(MoneyHashShared.Kotlinx_serialization_coreStructureKind.LIST)
     case mAP(MoneyHashShared.Kotlinx_serialization_coreStructureKind.MAP)
     case oBJECT(MoneyHashShared.Kotlinx_serialization_coreStructureKind.OBJECT)
-    public static func == (a: MoneyHashShared.Skie.KotlinxSerializationCore.StructureKind.__Sealed, b: MoneyHashShared.Skie.KotlinxSerializationCore.StructureKind.__Sealed) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: MoneyHashShared.Skie.KotlinxSerializationCore.StructureKind.__Sealed, b: MoneyHashShared.Skie.KotlinxSerializationCore.StructureKind.__Sealed) -> Swift.Bool
     public var hashValue: Swift.Int {
       get
     }
@@ -1964,8 +2025,8 @@ extension MoneyHashShared.Skie.KtorHttp.OutgoingContent {
     case protocolUpgrade(MoneyHashShared.Ktor_httpOutgoingContent.ProtocolUpgrade)
     case readChannelContent(MoneyHashShared.Ktor_httpOutgoingContent.ReadChannelContent)
     case writeChannelContent(MoneyHashShared.Ktor_httpOutgoingContent.WriteChannelContent)
-    public static func == (a: MoneyHashShared.Skie.KtorHttp.OutgoingContent.__Sealed, b: MoneyHashShared.Skie.KtorHttp.OutgoingContent.__Sealed) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: MoneyHashShared.Skie.KtorHttp.OutgoingContent.__Sealed, b: MoneyHashShared.Skie.KtorHttp.OutgoingContent.__Sealed) -> Swift.Bool
     public var hashValue: Swift.Int {
       get
     }
@@ -1977,8 +2038,8 @@ extension MoneyHashShared.Skie.KotlinxIoCore.Source {
   @frozen public enum __Sealed : Swift.Hashable {
     case buffer(MoneyHashShared.Kotlinx_io_coreBuffer)
     case `else`
-    public static func == (a: MoneyHashShared.Skie.KotlinxIoCore.Source.__Sealed, b: MoneyHashShared.Skie.KotlinxIoCore.Source.__Sealed) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: MoneyHashShared.Skie.KotlinxIoCore.Source.__Sealed, b: MoneyHashShared.Skie.KotlinxIoCore.Source.__Sealed) -> Swift.Bool
     public var hashValue: Swift.Int {
       get
     }
@@ -1990,8 +2051,8 @@ extension MoneyHashShared.Skie.KotlinxIoCore.Sink {
   @frozen public enum __Sealed : Swift.Hashable {
     case buffer(MoneyHashShared.Kotlinx_io_coreBuffer)
     case `else`
-    public static func == (a: MoneyHashShared.Skie.KotlinxIoCore.Sink.__Sealed, b: MoneyHashShared.Skie.KotlinxIoCore.Sink.__Sealed) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: MoneyHashShared.Skie.KotlinxIoCore.Sink.__Sealed, b: MoneyHashShared.Skie.KotlinxIoCore.Sink.__Sealed) -> Swift.Bool
     public var hashValue: Swift.Int {
       get
     }
@@ -2003,8 +2064,8 @@ extension MoneyHashShared.Skie.KotlinxSerializationJson.JsonElement {
   @frozen public enum __Sealed : Swift.Hashable {
     case jsonPrimitive(MoneyHashShared.Kotlinx_serialization_jsonJsonPrimitive)
     case `else`
-    public static func == (a: MoneyHashShared.Skie.KotlinxSerializationJson.JsonElement.__Sealed, b: MoneyHashShared.Skie.KotlinxSerializationJson.JsonElement.__Sealed) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: MoneyHashShared.Skie.KotlinxSerializationJson.JsonElement.__Sealed, b: MoneyHashShared.Skie.KotlinxSerializationJson.JsonElement.__Sealed) -> Swift.Bool
     public var hashValue: Swift.Int {
       get
     }
@@ -2016,8 +2077,8 @@ extension MoneyHashShared.Skie.KotlinxSerializationJson.Json {
   @frozen public enum __Sealed : Swift.Hashable {
     case `default`(MoneyHashShared.Kotlinx_serialization_jsonJson.Default)
     case `else`
-    public static func == (a: MoneyHashShared.Skie.KotlinxSerializationJson.Json.__Sealed, b: MoneyHashShared.Skie.KotlinxSerializationJson.Json.__Sealed) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: MoneyHashShared.Skie.KotlinxSerializationJson.Json.__Sealed, b: MoneyHashShared.Skie.KotlinxSerializationJson.Json.__Sealed) -> Swift.Bool
     public var hashValue: Swift.Int {
       get
     }
@@ -2029,8 +2090,8 @@ extension MoneyHashShared.Skie.KotlinxSerializationJson.JsonPrimitive {
   @frozen public enum __Sealed : Swift.Hashable {
     case jsonNull(MoneyHashShared.Kotlinx_serialization_jsonJsonNull)
     case `else`
-    public static func == (a: MoneyHashShared.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed, b: MoneyHashShared.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: MoneyHashShared.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed, b: MoneyHashShared.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed) -> Swift.Bool
     public var hashValue: Swift.Int {
       get
     }

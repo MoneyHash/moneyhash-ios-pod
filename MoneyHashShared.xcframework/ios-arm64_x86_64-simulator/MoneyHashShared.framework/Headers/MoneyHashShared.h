@@ -6,7 +6,7 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class NSString, NSSet<ObjectType>, NSObject, NSNumber, NSMutableSet<ObjectType>, NSMutableDictionary<KeyType, ObjectType>, NSMutableArray<ObjectType>, NSError, NSDictionary<KeyType, ObjectType>, NSArray<ObjectType>, MHS__SkieTypeExportsKt, MHS__SkieSuspendWrappersKt, MHSWeak<T>, MHSVaultServiceImpl, MHSVaultDataCompanion, MHSVaultData, MHSVaultCollectNetworkErrorTokenizationError, MHSVaultCollectNetworkErrorMissingPublicKey, MHSVaultCollectNetworkError, MHSValidationExceptionRangeValueValidationException, MHSValidationExceptionNumericValidationException, MHSValidationExceptionLuhnException, MHSValidationExceptionLengthException, MHSValidationExceptionEmptyValueException, MHSValidationExceptionAlphabetValidationException, MHSValidationException, MHSUserCompanion, MHSUser, MHSUseSelfWalletRequestCompanion, MHSUseSelfWalletRequest, MHSUseCardTokenRequestCompanion, MHSUseCardTokenRequest, MHSUpdateMethodRequestCompanion, MHSUpdateMethodRequest, MHSUShort, MHSULong, MHSUInt, MHSUByte, MHSTypeCompanion, MHSType, MHSTransactionOperationCompanion, MHSTransactionOperation, MHSTransactionCompanion, MHSTransaction, MHSTokenizeCardInfoCompanion, MHSTokenizeCardInfo, MHSTempCardTokenRequestCompanion, MHSTempCardTokenRequest, MHSSubmitReceiptRequestCompanion, MHSSubmitReceiptRequest, MHSSubmitFormRequestCompanion, MHSSubmitFormRequest, MHSSubmitCardCVVCompanion, MHSSubmitCardCVV, MHSStatusResponseCompanion, MHSStatusResponse, MHSStatusCompanion, MHSStatus, MHSStateCompanion, MHSState, MHSSkie_SuspendResultSuccess, MHSSkie_SuspendResultError, MHSSkie_SuspendResultCanceled, MHSSkie_SuspendResult, MHSSkie_SuspendHandler, MHSSkie_CancellationHandler, MHSSkieKotlinStateFlow<T>, MHSSkieKotlinSharedFlow<T>, MHSSkieKotlinOptionalStateFlow<T>, MHSSkieKotlinOptionalSharedFlow<T>, MHSSkieKotlinOptionalMutableStateFlow<T>, MHSSkieKotlinOptionalMutableSharedFlow<T>, MHSSkieKotlinOptionalFlow<T>, MHSSkieKotlinMutableStateFlow<T>, MHSSkieKotlinMutableSharedFlow<T>, MHSSkieKotlinFlow<T>, MHSSkieColdFlowIterator<E>, MHSShort, MHSSecureTextFieldVM, MHSSecureTextFieldConfiguration, MHSSavedCardCompanion, MHSSavedCard, MHSSaveCardCheckboxCompanion, MHSSaveCardCheckbox, MHSSandboxUseCase, MHSSandboxServiceImpl, MHSSandboxModule, MHSRequestContentQuery, MHSRequestContentPath, MHSRequestContentHeader, MHSRequestContentBody<T>, MHSRequestContent, MHSRequestBuilder, MHSRenderStrategyCompanion, MHSRenderStrategy, MHSRedirectCompanion, MHSRedirect, MHSReceiptBinLookupRequestCompanion, MHSReceiptBinLookupRequest, MHSProviderRelatedFieldsCompanion, MHSProviderRelatedFields, MHSProviderExtraDataCompanion, MHSProviderExtraData, MHSProductItemCompanion, MHSProductItem, MHSPlatformKt, MHSPlanMetadataCompanion, MHSPlanMetadata, MHSPlanCompanion, MHSPlan, MHSPayoutTransactionDataCompanion, MHSPayoutTransactionData, MHSPayoutMethodCompanion, MHSPayoutMethod, MHSPayoutIntentDataCompanion, MHSPayoutIntentData, MHSPayoutDetailsCompanion, MHSPayoutDetails, MHSPayoutDataCompanion, MHSPayoutData, MHSPayoutActionDataCompanion, MHSPayoutActionData, MHSPaymentUseCase, MHSPaymentStatusCompanion, MHSPaymentStatus, MHSPaymentMethodsDataCompanion, MHSPaymentMethodsData, MHSPaymentMethodResponseCompanion, MHSPaymentMethodResponse, MHSPaymentMethodRequestCompanion, MHSPaymentMethodRequest, MHSPaymentMethodCompanion, MHSPaymentMethod, MHSPaymentIntentDataCompanion, MHSPaymentIntentData, MHSPaymentIntentCompanion, MHSPaymentIntent, MHSPaymentInformationModule, MHSPaymentInformationCompanion, MHSPaymentInformation, MHSOptionItemCompanion, MHSOptionItem, MHSOperationStatusCompanion, MHSOperationStatus, MHSOperationAmountCompanion, MHSOperationAmount, MHSNumber, MHSNetworkModule, MHSNetworkExceptions_iosKt, MHSNativePaymentDataCompanion, MHSNativePaymentData, MHSNativePayDataGooglePayCompanion, MHSNativePayDataGooglePay, MHSNativePayDataCompanion, MHSNativePayDataApplePayDataCompanion, MHSNativePayDataApplePayData, MHSNativePayData, MHSNativeFormRequestCompanion, MHSNativeFormRequest, MHSMutableSet<ObjectType>, MHSMutableDictionary<KeyType, ObjectType>, MHSMoneyHashUtils, MHSMoneyHashStore, MHSMethodsExtensionsKt, MHSMethodTypeCompanion, MHSMethodType, MHSMethodMetaData, MHSMHThrowableCompanion, MHSMHThrowable, MHSLookupResponseCompanion, MHSLookupResponse, MHSLookupDataCompanion, MHSLookupData, MHSLong, MHSLoginRequestCompanion, MHSLoginRequest, MHSLoggerSeverity, MHSLocalizationManager, MHSLocaleCompanion, MHSLocale, MHSLastUsedMethodTypeCompanion, MHSLastUsedMethodType, MHSLastUsedMethodCompanion, MHSLastUsedMethod, MHSLanguageCompanion, MHSLanguage, MHSKtor_utilsWeekDayCompanion, MHSKtor_utilsWeekDay, MHSKtor_utilsTypeInfo, MHSKtor_utilsStringValuesBuilderImpl, MHSKtor_utilsPipelinePhase, MHSKtor_utilsPipeline<TSubject, TContext>, MHSKtor_utilsMonthCompanion, MHSKtor_utilsMonth, MHSKtor_utilsGMTDateCompanion, MHSKtor_utilsGMTDate, MHSKtor_utilsAttributeKey<T>, MHSKtor_httpUrlCompanion, MHSKtor_httpUrl, MHSKtor_httpURLProtocolCompanion, MHSKtor_httpURLProtocol, MHSKtor_httpURLBuilderCompanion, MHSKtor_httpURLBuilder, MHSKtor_httpOutgoingContentWriteChannelContent, MHSKtor_httpOutgoingContentReadChannelContent, MHSKtor_httpOutgoingContentProtocolUpgrade, MHSKtor_httpOutgoingContentNoContent, MHSKtor_httpOutgoingContentContentWrapper, MHSKtor_httpOutgoingContentByteArrayContent, MHSKtor_httpOutgoingContent, MHSKtor_httpHttpStatusCodeCompanion, MHSKtor_httpHttpStatusCode, MHSKtor_httpHttpProtocolVersionCompanion, MHSKtor_httpHttpProtocolVersion, MHSKtor_httpHttpMethodCompanion, MHSKtor_httpHttpMethod, MHSKtor_httpHeadersBuilder, MHSKtor_httpHeaderValueWithParametersCompanion, MHSKtor_httpHeaderValueWithParameters, MHSKtor_httpHeaderValueParam, MHSKtor_httpContentTypeCompanion, MHSKtor_httpContentType, MHSKtor_eventsEvents, MHSKtor_eventsEventDefinition<T>, MHSKtor_client_coreProxyConfig, MHSKtor_client_coreHttpSendPipelinePhases, MHSKtor_client_coreHttpSendPipeline, MHSKtor_client_coreHttpResponsePipelinePhases, MHSKtor_client_coreHttpResponsePipeline, MHSKtor_client_coreHttpResponseData, MHSKtor_client_coreHttpResponseContainer, MHSKtor_client_coreHttpResponse, MHSKtor_client_coreHttpRequestPipelinePhases, MHSKtor_client_coreHttpRequestPipeline, MHSKtor_client_coreHttpRequestData, MHSKtor_client_coreHttpRequestBuilderCompanion, MHSKtor_client_coreHttpRequestBuilder, MHSKtor_client_coreHttpReceivePipelinePhases, MHSKtor_client_coreHttpReceivePipeline, MHSKtor_client_coreHttpClientEngineConfig, MHSKtor_client_coreHttpClientConfig<T>, MHSKtor_client_coreHttpClientCallCompanion, MHSKtor_client_coreHttpClientCall, MHSKtor_client_coreHttpClient, MHSKtor_client_coreHttpCallValidatorConfig, MHSKtor_client_coreDefaultRequestDefaultRequestBuilder, MHSKtorClientFactory, MHSKotlinx_serialization_jsonJsonPrimitiveCompanion, MHSKotlinx_serialization_jsonJsonPrimitive, MHSKotlinx_serialization_jsonJsonNull, MHSKotlinx_serialization_jsonJsonElementCompanion, MHSKotlinx_serialization_jsonJsonElement, MHSKotlinx_serialization_jsonJsonDefault, MHSKotlinx_serialization_jsonJsonConfiguration, MHSKotlinx_serialization_jsonJson, MHSKotlinx_serialization_jsonClassDiscriminatorMode, MHSKotlinx_serialization_coreStructureKindOBJECT, MHSKotlinx_serialization_coreStructureKindMAP, MHSKotlinx_serialization_coreStructureKindLIST, MHSKotlinx_serialization_coreStructureKindCLASS, MHSKotlinx_serialization_coreStructureKind, MHSKotlinx_serialization_coreSerializersModule, MHSKotlinx_serialization_coreSerialKindENUM, MHSKotlinx_serialization_coreSerialKindCONTEXTUAL, MHSKotlinx_serialization_coreSerialKind, MHSKotlinx_serialization_corePrimitiveKindSTRING, MHSKotlinx_serialization_corePrimitiveKindSHORT, MHSKotlinx_serialization_corePrimitiveKindLONG, MHSKotlinx_serialization_corePrimitiveKindINT, MHSKotlinx_serialization_corePrimitiveKindFLOAT, MHSKotlinx_serialization_corePrimitiveKindDOUBLE, MHSKotlinx_serialization_corePrimitiveKindCHAR, MHSKotlinx_serialization_corePrimitiveKindBYTE, MHSKotlinx_serialization_corePrimitiveKindBOOLEAN, MHSKotlinx_serialization_corePrimitiveKind, MHSKotlinx_serialization_corePolymorphicKindSEALED, MHSKotlinx_serialization_corePolymorphicKindOPEN, MHSKotlinx_serialization_corePolymorphicKind, MHSKotlinx_io_coreBuffer, MHSKotlinx_coroutines_coreCoroutineDispatcherKey, MHSKotlinx_coroutines_coreCoroutineDispatcher, MHSKotlinUnit, MHSKotlinThrowable, MHSKotlinRuntimeException, MHSKotlinPair<A, B>, MHSKotlinNothing, MHSKotlinLongRangeCompanion, MHSKotlinLongRange, MHSKotlinLongProgressionCompanion, MHSKotlinLongProgression, MHSKotlinLongIterator, MHSKotlinKVariance, MHSKotlinKTypeProjectionCompanion, MHSKotlinKTypeProjection, MHSKotlinIllegalStateException, MHSKotlinException, MHSKotlinEnumCompanion, MHSKotlinEnum<E>, MHSKotlinCancellationException, MHSKotlinByteIterator, MHSKotlinByteArray, MHSKotlinArray<T>, MHSKotlinAbstractCoroutineContextKey<B, E>, MHSKotlinAbstractCoroutineContextElement, MHSKmmBaseService, MHSIntentStatusCompanion, MHSIntentStatus, MHSIntentStateDetailsUrlToRenderCompanion, MHSIntentStateDetailsUrlToRender, MHSIntentStateDetailsTransactionWaitingUserAction, MHSIntentStateDetailsTransactionFailedCompanion, MHSIntentStateDetailsTransactionFailed, MHSIntentStateDetailsSavedCardCVVCompanion, MHSIntentStateDetailsSavedCardCVV, MHSIntentStateDetailsProcessing, MHSIntentStateDetailsNativePayCompanion, MHSIntentStateDetailsNativePay, MHSIntentStateDetailsMethodSelectionCompanion, MHSIntentStateDetailsMethodSelection, MHSIntentStateDetailsIntentProcessed, MHSIntentStateDetailsIntentForm, MHSIntentStateDetailsInstallmentPlansCompanion, MHSIntentStateDetailsInstallmentPlans, MHSIntentStateDetailsFormFieldsCompanion, MHSIntentStateDetailsFormFields, MHSIntentStateDetailsExpired, MHSIntentStateDetailsCompanion, MHSIntentStateDetailsClosed, MHSIntentStateDetailsCardIntentSuccessful, MHSIntentStateDetailsCardIntentFailed, MHSIntentStateDetails, MHSIntentStateCompanion, MHSIntentState, MHSIntentOperationCompanion, MHSIntentOperation, MHSIntentMethodsCompanion, MHSIntentMethods, MHSIntentMethodItemCompanion, MHSIntentMethodItem, MHSIntentActionDataCompanion, MHSIntentActionData, MHSInt, MHSInstallmentPlansResponseDataCompanion, MHSInstallmentPlansResponseData, MHSInstallmentPlansResponseCompanion, MHSInstallmentPlansResponse, MHSInstallmentPlanSelectionBodyCompanion, MHSInstallmentPlanSelectionBody, MHSInstallmentPlanDataCompanion, MHSInstallmentPlanData, MHSInstallmentPlanCompanion, MHSInstallmentPlan, MHSInputFieldTypeCompanion, MHSInputFieldType, MHSInputFieldCompanion, MHSInputField, MHSIOSPlatform, MHSFormFieldsCompanion, MHSFormFields, MHSFloat, MHSFieldValue, MHSFieldTypeCompanion, MHSFieldType, MHSFieldItemCompanion, MHSFieldItem, MHSFeesResponseCompanion, MHSFeesResponse, MHSFeesDataCompanion, MHSFeesData, MHSFeeItemCompanion, MHSFeeItem, MHSExpressMethodCompanion, MHSExpressMethod, MHSExpireYearValidatorKt, MHSErrorTypeCompanion, MHSErrorType, MHSErrorMessagesDataCompanion, MHSErrorMessagesData, MHSErrorMapperKt, MHSErrorMapperConstants, MHSErrorMapper, MHSErrorInfoCompanion, MHSErrorInfo, MHSEnvironment, MHSDouble, MHSDiscountTypeCompanion, MHSDiscountType, MHSDiscountResponseCompanion, MHSDiscountResponse, MHSDiscountItemCompanion, MHSDiscountItem, MHSDiscountDataCompanion, MHSDiscountData, MHSDemoIntentResponseCompanion, MHSDemoIntentResponse, MHSDemoIntentItemCompanion, MHSDemoIntentItem, MHSDemoIntentDataCompanion, MHSDemoIntentData, MHSDeleteSavedCardRequestCompanion, MHSDeleteSavedCardRequest, MHSDefaultLogManager, MHSDataStateCompanion, MHSDataState<T>, MHSCvvConfigCompanion, MHSCvvConfig, MHSCustomerBalanceCompanion, MHSCustomerBalance, MHSCustomFieldValueStringValueCompanion, MHSCustomFieldValueStringValue, MHSCustomFieldValueSerializer, MHSCustomFieldValueIntValueCompanion, MHSCustomFieldValueIntValue, MHSCustomFieldValueFloatValueCompanion, MHSCustomFieldValueFloatValue, MHSCustomFieldValueDoubleValueCompanion, MHSCustomFieldValueDoubleValue, MHSCustomFieldValueCompanion, MHSCustomFieldValueBooleanValueCompanion, MHSCustomFieldValueBooleanValue, MHSCustomFieldValue, MHSConstants, MHSCommonExtensionsKt, MHSCityCompanion, MHSCity, MHSCardTokenDataCompanion, MHSCardTokenData, MHSCardStateUnknown, MHSCardStateSuccess, MHSCardStateFailed, MHSCardStateError, MHSCardState, MHSCardIntentResultCompanion, MHSCardIntentResult, MHSCardIntentCompanion, MHSCardIntent, MHSCardFormStateCompanion, MHSCardFormState, MHSCardFormExceptionsRedundantFieldTypeException, MHSCardFormExceptionsMissingFieldTypeException, MHSCardFormExceptionsInvalidFieldException, MHSCardFormExceptionsExpireDateIsInThePast, MHSCardFormExceptions, MHSCardFormConfigurationCompanion, MHSCardFormConfiguration, MHSCardFieldsCompanion, MHSCardFields, MHSCardFieldStateCompanion, MHSCardFieldState, MHSCardDetailsCompanion, MHSCardDetails, MHSCardDataCompanion, MHSCardDataCollectorKt, MHSCardData, MHSCardCollector, MHSCardBrandCompanion, MHSCardBrand, MHSCardActionDataCompanion, MHSCardActionData, MHSByte, MHSBrandSettingsModelCompanion, MHSBrandSettingsModel, MHSBrandSettingsDataCompanion, MHSBrandSettingsData, MHSBrandCompanion, MHSBrand, MHSBoolean, MHSBaseService, MHSBase, MHSBalancesCompanion, MHSBalances, MHSAuthUseCase, MHSAuthTokenCompanion, MHSAuthToken, MHSAuthServiceImpl, MHSAuthResponseCompanion, MHSAuthResponse, MHSAuthModule, MHSAuthDataCompanion, MHSAuthData, MHSAreaCompanion, MHSArea, MHSAmountDataCompanion, MHSAmountData, MHSAccessTokenResponseCompanion, MHSAccessTokenResponse, MHSAccessTokenDataCompanion, MHSAccessTokenData;
+@class NSString, NSSet<ObjectType>, NSObject, NSNumber, NSMutableSet<ObjectType>, NSMutableDictionary<KeyType, ObjectType>, NSMutableArray<ObjectType>, NSError, NSDictionary<KeyType, ObjectType>, NSArray<ObjectType>, MHS__SkieTypeExportsKt, MHS__SkieSuspendWrappersKt, MHSWeak<T>, MHSVaultServiceImpl, MHSVaultDataCompanion, MHSVaultData, MHSVaultCollectNetworkErrorTokenizationError, MHSVaultCollectNetworkErrorMissingPublicKey, MHSVaultCollectNetworkError, MHSValidationExceptionRangeValueValidationException, MHSValidationExceptionNumericValidationException, MHSValidationExceptionLuhnException, MHSValidationExceptionLengthException, MHSValidationExceptionEmptyValueException, MHSValidationExceptionAlphabetValidationException, MHSValidationException, MHSUserCompanion, MHSUser, MHSUseSelfWalletRequestCompanion, MHSUseSelfWalletRequest, MHSUseCardTokenRequestCompanion, MHSUseCardTokenRequest, MHSUpdateMethodRequestCompanion, MHSUpdateMethodRequest, MHSUShort, MHSULong, MHSUInt, MHSUByte, MHSTypeCompanion, MHSType, MHSTransactionOperationCompanion, MHSTransactionOperation, MHSTransactionCompanion, MHSTransaction, MHSTokenizeCardInfoCompanion, MHSTokenizeCardInfo, MHSTempCardTokenRequestCompanion, MHSTempCardTokenRequest, MHSSubscriptionStatusDataCompanion, MHSSubscriptionStatusData, MHSSubscriptionStatusCompanion, MHSSubscriptionStatus, MHSSubscriptionPlansRootCompanion, MHSSubscriptionPlansRoot, MHSSubscriptionPlansDataCompanion, MHSSubscriptionPlansData, MHSSubscriptionPlanGroupsServerResponseCompanion, MHSSubscriptionPlanGroupsServerResponse, MHSSubscriptionPlanGroupsResponseCompanion, MHSSubscriptionPlanGroupsResponse, MHSSubscriptionPlanGroupCompanion, MHSSubscriptionPlanGroup, MHSSubscriptionPlanCompanion, MHSSubscriptionPlan, MHSSubscriptionEmbedDetailsCompanion, MHSSubscriptionEmbedDetails, MHSSubscriptionCompanion, MHSSubscriptionActionDataCompanion, MHSSubscriptionActionData, MHSSubscription, MHSSubmitReceiptRequestCompanion, MHSSubmitReceiptRequest, MHSSubmitFormRequestCompanion, MHSSubmitFormRequest, MHSSubmitCardCVVCompanion, MHSSubmitCardCVV, MHSStatusResponseCompanion, MHSStatusResponse, MHSStatusCompanion, MHSStatus, MHSStateCompanion, MHSState, MHSSkie_SuspendResultSuccess, MHSSkie_SuspendResultError, MHSSkie_SuspendResultCanceled, MHSSkie_SuspendResult, MHSSkie_SuspendHandler, MHSSkie_CancellationHandler, MHSSkieKotlinStateFlow<T>, MHSSkieKotlinSharedFlow<T>, MHSSkieKotlinOptionalStateFlow<T>, MHSSkieKotlinOptionalSharedFlow<T>, MHSSkieKotlinOptionalMutableStateFlow<T>, MHSSkieKotlinOptionalMutableSharedFlow<T>, MHSSkieKotlinOptionalFlow<T>, MHSSkieKotlinMutableStateFlow<T>, MHSSkieKotlinMutableSharedFlow<T>, MHSSkieKotlinFlow<T>, MHSSkieColdFlowIterator<E>, MHSShort, MHSSecureTextFieldVM, MHSSecureTextFieldConfiguration, MHSSavedCardCompanion, MHSSavedCard, MHSSaveCardCheckboxCompanion, MHSSaveCardCheckbox, MHSSandboxUseCase, MHSSandboxServiceImpl, MHSSandboxModule, MHSRequestContentQuery, MHSRequestContentPath, MHSRequestContentHeader, MHSRequestContentBody<T>, MHSRequestContent, MHSRequestBuilder, MHSRenderStrategyCompanion, MHSRenderStrategy, MHSRedirectCompanion, MHSRedirect, MHSReceiptBinLookupRequestCompanion, MHSReceiptBinLookupRequest, MHSProviderRelatedFieldsCompanion, MHSProviderRelatedFields, MHSProviderExtraDataCompanion, MHSProviderExtraData, MHSProductItemCompanion, MHSProductItem, MHSPlatformKt, MHSPlanMetadataCompanion, MHSPlanMetadata, MHSPlanCompanion, MHSPlan, MHSPayoutTransactionDataCompanion, MHSPayoutTransactionData, MHSPayoutMethodCompanion, MHSPayoutMethod, MHSPayoutIntentDataCompanion, MHSPayoutIntentData, MHSPayoutDetailsCompanion, MHSPayoutDetails, MHSPayoutDataCompanion, MHSPayoutData, MHSPayoutActionDataCompanion, MHSPayoutActionData, MHSPaymentUseCase, MHSPaymentStatusCompanion, MHSPaymentStatus, MHSPaymentMethodsDataCompanion, MHSPaymentMethodsData, MHSPaymentMethodResponseCompanion, MHSPaymentMethodResponse, MHSPaymentMethodRequestCompanion, MHSPaymentMethodRequest, MHSPaymentMethodCompanion, MHSPaymentMethod, MHSPaymentIntentDataCompanion, MHSPaymentIntentData, MHSPaymentIntentCompanion, MHSPaymentIntent, MHSPaymentInformationModule, MHSPaymentInformationCompanion, MHSPaymentInformation, MHSOptionItemCompanion, MHSOptionItem, MHSOperationStatusCompanion, MHSOperationStatus, MHSOperationAmountCompanion, MHSOperationAmount, MHSNumber, MHSNetworkModule, MHSNetworkExceptions_iosKt, MHSNativePaymentDataCompanion, MHSNativePaymentData, MHSNativePayDataGooglePayCompanion, MHSNativePayDataGooglePay, MHSNativePayDataCompanion, MHSNativePayDataApplePayDataCompanion, MHSNativePayDataApplePayData, MHSNativePayData, MHSNativeFormRequestCompanion, MHSNativeFormRequest, MHSMutableSet<ObjectType>, MHSMutableDictionary<KeyType, ObjectType>, MHSMoneyHashUtils, MHSMoneyHashStore, MHSMethodsExtensionsKt, MHSMethodTypeCompanion, MHSMethodType, MHSMethodMetaData, MHSMHThrowableCompanion, MHSMHThrowable, MHSLookupResponseCompanion, MHSLookupResponse, MHSLookupDataCompanion, MHSLookupData, MHSLong, MHSLoginRequestCompanion, MHSLoginRequest, MHSLoggerSeverity, MHSLocalizationManager, MHSLocaleCompanion, MHSLocale, MHSLastUsedMethodTypeCompanion, MHSLastUsedMethodType, MHSLastUsedMethodCompanion, MHSLastUsedMethod, MHSLanguageCompanion, MHSLanguage, MHSKtor_utilsWeekDayCompanion, MHSKtor_utilsWeekDay, MHSKtor_utilsTypeInfo, MHSKtor_utilsStringValuesBuilderImpl, MHSKtor_utilsPipelinePhase, MHSKtor_utilsPipeline<TSubject, TContext>, MHSKtor_utilsMonthCompanion, MHSKtor_utilsMonth, MHSKtor_utilsGMTDateCompanion, MHSKtor_utilsGMTDate, MHSKtor_utilsAttributeKey<T>, MHSKtor_httpUrlCompanion, MHSKtor_httpUrl, MHSKtor_httpURLProtocolCompanion, MHSKtor_httpURLProtocol, MHSKtor_httpURLBuilderCompanion, MHSKtor_httpURLBuilder, MHSKtor_httpOutgoingContentWriteChannelContent, MHSKtor_httpOutgoingContentReadChannelContent, MHSKtor_httpOutgoingContentProtocolUpgrade, MHSKtor_httpOutgoingContentNoContent, MHSKtor_httpOutgoingContentContentWrapper, MHSKtor_httpOutgoingContentByteArrayContent, MHSKtor_httpOutgoingContent, MHSKtor_httpHttpStatusCodeCompanion, MHSKtor_httpHttpStatusCode, MHSKtor_httpHttpProtocolVersionCompanion, MHSKtor_httpHttpProtocolVersion, MHSKtor_httpHttpMethodCompanion, MHSKtor_httpHttpMethod, MHSKtor_httpHeadersBuilder, MHSKtor_httpHeaderValueWithParametersCompanion, MHSKtor_httpHeaderValueWithParameters, MHSKtor_httpHeaderValueParam, MHSKtor_httpContentTypeCompanion, MHSKtor_httpContentType, MHSKtor_eventsEvents, MHSKtor_eventsEventDefinition<T>, MHSKtor_client_coreProxyConfig, MHSKtor_client_coreHttpSendPipelinePhases, MHSKtor_client_coreHttpSendPipeline, MHSKtor_client_coreHttpResponsePipelinePhases, MHSKtor_client_coreHttpResponsePipeline, MHSKtor_client_coreHttpResponseData, MHSKtor_client_coreHttpResponseContainer, MHSKtor_client_coreHttpResponse, MHSKtor_client_coreHttpRequestPipelinePhases, MHSKtor_client_coreHttpRequestPipeline, MHSKtor_client_coreHttpRequestData, MHSKtor_client_coreHttpRequestBuilderCompanion, MHSKtor_client_coreHttpRequestBuilder, MHSKtor_client_coreHttpReceivePipelinePhases, MHSKtor_client_coreHttpReceivePipeline, MHSKtor_client_coreHttpClientEngineConfig, MHSKtor_client_coreHttpClientConfig<T>, MHSKtor_client_coreHttpClientCallCompanion, MHSKtor_client_coreHttpClientCall, MHSKtor_client_coreHttpClient, MHSKtor_client_coreHttpCallValidatorConfig, MHSKtor_client_coreDefaultRequestDefaultRequestBuilder, MHSKtorClientFactory, MHSKotlinx_serialization_jsonJsonPrimitiveCompanion, MHSKotlinx_serialization_jsonJsonPrimitive, MHSKotlinx_serialization_jsonJsonNull, MHSKotlinx_serialization_jsonJsonElementCompanion, MHSKotlinx_serialization_jsonJsonElement, MHSKotlinx_serialization_jsonJsonDefault, MHSKotlinx_serialization_jsonJsonConfiguration, MHSKotlinx_serialization_jsonJson, MHSKotlinx_serialization_jsonClassDiscriminatorMode, MHSKotlinx_serialization_coreStructureKindOBJECT, MHSKotlinx_serialization_coreStructureKindMAP, MHSKotlinx_serialization_coreStructureKindLIST, MHSKotlinx_serialization_coreStructureKindCLASS, MHSKotlinx_serialization_coreStructureKind, MHSKotlinx_serialization_coreSerializersModule, MHSKotlinx_serialization_coreSerialKindENUM, MHSKotlinx_serialization_coreSerialKindCONTEXTUAL, MHSKotlinx_serialization_coreSerialKind, MHSKotlinx_serialization_corePrimitiveKindSTRING, MHSKotlinx_serialization_corePrimitiveKindSHORT, MHSKotlinx_serialization_corePrimitiveKindLONG, MHSKotlinx_serialization_corePrimitiveKindINT, MHSKotlinx_serialization_corePrimitiveKindFLOAT, MHSKotlinx_serialization_corePrimitiveKindDOUBLE, MHSKotlinx_serialization_corePrimitiveKindCHAR, MHSKotlinx_serialization_corePrimitiveKindBYTE, MHSKotlinx_serialization_corePrimitiveKindBOOLEAN, MHSKotlinx_serialization_corePrimitiveKind, MHSKotlinx_serialization_corePolymorphicKindSEALED, MHSKotlinx_serialization_corePolymorphicKindOPEN, MHSKotlinx_serialization_corePolymorphicKind, MHSKotlinx_io_coreBuffer, MHSKotlinx_coroutines_coreCoroutineDispatcherKey, MHSKotlinx_coroutines_coreCoroutineDispatcher, MHSKotlinUnit, MHSKotlinThrowable, MHSKotlinRuntimeException, MHSKotlinPair<A, B>, MHSKotlinNothing, MHSKotlinLongRangeCompanion, MHSKotlinLongRange, MHSKotlinLongProgressionCompanion, MHSKotlinLongProgression, MHSKotlinLongIterator, MHSKotlinKVariance, MHSKotlinKTypeProjectionCompanion, MHSKotlinKTypeProjection, MHSKotlinIllegalStateException, MHSKotlinException, MHSKotlinEnumCompanion, MHSKotlinEnum<E>, MHSKotlinCancellationException, MHSKotlinByteIterator, MHSKotlinByteArray, MHSKotlinArray<T>, MHSKotlinAbstractCoroutineContextKey<B, E>, MHSKotlinAbstractCoroutineContextElement, MHSKmmBaseService, MHSIntentStatusCompanion, MHSIntentStatus, MHSIntentStateDetailsUrlToRenderCompanion, MHSIntentStateDetailsUrlToRender, MHSIntentStateDetailsTransactionWaitingUserAction, MHSIntentStateDetailsTransactionFailedCompanion, MHSIntentStateDetailsTransactionFailed, MHSIntentStateDetailsSavedCardCVVCompanion, MHSIntentStateDetailsSavedCardCVV, MHSIntentStateDetailsProcessing, MHSIntentStateDetailsNativePayCompanion, MHSIntentStateDetailsNativePay, MHSIntentStateDetailsMethodSelectionCompanion, MHSIntentStateDetailsMethodSelection, MHSIntentStateDetailsIntentProcessed, MHSIntentStateDetailsIntentForm, MHSIntentStateDetailsInstallmentPlansCompanion, MHSIntentStateDetailsInstallmentPlans, MHSIntentStateDetailsFormFieldsCompanion, MHSIntentStateDetailsFormFields, MHSIntentStateDetailsExpired, MHSIntentStateDetailsCompanion, MHSIntentStateDetailsClosed, MHSIntentStateDetailsCardIntentSuccessful, MHSIntentStateDetailsCardIntentFailed, MHSIntentStateDetails, MHSIntentStateCompanion, MHSIntentState, MHSIntentOperationCompanion, MHSIntentOperation, MHSIntentMethodsCompanion, MHSIntentMethods, MHSIntentMethodItemCompanion, MHSIntentMethodItem, MHSIntentActionDataCompanion, MHSIntentActionData, MHSInt, MHSInstallmentPlansResponseDataCompanion, MHSInstallmentPlansResponseData, MHSInstallmentPlansResponseCompanion, MHSInstallmentPlansResponse, MHSInstallmentPlanSelectionBodyCompanion, MHSInstallmentPlanSelectionBody, MHSInstallmentPlanDataCompanion, MHSInstallmentPlanData, MHSInstallmentPlanCompanion, MHSInstallmentPlan, MHSInputFieldTypeCompanion, MHSInputFieldType, MHSInputFieldCompanion, MHSInputField, MHSIOSPlatform, MHSFormFieldsCompanion, MHSFormFields, MHSFloat, MHSFieldValue, MHSFieldTypeCompanion, MHSFieldType, MHSFieldItemCompanion, MHSFieldItem, MHSFeesResponseCompanion, MHSFeesResponse, MHSFeesDataCompanion, MHSFeesData, MHSFeeItemCompanion, MHSFeeItem, MHSExpressMethodCompanion, MHSExpressMethod, MHSExpireYearValidatorKt, MHSErrorTypeCompanion, MHSErrorType, MHSErrorMessagesDataCompanion, MHSErrorMessagesData, MHSErrorMapperKt, MHSErrorMapperConstants, MHSErrorMapper, MHSErrorInfoCompanion, MHSErrorInfo, MHSEnvironment, MHSDouble, MHSDiscountTypeCompanion, MHSDiscountType, MHSDiscountResponseCompanion, MHSDiscountResponse, MHSDiscountItemCompanion, MHSDiscountItem, MHSDiscountDataCompanion, MHSDiscountData, MHSDemoIntentResponseCompanion, MHSDemoIntentResponse, MHSDemoIntentItemCompanion, MHSDemoIntentItem, MHSDemoIntentDataCompanion, MHSDemoIntentData, MHSDeleteSavedCardRequestCompanion, MHSDeleteSavedCardRequest, MHSDefaultLogManager, MHSDataStateCompanion, MHSDataState<T>, MHSCvvConfigCompanion, MHSCvvConfig, MHSCustomerBalanceCompanion, MHSCustomerBalance, MHSCustomFieldValueStringValueCompanion, MHSCustomFieldValueStringValue, MHSCustomFieldValueSerializer, MHSCustomFieldValueIntValueCompanion, MHSCustomFieldValueIntValue, MHSCustomFieldValueFloatValueCompanion, MHSCustomFieldValueFloatValue, MHSCustomFieldValueDoubleValueCompanion, MHSCustomFieldValueDoubleValue, MHSCustomFieldValueCompanion, MHSCustomFieldValueBooleanValueCompanion, MHSCustomFieldValueBooleanValue, MHSCustomFieldValue, MHSConstants, MHSCommonExtensionsKt, MHSCityCompanion, MHSCity, MHSCardTokenDataCompanion, MHSCardTokenData, MHSCardStateUnknown, MHSCardStateSuccess, MHSCardStateFailed, MHSCardStateError, MHSCardState, MHSCardIntentResultCompanion, MHSCardIntentResult, MHSCardIntentCompanion, MHSCardIntent, MHSCardFormStateCompanion, MHSCardFormState, MHSCardFormExceptionsRedundantFieldTypeException, MHSCardFormExceptionsMissingFieldTypeException, MHSCardFormExceptionsInvalidFieldException, MHSCardFormExceptionsExpireDateIsInThePast, MHSCardFormExceptions, MHSCardFormConfigurationCompanion, MHSCardFormConfiguration, MHSCardFieldsCompanion, MHSCardFields, MHSCardFieldStateCompanion, MHSCardFieldState, MHSCardDetailsCompanion, MHSCardDetails, MHSCardDataCompanion, MHSCardDataCollectorKt, MHSCardData, MHSCardCollector, MHSCardBrandCompanion, MHSCardBrand, MHSCardActionDataCompanion, MHSCardActionData, MHSByte, MHSBrandSettingsModelCompanion, MHSBrandSettingsModel, MHSBrandSettingsDataCompanion, MHSBrandSettingsData, MHSBrandCompanion, MHSBrand, MHSBoolean, MHSBaseService, MHSBase, MHSBalancesCompanion, MHSBalances, MHSAuthUseCase, MHSAuthTokenCompanion, MHSAuthToken, MHSAuthServiceImpl, MHSAuthResponseCompanion, MHSAuthResponse, MHSAuthModule, MHSAuthDataCompanion, MHSAuthData, MHSAreaCompanion, MHSArea, MHSAmountDataCompanion, MHSAmountData, MHSAccessTokenResponseCompanion, MHSAccessTokenResponse, MHSAccessTokenDataCompanion, MHSAccessTokenData;
 
 @protocol NSCopying, MHSVaultService, MHSTextFormatter, MHSStrings, MHSSkie_DispatcherDelegate, MHSSandboxService, MHSPlatform, MHSPaymentService, MHSLoggerManager, MHSKtor_utilsStringValuesBuilder, MHSKtor_utilsStringValues, MHSKtor_utilsAttributes, MHSKtor_ioJvmSerializable, MHSKtor_ioCloseable, MHSKtor_ioByteWriteChannel, MHSKtor_ioByteReadChannel, MHSKtor_httpParametersBuilder, MHSKtor_httpParameters, MHSKtor_httpHttpMessageBuilder, MHSKtor_httpHttpMessage, MHSKtor_httpHeaders, MHSKtor_client_coreHttpRequest, MHSKtor_client_coreHttpClientPlugin, MHSKtor_client_coreHttpClientEngineCapability, MHSKtor_client_coreHttpClientEngine, MHSKotlinx_serialization_jsonJsonNamingStrategy, MHSKotlinx_serialization_coreStringFormat, MHSKotlinx_serialization_coreSerializersModuleCollector, MHSKotlinx_serialization_coreSerializationStrategy, MHSKotlinx_serialization_coreSerialFormat, MHSKotlinx_serialization_coreSerialDescriptor, MHSKotlinx_serialization_coreKSerializer, MHSKotlinx_serialization_coreEncoder, MHSKotlinx_serialization_coreDeserializationStrategy, MHSKotlinx_serialization_coreDecoder, MHSKotlinx_serialization_coreCompositeEncoder, MHSKotlinx_serialization_coreCompositeDecoder, MHSKotlinx_io_coreSource, MHSKotlinx_io_coreSink, MHSKotlinx_io_coreRawSource, MHSKotlinx_io_coreRawSink, MHSKotlinx_coroutines_coreStateFlow, MHSKotlinx_coroutines_coreSharedFlow, MHSKotlinx_coroutines_coreSelectInstance, MHSKotlinx_coroutines_coreSelectClause2, MHSKotlinx_coroutines_coreSelectClause1, MHSKotlinx_coroutines_coreSelectClause0, MHSKotlinx_coroutines_coreSelectClause, MHSKotlinx_coroutines_coreRunnable, MHSKotlinx_coroutines_coreParentJob, MHSKotlinx_coroutines_coreMutableStateFlow, MHSKotlinx_coroutines_coreMutableSharedFlow, MHSKotlinx_coroutines_coreJob, MHSKotlinx_coroutines_coreFlowCollector, MHSKotlinx_coroutines_coreFlow, MHSKotlinx_coroutines_coreDisposableHandle, MHSKotlinx_coroutines_coreCoroutineScope, MHSKotlinx_coroutines_coreChildJob, MHSKotlinx_coroutines_coreChildHandle, MHSKotlinSuspendFunction2, MHSKotlinSuspendFunction1, MHSKotlinSequence, MHSKotlinOpenEndRange, MHSKotlinMapEntry, MHSKotlinKType, MHSKotlinKDeclarationContainer, MHSKotlinKClassifier, MHSKotlinKClass, MHSKotlinKAnnotatedElement, MHSKotlinIterator, MHSKotlinIterable, MHSKotlinFunction, MHSKotlinCoroutineContextKey, MHSKotlinCoroutineContextElement, MHSKotlinCoroutineContext, MHSKotlinContinuationInterceptor, MHSKotlinContinuation, MHSKotlinComparable, MHSKotlinClosedRange, MHSKotlinAutoCloseable, MHSKotlinAnnotation, MHSCommonParceler, MHSCommonParcelable, MHSAuthService;
 
@@ -3710,9 +3710,11 @@ __attribute__((swift_name("PaymentInformation")))
 @property (readonly) NSString * _Nullable nextAction __attribute__((swift_name("nextAction")));
 @property (readonly) NSArray<MHSSavedCard *> * _Nullable savedCards __attribute__((swift_name("savedCards")));
 @property (readonly) NSString * _Nullable selectedMethod __attribute__((swift_name("selectedMethod")));
+@property (readonly) MHSSubscription * _Nullable subscription __attribute__((swift_name("subscription")));
+@property (readonly) MHSSubscriptionPlan * _Nullable subscriptionPlanDetails __attribute__((swift_name("subscriptionPlanDetails")));
 @property (readonly) MHSDouble * _Nullable wallet __attribute__((swift_name("wallet")));
-- (instancetype)initWithIntentSdkState:(MHSIntentState * _Nullable)intentSdkState selectedMethod:(NSString * _Nullable)selectedMethod nextAction:(NSString * _Nullable)nextAction intent:(MHSPaymentIntent * _Nullable)intent savedCards:(NSArray<MHSSavedCard *> * _Nullable)savedCards wallet:(MHSDouble * _Nullable)wallet brandSettings:(MHSBrandSettingsData * _Nullable)brandSettings actionData:(MHSIntentActionData * _Nullable)actionData lastUsedMethod:(MHSLastUsedMethod * _Nullable)lastUsedMethod __attribute__((swift_name("init(intentSdkState:selectedMethod:nextAction:intent:savedCards:wallet:brandSettings:actionData:lastUsedMethod:)"))) __attribute__((objc_designated_initializer));
-- (MHSPaymentInformation *)doCopyIntentSdkState:(MHSIntentState * _Nullable)intentSdkState selectedMethod:(NSString * _Nullable)selectedMethod nextAction:(NSString * _Nullable)nextAction intent:(MHSPaymentIntent * _Nullable)intent savedCards:(NSArray<MHSSavedCard *> * _Nullable)savedCards wallet:(MHSDouble * _Nullable)wallet brandSettings:(MHSBrandSettingsData * _Nullable)brandSettings actionData:(MHSIntentActionData * _Nullable)actionData lastUsedMethod:(MHSLastUsedMethod * _Nullable)lastUsedMethod __attribute__((swift_name("doCopy(intentSdkState:selectedMethod:nextAction:intent:savedCards:wallet:brandSettings:actionData:lastUsedMethod:)")));
+- (instancetype)initWithIntentSdkState:(MHSIntentState * _Nullable)intentSdkState selectedMethod:(NSString * _Nullable)selectedMethod nextAction:(NSString * _Nullable)nextAction intent:(MHSPaymentIntent * _Nullable)intent savedCards:(NSArray<MHSSavedCard *> * _Nullable)savedCards wallet:(MHSDouble * _Nullable)wallet brandSettings:(MHSBrandSettingsData * _Nullable)brandSettings actionData:(MHSIntentActionData * _Nullable)actionData lastUsedMethod:(MHSLastUsedMethod * _Nullable)lastUsedMethod subscriptionPlanDetails:(MHSSubscriptionPlan * _Nullable)subscriptionPlanDetails subscription:(MHSSubscription * _Nullable)subscription __attribute__((swift_name("init(intentSdkState:selectedMethod:nextAction:intent:savedCards:wallet:brandSettings:actionData:lastUsedMethod:subscriptionPlanDetails:subscription:)"))) __attribute__((objc_designated_initializer));
+- (MHSPaymentInformation *)doCopyIntentSdkState:(MHSIntentState * _Nullable)intentSdkState selectedMethod:(NSString * _Nullable)selectedMethod nextAction:(NSString * _Nullable)nextAction intent:(MHSPaymentIntent * _Nullable)intent savedCards:(NSArray<MHSSavedCard *> * _Nullable)savedCards wallet:(MHSDouble * _Nullable)wallet brandSettings:(MHSBrandSettingsData * _Nullable)brandSettings actionData:(MHSIntentActionData * _Nullable)actionData lastUsedMethod:(MHSLastUsedMethod * _Nullable)lastUsedMethod subscriptionPlanDetails:(MHSSubscriptionPlan * _Nullable)subscriptionPlanDetails subscription:(MHSSubscription * _Nullable)subscription __attribute__((swift_name("doCopy(intentSdkState:selectedMethod:nextAction:intent:savedCards:wallet:brandSettings:actionData:lastUsedMethod:subscriptionPlanDetails:subscription:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -3755,6 +3757,16 @@ __attribute__((swift_name("PaymentInformation")))
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="selected_method")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="subscription")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="plan_details")
 */
 
 /**
@@ -6310,6 +6322,521 @@ __attribute__((swift_name("DemoIntentResponse.Companion")))
  *   kotlinx.serialization.Serializable
 */
 __attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Subscription")))
+@interface MHSSubscription : MHSBase <MHSCommonParcelable>
+@property (class, readonly, getter=companion) MHSSubscriptionCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) MHSSubscriptionStatusData * _Nullable currentStatus __attribute__((swift_name("currentStatus")));
+@property (readonly) NSString * _Nullable id __attribute__((swift_name("id")));
+- (instancetype)initWithCurrentStatus:(MHSSubscriptionStatusData * _Nullable)currentStatus id:(NSString * _Nullable)id __attribute__((swift_name("init(currentStatus:id:)"))) __attribute__((objc_designated_initializer));
+- (MHSSubscription *)doCopyCurrentStatus:(MHSSubscriptionStatusData * _Nullable)currentStatus id:(NSString * _Nullable)id __attribute__((swift_name("doCopy(currentStatus:id:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="current_status")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="id")
+*/
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Subscription.Companion")))
+@interface MHSSubscriptionCompanion : MHSBase
+@property (class, readonly, getter=shared) MHSSubscriptionCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<MHSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SubscriptionActionData")))
+@interface MHSSubscriptionActionData : MHSBase <MHSCommonParcelable>
+@property (class, readonly, getter=companion) MHSSubscriptionActionDataCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) MHSSubscriptionEmbedDetails * _Nullable embedDetails __attribute__((swift_name("embedDetails")));
+- (instancetype)initWithEmbedDetails:(MHSSubscriptionEmbedDetails * _Nullable)embedDetails __attribute__((swift_name("init(embedDetails:)"))) __attribute__((objc_designated_initializer));
+- (MHSSubscriptionActionData *)doCopyEmbedDetails:(MHSSubscriptionEmbedDetails * _Nullable)embedDetails __attribute__((swift_name("doCopy(embedDetails:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="embed_details")
+*/
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SubscriptionActionData.Companion")))
+@interface MHSSubscriptionActionDataCompanion : MHSBase
+@property (class, readonly, getter=shared) MHSSubscriptionActionDataCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<MHSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SubscriptionEmbedDetails")))
+@interface MHSSubscriptionEmbedDetails : MHSBase <MHSCommonParcelable>
+@property (class, readonly, getter=companion) MHSSubscriptionEmbedDetailsCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) NSArray<MHSSubscriptionPlan *> * _Nullable plans __attribute__((swift_name("plans")));
+- (instancetype)initWithPlans:(NSArray<MHSSubscriptionPlan *> * _Nullable)plans __attribute__((swift_name("init(plans:)"))) __attribute__((objc_designated_initializer));
+- (MHSSubscriptionEmbedDetails *)doCopyPlans:(NSArray<MHSSubscriptionPlan *> * _Nullable)plans __attribute__((swift_name("doCopy(plans:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="plans")
+*/
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SubscriptionEmbedDetails.Companion")))
+@interface MHSSubscriptionEmbedDetailsCompanion : MHSBase
+@property (class, readonly, getter=shared) MHSSubscriptionEmbedDetailsCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<MHSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SubscriptionPlan")))
+@interface MHSSubscriptionPlan : MHSBase <MHSCommonParcelable>
+@property (class, readonly, getter=companion) MHSSubscriptionPlanCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) MHSBoolean * _Nullable alreadySubscribed __attribute__((swift_name("alreadySubscribed")));
+@property (readonly) MHSDouble * _Nullable amount __attribute__((swift_name("amount")));
+@property (readonly) NSString * _Nullable created __attribute__((swift_name("created")));
+@property (readonly) NSString * _Nullable currency __attribute__((swift_name("currency")));
+@property (readonly) NSString * _Nullable description_ __attribute__((swift_name("description_")));
+@property (readonly) MHSDouble * _Nullable discountAmount __attribute__((swift_name("discountAmount")));
+@property (readonly) MHSInt * _Nullable discountCycles __attribute__((swift_name("discountCycles")));
+@property (readonly) MHSDouble * _Nullable discountPercentage __attribute__((swift_name("discountPercentage")));
+@property (readonly) NSString * _Nullable id __attribute__((swift_name("id")));
+@property (readonly) MHSBoolean * _Nullable isLive __attribute__((swift_name("isLive")));
+@property (readonly) NSString * _Nullable name __attribute__((swift_name("name")));
+@property (readonly) MHSDouble * _Nullable oneTimeFee __attribute__((swift_name("oneTimeFee")));
+@property (readonly) MHSInt * _Nullable recurrency __attribute__((swift_name("recurrency")));
+@property (readonly) NSString * _Nullable recurrencyUnit __attribute__((swift_name("recurrencyUnit")));
+@property (readonly) MHSInt * _Nullable recurringCycles __attribute__((swift_name("recurringCycles")));
+@property (readonly) MHSInt * _Nullable trialPeriod __attribute__((swift_name("trialPeriod")));
+- (instancetype)initWithAlreadySubscribed:(MHSBoolean * _Nullable)alreadySubscribed amount:(MHSDouble * _Nullable)amount created:(NSString * _Nullable)created currency:(NSString * _Nullable)currency description:(NSString * _Nullable)description discountAmount:(MHSDouble * _Nullable)discountAmount discountCycles:(MHSInt * _Nullable)discountCycles discountPercentage:(MHSDouble * _Nullable)discountPercentage id:(NSString * _Nullable)id isLive:(MHSBoolean * _Nullable)isLive name:(NSString * _Nullable)name oneTimeFee:(MHSDouble * _Nullable)oneTimeFee recurrency:(MHSInt * _Nullable)recurrency recurrencyUnit:(NSString * _Nullable)recurrencyUnit recurringCycles:(MHSInt * _Nullable)recurringCycles trialPeriod:(MHSInt * _Nullable)trialPeriod __attribute__((swift_name("init(alreadySubscribed:amount:created:currency:description:discountAmount:discountCycles:discountPercentage:id:isLive:name:oneTimeFee:recurrency:recurrencyUnit:recurringCycles:trialPeriod:)"))) __attribute__((objc_designated_initializer));
+- (MHSSubscriptionPlan *)doCopyAlreadySubscribed:(MHSBoolean * _Nullable)alreadySubscribed amount:(MHSDouble * _Nullable)amount created:(NSString * _Nullable)created currency:(NSString * _Nullable)currency description:(NSString * _Nullable)description discountAmount:(MHSDouble * _Nullable)discountAmount discountCycles:(MHSInt * _Nullable)discountCycles discountPercentage:(MHSDouble * _Nullable)discountPercentage id:(NSString * _Nullable)id isLive:(MHSBoolean * _Nullable)isLive name:(NSString * _Nullable)name oneTimeFee:(MHSDouble * _Nullable)oneTimeFee recurrency:(MHSInt * _Nullable)recurrency recurrencyUnit:(NSString * _Nullable)recurrencyUnit recurringCycles:(MHSInt * _Nullable)recurringCycles trialPeriod:(MHSInt * _Nullable)trialPeriod __attribute__((swift_name("doCopy(alreadySubscribed:amount:created:currency:description:discountAmount:discountCycles:discountPercentage:id:isLive:name:oneTimeFee:recurrency:recurrencyUnit:recurringCycles:trialPeriod:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="already_subscribed")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="amount")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="created")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="currency")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="description")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="discount_amount")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="discount_cycles")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="discount_percentage")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="id")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="is_live")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="name")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="one_time_fee")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="recurrency")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="recurrency_unit")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="recurring_cycles")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="trial_period")
+*/
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SubscriptionPlan.Companion")))
+@interface MHSSubscriptionPlanCompanion : MHSBase
+@property (class, readonly, getter=shared) MHSSubscriptionPlanCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<MHSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SubscriptionPlanGroup")))
+@interface MHSSubscriptionPlanGroup : MHSBase <MHSCommonParcelable>
+@property (class, readonly, getter=companion) MHSSubscriptionPlanGroupCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) NSString * _Nullable created __attribute__((swift_name("created")));
+@property (readonly) NSString * _Nullable currency __attribute__((swift_name("currency")));
+@property (readonly) NSString * _Nullable id __attribute__((swift_name("id")));
+@property (readonly) NSString * _Nullable name __attribute__((swift_name("name")));
+@property (readonly) NSArray<MHSSubscriptionPlan *> * _Nullable plans __attribute__((swift_name("plans")));
+- (instancetype)initWithCreated:(NSString * _Nullable)created currency:(NSString * _Nullable)currency id:(NSString * _Nullable)id name:(NSString * _Nullable)name plans:(NSArray<MHSSubscriptionPlan *> * _Nullable)plans __attribute__((swift_name("init(created:currency:id:name:plans:)"))) __attribute__((objc_designated_initializer));
+- (MHSSubscriptionPlanGroup *)doCopyCreated:(NSString * _Nullable)created currency:(NSString * _Nullable)currency id:(NSString * _Nullable)id name:(NSString * _Nullable)name plans:(NSArray<MHSSubscriptionPlan *> * _Nullable)plans __attribute__((swift_name("doCopy(created:currency:id:name:plans:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="created")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="currency")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="id")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="name")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="plans")
+*/
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SubscriptionPlanGroup.Companion")))
+@interface MHSSubscriptionPlanGroupCompanion : MHSBase
+@property (class, readonly, getter=shared) MHSSubscriptionPlanGroupCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<MHSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SubscriptionPlanGroupsResponse")))
+@interface MHSSubscriptionPlanGroupsResponse : MHSBase <MHSCommonParcelable>
+@property (class, readonly, getter=companion) MHSSubscriptionPlanGroupsResponseCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) MHSInt * _Nullable count __attribute__((swift_name("count")));
+@property (readonly) MHSBoolean * _Nullable hasNext __attribute__((swift_name("hasNext")));
+@property (readonly) MHSBoolean * _Nullable hasPrevious __attribute__((swift_name("hasPrevious")));
+@property (readonly) NSArray<MHSSubscriptionPlanGroup *> * _Nullable planGroups __attribute__((swift_name("planGroups")));
+- (instancetype)initWithCount:(MHSInt * _Nullable)count hasNext:(MHSBoolean * _Nullable)hasNext hasPrevious:(MHSBoolean * _Nullable)hasPrevious planGroups:(NSArray<MHSSubscriptionPlanGroup *> * _Nullable)planGroups __attribute__((swift_name("init(count:hasNext:hasPrevious:planGroups:)"))) __attribute__((objc_designated_initializer));
+- (MHSSubscriptionPlanGroupsResponse *)doCopyCount:(MHSInt * _Nullable)count hasNext:(MHSBoolean * _Nullable)hasNext hasPrevious:(MHSBoolean * _Nullable)hasPrevious planGroups:(NSArray<MHSSubscriptionPlanGroup *> * _Nullable)planGroups __attribute__((swift_name("doCopy(count:hasNext:hasPrevious:planGroups:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="count")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="hasNext")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="hasPrevious")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="planGroups")
+*/
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SubscriptionPlanGroupsResponse.Companion")))
+@interface MHSSubscriptionPlanGroupsResponseCompanion : MHSBase
+@property (class, readonly, getter=shared) MHSSubscriptionPlanGroupsResponseCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<MHSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SubscriptionPlanGroupsServerResponse")))
+@interface MHSSubscriptionPlanGroupsServerResponse : MHSBase <MHSCommonParcelable>
+@property (class, readonly, getter=companion) MHSSubscriptionPlanGroupsServerResponseCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) MHSInt * _Nullable count __attribute__((swift_name("count")));
+@property (readonly) NSString * _Nullable next __attribute__((swift_name("next")));
+@property (readonly) NSString * _Nullable previous __attribute__((swift_name("previous")));
+@property (readonly) NSArray<MHSSubscriptionPlanGroup *> * _Nullable results __attribute__((swift_name("results")));
+- (instancetype)initWithNext:(NSString * _Nullable)next previous:(NSString * _Nullable)previous results:(NSArray<MHSSubscriptionPlanGroup *> * _Nullable)results count:(MHSInt * _Nullable)count __attribute__((swift_name("init(next:previous:results:count:)"))) __attribute__((objc_designated_initializer));
+- (MHSSubscriptionPlanGroupsServerResponse *)doCopyNext:(NSString * _Nullable)next previous:(NSString * _Nullable)previous results:(NSArray<MHSSubscriptionPlanGroup *> * _Nullable)results count:(MHSInt * _Nullable)count __attribute__((swift_name("doCopy(next:previous:results:count:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="count")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="next")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="previous")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="data")
+*/
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SubscriptionPlanGroupsServerResponse.Companion")))
+@interface MHSSubscriptionPlanGroupsServerResponseCompanion : MHSBase
+@property (class, readonly, getter=shared) MHSSubscriptionPlanGroupsServerResponseCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<MHSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SubscriptionPlansData")))
+@interface MHSSubscriptionPlansData : MHSBase <MHSCommonParcelable>
+@property (class, readonly, getter=companion) MHSSubscriptionPlansDataCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) MHSSubscriptionActionData * _Nullable actionData __attribute__((swift_name("actionData")));
+- (instancetype)initWithActionData:(MHSSubscriptionActionData * _Nullable)actionData __attribute__((swift_name("init(actionData:)"))) __attribute__((objc_designated_initializer));
+- (MHSSubscriptionPlansData *)doCopyActionData:(MHSSubscriptionActionData * _Nullable)actionData __attribute__((swift_name("doCopy(actionData:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="action_data")
+*/
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SubscriptionPlansData.Companion")))
+@interface MHSSubscriptionPlansDataCompanion : MHSBase
+@property (class, readonly, getter=shared) MHSSubscriptionPlansDataCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<MHSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SubscriptionPlansRoot")))
+@interface MHSSubscriptionPlansRoot : MHSBase <MHSCommonParcelable>
+@property (class, readonly, getter=companion) MHSSubscriptionPlansRootCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) MHSSubscriptionPlansData * _Nullable data __attribute__((swift_name("data")));
+- (instancetype)initWithData:(MHSSubscriptionPlansData * _Nullable)data __attribute__((swift_name("init(data:)"))) __attribute__((objc_designated_initializer));
+- (MHSSubscriptionPlansRoot *)doCopyData:(MHSSubscriptionPlansData * _Nullable)data __attribute__((swift_name("doCopy(data:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="data")
+*/
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SubscriptionPlansRoot.Companion")))
+@interface MHSSubscriptionPlansRootCompanion : MHSBase
+@property (class, readonly, getter=shared) MHSSubscriptionPlansRootCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<MHSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SubscriptionStatus")))
+@interface MHSSubscriptionStatus : MHSKotlinEnum<MHSSubscriptionStatus *> <MHSCommonParcelable>
+@property (class, readonly, getter=companion) MHSSubscriptionStatusCompanion *companion __attribute__((swift_name("companion")));
+@property (class, readonly) MHSSubscriptionStatus *theNew __attribute__((swift_name("theNew")));
+@property (class, readonly) MHSSubscriptionStatus *trial __attribute__((swift_name("trial")));
+@property (class, readonly) MHSSubscriptionStatus *incomplete __attribute__((swift_name("incomplete")));
+@property (class, readonly) MHSSubscriptionStatus *active __attribute__((swift_name("active")));
+@property (class, readonly) MHSSubscriptionStatus *pastDue __attribute__((swift_name("pastDue")));
+@property (class, readonly) MHSSubscriptionStatus *pendingCancellation __attribute__((swift_name("pendingCancellation")));
+@property (class, readonly) MHSSubscriptionStatus *cancelled __attribute__((swift_name("cancelled")));
+@property (class, readonly) MHSSubscriptionStatus *ended __attribute__((swift_name("ended")));
+@property (class, readonly) MHSSubscriptionStatus *terminated __attribute__((swift_name("terminated")));
+@property (class, readonly) MHSSubscriptionStatus *paused __attribute__((swift_name("paused")));
+@property (class, readonly) NSArray<MHSSubscriptionStatus *> *entries __attribute__((swift_name("entries")));
+@property (readonly) NSString *status __attribute__((swift_name("status")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
++ (MHSKotlinArray<MHSSubscriptionStatus *> *)values __attribute__((swift_name("values()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SubscriptionStatus.Companion")))
+@interface MHSSubscriptionStatusCompanion : MHSBase
+@property (class, readonly, getter=shared) MHSSubscriptionStatusCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (MHSSubscriptionStatus * _Nullable)fromStatus:(NSString *)status __attribute__((swift_name("from(status:)")));
+- (id<MHSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+- (id<MHSKotlinx_serialization_coreKSerializer>)serializerTypeParamsSerializers:(MHSKotlinArray<id<MHSKotlinx_serialization_coreKSerializer>> *)typeParamsSerializers __attribute__((swift_name("serializer(typeParamsSerializers:)")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SubscriptionStatusData")))
+@interface MHSSubscriptionStatusData : MHSBase <MHSCommonParcelable>
+@property (class, readonly, getter=companion) MHSSubscriptionStatusDataCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) MHSSubscriptionStatus * _Nullable value __attribute__((swift_name("value")));
+- (instancetype)initWithValue:(MHSSubscriptionStatus * _Nullable)value __attribute__((swift_name("init(value:)"))) __attribute__((objc_designated_initializer));
+- (MHSSubscriptionStatusData *)doCopyValue:(MHSSubscriptionStatus * _Nullable)value __attribute__((swift_name("doCopy(value:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="value")
+*/
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SubscriptionStatusData.Companion")))
+@interface MHSSubscriptionStatusDataCompanion : MHSBase
+@property (class, readonly, getter=shared) MHSSubscriptionStatusDataCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<MHSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("AccessTokenData")))
 @interface MHSAccessTokenData : MHSBase <MHSCommonParcelable>
 @property (class, readonly, getter=companion) MHSAccessTokenDataCompanion *companion __attribute__((swift_name("companion")));
@@ -6957,6 +7484,16 @@ __attribute__((swift_name("PaymentService")))
 /**
  * @note This method converts all Kotlin exceptions to errors.
 */
+- (void)getSubscriptionPlanGroupsLimit:(MHSInt * _Nullable)limit offset:(MHSInt * _Nullable)offset currency:(NSString * _Nullable)currency completionHandler:(void (^)(MHSSubscriptionPlanGroupsResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getSubscriptionPlanGroups(limit:offset:currency:completionHandler:)")));
+
+/**
+ * @note This method converts all Kotlin exceptions to errors.
+*/
+- (void)getSubscriptionPlansPlanGroupId:(NSString *)planGroupId customerId:(NSString *)customerId completionHandler:(void (^)(NSArray<MHSSubscriptionPlan *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getSubscriptionPlans(planGroupId:customerId:completionHandler:)")));
+
+/**
+ * @note This method converts all Kotlin exceptions to errors.
+*/
 - (void)resetPaymentSelectedMethodPaymentIntentId:(NSString *)paymentIntentId completionHandler:(void (^)(MHSPaymentIntentData * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("resetPaymentSelectedMethod(paymentIntentId:completionHandler:)")));
 
 /**
@@ -6968,6 +7505,11 @@ __attribute__((swift_name("PaymentService")))
  * @note This method converts all Kotlin exceptions to errors.
 */
 - (void)selectInstallmentPlanIntentId:(NSString *)intentId installmentPlanData:(MHSInstallmentPlanData *)installmentPlanData completionHandler:(void (^)(MHSPaymentIntentData * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("selectInstallmentPlan(intentId:installmentPlanData:completionHandler:)")));
+
+/**
+ * @note This method converts all Kotlin exceptions to errors.
+*/
+- (void)selectSubscriptionPlanPlanGroupId:(NSString *)planGroupId customerId:(NSString *)customerId planId:(NSString *)planId completionHandler:(void (^)(MHSPaymentIntentData * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("selectSubscriptionPlan(planGroupId:customerId:planId:completionHandler:)")));
 
 /**
  * @note This method converts all Kotlin exceptions to errors.
@@ -7340,6 +7882,16 @@ __attribute__((swift_name("PaymentUseCase")))
 /**
  * @note This method converts all Kotlin exceptions to errors.
 */
+- (void)getSubscriptionPlanGroupsLimit:(MHSInt * _Nullable)limit offset:(MHSInt * _Nullable)offset currency:(NSString * _Nullable)currency completionHandler:(void (^)(MHSSubscriptionPlanGroupsResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getSubscriptionPlanGroups(limit:offset:currency:completionHandler:)")));
+
+/**
+ * @note This method converts all Kotlin exceptions to errors.
+*/
+- (void)getSubscriptionPlansPlanGroupId:(NSString *)planGroupId customerId:(NSString *)customerId completionHandler:(void (^)(NSArray<MHSSubscriptionPlan *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getSubscriptionPlans(planGroupId:customerId:completionHandler:)")));
+
+/**
+ * @note This method converts all Kotlin exceptions to errors.
+*/
 - (void)proceedWithPaymentMethodIntentId:(NSString *)intentId selectedMethodId:(NSString *)selectedMethodId methodType:(MHSMethodType *)methodType metaData:(MHSMethodMetaData * _Nullable)metaData useWalletBalance:(MHSBoolean * _Nullable)useWalletBalance installmentPlanData:(MHSInstallmentPlanData * _Nullable)installmentPlanData completionHandler:(void (^)(MHSKotlinPair<MHSIntentMethods *, MHSPaymentInformation *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("proceedWithPaymentMethod(intentId:selectedMethodId:methodType:metaData:useWalletBalance:installmentPlanData:completionHandler:)")));
 
 /**
@@ -7361,6 +7913,11 @@ __attribute__((swift_name("PaymentUseCase")))
  * @note This method converts all Kotlin exceptions to errors.
 */
 - (void)selectInstallmentPlanIntentId:(NSString *)intentId installmentPlanData:(MHSInstallmentPlanData *)installmentPlanData completionHandler:(void (^)(MHSPaymentIntentData * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("selectInstallmentPlan(intentId:installmentPlanData:completionHandler:)")));
+
+/**
+ * @note This method converts all Kotlin exceptions to errors.
+*/
+- (void)selectSubscriptionPlanPlanGroupId:(NSString *)planGroupId customerId:(NSString *)customerId planId:(NSString *)planId completionHandler:(void (^)(MHSPaymentIntentData * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("selectSubscriptionPlan(planGroupId:customerId:planId:completionHandler:)")));
 
 /**
  * @note This method converts all Kotlin exceptions to errors.
@@ -8056,53 +8613,59 @@ __attribute__((swift_name("__SkieSuspendWrappersKt")))
 + (void)Skie_Suspend__28__getPaymentInformationDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver paymentIntentId:(NSString *)paymentIntentId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__28__getPaymentInformation(dispatchReceiver:paymentIntentId:suspendHandler:)")));
 + (void)Skie_Suspend__29__getPayoutInformationDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver payoutIntentId:(NSString *)payoutIntentId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__29__getPayoutInformation(dispatchReceiver:payoutIntentId:suspendHandler:)")));
 + (void)Skie_Suspend__2__emitDispatchReceiver:(id<MHSKotlinx_coroutines_coreFlowCollector>)dispatchReceiver value:(id _Nullable)value suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__2__emit(dispatchReceiver:value:suspendHandler:)")));
-+ (void)Skie_Suspend__30__resetPaymentSelectedMethodDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver paymentIntentId:(NSString *)paymentIntentId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__30__resetPaymentSelectedMethod(dispatchReceiver:paymentIntentId:suspendHandler:)")));
-+ (void)Skie_Suspend__31__resetPayoutSelectedMethodDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver payoutIntentId:(NSString *)payoutIntentId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__31__resetPayoutSelectedMethod(dispatchReceiver:payoutIntentId:suspendHandler:)")));
-+ (void)Skie_Suspend__32__selectInstallmentPlanDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver intentId:(NSString *)intentId installmentPlanData:(MHSInstallmentPlanData *)installmentPlanData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__32__selectInstallmentPlan(dispatchReceiver:intentId:installmentPlanData:suspendHandler:)")));
-+ (void)Skie_Suspend__33__submitCardCVVDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver intentId:(NSString *)intentId cvv:(NSString *)cvv installmentPlanData:(MHSInstallmentPlanData * _Nullable)installmentPlanData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__33__submitCardCVV(dispatchReceiver:intentId:cvv:installmentPlanData:suspendHandler:)")));
-+ (void)Skie_Suspend__34__submitFormDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver intentId:(NSString *)intentId currentSelectedMethod:(NSString *)currentSelectedMethod cardFields:(NSDictionary<NSString *, NSString *> * _Nullable)cardFields billingFields:(NSDictionary<NSString *, NSString *> * _Nullable)billingFields shippingFields:(NSDictionary<NSString *, NSString *> * _Nullable)shippingFields vaultData:(MHSVaultData * _Nullable)vaultData saveCard:(MHSBoolean * _Nullable)saveCard installmentPlanData:(MHSInstallmentPlanData * _Nullable)installmentPlanData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__34__submitForm(dispatchReceiver:intentId:currentSelectedMethod:cardFields:billingFields:shippingFields:vaultData:saveCard:installmentPlanData:suspendHandler:)")));
-+ (void)Skie_Suspend__35__submitReceiptDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver paymentIntentId:(NSString *)paymentIntentId receipt:(NSString *)receipt receiptBillingData:(NSDictionary<NSString *, NSString *> * _Nullable)receiptBillingData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__35__submitReceipt(dispatchReceiver:paymentIntentId:receipt:receiptBillingData:suspendHandler:)")));
-+ (void)Skie_Suspend__36__updateDiscountDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver intentId:(NSString *)intentId discount:(MHSDiscountItem *)discount suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__36__updateDiscount(dispatchReceiver:intentId:discount:suspendHandler:)")));
-+ (void)Skie_Suspend__37__updateFeesDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver intentId:(NSString *)intentId fees:(NSArray<MHSFeeItem *> *)fees suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__37__updateFees(dispatchReceiver:intentId:fees:suspendHandler:)")));
-+ (void)Skie_Suspend__38__usePaymentMethodDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver intentId:(NSString *)intentId methodName:(NSString *)methodName useWalletBalance:(MHSBoolean * _Nullable)useWalletBalance installmentPlanData:(MHSInstallmentPlanData * _Nullable)installmentPlanData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__38__usePaymentMethod(dispatchReceiver:intentId:methodName:useWalletBalance:installmentPlanData:suspendHandler:)")));
-+ (void)Skie_Suspend__39__usePayoutMethodDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver intentId:(NSString *)intentId methodName:(NSString *)methodName suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__39__usePayoutMethod(dispatchReceiver:intentId:methodName:suspendHandler:)")));
++ (void)Skie_Suspend__30__getSubscriptionPlanGroupsDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver limit:(MHSInt * _Nullable)limit offset:(MHSInt * _Nullable)offset currency:(NSString * _Nullable)currency suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__30__getSubscriptionPlanGroups(dispatchReceiver:limit:offset:currency:suspendHandler:)")));
++ (void)Skie_Suspend__31__getSubscriptionPlansDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver planGroupId:(NSString *)planGroupId customerId:(NSString *)customerId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__31__getSubscriptionPlans(dispatchReceiver:planGroupId:customerId:suspendHandler:)")));
++ (void)Skie_Suspend__32__resetPaymentSelectedMethodDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver paymentIntentId:(NSString *)paymentIntentId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__32__resetPaymentSelectedMethod(dispatchReceiver:paymentIntentId:suspendHandler:)")));
++ (void)Skie_Suspend__33__resetPayoutSelectedMethodDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver payoutIntentId:(NSString *)payoutIntentId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__33__resetPayoutSelectedMethod(dispatchReceiver:payoutIntentId:suspendHandler:)")));
++ (void)Skie_Suspend__34__selectInstallmentPlanDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver intentId:(NSString *)intentId installmentPlanData:(MHSInstallmentPlanData *)installmentPlanData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__34__selectInstallmentPlan(dispatchReceiver:intentId:installmentPlanData:suspendHandler:)")));
++ (void)Skie_Suspend__35__selectSubscriptionPlanDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver planGroupId:(NSString *)planGroupId customerId:(NSString *)customerId planId:(NSString *)planId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__35__selectSubscriptionPlan(dispatchReceiver:planGroupId:customerId:planId:suspendHandler:)")));
++ (void)Skie_Suspend__36__submitCardCVVDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver intentId:(NSString *)intentId cvv:(NSString *)cvv installmentPlanData:(MHSInstallmentPlanData * _Nullable)installmentPlanData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__36__submitCardCVV(dispatchReceiver:intentId:cvv:installmentPlanData:suspendHandler:)")));
++ (void)Skie_Suspend__37__submitFormDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver intentId:(NSString *)intentId currentSelectedMethod:(NSString *)currentSelectedMethod cardFields:(NSDictionary<NSString *, NSString *> * _Nullable)cardFields billingFields:(NSDictionary<NSString *, NSString *> * _Nullable)billingFields shippingFields:(NSDictionary<NSString *, NSString *> * _Nullable)shippingFields vaultData:(MHSVaultData * _Nullable)vaultData saveCard:(MHSBoolean * _Nullable)saveCard installmentPlanData:(MHSInstallmentPlanData * _Nullable)installmentPlanData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__37__submitForm(dispatchReceiver:intentId:currentSelectedMethod:cardFields:billingFields:shippingFields:vaultData:saveCard:installmentPlanData:suspendHandler:)")));
++ (void)Skie_Suspend__38__submitReceiptDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver paymentIntentId:(NSString *)paymentIntentId receipt:(NSString *)receipt receiptBillingData:(NSDictionary<NSString *, NSString *> * _Nullable)receiptBillingData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__38__submitReceipt(dispatchReceiver:paymentIntentId:receipt:receiptBillingData:suspendHandler:)")));
++ (void)Skie_Suspend__39__updateDiscountDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver intentId:(NSString *)intentId discount:(MHSDiscountItem *)discount suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__39__updateDiscount(dispatchReceiver:intentId:discount:suspendHandler:)")));
 + (void)Skie_Suspend__3__loginDispatchReceiver:(MHSAuthUseCase *)dispatchReceiver email:(NSString *)email password:(NSString *)password suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__3__login(dispatchReceiver:email:password:suspendHandler:)")));
-+ (void)Skie_Suspend__40__useSavedCardDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver paymentIntentId:(NSString *)paymentIntentId cardTokenId:(NSString *)cardTokenId cvv:(NSString * _Nullable)cvv useWalletBalance:(MHSBoolean * _Nullable)useWalletBalance installmentPlanData:(MHSInstallmentPlanData * _Nullable)installmentPlanData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__40__useSavedCard(dispatchReceiver:paymentIntentId:cardTokenId:cvv:useWalletBalance:installmentPlanData:suspendHandler:)")));
-+ (void)Skie_Suspend__41__useSelfWalletDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver paymentIntentId:(NSString *)paymentIntentId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__41__useSelfWallet(dispatchReceiver:paymentIntentId:suspendHandler:)")));
-+ (void)Skie_Suspend__42__deleteSavedCardDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver cardTokenId:(NSString *)cardTokenId intentSecret:(NSString *)intentSecret suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__42__deleteSavedCard(dispatchReceiver:cardTokenId:intentSecret:suspendHandler:)")));
-+ (void)Skie_Suspend__43__getApplePayBinLookupDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver receipt:(NSString *)receipt receiptBillingData:(NSDictionary<NSString *, NSString *> * _Nullable)receiptBillingData methodID:(NSString *)methodID flowId:(NSString * _Nullable)flowId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__43__getApplePayBinLookup(dispatchReceiver:receipt:receiptBillingData:methodID:flowId:suspendHandler:)")));
-+ (void)Skie_Suspend__44__getCardInformationDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver cardIntentId:(NSString *)cardIntentId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__44__getCardInformation(dispatchReceiver:cardIntentId:suspendHandler:)")));
-+ (void)Skie_Suspend__45__getInstallmentPlansDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver amount:(MHSDouble * _Nullable)amount currency:(NSString *)currency first6Digits:(NSString * _Nullable)first6Digits suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__45__getInstallmentPlans(dispatchReceiver:amount:currency:first6Digits:suspendHandler:)")));
-+ (void)Skie_Suspend__46__getMethodsDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver paymentIntentId:(NSString *)paymentIntentId type:(MHSType *)type suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__46__getMethods(dispatchReceiver:paymentIntentId:type:suspendHandler:)")));
-+ (void)Skie_Suspend__47__getMethodsDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver currency:(NSString *)currency amount:(MHSDouble * _Nullable)amount customer:(NSString * _Nullable)customer flowId:(NSString * _Nullable)flowId operation:(MHSIntentOperation * _Nullable)operation customFields:(NSDictionary<NSString *, MHSCustomFieldValue *> * _Nullable)customFields suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__47__getMethods(dispatchReceiver:currency:amount:customer:flowId:operation:customFields:suspendHandler:)")));
-+ (void)Skie_Suspend__48__getPaymentInformationDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver paymentId:(NSString *)paymentId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__48__getPaymentInformation(dispatchReceiver:paymentId:suspendHandler:)")));
-+ (void)Skie_Suspend__49__getPayoutInformationDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver payoutId:(NSString *)payoutId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__49__getPayoutInformation(dispatchReceiver:payoutId:suspendHandler:)")));
++ (void)Skie_Suspend__40__updateFeesDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver intentId:(NSString *)intentId fees:(NSArray<MHSFeeItem *> *)fees suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__40__updateFees(dispatchReceiver:intentId:fees:suspendHandler:)")));
++ (void)Skie_Suspend__41__usePaymentMethodDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver intentId:(NSString *)intentId methodName:(NSString *)methodName useWalletBalance:(MHSBoolean * _Nullable)useWalletBalance installmentPlanData:(MHSInstallmentPlanData * _Nullable)installmentPlanData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__41__usePaymentMethod(dispatchReceiver:intentId:methodName:useWalletBalance:installmentPlanData:suspendHandler:)")));
++ (void)Skie_Suspend__42__usePayoutMethodDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver intentId:(NSString *)intentId methodName:(NSString *)methodName suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__42__usePayoutMethod(dispatchReceiver:intentId:methodName:suspendHandler:)")));
++ (void)Skie_Suspend__43__useSavedCardDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver paymentIntentId:(NSString *)paymentIntentId cardTokenId:(NSString *)cardTokenId cvv:(NSString * _Nullable)cvv useWalletBalance:(MHSBoolean * _Nullable)useWalletBalance installmentPlanData:(MHSInstallmentPlanData * _Nullable)installmentPlanData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__43__useSavedCard(dispatchReceiver:paymentIntentId:cardTokenId:cvv:useWalletBalance:installmentPlanData:suspendHandler:)")));
++ (void)Skie_Suspend__44__useSelfWalletDispatchReceiver:(id<MHSPaymentService>)dispatchReceiver paymentIntentId:(NSString *)paymentIntentId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__44__useSelfWallet(dispatchReceiver:paymentIntentId:suspendHandler:)")));
++ (void)Skie_Suspend__45__deleteSavedCardDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver cardTokenId:(NSString *)cardTokenId intentSecret:(NSString *)intentSecret suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__45__deleteSavedCard(dispatchReceiver:cardTokenId:intentSecret:suspendHandler:)")));
++ (void)Skie_Suspend__46__getApplePayBinLookupDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver receipt:(NSString *)receipt receiptBillingData:(NSDictionary<NSString *, NSString *> * _Nullable)receiptBillingData methodID:(NSString *)methodID flowId:(NSString * _Nullable)flowId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__46__getApplePayBinLookup(dispatchReceiver:receipt:receiptBillingData:methodID:flowId:suspendHandler:)")));
++ (void)Skie_Suspend__47__getCardInformationDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver cardIntentId:(NSString *)cardIntentId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__47__getCardInformation(dispatchReceiver:cardIntentId:suspendHandler:)")));
++ (void)Skie_Suspend__48__getInstallmentPlansDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver amount:(MHSDouble * _Nullable)amount currency:(NSString *)currency first6Digits:(NSString * _Nullable)first6Digits suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__48__getInstallmentPlans(dispatchReceiver:amount:currency:first6Digits:suspendHandler:)")));
++ (void)Skie_Suspend__49__getMethodsDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver paymentIntentId:(NSString *)paymentIntentId type:(MHSType *)type suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__49__getMethods(dispatchReceiver:paymentIntentId:type:suspendHandler:)")));
 + (void)Skie_Suspend__4__loginDispatchReceiver:(id<MHSAuthService>)dispatchReceiver email:(NSString *)email password:(NSString *)password suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__4__login(dispatchReceiver:email:password:suspendHandler:)")));
-+ (void)Skie_Suspend__50__proceedWithPaymentMethodDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver intentId:(NSString *)intentId selectedMethodId:(NSString *)selectedMethodId methodType:(MHSMethodType *)methodType metaData:(MHSMethodMetaData * _Nullable)metaData useWalletBalance:(MHSBoolean * _Nullable)useWalletBalance installmentPlanData:(MHSInstallmentPlanData * _Nullable)installmentPlanData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__50__proceedWithPaymentMethod(dispatchReceiver:intentId:selectedMethodId:methodType:metaData:useWalletBalance:installmentPlanData:suspendHandler:)")));
-+ (void)Skie_Suspend__51__proceedWithPayoutMethodDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver intentId:(NSString *)intentId selectedMethodId:(NSString *)selectedMethodId methodType:(MHSMethodType *)methodType metaData:(MHSMethodMetaData * _Nullable)metaData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__51__proceedWithPayoutMethod(dispatchReceiver:intentId:selectedMethodId:methodType:metaData:suspendHandler:)")));
-+ (void)Skie_Suspend__52__resetPaymentSelectedMethodDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver intentId:(NSString *)intentId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__52__resetPaymentSelectedMethod(dispatchReceiver:intentId:suspendHandler:)")));
-+ (void)Skie_Suspend__53__resetPayoutSelectedMethodDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver intentId:(NSString *)intentId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__53__resetPayoutSelectedMethod(dispatchReceiver:intentId:suspendHandler:)")));
-+ (void)Skie_Suspend__54__selectInstallmentPlanDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver intentId:(NSString *)intentId installmentPlanData:(MHSInstallmentPlanData *)installmentPlanData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__54__selectInstallmentPlan(dispatchReceiver:intentId:installmentPlanData:suspendHandler:)")));
-+ (void)Skie_Suspend__55__submitCardCVVDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver intentId:(NSString *)intentId cvv:(NSString *)cvv installmentPlanData:(MHSInstallmentPlanData * _Nullable)installmentPlanData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__55__submitCardCVV(dispatchReceiver:intentId:cvv:installmentPlanData:suspendHandler:)")));
-+ (void)Skie_Suspend__56__submitFormDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver paymentIntentId:(NSString *)paymentIntentId method:(NSString *)method billingFields:(NSDictionary<NSString *, NSString *> * _Nullable)billingFields shippingFields:(NSDictionary<NSString *, NSString *> * _Nullable)shippingFields vaultData:(MHSVaultData * _Nullable)vaultData saveCard:(MHSBoolean * _Nullable)saveCard installmentPlanData:(MHSInstallmentPlanData * _Nullable)installmentPlanData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__56__submitForm(dispatchReceiver:paymentIntentId:method:billingFields:shippingFields:vaultData:saveCard:installmentPlanData:suspendHandler:)")));
-+ (void)Skie_Suspend__57__submitPaymentReceiptDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver paymentIntentId:(NSString *)paymentIntentId receipt:(NSString *)receipt receiptBillingData:(NSDictionary<NSString *, NSString *> * _Nullable)receiptBillingData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__57__submitPaymentReceipt(dispatchReceiver:paymentIntentId:receipt:receiptBillingData:suspendHandler:)")));
-+ (void)Skie_Suspend__58__updateDiscountDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver intentId:(NSString *)intentId discount:(MHSDiscountItem *)discount suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__58__updateDiscount(dispatchReceiver:intentId:discount:suspendHandler:)")));
-+ (void)Skie_Suspend__59__updateFeesDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver intentId:(NSString *)intentId fees:(NSArray<MHSFeeItem *> *)fees suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__59__updateFees(dispatchReceiver:intentId:fees:suspendHandler:)")));
++ (void)Skie_Suspend__50__getMethodsDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver currency:(NSString *)currency amount:(MHSDouble * _Nullable)amount customer:(NSString * _Nullable)customer flowId:(NSString * _Nullable)flowId operation:(MHSIntentOperation * _Nullable)operation customFields:(NSDictionary<NSString *, MHSCustomFieldValue *> * _Nullable)customFields suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__50__getMethods(dispatchReceiver:currency:amount:customer:flowId:operation:customFields:suspendHandler:)")));
++ (void)Skie_Suspend__51__getPaymentInformationDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver paymentId:(NSString *)paymentId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__51__getPaymentInformation(dispatchReceiver:paymentId:suspendHandler:)")));
++ (void)Skie_Suspend__52__getPayoutInformationDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver payoutId:(NSString *)payoutId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__52__getPayoutInformation(dispatchReceiver:payoutId:suspendHandler:)")));
++ (void)Skie_Suspend__53__getSubscriptionPlanGroupsDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver limit:(MHSInt * _Nullable)limit offset:(MHSInt * _Nullable)offset currency:(NSString * _Nullable)currency suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__53__getSubscriptionPlanGroups(dispatchReceiver:limit:offset:currency:suspendHandler:)")));
++ (void)Skie_Suspend__54__getSubscriptionPlansDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver planGroupId:(NSString *)planGroupId customerId:(NSString *)customerId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__54__getSubscriptionPlans(dispatchReceiver:planGroupId:customerId:suspendHandler:)")));
++ (void)Skie_Suspend__55__proceedWithPaymentMethodDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver intentId:(NSString *)intentId selectedMethodId:(NSString *)selectedMethodId methodType:(MHSMethodType *)methodType metaData:(MHSMethodMetaData * _Nullable)metaData useWalletBalance:(MHSBoolean * _Nullable)useWalletBalance installmentPlanData:(MHSInstallmentPlanData * _Nullable)installmentPlanData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__55__proceedWithPaymentMethod(dispatchReceiver:intentId:selectedMethodId:methodType:metaData:useWalletBalance:installmentPlanData:suspendHandler:)")));
++ (void)Skie_Suspend__56__proceedWithPayoutMethodDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver intentId:(NSString *)intentId selectedMethodId:(NSString *)selectedMethodId methodType:(MHSMethodType *)methodType metaData:(MHSMethodMetaData * _Nullable)metaData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__56__proceedWithPayoutMethod(dispatchReceiver:intentId:selectedMethodId:methodType:metaData:suspendHandler:)")));
++ (void)Skie_Suspend__57__resetPaymentSelectedMethodDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver intentId:(NSString *)intentId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__57__resetPaymentSelectedMethod(dispatchReceiver:intentId:suspendHandler:)")));
++ (void)Skie_Suspend__58__resetPayoutSelectedMethodDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver intentId:(NSString *)intentId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__58__resetPayoutSelectedMethod(dispatchReceiver:intentId:suspendHandler:)")));
++ (void)Skie_Suspend__59__selectInstallmentPlanDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver intentId:(NSString *)intentId installmentPlanData:(MHSInstallmentPlanData *)installmentPlanData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__59__selectInstallmentPlan(dispatchReceiver:intentId:installmentPlanData:suspendHandler:)")));
 + (void)Skie_Suspend__5__deleteDispatchReceiver:(MHSBaseService *)dispatchReceiver requestBuilder:(void (^)(MHSRequestBuilder *))requestBuilder suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__5__delete(dispatchReceiver:requestBuilder:suspendHandler:)")));
-+ (void)Skie_Suspend__60__binLookupDispatchReceiver:(MHSCardCollector *)dispatchReceiver cardData:(MHSVaultData *)cardData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__60__binLookup(dispatchReceiver:cardData:suspendHandler:)")));
-+ (void)Skie_Suspend__61__binLookupDispatchReceiver:(MHSCardCollector *)dispatchReceiver suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__61__binLookup(dispatchReceiver:suspendHandler:)")));
-+ (void)Skie_Suspend__62__collectDispatchReceiver:(MHSCardCollector *)dispatchReceiver token:(NSString * _Nullable)token suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__62__collect(dispatchReceiver:token:suspendHandler:)")));
-+ (void)Skie_Suspend__63__createCardTokenDispatchReceiver:(MHSCardCollector *)dispatchReceiver cardIntentId:(NSString *)cardIntentId cardData:(MHSVaultData *)cardData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__63__createCardToken(dispatchReceiver:cardIntentId:cardData:suspendHandler:)")));
-+ (void)Skie_Suspend__64__payDispatchReceiver:(MHSCardCollector *)dispatchReceiver intentId:(NSString *)intentId cardData:(MHSVaultData *)cardData saveCard:(BOOL)saveCard billingFields:(NSDictionary<NSString *, NSString *> * _Nullable)billingFields shippingFields:(NSDictionary<NSString *, NSString *> * _Nullable)shippingFields installmentPlanData:(MHSInstallmentPlanData * _Nullable)installmentPlanData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__64__pay(dispatchReceiver:intentId:cardData:saveCard:billingFields:shippingFields:installmentPlanData:suspendHandler:)")));
-+ (void)Skie_Suspend__65__getDemoIntentsDispatchReceiver:(MHSSandboxUseCase *)dispatchReceiver accessToken:(NSString *)accessToken suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__65__getDemoIntents(dispatchReceiver:accessToken:suspendHandler:)")));
-+ (void)Skie_Suspend__66__invokeDispatchReceiver:(id<MHSKotlinSuspendFunction1>)dispatchReceiver p1:(id _Nullable)p1 suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__66__invoke(dispatchReceiver:p1:suspendHandler:)")));
-+ (void)Skie_Suspend__67__upgradeDispatchReceiver:(MHSKtor_httpOutgoingContentProtocolUpgrade *)dispatchReceiver input:(id<MHSKtor_ioByteReadChannel>)input output:(id<MHSKtor_ioByteWriteChannel>)output engineContext:(id<MHSKotlinCoroutineContext>)engineContext userContext:(id<MHSKotlinCoroutineContext>)userContext suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__67__upgrade(dispatchReceiver:input:output:engineContext:userContext:suspendHandler:)")));
-+ (void)Skie_Suspend__68__flushDispatchReceiver:(id<MHSKtor_ioByteWriteChannel>)dispatchReceiver suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__68__flush(dispatchReceiver:suspendHandler:)")));
-+ (void)Skie_Suspend__69__flushAndCloseDispatchReceiver:(id<MHSKtor_ioByteWriteChannel>)dispatchReceiver suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__69__flushAndClose(dispatchReceiver:suspendHandler:)")));
++ (void)Skie_Suspend__60__selectSubscriptionPlanDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver planGroupId:(NSString *)planGroupId customerId:(NSString *)customerId planId:(NSString *)planId suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__60__selectSubscriptionPlan(dispatchReceiver:planGroupId:customerId:planId:suspendHandler:)")));
++ (void)Skie_Suspend__61__submitCardCVVDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver intentId:(NSString *)intentId cvv:(NSString *)cvv installmentPlanData:(MHSInstallmentPlanData * _Nullable)installmentPlanData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__61__submitCardCVV(dispatchReceiver:intentId:cvv:installmentPlanData:suspendHandler:)")));
++ (void)Skie_Suspend__62__submitFormDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver paymentIntentId:(NSString *)paymentIntentId method:(NSString *)method billingFields:(NSDictionary<NSString *, NSString *> * _Nullable)billingFields shippingFields:(NSDictionary<NSString *, NSString *> * _Nullable)shippingFields vaultData:(MHSVaultData * _Nullable)vaultData saveCard:(MHSBoolean * _Nullable)saveCard installmentPlanData:(MHSInstallmentPlanData * _Nullable)installmentPlanData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__62__submitForm(dispatchReceiver:paymentIntentId:method:billingFields:shippingFields:vaultData:saveCard:installmentPlanData:suspendHandler:)")));
++ (void)Skie_Suspend__63__submitPaymentReceiptDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver paymentIntentId:(NSString *)paymentIntentId receipt:(NSString *)receipt receiptBillingData:(NSDictionary<NSString *, NSString *> * _Nullable)receiptBillingData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__63__submitPaymentReceipt(dispatchReceiver:paymentIntentId:receipt:receiptBillingData:suspendHandler:)")));
++ (void)Skie_Suspend__64__updateDiscountDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver intentId:(NSString *)intentId discount:(MHSDiscountItem *)discount suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__64__updateDiscount(dispatchReceiver:intentId:discount:suspendHandler:)")));
++ (void)Skie_Suspend__65__updateFeesDispatchReceiver:(MHSPaymentUseCase *)dispatchReceiver intentId:(NSString *)intentId fees:(NSArray<MHSFeeItem *> *)fees suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__65__updateFees(dispatchReceiver:intentId:fees:suspendHandler:)")));
++ (void)Skie_Suspend__66__binLookupDispatchReceiver:(MHSCardCollector *)dispatchReceiver cardData:(MHSVaultData *)cardData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__66__binLookup(dispatchReceiver:cardData:suspendHandler:)")));
++ (void)Skie_Suspend__67__binLookupDispatchReceiver:(MHSCardCollector *)dispatchReceiver suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__67__binLookup(dispatchReceiver:suspendHandler:)")));
++ (void)Skie_Suspend__68__collectDispatchReceiver:(MHSCardCollector *)dispatchReceiver token:(NSString * _Nullable)token suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__68__collect(dispatchReceiver:token:suspendHandler:)")));
++ (void)Skie_Suspend__69__createCardTokenDispatchReceiver:(MHSCardCollector *)dispatchReceiver cardIntentId:(NSString *)cardIntentId cardData:(MHSVaultData *)cardData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__69__createCardToken(dispatchReceiver:cardIntentId:cardData:suspendHandler:)")));
 + (void)Skie_Suspend__6__getDispatchReceiver:(MHSBaseService *)dispatchReceiver requestBuilder:(void (^)(MHSRequestBuilder *))requestBuilder suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__6__get(dispatchReceiver:requestBuilder:suspendHandler:)")));
-+ (void)Skie_Suspend__70__writeToDispatchReceiver:(MHSKtor_httpOutgoingContentWriteChannelContent *)dispatchReceiver channel:(id<MHSKtor_ioByteWriteChannel>)channel suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__70__writeTo(dispatchReceiver:channel:suspendHandler:)")));
-+ (void)Skie_Suspend__71__handleNetworkExceptionExtensionReceiver:(MHSKotlinThrowable *)extensionReceiver suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__71__handleNetworkException(extensionReceiver:suspendHandler:)")));
-+ (void)Skie_Suspend__72__handleResponseValidationExtensionReceiver:(MHSKtor_client_coreHttpCallValidatorConfig *)extensionReceiver response:(MHSKtor_client_coreHttpResponse *)response suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__72__handleResponseValidation(extensionReceiver:response:suspendHandler:)")));
++ (void)Skie_Suspend__70__payDispatchReceiver:(MHSCardCollector *)dispatchReceiver intentId:(NSString *)intentId cardData:(MHSVaultData *)cardData saveCard:(BOOL)saveCard billingFields:(NSDictionary<NSString *, NSString *> * _Nullable)billingFields shippingFields:(NSDictionary<NSString *, NSString *> * _Nullable)shippingFields installmentPlanData:(MHSInstallmentPlanData * _Nullable)installmentPlanData suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__70__pay(dispatchReceiver:intentId:cardData:saveCard:billingFields:shippingFields:installmentPlanData:suspendHandler:)")));
++ (void)Skie_Suspend__71__getDemoIntentsDispatchReceiver:(MHSSandboxUseCase *)dispatchReceiver accessToken:(NSString *)accessToken suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__71__getDemoIntents(dispatchReceiver:accessToken:suspendHandler:)")));
++ (void)Skie_Suspend__72__invokeDispatchReceiver:(id<MHSKotlinSuspendFunction1>)dispatchReceiver p1:(id _Nullable)p1 suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__72__invoke(dispatchReceiver:p1:suspendHandler:)")));
++ (void)Skie_Suspend__73__upgradeDispatchReceiver:(MHSKtor_httpOutgoingContentProtocolUpgrade *)dispatchReceiver input:(id<MHSKtor_ioByteReadChannel>)input output:(id<MHSKtor_ioByteWriteChannel>)output engineContext:(id<MHSKotlinCoroutineContext>)engineContext userContext:(id<MHSKotlinCoroutineContext>)userContext suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__73__upgrade(dispatchReceiver:input:output:engineContext:userContext:suspendHandler:)")));
++ (void)Skie_Suspend__74__flushDispatchReceiver:(id<MHSKtor_ioByteWriteChannel>)dispatchReceiver suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__74__flush(dispatchReceiver:suspendHandler:)")));
++ (void)Skie_Suspend__75__flushAndCloseDispatchReceiver:(id<MHSKtor_ioByteWriteChannel>)dispatchReceiver suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__75__flushAndClose(dispatchReceiver:suspendHandler:)")));
++ (void)Skie_Suspend__76__writeToDispatchReceiver:(MHSKtor_httpOutgoingContentWriteChannelContent *)dispatchReceiver channel:(id<MHSKtor_ioByteWriteChannel>)channel suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__76__writeTo(dispatchReceiver:channel:suspendHandler:)")));
++ (void)Skie_Suspend__77__handleNetworkExceptionExtensionReceiver:(MHSKotlinThrowable *)extensionReceiver suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__77__handleNetworkException(extensionReceiver:suspendHandler:)")));
++ (void)Skie_Suspend__78__handleResponseValidationExtensionReceiver:(MHSKtor_client_coreHttpCallValidatorConfig *)extensionReceiver response:(MHSKtor_client_coreHttpResponse *)response suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__78__handleResponseValidation(extensionReceiver:response:suspendHandler:)")));
 + (void)Skie_Suspend__7__patchDispatchReceiver:(MHSBaseService *)dispatchReceiver requestBuilder:(void (^)(MHSRequestBuilder *))requestBuilder suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__7__patch(dispatchReceiver:requestBuilder:suspendHandler:)")));
 + (void)Skie_Suspend__8__postDispatchReceiver:(MHSBaseService *)dispatchReceiver requestBuilder:(void (^)(MHSRequestBuilder *))requestBuilder suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__8__post(dispatchReceiver:requestBuilder:suspendHandler:)")));
 + (void)Skie_Suspend__9__putDispatchReceiver:(MHSBaseService *)dispatchReceiver requestBuilder:(void (^)(MHSRequestBuilder *))requestBuilder suspendHandler:(MHSSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__9__put(dispatchReceiver:requestBuilder:suspendHandler:)")));

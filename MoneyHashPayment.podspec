@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MoneyHashPayment'
-  s.version          = '4.0.5'
+  s.version          = '4.0.8'
   s.summary          = 'Accept online payments using MoneyHash.'
 
 
@@ -42,5 +42,6 @@ Pod::Spec.new do |s|
   
 #  s.source_files = 'MoneyHash/Classes/**/*'
 s.vendored_frameworks = 'MoneyHash.xcframework', 'MoneyHashShared.xcframework'
+
   
 end

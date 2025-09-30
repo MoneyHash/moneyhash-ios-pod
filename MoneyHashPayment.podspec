@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MoneyHashPayment'
-  s.version          = '4.0.8'
+  s.version          = '3.0.8'
   s.summary          = 'Accept online payments using MoneyHash.'
 
 

@@ -502,6 +502,8 @@ extension MoneyHashShared.PaymentService {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func updateFees(intentId: Swift.String, fees: [MoneyHashShared.FeeItem]) async throws -> MoneyHashShared.FeesResponse
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func useBankAccountToken(paymentIntentId: Swift.String, bankAccountTokenId: Swift.String) async throws -> MoneyHashShared.PaymentIntentData
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func usePaymentMethod(intentId: Swift.String, methodName: Swift.String, useWalletBalance: MoneyHashShared.KotlinBoolean?, installmentPlanData: MoneyHashShared.InstallmentPlanData?) async throws -> MoneyHashShared.PaymentIntentData
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func usePayoutMethod(intentId: Swift.String, methodName: Swift.String) async throws -> MoneyHashShared.PayoutDetails
@@ -940,6 +942,44 @@ extension MoneyHashShared.KotlinKVariance {
 extension MoneyHashShared.__KotlinKVariance {
   public func toSwiftEnum() -> MoneyHashShared.KotlinKVariance
 }
+@frozen public enum BankAccountStatus : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case pending
+  case active
+  case inactive
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var status: Swift.String {
+    get
+  }
+  public static var companion: MoneyHashShared.__BankAccountStatus.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: MoneyHashShared.__BankAccountStatus, result: inout MoneyHashShared.BankAccountStatus?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.__BankAccountStatus, result: inout MoneyHashShared.BankAccountStatus?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.__BankAccountStatus?) -> MoneyHashShared.BankAccountStatus
+  public func _bridgeToObjectiveC() -> MoneyHashShared.__BankAccountStatus
+  public typealias _ObjectiveCType = MoneyHashShared.__BankAccountStatus
+  public typealias Companion = MoneyHashShared.__BankAccountStatus.Companion
+  public static func == (a: MoneyHashShared.BankAccountStatus, b: MoneyHashShared.BankAccountStatus) -> Swift.Bool
+  public typealias AllCases = [MoneyHashShared.BankAccountStatus]
+  nonisolated public static var allCases: [MoneyHashShared.BankAccountStatus] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension MoneyHashShared.BankAccountStatus {
+  public func toKotlinEnum() -> MoneyHashShared.__BankAccountStatus
+}
+extension MoneyHashShared.__BankAccountStatus {
+  public func toSwiftEnum() -> MoneyHashShared.BankAccountStatus
+}
 @frozen public enum SubscriptionStatus : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
   case theNew
   case trial
@@ -1029,6 +1069,7 @@ extension MoneyHashShared.__LastUsedMethodType {
   case saveCard
   case paymentMethod
   case payoutMethod
+  case savedBankAccount
   public var name: Swift.String {
     get
   }
@@ -2107,6 +2148,8 @@ public var JsonWithIgnoredUnknownKeys: MoneyHashShared.Kotlinx_serialization_jso
 }
 extension MoneyHashShared.KotlinKVariance : Swift.Sendable {}
 extension MoneyHashShared.KotlinKVariance : Swift.BitwiseCopyable {}
+extension MoneyHashShared.BankAccountStatus : Swift.Sendable {}
+extension MoneyHashShared.BankAccountStatus : Swift.BitwiseCopyable {}
 extension MoneyHashShared.SubscriptionStatus : Swift.Sendable {}
 extension MoneyHashShared.SubscriptionStatus : Swift.BitwiseCopyable {}
 extension MoneyHashShared.LastUsedMethodType : Swift.Sendable {}

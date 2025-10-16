@@ -29609,6 +29609,724 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "BankAccountStatus",
+        "printedName": "BankAccountStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "pending",
+            "printedName": "pending",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHashShared.BankAccountStatus.Type) -> MoneyHashShared.BankAccountStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BankAccountStatus",
+                    "printedName": "MoneyHashShared.BankAccountStatus",
+                    "usr": "s:15MoneyHashShared17BankAccountStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHashShared.BankAccountStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BankAccountStatus",
+                        "printedName": "MoneyHashShared.BankAccountStatus",
+                        "usr": "s:15MoneyHashShared17BankAccountStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MoneyHashShared17BankAccountStatusO7pendingyA2CmF",
+            "mangledName": "$s15MoneyHashShared17BankAccountStatusO7pendingyA2CmF",
+            "moduleName": "MoneyHashShared",
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "active",
+            "printedName": "active",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHashShared.BankAccountStatus.Type) -> MoneyHashShared.BankAccountStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BankAccountStatus",
+                    "printedName": "MoneyHashShared.BankAccountStatus",
+                    "usr": "s:15MoneyHashShared17BankAccountStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHashShared.BankAccountStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BankAccountStatus",
+                        "printedName": "MoneyHashShared.BankAccountStatus",
+                        "usr": "s:15MoneyHashShared17BankAccountStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MoneyHashShared17BankAccountStatusO6activeyA2CmF",
+            "mangledName": "$s15MoneyHashShared17BankAccountStatusO6activeyA2CmF",
+            "moduleName": "MoneyHashShared",
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "inactive",
+            "printedName": "inactive",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHashShared.BankAccountStatus.Type) -> MoneyHashShared.BankAccountStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BankAccountStatus",
+                    "printedName": "MoneyHashShared.BankAccountStatus",
+                    "usr": "s:15MoneyHashShared17BankAccountStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHashShared.BankAccountStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BankAccountStatus",
+                        "printedName": "MoneyHashShared.BankAccountStatus",
+                        "usr": "s:15MoneyHashShared17BankAccountStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MoneyHashShared17BankAccountStatusO8inactiveyA2CmF",
+            "mangledName": "$s15MoneyHashShared17BankAccountStatusO8inactiveyA2CmF",
+            "moduleName": "MoneyHashShared",
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MoneyHashShared17BankAccountStatusO4nameSSvp",
+            "mangledName": "$s15MoneyHashShared17BankAccountStatusO4nameSSvp",
+            "moduleName": "MoneyHashShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MoneyHashShared17BankAccountStatusO4nameSSvg",
+                "mangledName": "$s15MoneyHashShared17BankAccountStatusO4nameSSvg",
+                "moduleName": "MoneyHashShared",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ordinal",
+            "printedName": "ordinal",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MoneyHashShared17BankAccountStatusO7ordinals5Int32Vvp",
+            "mangledName": "$s15MoneyHashShared17BankAccountStatusO7ordinals5Int32Vvp",
+            "moduleName": "MoneyHashShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MoneyHashShared17BankAccountStatusO7ordinals5Int32Vvg",
+                "mangledName": "$s15MoneyHashShared17BankAccountStatusO7ordinals5Int32Vvg",
+                "moduleName": "MoneyHashShared",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "status",
+            "printedName": "status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MoneyHashShared17BankAccountStatusO6statusSSvp",
+            "mangledName": "$s15MoneyHashShared17BankAccountStatusO6statusSSvp",
+            "moduleName": "MoneyHashShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MoneyHashShared17BankAccountStatusO6statusSSvg",
+                "mangledName": "$s15MoneyHashShared17BankAccountStatusO6statusSSvg",
+                "moduleName": "MoneyHashShared",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "companion",
+            "printedName": "companion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Companion",
+                "printedName": "MoneyHashShared.__BankAccountStatus.Companion",
+                "usr": "c:objc(cs)MHSBankAccountStatusCompanion"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MoneyHashShared17BankAccountStatusO9companionSo07MHSBankeF9CompanionCvpZ",
+            "mangledName": "$s15MoneyHashShared17BankAccountStatusO9companionSo07MHSBankeF9CompanionCvpZ",
+            "moduleName": "MoneyHashShared",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Companion",
+                    "printedName": "MoneyHashShared.__BankAccountStatus.Companion",
+                    "usr": "c:objc(cs)MHSBankAccountStatusCompanion"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MoneyHashShared17BankAccountStatusO9companionSo07MHSBankeF9CompanionCvgZ",
+                "mangledName": "$s15MoneyHashShared17BankAccountStatusO9companionSo07MHSBankeF9CompanionCvgZ",
+                "moduleName": "MoneyHashShared",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "_forceBridgeFromObjectiveC",
+            "printedName": "_forceBridgeFromObjectiveC(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "__BankAccountStatus",
+                "printedName": "MoneyHashShared.__BankAccountStatus",
+                "usr": "c:objc(cs)MHSBankAccountStatus"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.BankAccountStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BankAccountStatus",
+                    "printedName": "MoneyHashShared.BankAccountStatus",
+                    "usr": "s:15MoneyHashShared17BankAccountStatusO"
+                  }
+                ],
+                "paramValueOwnership": "InOut",
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MoneyHashShared17BankAccountStatusO26_forceBridgeFromObjectiveC_6resultySo07MHSBankeF0C_ACSgztFZ",
+            "mangledName": "$s15MoneyHashShared17BankAccountStatusO26_forceBridgeFromObjectiveC_6resultySo07MHSBankeF0C_ACSgztFZ",
+            "moduleName": "MoneyHashShared",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_conditionallyBridgeFromObjectiveC",
+            "printedName": "_conditionallyBridgeFromObjectiveC(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "__BankAccountStatus",
+                "printedName": "MoneyHashShared.__BankAccountStatus",
+                "usr": "c:objc(cs)MHSBankAccountStatus"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.BankAccountStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BankAccountStatus",
+                    "printedName": "MoneyHashShared.BankAccountStatus",
+                    "usr": "s:15MoneyHashShared17BankAccountStatusO"
+                  }
+                ],
+                "paramValueOwnership": "InOut",
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MoneyHashShared17BankAccountStatusO34_conditionallyBridgeFromObjectiveC_6resultSbSo07MHSBankeF0C_ACSgztFZ",
+            "mangledName": "$s15MoneyHashShared17BankAccountStatusO34_conditionallyBridgeFromObjectiveC_6resultSbSo07MHSBankeF0C_ACSgztFZ",
+            "moduleName": "MoneyHashShared",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_unconditionallyBridgeFromObjectiveC",
+            "printedName": "_unconditionallyBridgeFromObjectiveC(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BankAccountStatus",
+                "printedName": "MoneyHashShared.BankAccountStatus",
+                "usr": "s:15MoneyHashShared17BankAccountStatusO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.__BankAccountStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__BankAccountStatus",
+                    "printedName": "MoneyHashShared.__BankAccountStatus",
+                    "usr": "c:objc(cs)MHSBankAccountStatus"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MoneyHashShared17BankAccountStatusO36_unconditionallyBridgeFromObjectiveCyACSo07MHSBankeF0CSgFZ",
+            "mangledName": "$s15MoneyHashShared17BankAccountStatusO36_unconditionallyBridgeFromObjectiveCyACSo07MHSBankeF0CSgFZ",
+            "moduleName": "MoneyHashShared",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_bridgeToObjectiveC",
+            "printedName": "_bridgeToObjectiveC()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__BankAccountStatus",
+                "printedName": "MoneyHashShared.__BankAccountStatus",
+                "usr": "c:objc(cs)MHSBankAccountStatus"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MoneyHashShared17BankAccountStatusO19_bridgeToObjectiveCSo07MHSBankeF0CyF",
+            "mangledName": "$s15MoneyHashShared17BankAccountStatusO19_bridgeToObjectiveCSo07MHSBankeF0CyF",
+            "moduleName": "MoneyHashShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BankAccountStatus",
+                "printedName": "MoneyHashShared.BankAccountStatus",
+                "usr": "s:15MoneyHashShared17BankAccountStatusO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BankAccountStatus",
+                "printedName": "MoneyHashShared.BankAccountStatus",
+                "usr": "s:15MoneyHashShared17BankAccountStatusO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MoneyHashShared17BankAccountStatusO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s15MoneyHashShared17BankAccountStatusO2eeoiySbAC_ACtFZ",
+            "moduleName": "MoneyHashShared",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MoneyHashShared17BankAccountStatusO9hashValueSivp",
+            "mangledName": "$s15MoneyHashShared17BankAccountStatusO9hashValueSivp",
+            "moduleName": "MoneyHashShared",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MoneyHashShared17BankAccountStatusO9hashValueSivg",
+                "mangledName": "$s15MoneyHashShared17BankAccountStatusO9hashValueSivg",
+                "moduleName": "MoneyHashShared",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MoneyHashShared17BankAccountStatusO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s15MoneyHashShared17BankAccountStatusO4hash4intoys6HasherVz_tF",
+            "moduleName": "MoneyHashShared",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[MoneyHashShared.BankAccountStatus]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BankAccountStatus",
+                    "printedName": "MoneyHashShared.BankAccountStatus",
+                    "usr": "s:15MoneyHashShared17BankAccountStatusO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MoneyHashShared17BankAccountStatusO8allCasesSayACGvpZ",
+            "mangledName": "$s15MoneyHashShared17BankAccountStatusO8allCasesSayACGvpZ",
+            "moduleName": "MoneyHashShared",
+            "static": true,
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[MoneyHashShared.BankAccountStatus]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BankAccountStatus",
+                        "printedName": "MoneyHashShared.BankAccountStatus",
+                        "usr": "s:15MoneyHashShared17BankAccountStatusO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MoneyHashShared17BankAccountStatusO8allCasesSayACGvgZ",
+                "mangledName": "$s15MoneyHashShared17BankAccountStatusO8allCasesSayACGvgZ",
+                "moduleName": "MoneyHashShared",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "toKotlinEnum",
+            "printedName": "toKotlinEnum()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__BankAccountStatus",
+                "printedName": "MoneyHashShared.__BankAccountStatus",
+                "usr": "c:objc(cs)MHSBankAccountStatus"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MoneyHashShared17BankAccountStatusO12toKotlinEnumSo07MHSBankeF0CyF",
+            "mangledName": "$s15MoneyHashShared17BankAccountStatusO12toKotlinEnumSo07MHSBankeF0CyF",
+            "moduleName": "MoneyHashShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15MoneyHashShared17BankAccountStatusO",
+        "mangledName": "$s15MoneyHashShared17BankAccountStatusO",
+        "moduleName": "MoneyHashShared",
+        "declAttributes": [
+          "AccessControl",
+          "Frozen"
+        ],
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[MoneyHashShared.BankAccountStatus]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BankAccountStatus",
+                        "printedName": "MoneyHashShared.BankAccountStatus",
+                        "usr": "s:15MoneyHashShared17BankAccountStatusO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__BankAccountStatus",
+                    "printedName": "MoneyHashShared.__BankAccountStatus",
+                    "usr": "c:objc(cs)MHSBankAccountStatus"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoneyHashShared",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "SubscriptionStatus",
         "printedName": "SubscriptionStatus",
         "children": [
@@ -31503,6 +32221,44 @@
             "mangledName": "$s15MoneyHashShared10MethodTypeO06payoutD0yA2CmF",
             "moduleName": "MoneyHashShared",
             "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "savedBankAccount",
+            "printedName": "savedBankAccount",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHashShared.MethodType.Type) -> MoneyHashShared.MethodType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MethodType",
+                    "printedName": "MoneyHashShared.MethodType",
+                    "usr": "s:15MoneyHashShared10MethodTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHashShared.MethodType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MethodType",
+                        "printedName": "MoneyHashShared.MethodType",
+                        "usr": "s:15MoneyHashShared10MethodTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MoneyHashShared10MethodTypeO16savedBankAccountyA2CmF",
+            "mangledName": "$s15MoneyHashShared10MethodTypeO16savedBankAccountyA2CmF",
+            "moduleName": "MoneyHashShared",
+            "fixedbinaryorder": 5
           },
           {
             "kind": "Var",
@@ -50581,6 +51337,51 @@
           },
           {
             "kind": "Function",
+            "name": "useBankAccountToken",
+            "printedName": "useBankAccountToken(paymentIntentId:bankAccountTokenId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaymentIntentData",
+                "printedName": "MoneyHashShared.PaymentIntentData",
+                "usr": "c:objc(cs)MHSPaymentIntentData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So17MHSPaymentServiceP15MoneyHashSharedE19useBankAccountToken15paymentIntentId04bankhiL0So0aK4DataCSS_SStYaKF",
+            "mangledName": "$sSo17MHSPaymentServiceP15MoneyHashSharedE19useBankAccountToken15paymentIntentId04bankhiL0So0aK4DataCSS_SStYaKF",
+            "moduleName": "MoneyHashShared",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoneyHashShared.PaymentService>",
+            "sugared_genericSig": "<Self where Self : MoneyHashShared.PaymentService>",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "usePaymentMethod",
             "printedName": "usePaymentMethod(intentId:methodName:useWalletBalance:installmentPlanData:)",
             "children": [
@@ -53510,6 +54311,116 @@
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "MoneyHashShared.KotlinEnum<MoneyHashShared.__KotlinKVariance>",
+          "MoneyHashShared.KotlinBase",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "__BankAccountStatus",
+        "printedName": "__BankAccountStatus",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "toSwiftEnum",
+            "printedName": "toSwiftEnum()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BankAccountStatus",
+                "printedName": "MoneyHashShared.BankAccountStatus",
+                "usr": "s:15MoneyHashShared17BankAccountStatusO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So20MHSBankAccountStatusC15MoneyHashSharedE11toSwiftEnumAC04BankbC0OyF",
+            "mangledName": "$sSo20MHSBankAccountStatusC15MoneyHashSharedE11toSwiftEnumAC04BankbC0OyF",
+            "moduleName": "MoneyHashShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)MHSBankAccountStatus",
+        "moduleName": "MoneyHashShared",
+        "objc_name": "MHSBankAccountStatus",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)MHSKotlinEnum",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "MoneyHashShared.KotlinEnum<MoneyHashShared.__BankAccountStatus>",
           "MoneyHashShared.KotlinBase",
           "ObjectiveC.NSObject"
         ],

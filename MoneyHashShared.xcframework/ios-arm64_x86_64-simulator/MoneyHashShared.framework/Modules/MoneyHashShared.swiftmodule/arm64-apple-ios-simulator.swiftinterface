@@ -498,6 +498,8 @@ extension MoneyHashShared.PaymentService {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func submitReceipt(paymentIntentId: Swift.String, receipt: Swift.String, receiptBillingData: [Swift.String : Swift.String]?) async throws -> MoneyHashShared.PaymentInformation
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func tokenizeReceipt(receipt: Swift.String, methodId: Swift.String, cardTokenIntentId: Swift.String) async throws -> Swift.String
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func updateDiscount(intentId: Swift.String, discount: MoneyHashShared.DiscountItem) async throws -> MoneyHashShared.DiscountResponse
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func updateFees(intentId: Swift.String, fees: [MoneyHashShared.FeeItem]) async throws -> MoneyHashShared.FeesResponse
@@ -551,6 +553,8 @@ extension MoneyHashShared.PaymentUseCase {
   public func submitForm(paymentIntentId: Swift.String, method: Swift.String, billingFields: [Swift.String : Swift.String]?, shippingFields: [Swift.String : Swift.String]?, vaultData: MoneyHashShared.VaultData?, saveCard: MoneyHashShared.KotlinBoolean?, installmentPlanData: MoneyHashShared.InstallmentPlanData?) async throws -> MoneyHashShared.PaymentIntentData
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func submitPaymentReceipt(paymentIntentId: Swift.String, receipt: Swift.String, receiptBillingData: [Swift.String : Swift.String]?) async throws -> MoneyHashShared.PaymentInformation
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func tokenizeReceipt(receipt: Swift.String, methodId: Swift.String, cardTokenIntentId: Swift.String) async throws -> Swift.String
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func updateDiscount(intentId: Swift.String, discount: MoneyHashShared.DiscountItem) async throws -> MoneyHashShared.DiscountResponse
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -1951,6 +1955,7 @@ public func onEnum<__Sealed>(of sealed: __Sealed) -> MoneyHashShared.Skie.moneyh
 extension MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.ValidationException {
   @frozen public enum __Sealed : Swift.Hashable {
     case alphabetValidationException(MoneyHashShared.ValidationException.AlphabetValidationException)
+    case customRegexValidationException(MoneyHashShared.ValidationException.CustomRegexValidationException)
     case emptyValueException(MoneyHashShared.ValidationException.EmptyValueException)
     case lengthException(MoneyHashShared.ValidationException.LengthException)
     case luhnException(MoneyHashShared.ValidationException.LuhnException)
@@ -2142,6 +2147,8 @@ public func isInternetConnectionError(errorMessage: Swift.String) -> Swift.Bool
 extension Swift.String {
   public func convertArabicNumbersToEnglish() -> Swift.String
 }
+public func getCurrentMonth() -> Swift.Int32
+public func getCurrentYear() -> Swift.Int32
 public func getCurrentYearYY() -> Swift.Int32
 public var JsonWithIgnoredUnknownKeys: MoneyHashShared.Kotlinx_serialization_jsonJson {
   get

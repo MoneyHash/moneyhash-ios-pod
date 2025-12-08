@@ -5461,6 +5461,57 @@
                       },
                       {
                         "kind": "Var",
+                        "name": "customRegexValidationException",
+                        "printedName": "customRegexValidationException",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.ValidationException.__Sealed.Type) -> (MoneyHashShared.ValidationException.CustomRegexValidationException) -> MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.ValidationException.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(MoneyHashShared.ValidationException.CustomRegexValidationException) -> MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.ValidationException.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.ValidationException.__Sealed",
+                                    "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O19ValidationExceptionO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "CustomRegexValidationException",
+                                    "printedName": "MoneyHashShared.ValidationException.CustomRegexValidationException",
+                                    "usr": "c:objc(cs)MHSValidationExceptionCustomRegexValidationException"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.ValidationException.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "MoneyHashShared.Skie.moneyhash_kmm__MoneyHashShared.ValidationException.__Sealed",
+                                    "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O19ValidationExceptionO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O19ValidationExceptionO8__SealedO011customRegexgH0yAISo013MHSValidationh6CustomkgH0CcAImF",
+                        "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O19ValidationExceptionO8__SealedO011customRegexgH0yAISo013MHSValidationh6CustomkgH0CcAImF",
+                        "moduleName": "MoneyHashShared",
+                        "fixedbinaryorder": 1
+                      },
+                      {
+                        "kind": "Var",
                         "name": "emptyValueException",
                         "printedName": "emptyValueException",
                         "children": [
@@ -5508,7 +5559,7 @@
                         "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O19ValidationExceptionO8__SealedO010emptyValueH0yAISo013MHSValidationh5EmptykH0CcAImF",
                         "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O19ValidationExceptionO8__SealedO010emptyValueH0yAISo013MHSValidationh5EmptykH0CcAImF",
                         "moduleName": "MoneyHashShared",
-                        "fixedbinaryorder": 1
+                        "fixedbinaryorder": 2
                       },
                       {
                         "kind": "Var",
@@ -5559,7 +5610,7 @@
                         "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O19ValidationExceptionO8__SealedO06lengthH0yAISo013MHSValidationh6LengthH0CcAImF",
                         "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O19ValidationExceptionO8__SealedO06lengthH0yAISo013MHSValidationh6LengthH0CcAImF",
                         "moduleName": "MoneyHashShared",
-                        "fixedbinaryorder": 2
+                        "fixedbinaryorder": 3
                       },
                       {
                         "kind": "Var",
@@ -5610,7 +5661,7 @@
                         "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O19ValidationExceptionO8__SealedO04luhnH0yAISo013MHSValidationh4LuhnH0CcAImF",
                         "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O19ValidationExceptionO8__SealedO04luhnH0yAISo013MHSValidationh4LuhnH0CcAImF",
                         "moduleName": "MoneyHashShared",
-                        "fixedbinaryorder": 3
+                        "fixedbinaryorder": 4
                       },
                       {
                         "kind": "Var",
@@ -5661,7 +5712,7 @@
                         "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O19ValidationExceptionO8__SealedO07numericgH0yAISo013MHSValidationh7NumericgH0CcAImF",
                         "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O19ValidationExceptionO8__SealedO07numericgH0yAISo013MHSValidationh7NumericgH0CcAImF",
                         "moduleName": "MoneyHashShared",
-                        "fixedbinaryorder": 4
+                        "fixedbinaryorder": 5
                       },
                       {
                         "kind": "Var",
@@ -5712,7 +5763,7 @@
                         "usr": "s:15MoneyHashShared4SkieO015moneyhash_kmm__abC0O19ValidationExceptionO8__SealedO010rangeValuegH0yAISo013MHSValidationh5RangekgH0CcAImF",
                         "mangledName": "$s15MoneyHashShared4SkieO015moneyhash_kmm__abC0O19ValidationExceptionO8__SealedO010rangeValuegH0yAISo013MHSValidationh5RangekgH0CcAImF",
                         "moduleName": "MoneyHashShared",
-                        "fixedbinaryorder": 5
+                        "fixedbinaryorder": 6
                       },
                       {
                         "kind": "Var",
@@ -48565,6 +48616,58 @@
       },
       {
         "kind": "Function",
+        "name": "getCurrentMonth",
+        "printedName": "getCurrentMonth()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Int32",
+            "printedName": "Swift.Int32",
+            "usr": "s:s5Int32V"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:15MoneyHashShared15getCurrentMonths5Int32VyF",
+        "mangledName": "$s15MoneyHashShared15getCurrentMonths5Int32VyF",
+        "moduleName": "MoneyHashShared",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "getCurrentYear",
+        "printedName": "getCurrentYear()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Int32",
+            "printedName": "Swift.Int32",
+            "usr": "s:s5Int32V"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:15MoneyHashShared14getCurrentYears5Int32VyF",
+        "mangledName": "$s15MoneyHashShared14getCurrentYears5Int32VyF",
+        "moduleName": "MoneyHashShared",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoneyHashShared",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
         "name": "getCurrentYearYY",
         "printedName": "getCurrentYearYY()",
         "children": [
@@ -51239,6 +51342,57 @@
           },
           {
             "kind": "Function",
+            "name": "tokenizeReceipt",
+            "printedName": "tokenizeReceipt(receipt:methodId:cardTokenIntentId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So17MHSPaymentServiceP15MoneyHashSharedE15tokenizeReceipt7receipt8methodId015cardTokenIntentJ0S2S_S2StYaKF",
+            "mangledName": "$sSo17MHSPaymentServiceP15MoneyHashSharedE15tokenizeReceipt7receipt8methodId015cardTokenIntentJ0S2S_S2StYaKF",
+            "moduleName": "MoneyHashShared",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoneyHashShared.PaymentService>",
+            "sugared_genericSig": "<Self where Self : MoneyHashShared.PaymentService>",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "updateDiscount",
             "printedName": "updateDiscount(intentId:discount:)",
             "children": [
@@ -52887,6 +53041,55 @@
             "declKind": "Func",
             "usr": "s:So17MHSPaymentUseCaseC15MoneyHashSharedE20submitPaymentReceipt15paymentIntentId7receipt0M11BillingDataSo0A11InformationCSS_SSSDyS2SGSgtYaKF",
             "mangledName": "$sSo17MHSPaymentUseCaseC15MoneyHashSharedE20submitPaymentReceipt15paymentIntentId7receipt0M11BillingDataSo0A11InformationCSS_SSSDyS2SGSgtYaKF",
+            "moduleName": "MoneyHashShared",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tokenizeReceipt",
+            "printedName": "tokenizeReceipt(receipt:methodId:cardTokenIntentId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So17MHSPaymentUseCaseC15MoneyHashSharedE15tokenizeReceipt7receipt8methodId015cardTokenIntentK0S2S_S2StYaKF",
+            "mangledName": "$sSo17MHSPaymentUseCaseC15MoneyHashSharedE15tokenizeReceipt7receipt8methodId015cardTokenIntentK0S2S_S2StYaKF",
             "moduleName": "MoneyHashShared",
             "intro_Macosx": "10.15",
             "intro_iOS": "13",

@@ -317,11 +317,13 @@ public protocol MoneyHashSDK {
   func getSubscriptionPlanGroups(limit: Swift.Int?, offset: Swift.Int?, currency: Swift.String?) async throws -> MoneyHash.SubscriptionPlanGroupsResponse
   func renderSubscriptionEmbed(on viewController: UIKit.UIViewController, intentId: Swift.String, embedStyle: MoneyHash.EmbedStyle?, completionHandler: @escaping (Swift.Result<MoneyHash.IntentDetails, any Swift.Error>) -> Swift.Void)
   func renderCreateBankAccountTokenEmbed(on viewController: UIKit.UIViewController, intentId: Swift.String, completionHandler: @escaping (Swift.Result<MoneyHash.BankAccountTokenizationStatus, any Swift.Error>) -> Swift.Void)
+  func tokenizeReceipt(receipt: Swift.String, methodId: Swift.String, cardTokenIntentId: Swift.String) async throws -> Swift.String
 }
 public class CardFormConfiguration : Swift.Codable {
   final public let isCardHolderNameRequired: Swift.Bool
+  final public let cardHolderValidations: [Swift.String : Swift.String]
   final public let enableCardNumberValidation: Swift.Bool
-  public init(isCardHolderNameRequired: Swift.Bool = false, enableCardNumberValidation: Swift.Bool = true)
+  public init(isCardHolderNameRequired: Swift.Bool = false, cardHolderValidations: [Swift.String : Swift.String] = [:], enableCardNumberValidation: Swift.Bool = true)
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -621,6 +623,9 @@ public enum EmbedAction {
   @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
   @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
   @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+  @available(iOS 15.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, requestMediaCapturePermissionFor origin: WebKit.WKSecurityOrigin, initiatedByFrame frame: WebKit.WKFrameInfo, type: WebKit.WKMediaCaptureType, decisionHandler: @escaping (WebKit.WKPermissionDecision) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, runJavaScriptAlertPanelWithMessage message: Swift.String, initiatedByFrame frame: WebKit.WKFrameInfo, completionHandler: @escaping () -> Swift.Void)
 }
 public enum LogLevel {
   case verbose

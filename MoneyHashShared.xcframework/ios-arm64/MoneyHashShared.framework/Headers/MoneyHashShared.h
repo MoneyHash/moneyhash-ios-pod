@@ -7186,6 +7186,7 @@ __attribute__((swift_name("Brand")))
 @property (class, readonly) MHSBrand *visa __attribute__((swift_name("visa")));
 @property (class, readonly) MHSBrand *mastercard __attribute__((swift_name("mastercard")));
 @property (class, readonly) MHSBrand *mada __attribute__((swift_name("mada")));
+@property (class, readonly) MHSBrand *amex __attribute__((swift_name("amex")));
 @property (class, readonly) MHSBrand *unknown __attribute__((swift_name("unknown")));
 @property (class, readonly) NSArray<MHSBrand *> *entries __attribute__((swift_name("entries")));
 @property (readonly) NSString *brandName __attribute__((swift_name("brandName")));

@@ -1449,6 +1449,7 @@ extension MoneyHashShared.__Type_ {
   case visa
   case mastercard
   case mada
+  case amex
   case unknown
   public var brandName: Swift.String {
     get

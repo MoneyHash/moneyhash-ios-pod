@@ -39425,6 +39425,44 @@
           },
           {
             "kind": "Var",
+            "name": "amex",
+            "printedName": "amex",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHashShared.Brand.Type) -> MoneyHashShared.Brand",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Brand",
+                    "printedName": "MoneyHashShared.Brand",
+                    "usr": "s:15MoneyHashShared5BrandO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHashShared.Brand.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Brand",
+                        "printedName": "MoneyHashShared.Brand",
+                        "usr": "s:15MoneyHashShared5BrandO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MoneyHashShared5BrandO4amexyA2CmF",
+            "mangledName": "$s15MoneyHashShared5BrandO4amexyA2CmF",
+            "moduleName": "MoneyHashShared",
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
             "name": "unknown",
             "printedName": "unknown",
             "children": [
@@ -39459,7 +39497,7 @@
             "usr": "s:15MoneyHashShared5BrandO7unknownyA2CmF",
             "mangledName": "$s15MoneyHashShared5BrandO7unknownyA2CmF",
             "moduleName": "MoneyHashShared",
-            "fixedbinaryorder": 3
+            "fixedbinaryorder": 4
           },
           {
             "kind": "Var",

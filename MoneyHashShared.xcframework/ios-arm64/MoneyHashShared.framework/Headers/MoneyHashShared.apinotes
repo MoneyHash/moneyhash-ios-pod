@@ -4179,18 +4179,14 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "logo"
     Type: "NSString * _Nullable"
-  - Name: "paymentMethods"
-    PropertyKind: "Instance"
-    SwiftName: "paymentMethods"
-    Type: "NSArray<NSString *> * _Nullable"
   - Name: "requiresCvv"
     PropertyKind: "Instance"
     SwiftName: "requiresCvv"
     Type: "MHSBoolean * _Nullable"
   Methods:
-  - Selector: "initWithBin:brand:cardHolderName:country:expiryMonth:expiryYear:issuer:last4:logo:paymentMethods:requiresCvv:"
+  - Selector: "initWithBin:brand:cardHolderName:country:expiryMonth:expiryYear:issuer:last4:logo:requiresCvv:"
     MethodKind: "Instance"
-    SwiftName: "init(bin:brand:cardHolderName:country:expiryMonth:expiryYear:issuer:last4:logo:paymentMethods:requiresCvv:)"
+    SwiftName: "init(bin:brand:cardHolderName:country:expiryMonth:expiryYear:issuer:last4:logo:requiresCvv:)"
     Parameters:
     - Position: 0
       Type: "NSString * _Nullable"
@@ -4211,12 +4207,10 @@ Classes:
     - Position: 8
       Type: "NSString * _Nullable"
     - Position: 9
-      Type: "NSArray<NSString *> * _Nullable"
-    - Position: 10
       Type: "MHSBoolean * _Nullable"
-  - Selector: "doCopyBin:brand:cardHolderName:country:expiryMonth:expiryYear:issuer:last4:logo:paymentMethods:requiresCvv:"
+  - Selector: "doCopyBin:brand:cardHolderName:country:expiryMonth:expiryYear:issuer:last4:logo:requiresCvv:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(bin:brand:cardHolderName:country:expiryMonth:expiryYear:issuer:last4:logo:paymentMethods:requiresCvv:)"
+    SwiftName: "doCopy(bin:brand:cardHolderName:country:expiryMonth:expiryYear:issuer:last4:logo:requiresCvv:)"
     ResultType: "MHSCardTokenData * _Nonnull"
     Parameters:
     - Position: 0
@@ -4238,8 +4232,6 @@ Classes:
     - Position: 8
       Type: "NSString * _Nullable"
     - Position: 9
-      Type: "NSArray<NSString *> * _Nullable"
-    - Position: 10
       Type: "MHSBoolean * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"

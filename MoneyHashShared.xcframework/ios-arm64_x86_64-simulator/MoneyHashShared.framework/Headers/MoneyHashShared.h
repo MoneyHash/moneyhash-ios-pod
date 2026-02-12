@@ -2230,10 +2230,9 @@ __attribute__((swift_name("CardTokenData")))
 @property (readonly) NSString * _Nullable issuer __attribute__((swift_name("issuer")));
 @property (readonly) NSString * _Nullable last4 __attribute__((swift_name("last4")));
 @property (readonly) NSString * _Nullable logo __attribute__((swift_name("logo")));
-@property (readonly) NSArray<NSString *> * _Nullable paymentMethods __attribute__((swift_name("paymentMethods")));
 @property (readonly) MHSBoolean * _Nullable requiresCvv __attribute__((swift_name("requiresCvv")));
-- (instancetype)initWithBin:(NSString * _Nullable)bin brand:(NSString * _Nullable)brand cardHolderName:(NSString * _Nullable)cardHolderName country:(NSString * _Nullable)country expiryMonth:(NSString * _Nullable)expiryMonth expiryYear:(NSString * _Nullable)expiryYear issuer:(NSString * _Nullable)issuer last4:(NSString * _Nullable)last4 logo:(NSString * _Nullable)logo paymentMethods:(NSArray<NSString *> * _Nullable)paymentMethods requiresCvv:(MHSBoolean * _Nullable)requiresCvv __attribute__((swift_name("init(bin:brand:cardHolderName:country:expiryMonth:expiryYear:issuer:last4:logo:paymentMethods:requiresCvv:)"))) __attribute__((objc_designated_initializer));
-- (MHSCardTokenData *)doCopyBin:(NSString * _Nullable)bin brand:(NSString * _Nullable)brand cardHolderName:(NSString * _Nullable)cardHolderName country:(NSString * _Nullable)country expiryMonth:(NSString * _Nullable)expiryMonth expiryYear:(NSString * _Nullable)expiryYear issuer:(NSString * _Nullable)issuer last4:(NSString * _Nullable)last4 logo:(NSString * _Nullable)logo paymentMethods:(NSArray<NSString *> * _Nullable)paymentMethods requiresCvv:(MHSBoolean * _Nullable)requiresCvv __attribute__((swift_name("doCopy(bin:brand:cardHolderName:country:expiryMonth:expiryYear:issuer:last4:logo:paymentMethods:requiresCvv:)")));
+- (instancetype)initWithBin:(NSString * _Nullable)bin brand:(NSString * _Nullable)brand cardHolderName:(NSString * _Nullable)cardHolderName country:(NSString * _Nullable)country expiryMonth:(NSString * _Nullable)expiryMonth expiryYear:(NSString * _Nullable)expiryYear issuer:(NSString * _Nullable)issuer last4:(NSString * _Nullable)last4 logo:(NSString * _Nullable)logo requiresCvv:(MHSBoolean * _Nullable)requiresCvv __attribute__((swift_name("init(bin:brand:cardHolderName:country:expiryMonth:expiryYear:issuer:last4:logo:requiresCvv:)"))) __attribute__((objc_designated_initializer));
+- (MHSCardTokenData *)doCopyBin:(NSString * _Nullable)bin brand:(NSString * _Nullable)brand cardHolderName:(NSString * _Nullable)cardHolderName country:(NSString * _Nullable)country expiryMonth:(NSString * _Nullable)expiryMonth expiryYear:(NSString * _Nullable)expiryYear issuer:(NSString * _Nullable)issuer last4:(NSString * _Nullable)last4 logo:(NSString * _Nullable)logo requiresCvv:(MHSBoolean * _Nullable)requiresCvv __attribute__((swift_name("doCopy(bin:brand:cardHolderName:country:expiryMonth:expiryYear:issuer:last4:logo:requiresCvv:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -2281,11 +2280,6 @@ __attribute__((swift_name("CardTokenData")))
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="logo")
-*/
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="payment_methods")
 */
 
 /**

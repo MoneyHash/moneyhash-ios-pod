@@ -8601,6 +8601,7 @@ __attribute__((swift_name("Constants")))
 @property (readonly) NSString *CP_VERSION_HEADER __attribute__((swift_name("CP_VERSION_HEADER")));
 @property (readonly) NSString *CVV_END_POINT __attribute__((swift_name("CVV_END_POINT")));
 @property (readonly) NSString *GOOGLE_PAY __attribute__((swift_name("GOOGLE_PAY")));
+@property (readonly) NSString *MH_DATA_KEY __attribute__((swift_name("MH_DATA_KEY")));
 @property (readonly) NSString *NATIVE_PAY_KEY __attribute__((swift_name("NATIVE_PAY_KEY")));
 @property (readonly) NSString *PUBLIC_KEY_HEADER_KEY __attribute__((swift_name("PUBLIC_KEY_HEADER_KEY")));
 @property (readonly) NSString *SDK_VERSION_HEADER __attribute__((swift_name("SDK_VERSION_HEADER")));

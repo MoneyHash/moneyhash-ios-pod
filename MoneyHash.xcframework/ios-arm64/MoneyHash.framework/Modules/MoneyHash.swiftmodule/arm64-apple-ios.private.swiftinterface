@@ -52,13 +52,6 @@ public struct InstallmentPlan : Swift.Codable {
   public var amount: MoneyHash.AmountData?
   public var upfrontFees: Swift.Double?
   public var issuerCode: Swift.String?
-  public var issuerNameEn: Swift.String?
-  public var issuerNameAr: Swift.String?
-  public var issuerLogoAr: Swift.String?
-  public var issuerLogoEn: Swift.String?
-  public var processingFeesType: Swift.String?
-  public var processingFeesAmount: Swift.String?
-  public var feeDisplayValue: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -934,7 +927,7 @@ public struct CardFieldState : Swift.Codable {
 }
 @available(iOS 15.0, *)
 @_Concurrency.MainActor @preconcurrency public struct SecureTextField<Content> : SwiftUICore.View where Content : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(cardFormCollector: MoneyHash.CardForm, type: MoneyHash.CardFieldType, @SwiftUICore.ViewBuilder placeholder: @escaping () -> Content)
+  @_Concurrency.MainActor @preconcurrency public init(cardFormCollector: MoneyHash.CardForm, type: MoneyHash.CardFieldType, maskCvv: Swift.Bool = false, @SwiftUICore.ViewBuilder placeholder: @escaping () -> Content)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }

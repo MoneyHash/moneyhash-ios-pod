@@ -3260,51 +3260,19 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "issuerCode"
     Type: "NSString * _Nullable"
-  - Name: "issuerLogoAr"
-    PropertyKind: "Instance"
-    SwiftName: "issuerLogoAr"
-    Type: "NSString * _Nullable"
-  - Name: "issuerLogoEn"
-    PropertyKind: "Instance"
-    SwiftName: "issuerLogoEn"
-    Type: "NSString * _Nullable"
-  - Name: "issuerNameAr"
-    PropertyKind: "Instance"
-    SwiftName: "issuerNameAr"
-    Type: "NSString * _Nullable"
-  - Name: "issuerNameEn"
-    PropertyKind: "Instance"
-    SwiftName: "issuerNameEn"
-    Type: "NSString * _Nullable"
   Methods:
-  - Selector: "initWithIssuerCode:issuerNameAr:issuerNameEn:issuerLogoAr:issuerLogoEn:"
+  - Selector: "initWithIssuerCode:"
     MethodKind: "Instance"
-    SwiftName: "init(issuerCode:issuerNameAr:issuerNameEn:issuerLogoAr:issuerLogoEn:)"
+    SwiftName: "init(issuerCode:)"
     Parameters:
     - Position: 0
       Type: "NSString * _Nullable"
-    - Position: 1
-      Type: "NSString * _Nullable"
-    - Position: 2
-      Type: "NSString * _Nullable"
-    - Position: 3
-      Type: "NSString * _Nullable"
-    - Position: 4
-      Type: "NSString * _Nullable"
-  - Selector: "doCopyIssuerCode:issuerNameAr:issuerNameEn:issuerLogoAr:issuerLogoEn:"
+  - Selector: "doCopyIssuerCode:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(issuerCode:issuerNameAr:issuerNameEn:issuerLogoAr:issuerLogoEn:)"
+    SwiftName: "doCopy(issuerCode:)"
     ResultType: "MHSProviderRelatedFields * _Nonnull"
     Parameters:
     - Position: 0
-      Type: "NSString * _Nullable"
-    - Position: 1
-      Type: "NSString * _Nullable"
-    - Position: 2
-      Type: "NSString * _Nullable"
-    - Position: 3
-      Type: "NSString * _Nullable"
-    - Position: 4
       Type: "NSString * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
@@ -3335,10 +3303,6 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "amountPerMonth"
     Type: "NSString * _Nullable"
-  - Name: "feeDisplayValue"
-    PropertyKind: "Instance"
-    SwiftName: "feeDisplayValue"
-    Type: "NSString * _Nullable"
   - Name: "id"
     PropertyKind: "Instance"
     SwiftName: "id"
@@ -3351,22 +3315,14 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "interestRate"
     Type: "MHSDouble * _Nullable"
-  - Name: "processingFeesAmount"
-    PropertyKind: "Instance"
-    SwiftName: "processingFeesAmount"
-    Type: "NSString * _Nullable"
-  - Name: "processingFeesType"
-    PropertyKind: "Instance"
-    SwiftName: "processingFeesType"
-    Type: "NSString * _Nullable"
   - Name: "upfrontFees"
     PropertyKind: "Instance"
     SwiftName: "upfrontFees"
     Type: "MHSDouble * _Nullable"
   Methods:
-  - Selector: "initWithId:installmentPeriod:interestRate:amountPerMonth:upfrontFees:processingFeesType:processingFeesAmount:feeDisplayValue:"
+  - Selector: "initWithId:installmentPeriod:interestRate:amountPerMonth:upfrontFees:"
     MethodKind: "Instance"
-    SwiftName: "init(id:installmentPeriod:interestRate:amountPerMonth:upfrontFees:processingFeesType:processingFeesAmount:feeDisplayValue:)"
+    SwiftName: "init(id:installmentPeriod:interestRate:amountPerMonth:upfrontFees:)"
     Parameters:
     - Position: 0
       Type: "NSString * _Nullable"
@@ -3378,15 +3334,9 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 4
       Type: "MHSDouble * _Nullable"
-    - Position: 5
-      Type: "NSString * _Nullable"
-    - Position: 6
-      Type: "NSString * _Nullable"
-    - Position: 7
-      Type: "NSString * _Nullable"
-  - Selector: "doCopyId:installmentPeriod:interestRate:amountPerMonth:upfrontFees:processingFeesType:processingFeesAmount:feeDisplayValue:"
+  - Selector: "doCopyId:installmentPeriod:interestRate:amountPerMonth:upfrontFees:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(id:installmentPeriod:interestRate:amountPerMonth:upfrontFees:processingFeesType:processingFeesAmount:feeDisplayValue:)"
+    SwiftName: "doCopy(id:installmentPeriod:interestRate:amountPerMonth:upfrontFees:)"
     ResultType: "MHSPlan * _Nonnull"
     Parameters:
     - Position: 0
@@ -3399,12 +3349,6 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 4
       Type: "MHSDouble * _Nullable"
-    - Position: 5
-      Type: "NSString * _Nullable"
-    - Position: 6
-      Type: "NSString * _Nullable"
-    - Position: 7
-      Type: "NSString * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"
@@ -9364,10 +9308,6 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "amount"
     Type: "MHSAmountData * _Nullable"
-  - Name: "feeDisplayValue"
-    PropertyKind: "Instance"
-    SwiftName: "feeDisplayValue"
-    Type: "NSString * _Nullable"
   - Name: "id"
     PropertyKind: "Instance"
     SwiftName: "id"
@@ -9384,38 +9324,14 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "issuerCode"
     Type: "NSString * _Nullable"
-  - Name: "issuerLogoAr"
-    PropertyKind: "Instance"
-    SwiftName: "issuerLogoAr"
-    Type: "NSString * _Nullable"
-  - Name: "issuerLogoEn"
-    PropertyKind: "Instance"
-    SwiftName: "issuerLogoEn"
-    Type: "NSString * _Nullable"
-  - Name: "issuerNameAr"
-    PropertyKind: "Instance"
-    SwiftName: "issuerNameAr"
-    Type: "NSString * _Nullable"
-  - Name: "issuerNameEn"
-    PropertyKind: "Instance"
-    SwiftName: "issuerNameEn"
-    Type: "NSString * _Nullable"
-  - Name: "processingFeesAmount"
-    PropertyKind: "Instance"
-    SwiftName: "processingFeesAmount"
-    Type: "NSString * _Nullable"
-  - Name: "processingFeesType"
-    PropertyKind: "Instance"
-    SwiftName: "processingFeesType"
-    Type: "NSString * _Nullable"
   - Name: "upfrontFees"
     PropertyKind: "Instance"
     SwiftName: "upfrontFees"
     Type: "MHSDouble * _Nullable"
   Methods:
-  - Selector: "initWithId:installmentPeriod:interestRate:amount:upfrontFees:issuerCode:issuerNameEn:issuerNameAr:issuerLogoAr:issuerLogoEn:processingFeesType:processingFeesAmount:feeDisplayValue:"
+  - Selector: "initWithId:installmentPeriod:interestRate:amount:upfrontFees:issuerCode:"
     MethodKind: "Instance"
-    SwiftName: "init(id:installmentPeriod:interestRate:amount:upfrontFees:issuerCode:issuerNameEn:issuerNameAr:issuerLogoAr:issuerLogoEn:processingFeesType:processingFeesAmount:feeDisplayValue:)"
+    SwiftName: "init(id:installmentPeriod:interestRate:amount:upfrontFees:issuerCode:)"
     Parameters:
     - Position: 0
       Type: "NSString * _Nullable"
@@ -9429,23 +9345,9 @@ Classes:
       Type: "MHSDouble * _Nullable"
     - Position: 5
       Type: "NSString * _Nullable"
-    - Position: 6
-      Type: "NSString * _Nullable"
-    - Position: 7
-      Type: "NSString * _Nullable"
-    - Position: 8
-      Type: "NSString * _Nullable"
-    - Position: 9
-      Type: "NSString * _Nullable"
-    - Position: 10
-      Type: "NSString * _Nullable"
-    - Position: 11
-      Type: "NSString * _Nullable"
-    - Position: 12
-      Type: "NSString * _Nullable"
-  - Selector: "doCopyId:installmentPeriod:interestRate:amount:upfrontFees:issuerCode:issuerNameEn:issuerNameAr:issuerLogoAr:issuerLogoEn:processingFeesType:processingFeesAmount:feeDisplayValue:"
+  - Selector: "doCopyId:installmentPeriod:interestRate:amount:upfrontFees:issuerCode:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(id:installmentPeriod:interestRate:amount:upfrontFees:issuerCode:issuerNameEn:issuerNameAr:issuerLogoAr:issuerLogoEn:processingFeesType:processingFeesAmount:feeDisplayValue:)"
+    SwiftName: "doCopy(id:installmentPeriod:interestRate:amount:upfrontFees:issuerCode:)"
     ResultType: "MHSInstallmentPlan * _Nonnull"
     Parameters:
     - Position: 0
@@ -9459,20 +9361,6 @@ Classes:
     - Position: 4
       Type: "MHSDouble * _Nullable"
     - Position: 5
-      Type: "NSString * _Nullable"
-    - Position: 6
-      Type: "NSString * _Nullable"
-    - Position: 7
-      Type: "NSString * _Nullable"
-    - Position: 8
-      Type: "NSString * _Nullable"
-    - Position: 9
-      Type: "NSString * _Nullable"
-    - Position: 10
-      Type: "NSString * _Nullable"
-    - Position: 11
-      Type: "NSString * _Nullable"
-    - Position: 12
       Type: "NSString * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"

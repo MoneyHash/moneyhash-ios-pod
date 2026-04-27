@@ -52,6 +52,13 @@ public struct InstallmentPlan : Swift.Codable {
   public var amount: MoneyHash.AmountData?
   public var upfrontFees: Swift.Double?
   public var issuerCode: Swift.String?
+  public var issuerNameEn: Swift.String?
+  public var issuerNameAr: Swift.String?
+  public var issuerLogoAr: Swift.String?
+  public var issuerLogoEn: Swift.String?
+  public var processingFeesType: Swift.String?
+  public var processingFeesAmount: Swift.String?
+  public var feeDisplayValue: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }

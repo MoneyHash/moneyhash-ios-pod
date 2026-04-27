@@ -4958,13 +4958,20 @@ __attribute__((swift_name("InstallmentPlan")))
 @interface MHSInstallmentPlan : MHSBase <MHSCommonParcelable>
 @property (class, readonly, getter=companion) MHSInstallmentPlanCompanion *companion __attribute__((swift_name("companion")));
 @property (readonly) MHSAmountData * _Nullable amount __attribute__((swift_name("amount")));
+@property (readonly) NSString * _Nullable feeDisplayValue __attribute__((swift_name("feeDisplayValue")));
 @property (readonly) NSString * _Nullable id __attribute__((swift_name("id")));
 @property (readonly) MHSInt * _Nullable installmentPeriod __attribute__((swift_name("installmentPeriod")));
 @property (readonly) MHSDouble * _Nullable interestRate __attribute__((swift_name("interestRate")));
 @property (readonly) NSString * _Nullable issuerCode __attribute__((swift_name("issuerCode")));
+@property (readonly) NSString * _Nullable issuerLogoAr __attribute__((swift_name("issuerLogoAr")));
+@property (readonly) NSString * _Nullable issuerLogoEn __attribute__((swift_name("issuerLogoEn")));
+@property (readonly) NSString * _Nullable issuerNameAr __attribute__((swift_name("issuerNameAr")));
+@property (readonly) NSString * _Nullable issuerNameEn __attribute__((swift_name("issuerNameEn")));
+@property (readonly) NSString * _Nullable processingFeesAmount __attribute__((swift_name("processingFeesAmount")));
+@property (readonly) NSString * _Nullable processingFeesType __attribute__((swift_name("processingFeesType")));
 @property (readonly) MHSDouble * _Nullable upfrontFees __attribute__((swift_name("upfrontFees")));
-- (instancetype)initWithId:(NSString * _Nullable)id installmentPeriod:(MHSInt * _Nullable)installmentPeriod interestRate:(MHSDouble * _Nullable)interestRate amount:(MHSAmountData * _Nullable)amount upfrontFees:(MHSDouble * _Nullable)upfrontFees issuerCode:(NSString * _Nullable)issuerCode __attribute__((swift_name("init(id:installmentPeriod:interestRate:amount:upfrontFees:issuerCode:)"))) __attribute__((objc_designated_initializer));
-- (MHSInstallmentPlan *)doCopyId:(NSString * _Nullable)id installmentPeriod:(MHSInt * _Nullable)installmentPeriod interestRate:(MHSDouble * _Nullable)interestRate amount:(MHSAmountData * _Nullable)amount upfrontFees:(MHSDouble * _Nullable)upfrontFees issuerCode:(NSString * _Nullable)issuerCode __attribute__((swift_name("doCopy(id:installmentPeriod:interestRate:amount:upfrontFees:issuerCode:)")));
+- (instancetype)initWithId:(NSString * _Nullable)id installmentPeriod:(MHSInt * _Nullable)installmentPeriod interestRate:(MHSDouble * _Nullable)interestRate amount:(MHSAmountData * _Nullable)amount upfrontFees:(MHSDouble * _Nullable)upfrontFees issuerCode:(NSString * _Nullable)issuerCode issuerNameEn:(NSString * _Nullable)issuerNameEn issuerNameAr:(NSString * _Nullable)issuerNameAr issuerLogoAr:(NSString * _Nullable)issuerLogoAr issuerLogoEn:(NSString * _Nullable)issuerLogoEn processingFeesType:(NSString * _Nullable)processingFeesType processingFeesAmount:(NSString * _Nullable)processingFeesAmount feeDisplayValue:(NSString * _Nullable)feeDisplayValue __attribute__((swift_name("init(id:installmentPeriod:interestRate:amount:upfrontFees:issuerCode:issuerNameEn:issuerNameAr:issuerLogoAr:issuerLogoEn:processingFeesType:processingFeesAmount:feeDisplayValue:)"))) __attribute__((objc_designated_initializer));
+- (MHSInstallmentPlan *)doCopyId:(NSString * _Nullable)id installmentPeriod:(MHSInt * _Nullable)installmentPeriod interestRate:(MHSDouble * _Nullable)interestRate amount:(MHSAmountData * _Nullable)amount upfrontFees:(MHSDouble * _Nullable)upfrontFees issuerCode:(NSString * _Nullable)issuerCode issuerNameEn:(NSString * _Nullable)issuerNameEn issuerNameAr:(NSString * _Nullable)issuerNameAr issuerLogoAr:(NSString * _Nullable)issuerLogoAr issuerLogoEn:(NSString * _Nullable)issuerLogoEn processingFeesType:(NSString * _Nullable)processingFeesType processingFeesAmount:(NSString * _Nullable)processingFeesAmount feeDisplayValue:(NSString * _Nullable)feeDisplayValue __attribute__((swift_name("doCopy(id:installmentPeriod:interestRate:amount:upfrontFees:issuerCode:issuerNameEn:issuerNameAr:issuerLogoAr:issuerLogoEn:processingFeesType:processingFeesAmount:feeDisplayValue:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -4972,6 +4979,11 @@ __attribute__((swift_name("InstallmentPlan")))
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="amount")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="fee_display_value")
 */
 
 /**
@@ -4992,6 +5004,36 @@ __attribute__((swift_name("InstallmentPlan")))
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="issuer_code")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="issuer_logo_ar")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="issuer_logo_en")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="issuer_name_ar")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="issuer_name_en")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="processing_fees_amount")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="processing_fees_type")
 */
 
 /**
@@ -5179,12 +5221,15 @@ __attribute__((swift_name("Plan")))
 @interface MHSPlan : MHSBase <MHSCommonParcelable>
 @property (class, readonly, getter=companion) MHSPlanCompanion *companion __attribute__((swift_name("companion")));
 @property (readonly) NSString * _Nullable amountPerMonth __attribute__((swift_name("amountPerMonth")));
+@property (readonly) NSString * _Nullable feeDisplayValue __attribute__((swift_name("feeDisplayValue")));
 @property (readonly) NSString * _Nullable id __attribute__((swift_name("id")));
 @property (readonly) MHSInt * _Nullable installmentPeriod __attribute__((swift_name("installmentPeriod")));
 @property (readonly) MHSDouble * _Nullable interestRate __attribute__((swift_name("interestRate")));
+@property (readonly) NSString * _Nullable processingFeesAmount __attribute__((swift_name("processingFeesAmount")));
+@property (readonly) NSString * _Nullable processingFeesType __attribute__((swift_name("processingFeesType")));
 @property (readonly) MHSDouble * _Nullable upfrontFees __attribute__((swift_name("upfrontFees")));
-- (instancetype)initWithId:(NSString * _Nullable)id installmentPeriod:(MHSInt * _Nullable)installmentPeriod interestRate:(MHSDouble * _Nullable)interestRate amountPerMonth:(NSString * _Nullable)amountPerMonth upfrontFees:(MHSDouble * _Nullable)upfrontFees __attribute__((swift_name("init(id:installmentPeriod:interestRate:amountPerMonth:upfrontFees:)"))) __attribute__((objc_designated_initializer));
-- (MHSPlan *)doCopyId:(NSString * _Nullable)id installmentPeriod:(MHSInt * _Nullable)installmentPeriod interestRate:(MHSDouble * _Nullable)interestRate amountPerMonth:(NSString * _Nullable)amountPerMonth upfrontFees:(MHSDouble * _Nullable)upfrontFees __attribute__((swift_name("doCopy(id:installmentPeriod:interestRate:amountPerMonth:upfrontFees:)")));
+- (instancetype)initWithId:(NSString * _Nullable)id installmentPeriod:(MHSInt * _Nullable)installmentPeriod interestRate:(MHSDouble * _Nullable)interestRate amountPerMonth:(NSString * _Nullable)amountPerMonth upfrontFees:(MHSDouble * _Nullable)upfrontFees processingFeesType:(NSString * _Nullable)processingFeesType processingFeesAmount:(NSString * _Nullable)processingFeesAmount feeDisplayValue:(NSString * _Nullable)feeDisplayValue __attribute__((swift_name("init(id:installmentPeriod:interestRate:amountPerMonth:upfrontFees:processingFeesType:processingFeesAmount:feeDisplayValue:)"))) __attribute__((objc_designated_initializer));
+- (MHSPlan *)doCopyId:(NSString * _Nullable)id installmentPeriod:(MHSInt * _Nullable)installmentPeriod interestRate:(MHSDouble * _Nullable)interestRate amountPerMonth:(NSString * _Nullable)amountPerMonth upfrontFees:(MHSDouble * _Nullable)upfrontFees processingFeesType:(NSString * _Nullable)processingFeesType processingFeesAmount:(NSString * _Nullable)processingFeesAmount feeDisplayValue:(NSString * _Nullable)feeDisplayValue __attribute__((swift_name("doCopy(id:installmentPeriod:interestRate:amountPerMonth:upfrontFees:processingFeesType:processingFeesAmount:feeDisplayValue:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -5192,6 +5237,11 @@ __attribute__((swift_name("Plan")))
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="amount_per_month")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="fee_display_value")
 */
 
 /**
@@ -5207,6 +5257,16 @@ __attribute__((swift_name("Plan")))
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="rate")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="processing_fees_amount")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="processing_fees_type")
 */
 
 /**
@@ -5291,8 +5351,12 @@ __attribute__((swift_name("ProviderRelatedFields")))
 @interface MHSProviderRelatedFields : MHSBase <MHSCommonParcelable>
 @property (class, readonly, getter=companion) MHSProviderRelatedFieldsCompanion *companion __attribute__((swift_name("companion")));
 @property (readonly) NSString * _Nullable issuerCode __attribute__((swift_name("issuerCode")));
-- (instancetype)initWithIssuerCode:(NSString * _Nullable)issuerCode __attribute__((swift_name("init(issuerCode:)"))) __attribute__((objc_designated_initializer));
-- (MHSProviderRelatedFields *)doCopyIssuerCode:(NSString * _Nullable)issuerCode __attribute__((swift_name("doCopy(issuerCode:)")));
+@property (readonly) NSString * _Nullable issuerLogoAr __attribute__((swift_name("issuerLogoAr")));
+@property (readonly) NSString * _Nullable issuerLogoEn __attribute__((swift_name("issuerLogoEn")));
+@property (readonly) NSString * _Nullable issuerNameAr __attribute__((swift_name("issuerNameAr")));
+@property (readonly) NSString * _Nullable issuerNameEn __attribute__((swift_name("issuerNameEn")));
+- (instancetype)initWithIssuerCode:(NSString * _Nullable)issuerCode issuerNameAr:(NSString * _Nullable)issuerNameAr issuerNameEn:(NSString * _Nullable)issuerNameEn issuerLogoAr:(NSString * _Nullable)issuerLogoAr issuerLogoEn:(NSString * _Nullable)issuerLogoEn __attribute__((swift_name("init(issuerCode:issuerNameAr:issuerNameEn:issuerLogoAr:issuerLogoEn:)"))) __attribute__((objc_designated_initializer));
+- (MHSProviderRelatedFields *)doCopyIssuerCode:(NSString * _Nullable)issuerCode issuerNameAr:(NSString * _Nullable)issuerNameAr issuerNameEn:(NSString * _Nullable)issuerNameEn issuerLogoAr:(NSString * _Nullable)issuerLogoAr issuerLogoEn:(NSString * _Nullable)issuerLogoEn __attribute__((swift_name("doCopy(issuerCode:issuerNameAr:issuerNameEn:issuerLogoAr:issuerLogoEn:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -5300,6 +5364,26 @@ __attribute__((swift_name("ProviderRelatedFields")))
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="issuer_code")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="issuer_logo_ar")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="issuer_logo_en")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="issuer_name_ar")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="issuer_name_en")
 */
 @end
 

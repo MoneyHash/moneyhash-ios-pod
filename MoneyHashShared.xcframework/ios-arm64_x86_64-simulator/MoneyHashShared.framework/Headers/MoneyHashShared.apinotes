@@ -4713,6 +4713,10 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "id"
     Type: "NSString * _Nullable"
+  - Name: "latestStatus"
+    PropertyKind: "Instance"
+    SwiftName: "latestStatus"
+    Type: "MHSOperationStatus * _Nullable"
   - Name: "refundType"
     PropertyKind: "Instance"
     SwiftName: "refundType"
@@ -4730,9 +4734,9 @@ Classes:
     SwiftName: "type"
     Type: "NSString * _Nullable"
   Methods:
-  - Selector: "initWithAmount:refundType:statuses:id:type:status:"
+  - Selector: "initWithAmount:refundType:statuses:latestStatus:id:type:status:"
     MethodKind: "Instance"
-    SwiftName: "init(amount:refundType:statuses:id:type:status:)"
+    SwiftName: "init(amount:refundType:statuses:latestStatus:id:type:status:)"
     Parameters:
     - Position: 0
       Type: "MHSOperationAmount * _Nullable"
@@ -4741,14 +4745,16 @@ Classes:
     - Position: 2
       Type: "NSArray<MHSOperationStatus *> * _Nullable"
     - Position: 3
-      Type: "NSString * _Nullable"
+      Type: "MHSOperationStatus * _Nullable"
     - Position: 4
       Type: "NSString * _Nullable"
     - Position: 5
       Type: "NSString * _Nullable"
-  - Selector: "doCopyAmount:refundType:statuses:id:type:status:"
+    - Position: 6
+      Type: "NSString * _Nullable"
+  - Selector: "doCopyAmount:refundType:statuses:latestStatus:id:type:status:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(amount:refundType:statuses:id:type:status:)"
+    SwiftName: "doCopy(amount:refundType:statuses:latestStatus:id:type:status:)"
     ResultType: "MHSTransactionOperation * _Nonnull"
     Parameters:
     - Position: 0
@@ -4758,10 +4764,12 @@ Classes:
     - Position: 2
       Type: "NSArray<MHSOperationStatus *> * _Nullable"
     - Position: 3
-      Type: "NSString * _Nullable"
+      Type: "MHSOperationStatus * _Nullable"
     - Position: 4
       Type: "NSString * _Nullable"
     - Position: 5
+      Type: "NSString * _Nullable"
+    - Position: 6
       Type: "NSString * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
@@ -4800,18 +4808,30 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "id"
     Type: "NSString * _Nullable"
+  - Name: "localizedMessage"
+    PropertyKind: "Instance"
+    SwiftName: "localizedMessage"
+    Type: "NSString * _Nullable"
   - Name: "message"
     PropertyKind: "Instance"
     SwiftName: "message"
+    Type: "NSString * _Nullable"
+  - Name: "providerErrorCode"
+    PropertyKind: "Instance"
+    SwiftName: "providerErrorCode"
+    Type: "NSString * _Nullable"
+  - Name: "providerErrorMessage"
+    PropertyKind: "Instance"
+    SwiftName: "providerErrorMessage"
     Type: "NSString * _Nullable"
   - Name: "value"
     PropertyKind: "Instance"
     SwiftName: "value"
     Type: "NSString * _Nullable"
   Methods:
-  - Selector: "initWithCode:created:id:message:value:"
+  - Selector: "initWithCode:created:id:message:localizedMessage:providerErrorCode:providerErrorMessage:value:"
     MethodKind: "Instance"
-    SwiftName: "init(code:created:id:message:value:)"
+    SwiftName: "init(code:created:id:message:localizedMessage:providerErrorCode:providerErrorMessage:value:)"
     Parameters:
     - Position: 0
       Type: "NSString * _Nullable"
@@ -4823,9 +4843,15 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 4
       Type: "NSString * _Nullable"
-  - Selector: "doCopyCode:created:id:message:value:"
+    - Position: 5
+      Type: "NSString * _Nullable"
+    - Position: 6
+      Type: "NSString * _Nullable"
+    - Position: 7
+      Type: "NSString * _Nullable"
+  - Selector: "doCopyCode:created:id:message:localizedMessage:providerErrorCode:providerErrorMessage:value:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(code:created:id:message:value:)"
+    SwiftName: "doCopy(code:created:id:message:localizedMessage:providerErrorCode:providerErrorMessage:value:)"
     ResultType: "MHSOperationStatus * _Nonnull"
     Parameters:
     - Position: 0
@@ -4837,6 +4863,12 @@ Classes:
     - Position: 3
       Type: "NSString * _Nullable"
     - Position: 4
+      Type: "NSString * _Nullable"
+    - Position: 5
+      Type: "NSString * _Nullable"
+    - Position: 6
+      Type: "NSString * _Nullable"
+    - Position: 7
       Type: "NSString * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"

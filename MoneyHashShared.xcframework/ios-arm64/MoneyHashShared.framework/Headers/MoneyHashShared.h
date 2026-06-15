@@ -1552,10 +1552,13 @@ __attribute__((swift_name("OperationStatus")))
 @property (readonly) NSString * _Nullable code __attribute__((swift_name("code")));
 @property (readonly) NSString * _Nullable created __attribute__((swift_name("created")));
 @property (readonly) NSString * _Nullable id __attribute__((swift_name("id")));
+@property (readonly) NSString * _Nullable localizedMessage __attribute__((swift_name("localizedMessage")));
 @property (readonly) NSString * _Nullable message __attribute__((swift_name("message")));
+@property (readonly) NSString * _Nullable providerErrorCode __attribute__((swift_name("providerErrorCode")));
+@property (readonly) NSString * _Nullable providerErrorMessage __attribute__((swift_name("providerErrorMessage")));
 @property (readonly) NSString * _Nullable value __attribute__((swift_name("value")));
-- (instancetype)initWithCode:(NSString * _Nullable)code created:(NSString * _Nullable)created id:(NSString * _Nullable)id message:(NSString * _Nullable)message value:(NSString * _Nullable)value __attribute__((swift_name("init(code:created:id:message:value:)"))) __attribute__((objc_designated_initializer));
-- (MHSOperationStatus *)doCopyCode:(NSString * _Nullable)code created:(NSString * _Nullable)created id:(NSString * _Nullable)id message:(NSString * _Nullable)message value:(NSString * _Nullable)value __attribute__((swift_name("doCopy(code:created:id:message:value:)")));
+- (instancetype)initWithCode:(NSString * _Nullable)code created:(NSString * _Nullable)created id:(NSString * _Nullable)id message:(NSString * _Nullable)message localizedMessage:(NSString * _Nullable)localizedMessage providerErrorCode:(NSString * _Nullable)providerErrorCode providerErrorMessage:(NSString * _Nullable)providerErrorMessage value:(NSString * _Nullable)value __attribute__((swift_name("init(code:created:id:message:localizedMessage:providerErrorCode:providerErrorMessage:value:)"))) __attribute__((objc_designated_initializer));
+- (MHSOperationStatus *)doCopyCode:(NSString * _Nullable)code created:(NSString * _Nullable)created id:(NSString * _Nullable)id message:(NSString * _Nullable)message localizedMessage:(NSString * _Nullable)localizedMessage providerErrorCode:(NSString * _Nullable)providerErrorCode providerErrorMessage:(NSString * _Nullable)providerErrorMessage value:(NSString * _Nullable)value __attribute__((swift_name("doCopy(code:created:id:message:localizedMessage:providerErrorCode:providerErrorMessage:value:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -1577,7 +1580,22 @@ __attribute__((swift_name("OperationStatus")))
 
 /**
  * @note annotations
+ *   kotlinx.serialization.SerialName(value="localized_message")
+*/
+
+/**
+ * @note annotations
  *   kotlinx.serialization.SerialName(value="message")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="provider_error_code")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="provider_error_message")
 */
 
 /**
@@ -1678,12 +1696,13 @@ __attribute__((swift_name("TransactionOperation")))
 @property (class, readonly, getter=companion) MHSTransactionOperationCompanion *companion __attribute__((swift_name("companion")));
 @property (readonly) MHSOperationAmount * _Nullable amount __attribute__((swift_name("amount")));
 @property (readonly) NSString * _Nullable id __attribute__((swift_name("id")));
+@property (readonly) MHSOperationStatus * _Nullable latestStatus __attribute__((swift_name("latestStatus")));
 @property (readonly) NSString * _Nullable refundType __attribute__((swift_name("refundType")));
 @property (readonly) NSString * _Nullable status __attribute__((swift_name("status")));
 @property (readonly) NSArray<MHSOperationStatus *> * _Nullable statuses __attribute__((swift_name("statuses")));
 @property (readonly) NSString * _Nullable type __attribute__((swift_name("type")));
-- (instancetype)initWithAmount:(MHSOperationAmount * _Nullable)amount refundType:(NSString * _Nullable)refundType statuses:(NSArray<MHSOperationStatus *> * _Nullable)statuses id:(NSString * _Nullable)id type:(NSString * _Nullable)type status:(NSString * _Nullable)status __attribute__((swift_name("init(amount:refundType:statuses:id:type:status:)"))) __attribute__((objc_designated_initializer));
-- (MHSTransactionOperation *)doCopyAmount:(MHSOperationAmount * _Nullable)amount refundType:(NSString * _Nullable)refundType statuses:(NSArray<MHSOperationStatus *> * _Nullable)statuses id:(NSString * _Nullable)id type:(NSString * _Nullable)type status:(NSString * _Nullable)status __attribute__((swift_name("doCopy(amount:refundType:statuses:id:type:status:)")));
+- (instancetype)initWithAmount:(MHSOperationAmount * _Nullable)amount refundType:(NSString * _Nullable)refundType statuses:(NSArray<MHSOperationStatus *> * _Nullable)statuses latestStatus:(MHSOperationStatus * _Nullable)latestStatus id:(NSString * _Nullable)id type:(NSString * _Nullable)type status:(NSString * _Nullable)status __attribute__((swift_name("init(amount:refundType:statuses:latestStatus:id:type:status:)"))) __attribute__((objc_designated_initializer));
+- (MHSTransactionOperation *)doCopyAmount:(MHSOperationAmount * _Nullable)amount refundType:(NSString * _Nullable)refundType statuses:(NSArray<MHSOperationStatus *> * _Nullable)statuses latestStatus:(MHSOperationStatus * _Nullable)latestStatus id:(NSString * _Nullable)id type:(NSString * _Nullable)type status:(NSString * _Nullable)status __attribute__((swift_name("doCopy(amount:refundType:statuses:latestStatus:id:type:status:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -1696,6 +1715,11 @@ __attribute__((swift_name("TransactionOperation")))
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="id")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="latest_status")
 */
 
 /**
@@ -5076,7 +5100,7 @@ __attribute__((swift_name("InstallmentPlanData")))
 
 /**
  * @note annotations
- *   kotlinx.serialization.SerialName(value="issuerCode")
+ *   kotlinx.serialization.SerialName(value="issuer_code")
 */
 @end
 

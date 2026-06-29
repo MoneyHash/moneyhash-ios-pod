@@ -7877,6 +7877,43 @@
           },
           {
             "kind": "Var",
+            "name": "troy",
+            "printedName": "troy",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHash.Brand.Type) -> MoneyHash.Brand",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Brand",
+                    "printedName": "MoneyHash.Brand",
+                    "usr": "s:9MoneyHash5BrandO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHash.Brand.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Brand",
+                        "printedName": "MoneyHash.Brand",
+                        "usr": "s:9MoneyHash5BrandO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9MoneyHash5BrandO4troyyA2CmF",
+            "mangledName": "$s9MoneyHash5BrandO4troyyA2CmF",
+            "moduleName": "MoneyHash"
+          },
+          {
+            "kind": "Var",
             "name": "amex",
             "printedName": "amex",
             "children": [
@@ -14225,9 +14262,8 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "CardFieldState",
-                "printedName": "MoneyHash.CardFieldState",
-                "usr": "s:9MoneyHash14CardFieldStateV"
+                "name": "Void",
+                "printedName": "()"
               },
               {
                 "kind": "TypeNominal",
@@ -14243,8 +14279,39 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9MoneyHash0aB3SDKP11updateField9fieldType12currentValueAA04CardE5StateVAA0jeG0O_SStF",
-            "mangledName": "$s9MoneyHash0aB3SDKP11updateField9fieldType12currentValueAA04CardE5StateVAA0jeG0O_SStF",
+            "usr": "s:9MoneyHash0aB3SDKP11updateField9fieldType12currentValueyAA04CardeG0O_SStF",
+            "mangledName": "$s9MoneyHash0aB3SDKP11updateField9fieldType12currentValueyAA04CardeG0O_SStF",
+            "moduleName": "MoneyHash",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
+            "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "validateField",
+            "printedName": "validateField(fieldType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CardFieldState",
+                "printedName": "MoneyHash.CardFieldState",
+                "usr": "s:9MoneyHash14CardFieldStateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CardFieldType",
+                "printedName": "MoneyHash.CardFieldType",
+                "usr": "s:9MoneyHash13CardFieldTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash0aB3SDKP13validateField9fieldTypeAA04CardE5StateVAA0heG0O_tF",
+            "mangledName": "$s9MoneyHash0aB3SDKP13validateField9fieldTypeAA04CardE5StateVAA0heG0O_tF",
             "moduleName": "MoneyHash",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
             "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
@@ -41899,24 +41966,10 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/UIFields\/SecureTextFieldViewModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 676,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/UIFields\/SecureTextFieldViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 457,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/UIFields\/SecureTextFieldViewModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 969,
-      "length": 1,
-      "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ProductItem.swift",
@@ -42103,14 +42156,14 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Core\/IntentUseCase.swift",
       "kind": "IntegerLiteral",
-      "offset": 11246,
+      "offset": 11167,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Core\/IntentUseCase.swift",
       "kind": "IntegerLiteral",
-      "offset": 11273,
+      "offset": 11194,
       "length": 1,
       "value": "0"
     },
@@ -42313,14 +42366,14 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Core\/DefaultMoneyHashSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 16710,
+      "offset": 16838,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Core\/DefaultMoneyHashSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 16737,
+      "offset": 16865,
       "length": 1,
       "value": "0"
     },
@@ -42588,7 +42641,7 @@
       "kind": "StringLiteral",
       "offset": 97,
       "length": 8,
-      "value": "\"4.0.21\""
+      "value": "\"4.0.22\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",

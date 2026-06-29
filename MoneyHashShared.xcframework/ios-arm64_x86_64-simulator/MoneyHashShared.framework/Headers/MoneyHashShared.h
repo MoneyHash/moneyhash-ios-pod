@@ -7288,6 +7288,7 @@ __attribute__((swift_name("Brand")))
 @property (class, readonly) MHSBrand *visa __attribute__((swift_name("visa")));
 @property (class, readonly) MHSBrand *mastercard __attribute__((swift_name("mastercard")));
 @property (class, readonly) MHSBrand *mada __attribute__((swift_name("mada")));
+@property (class, readonly) MHSBrand *troy __attribute__((swift_name("troy")));
 @property (class, readonly) MHSBrand *amex __attribute__((swift_name("amex")));
 @property (class, readonly) MHSBrand *unknown __attribute__((swift_name("unknown")));
 @property (class, readonly) NSArray<MHSBrand *> *entries __attribute__((swift_name("entries")));
@@ -8472,8 +8473,9 @@ __attribute__((swift_name("CardCollector")))
 */
 - (void)payIntentId:(NSString *)intentId cardData:(MHSVaultData *)cardData saveCard:(BOOL)saveCard billingFields:(NSDictionary<NSString *, NSString *> * _Nullable)billingFields shippingFields:(NSDictionary<NSString *, NSString *> * _Nullable)shippingFields installmentPlanData:(MHSInstallmentPlanData * _Nullable)installmentPlanData completionHandler:(void (^)(MHSPaymentIntentData * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("pay(intentId:cardData:saveCard:billingFields:shippingFields:installmentPlanData:completionHandler:)")));
 - (void)registerFieldFieldType:(MHSFieldType *)fieldType collectableField:(MHSSecureTextFieldVM *)collectableField __attribute__((swift_name("registerField(fieldType:collectableField:)")));
-- (MHSCardFieldState *)updateFieldFieldType:(MHSFieldType *)fieldType inputValue:(NSString *)inputValue __attribute__((swift_name("updateField(fieldType:inputValue:)")));
+- (void)updateFieldFieldType:(MHSFieldType *)fieldType inputValue:(NSString *)inputValue __attribute__((swift_name("updateField(fieldType:inputValue:)")));
 - (MHSCardFormState *)validate __attribute__((swift_name("validate()")));
+- (MHSCardFieldState *)validateFieldFieldType:(MHSFieldType *)fieldType __attribute__((swift_name("validateField(fieldType:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -8897,6 +8899,8 @@ __attribute__((swift_name("Ktor_client_coreDefaultRequest.DefaultRequestBuilder"
 @property int32_t port __attribute__((swift_name("port")));
 @property (readonly) MHSKtor_httpURLBuilder *url __attribute__((swift_name("url")));
 - (void)setAttributesBlock:(void (^)(id<MHSKtor_utilsAttributes>))block __attribute__((swift_name("setAttributes(block:)")));
+- (void)setCapabilityKey:(id<MHSKtor_client_coreHttpClientEngineCapability>)key capability:(id)capability __attribute__((swift_name("setCapability(key:capability:)")));
+- (void)unixSocketPath:(NSString *)path __attribute__((swift_name("unixSocket(path:)")));
 - (void)urlBlock:(void (^)(MHSKtor_httpURLBuilder *))block __attribute__((swift_name("url(block:)")));
 - (void)urlUrlString:(NSString *)urlString __attribute__((swift_name("url(urlString:)")));
 - (void)urlScheme:(NSString * _Nullable)scheme host:(NSString * _Nullable)host port:(MHSInt * _Nullable)port path:(NSString * _Nullable)path block:(void (^)(MHSKtor_httpURLBuilder *))block __attribute__((swift_name("url(scheme:host:port:path:block:)")));
@@ -9433,9 +9437,15 @@ __attribute__((swift_name("Ktor_utilsAttributes")))
 - (id _Nullable)getOrNullKey:(MHSKtor_utilsAttributeKey<id> *)key __attribute__((swift_name("getOrNull(key:)")));
 - (void)putKey:(MHSKtor_utilsAttributeKey<id> *)key value:(id)value __attribute__((swift_name("put(key:value:)")));
 - (void)removeKey:(MHSKtor_utilsAttributeKey<id> *)key __attribute__((swift_name("remove(key:)")));
+- (void)setKey:(MHSKtor_utilsAttributeKey<id> *)key value:(id)value __attribute__((swift_name("set(key:value:)")));
 - (id)takeKey:(MHSKtor_utilsAttributeKey<id> *)key __attribute__((swift_name("take(key:)")));
 - (id _Nullable)takeOrNullKey:(MHSKtor_utilsAttributeKey<id> *)key __attribute__((swift_name("takeOrNull(key:)")));
 @property (readonly) NSArray<MHSKtor_utilsAttributeKey<id> *> *allKeys __attribute__((swift_name("allKeys")));
+@end
+
+__attribute__((swift_name("Ktor_client_coreHttpClientEngineCapability")))
+@protocol MHSKtor_client_coreHttpClientEngineCapability
+@required
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -10076,11 +10086,6 @@ __attribute__((swift_name("Ktor_client_coreHttpClientConfig")))
 - (void)installPlugin:(id<MHSKtor_client_coreHttpClientPlugin>)plugin configure:(void (^)(id))configure __attribute__((swift_name("install(plugin:configure:)")));
 - (void)installKey:(NSString *)key block:(void (^)(MHSKtor_client_coreHttpClient *))block __attribute__((swift_name("install(key:block:)")));
 - (void)plusAssignOther:(MHSKtor_client_coreHttpClientConfig<T> *)other __attribute__((swift_name("plusAssign(other:)")));
-@end
-
-__attribute__((swift_name("Ktor_client_coreHttpClientEngineCapability")))
-@protocol MHSKtor_client_coreHttpClientEngineCapability
-@required
 @end
 
 __attribute__((objc_subclassing_restricted))

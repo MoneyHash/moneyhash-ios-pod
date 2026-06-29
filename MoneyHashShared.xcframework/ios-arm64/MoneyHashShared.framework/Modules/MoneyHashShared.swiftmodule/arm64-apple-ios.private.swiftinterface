@@ -1445,46 +1445,6 @@ extension MoneyHashShared.Type_ {
 extension MoneyHashShared.__Type_ {
   public func toSwiftEnum() -> MoneyHashShared.Type_
 }
-@frozen public enum Brand : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
-  case visa
-  case mastercard
-  case mada
-  case amex
-  case unknown
-  public var brandName: Swift.String {
-    get
-  }
-  public var name: Swift.String {
-    get
-  }
-  public var ordinal: Swift.Int32 {
-    get
-  }
-  public static var companion: MoneyHashShared.__Brand.Companion {
-    get
-  }
-  public static func _forceBridgeFromObjectiveC(_ source: MoneyHashShared.__Brand, result: inout MoneyHashShared.Brand?)
-  public static func _conditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.__Brand, result: inout MoneyHashShared.Brand?) -> Swift.Bool
-  public static func _unconditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.__Brand?) -> MoneyHashShared.Brand
-  public func _bridgeToObjectiveC() -> MoneyHashShared.__Brand
-  public typealias _ObjectiveCType = MoneyHashShared.__Brand
-  public typealias Companion = MoneyHashShared.__Brand.Companion
-  public static func == (a: MoneyHashShared.Brand, b: MoneyHashShared.Brand) -> Swift.Bool
-  public typealias AllCases = [MoneyHashShared.Brand]
-  nonisolated public static var allCases: [MoneyHashShared.Brand] {
-    get
-  }
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-extension MoneyHashShared.Brand {
-  public func toKotlinEnum() -> MoneyHashShared.__Brand
-}
-extension MoneyHashShared.__Brand {
-  public func toSwiftEnum() -> MoneyHashShared.Brand
-}
 @frozen public enum FieldType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
   case cardNumber
   case expireMonth
@@ -1527,6 +1487,47 @@ extension MoneyHashShared.FieldType {
 }
 extension MoneyHashShared.__FieldType {
   public func toSwiftEnum() -> MoneyHashShared.FieldType
+}
+@frozen public enum Brand : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case visa
+  case mastercard
+  case mada
+  case troy
+  case amex
+  case unknown
+  public var brandName: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static var companion: MoneyHashShared.__Brand.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: MoneyHashShared.__Brand, result: inout MoneyHashShared.Brand?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.__Brand, result: inout MoneyHashShared.Brand?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.__Brand?) -> MoneyHashShared.Brand
+  public func _bridgeToObjectiveC() -> MoneyHashShared.__Brand
+  public typealias _ObjectiveCType = MoneyHashShared.__Brand
+  public typealias Companion = MoneyHashShared.__Brand.Companion
+  public static func == (a: MoneyHashShared.Brand, b: MoneyHashShared.Brand) -> Swift.Bool
+  public typealias AllCases = [MoneyHashShared.Brand]
+  nonisolated public static var allCases: [MoneyHashShared.Brand] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension MoneyHashShared.Brand {
+  public func toKotlinEnum() -> MoneyHashShared.__Brand
+}
+extension MoneyHashShared.__Brand {
+  public func toSwiftEnum() -> MoneyHashShared.Brand
 }
 @frozen public enum ErrorType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
   case network
@@ -2191,10 +2192,10 @@ extension MoneyHashShared.InputFieldType : Swift.Sendable {}
 extension MoneyHashShared.InputFieldType : Swift.BitwiseCopyable {}
 extension MoneyHashShared.Type_ : Swift.Sendable {}
 extension MoneyHashShared.Type_ : Swift.BitwiseCopyable {}
-extension MoneyHashShared.Brand : Swift.Sendable {}
-extension MoneyHashShared.Brand : Swift.BitwiseCopyable {}
 extension MoneyHashShared.FieldType : Swift.Sendable {}
 extension MoneyHashShared.FieldType : Swift.BitwiseCopyable {}
+extension MoneyHashShared.Brand : Swift.Sendable {}
+extension MoneyHashShared.Brand : Swift.BitwiseCopyable {}
 extension MoneyHashShared.ErrorType : Swift.Sendable {}
 extension MoneyHashShared.ErrorType : Swift.BitwiseCopyable {}
 extension MoneyHashShared.Locale : Swift.Sendable {}

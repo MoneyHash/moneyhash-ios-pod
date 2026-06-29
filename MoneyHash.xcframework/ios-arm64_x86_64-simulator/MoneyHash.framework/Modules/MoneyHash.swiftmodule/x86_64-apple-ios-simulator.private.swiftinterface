@@ -196,6 +196,7 @@ public enum Brand : Swift.String, Swift.Codable {
   case visa
   case mastercard
   case mada
+  case troy
   case amex
   case unknown
   public init?(rawValue: Swift.String)
@@ -330,7 +331,8 @@ public protocol MoneyHashSDK {
   @available(iOS 16.0, *)
   @_Concurrency.MainActor func generateApplePayReceipt(depositAmount: Swift.Float, merchantIdentifier: Swift.String, currencyCode: Swift.String, countryCode: Swift.String, supportedNetworks: [Swift.String]?, merchantCapabilities: [Swift.String]?, recurringPayment: MoneyHash.RecurringPaymentRequest?, automaticReload: MoneyHash.AutomaticReloadPaymentRequest?) async throws -> MoneyHash.NativePayReceipt
   func isDeviceCompatible() -> Swift.Bool
-  func updateField(fieldType: MoneyHash.CardFieldType, currentValue: Swift.String) -> MoneyHash.CardFieldState
+  func updateField(fieldType: MoneyHash.CardFieldType, currentValue: Swift.String)
+  func validateField(fieldType: MoneyHash.CardFieldType) -> MoneyHash.CardFieldState
   func isValidForm() -> MoneyHash.CardFormState
   func collect(token: Swift.String?) async throws -> MoneyHash.VaultData?
   func pay(intentId: Swift.String, cardData: MoneyHash.VaultData, saveCard: Swift.Bool, billingData: [Swift.String : Swift.String]?, shippingData: [Swift.String : Swift.String]?, installmentPlanData: MoneyHash.InstallmentPlanData?) async throws -> MoneyHash.IntentDetails

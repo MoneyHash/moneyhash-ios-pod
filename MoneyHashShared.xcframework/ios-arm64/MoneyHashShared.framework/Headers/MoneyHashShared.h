@@ -3724,6 +3724,7 @@ __attribute__((swift_name("PaymentInformation")))
 @property (readonly) MHSBrandSettingsData * _Nullable brandSettings __attribute__((swift_name("brandSettings")));
 @property (readonly) MHSPaymentIntent * _Nullable intent __attribute__((swift_name("intent")));
 @property (readonly) MHSIntentState * _Nullable intentSdkState __attribute__((swift_name("intentSdkState")));
+@property (readonly) NSString * _Nullable intentSecret __attribute__((swift_name("intentSecret")));
 @property (readonly) MHSLastUsedMethod * _Nullable lastUsedMethod __attribute__((swift_name("lastUsedMethod")));
 @property (readonly) NSString * _Nullable nextAction __attribute__((swift_name("nextAction")));
 @property (readonly) NSArray<MHSSavedBankAccount *> * _Nullable savedBankAccounts __attribute__((swift_name("savedBankAccounts")));
@@ -3732,8 +3733,8 @@ __attribute__((swift_name("PaymentInformation")))
 @property (readonly) MHSSubscription * _Nullable subscription __attribute__((swift_name("subscription")));
 @property (readonly) MHSSubscriptionPlan * _Nullable subscriptionPlanDetails __attribute__((swift_name("subscriptionPlanDetails")));
 @property (readonly) MHSDouble * _Nullable wallet __attribute__((swift_name("wallet")));
-- (instancetype)initWithIntentSdkState:(MHSIntentState * _Nullable)intentSdkState selectedMethod:(NSString * _Nullable)selectedMethod nextAction:(NSString * _Nullable)nextAction intent:(MHSPaymentIntent * _Nullable)intent savedCards:(NSArray<MHSSavedCard *> * _Nullable)savedCards wallet:(MHSDouble * _Nullable)wallet brandSettings:(MHSBrandSettingsData * _Nullable)brandSettings actionData:(MHSIntentActionData * _Nullable)actionData lastUsedMethod:(MHSLastUsedMethod * _Nullable)lastUsedMethod subscriptionPlanDetails:(MHSSubscriptionPlan * _Nullable)subscriptionPlanDetails subscription:(MHSSubscription * _Nullable)subscription savedBankAccounts:(NSArray<MHSSavedBankAccount *> * _Nullable)savedBankAccounts __attribute__((swift_name("init(intentSdkState:selectedMethod:nextAction:intent:savedCards:wallet:brandSettings:actionData:lastUsedMethod:subscriptionPlanDetails:subscription:savedBankAccounts:)"))) __attribute__((objc_designated_initializer));
-- (MHSPaymentInformation *)doCopyIntentSdkState:(MHSIntentState * _Nullable)intentSdkState selectedMethod:(NSString * _Nullable)selectedMethod nextAction:(NSString * _Nullable)nextAction intent:(MHSPaymentIntent * _Nullable)intent savedCards:(NSArray<MHSSavedCard *> * _Nullable)savedCards wallet:(MHSDouble * _Nullable)wallet brandSettings:(MHSBrandSettingsData * _Nullable)brandSettings actionData:(MHSIntentActionData * _Nullable)actionData lastUsedMethod:(MHSLastUsedMethod * _Nullable)lastUsedMethod subscriptionPlanDetails:(MHSSubscriptionPlan * _Nullable)subscriptionPlanDetails subscription:(MHSSubscription * _Nullable)subscription savedBankAccounts:(NSArray<MHSSavedBankAccount *> * _Nullable)savedBankAccounts __attribute__((swift_name("doCopy(intentSdkState:selectedMethod:nextAction:intent:savedCards:wallet:brandSettings:actionData:lastUsedMethod:subscriptionPlanDetails:subscription:savedBankAccounts:)")));
+- (instancetype)initWithIntentSdkState:(MHSIntentState * _Nullable)intentSdkState selectedMethod:(NSString * _Nullable)selectedMethod nextAction:(NSString * _Nullable)nextAction intentSecret:(NSString * _Nullable)intentSecret intent:(MHSPaymentIntent * _Nullable)intent savedCards:(NSArray<MHSSavedCard *> * _Nullable)savedCards wallet:(MHSDouble * _Nullable)wallet brandSettings:(MHSBrandSettingsData * _Nullable)brandSettings actionData:(MHSIntentActionData * _Nullable)actionData lastUsedMethod:(MHSLastUsedMethod * _Nullable)lastUsedMethod subscriptionPlanDetails:(MHSSubscriptionPlan * _Nullable)subscriptionPlanDetails subscription:(MHSSubscription * _Nullable)subscription savedBankAccounts:(NSArray<MHSSavedBankAccount *> * _Nullable)savedBankAccounts __attribute__((swift_name("init(intentSdkState:selectedMethod:nextAction:intentSecret:intent:savedCards:wallet:brandSettings:actionData:lastUsedMethod:subscriptionPlanDetails:subscription:savedBankAccounts:)"))) __attribute__((objc_designated_initializer));
+- (MHSPaymentInformation *)doCopyIntentSdkState:(MHSIntentState * _Nullable)intentSdkState selectedMethod:(NSString * _Nullable)selectedMethod nextAction:(NSString * _Nullable)nextAction intentSecret:(NSString * _Nullable)intentSecret intent:(MHSPaymentIntent * _Nullable)intent savedCards:(NSArray<MHSSavedCard *> * _Nullable)savedCards wallet:(MHSDouble * _Nullable)wallet brandSettings:(MHSBrandSettingsData * _Nullable)brandSettings actionData:(MHSIntentActionData * _Nullable)actionData lastUsedMethod:(MHSLastUsedMethod * _Nullable)lastUsedMethod subscriptionPlanDetails:(MHSSubscriptionPlan * _Nullable)subscriptionPlanDetails subscription:(MHSSubscription * _Nullable)subscription savedBankAccounts:(NSArray<MHSSavedBankAccount *> * _Nullable)savedBankAccounts __attribute__((swift_name("doCopy(intentSdkState:selectedMethod:nextAction:intentSecret:intent:savedCards:wallet:brandSettings:actionData:lastUsedMethod:subscriptionPlanDetails:subscription:savedBankAccounts:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -3756,6 +3757,11 @@ __attribute__((swift_name("PaymentInformation")))
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="intent_sdk_state")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="intent_secret")
 */
 
 /**
@@ -7961,11 +7967,13 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("MoneyHashStore")))
 @interface MHSMoneyHashStore : MHSBase
 @property (class, readonly, getter=shared) MHSMoneyHashStore *shared __attribute__((swift_name("shared")));
+@property (readonly) NSString * _Nullable intentSecret __attribute__((swift_name("intentSecret")));
 + (instancetype)alloc __attribute__((unavailable));
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)moneyHashStore __attribute__((swift_name("init()")));
 - (void)setCardFormConfigurationValue:(MHSCardFormConfiguration *)value __attribute__((swift_name("setCardFormConfiguration(value:)")));
 - (void)setCrossPlatformVersionValue:(NSString * _Nullable)value __attribute__((swift_name("setCrossPlatformVersion(value:)")));
+- (void)setIntentSecretValue:(NSString * _Nullable)value __attribute__((swift_name("setIntentSecret(value:)")));
 - (void)setPublicKeyValue:(NSString * _Nullable)value __attribute__((swift_name("setPublicKey(value:)")));
 @end
 
@@ -8711,6 +8719,8 @@ __attribute__((swift_name("Constants")))
 @property (readonly) NSString *CP_VERSION_HEADER __attribute__((swift_name("CP_VERSION_HEADER")));
 @property (readonly) NSString *CVV_END_POINT __attribute__((swift_name("CVV_END_POINT")));
 @property (readonly) NSString *GOOGLE_PAY __attribute__((swift_name("GOOGLE_PAY")));
+@property (readonly) NSString *INTENT_SECRET_HEADER __attribute__((swift_name("INTENT_SECRET_HEADER")));
+@property (readonly) NSString *INTENT_SECRET_QUERY_KEY __attribute__((swift_name("INTENT_SECRET_QUERY_KEY")));
 @property (readonly) NSString *MH_DATA_KEY __attribute__((swift_name("MH_DATA_KEY")));
 @property (readonly) NSString *NATIVE_PAY_KEY __attribute__((swift_name("NATIVE_PAY_KEY")));
 @property (readonly) NSString *PUBLIC_KEY_HEADER_KEY __attribute__((swift_name("PUBLIC_KEY_HEADER_KEY")));

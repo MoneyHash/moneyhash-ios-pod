@@ -2279,6 +2279,10 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "intentSdkState"
     Type: "MHSIntentState * _Nullable"
+  - Name: "intentSecret"
+    PropertyKind: "Instance"
+    SwiftName: "intentSecret"
+    Type: "NSString * _Nullable"
   - Name: "lastUsedMethod"
     PropertyKind: "Instance"
     SwiftName: "lastUsedMethod"
@@ -2312,9 +2316,9 @@ Classes:
     SwiftName: "wallet"
     Type: "MHSDouble * _Nullable"
   Methods:
-  - Selector: "initWithIntentSdkState:selectedMethod:nextAction:intent:savedCards:wallet:brandSettings:actionData:lastUsedMethod:subscriptionPlanDetails:subscription:savedBankAccounts:"
+  - Selector: "initWithIntentSdkState:selectedMethod:nextAction:intentSecret:intent:savedCards:wallet:brandSettings:actionData:lastUsedMethod:subscriptionPlanDetails:subscription:savedBankAccounts:"
     MethodKind: "Instance"
-    SwiftName: "init(intentSdkState:selectedMethod:nextAction:intent:savedCards:wallet:brandSettings:actionData:lastUsedMethod:subscriptionPlanDetails:subscription:savedBankAccounts:)"
+    SwiftName: "init(intentSdkState:selectedMethod:nextAction:intentSecret:intent:savedCards:wallet:brandSettings:actionData:lastUsedMethod:subscriptionPlanDetails:subscription:savedBankAccounts:)"
     Parameters:
     - Position: 0
       Type: "MHSIntentState * _Nullable"
@@ -2323,26 +2327,28 @@ Classes:
     - Position: 2
       Type: "NSString * _Nullable"
     - Position: 3
-      Type: "MHSPaymentIntent * _Nullable"
+      Type: "NSString * _Nullable"
     - Position: 4
-      Type: "NSArray<MHSSavedCard *> * _Nullable"
+      Type: "MHSPaymentIntent * _Nullable"
     - Position: 5
-      Type: "MHSDouble * _Nullable"
+      Type: "NSArray<MHSSavedCard *> * _Nullable"
     - Position: 6
-      Type: "MHSBrandSettingsData * _Nullable"
+      Type: "MHSDouble * _Nullable"
     - Position: 7
-      Type: "MHSIntentActionData * _Nullable"
+      Type: "MHSBrandSettingsData * _Nullable"
     - Position: 8
-      Type: "MHSLastUsedMethod * _Nullable"
+      Type: "MHSIntentActionData * _Nullable"
     - Position: 9
-      Type: "MHSSubscriptionPlan * _Nullable"
+      Type: "MHSLastUsedMethod * _Nullable"
     - Position: 10
-      Type: "MHSSubscription * _Nullable"
+      Type: "MHSSubscriptionPlan * _Nullable"
     - Position: 11
+      Type: "MHSSubscription * _Nullable"
+    - Position: 12
       Type: "NSArray<MHSSavedBankAccount *> * _Nullable"
-  - Selector: "doCopyIntentSdkState:selectedMethod:nextAction:intent:savedCards:wallet:brandSettings:actionData:lastUsedMethod:subscriptionPlanDetails:subscription:savedBankAccounts:"
+  - Selector: "doCopyIntentSdkState:selectedMethod:nextAction:intentSecret:intent:savedCards:wallet:brandSettings:actionData:lastUsedMethod:subscriptionPlanDetails:subscription:savedBankAccounts:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(intentSdkState:selectedMethod:nextAction:intent:savedCards:wallet:brandSettings:actionData:lastUsedMethod:subscriptionPlanDetails:subscription:savedBankAccounts:)"
+    SwiftName: "doCopy(intentSdkState:selectedMethod:nextAction:intentSecret:intent:savedCards:wallet:brandSettings:actionData:lastUsedMethod:subscriptionPlanDetails:subscription:savedBankAccounts:)"
     ResultType: "MHSPaymentInformation * _Nonnull"
     Parameters:
     - Position: 0
@@ -2352,22 +2358,24 @@ Classes:
     - Position: 2
       Type: "NSString * _Nullable"
     - Position: 3
-      Type: "MHSPaymentIntent * _Nullable"
+      Type: "NSString * _Nullable"
     - Position: 4
-      Type: "NSArray<MHSSavedCard *> * _Nullable"
+      Type: "MHSPaymentIntent * _Nullable"
     - Position: 5
-      Type: "MHSDouble * _Nullable"
+      Type: "NSArray<MHSSavedCard *> * _Nullable"
     - Position: 6
-      Type: "MHSBrandSettingsData * _Nullable"
+      Type: "MHSDouble * _Nullable"
     - Position: 7
-      Type: "MHSIntentActionData * _Nullable"
+      Type: "MHSBrandSettingsData * _Nullable"
     - Position: 8
-      Type: "MHSLastUsedMethod * _Nullable"
+      Type: "MHSIntentActionData * _Nullable"
     - Position: 9
-      Type: "MHSSubscriptionPlan * _Nullable"
+      Type: "MHSLastUsedMethod * _Nullable"
     - Position: 10
-      Type: "MHSSubscription * _Nullable"
+      Type: "MHSSubscriptionPlan * _Nullable"
     - Position: 11
+      Type: "MHSSubscription * _Nullable"
+    - Position: 12
       Type: "NSArray<MHSSavedBankAccount *> * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
@@ -8066,6 +8074,11 @@ Classes:
     Availability: "nonswift"
 - Name: "MHSMoneyHashStore"
   SwiftName: "MoneyHashStore"
+  Properties:
+  - Name: "intentSecret"
+    PropertyKind: "Instance"
+    SwiftName: "intentSecret"
+    Type: "NSString * _Nullable"
   Methods:
   - Selector: "setCardFormConfigurationValue:"
     MethodKind: "Instance"
@@ -8077,6 +8090,13 @@ Classes:
   - Selector: "setCrossPlatformVersionValue:"
     MethodKind: "Instance"
     SwiftName: "setCrossPlatformVersion(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+  - Selector: "setIntentSecretValue:"
+    MethodKind: "Instance"
+    SwiftName: "setIntentSecret(value:)"
     ResultType: "void"
     Parameters:
     - Position: 0
@@ -11562,6 +11582,14 @@ Classes:
   - Name: "GOOGLE_PAY"
     PropertyKind: "Instance"
     SwiftName: "GOOGLE_PAY"
+    Type: "NSString * _Nonnull"
+  - Name: "INTENT_SECRET_HEADER"
+    PropertyKind: "Instance"
+    SwiftName: "INTENT_SECRET_HEADER"
+    Type: "NSString * _Nonnull"
+  - Name: "INTENT_SECRET_QUERY_KEY"
+    PropertyKind: "Instance"
+    SwiftName: "INTENT_SECRET_QUERY_KEY"
     Type: "NSString * _Nonnull"
   - Name: "MH_DATA_KEY"
     PropertyKind: "Instance"

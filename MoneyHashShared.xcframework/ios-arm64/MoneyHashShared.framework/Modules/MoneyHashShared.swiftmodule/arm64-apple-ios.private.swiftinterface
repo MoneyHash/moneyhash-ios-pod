@@ -525,6 +525,10 @@ extension MoneyHashShared.PaymentService {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func useSelfWallet(paymentIntentId: Swift.String) async throws -> MoneyHashShared.PaymentIntentData
 }
+extension MoneyHashShared.FeatureFlagService {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getFeatureFlag(featureName: Swift.String) async throws -> MoneyHashShared.FeatureFlagData
+}
 extension MoneyHashShared.PaymentUseCase {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func deleteSavedCard(cardTokenId: Swift.String, intentSecret: Swift.String) async throws -> MoneyHashShared.StatusResponse
@@ -570,6 +574,10 @@ extension MoneyHashShared.PaymentUseCase {
   public func updateDiscount(intentId: Swift.String, discount: MoneyHashShared.DiscountItem) async throws -> MoneyHashShared.DiscountResponse
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func updateFees(intentId: Swift.String, fees: [MoneyHashShared.FeeItem]) async throws -> MoneyHashShared.FeesResponse
+}
+extension MoneyHashShared.FeatureFlagUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func isEnabled(flag: MoneyHashShared.FeatureFlag) async throws -> MoneyHashShared.KotlinBoolean
 }
 extension MoneyHashShared.CardCollector {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -1445,6 +1453,42 @@ extension MoneyHashShared.Type_ {
 extension MoneyHashShared.__Type_ {
   public func toSwiftEnum() -> MoneyHashShared.Type_
 }
+@frozen public enum FeatureFlag : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case fetchIntentBeforeThrowingUserCancel
+  public var key: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static var companion: MoneyHashShared.__FeatureFlag.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: MoneyHashShared.__FeatureFlag, result: inout MoneyHashShared.FeatureFlag?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.__FeatureFlag, result: inout MoneyHashShared.FeatureFlag?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: MoneyHashShared.__FeatureFlag?) -> MoneyHashShared.FeatureFlag
+  public func _bridgeToObjectiveC() -> MoneyHashShared.__FeatureFlag
+  public typealias _ObjectiveCType = MoneyHashShared.__FeatureFlag
+  public typealias Companion = MoneyHashShared.__FeatureFlag.Companion
+  public static func == (a: MoneyHashShared.FeatureFlag, b: MoneyHashShared.FeatureFlag) -> Swift.Bool
+  public typealias AllCases = [MoneyHashShared.FeatureFlag]
+  nonisolated public static var allCases: [MoneyHashShared.FeatureFlag] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension MoneyHashShared.FeatureFlag {
+  public func toKotlinEnum() -> MoneyHashShared.__FeatureFlag
+}
+extension MoneyHashShared.__FeatureFlag {
+  public func toSwiftEnum() -> MoneyHashShared.FeatureFlag
+}
 @frozen public enum FieldType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
   case cardNumber
   case expireMonth
@@ -2192,6 +2236,8 @@ extension MoneyHashShared.InputFieldType : Swift.Sendable {}
 extension MoneyHashShared.InputFieldType : Swift.BitwiseCopyable {}
 extension MoneyHashShared.Type_ : Swift.Sendable {}
 extension MoneyHashShared.Type_ : Swift.BitwiseCopyable {}
+extension MoneyHashShared.FeatureFlag : Swift.Sendable {}
+extension MoneyHashShared.FeatureFlag : Swift.BitwiseCopyable {}
 extension MoneyHashShared.FieldType : Swift.Sendable {}
 extension MoneyHashShared.FieldType : Swift.BitwiseCopyable {}
 extension MoneyHashShared.Brand : Swift.Sendable {}

@@ -25659,6 +25659,26 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoneyHashShared",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoneyHashShared",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Function",
         "name": "SkieKotlinFlow",
         "printedName": "SkieKotlinFlow(_:)",
@@ -39306,6 +39326,648 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "FeatureFlag",
+        "printedName": "FeatureFlag",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "fetchIntentBeforeThrowingUserCancel",
+            "printedName": "fetchIntentBeforeThrowingUserCancel",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHashShared.FeatureFlag.Type) -> MoneyHashShared.FeatureFlag",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FeatureFlag",
+                    "printedName": "MoneyHashShared.FeatureFlag",
+                    "usr": "s:15MoneyHashShared11FeatureFlagO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHashShared.FeatureFlag.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FeatureFlag",
+                        "printedName": "MoneyHashShared.FeatureFlag",
+                        "usr": "s:15MoneyHashShared11FeatureFlagO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MoneyHashShared11FeatureFlagO35fetchIntentBeforeThrowingUserCancelyA2CmF",
+            "mangledName": "$s15MoneyHashShared11FeatureFlagO35fetchIntentBeforeThrowingUserCancelyA2CmF",
+            "moduleName": "MoneyHashShared",
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "key",
+            "printedName": "key",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MoneyHashShared11FeatureFlagO3keySSvp",
+            "mangledName": "$s15MoneyHashShared11FeatureFlagO3keySSvp",
+            "moduleName": "MoneyHashShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MoneyHashShared11FeatureFlagO3keySSvg",
+                "mangledName": "$s15MoneyHashShared11FeatureFlagO3keySSvg",
+                "moduleName": "MoneyHashShared",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MoneyHashShared11FeatureFlagO4nameSSvp",
+            "mangledName": "$s15MoneyHashShared11FeatureFlagO4nameSSvp",
+            "moduleName": "MoneyHashShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MoneyHashShared11FeatureFlagO4nameSSvg",
+                "mangledName": "$s15MoneyHashShared11FeatureFlagO4nameSSvg",
+                "moduleName": "MoneyHashShared",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ordinal",
+            "printedName": "ordinal",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MoneyHashShared11FeatureFlagO7ordinals5Int32Vvp",
+            "mangledName": "$s15MoneyHashShared11FeatureFlagO7ordinals5Int32Vvp",
+            "moduleName": "MoneyHashShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MoneyHashShared11FeatureFlagO7ordinals5Int32Vvg",
+                "mangledName": "$s15MoneyHashShared11FeatureFlagO7ordinals5Int32Vvg",
+                "moduleName": "MoneyHashShared",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "companion",
+            "printedName": "companion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Companion",
+                "printedName": "MoneyHashShared.__FeatureFlag.Companion",
+                "usr": "c:objc(cs)MHSFeatureFlagCompanion"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MoneyHashShared11FeatureFlagO9companionSo010MHSFeatureE9CompanionCvpZ",
+            "mangledName": "$s15MoneyHashShared11FeatureFlagO9companionSo010MHSFeatureE9CompanionCvpZ",
+            "moduleName": "MoneyHashShared",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Companion",
+                    "printedName": "MoneyHashShared.__FeatureFlag.Companion",
+                    "usr": "c:objc(cs)MHSFeatureFlagCompanion"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MoneyHashShared11FeatureFlagO9companionSo010MHSFeatureE9CompanionCvgZ",
+                "mangledName": "$s15MoneyHashShared11FeatureFlagO9companionSo010MHSFeatureE9CompanionCvgZ",
+                "moduleName": "MoneyHashShared",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "_forceBridgeFromObjectiveC",
+            "printedName": "_forceBridgeFromObjectiveC(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "__FeatureFlag",
+                "printedName": "MoneyHashShared.__FeatureFlag",
+                "usr": "c:objc(cs)MHSFeatureFlag"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.FeatureFlag?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FeatureFlag",
+                    "printedName": "MoneyHashShared.FeatureFlag",
+                    "usr": "s:15MoneyHashShared11FeatureFlagO"
+                  }
+                ],
+                "paramValueOwnership": "InOut",
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MoneyHashShared11FeatureFlagO26_forceBridgeFromObjectiveC_6resultySo010MHSFeatureE0C_ACSgztFZ",
+            "mangledName": "$s15MoneyHashShared11FeatureFlagO26_forceBridgeFromObjectiveC_6resultySo010MHSFeatureE0C_ACSgztFZ",
+            "moduleName": "MoneyHashShared",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_conditionallyBridgeFromObjectiveC",
+            "printedName": "_conditionallyBridgeFromObjectiveC(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "__FeatureFlag",
+                "printedName": "MoneyHashShared.__FeatureFlag",
+                "usr": "c:objc(cs)MHSFeatureFlag"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.FeatureFlag?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FeatureFlag",
+                    "printedName": "MoneyHashShared.FeatureFlag",
+                    "usr": "s:15MoneyHashShared11FeatureFlagO"
+                  }
+                ],
+                "paramValueOwnership": "InOut",
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MoneyHashShared11FeatureFlagO34_conditionallyBridgeFromObjectiveC_6resultSbSo010MHSFeatureE0C_ACSgztFZ",
+            "mangledName": "$s15MoneyHashShared11FeatureFlagO34_conditionallyBridgeFromObjectiveC_6resultSbSo010MHSFeatureE0C_ACSgztFZ",
+            "moduleName": "MoneyHashShared",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_unconditionallyBridgeFromObjectiveC",
+            "printedName": "_unconditionallyBridgeFromObjectiveC(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FeatureFlag",
+                "printedName": "MoneyHashShared.FeatureFlag",
+                "usr": "s:15MoneyHashShared11FeatureFlagO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHashShared.__FeatureFlag?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__FeatureFlag",
+                    "printedName": "MoneyHashShared.__FeatureFlag",
+                    "usr": "c:objc(cs)MHSFeatureFlag"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MoneyHashShared11FeatureFlagO36_unconditionallyBridgeFromObjectiveCyACSo010MHSFeatureE0CSgFZ",
+            "mangledName": "$s15MoneyHashShared11FeatureFlagO36_unconditionallyBridgeFromObjectiveCyACSo010MHSFeatureE0CSgFZ",
+            "moduleName": "MoneyHashShared",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_bridgeToObjectiveC",
+            "printedName": "_bridgeToObjectiveC()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__FeatureFlag",
+                "printedName": "MoneyHashShared.__FeatureFlag",
+                "usr": "c:objc(cs)MHSFeatureFlag"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MoneyHashShared11FeatureFlagO19_bridgeToObjectiveCSo010MHSFeatureE0CyF",
+            "mangledName": "$s15MoneyHashShared11FeatureFlagO19_bridgeToObjectiveCSo010MHSFeatureE0CyF",
+            "moduleName": "MoneyHashShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FeatureFlag",
+                "printedName": "MoneyHashShared.FeatureFlag",
+                "usr": "s:15MoneyHashShared11FeatureFlagO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FeatureFlag",
+                "printedName": "MoneyHashShared.FeatureFlag",
+                "usr": "s:15MoneyHashShared11FeatureFlagO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MoneyHashShared11FeatureFlagO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s15MoneyHashShared11FeatureFlagO2eeoiySbAC_ACtFZ",
+            "moduleName": "MoneyHashShared",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MoneyHashShared11FeatureFlagO9hashValueSivp",
+            "mangledName": "$s15MoneyHashShared11FeatureFlagO9hashValueSivp",
+            "moduleName": "MoneyHashShared",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MoneyHashShared11FeatureFlagO9hashValueSivg",
+                "mangledName": "$s15MoneyHashShared11FeatureFlagO9hashValueSivg",
+                "moduleName": "MoneyHashShared",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MoneyHashShared11FeatureFlagO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s15MoneyHashShared11FeatureFlagO4hash4intoys6HasherVz_tF",
+            "moduleName": "MoneyHashShared",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[MoneyHashShared.FeatureFlag]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FeatureFlag",
+                    "printedName": "MoneyHashShared.FeatureFlag",
+                    "usr": "s:15MoneyHashShared11FeatureFlagO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MoneyHashShared11FeatureFlagO8allCasesSayACGvpZ",
+            "mangledName": "$s15MoneyHashShared11FeatureFlagO8allCasesSayACGvpZ",
+            "moduleName": "MoneyHashShared",
+            "static": true,
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[MoneyHashShared.FeatureFlag]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FeatureFlag",
+                        "printedName": "MoneyHashShared.FeatureFlag",
+                        "usr": "s:15MoneyHashShared11FeatureFlagO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MoneyHashShared11FeatureFlagO8allCasesSayACGvgZ",
+                "mangledName": "$s15MoneyHashShared11FeatureFlagO8allCasesSayACGvgZ",
+                "moduleName": "MoneyHashShared",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "toKotlinEnum",
+            "printedName": "toKotlinEnum()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__FeatureFlag",
+                "printedName": "MoneyHashShared.__FeatureFlag",
+                "usr": "c:objc(cs)MHSFeatureFlag"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MoneyHashShared11FeatureFlagO12toKotlinEnumSo010MHSFeatureE0CyF",
+            "mangledName": "$s15MoneyHashShared11FeatureFlagO12toKotlinEnumSo010MHSFeatureE0CyF",
+            "moduleName": "MoneyHashShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15MoneyHashShared11FeatureFlagO",
+        "mangledName": "$s15MoneyHashShared11FeatureFlagO",
+        "moduleName": "MoneyHashShared",
+        "declAttributes": [
+          "AccessControl",
+          "Frozen"
+        ],
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[MoneyHashShared.FeatureFlag]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FeatureFlag",
+                        "printedName": "MoneyHashShared.FeatureFlag",
+                        "usr": "s:15MoneyHashShared11FeatureFlagO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__FeatureFlag",
+                    "printedName": "MoneyHashShared.__FeatureFlag",
+                    "usr": "c:objc(cs)MHSFeatureFlag"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoneyHashShared",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "FieldType",
         "printedName": "FieldType",
         "children": [
@@ -51885,6 +52547,79 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "FeatureFlagService",
+        "printedName": "FeatureFlagService",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getFeatureFlag",
+            "printedName": "getFeatureFlag(featureName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FeatureFlagData",
+                "printedName": "MoneyHashShared.FeatureFlagData",
+                "usr": "c:objc(cs)MHSFeatureFlagData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So21MHSFeatureFlagServiceP15MoneyHashSharedE010getFeatureB011featureNameSo0aB4DataCSS_tYaKF",
+            "mangledName": "$sSo21MHSFeatureFlagServiceP15MoneyHashSharedE010getFeatureB011featureNameSo0aB4DataCSS_tYaKF",
+            "moduleName": "MoneyHashShared",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoneyHashShared.FeatureFlagService>",
+            "sugared_genericSig": "<Self where Self : MoneyHashShared.FeatureFlagService>",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:objc(pl)MHSFeatureFlagService",
+        "moduleName": "MoneyHashShared",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "objc_name": "MHSFeatureFlagService",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "PaymentUseCase",
         "printedName": "PaymentUseCase",
         "children": [
@@ -53281,6 +54016,130 @@
         "usr": "c:objc(cs)MHSPaymentUseCase",
         "moduleName": "MoneyHashShared",
         "objc_name": "MHSPaymentUseCase",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)MHSBase",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "MoneyHashShared.KotlinBase",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FeatureFlagUseCase",
+        "printedName": "FeatureFlagUseCase",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "isEnabled",
+            "printedName": "isEnabled(flag:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KotlinBoolean",
+                "printedName": "MoneyHashShared.KotlinBoolean",
+                "usr": "c:objc(cs)MHSBoolean"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FeatureFlag",
+                "printedName": "MoneyHashShared.FeatureFlag",
+                "usr": "s:15MoneyHashShared11FeatureFlagO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So21MHSFeatureFlagUseCaseC15MoneyHashSharedE9isEnabled4flagSo10MHSBooleanCAC07FeatureB0O_tYaKF",
+            "mangledName": "$sSo21MHSFeatureFlagUseCaseC15MoneyHashSharedE9isEnabled4flagSo10MHSBooleanCAC07FeatureB0O_tYaKF",
+            "moduleName": "MoneyHashShared",
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13",
+            "intro_tvOS": "13",
+            "intro_watchOS": "6",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)MHSFeatureFlagUseCase",
+        "moduleName": "MoneyHashShared",
+        "objc_name": "MHSFeatureFlagUseCase",
         "declAttributes": [
           "ObjC",
           "Dynamic"
@@ -55910,6 +56769,116 @@
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "MoneyHashShared.KotlinEnum<MoneyHashShared.__Type_>",
+          "MoneyHashShared.KotlinBase",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "__FeatureFlag",
+        "printedName": "__FeatureFlag",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "toSwiftEnum",
+            "printedName": "toSwiftEnum()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FeatureFlag",
+                "printedName": "MoneyHashShared.FeatureFlag",
+                "usr": "s:15MoneyHashShared11FeatureFlagO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So14MHSFeatureFlagC15MoneyHashSharedE11toSwiftEnumAC07FeatureB0OyF",
+            "mangledName": "$sSo14MHSFeatureFlagC15MoneyHashSharedE11toSwiftEnumAC07FeatureB0OyF",
+            "moduleName": "MoneyHashShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)MHSFeatureFlag",
+        "moduleName": "MoneyHashShared",
+        "objc_name": "MHSFeatureFlag",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)MHSKotlinEnum",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "MoneyHashShared.KotlinEnum<MoneyHashShared.__FeatureFlag>",
           "MoneyHashShared.KotlinBase",
           "ObjectiveC.NSObject"
         ],

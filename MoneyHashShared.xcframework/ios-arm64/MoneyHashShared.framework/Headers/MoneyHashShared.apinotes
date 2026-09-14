@@ -107,13 +107,15 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "isNetworkException()"
     ResultType: "BOOL"
-  - Selector: "handleNetworkExceptionWithCompletionHandler:"
+  - Selector: "handleNetworkExceptionRequest:completionHandler:"
     MethodKind: "Instance"
-    SwiftName: "__handleNetworkException(completionHandler:)"
+    SwiftName: "__handleNetworkException(request:completionHandler:)"
     SwiftPrivate: true
     ResultType: "void"
     Parameters:
     - Position: 0
+      Type: "id<MHSKtor_client_coreHttpRequest> _Nonnull"
+    - Position: 1
       Type: "void (^ _Nonnull)(NSError * _Nullable)"
 - Name: "MHSKotlinArray"
   SwiftName: "KotlinArray"
@@ -1562,6 +1564,10 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "featureFlagService"
     Type: "id<MHSFeatureFlagService> _Nonnull"
+  - Name: "featureFlagUseCase"
+    PropertyKind: "Instance"
+    SwiftName: "featureFlagUseCase"
+    Type: "MHSFeatureFlagUseCase * _Nonnull"
   - Name: "paymentService"
     PropertyKind: "Instance"
     SwiftName: "paymentService"
@@ -6781,6 +6787,302 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "serializer()"
     ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "MHSLogRecord"
+  SwiftName: "LogRecord"
+  Properties:
+  - Name: "context"
+    PropertyKind: "Instance"
+    SwiftName: "context"
+    Type: "MHSLogContext * _Nonnull"
+  - Name: "level"
+    PropertyKind: "Instance"
+    SwiftName: "level"
+    Type: "MHSLogLevel * _Nonnull"
+  - Name: "message"
+    PropertyKind: "Instance"
+    SwiftName: "message"
+    Type: "NSString * _Nonnull"
+  - Name: "source"
+    PropertyKind: "Instance"
+    SwiftName: "source"
+    Type: "MHSLogSource * _Nonnull"
+  - Name: "timestamp"
+    PropertyKind: "Instance"
+    SwiftName: "timestamp"
+    Type: "int64_t"
+  - Name: "type"
+    PropertyKind: "Instance"
+    SwiftName: "type"
+    Type: "MHSLogType * _Nonnull"
+  Methods:
+  - Selector: "initWithTimestamp:level:source:type:message:context:"
+    MethodKind: "Instance"
+    SwiftName: "init(timestamp:level:source:type:message:context:)"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "MHSLogLevel * _Nonnull"
+    - Position: 2
+      Type: "MHSLogSource * _Nonnull"
+    - Position: 3
+      Type: "MHSLogType * _Nonnull"
+    - Position: 4
+      Type: "NSString * _Nonnull"
+    - Position: 5
+      Type: "MHSLogContext * _Nonnull"
+  - Selector: "doCopyTimestamp:level:source:type:message:context:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(timestamp:level:source:type:message:context:)"
+    ResultType: "MHSLogRecord * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "MHSLogLevel * _Nonnull"
+    - Position: 2
+      Type: "MHSLogSource * _Nonnull"
+    - Position: 3
+      Type: "MHSLogType * _Nonnull"
+    - Position: 4
+      Type: "NSString * _Nonnull"
+    - Position: 5
+      Type: "MHSLogContext * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "MHSLogRecordCompanion"
+  SwiftName: "LogRecord.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "MHSLogContext"
+  SwiftName: "LogContext"
+  Properties:
+  - Name: "cpVersion"
+    PropertyKind: "Instance"
+    SwiftName: "cpVersion"
+    Type: "NSString * _Nullable"
+  - Name: "deviceModel"
+    PropertyKind: "Instance"
+    SwiftName: "deviceModel"
+    Type: "NSString * _Nullable"
+  - Name: "environment"
+    PropertyKind: "Instance"
+    SwiftName: "environment"
+    Type: "NSString * _Nullable"
+  - Name: "intentId"
+    PropertyKind: "Instance"
+    SwiftName: "intentId"
+    Type: "NSString * _Nullable"
+  - Name: "locale"
+    PropertyKind: "Instance"
+    SwiftName: "locale"
+    Type: "NSString * _Nullable"
+  - Name: "platform"
+    PropertyKind: "Instance"
+    SwiftName: "platform"
+    Type: "NSString * _Nullable"
+  - Name: "publicKey"
+    PropertyKind: "Instance"
+    SwiftName: "publicKey"
+    Type: "NSString * _Nullable"
+  - Name: "sdkVersion"
+    PropertyKind: "Instance"
+    SwiftName: "sdkVersion"
+    Type: "NSString * _Nullable"
+  - Name: "sessionId"
+    PropertyKind: "Instance"
+    SwiftName: "sessionId"
+    Type: "NSString * _Nullable"
+  Methods:
+  - Selector: "initWithSessionId:intentId:sdkVersion:cpVersion:platform:environment:locale:deviceModel:publicKey:"
+    MethodKind: "Instance"
+    SwiftName: "init(sessionId:intentId:sdkVersion:cpVersion:platform:environment:locale:deviceModel:publicKey:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "NSString * _Nullable"
+    - Position: 3
+      Type: "NSString * _Nullable"
+    - Position: 4
+      Type: "NSString * _Nullable"
+    - Position: 5
+      Type: "NSString * _Nullable"
+    - Position: 6
+      Type: "NSString * _Nullable"
+    - Position: 7
+      Type: "NSString * _Nullable"
+    - Position: 8
+      Type: "NSString * _Nullable"
+  - Selector: "doCopySessionId:intentId:sdkVersion:cpVersion:platform:environment:locale:deviceModel:publicKey:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(sessionId:intentId:sdkVersion:cpVersion:platform:environment:locale:deviceModel:publicKey:)"
+    ResultType: "MHSLogContext * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "NSString * _Nullable"
+    - Position: 3
+      Type: "NSString * _Nullable"
+    - Position: 4
+      Type: "NSString * _Nullable"
+    - Position: 5
+      Type: "NSString * _Nullable"
+    - Position: 6
+      Type: "NSString * _Nullable"
+    - Position: 7
+      Type: "NSString * _Nullable"
+    - Position: 8
+      Type: "NSString * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "MHSLogContextCompanion"
+  SwiftName: "LogContext.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "MHSLogType"
+  SwiftBridge: "LogType"
+  SwiftName: "__LogType"
+  SwiftPrivate: true
+  Properties:
+  - Name: "log"
+    PropertyKind: "Class"
+    SwiftName: "log"
+    Type: "MHSLogType * _Nonnull"
+  - Name: "error"
+    PropertyKind: "Class"
+    SwiftName: "error"
+    Type: "MHSLogType * _Nonnull"
+  - Name: "event"
+    PropertyKind: "Class"
+    SwiftName: "event"
+    Type: "MHSLogType * _Nonnull"
+  - Name: "metric"
+    PropertyKind: "Class"
+    SwiftName: "metric"
+    Type: "MHSLogType * _Nonnull"
+  - Name: "network"
+    PropertyKind: "Class"
+    SwiftName: "network"
+    Type: "MHSLogType * _Nonnull"
+  Methods:
+  - Selector: "initWithName:ordinal:"
+    MethodKind: "Instance"
+    SwiftName: "init(name:ordinal:)"
+    Availability: "nonswift"
+- Name: "MHSLogSource"
+  SwiftBridge: "LogSource"
+  SwiftName: "__LogSource"
+  SwiftPrivate: true
+  Properties:
+  - Name: "network"
+    PropertyKind: "Class"
+    SwiftName: "network"
+    Type: "MHSLogSource * _Nonnull"
+  - Name: "intent"
+    PropertyKind: "Class"
+    SwiftName: "intent"
+    Type: "MHSLogSource * _Nonnull"
+  - Name: "vault"
+    PropertyKind: "Class"
+    SwiftName: "vault"
+    Type: "MHSLogSource * _Nonnull"
+  - Name: "validation"
+    PropertyKind: "Class"
+    SwiftName: "validation"
+    Type: "MHSLogSource * _Nonnull"
+  - Name: "nativePay"
+    PropertyKind: "Class"
+    SwiftName: "nativePay"
+    Type: "MHSLogSource * _Nonnull"
+  - Name: "webview"
+    PropertyKind: "Class"
+    SwiftName: "webview"
+    Type: "MHSLogSource * _Nonnull"
+  - Name: "sdk"
+    PropertyKind: "Class"
+    SwiftName: "sdk"
+    Type: "MHSLogSource * _Nonnull"
+  Methods:
+  - Selector: "initWithName:ordinal:"
+    MethodKind: "Instance"
+    SwiftName: "init(name:ordinal:)"
+    Availability: "nonswift"
+- Name: "MHSLogLevel"
+  SwiftBridge: "LogLevel"
+  SwiftName: "__LogLevel"
+  SwiftPrivate: true
+  Properties:
+  - Name: "verbose"
+    PropertyKind: "Class"
+    SwiftName: "verbose"
+    Type: "MHSLogLevel * _Nonnull"
+  - Name: "debug"
+    PropertyKind: "Class"
+    SwiftName: "debug"
+    Type: "MHSLogLevel * _Nonnull"
+  - Name: "info"
+    PropertyKind: "Class"
+    SwiftName: "info"
+    Type: "MHSLogLevel * _Nonnull"
+  - Name: "warn"
+    PropertyKind: "Class"
+    SwiftName: "warn"
+    Type: "MHSLogLevel * _Nonnull"
+  - Name: "error"
+    PropertyKind: "Class"
+    SwiftName: "error"
+    Type: "MHSLogLevel * _Nonnull"
+  - Name: "assert"
+    PropertyKind: "Class"
+    SwiftName: "assert"
+    Type: "MHSLogLevel * _Nonnull"
+  - Name: "none"
+    PropertyKind: "Class"
+    SwiftName: "none"
+    Type: "MHSLogLevel * _Nonnull"
+  Methods:
+  - Selector: "initWithName:ordinal:"
+    MethodKind: "Instance"
+    SwiftName: "init(name:ordinal:)"
+    Availability: "nonswift"
 - Name: "MHSSubscriptionPlanGroupsResponse"
   SwiftName: "SubscriptionPlanGroupsResponse"
   Properties:
@@ -8042,35 +8344,112 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "serializer()"
     ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
-- Name: "MHSFeatureFlagData"
-  SwiftName: "FeatureFlagData"
+- Name: "MHSFeatureFlagUseCase"
+  SwiftName: "FeatureFlagUseCase"
+  Methods:
+  - Selector: "initWithFeatureFlagService:"
+    MethodKind: "Instance"
+    SwiftName: "init(featureFlagService:)"
+    Parameters:
+    - Position: 0
+      Type: "id<MHSFeatureFlagService> _Nonnull"
+  - Selector: "areEnabledFlags:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__areEnabled(flags:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSArray<MHSFeatureFlag *> * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSDictionary<MHSFeatureFlag *, MHSBoolean *> * _Nullable, NSError * _Nullable)"
+  - Selector: "isEnabledFlag:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__isEnabled(flag:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "MHSFeatureFlag * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(MHSBoolean * _Nullable, NSError * _Nullable)"
+- Name: "MHSFeatureFlag"
+  SwiftBridge: "FeatureFlag"
+  SwiftName: "__FeatureFlag"
+  SwiftPrivate: true
   Properties:
+  - Name: "key"
+    PropertyKind: "Instance"
+    SwiftName: "key"
+    Type: "NSString * _Nonnull"
+  - Name: "fetchIntentBeforeThrowingUserCancel"
+    PropertyKind: "Class"
+    SwiftName: "fetchIntentBeforeThrowingUserCancel"
+    Type: "MHSFeatureFlag * _Nonnull"
+  - Name: "fetchLogsFromVerboseLevel"
+    PropertyKind: "Class"
+    SwiftName: "fetchLogsFromVerboseLevel"
+    Type: "MHSFeatureFlag * _Nonnull"
+  - Name: "fetchLogsFromDebugLevel"
+    PropertyKind: "Class"
+    SwiftName: "fetchLogsFromDebugLevel"
+    Type: "MHSFeatureFlag * _Nonnull"
+  - Name: "fetchLogsFromInfoLevel"
+    PropertyKind: "Class"
+    SwiftName: "fetchLogsFromInfoLevel"
+    Type: "MHSFeatureFlag * _Nonnull"
+  Methods:
+  - Selector: "initWithName:ordinal:"
+    MethodKind: "Instance"
+    SwiftName: "init(name:ordinal:)"
+    Availability: "nonswift"
+- Name: "MHSFeatureFlagCompanion"
+  SwiftName: "__FeatureFlag.Companion"
+  Methods:
+  - Selector: "fromKey:"
+    MethodKind: "Instance"
+    SwiftName: "from(key:)"
+    ResultType: "MHSFeatureFlag * _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+- Name: "MHSFeatureFlagsData"
+  SwiftName: "FeatureFlagsData"
+  Properties:
+  - Name: "count"
+    PropertyKind: "Instance"
+    SwiftName: "count"
+    Type: "MHSInt * _Nullable"
   - Name: "data"
     PropertyKind: "Instance"
     SwiftName: "data"
-    Type: "MHSFeatureFlagState * _Nullable"
+    Type: "NSArray<MHSFeatureFlagState *> * _Nullable"
   - Name: "status"
     PropertyKind: "Instance"
     SwiftName: "status"
     Type: "MHSStatus * _Nullable"
   Methods:
-  - Selector: "initWithData:status:"
+  - Selector: "initWithData:status:count:"
     MethodKind: "Instance"
-    SwiftName: "init(data:status:)"
+    SwiftName: "init(data:status:count:)"
     Parameters:
     - Position: 0
-      Type: "MHSFeatureFlagState * _Nullable"
+      Type: "NSArray<MHSFeatureFlagState *> * _Nullable"
     - Position: 1
       Type: "MHSStatus * _Nullable"
-  - Selector: "doCopyData:status:"
+    - Position: 2
+      Type: "MHSInt * _Nullable"
+  - Selector: "doCopyData:status:count:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(data:status:)"
-    ResultType: "MHSFeatureFlagData * _Nonnull"
+    SwiftName: "doCopy(data:status:count:)"
+    ResultType: "MHSFeatureFlagsData * _Nonnull"
     Parameters:
     - Position: 0
-      Type: "MHSFeatureFlagState * _Nullable"
+      Type: "NSArray<MHSFeatureFlagState *> * _Nullable"
     - Position: 1
       Type: "MHSStatus * _Nullable"
+    - Position: 2
+      Type: "MHSInt * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"
@@ -8086,8 +8465,8 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-- Name: "MHSFeatureFlagDataCompanion"
-  SwiftName: "FeatureFlagData.Companion"
+- Name: "MHSFeatureFlagsDataCompanion"
+  SwiftName: "FeatureFlagsData.Companion"
   Methods:
   - Selector: "serializer"
     MethodKind: "Instance"
@@ -8139,6 +8518,57 @@ Classes:
     ResultType: "NSString * _Nonnull"
 - Name: "MHSFeatureFlagStateCompanion"
   SwiftName: "FeatureFlagState.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<MHSKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "MHSFeatureFlagData"
+  SwiftName: "FeatureFlagData"
+  Properties:
+  - Name: "data"
+    PropertyKind: "Instance"
+    SwiftName: "data"
+    Type: "MHSFeatureFlagState * _Nullable"
+  - Name: "status"
+    PropertyKind: "Instance"
+    SwiftName: "status"
+    Type: "MHSStatus * _Nullable"
+  Methods:
+  - Selector: "initWithData:status:"
+    MethodKind: "Instance"
+    SwiftName: "init(data:status:)"
+    Parameters:
+    - Position: 0
+      Type: "MHSFeatureFlagState * _Nullable"
+    - Position: 1
+      Type: "MHSStatus * _Nullable"
+  - Selector: "doCopyData:status:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(data:status:)"
+    ResultType: "MHSFeatureFlagData * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "MHSFeatureFlagState * _Nullable"
+    - Position: 1
+      Type: "MHSStatus * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "MHSFeatureFlagDataCompanion"
+  SwiftName: "FeatureFlagData.Companion"
   Methods:
   - Selector: "serializer"
     MethodKind: "Instance"
@@ -9779,53 +10209,6 @@ Classes:
     Parameters:
     - Position: 0
       Type: "NSArray<NSString *> * _Nonnull"
-- Name: "MHSFeatureFlagUseCase"
-  SwiftName: "FeatureFlagUseCase"
-  Methods:
-  - Selector: "initWithFeatureFlagService:"
-    MethodKind: "Instance"
-    SwiftName: "init(featureFlagService:)"
-    Parameters:
-    - Position: 0
-      Type: "id<MHSFeatureFlagService> _Nonnull"
-  - Selector: "isEnabledFlag:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__isEnabled(flag:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "MHSFeatureFlag * _Nonnull"
-    - Position: 1
-      Type: "void (^ _Nonnull)(MHSBoolean * _Nullable, NSError * _Nullable)"
-- Name: "MHSFeatureFlag"
-  SwiftBridge: "FeatureFlag"
-  SwiftName: "__FeatureFlag"
-  SwiftPrivate: true
-  Properties:
-  - Name: "key"
-    PropertyKind: "Instance"
-    SwiftName: "key"
-    Type: "NSString * _Nonnull"
-  - Name: "fetchIntentBeforeThrowingUserCancel"
-    PropertyKind: "Class"
-    SwiftName: "fetchIntentBeforeThrowingUserCancel"
-    Type: "MHSFeatureFlag * _Nonnull"
-  Methods:
-  - Selector: "initWithName:ordinal:"
-    MethodKind: "Instance"
-    SwiftName: "init(name:ordinal:)"
-    Availability: "nonswift"
-- Name: "MHSFeatureFlagCompanion"
-  SwiftName: "__FeatureFlag.Companion"
-  Methods:
-  - Selector: "fromKey:"
-    MethodKind: "Instance"
-    SwiftName: "from(key:)"
-    ResultType: "MHSFeatureFlag * _Nullable"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
 - Name: "MHSCardCollector"
   SwiftName: "CardCollector"
   Properties:
@@ -11701,6 +12084,614 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "init(message:cause:)"
     Availability: "nonswift"
+- Name: "MHSDefaultLoggerManager"
+  SwiftName: "DefaultLoggerManager"
+  Methods:
+  - Selector: "initWithLoggers:filter:now:"
+    MethodKind: "Instance"
+    SwiftName: "init(loggers:filter:now:)"
+    Parameters:
+    - Position: 0
+      Type: "NSArray<id<MHSLogger>> * _Nonnull"
+    - Position: 1
+      Type: "id<MHSLogFilter> _Nonnull"
+    - Position: 2
+      Type: "MHSLong * _Nonnull (^ _Nonnull)(void)"
+  - Selector: "errorSource:message:error:"
+    MethodKind: "Instance"
+    SwiftName: "error(source:message:error:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "MHSLogSource * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "MHSKotlinThrowable * _Nullable"
+  - Selector: "eventSource:message:"
+    MethodKind: "Instance"
+    SwiftName: "event(source:message:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "MHSLogSource * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "logLevel:source:message:"
+    MethodKind: "Instance"
+    SwiftName: "log(level:source:message:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "MHSLogLevel * _Nonnull"
+    - Position: 1
+      Type: "MHSLogSource * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+  - Selector: "metricSource:message:"
+    MethodKind: "Instance"
+    SwiftName: "metric(source:message:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "MHSLogSource * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "networkMessage:"
+    MethodKind: "Instance"
+    SwiftName: "network(message:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "setContextContext:"
+    MethodKind: "Instance"
+    SwiftName: "setContext(context:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "MHSLogContext * _Nonnull"
+  - Selector: "setMinimumLevelLevel:"
+    MethodKind: "Instance"
+    SwiftName: "setMinimumLevel(level:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "MHSLogLevel * _Nonnull"
+- Name: "MHSMoneyHashLogger"
+  SwiftName: "MoneyHashLogger"
+  Methods:
+  - Selector: "errorSource:message:error:"
+    MethodKind: "Instance"
+    SwiftName: "error(source:message:error:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "MHSLogSource * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "MHSKotlinThrowable * _Nullable"
+  - Selector: "eventSource:message:"
+    MethodKind: "Instance"
+    SwiftName: "event(source:message:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "MHSLogSource * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "initializeConsoleConfig:persistentConfig:"
+    MethodKind: "Instance"
+    SwiftName: "initialize(consoleConfig:persistentConfig:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "MHSConsoleLoggerConfig * _Nonnull"
+    - Position: 1
+      Type: "MHSPersistentLoggerConfig * _Nonnull"
+  - Selector: "logLevel:source:message:"
+    MethodKind: "Instance"
+    SwiftName: "log(level:source:message:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "MHSLogLevel * _Nonnull"
+    - Position: 1
+      Type: "MHSLogSource * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+  - Selector: "metricSource:message:"
+    MethodKind: "Instance"
+    SwiftName: "metric(source:message:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "MHSLogSource * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "networkMessage:"
+    MethodKind: "Instance"
+    SwiftName: "network(message:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "setContextContext:"
+    MethodKind: "Instance"
+    SwiftName: "setContext(context:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "MHSLogContext * _Nonnull"
+  - Selector: "setIntentIdIntentId:"
+    MethodKind: "Instance"
+    SwiftName: "setIntentId(intentId:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+  - Selector: "setMinimumLevelLevel:"
+    MethodKind: "Instance"
+    SwiftName: "setMinimumLevel(level:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "MHSLogLevel * _Nonnull"
+  - Selector: "setSyncListenerListener:"
+    MethodKind: "Instance"
+    SwiftName: "setSyncListener(listener:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<MHSLogSyncListener> _Nullable"
+  - Selector: "updateContextTransform:"
+    MethodKind: "Instance"
+    SwiftName: "updateContext(transform:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "MHSLogContext * _Nonnull (^ _Nonnull)(MHSLogContext * _Nonnull)"
+- Name: "MHSPersistentLoggerConfig"
+  SwiftName: "PersistentLoggerConfig"
+  Properties:
+  - Name: "flushCount"
+    PropertyKind: "Instance"
+    SwiftName: "flushCount"
+    Type: "int32_t"
+  - Name: "flushIntervalMillis"
+    PropertyKind: "Instance"
+    SwiftName: "flushIntervalMillis"
+    Type: "int64_t"
+  - Name: "flushOnError"
+    PropertyKind: "Instance"
+    SwiftName: "flushOnError"
+    Type: "BOOL"
+  - Name: "maxBatchBytes"
+    PropertyKind: "Instance"
+    SwiftName: "maxBatchBytes"
+    Type: "int32_t"
+  - Name: "maxMessageChars"
+    PropertyKind: "Instance"
+    SwiftName: "maxMessageChars"
+    Type: "int32_t"
+  - Name: "minimumLevel"
+    PropertyKind: "Instance"
+    SwiftName: "minimumLevel"
+    Type: "MHSLogLevel * _Nonnull"
+  - Name: "syncIntervalMillis"
+    PropertyKind: "Instance"
+    SwiftName: "syncIntervalMillis"
+    Type: "int64_t"
+  Methods:
+  - Selector: "initWithMinimumLevel:flushCount:flushIntervalMillis:maxBatchBytes:maxMessageChars:flushOnError:syncIntervalMillis:"
+    MethodKind: "Instance"
+    SwiftName: "init(minimumLevel:flushCount:flushIntervalMillis:maxBatchBytes:maxMessageChars:flushOnError:syncIntervalMillis:)"
+    Parameters:
+    - Position: 0
+      Type: "MHSLogLevel * _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "int64_t"
+    - Position: 3
+      Type: "int32_t"
+    - Position: 4
+      Type: "int32_t"
+    - Position: 5
+      Type: "BOOL"
+    - Position: 6
+      Type: "int64_t"
+  - Selector: "doCopyMinimumLevel:flushCount:flushIntervalMillis:maxBatchBytes:maxMessageChars:flushOnError:syncIntervalMillis:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(minimumLevel:flushCount:flushIntervalMillis:maxBatchBytes:maxMessageChars:flushOnError:syncIntervalMillis:)"
+    ResultType: "MHSPersistentLoggerConfig * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "MHSLogLevel * _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "int64_t"
+    - Position: 3
+      Type: "int32_t"
+    - Position: 4
+      Type: "int32_t"
+    - Position: 5
+      Type: "BOOL"
+    - Position: 6
+      Type: "int64_t"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "MHSConsoleLoggerConfig"
+  SwiftName: "ConsoleLoggerConfig"
+  Properties:
+  - Name: "minimumLevel"
+    PropertyKind: "Instance"
+    SwiftName: "minimumLevel"
+    Type: "MHSLogLevel * _Nonnull"
+  Methods:
+  - Selector: "initWithMinimumLevel:"
+    MethodKind: "Instance"
+    SwiftName: "init(minimumLevel:)"
+    Parameters:
+    - Position: 0
+      Type: "MHSLogLevel * _Nonnull"
+  - Selector: "doCopyMinimumLevel:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(minimumLevel:)"
+    ResultType: "MHSConsoleLoggerConfig * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "MHSLogLevel * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "MHSDefaultLogCache"
+  SwiftName: "DefaultLogCache"
+  Methods:
+  - Selector: "initWithFlushCount:flushIntervalMillis:persistence:maxBatchBytes:"
+    MethodKind: "Instance"
+    SwiftName: "init(flushCount:flushIntervalMillis:persistence:maxBatchBytes:)"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "int64_t"
+    - Position: 2
+      Type: "id<MHSPersistence> _Nonnull"
+    - Position: 3
+      Type: "int32_t"
+  - Selector: "addEntry:urgent:"
+    MethodKind: "Instance"
+    SwiftName: "add(entry:urgent:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "BOOL"
+  - Selector: "flushNow"
+    MethodKind: "Instance"
+    SwiftName: "flushNow()"
+    ResultType: "void"
+- Name: "MHSPersistedEntry"
+  SwiftName: "PersistedEntry"
+  Properties:
+  - Name: "id"
+    PropertyKind: "Instance"
+    SwiftName: "id"
+    Type: "NSString * _Nonnull"
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithId:value:"
+    MethodKind: "Instance"
+    SwiftName: "init(id:value:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopyId:value:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(id:value:)"
+    ResultType: "MHSPersistedEntry * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "MHSCrashSimulator"
+  SwiftName: "CrashSimulator"
+  Methods:
+  - Selector: "crashLogger:"
+    MethodKind: "Instance"
+    SwiftName: "crash(logger:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<MHSLoggerManager> _Nonnull"
+- Name: "MHSDefaultLogFilter"
+  SwiftName: "DefaultLogFilter"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "filterMessage:"
+    MethodKind: "Instance"
+    SwiftName: "filter(message:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+- Name: "MHSConsoleLogger"
+  SwiftName: "ConsoleLogger"
+  Methods:
+  - Selector: "initWithConfig:"
+    MethodKind: "Instance"
+    SwiftName: "init(config:)"
+    Parameters:
+    - Position: 0
+      Type: "MHSConsoleLoggerConfig * _Nonnull"
+  - Selector: "logTimestamp:context:level:source:type:message:"
+    MethodKind: "Instance"
+    SwiftName: "log(timestamp:context:level:source:type:message:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "MHSLogContext * _Nonnull"
+    - Position: 2
+      Type: "MHSLogLevel * _Nonnull"
+    - Position: 3
+      Type: "MHSLogSource * _Nonnull"
+    - Position: 4
+      Type: "MHSLogType * _Nonnull"
+    - Position: 5
+      Type: "NSString * _Nonnull"
+  - Selector: "setMinimumLevelLevel:"
+    MethodKind: "Instance"
+    SwiftName: "setMinimumLevel(level:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "MHSLogLevel * _Nonnull"
+- Name: "MHSPersistentLogger"
+  SwiftName: "PersistentLogger"
+  Methods:
+  - Selector: "initWithConfig:persistence:cache:"
+    MethodKind: "Instance"
+    SwiftName: "init(config:persistence:cache:)"
+    Parameters:
+    - Position: 0
+      Type: "MHSPersistentLoggerConfig * _Nonnull"
+    - Position: 1
+      Type: "id<MHSPersistence> _Nonnull"
+    - Position: 2
+      Type: "id<MHSLogCache> _Nonnull"
+  - Selector: "flush"
+    MethodKind: "Instance"
+    SwiftName: "flush()"
+    ResultType: "void"
+  - Selector: "logTimestamp:context:level:source:type:message:"
+    MethodKind: "Instance"
+    SwiftName: "log(timestamp:context:level:source:type:message:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "MHSLogContext * _Nonnull"
+    - Position: 2
+      Type: "MHSLogLevel * _Nonnull"
+    - Position: 3
+      Type: "MHSLogSource * _Nonnull"
+    - Position: 4
+      Type: "MHSLogType * _Nonnull"
+    - Position: 5
+      Type: "NSString * _Nonnull"
+  - Selector: "setMinimumLevelLevel:"
+    MethodKind: "Instance"
+    SwiftName: "setMinimumLevel(level:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "MHSLogLevel * _Nonnull"
+- Name: "MHSBase64LogCodec"
+  SwiftName: "Base64LogCodec"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "decodeData:"
+    MethodKind: "Instance"
+    SwiftName: "decode(data:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "encodeData:"
+    MethodKind: "Instance"
+    SwiftName: "encode(data:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+- Name: "MHSFilePersistence"
+  SwiftName: "FilePersistence"
+  Methods:
+  - Selector: "initWithDirectory:codec:maxEntryCount:"
+    MethodKind: "Instance"
+    SwiftName: "init(directory:codec:maxEntryCount:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "id<MHSLogCodec> _Nullable"
+    - Position: 2
+      Type: "int32_t"
+  - Selector: "deleteIds:"
+    MethodKind: "Instance"
+    SwiftName: "delete(ids:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "NSArray<NSString *> * _Nonnull"
+  - Selector: "deleteAll"
+    MethodKind: "Instance"
+    SwiftName: "deleteAll()"
+    ResultType: "BOOL"
+  - Selector: "readDeleteAfterRead:"
+    MethodKind: "Instance"
+    SwiftName: "read(deleteAfterRead:)"
+    ResultType: "NSArray<NSString *> * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "readEntries"
+    MethodKind: "Instance"
+    SwiftName: "readEntries()"
+    ResultType: "NSArray<MHSPersistedEntry *> * _Nonnull"
+  - Selector: "saveValue:"
+    MethodKind: "Instance"
+    SwiftName: "save(value:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+- Name: "MHSDefaultLogSyncer"
+  SwiftName: "DefaultLogSyncer"
+  Methods:
+  - Selector: "initWithPersistence:sender:intervalMillis:maxEntriesPerPass:scope:maxRefusals:listener:"
+    MethodKind: "Instance"
+    SwiftName: "init(persistence:sender:intervalMillis:maxEntriesPerPass:scope:maxRefusals:listener:)"
+    Parameters:
+    - Position: 0
+      Type: "id<MHSPersistence> _Nonnull"
+    - Position: 1
+      Type: "id<MHSLogSender> _Nonnull"
+    - Position: 2
+      Type: "int64_t"
+    - Position: 3
+      Type: "int32_t"
+    - Position: 4
+      Type: "id<MHSKotlinx_coroutines_coreCoroutineScope> _Nonnull"
+    - Position: 5
+      Type: "int32_t"
+    - Position: 6
+      Type: "id<MHSLogSyncListener> _Nullable (^ _Nonnull)(void)"
+  - Selector: "start"
+    MethodKind: "Instance"
+    SwiftName: "start()"
+    ResultType: "void"
+  - Selector: "stop"
+    MethodKind: "Instance"
+    SwiftName: "stop()"
+    ResultType: "void"
+  - Selector: "syncNow"
+    MethodKind: "Instance"
+    SwiftName: "syncNow()"
+    ResultType: "void"
+- Name: "MHSSendResult"
+  SwiftName: "SendResult"
+- Name: "MHSSendResultAccepted"
+  SwiftName: "SendResult.Accepted"
+- Name: "MHSSendResultRejected"
+  SwiftName: "SendResult.Rejected"
+  Properties:
+  - Name: "statusCode"
+    PropertyKind: "Instance"
+    SwiftName: "statusCode"
+    Type: "MHSInt * _Nullable"
+  Methods:
+  - Selector: "initWithStatusCode:"
+    MethodKind: "Instance"
+    SwiftName: "init(statusCode:)"
+    Parameters:
+    - Position: 0
+      Type: "MHSInt * _Nullable"
+  - Selector: "doCopyStatusCode:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(statusCode:)"
+    ResultType: "MHSSendResultRejected * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "MHSInt * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "MHSSendResultNotDelivered"
+  SwiftName: "SendResult.NotDelivered"
+- Name: "MHSTimeHelper"
+  SwiftName: "TimeHelper"
+  Methods:
+  - Selector: "formatMillis:"
+    MethodKind: "Instance"
+    SwiftName: "format(millis:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+  - Selector: "nowMillis"
+    MethodKind: "Instance"
+    SwiftName: "nowMillis()"
+    ResultType: "int64_t"
 - Name: "MHSConstants"
   SwiftName: "Constants"
   Properties:
@@ -11744,6 +12735,22 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "FEATURE_FLAG_FETCH_INTENT_BEFORE_THROWING_USER_CANCEL"
     Type: "NSString * _Nonnull"
+  - Name: "FEATURE_FLAG_FETCH_LOGS_FROM_DEBUG_LEVEL"
+    PropertyKind: "Instance"
+    SwiftName: "FEATURE_FLAG_FETCH_LOGS_FROM_DEBUG_LEVEL"
+    Type: "NSString * _Nonnull"
+  - Name: "FEATURE_FLAG_FETCH_LOGS_FROM_INFO_LEVEL"
+    PropertyKind: "Instance"
+    SwiftName: "FEATURE_FLAG_FETCH_LOGS_FROM_INFO_LEVEL"
+    Type: "NSString * _Nonnull"
+  - Name: "FEATURE_FLAG_FETCH_LOGS_FROM_VERBOSE_LEVEL"
+    PropertyKind: "Instance"
+    SwiftName: "FEATURE_FLAG_FETCH_LOGS_FROM_VERBOSE_LEVEL"
+    Type: "NSString * _Nonnull"
+  - Name: "FEATURE_NAMES_QUERY_KEY"
+    PropertyKind: "Instance"
+    SwiftName: "FEATURE_NAMES_QUERY_KEY"
+    Type: "NSString * _Nonnull"
   - Name: "GOOGLE_PAY"
     PropertyKind: "Instance"
     SwiftName: "GOOGLE_PAY"
@@ -11767,6 +12774,10 @@ Classes:
   - Name: "PUBLIC_KEY_HEADER_KEY"
     PropertyKind: "Instance"
     SwiftName: "PUBLIC_KEY_HEADER_KEY"
+    Type: "NSString * _Nonnull"
+  - Name: "SDK_LOGS_END_POINT"
+    PropertyKind: "Instance"
+    SwiftName: "SDK_LOGS_END_POINT"
     Type: "NSString * _Nonnull"
   - Name: "SDK_VERSION_HEADER"
     PropertyKind: "Instance"
@@ -13783,6 +14794,10 @@ Classes:
     Parameters:
     - Position: 0
       Type: "MHSKtor_client_coreHttpClientConfig<T> * _Nonnull"
+  - Selector: "logEveryResponse"
+    MethodKind: "Instance"
+    SwiftName: "logEveryResponse()"
+    ResultType: "void"
 - Name: "MHSKtor_client_coreHttpSendPipeline"
   SwiftName: "Ktor_client_coreHttpSendPipeline"
   Properties:
@@ -17244,9 +18259,21 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 4
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__36__submitCardCVVDispatchReceiver:intentId:cvv:installmentPlanData:suspendHandler:"
+  - Selector: "Skie_Suspend__36__sendSdkLogsDispatchReceiver:logs:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__36__submitCardCVV(dispatchReceiver:intentId:cvv:installmentPlanData:suspendHandler:)"
+    SwiftName: "Skie_Suspend__36__sendSdkLogs(dispatchReceiver:logs:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<MHSPaymentService> _Nonnull"
+    - Position: 1
+      Type: "NSArray<MHSLogRecord *> * _Nonnull"
+    - Position: 2
+      Type: "MHSSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__37__submitCardCVVDispatchReceiver:intentId:cvv:installmentPlanData:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__37__submitCardCVV(dispatchReceiver:intentId:cvv:installmentPlanData:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17260,9 +18287,9 @@ Classes:
       Type: "MHSInstallmentPlanData * _Nullable"
     - Position: 4
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__37__submitFormDispatchReceiver:intentId:currentSelectedMethod:cardFields:billingFields:shippingFields:vaultData:saveCard:installmentPlanData:suspendHandler:"
+  - Selector: "Skie_Suspend__38__submitFormDispatchReceiver:intentId:currentSelectedMethod:cardFields:billingFields:shippingFields:vaultData:saveCard:installmentPlanData:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__37__submitForm(dispatchReceiver:intentId:currentSelectedMethod:cardFields:billingFields:shippingFields:vaultData:saveCard:installmentPlanData:suspendHandler:)"
+    SwiftName: "Skie_Suspend__38__submitForm(dispatchReceiver:intentId:currentSelectedMethod:cardFields:billingFields:shippingFields:vaultData:saveCard:installmentPlanData:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17286,9 +18313,9 @@ Classes:
       Type: "MHSInstallmentPlanData * _Nullable"
     - Position: 9
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__38__submitReceiptDispatchReceiver:paymentIntentId:receipt:receiptBillingData:suspendHandler:"
+  - Selector: "Skie_Suspend__39__submitReceiptDispatchReceiver:paymentIntentId:receipt:receiptBillingData:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__38__submitReceipt(dispatchReceiver:paymentIntentId:receipt:receiptBillingData:suspendHandler:)"
+    SwiftName: "Skie_Suspend__39__submitReceipt(dispatchReceiver:paymentIntentId:receipt:receiptBillingData:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17302,9 +18329,9 @@ Classes:
       Type: "NSDictionary<NSString *, NSString *> * _Nullable"
     - Position: 4
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__39__tokenizeReceiptDispatchReceiver:receipt:methodId:cardTokenIntentId:suspendHandler:"
+  - Selector: "Skie_Suspend__40__tokenizeReceiptDispatchReceiver:receipt:methodId:cardTokenIntentId:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__39__tokenizeReceipt(dispatchReceiver:receipt:methodId:cardTokenIntentId:suspendHandler:)"
+    SwiftName: "Skie_Suspend__40__tokenizeReceipt(dispatchReceiver:receipt:methodId:cardTokenIntentId:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17318,9 +18345,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 4
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__40__updateDiscountDispatchReceiver:intentId:discount:suspendHandler:"
+  - Selector: "Skie_Suspend__41__updateDiscountDispatchReceiver:intentId:discount:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__40__updateDiscount(dispatchReceiver:intentId:discount:suspendHandler:)"
+    SwiftName: "Skie_Suspend__41__updateDiscount(dispatchReceiver:intentId:discount:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17332,9 +18359,9 @@ Classes:
       Type: "MHSDiscountItem * _Nonnull"
     - Position: 3
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__41__updateFeesDispatchReceiver:intentId:fees:suspendHandler:"
+  - Selector: "Skie_Suspend__42__updateFeesDispatchReceiver:intentId:fees:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__41__updateFees(dispatchReceiver:intentId:fees:suspendHandler:)"
+    SwiftName: "Skie_Suspend__42__updateFees(dispatchReceiver:intentId:fees:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17346,9 +18373,9 @@ Classes:
       Type: "NSArray<MHSFeeItem *> * _Nonnull"
     - Position: 3
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__42__useBankAccountTokenDispatchReceiver:paymentIntentId:bankAccountTokenId:suspendHandler:"
+  - Selector: "Skie_Suspend__43__useBankAccountTokenDispatchReceiver:paymentIntentId:bankAccountTokenId:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__42__useBankAccountToken(dispatchReceiver:paymentIntentId:bankAccountTokenId:suspendHandler:)"
+    SwiftName: "Skie_Suspend__43__useBankAccountToken(dispatchReceiver:paymentIntentId:bankAccountTokenId:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17360,9 +18387,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__43__usePaymentMethodDispatchReceiver:intentId:methodName:useWalletBalance:installmentPlanData:suspendHandler:"
+  - Selector: "Skie_Suspend__44__usePaymentMethodDispatchReceiver:intentId:methodName:useWalletBalance:installmentPlanData:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__43__usePaymentMethod(dispatchReceiver:intentId:methodName:useWalletBalance:installmentPlanData:suspendHandler:)"
+    SwiftName: "Skie_Suspend__44__usePaymentMethod(dispatchReceiver:intentId:methodName:useWalletBalance:installmentPlanData:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17378,9 +18405,9 @@ Classes:
       Type: "MHSInstallmentPlanData * _Nullable"
     - Position: 5
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__44__usePayoutMethodDispatchReceiver:intentId:methodName:suspendHandler:"
+  - Selector: "Skie_Suspend__45__usePayoutMethodDispatchReceiver:intentId:methodName:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__44__usePayoutMethod(dispatchReceiver:intentId:methodName:suspendHandler:)"
+    SwiftName: "Skie_Suspend__45__usePayoutMethod(dispatchReceiver:intentId:methodName:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17392,9 +18419,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__45__useSavedCardDispatchReceiver:paymentIntentId:cardTokenId:cvv:useWalletBalance:installmentPlanData:suspendHandler:"
+  - Selector: "Skie_Suspend__46__useSavedCardDispatchReceiver:paymentIntentId:cardTokenId:cvv:useWalletBalance:installmentPlanData:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__45__useSavedCard(dispatchReceiver:paymentIntentId:cardTokenId:cvv:useWalletBalance:installmentPlanData:suspendHandler:)"
+    SwiftName: "Skie_Suspend__46__useSavedCard(dispatchReceiver:paymentIntentId:cardTokenId:cvv:useWalletBalance:installmentPlanData:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17412,9 +18439,9 @@ Classes:
       Type: "MHSInstallmentPlanData * _Nullable"
     - Position: 6
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__46__useSelfWalletDispatchReceiver:paymentIntentId:suspendHandler:"
+  - Selector: "Skie_Suspend__47__useSelfWalletDispatchReceiver:paymentIntentId:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__46__useSelfWallet(dispatchReceiver:paymentIntentId:suspendHandler:)"
+    SwiftName: "Skie_Suspend__47__useSelfWallet(dispatchReceiver:paymentIntentId:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17424,9 +18451,33 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__47__getFeatureFlagDispatchReceiver:featureName:suspendHandler:"
+  - Selector: "Skie_Suspend__48__areEnabledDispatchReceiver:flags:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__47__getFeatureFlag(dispatchReceiver:featureName:suspendHandler:)"
+    SwiftName: "Skie_Suspend__48__areEnabled(dispatchReceiver:flags:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "MHSFeatureFlagUseCase * _Nonnull"
+    - Position: 1
+      Type: "NSArray<MHSFeatureFlag *> * _Nonnull"
+    - Position: 2
+      Type: "MHSSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__49__isEnabledDispatchReceiver:flag:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__49__isEnabled(dispatchReceiver:flag:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "MHSFeatureFlagUseCase * _Nonnull"
+    - Position: 1
+      Type: "MHSFeatureFlag * _Nonnull"
+    - Position: 2
+      Type: "MHSSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__50__getFeatureFlagDispatchReceiver:featureName:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__50__getFeatureFlag(dispatchReceiver:featureName:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17436,9 +18487,21 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__48__deleteSavedCardDispatchReceiver:cardTokenId:intentSecret:suspendHandler:"
+  - Selector: "Skie_Suspend__51__getFeatureFlagsDispatchReceiver:featureNames:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__48__deleteSavedCard(dispatchReceiver:cardTokenId:intentSecret:suspendHandler:)"
+    SwiftName: "Skie_Suspend__51__getFeatureFlags(dispatchReceiver:featureNames:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<MHSFeatureFlagService> _Nonnull"
+    - Position: 1
+      Type: "NSArray<NSString *> * _Nonnull"
+    - Position: 2
+      Type: "MHSSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__52__deleteSavedCardDispatchReceiver:cardTokenId:intentSecret:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__52__deleteSavedCard(dispatchReceiver:cardTokenId:intentSecret:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17450,9 +18513,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__49__getApplePayBinLookupDispatchReceiver:receipt:receiptBillingData:methodID:flowId:suspendHandler:"
+  - Selector: "Skie_Suspend__53__getApplePayBinLookupDispatchReceiver:receipt:receiptBillingData:methodID:flowId:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__49__getApplePayBinLookup(dispatchReceiver:receipt:receiptBillingData:methodID:flowId:suspendHandler:)"
+    SwiftName: "Skie_Suspend__53__getApplePayBinLookup(dispatchReceiver:receipt:receiptBillingData:methodID:flowId:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17468,9 +18531,9 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 5
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__50__getCardInformationDispatchReceiver:cardIntentId:suspendHandler:"
+  - Selector: "Skie_Suspend__54__getCardInformationDispatchReceiver:cardIntentId:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__50__getCardInformation(dispatchReceiver:cardIntentId:suspendHandler:)"
+    SwiftName: "Skie_Suspend__54__getCardInformation(dispatchReceiver:cardIntentId:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17480,9 +18543,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__51__getInstallmentPlansDispatchReceiver:amount:currency:first6Digits:suspendHandler:"
+  - Selector: "Skie_Suspend__55__getInstallmentPlansDispatchReceiver:amount:currency:first6Digits:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__51__getInstallmentPlans(dispatchReceiver:amount:currency:first6Digits:suspendHandler:)"
+    SwiftName: "Skie_Suspend__55__getInstallmentPlans(dispatchReceiver:amount:currency:first6Digits:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17496,9 +18559,9 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 4
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__52__getMethodsDispatchReceiver:paymentIntentId:type:suspendHandler:"
+  - Selector: "Skie_Suspend__56__getMethodsDispatchReceiver:paymentIntentId:type:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__52__getMethods(dispatchReceiver:paymentIntentId:type:suspendHandler:)"
+    SwiftName: "Skie_Suspend__56__getMethods(dispatchReceiver:paymentIntentId:type:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17510,9 +18573,9 @@ Classes:
       Type: "MHSType * _Nonnull"
     - Position: 3
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__53__getMethodsDispatchReceiver:currency:amount:customer:flowId:operation:customFields:suspendHandler:"
+  - Selector: "Skie_Suspend__57__getMethodsDispatchReceiver:currency:amount:customer:flowId:operation:customFields:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__53__getMethods(dispatchReceiver:currency:amount:customer:flowId:operation:customFields:suspendHandler:)"
+    SwiftName: "Skie_Suspend__57__getMethods(dispatchReceiver:currency:amount:customer:flowId:operation:customFields:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17532,9 +18595,9 @@ Classes:
       Type: "NSDictionary<NSString *, MHSCustomFieldValue *> * _Nullable"
     - Position: 7
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__54__getPaymentInformationDispatchReceiver:paymentId:suspendHandler:"
+  - Selector: "Skie_Suspend__58__getPaymentInformationDispatchReceiver:paymentId:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__54__getPaymentInformation(dispatchReceiver:paymentId:suspendHandler:)"
+    SwiftName: "Skie_Suspend__58__getPaymentInformation(dispatchReceiver:paymentId:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17544,9 +18607,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__55__getPayoutInformationDispatchReceiver:payoutId:suspendHandler:"
+  - Selector: "Skie_Suspend__59__getPayoutInformationDispatchReceiver:payoutId:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__55__getPayoutInformation(dispatchReceiver:payoutId:suspendHandler:)"
+    SwiftName: "Skie_Suspend__59__getPayoutInformation(dispatchReceiver:payoutId:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17556,9 +18619,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__56__getSubscriptionPlanGroupsDispatchReceiver:limit:offset:currency:suspendHandler:"
+  - Selector: "Skie_Suspend__60__getSubscriptionPlanGroupsDispatchReceiver:limit:offset:currency:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__56__getSubscriptionPlanGroups(dispatchReceiver:limit:offset:currency:suspendHandler:)"
+    SwiftName: "Skie_Suspend__60__getSubscriptionPlanGroups(dispatchReceiver:limit:offset:currency:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17572,9 +18635,9 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 4
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__57__getSubscriptionPlansDispatchReceiver:planGroupId:customerId:suspendHandler:"
+  - Selector: "Skie_Suspend__61__getSubscriptionPlansDispatchReceiver:planGroupId:customerId:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__57__getSubscriptionPlans(dispatchReceiver:planGroupId:customerId:suspendHandler:)"
+    SwiftName: "Skie_Suspend__61__getSubscriptionPlans(dispatchReceiver:planGroupId:customerId:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17586,9 +18649,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__58__proceedWithPaymentMethodDispatchReceiver:intentId:selectedMethodId:methodType:metaData:useWalletBalance:installmentPlanData:suspendHandler:"
+  - Selector: "Skie_Suspend__62__proceedWithPaymentMethodDispatchReceiver:intentId:selectedMethodId:methodType:metaData:useWalletBalance:installmentPlanData:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__58__proceedWithPaymentMethod(dispatchReceiver:intentId:selectedMethodId:methodType:metaData:useWalletBalance:installmentPlanData:suspendHandler:)"
+    SwiftName: "Skie_Suspend__62__proceedWithPaymentMethod(dispatchReceiver:intentId:selectedMethodId:methodType:metaData:useWalletBalance:installmentPlanData:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17608,9 +18671,9 @@ Classes:
       Type: "MHSInstallmentPlanData * _Nullable"
     - Position: 7
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__59__proceedWithPayoutMethodDispatchReceiver:intentId:selectedMethodId:methodType:metaData:suspendHandler:"
+  - Selector: "Skie_Suspend__63__proceedWithPayoutMethodDispatchReceiver:intentId:selectedMethodId:methodType:metaData:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__59__proceedWithPayoutMethod(dispatchReceiver:intentId:selectedMethodId:methodType:metaData:suspendHandler:)"
+    SwiftName: "Skie_Suspend__63__proceedWithPayoutMethod(dispatchReceiver:intentId:selectedMethodId:methodType:metaData:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17626,9 +18689,9 @@ Classes:
       Type: "MHSMethodMetaData * _Nullable"
     - Position: 5
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__60__resetPaymentSelectedMethodDispatchReceiver:intentId:suspendHandler:"
+  - Selector: "Skie_Suspend__64__resetPaymentSelectedMethodDispatchReceiver:intentId:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__60__resetPaymentSelectedMethod(dispatchReceiver:intentId:suspendHandler:)"
+    SwiftName: "Skie_Suspend__64__resetPaymentSelectedMethod(dispatchReceiver:intentId:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17638,9 +18701,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__61__resetPayoutSelectedMethodDispatchReceiver:intentId:suspendHandler:"
+  - Selector: "Skie_Suspend__65__resetPayoutSelectedMethodDispatchReceiver:intentId:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__61__resetPayoutSelectedMethod(dispatchReceiver:intentId:suspendHandler:)"
+    SwiftName: "Skie_Suspend__65__resetPayoutSelectedMethod(dispatchReceiver:intentId:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17650,9 +18713,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__62__selectInstallmentPlanDispatchReceiver:intentId:installmentPlanData:suspendHandler:"
+  - Selector: "Skie_Suspend__66__selectInstallmentPlanDispatchReceiver:intentId:installmentPlanData:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__62__selectInstallmentPlan(dispatchReceiver:intentId:installmentPlanData:suspendHandler:)"
+    SwiftName: "Skie_Suspend__66__selectInstallmentPlan(dispatchReceiver:intentId:installmentPlanData:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17664,9 +18727,9 @@ Classes:
       Type: "MHSInstallmentPlanData * _Nonnull"
     - Position: 3
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__63__selectSubscriptionPlanDispatchReceiver:planGroupId:customerId:planId:suspendHandler:"
+  - Selector: "Skie_Suspend__67__selectSubscriptionPlanDispatchReceiver:planGroupId:customerId:planId:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__63__selectSubscriptionPlan(dispatchReceiver:planGroupId:customerId:planId:suspendHandler:)"
+    SwiftName: "Skie_Suspend__67__selectSubscriptionPlan(dispatchReceiver:planGroupId:customerId:planId:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17680,9 +18743,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 4
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__64__submitCardCVVDispatchReceiver:intentId:cvv:installmentPlanData:suspendHandler:"
+  - Selector: "Skie_Suspend__68__submitCardCVVDispatchReceiver:intentId:cvv:installmentPlanData:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__64__submitCardCVV(dispatchReceiver:intentId:cvv:installmentPlanData:suspendHandler:)"
+    SwiftName: "Skie_Suspend__68__submitCardCVV(dispatchReceiver:intentId:cvv:installmentPlanData:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17696,9 +18759,9 @@ Classes:
       Type: "MHSInstallmentPlanData * _Nullable"
     - Position: 4
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__65__submitFormDispatchReceiver:paymentIntentId:method:billingFields:shippingFields:vaultData:saveCard:installmentPlanData:suspendHandler:"
+  - Selector: "Skie_Suspend__69__submitFormDispatchReceiver:paymentIntentId:method:billingFields:shippingFields:vaultData:saveCard:installmentPlanData:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__65__submitForm(dispatchReceiver:paymentIntentId:method:billingFields:shippingFields:vaultData:saveCard:installmentPlanData:suspendHandler:)"
+    SwiftName: "Skie_Suspend__69__submitForm(dispatchReceiver:paymentIntentId:method:billingFields:shippingFields:vaultData:saveCard:installmentPlanData:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17720,9 +18783,9 @@ Classes:
       Type: "MHSInstallmentPlanData * _Nullable"
     - Position: 8
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__66__submitPaymentReceiptDispatchReceiver:paymentIntentId:receipt:receiptBillingData:suspendHandler:"
+  - Selector: "Skie_Suspend__70__submitPaymentReceiptDispatchReceiver:paymentIntentId:receipt:receiptBillingData:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__66__submitPaymentReceipt(dispatchReceiver:paymentIntentId:receipt:receiptBillingData:suspendHandler:)"
+    SwiftName: "Skie_Suspend__70__submitPaymentReceipt(dispatchReceiver:paymentIntentId:receipt:receiptBillingData:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17736,9 +18799,9 @@ Classes:
       Type: "NSDictionary<NSString *, NSString *> * _Nullable"
     - Position: 4
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__67__tokenizeReceiptDispatchReceiver:receipt:methodId:cardTokenIntentId:suspendHandler:"
+  - Selector: "Skie_Suspend__71__tokenizeReceiptDispatchReceiver:receipt:methodId:cardTokenIntentId:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__67__tokenizeReceipt(dispatchReceiver:receipt:methodId:cardTokenIntentId:suspendHandler:)"
+    SwiftName: "Skie_Suspend__71__tokenizeReceipt(dispatchReceiver:receipt:methodId:cardTokenIntentId:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17752,9 +18815,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 4
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__68__updateDiscountDispatchReceiver:intentId:discount:suspendHandler:"
+  - Selector: "Skie_Suspend__72__updateDiscountDispatchReceiver:intentId:discount:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__68__updateDiscount(dispatchReceiver:intentId:discount:suspendHandler:)"
+    SwiftName: "Skie_Suspend__72__updateDiscount(dispatchReceiver:intentId:discount:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17766,9 +18829,9 @@ Classes:
       Type: "MHSDiscountItem * _Nonnull"
     - Position: 3
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__69__updateFeesDispatchReceiver:intentId:fees:suspendHandler:"
+  - Selector: "Skie_Suspend__73__updateFeesDispatchReceiver:intentId:fees:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__69__updateFees(dispatchReceiver:intentId:fees:suspendHandler:)"
+    SwiftName: "Skie_Suspend__73__updateFees(dispatchReceiver:intentId:fees:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17780,21 +18843,9 @@ Classes:
       Type: "NSArray<MHSFeeItem *> * _Nonnull"
     - Position: 3
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__70__isEnabledDispatchReceiver:flag:suspendHandler:"
+  - Selector: "Skie_Suspend__74__binLookupDispatchReceiver:cardData:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__70__isEnabled(dispatchReceiver:flag:suspendHandler:)"
-    Availability: "nonswift"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "MHSFeatureFlagUseCase * _Nonnull"
-    - Position: 1
-      Type: "MHSFeatureFlag * _Nonnull"
-    - Position: 2
-      Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__71__binLookupDispatchReceiver:cardData:suspendHandler:"
-    MethodKind: "Class"
-    SwiftName: "Skie_Suspend__71__binLookup(dispatchReceiver:cardData:suspendHandler:)"
+    SwiftName: "Skie_Suspend__74__binLookup(dispatchReceiver:cardData:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17804,9 +18855,9 @@ Classes:
       Type: "MHSVaultData * _Nonnull"
     - Position: 2
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__72__binLookupDispatchReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__75__binLookupDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__72__binLookup(dispatchReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__75__binLookup(dispatchReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17814,9 +18865,9 @@ Classes:
       Type: "MHSCardCollector * _Nonnull"
     - Position: 1
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__73__collectDispatchReceiver:token:suspendHandler:"
+  - Selector: "Skie_Suspend__76__collectDispatchReceiver:token:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__73__collect(dispatchReceiver:token:suspendHandler:)"
+    SwiftName: "Skie_Suspend__76__collect(dispatchReceiver:token:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17826,9 +18877,9 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 2
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__74__createCardTokenDispatchReceiver:cardIntentId:cardData:suspendHandler:"
+  - Selector: "Skie_Suspend__77__createCardTokenDispatchReceiver:cardIntentId:cardData:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__74__createCardToken(dispatchReceiver:cardIntentId:cardData:suspendHandler:)"
+    SwiftName: "Skie_Suspend__77__createCardToken(dispatchReceiver:cardIntentId:cardData:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17840,9 +18891,9 @@ Classes:
       Type: "MHSVaultData * _Nonnull"
     - Position: 3
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__75__payDispatchReceiver:intentId:cardData:saveCard:billingFields:shippingFields:installmentPlanData:suspendHandler:"
+  - Selector: "Skie_Suspend__78__payDispatchReceiver:intentId:cardData:saveCard:billingFields:shippingFields:installmentPlanData:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__75__pay(dispatchReceiver:intentId:cardData:saveCard:billingFields:shippingFields:installmentPlanData:suspendHandler:)"
+    SwiftName: "Skie_Suspend__78__pay(dispatchReceiver:intentId:cardData:saveCard:billingFields:shippingFields:installmentPlanData:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17862,9 +18913,9 @@ Classes:
       Type: "MHSInstallmentPlanData * _Nullable"
     - Position: 7
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__76__getDemoIntentsDispatchReceiver:accessToken:suspendHandler:"
+  - Selector: "Skie_Suspend__79__getDemoIntentsDispatchReceiver:accessToken:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__76__getDemoIntents(dispatchReceiver:accessToken:suspendHandler:)"
+    SwiftName: "Skie_Suspend__79__getDemoIntents(dispatchReceiver:accessToken:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17874,9 +18925,33 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__77__invokeDispatchReceiver:p1:suspendHandler:"
+  - Selector: "Skie_Suspend__80__sendDispatchReceiver:logs:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__77__invoke(dispatchReceiver:p1:suspendHandler:)"
+    SwiftName: "Skie_Suspend__80__send(dispatchReceiver:logs:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<MHSLogSender> _Nonnull"
+    - Position: 1
+      Type: "NSArray<MHSLogRecord *> * _Nonnull"
+    - Position: 2
+      Type: "MHSSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__81__deliverDispatchReceiver:logs:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__81__deliver(dispatchReceiver:logs:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<MHSDetailedLogSender> _Nonnull"
+    - Position: 1
+      Type: "NSArray<MHSLogRecord *> * _Nonnull"
+    - Position: 2
+      Type: "MHSSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__82__invokeDispatchReceiver:p1:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__82__invoke(dispatchReceiver:p1:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17886,9 +18961,9 @@ Classes:
       Type: "id _Nullable"
     - Position: 2
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__78__upgradeDispatchReceiver:input:output:engineContext:userContext:suspendHandler:"
+  - Selector: "Skie_Suspend__83__upgradeDispatchReceiver:input:output:engineContext:userContext:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__78__upgrade(dispatchReceiver:input:output:engineContext:userContext:suspendHandler:)"
+    SwiftName: "Skie_Suspend__83__upgrade(dispatchReceiver:input:output:engineContext:userContext:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17904,9 +18979,9 @@ Classes:
       Type: "id<MHSKotlinCoroutineContext> _Nonnull"
     - Position: 5
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__79__flushDispatchReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__84__flushDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__79__flush(dispatchReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__84__flush(dispatchReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17914,9 +18989,9 @@ Classes:
       Type: "id<MHSKtor_ioByteWriteChannel> _Nonnull"
     - Position: 1
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__80__flushAndCloseDispatchReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__85__flushAndCloseDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__80__flushAndClose(dispatchReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__85__flushAndClose(dispatchReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17924,9 +18999,9 @@ Classes:
       Type: "id<MHSKtor_ioByteWriteChannel> _Nonnull"
     - Position: 1
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__81__writeToDispatchReceiver:channel:suspendHandler:"
+  - Selector: "Skie_Suspend__86__writeToDispatchReceiver:channel:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__81__writeTo(dispatchReceiver:channel:suspendHandler:)"
+    SwiftName: "Skie_Suspend__86__writeTo(dispatchReceiver:channel:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -17936,19 +19011,21 @@ Classes:
       Type: "id<MHSKtor_ioByteWriteChannel> _Nonnull"
     - Position: 2
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__82__handleNetworkExceptionExtensionReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__87__handleNetworkExceptionExtensionReceiver:request:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__82__handleNetworkException(extensionReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__87__handleNetworkException(extensionReceiver:request:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
     - Position: 0
       Type: "MHSKotlinThrowable * _Nonnull"
     - Position: 1
+      Type: "id<MHSKtor_client_coreHttpRequest> _Nonnull"
+    - Position: 2
       Type: "MHSSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__83__handleResponseValidationExtensionReceiver:response:suspendHandler:"
+  - Selector: "Skie_Suspend__88__handleResponseValidationExtensionReceiver:response:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__83__handleResponseValidation(extensionReceiver:response:suspendHandler:)"
+    SwiftName: "Skie_Suspend__88__handleResponseValidation(extensionReceiver:response:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -18447,7 +19524,7 @@ Protocols:
     Parameters:
     - Position: 0
       Type: "id<MHSKotlinx_coroutines_coreJob> _Nonnull"
-  - Selector: "start"
+  - Selector: "start_"
     MethodKind: "Instance"
     SwiftName: "start()"
     ResultType: "BOOL"
@@ -18814,6 +19891,16 @@ Protocols:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "void (^ _Nonnull)(MHSPaymentIntentData * _Nullable, NSError * _Nullable)"
+  - Selector: "sendSdkLogsLogs:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__sendSdkLogs(logs:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSArray<MHSLogRecord *> * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
   - Selector: "submitCardCVVIntentId:cvv:installmentPlanData:completionHandler:"
     MethodKind: "Instance"
     SwiftName: "__submitCardCVV(intentId:cvv:installmentPlanData:completionHandler:)"
@@ -18985,6 +20072,16 @@ Protocols:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "void (^ _Nonnull)(MHSFeatureFlagData * _Nullable, NSError * _Nullable)"
+  - Selector: "getFeatureFlagsFeatureNames:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__getFeatureFlags(featureNames:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSArray<NSString *> * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(MHSFeatureFlagsData * _Nullable, NSError * _Nullable)"
 - Name: "MHSStrings"
   SwiftName: "Strings"
   Properties:
@@ -19197,8 +20294,263 @@ Protocols:
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
+- Name: "MHSLogFilter"
+  SwiftName: "LogFilter"
+  Methods:
+  - Selector: "filterMessage:"
+    MethodKind: "Instance"
+    SwiftName: "filter(message:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+- Name: "MHSLogger"
+  SwiftName: "Logger"
+  Methods:
+  - Selector: "flush"
+    MethodKind: "Instance"
+    SwiftName: "flush()"
+    ResultType: "void"
+  - Selector: "logTimestamp:context:level:source:type:message:"
+    MethodKind: "Instance"
+    SwiftName: "log(timestamp:context:level:source:type:message:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "MHSLogContext * _Nonnull"
+    - Position: 2
+      Type: "MHSLogLevel * _Nonnull"
+    - Position: 3
+      Type: "MHSLogSource * _Nonnull"
+    - Position: 4
+      Type: "MHSLogType * _Nonnull"
+    - Position: 5
+      Type: "NSString * _Nonnull"
+  - Selector: "setMinimumLevelLevel:"
+    MethodKind: "Instance"
+    SwiftName: "setMinimumLevel(level:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "MHSLogLevel * _Nonnull"
 - Name: "MHSLoggerManager"
   SwiftName: "LoggerManager"
+  Methods:
+  - Selector: "errorSource:message:error:"
+    MethodKind: "Instance"
+    SwiftName: "error(source:message:error:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "MHSLogSource * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "MHSKotlinThrowable * _Nullable"
+  - Selector: "eventSource:message:"
+    MethodKind: "Instance"
+    SwiftName: "event(source:message:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "MHSLogSource * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "logLevel:source:message:"
+    MethodKind: "Instance"
+    SwiftName: "log(level:source:message:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "MHSLogLevel * _Nonnull"
+    - Position: 1
+      Type: "MHSLogSource * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+  - Selector: "metricSource:message:"
+    MethodKind: "Instance"
+    SwiftName: "metric(source:message:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "MHSLogSource * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "networkMessage:"
+    MethodKind: "Instance"
+    SwiftName: "network(message:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "setContextContext:"
+    MethodKind: "Instance"
+    SwiftName: "setContext(context:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "MHSLogContext * _Nonnull"
+  - Selector: "setMinimumLevelLevel:"
+    MethodKind: "Instance"
+    SwiftName: "setMinimumLevel(level:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "MHSLogLevel * _Nonnull"
+- Name: "MHSLogSyncListener"
+  SwiftName: "LogSyncListener"
+  Methods:
+  - Selector: "onUploadFailedRecordCount:error:"
+    MethodKind: "Instance"
+    SwiftName: "onUploadFailed(recordCount:error:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "MHSKotlinThrowable * _Nonnull"
+  - Selector: "onUploadSucceededRecordCount:"
+    MethodKind: "Instance"
+    SwiftName: "onUploadSucceeded(recordCount:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+- Name: "MHSLoggerConfig"
+  SwiftName: "LoggerConfig"
+  Properties:
+  - Name: "minimumLevel"
+    PropertyKind: "Instance"
+    SwiftName: "minimumLevel"
+    Type: "MHSLogLevel * _Nonnull"
+- Name: "MHSPersistence"
+  SwiftName: "Persistence"
+  Methods:
+  - Selector: "deleteIds:"
+    MethodKind: "Instance"
+    SwiftName: "delete(ids:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "NSArray<NSString *> * _Nonnull"
+  - Selector: "deleteAll"
+    MethodKind: "Instance"
+    SwiftName: "deleteAll()"
+    ResultType: "BOOL"
+  - Selector: "readDeleteAfterRead:"
+    MethodKind: "Instance"
+    SwiftName: "read(deleteAfterRead:)"
+    ResultType: "NSArray<NSString *> * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "readEntries"
+    MethodKind: "Instance"
+    SwiftName: "readEntries()"
+    ResultType: "NSArray<MHSPersistedEntry *> * _Nonnull"
+  - Selector: "saveValue:"
+    MethodKind: "Instance"
+    SwiftName: "save(value:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+- Name: "MHSLogCache"
+  SwiftName: "LogCache"
+  Methods:
+  - Selector: "addEntry:urgent:"
+    MethodKind: "Instance"
+    SwiftName: "add(entry:urgent:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "BOOL"
+  - Selector: "flushNow"
+    MethodKind: "Instance"
+    SwiftName: "flushNow()"
+    ResultType: "void"
+- Name: "MHSLogCodec"
+  SwiftName: "LogCodec"
+  Methods:
+  - Selector: "decodeData:"
+    MethodKind: "Instance"
+    SwiftName: "decode(data:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "encodeData:"
+    MethodKind: "Instance"
+    SwiftName: "encode(data:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+- Name: "MHSLogSender"
+  SwiftName: "LogSender"
+  Methods:
+  - Selector: "canSend"
+    MethodKind: "Instance"
+    SwiftName: "canSend()"
+    ResultType: "BOOL"
+  - Selector: "sendLogs:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__send(logs:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSArray<MHSLogRecord *> * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(MHSBoolean * _Nullable, NSError * _Nullable)"
+- Name: "MHSLogSyncer"
+  SwiftName: "LogSyncer"
+  Methods:
+  - Selector: "start"
+    MethodKind: "Instance"
+    SwiftName: "start()"
+    ResultType: "void"
+  - Selector: "stop"
+    MethodKind: "Instance"
+    SwiftName: "stop()"
+    ResultType: "void"
+  - Selector: "syncNow"
+    MethodKind: "Instance"
+    SwiftName: "syncNow()"
+    ResultType: "void"
+- Name: "MHSDetailedLogSender"
+  SwiftName: "DetailedLogSender"
+  Methods:
+  - Selector: "deliverLogs:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__deliver(logs:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSArray<MHSLogRecord *> * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(MHSSendResult * _Nullable, NSError * _Nullable)"
+- Name: "MHSLogDropListener"
+  SwiftName: "LogDropListener"
+  Methods:
+  - Selector: "onBatchDroppedRecordCount:statusCode:afterRefusals:"
+    MethodKind: "Instance"
+    SwiftName: "onBatchDropped(recordCount:statusCode:afterRefusals:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "MHSInt * _Nullable"
+    - Position: 2
+      Type: "int32_t"
+- Name: "MHSLoggerManager_"
+  SwiftName: "LoggerManager_"
   Methods:
   - Selector: "assertMessage:throwable:tag:"
     MethodKind: "Instance"

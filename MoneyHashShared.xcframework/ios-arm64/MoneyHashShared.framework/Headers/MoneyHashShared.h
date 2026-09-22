@@ -3944,6 +3944,7 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("PaymentIntent")))
 @interface MHSPaymentIntent : MHSBase <MHSCommonParcelable>
 @property (class, readonly, getter=companion) MHSPaymentIntentCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) NSString * _Nullable account __attribute__((swift_name("account")));
 @property (readonly) NSString * _Nullable amount __attribute__((swift_name("amount")));
 @property (readonly) NSString * _Nullable amountCurrency __attribute__((swift_name("amountCurrency")));
 @property (readonly) NSString * _Nullable expirationDate __attribute__((swift_name("expirationDate")));
@@ -3951,6 +3952,7 @@ __attribute__((swift_name("PaymentIntent")))
 @property (readonly) MHSDouble * _Nullable formattedAmount __attribute__((swift_name("formattedAmount")));
 @property (readonly) NSString * _Nullable id __attribute__((swift_name("id")));
 @property (readonly) MHSBoolean * _Nullable isLive __attribute__((swift_name("isLive")));
+@property (readonly) NSString * _Nullable organization __attribute__((swift_name("organization")));
 @property (readonly) NSArray<MHSIntentMethodItem *> * _Nullable paymentMethods __attribute__((swift_name("paymentMethods")));
 @property (readonly) MHSPaymentStatus * _Nullable paymentStatus __attribute__((swift_name("paymentStatus")));
 @property (readonly) NSArray<MHSProductItem *> * _Nullable productItems __attribute__((swift_name("productItems")));
@@ -3958,11 +3960,16 @@ __attribute__((swift_name("PaymentIntent")))
 @property (readonly) MHSIntentStatus * _Nullable status __attribute__((swift_name("status")));
 @property (readonly) NSString * _Nullable subtotalAmount __attribute__((swift_name("subtotalAmount")));
 @property (readonly) NSString * _Nullable totalDiscounts __attribute__((swift_name("totalDiscounts")));
-- (instancetype)initWithPaymentMethods:(NSArray<MHSIntentMethodItem *> * _Nullable)paymentMethods amount:(NSString * _Nullable)amount subtotalAmount:(NSString * _Nullable)subtotalAmount totalDiscounts:(NSString * _Nullable)totalDiscounts expirationDate:(NSString * _Nullable)expirationDate formattedAmount:(MHSDouble * _Nullable)formattedAmount amountCurrency:(NSString * _Nullable)amountCurrency secret:(NSString * _Nullable)secret isLive:(MHSBoolean * _Nullable)isLive id:(NSString * _Nullable)id productItems:(NSArray<MHSProductItem *> * _Nullable)productItems fees:(NSArray<MHSFeeItem *> * _Nullable)fees status:(MHSIntentStatus * _Nullable)status paymentStatus:(MHSPaymentStatus * _Nullable)paymentStatus __attribute__((swift_name("init(paymentMethods:amount:subtotalAmount:totalDiscounts:expirationDate:formattedAmount:amountCurrency:secret:isLive:id:productItems:fees:status:paymentStatus:)"))) __attribute__((objc_designated_initializer));
-- (MHSPaymentIntent *)doCopyPaymentMethods:(NSArray<MHSIntentMethodItem *> * _Nullable)paymentMethods amount:(NSString * _Nullable)amount subtotalAmount:(NSString * _Nullable)subtotalAmount totalDiscounts:(NSString * _Nullable)totalDiscounts expirationDate:(NSString * _Nullable)expirationDate formattedAmount:(MHSDouble * _Nullable)formattedAmount amountCurrency:(NSString * _Nullable)amountCurrency secret:(NSString * _Nullable)secret isLive:(MHSBoolean * _Nullable)isLive id:(NSString * _Nullable)id productItems:(NSArray<MHSProductItem *> * _Nullable)productItems fees:(NSArray<MHSFeeItem *> * _Nullable)fees status:(MHSIntentStatus * _Nullable)status paymentStatus:(MHSPaymentStatus * _Nullable)paymentStatus __attribute__((swift_name("doCopy(paymentMethods:amount:subtotalAmount:totalDiscounts:expirationDate:formattedAmount:amountCurrency:secret:isLive:id:productItems:fees:status:paymentStatus:)")));
+- (instancetype)initWithPaymentMethods:(NSArray<MHSIntentMethodItem *> * _Nullable)paymentMethods amount:(NSString * _Nullable)amount subtotalAmount:(NSString * _Nullable)subtotalAmount totalDiscounts:(NSString * _Nullable)totalDiscounts expirationDate:(NSString * _Nullable)expirationDate formattedAmount:(MHSDouble * _Nullable)formattedAmount amountCurrency:(NSString * _Nullable)amountCurrency secret:(NSString * _Nullable)secret isLive:(MHSBoolean * _Nullable)isLive id:(NSString * _Nullable)id account:(NSString * _Nullable)account organization:(NSString * _Nullable)organization productItems:(NSArray<MHSProductItem *> * _Nullable)productItems fees:(NSArray<MHSFeeItem *> * _Nullable)fees status:(MHSIntentStatus * _Nullable)status paymentStatus:(MHSPaymentStatus * _Nullable)paymentStatus __attribute__((swift_name("init(paymentMethods:amount:subtotalAmount:totalDiscounts:expirationDate:formattedAmount:amountCurrency:secret:isLive:id:account:organization:productItems:fees:status:paymentStatus:)"))) __attribute__((objc_designated_initializer));
+- (MHSPaymentIntent *)doCopyPaymentMethods:(NSArray<MHSIntentMethodItem *> * _Nullable)paymentMethods amount:(NSString * _Nullable)amount subtotalAmount:(NSString * _Nullable)subtotalAmount totalDiscounts:(NSString * _Nullable)totalDiscounts expirationDate:(NSString * _Nullable)expirationDate formattedAmount:(MHSDouble * _Nullable)formattedAmount amountCurrency:(NSString * _Nullable)amountCurrency secret:(NSString * _Nullable)secret isLive:(MHSBoolean * _Nullable)isLive id:(NSString * _Nullable)id account:(NSString * _Nullable)account organization:(NSString * _Nullable)organization productItems:(NSArray<MHSProductItem *> * _Nullable)productItems fees:(NSArray<MHSFeeItem *> * _Nullable)fees status:(MHSIntentStatus * _Nullable)status paymentStatus:(MHSPaymentStatus * _Nullable)paymentStatus __attribute__((swift_name("doCopy(paymentMethods:amount:subtotalAmount:totalDiscounts:expirationDate:formattedAmount:amountCurrency:secret:isLive:id:account:organization:productItems:fees:status:paymentStatus:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="account")
+*/
 
 /**
  * @note annotations
@@ -3997,6 +4004,11 @@ __attribute__((swift_name("PaymentIntent")))
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="is_live")
+*/
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="organization")
 */
 
 /**
@@ -9019,17 +9031,19 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("LogContext")))
 @interface MHSLogContext : MHSBase
 @property (class, readonly, getter=companion) MHSLogContextCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) NSString * _Nullable accountId __attribute__((swift_name("accountId")));
 @property (readonly) NSString * _Nullable cpVersion __attribute__((swift_name("cpVersion")));
 @property (readonly) NSString * _Nullable deviceModel __attribute__((swift_name("deviceModel")));
 @property (readonly) NSString * _Nullable environment __attribute__((swift_name("environment")));
 @property (readonly) NSString * _Nullable intentId __attribute__((swift_name("intentId")));
 @property (readonly) NSString * _Nullable locale __attribute__((swift_name("locale")));
+@property (readonly) NSString * _Nullable organizationId __attribute__((swift_name("organizationId")));
 @property (readonly) NSString * _Nullable platform __attribute__((swift_name("platform")));
 @property (readonly) NSString * _Nullable publicKey __attribute__((swift_name("publicKey")));
 @property (readonly) NSString * _Nullable sdkVersion __attribute__((swift_name("sdkVersion")));
 @property (readonly) NSString * _Nullable sessionId __attribute__((swift_name("sessionId")));
-- (instancetype)initWithSessionId:(NSString * _Nullable)sessionId intentId:(NSString * _Nullable)intentId sdkVersion:(NSString * _Nullable)sdkVersion cpVersion:(NSString * _Nullable)cpVersion platform:(NSString * _Nullable)platform environment:(NSString * _Nullable)environment locale:(NSString * _Nullable)locale deviceModel:(NSString * _Nullable)deviceModel publicKey:(NSString * _Nullable)publicKey __attribute__((swift_name("init(sessionId:intentId:sdkVersion:cpVersion:platform:environment:locale:deviceModel:publicKey:)"))) __attribute__((objc_designated_initializer));
-- (MHSLogContext *)doCopySessionId:(NSString * _Nullable)sessionId intentId:(NSString * _Nullable)intentId sdkVersion:(NSString * _Nullable)sdkVersion cpVersion:(NSString * _Nullable)cpVersion platform:(NSString * _Nullable)platform environment:(NSString * _Nullable)environment locale:(NSString * _Nullable)locale deviceModel:(NSString * _Nullable)deviceModel publicKey:(NSString * _Nullable)publicKey __attribute__((swift_name("doCopy(sessionId:intentId:sdkVersion:cpVersion:platform:environment:locale:deviceModel:publicKey:)")));
+- (instancetype)initWithSessionId:(NSString * _Nullable)sessionId intentId:(NSString * _Nullable)intentId accountId:(NSString * _Nullable)accountId organizationId:(NSString * _Nullable)organizationId sdkVersion:(NSString * _Nullable)sdkVersion cpVersion:(NSString * _Nullable)cpVersion platform:(NSString * _Nullable)platform environment:(NSString * _Nullable)environment locale:(NSString * _Nullable)locale deviceModel:(NSString * _Nullable)deviceModel publicKey:(NSString * _Nullable)publicKey __attribute__((swift_name("init(sessionId:intentId:accountId:organizationId:sdkVersion:cpVersion:platform:environment:locale:deviceModel:publicKey:)"))) __attribute__((objc_designated_initializer));
+- (MHSLogContext *)doCopySessionId:(NSString * _Nullable)sessionId intentId:(NSString * _Nullable)intentId accountId:(NSString * _Nullable)accountId organizationId:(NSString * _Nullable)organizationId sdkVersion:(NSString * _Nullable)sdkVersion cpVersion:(NSString * _Nullable)cpVersion platform:(NSString * _Nullable)platform environment:(NSString * _Nullable)environment locale:(NSString * _Nullable)locale deviceModel:(NSString * _Nullable)deviceModel publicKey:(NSString * _Nullable)publicKey __attribute__((swift_name("doCopy(sessionId:intentId:accountId:organizationId:sdkVersion:cpVersion:platform:environment:locale:deviceModel:publicKey:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));

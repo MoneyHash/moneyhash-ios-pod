@@ -5273,6 +5273,10 @@ Classes:
 - Name: "MHSPaymentIntent"
   SwiftName: "PaymentIntent"
   Properties:
+  - Name: "account"
+    PropertyKind: "Instance"
+    SwiftName: "account"
+    Type: "NSString * _Nullable"
   - Name: "amount"
     PropertyKind: "Instance"
     SwiftName: "amount"
@@ -5301,6 +5305,10 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "isLive"
     Type: "MHSBoolean * _Nullable"
+  - Name: "organization"
+    PropertyKind: "Instance"
+    SwiftName: "organization"
+    Type: "NSString * _Nullable"
   - Name: "paymentMethods"
     PropertyKind: "Instance"
     SwiftName: "paymentMethods"
@@ -5330,9 +5338,9 @@ Classes:
     SwiftName: "totalDiscounts"
     Type: "NSString * _Nullable"
   Methods:
-  - Selector: "initWithPaymentMethods:amount:subtotalAmount:totalDiscounts:expirationDate:formattedAmount:amountCurrency:secret:isLive:id:productItems:fees:status:paymentStatus:"
+  - Selector: "initWithPaymentMethods:amount:subtotalAmount:totalDiscounts:expirationDate:formattedAmount:amountCurrency:secret:isLive:id:account:organization:productItems:fees:status:paymentStatus:"
     MethodKind: "Instance"
-    SwiftName: "init(paymentMethods:amount:subtotalAmount:totalDiscounts:expirationDate:formattedAmount:amountCurrency:secret:isLive:id:productItems:fees:status:paymentStatus:)"
+    SwiftName: "init(paymentMethods:amount:subtotalAmount:totalDiscounts:expirationDate:formattedAmount:amountCurrency:secret:isLive:id:account:organization:productItems:fees:status:paymentStatus:)"
     Parameters:
     - Position: 0
       Type: "NSArray<MHSIntentMethodItem *> * _Nullable"
@@ -5355,16 +5363,20 @@ Classes:
     - Position: 9
       Type: "NSString * _Nullable"
     - Position: 10
-      Type: "NSArray<MHSProductItem *> * _Nullable"
+      Type: "NSString * _Nullable"
     - Position: 11
-      Type: "NSArray<MHSFeeItem *> * _Nullable"
+      Type: "NSString * _Nullable"
     - Position: 12
-      Type: "MHSIntentStatus * _Nullable"
+      Type: "NSArray<MHSProductItem *> * _Nullable"
     - Position: 13
+      Type: "NSArray<MHSFeeItem *> * _Nullable"
+    - Position: 14
+      Type: "MHSIntentStatus * _Nullable"
+    - Position: 15
       Type: "MHSPaymentStatus * _Nullable"
-  - Selector: "doCopyPaymentMethods:amount:subtotalAmount:totalDiscounts:expirationDate:formattedAmount:amountCurrency:secret:isLive:id:productItems:fees:status:paymentStatus:"
+  - Selector: "doCopyPaymentMethods:amount:subtotalAmount:totalDiscounts:expirationDate:formattedAmount:amountCurrency:secret:isLive:id:account:organization:productItems:fees:status:paymentStatus:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(paymentMethods:amount:subtotalAmount:totalDiscounts:expirationDate:formattedAmount:amountCurrency:secret:isLive:id:productItems:fees:status:paymentStatus:)"
+    SwiftName: "doCopy(paymentMethods:amount:subtotalAmount:totalDiscounts:expirationDate:formattedAmount:amountCurrency:secret:isLive:id:account:organization:productItems:fees:status:paymentStatus:)"
     ResultType: "MHSPaymentIntent * _Nonnull"
     Parameters:
     - Position: 0
@@ -5388,12 +5400,16 @@ Classes:
     - Position: 9
       Type: "NSString * _Nullable"
     - Position: 10
-      Type: "NSArray<MHSProductItem *> * _Nullable"
+      Type: "NSString * _Nullable"
     - Position: 11
-      Type: "NSArray<MHSFeeItem *> * _Nullable"
+      Type: "NSString * _Nullable"
     - Position: 12
-      Type: "MHSIntentStatus * _Nullable"
+      Type: "NSArray<MHSProductItem *> * _Nullable"
     - Position: 13
+      Type: "NSArray<MHSFeeItem *> * _Nullable"
+    - Position: 14
+      Type: "MHSIntentStatus * _Nullable"
+    - Position: 15
       Type: "MHSPaymentStatus * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
@@ -6873,6 +6889,10 @@ Classes:
 - Name: "MHSLogContext"
   SwiftName: "LogContext"
   Properties:
+  - Name: "accountId"
+    PropertyKind: "Instance"
+    SwiftName: "accountId"
+    Type: "NSString * _Nullable"
   - Name: "cpVersion"
     PropertyKind: "Instance"
     SwiftName: "cpVersion"
@@ -6893,6 +6913,10 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "locale"
     Type: "NSString * _Nullable"
+  - Name: "organizationId"
+    PropertyKind: "Instance"
+    SwiftName: "organizationId"
+    Type: "NSString * _Nullable"
   - Name: "platform"
     PropertyKind: "Instance"
     SwiftName: "platform"
@@ -6910,9 +6934,9 @@ Classes:
     SwiftName: "sessionId"
     Type: "NSString * _Nullable"
   Methods:
-  - Selector: "initWithSessionId:intentId:sdkVersion:cpVersion:platform:environment:locale:deviceModel:publicKey:"
+  - Selector: "initWithSessionId:intentId:accountId:organizationId:sdkVersion:cpVersion:platform:environment:locale:deviceModel:publicKey:"
     MethodKind: "Instance"
-    SwiftName: "init(sessionId:intentId:sdkVersion:cpVersion:platform:environment:locale:deviceModel:publicKey:)"
+    SwiftName: "init(sessionId:intentId:accountId:organizationId:sdkVersion:cpVersion:platform:environment:locale:deviceModel:publicKey:)"
     Parameters:
     - Position: 0
       Type: "NSString * _Nullable"
@@ -6932,9 +6956,13 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 8
       Type: "NSString * _Nullable"
-  - Selector: "doCopySessionId:intentId:sdkVersion:cpVersion:platform:environment:locale:deviceModel:publicKey:"
+    - Position: 9
+      Type: "NSString * _Nullable"
+    - Position: 10
+      Type: "NSString * _Nullable"
+  - Selector: "doCopySessionId:intentId:accountId:organizationId:sdkVersion:cpVersion:platform:environment:locale:deviceModel:publicKey:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(sessionId:intentId:sdkVersion:cpVersion:platform:environment:locale:deviceModel:publicKey:)"
+    SwiftName: "doCopy(sessionId:intentId:accountId:organizationId:sdkVersion:cpVersion:platform:environment:locale:deviceModel:publicKey:)"
     ResultType: "MHSLogContext * _Nonnull"
     Parameters:
     - Position: 0
@@ -6954,6 +6982,10 @@ Classes:
     - Position: 7
       Type: "NSString * _Nullable"
     - Position: 8
+      Type: "NSString * _Nullable"
+    - Position: 9
+      Type: "NSString * _Nullable"
+    - Position: 10
       Type: "NSString * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"

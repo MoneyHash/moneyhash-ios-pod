@@ -40611,6 +40611,46 @@
           },
           {
             "kind": "Var",
+            "name": "vaultFormImagesUrl",
+            "printedName": "vaultFormImagesUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MoneyHashShared11EnvironmentO18vaultFormImagesUrlSSvp",
+            "mangledName": "$s15MoneyHashShared11EnvironmentO18vaultFormImagesUrlSSvp",
+            "moduleName": "MoneyHashShared",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MoneyHashShared11EnvironmentO18vaultFormImagesUrlSSvg",
+                "mangledName": "$s15MoneyHashShared11EnvironmentO18vaultFormImagesUrlSSvg",
+                "moduleName": "MoneyHashShared",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "vaultUrl",
             "printedName": "vaultUrl",
             "children": [
@@ -43745,6 +43785,44 @@
           },
           {
             "kind": "Var",
+            "name": "jaywan",
+            "printedName": "jaywan",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHashShared.Brand.Type) -> MoneyHashShared.Brand",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Brand",
+                    "printedName": "MoneyHashShared.Brand",
+                    "usr": "s:15MoneyHashShared5BrandO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHashShared.Brand.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Brand",
+                        "printedName": "MoneyHashShared.Brand",
+                        "usr": "s:15MoneyHashShared5BrandO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MoneyHashShared5BrandO6jaywanyA2CmF",
+            "mangledName": "$s15MoneyHashShared5BrandO6jaywanyA2CmF",
+            "moduleName": "MoneyHashShared",
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
             "name": "unknown",
             "printedName": "unknown",
             "children": [
@@ -43779,7 +43857,7 @@
             "usr": "s:15MoneyHashShared5BrandO7unknownyA2CmF",
             "mangledName": "$s15MoneyHashShared5BrandO7unknownyA2CmF",
             "moduleName": "MoneyHashShared",
-            "fixedbinaryorder": 5
+            "fixedbinaryorder": 6
           },
           {
             "kind": "Var",

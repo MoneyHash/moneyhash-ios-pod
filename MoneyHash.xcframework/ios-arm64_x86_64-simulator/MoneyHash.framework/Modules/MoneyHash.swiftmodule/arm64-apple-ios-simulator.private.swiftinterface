@@ -202,6 +202,7 @@ public enum Brand : Swift.String, Swift.Codable {
   case mada
   case troy
   case amex
+  case jaywan
   case unknown
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String

@@ -7428,6 +7428,7 @@ __attribute__((swift_name("Brand")))
 @property (class, readonly) MHSBrand *mada __attribute__((swift_name("mada")));
 @property (class, readonly) MHSBrand *troy __attribute__((swift_name("troy")));
 @property (class, readonly) MHSBrand *amex __attribute__((swift_name("amex")));
+@property (class, readonly) MHSBrand *jaywan __attribute__((swift_name("jaywan")));
 @property (class, readonly) MHSBrand *unknown __attribute__((swift_name("unknown")));
 @property (class, readonly) NSArray<MHSBrand *> *entries __attribute__((swift_name("entries")));
 @property (readonly) NSString *brandName __attribute__((swift_name("brandName")));
@@ -9292,7 +9293,6 @@ __attribute__((swift_name("Constants")))
 @property (class, readonly, getter=shared) MHSConstants *shared __attribute__((swift_name("shared")));
 @property (readonly) NSString *APPLE_PAY __attribute__((swift_name("APPLE_PAY")));
 @property (readonly) NSString *AREA_API_NAME_FILED __attribute__((swift_name("AREA_API_NAME_FILED")));
-@property (readonly) NSString *BASE_VAULT_FORM __attribute__((swift_name("BASE_VAULT_FORM")));
 @property (readonly) NSString *CARD_NUMBER_FORMAT __attribute__((swift_name("CARD_NUMBER_FORMAT")));
 @property (readonly) NSString *CITY_API_NAME_FILED __attribute__((swift_name("CITY_API_NAME_FILED")));
 @property (readonly) NSString *COUNTRY_API_NAME_FIELD __attribute__((swift_name("COUNTRY_API_NAME_FIELD")));
@@ -9359,6 +9359,7 @@ __attribute__((swift_name("Environment")))
 @property (readonly) NSString *baseUrl __attribute__((swift_name("baseUrl")));
 @property (readonly) BOOL debuggable __attribute__((swift_name("debuggable")));
 @property (readonly) NSString *embedUrl __attribute__((swift_name("embedUrl")));
+@property (readonly) NSString *vaultFormImagesUrl __attribute__((swift_name("vaultFormImagesUrl")));
 @property (readonly) NSString *vaultUrl __attribute__((swift_name("vaultUrl")));
 + (instancetype)alloc __attribute__((unavailable));
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
